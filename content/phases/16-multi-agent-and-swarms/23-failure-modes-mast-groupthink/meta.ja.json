@@ -1,0 +1,10 @@
+{
+  "title": "失敗モード — MAST、グループシンク、モノカルチャー、カスケードエラー",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・13（共有メモリ）、フェーズ16・14（コンセンサスとBFT）、フェーズ16・15（投票とディベートトポロジー）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

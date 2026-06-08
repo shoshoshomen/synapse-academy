@@ -1,0 +1,10 @@
+{
+  "title": "交渉と取引",
+  "type": "学習 + 実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・02（FIPA-ACLの遺産）、フェーズ16・09（並列スワームネットワーク）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

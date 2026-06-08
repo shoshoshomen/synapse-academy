@@ -1,0 +1,10 @@
+{
+  "title": "エージェントのためのコンセンサスとビザンチン耐障害性",
+  "type": "学習 + 実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・07（Society of MindとDebate）、フェーズ16・13（共有メモリ）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

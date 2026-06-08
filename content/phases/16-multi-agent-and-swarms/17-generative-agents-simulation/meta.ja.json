@@ -1,0 +1,10 @@
+{
+  "title": "生成エージェントと創発的シミュレーション",
+  "type": "学習 + 実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・04（プリミティブモデル）、フェーズ16・13（共有メモリ）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

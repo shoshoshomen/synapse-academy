@@ -1,0 +1,10 @@
+{
+  "title": "心の理論と創発的協調",
+  "type": "学習 + 実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・07（Society of MindとDebate）、フェーズ16・17（生成エージェント）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

@@ -1,0 +1,10 @@
+{
+  "title": "LLMのためのスワーム最適化（PSO、ACO）",
+  "type": "学習 + 実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・09（並列スワームネットワーク）、フェーズ16・14（コンセンサスとBFT）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

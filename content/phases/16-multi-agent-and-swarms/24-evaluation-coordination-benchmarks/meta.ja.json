@@ -1,0 +1,10 @@
+{
+  "title": "評価と協調ベンチマーク",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・15（投票とディベートトポロジー）、フェーズ16・23（失敗モード）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}
