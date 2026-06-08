@@ -1,0 +1,102 @@
+{
+  "lesson": "10-attention-mechanism",
+  "title": "Attentionメカニズム — ブレークスルー",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "Bahdanau AttentionがSeq2Seqのどの問題を解決したか？",
+      "options": [
+        "トークン化のミスマッチ",
+        "デコーダーがエンコーダーの最終状態しか見ない固定サイズのコンテキストベクトルのボトルネック",
+        "エンコーダーの勾配消失",
+        "ビームサーチのレイテンシ"
+      ],
+      "correct": 1,
+      "explanation": "Attentionはデコーダーが最後の状態だけでなくすべてのエンコーダー状態を参照できるようにする。"
+    },
+    {
+      "stage": "pre",
+      "question": "デコーダーステップtでのAttentionコンテキストベクトルとは何か？",
+      "options": [
+        "デコーダーの入力埋め込み",
+        "クエリとキーのスコアから得られた重みによるエンコーダー隠れ状態の加重平均",
+        "エンコーダーの最終隠れ状態",
+        "ランダム射影"
+      ],
+      "correct": 1,
+      "explanation": "コンテキスト = alpha_i * h_iの合計、ステップに依存するエンコーダー状態の加重平均。"
+    },
+    {
+      "stage": "check",
+      "question": "Bahdanau（加算）AttentionにおいてベクトルV_aはどんな役割を果たすか？",
+      "options": [
+        "ドロップアウトを制御する",
+        "Attention次元の隠れ組み合わせをエンコーダー位置ごとのスカラースコアに変換する射影",
+        "位置をエンコードする",
+        "Softmaxをバイアスする"
+      ],
+      "correct": 1,
+      "explanation": "v_aはtanh(W_a s + U_a h)とdot積してd_attnベクトルをスカラースコアに潰す。"
+    },
+    {
+      "stage": "check",
+      "question": "Luongの「dot」Attentionバリアントで必要な制約は何か？",
+      "options": [
+        "デコーダー状態とエンコーダー状態が同じ次元数を共有しなければならない（d_s == d_h）",
+        "エンコーダーが双方向でなければならない",
+        "SoftmaxはLog空間でなければならない",
+        "ビームサーチが必要"
+      ],
+      "correct": 0,
+      "explanation": "dotは射影なしでs^T hを使うため、次元は正確に一致しなければならない。"
+    },
+    {
+      "stage": "check",
+      "question": "古典的な（Bahdanau/Luong）AttentionのQ/K/Vマッピングはどれか？",
+      "options": [
+        "Q、K、Vはソースの3つの独立した学習済み射影",
+        "Qはランダム、KとVは学習済み",
+        "QはエンコーダーからでKとVはデコーダーから",
+        "Q = デコーダー状態；KとV = エンコーダー状態（同じテンソル）"
+      ],
+      "correct": 3,
+      "explanation": "古典的なAttentionではキーとバリューの両方がエンコーダー状態だ。Transformerは学習済み射影でKとVを分離する。"
+    },
+    {
+      "stage": "post",
+      "question": "生のAttention重みを「説明」として報告することが脆弱だとされるのはなぜか？",
+      "options": [
+        "Attention重みがラベルをリークするから",
+        "プロットするには小さすぎるから",
+        "研究（例：Jain and Wallace、2019）が、いくつかのタスクでAttention分布を予測を変えることなく順列替えできることを示したから",
+        "Attention重みは微分可能ではないから"
+      ],
+      "correct": 2,
+      "explanation": "Attention重みは予測と相関しているが、アブレーション/反事実確認なしには忠実な説明ではない。"
+    },
+    {
+      "stage": "post",
+      "question": "BahdanauのAttentionからTransformerのSelf-attentionへの橋となるステップはどれか？",
+      "options": [
+        "ビームサーチを廃棄する",
+        "RNNレイヤーを追加する",
+        "SoftmaxをSigmoidに置き換える",
+        "別々に学習されたQ、K、V射影でシーケンスをそれ自身に対してクエリし、並列ヘッドで実行する"
+      ],
+      "correct": 3,
+      "explanation": "Self-attentionは同じシーケンスをクエリし、KとV射影を分割して、ヘッドを跨いで並列化する。"
+    },
+    {
+      "stage": "post",
+      "question": "Attentionにおけるマスキングの一つの実用的なユースケースは何か？",
+      "options": [
+        "ドロップアウトを置き換える",
+        "パディングトークンのAttention重みをゼロに設定してコンテキストベクトルに寄与しないようにする",
+        "位置をエンコードする",
+        "モデルサイズを削減する"
+      ],
+      "correct": 1,
+      "explanation": "パディング（またはデコーダーの未来のトークン）をマスクすることで、Softmaxが無効な位置に重みを広げるのを防ぐ。"
+    }
+  ]
+}

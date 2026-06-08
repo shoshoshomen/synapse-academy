@@ -1,0 +1,10 @@
+{
+  "title": "チャットボット — ルールベースからニューラル、LLMエージェントへ",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5・13（質問応答）、フェーズ5・14（情報検索）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

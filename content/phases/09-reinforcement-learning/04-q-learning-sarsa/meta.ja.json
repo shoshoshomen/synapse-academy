@@ -1,0 +1,10 @@
+{
+  "title": "時間差分学習——Q学習とSARSA",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ9・01（MDP）、フェーズ9・02（動的計画法）、フェーズ9・03（モンテカルロ）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

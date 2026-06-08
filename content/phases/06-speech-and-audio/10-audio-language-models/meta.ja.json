@@ -1,0 +1,10 @@
+{
+  "title": "音声言語モデル — Qwen2.5-Omni・Audio Flamingo・GPT-4o Audio",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・04（ASR）、フェーズ12・03（視覚言語モデル）、フェーズ7・10（音声Transformer）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

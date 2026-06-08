@@ -1,0 +1,10 @@
+{
+  "title": "3D生成",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ4（ビジョン）、フェーズ8・07（潜在拡散）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

@@ -1,0 +1,10 @@
+{
+  "title": "トランスフォーマー以前のテキスト生成 — N-gram言語モデル",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5・01（テキスト処理）、フェーズ2・14（ナイーブベイズ）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

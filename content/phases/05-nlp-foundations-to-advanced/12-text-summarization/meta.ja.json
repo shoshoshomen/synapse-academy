@@ -1,0 +1,10 @@
+{
+  "title": "テキスト要約",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·02（BoW + TF-IDF）、フェーズ5·11（機械翻訳）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

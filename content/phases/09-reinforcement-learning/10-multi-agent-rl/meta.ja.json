@@ -1,0 +1,10 @@
+{
+  "title": "マルチエージェントRL",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ9・04（Q学習）、フェーズ9・06（REINFORCE）、フェーズ9・07（アクタークリティック）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

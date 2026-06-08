@@ -1,0 +1,10 @@
+{
+  "title": "生成モデル — 分類と歴史",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ2（ML基礎）、フェーズ3（深層学習コア）、フェーズ7・14（Transformer）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

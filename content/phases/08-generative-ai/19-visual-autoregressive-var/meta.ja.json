@@ -1,0 +1,10 @@
+{
+  "title": "視覚的自己回帰モデリング（VAR）：次スケール予測",
+  "type": "実装",
+  "languages": [
+    "Python (with PyTorch)"
+  ],
+  "prerequisites": "フェーズ7 レッスン03（マルチヘッドアテンション）、フェーズ8 レッスン06（DDPM）",
+  "timeEstimate": "約90分",
+  "objectives": []
+}

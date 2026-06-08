@@ -1,0 +1,10 @@
+{
+  "title": "Multi-Head Attention",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・02（Self-Attentionをゼロから）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

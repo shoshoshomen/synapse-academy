@@ -1,0 +1,10 @@
+{
+  "title": "インペインティング、アウトペインティングと画像編集",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ8・07（潜在拡散）、フェーズ8・08（ControlNetとLoRA）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

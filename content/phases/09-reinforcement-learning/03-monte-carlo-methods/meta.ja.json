@@ -1,0 +1,10 @@
+{
+  "title": "モンテカルロ法——完全エピソードからの学習",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ9・01（MDP）、フェーズ9・02（動的計画法）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

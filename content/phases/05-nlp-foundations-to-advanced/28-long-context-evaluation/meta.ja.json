@@ -1,0 +1,10 @@
+{
+  "title": "長コンテキスト評価 — NIAH、RULER、LongBench、MRCR",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン27（LLM評価フレームワーク）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

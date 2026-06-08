@@ -1,0 +1,10 @@
+{
+  "title": "ディープQネットワーク（DQN）",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ3・03（バックプロパゲーション）、フェーズ9・04（Q学習、SARSA）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

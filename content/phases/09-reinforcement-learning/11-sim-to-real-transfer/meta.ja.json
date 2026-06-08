@@ -1,0 +1,10 @@
+{
+  "title": "シミュレーションから実世界へのTransfer",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ9・08（PPO）、フェーズ2・10（バイアス/分散）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

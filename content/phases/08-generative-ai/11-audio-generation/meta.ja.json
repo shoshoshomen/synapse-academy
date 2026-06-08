@@ -1,0 +1,10 @@
+{
+  "title": "音声生成",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・02（音声特徴）、フェーズ6・04（ASR）、フェーズ8・06（DDPM）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

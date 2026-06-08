@@ -1,0 +1,10 @@
+{
+  "title": "Mixture of Experts（MoE）",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・05（完全なTransformer）、フェーズ7・07（GPT）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

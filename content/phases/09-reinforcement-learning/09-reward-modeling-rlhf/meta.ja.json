@@ -1,0 +1,10 @@
+{
+  "title": "報酬モデリングとRLHF",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5・05（感情分析）、フェーズ9・08（PPO）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

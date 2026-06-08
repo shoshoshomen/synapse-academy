@@ -1,0 +1,16 @@
+{
+  "title": "アテンション変形 — スライディングウィンドウ、スパース、差分",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・02（Self-Attention）、フェーズ7・03（Multi-Head）、フェーズ7・12（KVキャッシュ / Flash Attention）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "スライディングウィンドウAttention（SWA）・スパースAttention・差分Attentionを実装し比較する",
+    "SWAが`O(N·W)`にメモリを削減し、KVキャッシュをウィンドウサイズに縮小する理由を説明する",
+    "Attentionシンク問題と差分Attentionによる解決方法を説明する",
+    "Gemma 3の5:1 SWA対グローバルのレイヤーミックス戦略を説明する",
+    "PyTorchのFlexAttentionでカスタムマスク関数を実装する"
+  ]
+}

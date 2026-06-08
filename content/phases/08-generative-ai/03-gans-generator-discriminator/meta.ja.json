@@ -1,0 +1,10 @@
+{
+  "title": "GAN — ジェネレータ対ディスクリミネータ",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ3・02（逆伝播）、フェーズ3・08（オプティマイザ）、フェーズ8・02（VAE）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

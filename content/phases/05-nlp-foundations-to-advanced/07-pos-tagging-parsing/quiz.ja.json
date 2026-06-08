@@ -1,0 +1,102 @@
+{
+  "lesson": "07-pos-tagging-parsing",
+  "title": "品詞タグ付けと構文解析",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "品詞タグ付けの目標は何か？",
+      "options": [
+        "感情を検出する",
+        "文を翻訳する",
+        "固有表現を抽出する",
+        "各トークンに文法カテゴリ（名詞、動詞など）を割り当てる"
+      ],
+      "correct": 3,
+      "explanation": "品詞タグ付けは各トークンに品詞のラベルを付ける。"
+    },
+    {
+      "stage": "pre",
+      "question": "言語横断作業のデフォルトタグセットはどれか？",
+      "options": [
+        "Penn Treebank",
+        "Stanford Dependencies",
+        "Universal Dependencies",
+        "CoNLL-2003"
+      ],
+      "correct": 2,
+      "explanation": "Universal Dependenciesは粗くて言語非依存の17タグセットを提供する。"
+    },
+    {
+      "stage": "check",
+      "question": "バイグラムHMM品詞タガーは何をモデル化するか？",
+      "options": [
+        "P(タグ)のみ",
+        "依存解析",
+        "埋め込みの類似度",
+        "P(タグ | 前のタグ)の遷移とP(単語 | タグ)の出力、ViterbiでデコードP"
+      ],
+      "correct": 3,
+      "explanation": "バイグラムHMMはタグ遷移と単語出力を使う。Viterbiが最高確率のシーケンスを見つける。"
+    },
+    {
+      "stage": "check",
+      "question": "HMMタガーでViterbiアルゴリズムが計算することは何か？",
+      "options": [
+        "タグラティス上の動的プログラミングによる単一の最高確率タグシーケンス",
+        "遷移行列",
+        "各タグの周辺確率",
+        "前向き確率のみ"
+      ],
+      "correct": 0,
+      "explanation": "ViterbiはO(n * |T|^2)の動的プログラミングでargmaxシーケンスを見つける。"
+    },
+    {
+      "stage": "check",
+      "question": "依存解析が生成するものは何か？",
+      "options": [
+        "各単語が一つの主要語と文法関係のラベルを持つ木",
+        "フラットなBIOシーケンス",
+        "NP/VP/PPラベルの句構造木",
+        "共参照チェーン"
+      ],
+      "correct": 0,
+      "explanation": "依存解析は単語ごとの（主要語、関係）エッジを与える。句構造解析はネストされた句構造を与える。"
+    },
+    {
+      "stage": "post",
+      "question": "PTB品詞タグ付けの精度上限が97〜98%程度なのはなぜか？",
+      "options": [
+        "モデルはどのタスクでも98%を超えられない",
+        "Universal Dependenciesは98%で上限を設けている",
+        "人間のアノテーターは約97%の確率でしか一致しないため、約98%以上のモデルはテストデータに過学習している可能性がある",
+        "ハードウェアの制限"
+      ],
+      "correct": 2,
+      "explanation": "アノテーターの不一致が達成可能な精度に上限を設ける。非常に高い数値はしばしば過学習を示す。"
+    },
+    {
+      "stage": "post",
+      "question": "2026年のLLMパイプラインでPOSタグ付けがまだ重要なのはなぜか？",
+      "options": [
+        "LLMはこれなしに実行できないから",
+        "レンマ化、アスペクトベース感情分析、クエリ分解、構造化出力検証、言語横断転用がすべてPOSまたは依存解析を消費するから",
+        "トークン化に必要だから",
+        "Transformerを置き換えるから"
+      ],
+      "correct": 1,
+      "explanation": "POSと依存解析は、LLMが文章を生成する場合でも多くの構造化された下流タスクに供給される。"
+    },
+    {
+      "stage": "post",
+      "question": "ほとんどの本番POSや解析タスクでどのライブラリを使うべきか？",
+      "options": [
+        "scikit-learn",
+        "NumPy",
+        "spaCy（または最高精度や広い言語カバレッジのためにstanza/trankit）",
+        "自分でパーサーを作る"
+      ],
+      "correct": 2,
+      "explanation": "spaCyは高速で本番グレードのPOS＋依存解析器を提供する。stanza/trankitはより広い言語をカバーする。"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "構造化出力と制約付きデコーディング",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5・17（チャットボット）、フェーズ5・19（サブワードトークン化）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

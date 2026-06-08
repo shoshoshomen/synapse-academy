@@ -1,0 +1,10 @@
+{
+  "title": "なぜTransformerなのか — RNNの問題点",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ3（ディープラーニング基礎）、フェーズ5・09（Sequence-to-Sequence）、フェーズ5・10（アテンション機構）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

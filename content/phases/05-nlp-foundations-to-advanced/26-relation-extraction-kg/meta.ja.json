@@ -1,0 +1,10 @@
+{
+  "title": "関係抽出と知識グラフ構築",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン24（共参照解析）、レッスン25（エンティティリンキング）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

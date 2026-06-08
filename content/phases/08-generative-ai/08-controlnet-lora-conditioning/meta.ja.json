@@ -1,0 +1,10 @@
+{
+  "title": "ControlNet、LoRAと条件付け",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ8・07（潜在拡散）、フェーズ10（ゼロからのLLM — LoRAの基礎）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

@@ -1,0 +1,10 @@
+{
+  "title": "音声の基礎 — 波形・サンプリング・フーリエ変換",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ1・06（ベクトルと行列）、フェーズ1・14（確率分布）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

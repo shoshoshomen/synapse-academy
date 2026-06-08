@@ -1,0 +1,10 @@
+{
+  "title": "対話状態追跡",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5・02（タスク指向ダイアログ）、レッスン20（構造化出力）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

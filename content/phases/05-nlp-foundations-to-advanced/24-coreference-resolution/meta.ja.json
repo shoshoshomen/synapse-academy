@@ -1,0 +1,10 @@
+{
+  "title": "共参照解析",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5・06（固有表現認識）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

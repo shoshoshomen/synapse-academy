@@ -1,0 +1,10 @@
+{
+  "title": "条件付きGANとPix2Pix",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ8・03（GAN）、フェーズ4・06（U-Net）、フェーズ3・07（CNN）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

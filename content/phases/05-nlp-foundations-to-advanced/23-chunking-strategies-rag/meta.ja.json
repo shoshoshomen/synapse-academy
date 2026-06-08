@@ -1,0 +1,10 @@
+{
+  "title": "RAGのチャンキング戦略",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン22（埋め込みモデル）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

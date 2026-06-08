@@ -1,0 +1,10 @@
+{
+  "title": "音声認識（ASR）— CTC・RNN-T・Attention",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・02（スペクトログラムとMel）、フェーズ5・08（テキスト向けCNNとRNN）、フェーズ5・10（Attention）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

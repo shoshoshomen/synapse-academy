@@ -1,0 +1,10 @@
+{
+  "title": "StyleGAN",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ8・03（GAN）、フェーズ4・08（正規化）、フェーズ3・07（CNN）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

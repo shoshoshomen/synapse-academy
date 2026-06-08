@@ -1,0 +1,10 @@
+{
+  "title": "Attentionメカニズム — ブレークスルー",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·09（Sequence-to-Sequenceモデル）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

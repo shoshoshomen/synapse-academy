@@ -1,0 +1,10 @@
+{
+  "title": "テキスト向けCNNとRNN",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ3·11（PyTorch入門）、フェーズ5·03（単語埋め込み）、フェーズ4·02（畳み込みをゼロから）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

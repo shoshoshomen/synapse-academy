@@ -1,0 +1,102 @@
+{
+  "lesson": "03-word-embeddings-word2vec",
+  "title": "単語埋め込み — Word2Vecをゼロから",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "分布仮説とは何か？",
+      "options": [
+        "単語はその仲間によって知られる",
+        "単語は文書全体に均等に分布している",
+        "すべての単語は300次元に埋め込める",
+        "頻出単語が最も意味を持つ"
+      ],
+      "correct": 0,
+      "explanation": "Firth（1957）の分布仮説: 似たコンテキストは似た意味を意味する。"
+    },
+    {
+      "stage": "pre",
+      "question": "Word2Vecで語彙全体に対する通常のsoftmaxが実用的でないのはなぜか？",
+      "options": [
+        "10万以上の語彙でのsoftmax計算は各訓練ステップでコストが高すぎる",
+        "softmaxは確率をモデル化できない",
+        "softmaxには勾配がない",
+        "勾配消失を引き起こす"
+      ],
+      "correct": 0,
+      "explanation": "語彙全体のsoftmaxはコストが高すぎる。ネガティブサンプリングがこれをバイナリ分類に再定式化する。"
+    },
+    {
+      "stage": "check",
+      "question": "Skip-gramとCBOWの違いは何か？",
+      "options": [
+        "Skip-gramはバイグラムを使う。CBOWはユニグラムを使う",
+        "Skip-gramは中心語からコンテキスト語を予測する。CBOWはコンテキストから中心語を予測する",
+        "Skip-gramはコンテキスト語から中心語を予測する。CBOWはその逆だ",
+        "Skip-gramは深いネットワークを訓練する。CBOWは浅い"
+      ],
+      "correct": 1,
+      "explanation": "Skip-gram: 中心→コンテキスト。CBOW: コンテキスト→中心。"
+    },
+    {
+      "stage": "check",
+      "question": "ネガティブサンプリングで、ポジティブペア（center、context）の目標は何か？",
+      "options": [
+        "sigmoid(W[center] dot W'[context])を最大化して1に近づける",
+        "直交させる",
+        "内積を最小化する",
+        "ベクトルを非相関化する"
+      ],
+      "correct": 0,
+      "explanation": "ポジティブペアはsigmoidを1に近づけるように訓練し、サンプリングされたネガティブはsigmoidを0に近づけるように訓練する。"
+    },
+    {
+      "stage": "check",
+      "question": "Word2Vecの訓練後、どの重み行列が単語埋め込みになるか？",
+      "options": [
+        "訓練後の別の投影",
+        "入力から隠れ層へのW行列（中心語テーブル）",
+        "両方を掛け合わせたもの",
+        "隠れ層から出力へのW'行列"
+      ],
+      "correct": 1,
+      "explanation": "中心語テーブルWが標準的な埋め込み出力だ。W'はよく捨てられるか平均化される。"
+    },
+    {
+      "stage": "post",
+      "question": "なぜWord2Vecは多義語（例：「bank」）で失敗するのか？",
+      "options": [
+        "ウィンドウサイズが小さすぎる",
+        "稀な単語を無視する",
+        "ネガティブサンプリングが稀な意味を除外する",
+        "単語ごとに1つの静的ベクトルを割り当てるので、「river bank」と「financial bank」が同じベクトルを共有する"
+      ],
+      "correct": 3,
+      "explanation": "静的埋め込みは意味を区別できない。文脈的埋め込み（ELMo/BERT）がこれを修正する。"
+    },
+    {
+      "stage": "post",
+      "question": "2026年においてTransformerよりWord2Vecを選ぶのはどんな場面か？",
+      "options": [
+        "レイテンシ予算が単一行のルックアップに限られるような軽量オンデバイスドメイン固有検索",
+        "文脈的曖昧さの解決が必要な場合",
+        "入力が非常に長い場合",
+        "対話品質が重要な場合"
+      ],
+      "correct": 0,
+      "explanation": "Word2Vecは極小レイテンシ予算、オンデバイス推論、または高速ドメイン固有訓練で勝つ。"
+    },
+    {
+      "stage": "post",
+      "question": "有名なアナロジー「king - man + woman ~ queen」を可能にするのは何か？",
+      "options": [
+        "モデルが王族をフラグビットとしてエンコードしている",
+        "Skip-gramが王族語彙で訓練されている",
+        "埋め込み空間内のベクトル演算が「王室」のような線形方向を捉え、ジェンダー間で転送できる",
+        "コサイン類似度がジェンダーに不変だ"
+      ],
+      "correct": 2,
+      "explanation": "埋め込み空間内の方向が関係的特徴をエンコードするので、加減算で体系的に移動できる。"
+    }
+  ]
+}

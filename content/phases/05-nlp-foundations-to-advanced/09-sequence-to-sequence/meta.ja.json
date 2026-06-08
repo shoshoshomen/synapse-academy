@@ -1,0 +1,10 @@
+{
+  "title": "Sequence-to-Sequenceモデル",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·08（テキスト向けCNNとRNN）、フェーズ3·11（PyTorch入門）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

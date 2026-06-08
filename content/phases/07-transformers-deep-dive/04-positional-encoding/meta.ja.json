@@ -1,0 +1,10 @@
+{
+  "title": "位置エンコーディング — Sinusoidal、RoPE、ALiBi",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・02（Self-Attention）、フェーズ7・03（Multi-Head Attention）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

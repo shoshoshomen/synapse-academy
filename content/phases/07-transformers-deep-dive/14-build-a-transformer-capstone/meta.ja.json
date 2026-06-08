@@ -1,0 +1,16 @@
+{
+  "title": "Transformerをゼロから作る — カプストーン",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・01〜13。スキップ禁止。",
+  "timeEstimate": "約120分",
+  "objectives": [
+    "GPTConfig・MultiHeadAttention・SwiGLUFFN・Block・GPTを実装し、学習ループと接続する",
+    "tinyshakespearaデータセットで文字レベルトークナイザーを実装する",
+    "2,000ステップ以内にバリデーション損失2.0未満を達成する",
+    "学習済みモデルからシェイクスピア風テキストをサンプリングする",
+    "このカプストーンからフルサイズのLMへのスケールアップ経路を概説する"
+  ]
+}

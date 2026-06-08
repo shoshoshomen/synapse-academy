@@ -1,0 +1,10 @@
+{
+  "title": "KVキャッシュ、Flash Attention & 推論最適化",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・02（Self-Attention）、フェーズ7・05（完全なTransformer）、フェーズ7・07（GPT）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

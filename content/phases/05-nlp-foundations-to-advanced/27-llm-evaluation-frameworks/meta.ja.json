@@ -1,0 +1,10 @@
+{
+  "title": "LLM評価 — RAGAS、DeepEval、G-Eval",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン21（NLI）、レッスン22（埋め込みモデル）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

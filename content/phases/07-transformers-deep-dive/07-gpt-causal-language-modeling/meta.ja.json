@@ -1,0 +1,10 @@
+{
+  "title": "GPT — Causal Language Modeling",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・02（Self-Attention）、フェーズ7・05（完全なTransformer）、フェーズ7・06（BERT）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

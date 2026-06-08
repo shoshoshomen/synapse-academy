@@ -1,0 +1,10 @@
+{
+  "title": "Whisper — アーキテクチャとファインチューニング",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・04（ASR）、フェーズ5・10（Attention）、フェーズ7・05（完全なTransformer）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

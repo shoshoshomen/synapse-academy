@@ -1,0 +1,10 @@
+{
+  "title": "BERT — Masked Language Modeling",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・05（完全なTransformer）、フェーズ5・02（テキスト表現）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

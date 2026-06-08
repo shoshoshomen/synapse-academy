@@ -1,0 +1,10 @@
+{
+  "title": "拡散モデル — DDPMをゼロから",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ3・02（逆伝播）、フェーズ8・02（VAE）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

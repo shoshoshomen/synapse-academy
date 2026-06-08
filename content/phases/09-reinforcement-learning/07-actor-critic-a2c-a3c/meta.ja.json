@@ -1,0 +1,10 @@
+{
+  "title": "アクタークリティック——A2CとA3C",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ9・04（TD学習）、フェーズ9・06（REINFORCE）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Bag of Words、TF-IDF、テキスト表現",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·01（テキスト処理）、フェーズ2·02（ゼロからの線形回帰）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

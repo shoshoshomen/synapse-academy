@@ -1,0 +1,13 @@
+{
+  "title": "インスタンスセグメンテーション — Mask R-CNN",
+  "type": "実装 + 学習",
+  "languages": ["Python"],
+  "prerequisites": "フェーズ4 レッスン06（YOLO）、フェーズ4 レッスン07（U-Net）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "Mask R-CNNのアーキテクチャをエンドツーエンドで追う：バックボーン、FPN、RPN、RoIAlign、ボックスヘッド、マスクヘッド",
+    "RoIAlignをゼロから実装し、RoIPoolがもはや使われない理由を説明する",
+    "torchvisionの`maskrcnn_resnet50_fpn_v2`学習済みモデルをプロダクション品質のインスタンスマスクに使い、その出力フォーマットを正しく読む",
+    "ボックスヘッドとマスクヘッドを置き換えてバックボーンを凍結することで、小さなカスタムデータセットでMask R-CNNをファインチューニングする"
+  ]
+}

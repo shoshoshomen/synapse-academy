@@ -1,0 +1,10 @@
+{
+  "title": "テキスト処理 — トークン化、ステミング、レンマ化",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ2·14（ナイーブベイズ）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

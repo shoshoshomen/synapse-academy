@@ -1,0 +1,102 @@
+{
+  "lesson": "02-bag-of-words-tfidf",
+  "title": "Bag of Words、TF-IDF、テキスト表現",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "Bag of Wordsが捨てるものは何か？",
+      "options": [
+        "トークンの順序",
+        "語彙サイズ",
+        "文書長",
+        "句読点"
+      ],
+      "correct": 0,
+      "explanation": "BoWは文書ごとにトークンを数えるが、その並び順を破棄する。"
+    },
+    {
+      "stage": "pre",
+      "question": "なぜTFをIDF係数でスケーリングするのか？",
+      "options": [
+        "すべての文書に現れる単語は識別力が低く、重みを下げるべきだ",
+        "文書長を正規化するため",
+        "訓練を高速化するため",
+        "句読点を除去するため"
+      ],
+      "correct": 0,
+      "explanation": "IDFはどこにでも現れる単語にペナルティを与え、稀な単語を強調する。"
+    },
+    {
+      "stage": "check",
+      "question": "スムージングされたIDF式 log((N+1)/(df+1)) + 1 で、末尾の+1は何を保証するか？",
+      "options": [
+        "計算を高速化する",
+        "すべての文書に現れる単語のIDFが0ではなく1になり、scikit-learnのデフォルトに合わせる",
+        "生のカウントとの互換性",
+        "大きなNに対する数値安定性"
+      ],
+      "correct": 1,
+      "explanation": "+1により頻出単語のIDFが1に保たれ、ゼロアウトされない。scikit-learnのデフォルトと一致する。"
+    },
+    {
+      "stage": "check",
+      "question": "なぜコサイン類似度の前にTF-IDF行をL2正規化するのか？",
+      "options": [
+        "スパースベクトルを密に変換するため",
+        "語彙を圧縮するため",
+        "ゼロエントリを除去するため",
+        "長い文書が類似スコアを支配しないようにするため。正規化はすべての文書を単位超球上に配置する"
+      ],
+      "correct": 3,
+      "explanation": "L2正規化は文書長のバイアスを除去し、コサイン類似度を内積に変換する。"
+    },
+    {
+      "stage": "check",
+      "question": "感情分析で有効にするとリスクのあるTfidfVectorizerの設定はどれか？",
+      "options": [
+        "stop_words='english'",
+        "ngram_range=(1, 2)",
+        "min_df=2",
+        "sublinear_tf=True"
+      ],
+      "correct": 0,
+      "explanation": "英語のストップワードリストは「not」などの否定語を除外するが、これらは感情シグナルを持つ。"
+    },
+    {
+      "stage": "post",
+      "question": "2026年においてTF-IDFがまだ勝つタスクはどれか？",
+      "options": [
+        "オープンエンドの対話",
+        "機械翻訳",
+        "スパム検出、ログ異常フラグ、低レイテンシな狭い分類",
+        "画像キャプション"
+      ],
+      "correct": 2,
+      "explanation": "TF-IDFは単語の存在がシグナルであり、説明可能性や速度が重要な場合に埋め込みを上回る。"
+    },
+    {
+      "stage": "post",
+      "question": "「The movie was not good」と「The movie was excellent」のペアでTF-IDFが失敗するのはなぜか？",
+      "options": [
+        "TF-IDFはストップワードを処理できない",
+        "TF-IDFが機能するにはバイグラムが必要だ",
+        "埋め込みの重複が高すぎる",
+        "両文書はほとんどのトークンを共有しており、Bag of Wordsには否定や語順の概念がない"
+      ],
+      "correct": 3,
+      "explanation": "語順や構文的コンテキストがなければ、BoWは「not」が「good」の感情を反転させることをモデル化できない。"
+    },
+    {
+      "stage": "post",
+      "question": "TF-IDF重み付き埋め込みハイブリッドとは何か？",
+      "options": [
+        "TF-IDF重みを単語ごとの埋め込みに対するプーリング重みとして使い、平均化する",
+        "TF-IDFにPCAを実行してから再埋め込みする",
+        "BoWと密な埋め込みを連結する",
+        "TF-IDF特徴量でBERTを訓練する"
+      ],
+      "correct": 0,
+      "explanation": "ハイブリッドは各トークンの埋め込みをそのTF-IDFスコアで重み付けして平均し、意味的能力と稀な単語強調を融合する。"
+    }
+  ]
+}

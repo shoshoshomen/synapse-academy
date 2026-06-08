@@ -1,0 +1,10 @@
+{
+  "title": "評価指標：FID、CLIPスコア、人間の好み",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ8・01（タクソノミー）、フェーズ2・04（評価指標）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

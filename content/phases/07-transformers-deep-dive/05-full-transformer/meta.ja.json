@@ -1,0 +1,10 @@
+{
+  "title": "完全なTransformer — エンコーダ + デコーダ",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・02（Self-Attention）、フェーズ7・03（Multi-Head Attention）、フェーズ7・04（位置エンコーディング）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

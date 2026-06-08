@@ -1,0 +1,10 @@
+{
+  "title": "エンティティリンキングと曖昧性解消",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5・06（固有表現認識）、レッスン24（共参照解析）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

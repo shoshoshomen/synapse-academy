@@ -1,0 +1,15 @@
+{
+  "title": "リアルタイムビジョン — エッジデプロイ",
+  "type": "学習 + 実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ4 レッスン04（画像分類）、フェーズ10 レッスン11（量子化）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "任意のPyTorchモデルの推論レイテンシ、ピークメモリ、スループットを計測し、FLOPs/パラメータ数/レイテンシのトレードオフを読み取る",
+    "PyTorchのポストトレーニング量子化を使ってビジョンモデルをINT8に量子化し、精度低下が1%未満であることを検証する",
+    "ONNXにエクスポートしてONNX RuntimeまたはTensorRTでコンパイルする。最も一般的な3つのエクスポートの失敗とその修正方法を挙げる",
+    "エッジの制約に対してMobileNetV3、EfficientNet-Lite、ConvNeXt-Tiny、MobileViTのどれを選ぶべきか説明する"
+  ]
+}

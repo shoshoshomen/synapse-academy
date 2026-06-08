@@ -1,0 +1,10 @@
+{
+  "title": "スペクトログラム・Melスケール・音声特徴量",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・01（音声の基礎）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

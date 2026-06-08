@@ -1,0 +1,10 @@
+{
+  "title": "機械翻訳",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·10（Attentionメカニズム）、フェーズ5·04（GloVe、FastText、サブワード）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

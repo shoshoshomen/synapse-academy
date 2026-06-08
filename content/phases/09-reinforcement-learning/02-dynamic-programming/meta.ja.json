@@ -1,0 +1,10 @@
+{
+  "title": "動的計画法——方策反復と価値反復",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ9・01（MDP）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

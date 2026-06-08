@@ -1,0 +1,10 @@
+{
+  "title": "固有表現認識",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·02（BoW + TF-IDF）、フェーズ5·03（単語埋め込み）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

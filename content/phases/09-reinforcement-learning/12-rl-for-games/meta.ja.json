@@ -1,0 +1,10 @@
+{
+  "title": "ゲームのためのRL——AlphaZero、MuZero、そしてLLM推論の時代",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ9・05（DQN）、フェーズ9・08（PPO）、フェーズ9・09（RLHF）、フェーズ9・10（マルチエージェントRL）",
+  "timeEstimate": "約120分",
+  "objectives": []
+}

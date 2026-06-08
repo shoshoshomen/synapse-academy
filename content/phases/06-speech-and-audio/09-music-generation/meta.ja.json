@@ -1,0 +1,10 @@
+{
+  "title": "音楽生成 — MusicGen・Stable Audio・Suno、そしてライセンス大地震",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・02（スペクトログラム）、フェーズ4・10（拡散モデル）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

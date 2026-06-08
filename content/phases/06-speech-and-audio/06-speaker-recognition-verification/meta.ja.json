@@ -1,0 +1,10 @@
+{
+  "title": "話者認識と話者照合",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・02（スペクトログラムとMel）、フェーズ5・22（埋め込みモデル）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

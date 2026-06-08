@@ -1,0 +1,10 @@
+{
+  "title": "音声スプーフィング対策と音声透かし — ASVspoof 5・AudioSeal・WaveVerify",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・06（話者認識）、フェーズ6・08（音声クローニング）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

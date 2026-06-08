@@ -1,0 +1,10 @@
+{
+  "title": "自然言語推論 — テキスト含意",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5・05（感情分析）、フェーズ5・13（質問応答）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

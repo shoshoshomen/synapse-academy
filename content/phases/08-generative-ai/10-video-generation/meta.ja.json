@@ -1,0 +1,10 @@
+{
+  "title": "動画生成",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ8・07（潜在拡散）、フェーズ7・09（ViT）、フェーズ8・06（DDPM）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

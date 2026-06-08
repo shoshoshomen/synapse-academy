@@ -1,0 +1,10 @@
+{
+  "title": "Vision Transformer（ViT）",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・05（完全なTransformer）、フェーズ4・03（CNN）、フェーズ4・14（Vision Transformer入門）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

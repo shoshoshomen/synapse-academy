@@ -1,0 +1,102 @@
+{
+  "lesson": "01-text-processing",
+  "title": "テキスト処理 — トークン化、ステミング、レンマ化",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "言語モデルが訓練前に前処理を必要とするのはなぜか？",
+      "options": [
+        "前処理はGPUの使用効率を向上させる",
+        "モデルは離散的な整数トークンを消費し、生のテキストを直接読めない",
+        "モデルは文字列を直接読める",
+        "前処理は空白のない言語にのみ必要だ"
+      ],
+      "correct": 1,
+      "explanation": "モデルは整数のトークンIDで動作する。前処理は連続する言語を離散的な入力へと橋渡しする。"
+    },
+    {
+      "stage": "pre",
+      "question": "どの前処理処理がルールベースの接尾辞切り落としか？",
+      "options": [
+        "ステミング",
+        "品詞タグ付け",
+        "レンマ化",
+        "トークン化"
+      ],
+      "correct": 0,
+      "explanation": "ステミングはルールに従って接尾辞を切り落とす。高速だが誤りが生じることもある。"
+    },
+    {
+      "stage": "check",
+      "question": "Porterステマーのステップ1aは「ponies」という単語に対して何を返すか？",
+      "options": [
+        "ponies",
+        "ponie",
+        "pony",
+        "poni"
+      ],
+      "correct": 3,
+      "explanation": "「ies」ルールが接尾辞を「i」に置き換え、「poni」が生成される。実際のPorterのステップ1bがこれを修正する。"
+    },
+    {
+      "stage": "check",
+      "question": "レンマ化には通常なぜ品詞タグが必要か？",
+      "options": [
+        "Unicodeの処理",
+        "速度",
+        "「better」（ADJ）と「better」（VERB）のような形を、文法的コンテキストが曖昧さなく決定する",
+        "メモリ使用量を削減するため"
+      ],
+      "correct": 2,
+      "explanation": "レンマは文法的役割に依存する。タグがなければルックアップが曖昧になる。"
+    },
+    {
+      "stage": "check",
+      "question": "NLTKのPenn Treebank品詞タグをWordNetタグに変換する際、「V」で始まるタグは何にマッピングされるか？",
+      "options": [
+        "'n'（名詞）",
+        "'v'（動詞）",
+        "'r'（副詞）",
+        "'a'（形容詞）"
+      ],
+      "correct": 1,
+      "explanation": "Verbで始まるPenn Treebankタグは、WordNetの「v」にマッピングされる。"
+    },
+    {
+      "stage": "post",
+      "question": "NLP前処理における「訓練/推論ミスマッチ」とは何か？",
+      "options": [
+        "訓練とテストでバッチサイズが異なる",
+        "訓練と推論で異なる前処理が適用され、モデルが推論時に見慣れない分布に直面する",
+        "GPUメモリの問題",
+        "ノートブック内でトークナイザーライブラリを混在させる"
+      ],
+      "correct": 1,
+      "explanation": "訓練時と推論時で異なる前処理を使うことが、本番NLPで最も一般的な失敗パターンだ。"
+    },
+    {
+      "stage": "post",
+      "question": "Transformerパイプラインでは、古典的な前処理の代わりにどのツールを使うべきか？",
+      "options": [
+        "NLTK word_tokenize",
+        "モデル専用のトークナイザー（例：tokenizers / transformers経由）",
+        "正規表現トークナイザー",
+        "spaCy en_core_web_sm"
+      ],
+      "correct": 1,
+      "explanation": "Transformerモデルにはペアになったトークナイザーが同梱されている。古典的な前処理はバイパスされる。"
+    },
+    {
+      "stage": "post",
+      "question": "requirementsでNLTKとspaCyのバージョンを固定するのはなぜか？",
+      "options": [
+        "ライセンスの互換性",
+        "トークナイザーとレンマタイザーの挙動がマイナーリリース間で変わり、訓練データの分布が静かに変化するため",
+        "古いバージョンの方がより多くの言語をサポートする",
+        "新しいバージョンの方が遅い"
+      ],
+      "correct": 1,
+      "explanation": "ライブラリのアップグレードによりトークン化の出力が変わり、訓練データの分布からドリフトする可能性がある。"
+    }
+  ]
+}

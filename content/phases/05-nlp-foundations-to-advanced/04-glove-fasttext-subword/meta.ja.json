@@ -1,0 +1,10 @@
+{
+  "title": "GloVe、FastText、サブワード埋め込み",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·03（Word2Vecをゼロから）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

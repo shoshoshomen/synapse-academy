@@ -1,0 +1,15 @@
+{
+  "title": "Self-Attentionをゼロから",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ3（ディープラーニング基礎）、フェーズ5レッスン10（Sequence-to-Sequence）",
+  "timeEstimate": "約90分",
+  "objectives": [
+    "NumPyだけを使い、クエリ・キー・バリューの射影とsoftmax加重和を含む、スケール済みドット積Self-Attentionをゼロから実装する",
+    "ヘッドを分割し、並列アテンションを計算し、結果を連結するMulti-Head Attention層を構築する",
+    "アテンション行列がどのようにトークンの関係を捉えるかをトレースし、sqrt(d_k)によるスケーリングがsoftmax飽和を防ぐ理由を説明する",
+    "双方向アテンションを自己回帰（デコーダスタイル）アテンションに変換するためのCausal Maskを適用する"
+  ]
+}

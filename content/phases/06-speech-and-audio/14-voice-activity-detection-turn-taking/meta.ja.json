@@ -1,0 +1,10 @@
+{
+  "title": "音声区間検出とターンテイキング — Silero・Cobra・フラッシュトリック",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・11（リアルタイム音声処理）、フェーズ6・12（音声アシスタントパイプライン）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

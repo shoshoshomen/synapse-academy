@@ -1,0 +1,10 @@
+{
+  "title": "T5、BART — エンコーダ-デコーダモデル",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・05（完全なTransformer）、フェーズ7・06（BERT）、フェーズ7・07（GPT）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

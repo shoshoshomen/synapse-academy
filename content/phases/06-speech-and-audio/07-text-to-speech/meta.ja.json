@@ -1,0 +1,10 @@
+{
+  "title": "テキスト音声合成（TTS）— TacotronからF5とKokoroまで",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・02（スペクトログラムとMel）、フェーズ5・09（Seq2Seq）、フェーズ7・05（完全なTransformer）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

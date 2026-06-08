@@ -1,0 +1,10 @@
+{
+  "title": "音声分類 — MFCCのk-NNからASTとBEATsまで",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・02（スペクトログラムとMel）、フェーズ3・06（CNN）、フェーズ5・08（テキスト向けCNNとRNN）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

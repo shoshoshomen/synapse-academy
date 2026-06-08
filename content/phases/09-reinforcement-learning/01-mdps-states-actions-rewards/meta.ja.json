@@ -1,0 +1,10 @@
+{
+  "title": "MDP・状態・行動・報酬",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ1・06（確率と分布）、フェーズ2・01（ML分類体系）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

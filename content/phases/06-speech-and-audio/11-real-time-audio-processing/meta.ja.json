@@ -1,0 +1,10 @@
+{
+  "title": "リアルタイム音声処理",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・02（スペクトログラム）、フェーズ6・04（ASR）、フェーズ6・07（TTS）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

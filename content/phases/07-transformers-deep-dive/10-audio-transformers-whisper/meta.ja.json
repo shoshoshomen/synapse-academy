@@ -1,0 +1,10 @@
+{
+  "title": "音声Transformer — Whisperアーキテクチャ",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ7・05（完全なTransformer）、フェーズ7・08（エンコーダ-デコーダ）、フェーズ7・09（ViT）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

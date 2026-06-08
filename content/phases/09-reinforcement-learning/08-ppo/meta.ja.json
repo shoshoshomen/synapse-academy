@@ -1,0 +1,10 @@
+{
+  "title": "近接方策最適化（PPO）",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ9・06（REINFORCE）、フェーズ9・07（アクタークリティック）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

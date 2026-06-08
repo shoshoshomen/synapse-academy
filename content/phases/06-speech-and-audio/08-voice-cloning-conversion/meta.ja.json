@@ -1,0 +1,10 @@
+{
+  "title": "音声クローンと音声変換",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・06（話者認識）、フェーズ6・07（TTS）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

@@ -1,0 +1,10 @@
+{
+  "title": "オートエンコーダと変分オートエンコーダ（VAE）",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ3・02（逆伝播）、フェーズ3・07（CNN）、フェーズ8・01（分類）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

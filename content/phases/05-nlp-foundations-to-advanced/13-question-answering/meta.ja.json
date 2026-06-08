@@ -1,0 +1,10 @@
+{
+  "title": "質問応答システム",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·11（機械翻訳）、フェーズ5·10（Attentionメカニズム）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

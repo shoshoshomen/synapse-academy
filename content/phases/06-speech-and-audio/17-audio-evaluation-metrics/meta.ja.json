@@ -1,0 +1,10 @@
+{
+  "title": "音声評価 — WER・MOS・UTMOS・MMAU・FAD、そしてオープンリーダーボード",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ6・04、06、07、09、10；フェーズ2・09（モデル評価）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

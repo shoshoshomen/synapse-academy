@@ -1,0 +1,10 @@
+{
+  "title": "感情分析",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·02（BoW + TF-IDF）、フェーズ2·14（ナイーブベイズ）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

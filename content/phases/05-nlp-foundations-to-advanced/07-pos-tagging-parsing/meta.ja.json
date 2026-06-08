@@ -1,0 +1,10 @@
+{
+  "title": "品詞タグ付けと構文解析",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·01（テキスト処理）、フェーズ2·14（ナイーブベイズ）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

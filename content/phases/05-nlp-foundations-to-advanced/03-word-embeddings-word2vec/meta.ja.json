@@ -1,0 +1,10 @@
+{
+  "title": "単語埋め込み — Word2Vecをゼロから",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5·02（BoW + TF-IDF）、フェーズ3·03（ゼロからの誤差逆伝播）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

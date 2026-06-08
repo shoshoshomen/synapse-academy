@@ -1,0 +1,10 @@
+{
+  "title": "フローマッチングとRectified Flow",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ8・06（DDPM）、フェーズ1・微積分",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

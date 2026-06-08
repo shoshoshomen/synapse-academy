@@ -1,0 +1,10 @@
+{
+  "title": "埋め込みモデル — 2026年の詳細ガイド",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ5・03（Word2Vec）、フェーズ5・14（情報検索）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

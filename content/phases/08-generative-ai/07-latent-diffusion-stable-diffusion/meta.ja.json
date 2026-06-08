@@ -1,0 +1,10 @@
+{
+  "title": "潜在拡散とStable Diffusion",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ8・02（VAE）、フェーズ8・06（DDPM）、フェーズ7・09（ViT）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}
