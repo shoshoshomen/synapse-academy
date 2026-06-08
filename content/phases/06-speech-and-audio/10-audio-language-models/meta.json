@@ -1,0 +1,10 @@
+{
+  "title": "Audio-Language Models — Qwen2.5-Omni, Audio Flamingo, GPT-4o Audio",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 04 (ASR), Phase 12 · 03 (Vision-Language Models), Phase 7 · 10 (Audio Transformers)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Long-Video Understanding at Million-Token Context",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "needle-in-haystack simulator + agentic-retrieval router)"
+  ],
+  "prerequisites": "Phase 12 · 17 (video temporal tokens)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Compute total visual-token counts for long-form video at varying FPS and pooling.",
+    "Explain the three scaling paths: brute context (Gemini 1.5), ring attention (LWM), token compression (LongVILA / Video-XL).",
+    "Compare raw-context video VLMs vs agentic-retrieval video VLMs (VideoAgent) on accuracy and latency.",
+    "Design a needle-in-a-haystack test for a 30-minute video and measure recall at a specific minute."
+  ]
+}

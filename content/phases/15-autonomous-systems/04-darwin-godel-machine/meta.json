@@ -1,0 +1,11 @@
+{
+  "title": "Darwin Godel Machine — Open-Ended Self-Modifying Agents",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "archive-based self-modification toy)"
+  ],
+  "prerequisites": "Phase 15 · 03 (evolutionary coding), Phase 14 · 01 (the agent loop)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

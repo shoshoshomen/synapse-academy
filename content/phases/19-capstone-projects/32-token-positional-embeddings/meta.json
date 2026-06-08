@@ -1,0 +1,16 @@
+{
+  "title": "Token and Positional Embeddings",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 04 lessons, Phase 07 transformer lessons, Lessons 30 and 31 of this phase",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a token-embedding lookup table that maps vocabulary ids to dense vectors.",
+    "Build a learned positional-embedding lookup table indexed by position.",
+    "Build a fixed sinusoidal positional embedding indexed by position with no parameters.",
+    "Compose token and positional embeddings into a single input for a transformer block.",
+    "Contrast learned and sinusoidal embeddings on length generalization and parameter count."
+  ]
+}

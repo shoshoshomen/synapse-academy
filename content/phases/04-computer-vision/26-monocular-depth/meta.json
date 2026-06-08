@@ -1,0 +1,15 @@
+{
+  "title": "Monocular Depth & Geometry Estimation",
+  "type": "Build + Use",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 14 (ViT), Phase 4 Lesson 17 (Self-Supervised Vision), Phase 4 Lesson 07 (U-Net)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Distinguish relative and metric depth and state which one each production model (MiDaS, Marigold, Depth Anything V3, ZoeDepth) solves",
+    "Use Depth Anything V3 (DINOv2 backbone) to predict depth for arbitrary single images with no calibration",
+    "Explain why monocular depth works at all from a single image (perspective cues, texture gradients, learned priors) and what it cannot recover (absolute scale, occluded geometry)",
+    "Lift 2D detections to 3D points using a depth map and pinhole camera intrinsics"
+  ]
+}

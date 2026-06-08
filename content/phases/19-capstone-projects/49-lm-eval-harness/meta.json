@@ -1,0 +1,15 @@
+{
+  "title": "Language Model Evaluation Harness",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 42 to 45",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Define a task as a JSONL file with `prompt`, `targets`, `metric`, and optional `extras` per example.",
+    "Implement five metrics: exact match, rouge-l F1, executable check, multiple choice, and substring contains.",
+    "Build a runner that batches examples per task and dispatches to a swappable model adapter.",
+    "Emit a leaderboard JSON with per-task scores, latency, and an overall average that is reproducible."
+  ]
+}

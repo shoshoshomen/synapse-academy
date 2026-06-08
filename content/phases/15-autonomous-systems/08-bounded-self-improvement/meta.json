@@ -1,0 +1,11 @@
+{
+  "title": "Bounded Self-Improvement Designs",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "bounded-loop with invariant check)"
+  ],
+  "prerequisites": "Phase 15 · 07 (RSI), Phase 15 · 04 (DGM)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

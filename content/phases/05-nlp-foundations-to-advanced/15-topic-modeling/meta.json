@@ -1,0 +1,10 @@
+{
+  "title": "Topic Modeling — LDA and BERTopic",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 02 (BoW + TF-IDF), Phase 5 · 03 (Word2Vec)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

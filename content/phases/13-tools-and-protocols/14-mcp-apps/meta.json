@@ -1,0 +1,17 @@
+{
+  "title": "MCP Apps — Interactive UI Resources via `ui://`",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "UI resource emitter)",
+    "HTML (sample app)"
+  ],
+  "prerequisites": "Phase 13 · 07 (MCP server), Phase 13 · 10 (resources)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Return a `ui://` resource from a tool call and set the correct MIME and metadata.",
+    "Declare a tool's associated UI with `_meta.ui.resourceUri`, `_meta.ui.csp`, and `_meta.ui.permissions`.",
+    "Implement the iframe sandbox postMessage JSON-RPC for UI-to-host communication.",
+    "Apply CSP and permissions-policy defaults that defend against UI-originated attacks."
+  ]
+}

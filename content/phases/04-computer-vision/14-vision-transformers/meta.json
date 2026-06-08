@@ -1,0 +1,15 @@
+{
+  "title": "Vision Transformers (ViT)",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 Lesson 02 (Self-Attention), Phase 4 Lesson 04 (Image Classification)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Implement patch embedding, learned positional embedding, class token, and transformer encoder blocks from scratch to build a minimal ViT",
+    "Explain why ViT was thought to need massive pretraining data until DeiT and MAE proved otherwise",
+    "Compare ViT, Swin, and ConvNeXt on their architectural priors (none, local window attention, conv backbone)",
+    "Fine-tune a pretrained ViT on a small dataset using `timm` and the standard linear-probe / fine-tune recipe"
+  ]
+}

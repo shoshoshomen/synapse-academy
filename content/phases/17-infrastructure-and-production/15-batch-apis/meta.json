@@ -1,0 +1,16 @@
+{
+  "title": "Batch APIs — the 50% Discount as Industry Standard",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy batch-vs-sync cost simulator)"
+  ],
+  "prerequisites": "Phase 17 · 14 (Prompt & Semantic Caching)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Name the three provider batch APIs (OpenAI, Anthropic, Google) and the common 50% discount + 24h turnaround guarantees.",
+    "Compute the cost for stacking batch + cached-input on an overnight classification workload and compare to synchronous-uncached baseline.",
+    "Triage a workload into interactive / semi-interactive / batch and justify the lane.",
+    "Name the two traps: partial interactivity (user expects faster than 24h) and output-schema drift (batch file format differs per provider)."
+  ]
+}

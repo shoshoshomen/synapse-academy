@@ -1,0 +1,16 @@
+{
+  "title": "A/B Testing LLM Features — GrowthBook, Statsig, and the Vibes Problem",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy sequential test simulator)"
+  ],
+  "prerequisites": "Phase 17 · 13 (Observability), Phase 17 · 20 (Progressive Deployment)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Distinguish evals (\"can the model do the job\") from A/B tests (\"do users care\").",
+    "Enumerate three testable axes (prompt, model, parameters) and pick the metric for each.",
+    "Explain CUPED, sequential testing, and Benjamini-Hochberg multiple-comparison corrections.",
+    "Pick Statsig or GrowthBook based on warehouse-SQL posture and corporate acquisition stance."
+  ]
+}

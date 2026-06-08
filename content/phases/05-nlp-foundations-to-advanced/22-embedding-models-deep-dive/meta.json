@@ -1,0 +1,10 @@
+{
+  "title": "Embedding Models — The 2026 Deep Dive",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 03 (Word2Vec), Phase 5 · 14 (Information Retrieval)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

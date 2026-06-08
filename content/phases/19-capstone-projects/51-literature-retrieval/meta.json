@@ -1,0 +1,16 @@
+{
+  "title": "Literature Retrieval",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track A lessons 20-29",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Model a small paper record with the fields the loop will read downstream.",
+    "Build a BM25 index over abstracts with stdlib data structures only.",
+    "Walk a citation graph to surface papers the lexical search missed.",
+    "Deduplicate hits across the lexical and graph passes by stable paper id.",
+    "Wrap two mock external APIs behind a single client so the upstream call site stays the same when real endpoints land."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Hyperparameter Tuning",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 2, Lesson 11 (Ensemble Methods)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement grid search, random search, and Bayesian optimization from scratch and compare their sample efficiency",
+    "Explain why random search outperforms grid search when most hyperparameters have low effective dimensionality",
+    "Build a Bayesian optimization loop using a surrogate model and acquisition function to guide the search",
+    "Design a hyperparameter tuning strategy that avoids overfitting the validation set through proper cross-validation"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Multimodal RAG and Cross-Modal Retrieval",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "cross-modal retriever with fusion + grounded generator)"
+  ],
+  "prerequisites": "Phase 12 · 23 (ColPali), Phase 11 (RAG basics)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Design cross-modal retrieval: text → image, image → text, audio → video, etc.",
+    "Compare three fusion strategies: score fusion, attention-based fusion, MoE fusion.",
+    "Explain generation grounding: what \"cite your sources\" looks like when sources are a mix of modalities.",
+    "Name the three canonical multimodal RAG surveys of 2025 and their sub-problem taxonomy."
+  ]
+}

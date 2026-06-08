@@ -1,0 +1,16 @@
+{
+  "title": "Document and Diagram Understanding",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "layout-aware document parser skeleton)"
+  ],
+  "prerequisites": "Phase 12 · 05 (LLaVA), Phase 5 (NLP)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Explain the three eras of document AI: OCR pipeline, OCR-free, VLM-native.",
+    "Describe LayoutLMv3's three input streams: text, layout (bbox), image patches, with unified masking.",
+    "Compare Donut (OCR-free, image → markup), Nougat (scientific paper → LaTeX), DocLLM (layout-aware generative), PaliGemma 2 (VLM-native).",
+    "Pick a document model for a new task (invoices, scientific papers, handwritten forms, Chinese receipts)."
+  ]
+}

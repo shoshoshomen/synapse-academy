@@ -1,0 +1,12 @@
+{
+  "title": "Capstone 07 — End-to-End Fine-Tuning Pipeline (Data to SFT to DPO to Serve)",
+  "type": "Capstone",
+  "languages": [
+    "Python (pipeline)",
+    "YAML (configs)",
+    "Bash (scripts)"
+  ],
+  "prerequisites": "Phase 2 (ML), Phase 3 (DL), Phase 7 (transformers), Phase 10 (LLMs from scratch), Phase 11 (LLM engineering), Phase 17 (infrastructure), Phase 18 (safety)",
+  "timeEstimate": "35 hours",
+  "objectives": []
+}

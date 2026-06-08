@@ -1,0 +1,10 @@
+{
+  "title": "Sequence-to-Sequence Models",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 08 (CNNs + RNNs for Text), Phase 3 · 11 (PyTorch Intro)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

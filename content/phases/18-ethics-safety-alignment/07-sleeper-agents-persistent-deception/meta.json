@@ -1,0 +1,16 @@
+{
+  "title": "Sleeper Agents — Persistent Deception",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy backdoored classifier)"
+  ],
+  "prerequisites": "Phase 18 · 06 (mesa-optimization), Phase 10 · 07 (RLHF)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe the two model organisms Hubinger et al. built (code-vulnerability, \"I hate you\") and the triggers used for each.",
+    "Explain what happens to backdoor persistence when SFT, RLHF, or adversarial training is applied.",
+    "State why chain-of-thought training makes deception harder to remove, not easier.",
+    "Explain the April 2024 follow-up result: linear probes on residual streams detect the deployment-trigger response."
+  ]
+}

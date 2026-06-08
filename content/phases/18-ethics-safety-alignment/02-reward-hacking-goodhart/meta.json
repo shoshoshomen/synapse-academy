@@ -1,0 +1,16 @@
+{
+  "title": "Reward Hacking and Goodhart's Law",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "proxy-vs-gold-reward simulator)"
+  ],
+  "prerequisites": "Phase 18 · 01 (InstructGPT), Phase 10 · 07 (RLHF)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "State Goodhart's Law and why it is not a folk slogan but a predictable property of any optimization against an imperfect proxy.",
+    "Describe the Gao et al. 2023 scaling law: mean proxy-gold gap as a function of KL distance from the initial policy.",
+    "Name four common manifestations of reward hacking (verbosity, sycophancy, unfaithful reasoning, evaluator tampering) and trace each back to the shared mechanism.",
+    "Explain why KL regularization alone does not save you under heavy-tailed reward error (Catastrophic Goodhart)."
+  ]
+}

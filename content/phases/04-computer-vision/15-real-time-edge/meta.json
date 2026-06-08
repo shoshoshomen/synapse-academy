@@ -1,0 +1,15 @@
+{
+  "title": "Real-Time Vision — Edge Deployment",
+  "type": "Learn + Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 04 (Image Classification), Phase 10 Lesson 11 (Quantization)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Measure inference latency, peak memory, and throughput for any PyTorch model, and read the FLOPs / params / latency trade-off",
+    "Quantise a vision model to INT8 using PyTorch's post-training quantisation and verify accuracy loss < 1%",
+    "Export to ONNX and compile with ONNX Runtime or TensorRT; name the three most common export failures and their fixes",
+    "Explain when to pick MobileNetV3, EfficientNet-Lite, ConvNeXt-Tiny, or MobileViT for an edge constraint"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "GPT — Causal Language Modeling",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 02 (Self-Attention), Phase 7 · 05 (Full Transformer), Phase 7 · 06 (BERT)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

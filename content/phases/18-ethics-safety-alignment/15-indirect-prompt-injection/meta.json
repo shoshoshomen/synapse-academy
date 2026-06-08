@@ -1,0 +1,16 @@
+{
+  "title": "Indirect Prompt Injection — Production Attack Surface",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "IPI attack + defense harness)"
+  ],
+  "prerequisites": "Phase 18 · 12 (PAIR), Phase 14 (agent engineering)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Define indirect prompt injection and describe three common delivery vectors.",
+    "Explain why user-input filters miss IPI entirely.",
+    "Describe the \"information flow control\" framing as the 2026 defense paradigm.",
+    "State the finding of Nasr et al. (October 2025) on adaptive attack success against published IPI defenses."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Jupyter Notebooks",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 0, Lesson 01",
+  "timeEstimate": "~30 minutes",
+  "objectives": [
+    "Install and launch JupyterLab, Jupyter Notebook, or VS Code with the Jupyter extension",
+    "Use magic commands (`%timeit`, `%%time`, `%matplotlib inline`) to benchmark and visualize inline",
+    "Distinguish when to use notebooks vs scripts and apply the \"explore in notebooks, ship in scripts\" workflow",
+    "Identify and avoid common notebook traps: out-of-order execution, hidden state, and memory leaks"
+  ]
+}

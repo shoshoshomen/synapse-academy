@@ -1,0 +1,10 @@
+{
+  "title": "Model Context Protocol (MCP)",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 · 09 (Function Calling), Phase 11 · 03 (Structured Outputs)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

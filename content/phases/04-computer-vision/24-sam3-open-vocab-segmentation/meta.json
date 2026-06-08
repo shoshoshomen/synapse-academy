@@ -1,0 +1,15 @@
+{
+  "title": "SAM 3 & Open-Vocabulary Segmentation",
+  "type": "Use + Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 07 (U-Net), Phase 4 Lesson 08 (Mask R-CNN), Phase 4 Lesson 18 (CLIP)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Distinguish SAM (visual prompts only), Grounded SAM / SAM 2 (detector + SAM), and SAM 3 (native text prompts via Promptable Concept Segmentation)",
+    "Explain the SAM 3 architecture: shared backbone + image detector + memory-based video tracker + presence head + decoupled detector-tracker design",
+    "Use Hugging Face `transformers` SAM 3 integration for text-prompted detection, segmentation, and video tracking",
+    "Pick between SAM 3, Grounded SAM 2, YOLO-World, and SAM-MI based on latency, concept complexity, and deployment target"
+  ]
+}

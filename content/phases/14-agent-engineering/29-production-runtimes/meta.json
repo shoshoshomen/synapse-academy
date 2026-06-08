@@ -1,0 +1,15 @@
+{
+  "title": "Production Runtimes: Queue, Event, Cron",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 13 (LangGraph), Phase 14 · 22 (Voice)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the six production runtime shapes and match each to a framework / product pattern.",
+    "Explain why durable execution (LangGraph) matters for long-horizon tasks.",
+    "Describe the event-driven runtime and when Claude Managed Agents fits.",
+    "Explain the observability-as-load-bearing claim for multi-step agents."
+  ]
+}

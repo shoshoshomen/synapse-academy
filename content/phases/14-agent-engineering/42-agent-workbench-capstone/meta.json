@@ -1,0 +1,15 @@
+{
+  "title": "Capstone: Ship a Reusable Agent Workbench Pack",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phases 14 · 31 to 14 · 41",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Package the seven workbench surfaces into one drop-in directory.",
+    "Pin the schemas, scripts, and templates so a new repo gets a known-good baseline.",
+    "Add a single installer script that lays down the pack idempotently.",
+    "Decide what stays in the pack and what stays out, defending the cut for each."
+  ]
+}

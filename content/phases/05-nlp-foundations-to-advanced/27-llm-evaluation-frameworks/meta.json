@@ -1,0 +1,10 @@
+{
+  "title": "LLM Evaluation — RAGAS, DeepEval, G-Eval",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 13 (Question Answering), Phase 5 · 14 (Information Retrieval)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

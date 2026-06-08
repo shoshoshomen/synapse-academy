@@ -1,0 +1,17 @@
+{
+  "title": "Capstone Lesson 39: Instruction Tuning by Supervised Fine-Tuning",
+  "type": "Build",
+  "languages": [
+    "Python (torch",
+    "numpy)"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37 (NLP LLM track: tokenizer, embedding table, attention block, transformer body, pre-training loop, checkpointing, generation, perplexity)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Format paired instruction-response data into a single causal sequence with explicit boundary tokens.",
+    "Build a collate function that masks instruction tokens so cross-entropy only counts response tokens.",
+    "Train a tiny transformer body under the SFT objective and watch the eval metric move.",
+    "Implement greedy and temperature-sampled generation that respects the response-start boundary.",
+    "Compute held-out exact-match on generated completions."
+  ]
+}

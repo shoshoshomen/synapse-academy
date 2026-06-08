@@ -1,0 +1,15 @@
+{
+  "title": "Complex Numbers for AI",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 01-04 (linear algebra, calculus)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Perform complex arithmetic (add, multiply, divide, conjugate) in both rectangular and polar form",
+    "Apply Euler's formula to convert between complex exponentials and trigonometric functions",
+    "Implement the Discrete Fourier Transform using complex roots of unity",
+    "Explain how complex rotations underlie RoPE and sinusoidal positional encodings in transformers"
+  ]
+}

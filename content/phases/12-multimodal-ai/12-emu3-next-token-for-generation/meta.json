@@ -1,0 +1,16 @@
+{
+  "title": "Emu3: Next-Token Prediction for Image and Video Generation",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "3D video tokenizer math + autoregressive sampler skeleton)"
+  ],
+  "prerequisites": "Phase 12 · 11 (Chameleon)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Explain why Emu3's single-loss next-token objective works despite the long-held assumption that diffusion is required for image quality.",
+    "Describe the 3D video tokenizer: what a spatiotemporal VQ codebook looks like, why patches span time.",
+    "Compare Emu3 vs Stable Diffusion XL on (training compute, inference cost, quality ceiling).",
+    "Name the three roles the same Emu3 model plays: Emu3-Gen (image gen), Emu3-Chat (perception), Emu3-Stage2 (video gen)."
+  ]
+}

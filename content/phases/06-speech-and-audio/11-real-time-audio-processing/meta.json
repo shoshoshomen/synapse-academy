@@ -1,0 +1,10 @@
+{
+  "title": "Real-Time Audio Processing",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 02 (Spectrograms), Phase 6 · 04 (ASR), Phase 6 · 07 (TTS)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

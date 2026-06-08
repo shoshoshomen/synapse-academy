@@ -1,0 +1,15 @@
+{
+  "title": "Verification Gates",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 33 (Rules), Phase 14 · 36 (Scope), Phase 14 · 37 (Feedback)",
+  "timeEstimate": "~55 minutes",
+  "objectives": [
+    "Define a verification gate as a deterministic function over workbench artifacts.",
+    "Combine rule report, scope report, feedback records, and diff into a single verdict.",
+    "Emit a `verification_report.json` the reviewer agent and CI can both read.",
+    "Refuse to advance a task on any block-severity failure, without exception."
+  ]
+}

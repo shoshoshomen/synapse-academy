@@ -1,0 +1,16 @@
+{
+  "title": "Janus-Pro: Decoupled Encoders for Unified Multimodal Models",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "dual-encoder routing + shared-body signal)"
+  ],
+  "prerequisites": "Phase 12 · 13 (Transfusion), Phase 12 · 14 (Show-o)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Explain why a single shared encoder compromises either understanding or generation quality.",
+    "Describe Janus-Pro's routing: SigLIP features on the input side for understanding, VQ tokens on both input and output for generation.",
+    "Trace the data-mix scaling that makes Janus-Pro succeed where Janus did not.",
+    "Compare decoupled (Janus-Pro), coupled-continuous (Transfusion), and coupled-discrete (Show-o) architectures."
+  ]
+}

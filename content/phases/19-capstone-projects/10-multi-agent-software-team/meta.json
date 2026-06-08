@@ -1,0 +1,11 @@
+{
+  "title": "Capstone 10 — Multi-Agent Software Engineering Team",
+  "type": "Capstone",
+  "languages": [
+    "Python / TypeScript (agents)",
+    "Shell (worktree scripts)"
+  ],
+  "prerequisites": "Phase 11 (LLM engineering), Phase 13 (tools), Phase 14 (agents), Phase 15 (autonomous), Phase 16 (multi-agent), Phase 17 (infrastructure)",
+  "timeEstimate": "40 hours",
+  "objectives": []
+}

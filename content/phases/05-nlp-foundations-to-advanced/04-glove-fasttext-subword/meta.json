@@ -1,0 +1,10 @@
+{
+  "title": "GloVe, FastText, and Subword Embeddings",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 03 (Word2Vec from Scratch)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

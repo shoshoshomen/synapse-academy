@@ -1,0 +1,11 @@
+{
+  "title": "Capstone 12 — Video Understanding Pipeline (Scene, QA, Search)",
+  "type": "Capstone",
+  "languages": [
+    "Python (pipeline)",
+    "TypeScript (UI)"
+  ],
+  "prerequisites": "Phase 4 (CV), Phase 6 (speech), Phase 7 (transformers), Phase 11 (LLM engineering), Phase 12 (multimodal), Phase 17 (infrastructure)",
+  "timeEstimate": "30 hours",
+  "objectives": []
+}

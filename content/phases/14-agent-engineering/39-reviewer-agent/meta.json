@@ -1,0 +1,15 @@
+{
+  "title": "Reviewer Agent: Separate Builder from Marker",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 38 (Verification Gate)",
+  "timeEstimate": "~55 minutes",
+  "objectives": [
+    "State why the same agent cannot reliably review its own work.",
+    "Build a reviewer agent loop that consumes builder artifacts and emits a structured review report.",
+    "Author a reviewer rubric that grades specific dimensions, not vibes.",
+    "Wire the reviewer into the workbench so the human review step starts from a real artifact."
+  ]
+}

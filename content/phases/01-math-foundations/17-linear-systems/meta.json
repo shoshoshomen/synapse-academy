@@ -1,0 +1,15 @@
+{
+  "title": "Linear Systems",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 01 (Linear Algebra Intuition), 02 (Vectors & Matrices), 03 (Matrix Transformations)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Solve Ax = b using Gaussian elimination with partial pivoting and back substitution",
+    "Factor matrices with LU, QR, and Cholesky decompositions and explain when each is appropriate",
+    "Derive the normal equations for least squares and connect them to linear and ridge regression",
+    "Diagnose ill-conditioned systems using the condition number and apply regularization to stabilize them"
+  ]
+}

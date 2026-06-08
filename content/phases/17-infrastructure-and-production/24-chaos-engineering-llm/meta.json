@@ -1,0 +1,16 @@
+{
+  "title": "Chaos Engineering for LLM Production",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy chaos experiment runner)"
+  ],
+  "prerequisites": "Phase 17 · 23 (SRE for AI), Phase 17 · 13 (Observability)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the five chaos engineering prerequisites (SLI/SLO, observability, rollback, runbooks, on-call) and explain why skipping any breaks the practice.",
+    "Diagram the four planes (control, target, safety, observability) and the feedback loop into SLO.",
+    "Enumerate five LLM-specific experiments (memory overload, network fail, provider outage, malformed prompt, KV eviction storm).",
+    "Pick a tool — Harness, LitmusChaos, Chaos Mesh — given stack."
+  ]
+}

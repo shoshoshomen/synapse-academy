@@ -1,0 +1,15 @@
+{
+  "title": "Instance Segmentation — Mask R-CNN",
+  "type": "Build + Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 06 (YOLO), Phase 4 Lesson 07 (U-Net)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Trace the Mask R-CNN architecture end-to-end: backbone, FPN, RPN, RoIAlign, box head, mask head",
+    "Implement RoIAlign from scratch and explain why RoIPool is no longer used",
+    "Use the torchvision `maskrcnn_resnet50_fpn_v2` pretrained model for production-quality instance masks and read its output format correctly",
+    "Fine-tune Mask R-CNN on a small custom dataset by replacing the box and mask heads and keeping the backbone frozen"
+  ]
+}

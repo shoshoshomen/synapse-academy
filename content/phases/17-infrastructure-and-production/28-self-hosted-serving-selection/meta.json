@@ -1,0 +1,16 @@
+{
+  "title": "Self-Hosted Serving Selection — llama.cpp, Ollama, TGI, vLLM, SGLang",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "engine-decision tree walker)"
+  ],
+  "prerequisites": "All Phase 17 lessons covering engines (04, 06, 07, 09, 18)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Pick an engine given hardware (CPU / AMD / NVIDIA Hopper / Blackwell), scale (1 user / 100 / 10,000), and workload (general chat / agent / long-context).",
+    "Name the 2026 TGI maintenance-mode status (December 11, 2025) and why it biases new projects toward vLLM or SGLang.",
+    "Describe the dev/staging/prod pipeline using the same GGUF or HF weights throughout.",
+    "Explain why \"CPU only\" forces llama.cpp and \"AMD\" excludes TRT-LLM."
+  ]
+}

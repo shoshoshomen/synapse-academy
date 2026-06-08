@@ -1,0 +1,16 @@
+{
+  "title": "CLIP and Contrastive Vision-Language Pretraining",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "InfoNCE + sigmoid loss implementations)"
+  ],
+  "prerequisites": "Phase 12 · 01 (ViT patches), Phase 7 (Transformers)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Derive InfoNCE loss from mutual information and implement a numerically-stable vectorized version.",
+    "Explain why sigmoid pairwise loss (SigLIP) scales to batch 32768+ without the all-gather overhead softmax demands.",
+    "Run zero-shot ImageNet classification by constructing text templates (`a photo of a {class}`) and taking argmax over cosine similarity.",
+    "Name the four levers CLIP / SigLIP pretraining gives you: batch size, temperature, prompt template, data quality."
+  ]
+}

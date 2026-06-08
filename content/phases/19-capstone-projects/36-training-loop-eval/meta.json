@@ -1,0 +1,17 @@
+{
+  "title": "Training Loop and Evaluation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30 to 35",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a training loop that computes cross entropy loss with the correct input and target alignment for next token prediction.",
+    "Configure AdamW with weight decay applied to weight tensors and not to LayerNorm or bias tensors.",
+    "Implement a learning rate schedule with linear warmup and cosine decay, and read the resulting LR over time.",
+    "Evaluate on a held out split with `evaluate_model` so the eval loss is comparable across runs.",
+    "Generate a qualitative sample every K steps with `generate_and_print_sample` to catch divergence before the loss curve does.",
+    "Persist per step loss to JSONL so you can reload, plot, and ship the training log as a deliverable."
+  ]
+}

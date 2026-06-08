@@ -1,0 +1,15 @@
+{
+  "title": "Eval-Driven Agent Development",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "All of Phase 14.",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the three evaluation layers — static benchmarks, custom offline, online production — and what each is for.",
+    "Explain the evaluator-optimizer tight loop.",
+    "Describe the 2026 best practice: evals live next to code, run in CI, gate PRs.",
+    "Connect every Phase 14 lesson to the eval case it generates."
+  ]
+}

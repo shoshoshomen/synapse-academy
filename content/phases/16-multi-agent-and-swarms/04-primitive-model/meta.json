@@ -1,0 +1,10 @@
+{
+  "title": "The Multi-Agent Primitive Model",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 (Agent Engineering), Phase 16 · 01 (Why Multi-Agent)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

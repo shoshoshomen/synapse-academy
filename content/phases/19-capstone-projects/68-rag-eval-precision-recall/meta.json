@@ -1,0 +1,15 @@
+{
+  "title": "RAG Evaluation: Precision, Recall, MRR, nDCG, Faithfulness, Answer Relevance",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 lessons 06 (RAG), 10 (evaluation); Phase 19 Track B foundations (lessons 20-29); Phase 19 lessons 64, 65, 66, 67",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Compute four retrieval metrics from gold qrels: precision@k, recall@k, MRR (mean reciprocal rank), and nDCG@k.",
+    "Compute two answer-grade metrics: faithfulness (every claim grounded in retrieved context) and answer relevance (the answer addresses the question).",
+    "Build a fixture qrels file (queries, gold doc ids, gold answer text) that the eval reads end to end.",
+    "Read the metric values to diagnose where a pipeline is failing: retrieval, ranking, generation, or grounding."
+  ]
+}

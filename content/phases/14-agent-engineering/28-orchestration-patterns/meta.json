@@ -1,0 +1,15 @@
+{
+  "title": "Orchestration Patterns: Supervisor, Swarm, Hierarchical",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 12 (Workflow Patterns), Phase 14 · 25 (Multi-Agent Debate)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the four recurring orchestration patterns and when each fits.",
+    "Describe the 2026 LangChain recommendation: tool-call-based supervision vs supervisor libraries.",
+    "Explain Anthropic's \"build the right system\" rule and how it gates topology choice.",
+    "Implement all four in stdlib against a common scripted LLM."
+  ]
+}

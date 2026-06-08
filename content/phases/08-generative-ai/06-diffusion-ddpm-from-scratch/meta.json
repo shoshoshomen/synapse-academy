@@ -1,0 +1,10 @@
+{
+  "title": "Diffusion Models — DDPM from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 3 · 02 (Backprop), Phase 8 · 02 (VAE)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

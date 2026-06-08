@@ -1,0 +1,10 @@
+{
+  "title": "3D Generation",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 (Vision), Phase 8 · 07 (Latent Diffusion)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

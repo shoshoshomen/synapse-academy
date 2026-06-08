@@ -1,0 +1,15 @@
+{
+  "title": "Hybrid Memory: Vector + Graph + KV (Mem0)",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 07 (MemGPT), Phase 14 · 08 (Letta Blocks)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain why a single store (vector only, graph only, KV only) is insufficient for agent memory.",
+    "Name Mem0's three parallel stores and what each one optimizes for.",
+    "Describe Mem0's fusion scoring — relevance, importance, recency — and why it is a weighted sum, not a hierarchy.",
+    "Implement a toy three-store memory in stdlib with an `add()` that writes to all three and a `search()` that fuses results."
+  ]
+}

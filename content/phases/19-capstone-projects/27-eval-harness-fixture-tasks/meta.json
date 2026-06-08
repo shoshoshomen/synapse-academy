@@ -1,0 +1,16 @@
+{
+  "title": "Capstone Lesson 27: Eval Harness with Fixture Tasks",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 19 · 25 (verification gates), Phase 19 · 26 (sandbox runner), Phase 14 · 30 (eval-driven agent development), Phase 14 · 19 (SWE-bench and GAIA benchmarks)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Define a fixture task as a triple of goal, setup, and verifier.",
+    "Score multiple sample runs per task and compute pass@1 and pass@k.",
+    "Aggregate latency and cost into mean and 95th-percentile metrics.",
+    "Wire deterministic verifiers (file diff, exit code, regex match) into reusable functions.",
+    "Emit a structured JSON report a regression-tracking script can ingest."
+  ]
+}

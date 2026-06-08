@@ -1,0 +1,15 @@
+{
+  "title": "Time Series Fundamentals",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 2, Lessons 01-09",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Decompose a time series into trend, seasonality, and residual components and test for stationarity",
+    "Implement lag features and rolling statistics to convert a time series into a supervised learning problem",
+    "Build a walk-forward validation framework that prevents future data from leaking into training",
+    "Explain why random train/test splits are invalid for time series and demonstrate the performance gap versus proper temporal splits"
+  ]
+}

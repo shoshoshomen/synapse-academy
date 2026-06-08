@@ -1,0 +1,15 @@
+{
+  "title": "Vision Encoder Patches",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37 (Track B foundations)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Tokenize an image into a fixed-length sequence of patch embeddings.",
+    "Implement a `Conv2d`-based patch projection that matches the math of unfold-then-linear.",
+    "Build a deterministic 2D sinusoidal position embedding so token order encodes spatial position.",
+    "Verify patch count, embedding shape, and `Conv2d`/unfold equivalence on a synthetic fixture."
+  ]
+}

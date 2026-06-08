@@ -1,0 +1,15 @@
+{
+  "title": "Stable Diffusion — Architecture & Fine-Tuning",
+  "type": "Learn + Use",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 10 (Diffusion), Phase 7 Lesson 02 (Self-Attention)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Trace the five pieces of a Stable Diffusion pipeline: VAE, text encoder, U-Net, scheduler, safety checker — and what each of them actually does",
+    "Explain latent diffusion and why training in a 4x64x64 latent space (instead of a 3x512x512 image) reduces compute by 48x without quality loss",
+    "Use `diffusers` to generate images, run image-to-image, inpainting, and ControlNet-guided generation",
+    "Fine-tune Stable Diffusion with LoRA on a small custom dataset and load the LoRA adapter at inference"
+  ]
+}

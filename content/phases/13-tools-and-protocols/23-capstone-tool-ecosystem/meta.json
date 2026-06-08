@@ -1,0 +1,17 @@
+{
+  "title": "Capstone — Build a Complete Tool Ecosystem",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "end-to-end ecosystem harness)"
+  ],
+  "prerequisites": "Phase 13 · 01 through 21",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Compose an MCP server exposing tools, resources, prompts, and a task with a `ui://` app.",
+    "Front the server with an OAuth 2.1 gateway that enforces RBAC and pinned hashes.",
+    "Write a multi-server client that traces with OTel GenAI attributes end-to-end.",
+    "Delegate part of a workload to an A2A sub-agent; verify opacity is preserved.",
+    "Package the whole stack with AGENTS.md + SKILL.md so other agents can drive it."
+  ]
+}

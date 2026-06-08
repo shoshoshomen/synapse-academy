@@ -1,0 +1,16 @@
+{
+  "title": "Matrix Transformations",
+  "type": "Build",
+  "languages": [
+    "Python",
+    "Julia"
+  ],
+  "prerequisites": "Phase 1, Lessons 01-02 (Linear Algebra Intuition, Vectors & Matrices Operations)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Construct rotation, scaling, shearing, and reflection matrices and apply them to 2D and 3D points",
+    "Compose multiple transformations by matrix multiplication and verify that order matters",
+    "Compute eigenvalues and eigenvectors of 2x2 matrices from the characteristic equation",
+    "Explain why eigenvalues determine PCA directions, RNN stability, and spectral clustering behavior"
+  ]
+}

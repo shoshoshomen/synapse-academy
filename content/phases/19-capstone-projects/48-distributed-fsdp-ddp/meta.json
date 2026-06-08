@@ -1,0 +1,15 @@
+{
+  "title": "Distributed Data Parallel and FSDP from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 42 to 45",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Bring up a process group across N ranks with the `gloo` backend, no special hardware.",
+    "Implement a minimal DDP wrapper that broadcasts parameters at construction and all-reduces gradients after backward.",
+    "Prove that the all-reduce of per-rank gradients matches a single-process gradient on the concatenated input.",
+    "Sketch FSDP parameter sharding: each rank holds a slice, the full tensor is gathered for the forward pass and dropped after."
+  ]
+}

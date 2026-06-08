@@ -1,0 +1,11 @@
+{
+  "title": "Claude Code as an Autonomous Agent: Permission Modes and Auto Mode",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "two-stage classifier simulator)"
+  ],
+  "prerequisites": "Phase 15 · 01 (Long-horizon agents), Phase 15 · 09 (Coding-agent landscape)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

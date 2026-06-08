@@ -1,0 +1,16 @@
+{
+  "title": "AI Control — Safety Despite Subversion",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "safety-vs-usefulness frontier on code-backdoor task)"
+  ],
+  "prerequisites": "Phase 18 · 07 (sleeper agents), Phase 18 · 08 (scheming), Phase 18 · 09 (alignment faking)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Define the AI Control threat model: untrusted strong model U, trusted weaker model T, trusted human budget H.",
+    "Describe the Trusted Editing protocol and why it Pareto-dominates Untrusted Monitoring on the ICML 2024 code-backdoor task.",
+    "Explain the difference between alignment (U is trustworthy) and control (U is not trustworthy and we are safe anyway).",
+    "State the three limits of control: humans do not scale, trusted weak models eventually lag, control does not produce trustworthy strong models."
+  ]
+}

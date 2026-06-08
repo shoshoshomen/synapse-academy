@@ -1,0 +1,15 @@
+{
+  "title": "Async and Hogwild! Inference",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 10 · 12 (inference optimization), Phase 10 · 15 (speculative decoding)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe the three common parallel-LLM topologies (voting, sub-task, Hogwild!) and name which problems each one targets.",
+    "State the core Hogwild! setup: multiple workers, one shared KV cache, emergent coordination via self-prompting.",
+    "Compute the wall-time speedup of Hogwild! as a function of worker count `N`, task-level parallelism `p`, and coordination overhead `c`.",
+    "Implement a two-worker Hogwild! simulator on a toy problem and observe the emergent task division."
+  ]
+}

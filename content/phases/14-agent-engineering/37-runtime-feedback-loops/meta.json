@@ -1,0 +1,15 @@
+{
+  "title": "Runtime Feedback Loops",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 32 (Minimal Workbench), Phase 14 · 35 (Init Script)",
+  "timeEstimate": "~50 minutes",
+  "objectives": [
+    "Distinguish runtime feedback from observability telemetry.",
+    "Build a feedback runner that wraps shell commands and persists structured records.",
+    "Truncate large outputs deterministically so the loop stays within token budget.",
+    "Refuse to advance the loop when feedback is missing."
+  ]
+}

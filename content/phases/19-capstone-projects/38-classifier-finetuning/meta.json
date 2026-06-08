@@ -1,0 +1,17 @@
+{
+  "title": "Capstone Lesson 38: Classifier Fine-Tuning by Head Swap",
+  "type": "Build",
+  "languages": [
+    "Python (torch",
+    "numpy)"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37 (NLP LLM track: tokenizer, embedding table, attention block, transformer body, pre-training loop, checkpointing, generation, perplexity)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Replace a language-model head with a classification head without re-initialising the body.",
+    "Implement two training regimes: frozen body (head-only) and full fine-tuning, sharing one training loop.",
+    "Build a tokeniser-aware data pipeline that pads, masks padding, and pools attention output.",
+    "Compute precision, recall, F1, and a confusion matrix from raw logits.",
+    "Reason about the trade-off between parameter count, training time, and head-room."
+  ]
+}

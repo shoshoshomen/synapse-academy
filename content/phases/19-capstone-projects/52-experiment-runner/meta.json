@@ -1,0 +1,16 @@
+{
+  "title": "Experiment Runner",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track A lessons 20-29",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Encode an experiment as a typed spec the runner can serialise to a subprocess.",
+    "Launch a subprocess with a hard wall clock timeout and a soft memory cap, and surface both as terminal conditions.",
+    "Capture stdout, stderr, and the structured metrics blob into a single result record.",
+    "Build an ablation table that sweeps one configuration knob at a time over a fixed base spec.",
+    "Keep every result deterministic given a seed so the evaluator sees the same numbers across runs."
+  ]
+}

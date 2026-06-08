@@ -1,0 +1,15 @@
+{
+  "title": "HDF5 Tokenized Corpus",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Stream documents into a resizable HDF5 integer dataset with deterministic chunking.",
+    "Shard the write across multiple HDF5 files so failure is bounded and parallelism is possible.",
+    "Read tokens back through HDF5's page-cache-backed chunked layout so the dataloader copies into batch buffers only at batch time.",
+    "Implement a sliding-window dataloader that emits fixed-length training sequences with explicit packing rules."
+  ]
+}

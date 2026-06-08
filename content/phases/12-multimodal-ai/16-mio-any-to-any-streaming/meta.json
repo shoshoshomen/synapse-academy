@@ -1,0 +1,16 @@
+{
+  "title": "MIO and Any-to-Any Streaming Multimodal Models",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "four-modality token allocator + streaming decode loop)"
+  ],
+  "prerequisites": "Phase 12 · 11 (Chameleon), Phase 6 (Speech and Audio)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Design a shared vocabulary that hosts text, image, speech, and music tokens without collisions.",
+    "Compare SEED-Tokenizer (images) and SpeechTokenizer residual-VQ (speech) on compression + reconstruction trade-offs.",
+    "Explain the four-stage curriculum that builds up any-to-any generation.",
+    "Name the three open any-to-any recipes and their main trade-offs: MIO, AnyGPT, Unified-IO 2."
+  ]
+}

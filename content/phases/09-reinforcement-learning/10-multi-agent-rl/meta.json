@@ -1,0 +1,10 @@
+{
+  "title": "Multi-Agent RL",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 9 · 04 (Q-learning), Phase 9 · 06 (REINFORCE), Phase 9 · 07 (Actor-Critic)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

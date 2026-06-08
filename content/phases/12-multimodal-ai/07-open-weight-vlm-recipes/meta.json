@@ -1,0 +1,16 @@
+{
+  "title": "Open-Weight VLM Recipes: What Actually Matters",
+  "type": "Learn + lab",
+  "languages": [
+    "Python (stdlib",
+    "ablation table parser + recipe picker)"
+  ],
+  "prerequisites": "Phase 12 · 05 (LLaVA baseline)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Name the five-axis VLM design space: image encoder, connector, LLM, data mix, resolution schedule.",
+    "Read an MM1 / Idefics2 / Cambrian-1 ablation table and predict which knob moves a given benchmark.",
+    "Pick a recipe (encoder, connector, data, resolution) for a new VLM given a compute budget and task mix.",
+    "Explain why detailed human captions beat GPT-4V distillation at the same token count."
+  ]
+}

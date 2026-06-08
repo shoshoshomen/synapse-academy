@@ -1,0 +1,15 @@
+{
+  "title": "Self-Attention from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 3 (Deep Learning Core), Phase 5 Lesson 10 (Sequence-to-Sequence)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement scaled dot-product self-attention from scratch using only NumPy, including query/key/value projections and the softmax-weighted sum",
+    "Build a multi-head attention layer that splits heads, computes parallel attention, and concatenates results",
+    "Trace how the attention matrix captures token relationships and explain why scaling by sqrt(d_k) prevents softmax saturation",
+    "Apply causal masking to convert bidirectional attention into autoregressive (decoder-style) attention"
+  ]
+}

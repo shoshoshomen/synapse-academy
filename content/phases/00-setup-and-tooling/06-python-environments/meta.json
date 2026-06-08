@@ -1,0 +1,15 @@
+{
+  "title": "Python Environments",
+  "type": "Build",
+  "languages": [
+    "Shell"
+  ],
+  "prerequisites": "Phase 0, Lesson 01",
+  "timeEstimate": "~30 minutes",
+  "objectives": [
+    "Create isolated virtual environments using `uv`, `venv`, or `conda`",
+    "Write a `pyproject.toml` with optional dependency groups and generate lockfiles for reproducibility",
+    "Diagnose and fix common pitfalls: global installs, pip/conda mixing, CUDA version mismatches",
+    "Implement a per-phase environment strategy for projects with conflicting dependencies"
+  ]
+}

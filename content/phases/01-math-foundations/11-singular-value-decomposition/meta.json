@@ -1,0 +1,16 @@
+{
+  "title": "Singular Value Decomposition",
+  "type": "Build",
+  "languages": [
+    "Python",
+    "Julia"
+  ],
+  "prerequisites": "Phase 1, Lessons 01 (Linear Algebra Intuition), 02 (Vectors & Matrices Operations), 03 (Matrix Transformations)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Implement SVD via power iteration and explain the geometric meaning of U, Sigma, and V^T",
+    "Apply truncated SVD for image compression and measure the compression ratio vs reconstruction error",
+    "Compute the Moore-Penrose pseudoinverse via SVD to solve overdetermined least-squares systems",
+    "Connect SVD to PCA, recommendation systems (latent factors), and Latent Semantic Analysis in NLP"
+  ]
+}

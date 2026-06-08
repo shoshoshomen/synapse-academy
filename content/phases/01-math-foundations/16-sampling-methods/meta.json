@@ -1,0 +1,15 @@
+{
+  "title": "Sampling Methods",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 06-07 (Probability, Bayes' Theorem)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Implement inverse CDF, rejection, and importance sampling from scratch using only uniform random numbers",
+    "Build temperature, top-k, and top-p (nucleus) sampling for language model token generation",
+    "Explain the reparameterization trick and why it enables backpropagation through sampling in VAEs",
+    "Run Metropolis-Hastings MCMC to sample from an unnormalized target distribution"
+  ]
+}

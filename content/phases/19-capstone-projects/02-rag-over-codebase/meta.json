@@ -1,0 +1,11 @@
+{
+  "title": "Capstone 02 — RAG over Codebase (Cross-Repo Semantic Search)",
+  "type": "Capstone",
+  "languages": [
+    "Python (ingestion)",
+    "TypeScript (API + UI)"
+  ],
+  "prerequisites": "Phase 5 (NLP foundations), Phase 7 (transformers), Phase 11 (LLM engineering), Phase 13 (tools), Phase 17 (infrastructure)",
+  "timeEstimate": "30 hours",
+  "objectives": []
+}

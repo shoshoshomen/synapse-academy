@@ -1,0 +1,15 @@
+{
+  "title": "Dimensionality Reduction",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 01 (Linear Algebra Intuition), 02 (Vectors, Matrices & Operations), 03 (Eigenvalues & Eigenvectors), 06 (Probability & Distributions)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement PCA from scratch: center data, compute the covariance matrix, eigendecompose, and project",
+    "Use explained variance ratio and the elbow method to choose the number of principal components",
+    "Compare PCA, t-SNE, and UMAP for visualizing MNIST digits in 2D and explain their tradeoffs",
+    "Apply kernel PCA with an RBF kernel to separate nonlinear data structures that standard PCA cannot handle"
+  ]
+}

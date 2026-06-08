@@ -1,0 +1,16 @@
+{
+  "title": "LLaVA-OneVision: Single-Image, Multi-Image, Video in One Model",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "token budget solver + curriculum planner)"
+  ],
+  "prerequisites": "Phase 12 · 05 (LLaVA), Phase 12 · 06 (any-resolution)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Design a visual-token budget that holds constant across single-image, multi-image, and video inputs.",
+    "Order a training curriculum that transfers skills from single-image to video without catastrophic forgetting.",
+    "Explain why a single model beats specialists at the same parameter count when curriculum is done right.",
+    "Name the three emergent capabilities reported by LLaVA-OneVision: multi-camera reasoning, set-of-mark prompting, iPhone-screenshot agent."
+  ]
+}

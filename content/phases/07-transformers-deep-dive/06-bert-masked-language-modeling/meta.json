@@ -1,0 +1,10 @@
+{
+  "title": "BERT — Masked Language Modeling",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 05 (Full Transformer), Phase 5 · 02 (Text Representation)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

@@ -1,0 +1,11 @@
+{
+  "title": "The Autonomous Coding Agent Landscape (2026)",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "CodeAct vs JSON tool-call comparison)"
+  ],
+  "prerequisites": "Phase 14 · 07 (Tool use), Phase 15 · 01 (Long-horizon agents)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

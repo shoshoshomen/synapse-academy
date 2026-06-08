@@ -1,0 +1,15 @@
+{
+  "title": "Instruction Tuning (SFT)",
+  "type": "Build",
+  "languages": [
+    "Python (with numpy)"
+  ],
+  "prerequisites": "Phase 10, Lesson 04 (Pre-Training a Mini GPT)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement supervised fine-tuning (SFT) that converts a base language model into an instruction-following assistant",
+    "Format training data using chat templates with system, user, and assistant roles, and mask loss on non-assistant tokens",
+    "Explain why SFT is necessary: base models continue text rather than answer questions",
+    "Evaluate SFT quality by comparing base model vs fine-tuned model responses on a held-out instruction set"
+  ]
+}

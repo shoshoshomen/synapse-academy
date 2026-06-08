@@ -1,0 +1,15 @@
+{
+  "title": "Gradient Accumulation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 42 to 45",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Derive the effective batch identity: `effective_batch = micro_batch * accum_steps`.",
+    "Implement loss-per-micro-batch scaling so the accumulated gradient matches a single full-batch backward.",
+    "Skip optimizer synchronization until the last micro-batch (sync-on-last-step).",
+    "Read a throughput against effective batch curve and explain the diminishing return."
+  ]
+}

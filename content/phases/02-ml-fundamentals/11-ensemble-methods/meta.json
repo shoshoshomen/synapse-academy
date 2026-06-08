@@ -1,0 +1,15 @@
+{
+  "title": "Ensemble Methods",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 2, Lesson 10 (Bias-Variance Tradeoff)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Implement AdaBoost and gradient boosting from scratch and explain how boosting sequentially reduces bias",
+    "Build a bagging ensemble and demonstrate how averaging decorrelated models reduces variance without increasing bias",
+    "Compare bagging, boosting, and stacking in terms of what error component each method targets",
+    "Evaluate ensemble diversity and explain why majority voting accuracy improves with more independent weak learners"
+  ]
+}

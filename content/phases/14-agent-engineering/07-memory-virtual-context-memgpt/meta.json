@@ -1,0 +1,15 @@
+{
+  "title": "Memory: Virtual Context and MemGPT",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 06 (Tool Use)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain the OS analogy MemGPT builds on: main context = RAM, external context = disk, memory tools = page in/out.",
+    "Implement the two-tier MemGPT pattern in stdlib with a main-context buffer, an external searchable store, and page in/out tools.",
+    "Describe how the agent issues \"interrupts\" to query or modify external memory and how the result is spliced back into the next prompt.",
+    "Identify the MemGPT design choices that carry into Letta (Lesson 08) and Mem0 (Lesson 09)."
+  ]
+}

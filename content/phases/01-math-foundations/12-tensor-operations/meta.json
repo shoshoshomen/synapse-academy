@@ -1,0 +1,15 @@
+{
+  "title": "Tensor Operations",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 01 (Linear Algebra Intuition), 02 (Vectors, Matrices & Operations)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement a tensor class with shape, strides, reshape, transpose, and element-wise operations from scratch",
+    "Apply broadcasting rules to operate on tensors of different shapes without copying data",
+    "Write einsum expressions for dot products, matrix multiplications, outer products, and batched operations",
+    "Trace the exact tensor shapes through every step of multi-head attention"
+  ]
+}

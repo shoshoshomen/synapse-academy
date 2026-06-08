@@ -1,0 +1,11 @@
+{
+  "title": "Human-in-the-Loop: Propose-Then-Commit",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "propose-then-commit state machine with idempotency)"
+  ],
+  "prerequisites": "Phase 15 · 12 (Durable execution), Phase 15 · 14 (Tripwires)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

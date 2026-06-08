@@ -1,0 +1,15 @@
+{
+  "title": "Statistics for Machine Learning",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 06 (Probability and Distributions), 07 (Bayes' Theorem)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Compute descriptive statistics, Pearson/Spearman correlation, and covariance matrices from scratch",
+    "Perform hypothesis tests (t-test, chi-squared) and interpret p-values and confidence intervals correctly",
+    "Use bootstrap resampling to construct confidence intervals for any metric without distributional assumptions",
+    "Distinguish statistical significance from practical significance using effect size measures"
+  ]
+}

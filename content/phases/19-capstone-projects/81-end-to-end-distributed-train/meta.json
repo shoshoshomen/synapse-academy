@@ -1,0 +1,15 @@
+{
+  "title": "End-to-End Distributed Training",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track C lessons 42-49",
+  "timeEstimate": "~90 min",
+  "objectives": [
+    "Compose DDP (lesson 77) plus ZeRO-1 (lesson 78) plus sharded checkpoints (lesson 80) into one training loop.",
+    "Train a 2-layer transformer language model on a small synthetic corpus for 20 steps across 4 simulated ranks.",
+    "Print a per-step loss table, a per-rank memory profile, and a checkpoint manifest that resumes byte-equal on the same world size.",
+    "Defend the composition: each piece is independently testable in earlier lessons and this lesson proves they compose."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Leaderboard Aggregation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track B foundations, lessons 70, 71, 73",
+  "timeEstimate": "~90 min",
+  "objectives": []
+}

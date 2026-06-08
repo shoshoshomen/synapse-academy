@@ -1,0 +1,16 @@
+{
+  "title": "Inference Platform Economics — Fireworks, Together, Baseten, Modal, Replicate, Anyscale",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy per-call economics comparator)"
+  ],
+  "prerequisites": "Phase 17 · 01 (Managed LLM Platforms), Phase 17 · 04 (vLLM Serving Internals)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the three market segments (custom silicon, GPU platforms, API-first) and map each vendor to a segment.",
+    "Explain why the \"per-token\" API pricing model compresses toward the serving engine's cost curve, not the hardware's.",
+    "Compute effective cost per request across at least three vendors and explain when per-minute (Baseten, Modal) beats per-token.",
+    "Identify which platform is the right default for a given workload (serverless bursty, steady high-throughput, fine-tuned variants, multimodal)."
+  ]
+}

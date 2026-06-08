@@ -1,0 +1,12 @@
+{
+  "title": "Capstone 15 — Constitutional Safety Harness + Red-Team Range",
+  "type": "Capstone",
+  "languages": [
+    "Python (safety pipeline",
+    "red team)",
+    "YAML (policy configs)"
+  ],
+  "prerequisites": "Phase 10 (LLMs from scratch), Phase 11 (LLM engineering), Phase 13 (tools), Phase 14 (agents), Phase 18 (ethics, safety, alignment)",
+  "timeEstimate": "25 hours",
+  "objectives": []
+}

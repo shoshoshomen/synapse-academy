@@ -1,0 +1,16 @@
+{
+  "title": "Async Tasks (SEP-1686) — Call-Now, Fetch-Later for Long-Running Work",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "async task state machine)"
+  ],
+  "prerequisites": "Phase 13 · 07 (MCP server), Phase 13 · 09 (transports)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Identify when to promote a tool from synchronous to task-augmented (>30 seconds of server-side work).",
+    "Walk the task lifecycle: `working` → `input_required` → `completed` / `failed` / `cancelled`.",
+    "Persist task state so crashes do not lose in-flight work.",
+    "Poll `tasks/status` and fetch `tasks/result` correctly."
+  ]
+}

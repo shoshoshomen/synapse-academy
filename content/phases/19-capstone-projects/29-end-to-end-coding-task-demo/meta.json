@@ -1,0 +1,16 @@
+{
+  "title": "Capstone Lesson 29: End-to-End Coding Agent on the Harness",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 19 · 25 (verification gates), Phase 19 · 26 (sandbox), Phase 19 · 27 (eval harness), Phase 19 · 28 (observability), Phase 14 · 38 (verification gates), Phase 14 · 41 (workbench for real repos), Phase 14 · 42 (agent workbench capstone)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Compose the gate chain, sandbox, eval harness, and span builder into a single agent loop.",
+    "Implement a deterministic policy that uses read_file, run_tests, and write_file to fix a fixture bug.",
+    "Enforce a global step budget plus an observation token budget across an end-to-end run.",
+    "Emit complete OTel GenAI traces and Prometheus metrics for the full run.",
+    "Verify the agent solves the fixture in fewer than 12 steps with zero gate trips on legal tools."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Few-Shot, Chain-of-Thought, Tree-of-Thought",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Lesson 11.01 (Prompt Engineering)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Implement few-shot prompting by selecting and formatting example demonstrations that maximize task accuracy",
+    "Apply chain-of-thought (CoT) reasoning to improve accuracy on multi-step problems like math word problems",
+    "Build a tree-of-thought prompt that explores multiple reasoning paths and selects the best one",
+    "Measure the accuracy improvement from zero-shot vs few-shot vs CoT on a standard benchmark"
+  ]
+}

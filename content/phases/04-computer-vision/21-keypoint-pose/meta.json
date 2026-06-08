@@ -1,0 +1,15 @@
+{
+  "title": "Keypoint Detection & Pose Estimation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 06 (Detection), Phase 4 Lesson 07 (U-Net)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Distinguish top-down and bottom-up pose estimation and state when each is used",
+    "Regress heatmaps for K keypoints with a Gaussian-per-keypoint target and extract keypoint coordinates at inference",
+    "Explain Part Affinity Fields (PAFs) and how bottom-up pipelines associate keypoints into instances",
+    "Use MediaPipe Pose or MMPose for production keypoint estimation and understand their output format"
+  ]
+}

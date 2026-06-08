@@ -1,0 +1,15 @@
+{
+  "title": "Docker for AI",
+  "type": "Build",
+  "languages": [
+    "Docker"
+  ],
+  "prerequisites": "Phase 0, Lessons 01 and 03",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Build a GPU-enabled Docker image with CUDA, PyTorch, and AI libraries from a Dockerfile",
+    "Mount host directories as volumes to persist models, datasets, and code across container rebuilds",
+    "Configure the NVIDIA Container Toolkit to expose GPUs inside containers",
+    "Orchestrate multi-service AI applications (inference server + vector database) using Docker Compose"
+  ]
+}

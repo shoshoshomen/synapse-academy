@@ -1,0 +1,16 @@
+{
+  "title": "Inference Metrics — TTFT, TPOT, ITL, Goodput, P99",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy percentile calculator and goodput reporter)"
+  ],
+  "prerequisites": "Phase 17 · 04 (vLLM Serving Internals)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Define TTFT, TPOT, ITL, E2E, throughput, and goodput precisely and name the component each one measures.",
+    "Explain why mean is the wrong statistic for LLM serving and how to read P50/P90/P99.",
+    "Construct an SLO multi-constraint (e.g. TTFT<500 ms AND TPOT<15 ms AND E2E<2 s) and compute goodput against it.",
+    "Name two benchmark tools that disagree on TPOT for the same run and explain why."
+  ]
+}

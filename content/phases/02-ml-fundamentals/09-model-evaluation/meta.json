@@ -1,0 +1,15 @@
+{
+  "title": "Model Evaluation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 (Probability & Distributions, Statistics for ML), Phase 2 Lessons 1-8",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement K-fold and stratified K-fold cross-validation from scratch and explain why stratification matters for imbalanced data",
+    "Compute precision, recall, F1, AUC-ROC, and regression metrics (MSE, RMSE, MAE, R-squared) from scratch",
+    "Interpret learning curves to diagnose whether a model suffers from high bias or high variance",
+    "Identify common evaluation mistakes including data leakage, wrong metric selection, and test set contamination"
+  ]
+}

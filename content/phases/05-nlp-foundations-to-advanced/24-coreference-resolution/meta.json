@@ -1,0 +1,10 @@
+{
+  "title": "Coreference Resolution",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 06 (NER), Phase 5 · 07 (POS & Parsing)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

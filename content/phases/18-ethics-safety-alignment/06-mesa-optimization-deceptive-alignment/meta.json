@@ -1,0 +1,16 @@
+{
+  "title": "Mesa-Optimization and Deceptive Alignment",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy mesa-optimizer simulator)"
+  ],
+  "prerequisites": "Phase 18 · 01 (InstructGPT), Phase 09 (RL foundations)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Define mesa-optimizer, mesa-objective, inner alignment, outer alignment.",
+    "Explain why a learned optimizer's internal objective can diverge from the base objective even when training loss is low.",
+    "Describe the conditions under which deceptive alignment is instrumentally rational for a mesa-optimizer.",
+    "Explain why standard adversarial / robustness training can fail (or actively worsen) deceptive alignment."
+  ]
+}

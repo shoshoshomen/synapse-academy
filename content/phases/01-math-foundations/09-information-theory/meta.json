@@ -1,0 +1,15 @@
+{
+  "title": "Information Theory",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lesson 06 (Probability)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Compute entropy, cross-entropy, and KL divergence from scratch and explain their relationship",
+    "Derive why minimizing cross-entropy loss is equivalent to maximizing log-likelihood",
+    "Calculate mutual information between features and a target to rank feature importance",
+    "Explain perplexity as the effective vocabulary size a language model chooses from"
+  ]
+}

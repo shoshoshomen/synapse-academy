@@ -1,0 +1,16 @@
+{
+  "title": "EchoLeak and the Emergence of CVEs for AI",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "scope-violation trace reconstruction)"
+  ],
+  "prerequisites": "Phase 18 · 15 (indirect prompt injection)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Describe the EchoLeak attack chain from email delivery to data exfiltration.",
+    "Define \"LLM Scope Violation\" and explain why it is a new vulnerability class.",
+    "Describe the three related CVEs (EchoLeak, CamoLeak, Copilot RCE) and what each reveals about the production attack surface.",
+    "State the state of AI vulnerability disclosure: responsible disclosure works, but initial severity assessments have been low."
+  ]
+}

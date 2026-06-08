@@ -1,0 +1,17 @@
+{
+  "title": "MCP Auth in Production — Enrollment, JWKS Refresh, Audience-Pinned Tokens",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 13 · 16 (OAuth 2.1 state machine), Phase 13 · 17 (gateways)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Discover an authorization server through RFC 8414 metadata and verify the contract.",
+    "Implement RFC 7591 dynamic client registration so MCP clients enroll without admin intervention.",
+    "Cache and refresh JWKS keys on a schedule so signature verification survives key roll-over.",
+    "Pin tokens to a single MCP resource using RFC 8707 resource indicators and refuse confused-deputy reuse.",
+    "Separate the three roles cleanly — authorization server, resource server, client — so each enforces only the checks that belong to it.",
+    "Read an IdP capability matrix and refuse to deploy when the IdP cannot satisfy MCP's auth profile."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Large Corpus Downloader",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Stream remote shards with `urllib` and decompress with `zstandard` without buffering the whole file in memory.",
+    "Resume partial downloads by issuing HTTP `Range` requests against a verified byte offset.",
+    "Build a MinHash signature per document and bucket it with LSH so near-duplicates collide.",
+    "Emit a shard manifest with content hash, byte size, document count, and dedup verdict."
+  ]
+}

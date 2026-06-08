@@ -1,0 +1,11 @@
+{
+  "title": "Capstone 06 — DevOps Troubleshooting Agent for Kubernetes",
+  "type": "Capstone",
+  "languages": [
+    "Python (agent)",
+    "TypeScript (Slack integration)"
+  ],
+  "prerequisites": "Phase 11 (LLM engineering), Phase 13 (tools and MCP), Phase 14 (agents), Phase 15 (autonomous), Phase 17 (infrastructure), Phase 18 (safety)",
+  "timeEstimate": "30 hours",
+  "objectives": []
+}

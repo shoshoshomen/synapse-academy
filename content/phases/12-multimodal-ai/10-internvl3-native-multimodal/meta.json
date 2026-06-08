@@ -1,0 +1,16 @@
+{
+  "title": "InternVL3: Native Multimodal Pretraining",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "training-corpus mixer)"
+  ],
+  "prerequisites": "Phase 12 · 05, Phase 12 · 07 (recipes)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Explain why post-hoc VLM training accumulates alignment debt, citing the three measurable symptoms (catastrophic forgetting, answer drift, visual-text inconsistency).",
+    "Describe InternVL3's native pretraining corpus mix and why the ratio of text : interleaved : caption matters.",
+    "Compare V2PE (variable visual position encoding) to Qwen2-VL's M-RoPE.",
+    "Name the Visual Resolution Router (ViR) and Decoupled Vision-Language (DvD) deployment optimizations."
+  ]
+}

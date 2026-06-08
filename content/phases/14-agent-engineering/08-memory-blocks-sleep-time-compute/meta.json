@@ -1,0 +1,15 @@
+{
+  "title": "Memory Blocks and Sleep-Time Compute (Letta)",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 07 (MemGPT)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Name the three memory tiers Letta uses (core, recall, archival) and the role of each.",
+    "Explain the memory-block pattern: Human block, Persona block, and user-defined blocks as first-class typed objects.",
+    "Describe what sleep-time compute is, why it sits off the critical path, and why it can run a stronger model than the primary agent.",
+    "Implement a scripted two-agent loop where a primary agent serves responses and a sleep-time agent consolidates blocks between turns."
+  ]
+}

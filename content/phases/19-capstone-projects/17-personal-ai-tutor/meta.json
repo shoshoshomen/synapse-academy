@@ -1,0 +1,13 @@
+{
+  "title": "Capstone 17 — Personal AI Tutor (Adaptive, Multimodal, with Memory)",
+  "type": "Capstone",
+  "languages": [
+    "Python (backend",
+    "learner model)",
+    "TypeScript (web app)",
+    "SQL (curriculum graph via Postgres + Neo4j)"
+  ],
+  "prerequisites": "Phase 5 (NLP), Phase 6 (speech), Phase 11 (LLM engineering), Phase 12 (multimodal), Phase 14 (agents), Phase 17 (infrastructure), Phase 18 (safety)",
+  "timeEstimate": "30 hours",
+  "objectives": []
+}

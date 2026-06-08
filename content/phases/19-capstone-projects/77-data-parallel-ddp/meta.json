@@ -1,0 +1,15 @@
+{
+  "title": "Data Parallel DDP From Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track C lessons 42-49",
+  "timeEstimate": "~90 min",
+  "objectives": [
+    "Wire a `DistributedDataParallel`-shaped wrapper that broadcasts initial parameters and allreduces gradients after backward.",
+    "Spawn N CPU ranks with `torch.multiprocessing.spawn` over the gloo backend with file-based rendezvous.",
+    "Prove gradient-sync correctness by training the same model on the same data sequentially and showing per-step parameter equivalence.",
+    "Defend the use of buckets (gradient fusion) and overlap (comm during backward) as the two changes that turn a working DDP into a production DDP."
+  ]
+}

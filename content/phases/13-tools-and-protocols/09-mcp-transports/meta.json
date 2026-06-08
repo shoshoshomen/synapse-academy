@@ -1,0 +1,16 @@
+{
+  "title": "MCP Transports — stdio vs Streamable HTTP vs SSE Migration",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "Streamable HTTP endpoint skeleton)"
+  ],
+  "prerequisites": "Phase 13 · 07, 08 (MCP server and client)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Pick between stdio and Streamable HTTP based on deployment shape (local vs remote, single-process vs fleet).",
+    "Implement the Streamable HTTP single-endpoint pattern: POST for requests, GET for session stream.",
+    "Enforce `Origin` validation and session-id semantics to defeat DNS-rebinding.",
+    "Migrate a legacy HTTP+SSE server to Streamable HTTP before the mid-2026 removal deadlines."
+  ]
+}

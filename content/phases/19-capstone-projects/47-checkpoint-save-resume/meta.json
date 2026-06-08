@@ -1,0 +1,15 @@
+{
+  "title": "Checkpoint Save and Resume",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 42 to 45",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Capture the full training state into a single payload that can be reloaded into a fresh process.",
+    "Implement atomic save with write-to-temp then rename so a crash never leaves a half-written file.",
+    "Restore the RNG state for Python, NumPy, and PyTorch so the post-resume loss matches the uninterrupted baseline.",
+    "Build a sharded checkpoint layout for models that no longer fit in a single file, with hash-verified shards and a JSON index."
+  ]
+}

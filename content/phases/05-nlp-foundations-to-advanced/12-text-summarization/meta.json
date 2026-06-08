@@ -1,0 +1,10 @@
+{
+  "title": "Text Summarization",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 02 (BoW + TF-IDF), Phase 5 · 11 (Machine Translation)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

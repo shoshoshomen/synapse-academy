@@ -1,0 +1,10 @@
+{
+  "title": "Inpainting, Outpainting & Image Editing",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 8 · 07 (Latent Diffusion), Phase 8 · 08 (ControlNet & LoRA)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Gradient Clipping and Mixed Precision",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Compute the global L2 norm over all parameter gradients and clip in place when it exceeds a configured threshold.",
+    "Wrap a training step in autocast plus a GradScaler so FP16 forward and backward passes survive overflow.",
+    "Detect NaN and Inf in the loss or gradient, skip the optimizer step, and log the skip.",
+    "Report the GradScaler's scaling factor every step so a long sequence of skips is visible immediately."
+  ]
+}

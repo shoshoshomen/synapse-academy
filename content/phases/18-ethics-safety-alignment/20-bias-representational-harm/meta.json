@@ -1,0 +1,16 @@
+{
+  "title": "Bias and Representational Harm in LLMs",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "toy embedding-based bias probe)"
+  ],
+  "prerequisites": "Phase 05 (word embeddings), Phase 18 · 01 (instruction following)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Define representational vs allocational harm and give one example of each in an LLM deployment.",
+    "Name the three evaluation-metric categories from Gallegos et al. 2024 and describe one metric from each.",
+    "Describe intersectionality and why WinoIdentity's uncertainty-based fairness measurement addresses gaps in single-axis bias evaluation.",
+    "Describe two mechanistic-interpretability approaches to bias (gender neurons, SAE features, attention-head manipulation)."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Video-Language Models: Temporal Tokens and Grounding",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "frame sampler + temporal-grounding evaluator)"
+  ],
+  "prerequisites": "Phase 12 · 08 (LLaVA-OneVision)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Explain why temporal positional encoding changes video VLM performance independently of the vision encoder.",
+    "Compare uniform, dynamic-FPS, and event-driven frame sampling on tokens-per-second vs grounding accuracy.",
+    "Describe Q-former-per-clip (Video-LLaMA) vs pooled-per-frame (Video-LLaVA) vs M-RoPE-per-token (Qwen2.5-VL) designs.",
+    "Name the four video benchmarks: VideoMME, TempCompass, EgoSchema, Video-MMMU."
+  ]
+}

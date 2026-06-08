@@ -1,0 +1,15 @@
+{
+  "title": "Inference Optimization",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 10, Lessons 01-08 (Transformer architecture, attention)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Implement KV-cache to eliminate redundant computation during autoregressive token generation",
+    "Explain the prefill vs decode phases of LLM inference and why each has different bottlenecks (compute-bound vs memory-bound)",
+    "Implement continuous batching and PagedAttention concepts to maximize GPU utilization under concurrent requests",
+    "Compare inference optimization techniques (KV-cache, speculative decoding, flash attention) and their throughput/latency tradeoffs"
+  ]
+}

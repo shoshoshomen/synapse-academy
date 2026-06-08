@@ -1,0 +1,16 @@
+{
+  "title": "Frontier Safety Frameworks — RSP, PF, FSF",
+  "type": "Learn",
+  "languages": [
+    "none"
+  ],
+  "prerequisites": "Phase 18 · 17 (WMDP), Phase 18 · 07-09 (deception failures)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Describe Anthropic's ASL tier structure and what activated ASL-3.",
+    "Name the five OpenAI Preparedness Framework v2 criteria for tracked capabilities.",
+    "Describe DeepMind's Critical Capability Level structure and the Harmful Manipulation CCL.",
+    "Explain the competitor-adjustment clauses and why they matter for race dynamics.",
+    "Define a safety case and describe the three-pillar structure (monitoring, illegibility, incapability)."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Result Evaluator",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track A lessons 20-29",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Compare a candidate run against a baseline using direction aware improvement and a fixed threshold.",
+    "Run a paired t test from scratch over per seed metrics and read the resulting p value.",
+    "Normalise log scaled metrics so a downstream report can blend them with linear metrics.",
+    "Emit a per hypothesis verdict that the orchestrator can attach to the queue from lesson fifty.",
+    "Keep every step pure so the same inputs always produce the same verdict."
+  ]
+}

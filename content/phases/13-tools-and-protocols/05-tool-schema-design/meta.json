@@ -1,0 +1,16 @@
+{
+  "title": "Tool Schema Design — Naming, Descriptions, Parameter Constraints",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "tool schema linter)"
+  ],
+  "prerequisites": "Phase 13 · 01 (the tool interface), Phase 13 · 04 (structured output)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Write a tool description using the \"Use when X. Do not use for Y.\" pattern, under 1024 characters.",
+    "Name tools in a way that is stable, `snake_case`, and unambiguous across a large registry.",
+    "Choose between atomic tools and a single monolithic tool for a given task surface.",
+    "Run a tool-schema linter against a registry and fix the findings."
+  ]
+}

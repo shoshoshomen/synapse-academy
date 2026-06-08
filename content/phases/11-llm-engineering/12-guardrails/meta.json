@@ -1,0 +1,15 @@
+{
+  "title": "Guardrails, Safety & Content Filtering",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 Lesson 01 (Prompt Engineering), Phase 11 Lesson 09 (Function Calling)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Implement input guardrails that detect and block prompt injection, jailbreak attempts, and toxic content before reaching the model",
+    "Build output guardrails that validate responses for PII leakage, hallucinated URLs, and policy violations",
+    "Design a layered defense system combining input filtering, system prompt hardening, and output validation",
+    "Test guardrails against a red-team prompt set and measure the false positive/negative rate"
+  ]
+}

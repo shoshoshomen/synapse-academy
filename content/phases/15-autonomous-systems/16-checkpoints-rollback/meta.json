@@ -1,0 +1,11 @@
+{
+  "title": "Checkpoints and Rollback",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "checkpoint and rollback state machine)"
+  ],
+  "prerequisites": "Phase 15 · 12 (Durable execution), Phase 15 · 15 (Propose-then-commit)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

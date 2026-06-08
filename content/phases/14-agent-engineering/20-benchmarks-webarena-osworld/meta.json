@@ -1,0 +1,15 @@
+{
+  "title": "Benchmarks: WebArena and OSWorld",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 19 (SWE-bench, GAIA)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe WebArena's four self-hosted apps and why execution-based evaluation matters.",
+    "Explain why OSWorld uses real OS screenshots instead of accessibility APIs.",
+    "Name the two primary OSWorld failure modes: GUI grounding and operational knowledge.",
+    "Summarize what OSWorld-G and OSWorld-Human add on top of the base benchmark."
+  ]
+}

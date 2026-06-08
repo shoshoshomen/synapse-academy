@@ -1,0 +1,10 @@
+{
+  "title": "Hierarchical Architecture and Its Failure Mode",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 05 (Supervisor Pattern)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

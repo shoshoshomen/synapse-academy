@@ -1,0 +1,12 @@
+{
+  "title": "Capstone 13 — MCP Server with Registry and Governance",
+  "type": "Capstone",
+  "languages": [
+    "Python (server",
+    "via FastMCP) or TypeScript (@modelcontextprotocol/sdk)",
+    "Go (registry service)"
+  ],
+  "prerequisites": "Phase 11 (LLM engineering), Phase 13 (tools and MCP), Phase 14 (agents), Phase 17 (infrastructure), Phase 18 (safety)",
+  "timeEstimate": "25 hours",
+  "objectives": []
+}

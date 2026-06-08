@@ -1,0 +1,15 @@
+{
+  "title": "Cosine LR with Linear Warmup",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement an AdamW optimizer wired to a cosine learning-rate schedule with linear warmup.",
+    "Compute the schedule's exact value at any step without floating-point drift across runs.",
+    "Log gradient L2 norm side by side with the learning rate so training health is observable.",
+    "Render the schedule to a text plot the eye can read and a CSV any tool can consume."
+  ]
+}

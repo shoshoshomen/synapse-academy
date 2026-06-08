@@ -1,0 +1,15 @@
+{
+  "title": "Constitutional AI and Self-Improvement",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib + numpy)"
+  ],
+  "prerequisites": "Phase 10, Lessons 06-08 (SFT, RLHF, DPO)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Implement the Constitutional AI two-stage loop: self-critique plus self-revision, then preference training on the revised pairs",
+    "Derive the GRPO objective (DeepSeek-R1's group-relative policy optimization) and contrast it with PPO's value-function baseline",
+    "Generate verifiable reasoning traces with rule-based outcome rewards and score them without a separate reward model",
+    "Decide when self-improvement beats human preference data and when it collapses into mode seeking"
+  ]
+}

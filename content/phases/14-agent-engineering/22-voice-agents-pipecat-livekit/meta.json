@@ -1,0 +1,15 @@
+{
+  "title": "Voice Agents: Pipecat and LiveKit",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 12 (Workflow Patterns)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe Pipecat's frame-based pipeline: DOWNSTREAM (source→sink) and UPSTREAM (control).",
+    "Name the canonical voice pipeline stages and which transports Pipecat supports.",
+    "Explain LiveKit Agents' two voice agent classes (MultimodalAgent, VoicePipelineAgent) and when each fits.",
+    "Summarize 2026 production latency expectations and how they drive architecture choices."
+  ]
+}

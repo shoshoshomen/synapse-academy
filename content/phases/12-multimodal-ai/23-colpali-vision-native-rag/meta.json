@@ -1,0 +1,16 @@
+{
+  "title": "ColPali and Vision-Native Document RAG",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "multi-vector indexer + MaxSim scorer)"
+  ],
+  "prerequisites": "Phase 11 (LLM Engineering — RAG basics), Phase 12 · 05 (LLaVA)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Explain the difference between bi-encoder retrieval (one vector per document) and late-interaction retrieval (many vectors per document).",
+    "Describe ColBERT's MaxSim operation and how ColPali generalizes it from text tokens to image patches.",
+    "Build a tiny ColPali-like indexer: page → patch embeddings → MaxSim over query-term embeddings → top-k pages.",
+    "Compare ColPali + Qwen2.5-VL generator vs text-RAG + GPT-4 on an invoices / financial reports use case."
+  ]
+}

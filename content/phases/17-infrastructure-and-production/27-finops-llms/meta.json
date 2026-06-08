@@ -1,0 +1,16 @@
+{
+  "title": "FinOps for LLMs — Unit Economics and Multi-Tenant Attribution",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy cost-attribution simulator with kill switch)"
+  ],
+  "prerequisites": "Phase 17 · 13 (Observability), Phase 17 · 14 (Caching)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Explain why traditional FinOps (tags + tiers) breaks on LLM spend and name the three new attribution dimensions.",
+    "Enumerate the four token layers (prompt, tool, memory, response) and why single-bucket billing hides cost.",
+    "Design an enforcement ladder (rate → spend cap → kill switch) for a multi-tenant product.",
+    "Pick a unit metric (cost per resolved query / artifact) instead of $/M tokens."
+  ]
+}

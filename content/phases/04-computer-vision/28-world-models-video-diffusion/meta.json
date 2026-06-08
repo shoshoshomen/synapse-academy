@@ -1,0 +1,15 @@
+{
+  "title": "World Models & Video Diffusion",
+  "type": "Learn + Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 10 (Diffusion), Phase 4 Lesson 12 (Video Understanding), Phase 4 Lesson 23 (DiT + Rectified Flow)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain the difference between a pure video generation model (Sora 2) and an action-conditioned world model (Genie 3, DreamerV3)",
+    "Describe a video DiT: spatio-temporal patches, 3D position encoding, joint attention across (T, H, W) tokens",
+    "Trace how a world model plugs into robotics: VLM plans → video model simulates → inverse dynamics emits actions",
+    "Pick between Sora 2, Genie 3, Runway GWM-1 Worlds, Wan-Video, and HunyuanVideo for a given use case (creative video, interactive sim, autonomous-driving synthesis)"
+  ]
+}

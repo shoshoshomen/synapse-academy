@@ -1,0 +1,16 @@
+{
+  "title": "ASCII Art and Visual Jailbreaks",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "ArtPrompt token-masking harness)"
+  ],
+  "prerequisites": "Phase 18 · 12 (PAIR), Phase 18 · 13 (MSJ)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe the ArtPrompt attack: word-identification step, ASCII-art substitution, final cloaked prompt.",
+    "Explain why standard defenses (PPL, Paraphrase, Retokenization) fail on ArtPrompt.",
+    "Define ViTC and describe what it measures.",
+    "Describe StructuralSleight as a generalization to arbitrary Uncommon Text-Encoded Structures."
+  ]
+}

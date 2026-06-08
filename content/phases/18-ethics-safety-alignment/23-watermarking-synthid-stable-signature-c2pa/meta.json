@@ -1,0 +1,16 @@
+{
+  "title": "Watermarking — SynthID, Stable Signature, C2PA",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "token-watermark embed + detect)"
+  ],
+  "prerequisites": "Phase 10 · 04 (sampling), Phase 01 · 09 (information theory)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Describe token-level watermarking (SynthID-text style) and the mechanism by which it is detectable.",
+    "Describe Stable Signature and the 2024 removal attack that broke it.",
+    "State C2PA's role and why it is complementary to watermarking.",
+    "Describe the key limitations: model-specific signal, robustness under paraphrase, and meaning-preserving attacks (arXiv:2508.20228)."
+  ]
+}

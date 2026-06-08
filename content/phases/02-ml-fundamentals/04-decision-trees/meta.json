@@ -1,0 +1,15 @@
+{
+  "title": "Decision Trees and Random Forests",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 (Lessons 09 Information Theory, 06 Probability)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement Gini impurity, entropy, and information gain calculations to find optimal decision tree splits",
+    "Build a decision tree classifier from scratch with pre-pruning controls (max depth, min samples)",
+    "Construct a random forest using bootstrap sampling and feature randomization, and explain why it reduces variance",
+    "Compare MDI feature importance with permutation importance and identify when MDI is biased"
+  ]
+}

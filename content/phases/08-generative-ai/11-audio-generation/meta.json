@@ -1,0 +1,10 @@
+{
+  "title": "Audio Generation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 02 (Audio Features), Phase 6 · 04 (ASR), Phase 8 · 06 (DDPM)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

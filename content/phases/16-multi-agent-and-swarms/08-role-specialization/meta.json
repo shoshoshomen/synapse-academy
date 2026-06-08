@@ -1,0 +1,10 @@
+{
+  "title": "Role Specialization — Planner, Critic, Executor, Verifier",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 04 (Primitive Model), Phase 16 · 05 (Supervisor)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

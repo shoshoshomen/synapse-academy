@@ -1,0 +1,16 @@
+{
+  "title": "TensorRT-LLM on Blackwell with FP8 and NVFP4",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy FP8/NVFP4 memory and cost calculator)"
+  ],
+  "prerequisites": "Phase 17 · 04 (vLLM Serving Internals), Phase 10 · 13 (Quantization)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain why FP8 stays critical for KV cache and attention even when weights are in NVFP4.",
+    "Compute the HBM footprint of a frontier model under BF16, FP8, and NVFP4 and reason about where the savings come from.",
+    "Name the Blackwell-specific features TRT-LLM exploits (day-0 FP4, MTP, disaggregated serving, all-to-all primitives).",
+    "Decide when TRT-LLM's NVIDIA-lock is worth the 7x cost gap vs vLLM on Hopper."
+  ]
+}

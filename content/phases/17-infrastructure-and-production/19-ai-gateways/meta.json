@@ -1,0 +1,16 @@
+{
+  "title": "AI Gateways — LiteLLM, Portkey, Kong AI Gateway, Bifrost",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy gateway-routing simulator)"
+  ],
+  "prerequisites": "Phase 17 · 01 (Managed LLM Platforms), Phase 17 · 16 (Model Routing)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Enumerate the six core gateway features (routing, fallback, retries, rate limits, secrets, observability, guardrails).",
+    "Map four 2026 gateways (LiteLLM, Portkey, Kong AI, Bifrost) to scale ceilings and use cases.",
+    "Cite the Kong benchmark (228% vs Portkey, 859% vs LiteLLM) and explain why it matters for >500 RPS.",
+    "Choose self-hosted vs managed given data residency and ops budget."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "End-to-End Eval Runner",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track B foundations, lessons 70 through 74",
+  "timeEstimate": "~90 min",
+  "objectives": []
+}

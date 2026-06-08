@@ -1,0 +1,16 @@
+{
+  "title": "The Direct Preference Optimization Family",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "six-variant preference-loss comparator)"
+  ],
+  "prerequisites": "Phase 18 · 01 (InstructGPT), Phase 18 · 02 (Reward hacking), Phase 10 · 08 (DPO basics)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Derive the DPO closed form from the RLHF-with-KL optimum.",
+    "State the failure mode each of IPO, KTO, SimPO, ORPO, BPO fixes in DPO.",
+    "Distinguish \"implicit reward gap\" from \"preference strength\" and explain why IPO's identity mapping matters.",
+    "Explain why Rafailov et al. (NeurIPS 2024) prove DAAs over-optimize despite having no explicit RM."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Linear Regression",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 (Linear Algebra, Calculus, Optimization), Phase 2 Lesson 1",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Derive the gradient descent update rules for mean squared error and implement linear regression from scratch",
+    "Compare gradient descent and the normal equation in terms of computational complexity and when to use each",
+    "Build a multiple linear regression model with feature standardization and interpret the learned weights",
+    "Explain how Ridge regression (L2 regularization) prevents overfitting by penalizing large weights"
+  ]
+}

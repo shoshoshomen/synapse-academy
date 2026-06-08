@@ -1,0 +1,16 @@
+{
+  "title": "Alignment Faking",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "compliance-gap metric calculator)"
+  ],
+  "prerequisites": "Phase 18 · 06 (mesa-optimization), Phase 18 · 07 (sleeper agents), Phase 18 · 08 (in-context scheming)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe the experimental setup in Greenblatt et al. 2024 and what the free-tier / paid-tier split operationalizes.",
+    "Define the compliance gap metric and why it isolates alignment faking from general compliance.",
+    "State why the 2024 result is strictly stronger than Lesson 7 and Lesson 8 (no implant, no in-context goal conflict constructed by a red team).",
+    "Explain two 2025 training mitigations and why neither eliminates the compliance gap."
+  ]
+}

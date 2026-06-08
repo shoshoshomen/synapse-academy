@@ -1,0 +1,15 @@
+{
+  "title": "Probability and Distributions",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 01-04",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Implement PMFs and PDFs from scratch for Bernoulli, categorical, Poisson, uniform, and normal distributions",
+    "Compute expected value, variance, and use the Central Limit Theorem to explain why Gaussians dominate",
+    "Build softmax and log-softmax functions with the numerical stability trick (subtract max logit)",
+    "Calculate cross-entropy loss from logits and connect it to negative log-likelihood"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Multimodal Agents and Computer-Use (Capstone)",
+  "type": "Capstone",
+  "languages": [
+    "Python (stdlib",
+    "action schema + agent loop skeleton)"
+  ],
+  "prerequisites": "Phase 12 · 05 (LLaVA), Phase 12 · 09 (Qwen-VL JSON), Phase 14 (Agent Engineering)",
+  "timeEstimate": "~240 minutes",
+  "objectives": [
+    "Design a multimodal agent loop: perceive → reason → act → observe → repeat.",
+    "Build a GUI grounding output schema (click coordinates, type text, scroll, drag) the VLM can emit as JSON.",
+    "Compare screenshot-only agents vs accessibility-tree agents vs hybrid agents.",
+    "Set up a multimodal agent benchmark evaluation on a small VisualWebArena slice."
+  ]
+}

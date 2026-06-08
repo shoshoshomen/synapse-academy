@@ -1,0 +1,10 @@
+{
+  "title": "Video Generation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 8 · 07 (Latent Diffusion), Phase 7 · 09 (ViT), Phase 8 · 06 (DDPM)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Collective Ops From Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track C lessons 42-49",
+  "timeEstimate": "~90 min",
+  "objectives": [
+    "Implement ring allreduce in two passes (reduce-scatter then allgather) and prove the per-rank communication volume is 2(N-1)/N bytes per element.",
+    "Build broadcast, allgather, and reduce_scatter on top of point-to-point sends over `multiprocessing.Queue`.",
+    "Verify every primitive against a `torch.distributed` gloo reference for the same input.",
+    "Defend the choice of ring versus tree on cluster shape, latency floor, and bandwidth ceiling."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Chain Rule & Automatic Differentiation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lesson 04 (Derivatives & Gradients)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a minimal autograd engine (Value class) that records operations and computes gradients via reverse-mode autodiff",
+    "Implement forward and backward passes through a computation graph using topological sort",
+    "Construct and train a multi-layer perceptron on XOR using only the from-scratch autograd engine",
+    "Verify autodiff correctness using gradient checking against numerical finite differences"
+  ]
+}

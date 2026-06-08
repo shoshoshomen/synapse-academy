@@ -1,0 +1,16 @@
+{
+  "title": "vLLM Serving Internals: PagedAttention, Continuous Batching, Chunked Prefill",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy continuous batching scheduler)"
+  ],
+  "prerequisites": "Phase 17 · 01 (Model Serving), Phase 11 (LLM Engineering)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain PagedAttention as a KV cache allocator: blocks, block tables, and why fragmentation stays under 4% at production load.",
+    "Diagram continuous batching at the iteration level: how finished sequences leave the batch and new ones join without draining.",
+    "Describe chunked prefill in one sentence and name which latency metric it protects (hint: it is TTFT tail, not mean throughput).",
+    "Name the 2026 vLLM v0.18.0 gotcha that bites teams enabling every optimization at once."
+  ]
+}

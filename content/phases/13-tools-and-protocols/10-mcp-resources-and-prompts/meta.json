@@ -1,0 +1,16 @@
+{
+  "title": "MCP Resources and Prompts — Context Exposure Beyond Tools",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "resource + prompt handler)"
+  ],
+  "prerequisites": "Phase 13 · 07 (MCP server)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Decide between exposing a capability as a tool, a resource, or a prompt for a given domain.",
+    "Implement `resources/list`, `resources/read`, `resources/subscribe` and handle `notifications/resources/updated`.",
+    "Implement `prompts/list` and `prompts/get` with argument templates.",
+    "Recognize when the host surfaces prompts as slash-commands vs auto-injected context."
+  ]
+}

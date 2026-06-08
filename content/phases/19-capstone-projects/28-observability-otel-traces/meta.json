@@ -1,0 +1,16 @@
+{
+  "title": "Capstone Lesson 28: Observability with OTel GenAI Spans and Prometheus Metrics",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 19 · 25 (verification gates), Phase 19 · 26 (sandbox), Phase 19 · 27 (eval harness), Phase 13 · 20 (OpenTelemetry GenAI), Phase 14 · 23 (OTel GenAI conventions)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a span data class shaped to the OpenTelemetry GenAI semantic conventions.",
+    "Implement a JSONL exporter that writes one self-contained span per line.",
+    "Build counters and histograms with labels and Prometheus text-format exposition.",
+    "Wrap any callable in a span context manager that records duration, status, and exceptions.",
+    "Verify that the emitted spans roundtrip through `json.loads` and match the spec shape."
+  ]
+}

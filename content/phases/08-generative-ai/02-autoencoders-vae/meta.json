@@ -1,0 +1,10 @@
+{
+  "title": "Autoencoders & Variational Autoencoders (VAE)",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 3 · 02 (Backprop), Phase 3 · 07 (CNNs), Phase 8 · 01 (Taxonomy)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

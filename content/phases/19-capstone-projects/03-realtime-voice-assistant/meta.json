@@ -1,0 +1,11 @@
+{
+  "title": "Capstone 03 — Real-Time Voice Assistant (ASR to LLM to TTS)",
+  "type": "Capstone",
+  "languages": [
+    "Python (agent + pipeline)",
+    "TypeScript (web client)"
+  ],
+  "prerequisites": "Phase 6 (speech and audio), Phase 7 (transformers), Phase 11 (LLM engineering), Phase 13 (tools), Phase 14 (agents), Phase 17 (infrastructure)",
+  "timeEstimate": "30 hours",
+  "objectives": []
+}

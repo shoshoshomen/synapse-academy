@@ -1,0 +1,10 @@
+{
+  "title": "Evaluation and Coordination Benchmarks",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 15 (Voting and Debate Topology), Phase 16 · 23 (Failure Modes)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

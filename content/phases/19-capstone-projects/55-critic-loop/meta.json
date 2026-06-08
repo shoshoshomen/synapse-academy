@@ -1,0 +1,16 @@
+{
+  "title": "Critic Loop",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 50-53",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Score a paper draft across five fixed dimensions: clarity, novelty, evidence, methodology, related-work.",
+    "Apply each round's critique as a structured revision diff rather than a freeform rewrite.",
+    "Detect convergence by comparing scores across rounds; stop on plateau, target met, or budget exhausted.",
+    "Cap rounds with a max-iteration budget so a non-converging critic does not run forever.",
+    "Emit a per-round trace so the dashboard or the next stage can render the score trajectory."
+  ]
+}

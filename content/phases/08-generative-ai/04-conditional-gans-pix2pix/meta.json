@@ -1,0 +1,10 @@
+{
+  "title": "Conditional GANs & Pix2Pix",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 8 · 03 (GANs), Phase 4 · 06 (U-Net), Phase 3 · 07 (CNNs)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

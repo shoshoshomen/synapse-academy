@@ -1,0 +1,15 @@
+{
+  "title": "Cross-Encoder Reranker",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 lesson 06 (RAG), Phase 11 lesson 07 (advanced RAG); Phase 19 Track B foundations (lessons 20-29); Phase 19 lesson 65 (hybrid retrieval feeding this stage)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Distinguish a bi-encoder retriever from a cross-encoder reranker by their input shape, parameter count, and per-query cost.",
+    "Implement a small cross-encoder from scratch as a transformer block that consumes a packed (query, document) sequence and emits a single relevance scalar.",
+    "Wire a two-stage retrieve-then-rerank pipeline: retrieve top-N with a cheap retriever, rerank N to top-K with the cross-encoder, return K.",
+    "Measure the latency-vs-quality trade-off on a small fixture corpus and pick the right N for a given latency budget."
+  ]
+}

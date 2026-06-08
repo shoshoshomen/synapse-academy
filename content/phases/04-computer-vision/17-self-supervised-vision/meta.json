@@ -1,0 +1,15 @@
+{
+  "title": "Self-Supervised Vision — SimCLR, DINO, MAE",
+  "type": "Learn + Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 04 (Image Classification), Phase 4 Lesson 14 (ViT)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Trace the three major self-supervised families — contrastive (SimCLR), teacher-student (DINO), masked reconstruction (MAE) — and state what each one optimises",
+    "Implement an InfoNCE loss from scratch and explain why a batch of 512 works but a batch of 32 fails",
+    "Explain why MAE's 75% masking ratio is not arbitrary and how it differs from BERT's 15% for text",
+    "Use DINOv2 or MAE ImageNet checkpoints for linear probing and zero-shot retrieval"
+  ]
+}

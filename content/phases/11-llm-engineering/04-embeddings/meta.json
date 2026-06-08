@@ -1,0 +1,15 @@
+{
+  "title": "Embeddings & Vector Representations",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11, Lesson 01 (Prompt Engineering)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Generate text embeddings using API providers and open-source models, and compute cosine similarity between them",
+    "Explain why embeddings solve the vocabulary mismatch problem that keyword search cannot handle",
+    "Build a semantic search index that retrieves documents by meaning rather than exact keyword match",
+    "Evaluate embedding quality using retrieval benchmarks (precision@k, recall) and choose the right embedding model for your task"
+  ]
+}

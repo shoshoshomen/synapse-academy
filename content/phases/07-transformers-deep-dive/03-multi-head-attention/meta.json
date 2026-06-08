@@ -1,0 +1,10 @@
+{
+  "title": "Multi-Head Attention",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 02 (Self-Attention from Scratch)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

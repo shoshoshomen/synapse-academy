@@ -1,0 +1,15 @@
+{
+  "title": "DPO: Direct Preference Optimization",
+  "type": "Build",
+  "languages": [
+    "Python (with numpy)"
+  ],
+  "prerequisites": "Phase 10, Lesson 07 (RLHF)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement DPO training that directly optimizes a language model on preference pairs without a separate reward model",
+    "Derive the DPO loss function and explain how it implicitly represents a reward model through the policy's log probabilities",
+    "Compare DPO vs RLHF in terms of training stability, compute cost, and number of models required",
+    "Tune the beta parameter to control how far the trained policy diverges from the reference model"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "CNNs and RNNs for Text",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 3 · 11 (PyTorch Intro), Phase 5 · 03 (Word Embeddings), Phase 4 · 02 (Convolutions from Scratch)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

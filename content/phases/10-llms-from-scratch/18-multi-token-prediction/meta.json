@@ -1,0 +1,15 @@
+{
+  "title": "Multi-Token Prediction (MTP)",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 10 · 04 (pre-training a mini GPT), Phase 10 · 15 (speculative decoding)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "State the MTP training objective and derive the joint loss across prediction depths.",
+    "Explain the difference between Gloeckle et al.'s parallel MTP heads (2024) and DeepSeek-V3's sequential MTP modules and why the sequential design preserves the causal chain.",
+    "Compute the parameter and memory overhead of adding MTP modules to a pre-training run.",
+    "Implement one MTP module from scratch: the shared embedding, the per-depth transformer block, the projection, and the shared output head."
+  ]
+}

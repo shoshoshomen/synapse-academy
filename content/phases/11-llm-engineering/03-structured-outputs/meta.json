@@ -1,0 +1,15 @@
+{
+  "title": "Structured Outputs: JSON, Schema Validation, Constrained Decoding",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 10, Lessons 01-05 (LLMs from Scratch)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement JSON-mode and schema-constrained outputs using OpenAI and Anthropic API parameters",
+    "Build a Pydantic validation layer that rejects malformed LLM outputs and retries with error feedback",
+    "Explain how constrained decoding forces valid JSON at the token level without post-processing",
+    "Design robust extraction prompts that reliably convert unstructured text into typed data structures"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Task Spec Format",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track B foundations",
+  "timeEstimate": "~90 min",
+  "objectives": []
+}

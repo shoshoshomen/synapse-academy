@@ -1,0 +1,10 @@
+{
+  "title": "Information Retrieval and Search",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 02 (BoW + TF-IDF), Phase 5 · 04 (GloVe, FastText, Subword)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

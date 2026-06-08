@@ -1,0 +1,10 @@
+{
+  "title": "Swarm Optimization for LLMs (PSO, ACO)",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 09 (Parallel Swarm Networks), Phase 16 · 14 (Consensus and BFT)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

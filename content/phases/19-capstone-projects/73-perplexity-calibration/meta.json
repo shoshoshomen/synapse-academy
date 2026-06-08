@@ -1,0 +1,10 @@
+{
+  "title": "Perplexity and Calibration",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track B foundations, lessons 70 and 71",
+  "timeEstimate": "~90 min",
+  "objectives": []
+}

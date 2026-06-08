@@ -1,0 +1,10 @@
+{
+  "title": "Policy Gradient — REINFORCE from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 3 · 03 (Backpropagation), Phase 9 · 03 (Monte Carlo), Phase 9 · 04 (TD Learning)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

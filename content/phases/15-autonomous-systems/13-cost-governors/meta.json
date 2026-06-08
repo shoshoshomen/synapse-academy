@@ -1,0 +1,11 @@
+{
+  "title": "Action Budgets, Iteration Caps, and Cost Governors",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "layered cost-governor simulator)"
+  ],
+  "prerequisites": "Phase 15 · 10 (Permission modes), Phase 15 · 12 (Durable execution)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

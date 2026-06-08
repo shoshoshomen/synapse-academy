@@ -1,0 +1,10 @@
+{
+  "title": "Failure Modes — MAST, Groupthink, Monoculture, Cascading Errors",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 13 (Shared Memory), Phase 16 · 14 (Consensus and BFT), Phase 16 · 15 (Voting and Debate Topology)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

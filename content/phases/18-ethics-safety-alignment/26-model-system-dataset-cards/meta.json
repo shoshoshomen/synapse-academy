@@ -1,0 +1,16 @@
+{
+  "title": "Model, System, and Dataset Cards",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "model-card + datasheet + system-card generator)"
+  ],
+  "prerequisites": "Phase 18 · 18 (safety frameworks), Phase 18 · 24 (regulatory)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe the original Mitchell et al. 2019 model card and the Gebru et al. 2018 datasheet.",
+    "Describe Data Cards' telescopic/periscopic/microscopic layering.",
+    "Describe System Cards and their end-to-end coverage.",
+    "State three 2024-2025 developments (automated generation, verifiable attestations, sustainability reporting)."
+  ]
+}

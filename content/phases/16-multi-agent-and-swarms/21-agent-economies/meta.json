@@ -1,0 +1,10 @@
+{
+  "title": "Agent Economies, Token Incentives, Reputation",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 16 (Negotiation and Bargaining), Phase 16 · 09 (Parallel Swarm Networks)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

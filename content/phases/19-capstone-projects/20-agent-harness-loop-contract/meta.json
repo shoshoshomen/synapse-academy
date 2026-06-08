@@ -1,0 +1,16 @@
+{
+  "title": "Agent Harness Loop Contract",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 13 lessons 01-07, Phase 14 lesson 01",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Specify an agent harness loop as a deterministic state machine with explicit transitions.",
+    "Implement ten lifecycle hook topics that operators wire policy, telemetry, and guardrails into.",
+    "Define two pull points where the loop yields control back to the caller and resumes on a fresh input.",
+    "Enforce per-session budgets (turns, tool calls, wall-clock) without leaking partial state on exceeding.",
+    "Emit a typed stream of eleven event types so downstream UIs and tracers can subscribe without inspecting the loop directly."
+  ]
+}

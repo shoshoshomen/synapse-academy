@@ -1,0 +1,16 @@
+{
+  "title": "DualPipe Parallelism",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "schedule simulator)"
+  ],
+  "prerequisites": "Phase 10 · 05 (distributed training, FSDP, DeepSpeed), Phase 10 · 14 (open-model architectures and MoE)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the four components of a DualPipe forward-backward chunk and why each one gets its own overlap window.",
+    "Explain the pipeline bubble problem at scale, and what \"bubble-free\" means in practice versus in marketing.",
+    "Trace a DualPipe schedule by hand for 8 PP ranks and 16 micro-batches and confirm the forward and reverse streams fill each other's idle slots.",
+    "State the tradeoff DualPipeV (Sea AI Lab, 2025) makes: drops the 2x parameter replication at the cost of a slightly larger bubble when Expert Parallelism is inactive."
+  ]
+}

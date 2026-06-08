@@ -1,0 +1,10 @@
+{
+  "title": "Positional Encoding — Sinusoidal, RoPE, ALiBi",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 02 (Self-Attention), Phase 7 · 03 (Multi-Head Attention)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

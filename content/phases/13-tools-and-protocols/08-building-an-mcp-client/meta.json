@@ -1,0 +1,16 @@
+{
+  "title": "Building an MCP Client — Discovery, Invocation, Session Management",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "multi-server MCP client)"
+  ],
+  "prerequisites": "Phase 13 · 07 (building an MCP server)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Spawn an MCP server as a child process, complete `initialize`, and send a `notifications/initialized`.",
+    "Maintain per-server session state (capabilities, tool list, last-seen notification ids).",
+    "Merge tool lists across multiple servers into one namespace with collision handling.",
+    "Route a tool call to the server that owns it and reassemble the response."
+  ]
+}

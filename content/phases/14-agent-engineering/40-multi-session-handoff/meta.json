@@ -1,0 +1,15 @@
+{
+  "title": "Multi-Session Handoff",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 34 (Repo Memory), Phase 14 · 38 (Verification), Phase 14 · 39 (Reviewer)",
+  "timeEstimate": "~50 minutes",
+  "objectives": [
+    "Identify the seven fields every handoff packet needs.",
+    "Generate a handoff from the workbench artifacts without hand-writing prose.",
+    "Trim large feedback logs into a handoff-sized summary.",
+    "Make the next session's first action deterministic."
+  ]
+}

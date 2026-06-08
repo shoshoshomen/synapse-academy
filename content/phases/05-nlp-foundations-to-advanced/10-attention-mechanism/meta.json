@@ -1,0 +1,10 @@
+{
+  "title": "Attention Mechanism — The Breakthrough",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 09 (Sequence-to-Sequence Models)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

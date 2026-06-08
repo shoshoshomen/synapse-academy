@@ -1,0 +1,16 @@
+{
+  "title": "Debugging Neural Networks",
+  "type": "Practice",
+  "languages": [
+    "Python",
+    "PyTorch"
+  ],
+  "prerequisites": "Phase 03 Lessons 01-10 (especially backpropagation, loss functions, optimizers)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Diagnose common neural network failures (NaN loss, flat loss curve, overfitting, oscillation) using systematic debugging strategies",
+    "Apply the \"overfit one batch\" technique to verify that your model architecture and training loop are correct",
+    "Inspect gradient magnitudes, activation distributions, and weight norms to identify vanishing/exploding gradient problems",
+    "Build a debugging checklist that covers data pipeline, model architecture, loss function, optimizer, and learning rate issues"
+  ]
+}

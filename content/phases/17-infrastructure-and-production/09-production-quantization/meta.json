@@ -1,0 +1,16 @@
+{
+  "title": "Production Quantization — AWQ, GPTQ, GGUF K-quants, FP8, MXFP4/NVFP4",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy memory and throughput comparison across formats)"
+  ],
+  "prerequisites": "Phase 10 · 13 (Quantization foundations), Phase 17 · 04 (vLLM Serving Internals)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Name the six production quantization formats and their sweet spots in 2026.",
+    "Pick a format given hardware (CPU vs GPU, Hopper vs Blackwell), engine (vLLM, TRT-LLM, llama.cpp), and workload (routine chat, reasoning, multi-LoRA).",
+    "Compute the weight memory saved and the KV cache left untouched for a chosen format.",
+    "Name the calibration-dataset pitfall that degrades quantized models on domain traffic."
+  ]
+}

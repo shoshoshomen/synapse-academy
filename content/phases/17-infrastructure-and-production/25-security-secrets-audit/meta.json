@@ -1,0 +1,16 @@
+{
+  "title": "Security — Secrets, API Key Rotation, Audit Logs, Guardrails",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy PII-scrubber + audit-log writer)"
+  ],
+  "prerequisites": "Phase 17 · 19 (AI Gateways), Phase 17 · 13 (Observability)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Enumerate the four secret-management anti-patterns (config files in VCS, hardcoded env, spreadsheets, static keys) and name their replacements.",
+    "Explain the AI-gateway-pulls-from-vault pattern as 2026 production standard.",
+    "Implement a PII scrubber with consistent tokenization (same value → same placeholder) so semantics survive.",
+    "Name the 2026 Vercel supply-chain incident and what it taught about CI/CD credential hygiene."
+  ]
+}

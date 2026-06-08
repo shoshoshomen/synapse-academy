@@ -1,0 +1,10 @@
+{
+  "title": "Streaming Speech-to-Speech — Moshi, Hibiki, and Full-Duplex Dialogue",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 13 (Neural Audio Codecs), Phase 6 · 11 (Real-Time Audio), Phase 7 · 05 (Full Transformer)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

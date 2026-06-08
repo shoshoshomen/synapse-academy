@@ -1,0 +1,15 @@
+{
+  "title": "Quantization: Making Models Fit",
+  "type": "Build",
+  "languages": [
+    "Python (with numpy)"
+  ],
+  "prerequisites": "Phase 10, Lessons 01-10 (LLMs from Scratch)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Implement symmetric and asymmetric quantization from FP16 to INT8 and INT4, including per-tensor and per-channel scaling",
+    "Calculate the memory savings from quantization and determine which precision fits a given GPU's VRAM",
+    "Explain the difference between post-training quantization (PTQ) and quantization-aware training (QAT)",
+    "Apply GPTQ or AWQ to quantize a real model and measure the accuracy-memory tradeoff on a benchmark"
+  ]
+}

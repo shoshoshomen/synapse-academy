@@ -1,0 +1,12 @@
+{
+  "title": "Parallel / Swarm / Networked Architectures",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib",
+    "`threading`",
+    "`queue`)"
+  ],
+  "prerequisites": "Phase 16 · 05 (Supervisor Pattern), Phase 16 · 04 (Primitive Model)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

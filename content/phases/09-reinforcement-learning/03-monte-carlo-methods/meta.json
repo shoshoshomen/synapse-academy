@@ -1,0 +1,10 @@
+{
+  "title": "Monte Carlo Methods — Learning from Complete Episodes",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 9 · 01 (MDPs), Phase 9 · 02 (Dynamic Programming)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

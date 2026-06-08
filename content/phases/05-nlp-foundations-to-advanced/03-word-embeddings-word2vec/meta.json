@@ -1,0 +1,10 @@
+{
+  "title": "Word Embeddings — Word2Vec from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 02 (BoW + TF-IDF), Phase 3 · 03 (Backpropagation from Scratch)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

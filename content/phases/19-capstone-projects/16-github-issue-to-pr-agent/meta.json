@@ -1,0 +1,12 @@
+{
+  "title": "Capstone 16 — GitHub Issue-to-PR Autonomous Agent",
+  "type": "Capstone",
+  "languages": [
+    "Python (agent)",
+    "TypeScript (GitHub App)",
+    "YAML (Actions)"
+  ],
+  "prerequisites": "Phase 11 (LLM engineering), Phase 13 (tools), Phase 14 (agents), Phase 15 (autonomous), Phase 17 (infrastructure)",
+  "timeEstimate": "30 hours",
+  "objectives": []
+}

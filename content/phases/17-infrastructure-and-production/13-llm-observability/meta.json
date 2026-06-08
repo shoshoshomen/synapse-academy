@@ -1,0 +1,16 @@
+{
+  "title": "LLM Observability Stack Selection",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy trace-sampling simulator)"
+  ],
+  "prerequisites": "Phase 17 · 08 (Inference Metrics), Phase 14 (Agent Engineering)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Distinguish development platforms (bundled: evals + prompts + sessions) from gateway/telemetry tools (traces + metrics only).",
+    "Map six major tools (Langfuse, LangSmith, Phoenix, Arize AX, Helicone, Opik) to their licensing, pricing, and sweet-spot use cases.",
+    "Explain the OpenTelemetry-glue pattern that lets you combine a gateway tool with a separate eval platform.",
+    "Name the 2026 cost differentiator (Arize AX's zero-copy approach vs monolithic ingest) and state the rough 100x multiplier."
+  ]
+}

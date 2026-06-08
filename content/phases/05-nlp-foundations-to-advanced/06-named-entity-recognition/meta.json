@@ -1,0 +1,10 @@
+{
+  "title": "Named Entity Recognition",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 02 (BoW + TF-IDF), Phase 5 · 03 (Word Embeddings)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Speculative Decoding and EAGLE-3",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 7 · 16 (speculative decoding math), Phase 10 · 12 (inference optimization)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "State the Leviathan theorem in one sentence and prove that the speculative loop produces samples identically distributed to the verifier.",
+    "Walk the two-year progression from vanilla spec-decoding (Leviathan 2023) through EAGLE, EAGLE-2, and EAGLE-3 and name the exact limitation each step removed.",
+    "Compute expected speedup from acceptance rate `α` and draft-to-verifier cost ratio `c`, and choose the optimal draft length `N` for each regime.",
+    "Implement the full speculative loop from scratch: draft, verify, reject-sample from the residual, roll the KV cache back on rejection, emit the bonus token on full acceptance."
+  ]
+}

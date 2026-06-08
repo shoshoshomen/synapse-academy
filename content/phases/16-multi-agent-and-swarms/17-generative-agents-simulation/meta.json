@@ -1,0 +1,10 @@
+{
+  "title": "Generative Agents and Emergent Simulation",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 04 (Primitive Model), Phase 16 · 13 (Shared Memory)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

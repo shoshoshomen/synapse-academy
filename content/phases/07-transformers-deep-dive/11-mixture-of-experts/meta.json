@@ -1,0 +1,10 @@
+{
+  "title": "Mixture of Experts (MoE)",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 05 (Full Transformer), Phase 7 · 07 (GPT)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

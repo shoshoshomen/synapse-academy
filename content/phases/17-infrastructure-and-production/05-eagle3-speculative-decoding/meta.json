@@ -1,0 +1,16 @@
+{
+  "title": "EAGLE-3 Speculative Decoding in Production",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy acceptance-rate simulator)"
+  ],
+  "prerequisites": "Phase 17 · 04 (vLLM Serving Internals), Phase 10 · 18 (Multi-Token Prediction)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the three generations of speculative decoding and explain what EAGLE-3 changes from EAGLE-2 and from a classic draft model.",
+    "Define acceptance rate alpha, compute expected speedup from alpha and K (draft length), and identify the break-even alpha for your target concurrency.",
+    "Explain why speculative decoding is opt-in (not default) in vLLM 2026 and why turning it on without measuring alpha is a production anti-pattern.",
+    "Write a measurement plan: which benchmark, which prompt distribution, which concurrency point, which metric to gate on."
+  ]
+}

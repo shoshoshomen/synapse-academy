@@ -1,0 +1,15 @@
+{
+  "title": "K-Nearest Neighbors and Distances",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 (Lesson 14 Norms and Distances)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement KNN classification and regression from scratch with configurable K and distance-weighted voting",
+    "Compare L1, L2, cosine, and Minkowski distance metrics and select the appropriate one for a given data type",
+    "Explain the curse of dimensionality and demonstrate why KNN degrades in high-dimensional spaces",
+    "Build a KD-tree for efficient nearest neighbor search and analyze when it outperforms brute-force"
+  ]
+}

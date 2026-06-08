@@ -1,0 +1,11 @@
+{
+  "title": "Capstone 05 — Autonomous Research Agent (AI-Scientist Class)",
+  "type": "Capstone",
+  "languages": [
+    "Python (agent + sandbox)",
+    "LaTeX (output)"
+  ],
+  "prerequisites": "Phase 2 (ML), Phase 3 (deep learning), Phase 7 (transformers), Phase 10 (LLMs from scratch), Phase 14 (agents), Phase 15 (autonomous), Phase 16 (multi-agent), Phase 18 (safety)",
+  "timeEstimate": "40 hours",
+  "objectives": []
+}

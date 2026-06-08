@@ -1,0 +1,16 @@
+{
+  "title": "Loading Pretrained Weights",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30 to 36",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Read a safetensors file with the `safetensors` Python library and inspect the tensor names and shapes.",
+    "Map each pretrained parameter name onto a parameter inside the lesson 35 GPT model.",
+    "Handle the two name conventions that differ between published GPT-2 weights and the model in this track: `wte/wpe/h.N.attn.c_attn/c_proj` and `mlp.c_fc/c_proj` versus the locally named `tok_embed/pos_embed/blocks.N.attn.qkv/out_proj` and `mlp.fc1/fc2`.",
+    "Detect and refuse a shape mismatch with a clear error before any weight assignment happens.",
+    "Generate a short continuation with the loaded weights and confirm the tokens come from the loaded distribution, not the randomly initialized one."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Plan-Execute Control Flow",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 13 lessons 01-07, Phase 14 lesson 01",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Represent a plan as an ordered list of typed steps so the executor can reason about progress and outcome.",
+    "Execute steps sequentially with a controlled failure handoff back to the planner.",
+    "Replan from the current cursor with the prior error in the context so the next plan is informed.",
+    "Emit a plan diff on each revision so a downstream tracer or UI can show why the plan changed.",
+    "Enforce two budgets: a hard step ceiling and a hard replan ceiling."
+  ]
+}

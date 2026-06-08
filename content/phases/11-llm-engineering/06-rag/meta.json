@@ -1,0 +1,15 @@
+{
+  "title": "RAG (Retrieval-Augmented Generation)",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 10 (LLMs from Scratch), Phase 11 Lessons 01-05",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a complete RAG pipeline: document loading, chunking, embedding, vector storage, retrieval, and generation",
+    "Implement semantic search using a vector database (ChromaDB, FAISS, or Pinecone) with proper indexing",
+    "Explain why RAG is preferred over fine-tuning for knowledge-grounded applications (cost, freshness, attribution)",
+    "Evaluate RAG quality using retrieval metrics (precision, recall) and generation metrics (faithfulness, relevance)"
+  ]
+}

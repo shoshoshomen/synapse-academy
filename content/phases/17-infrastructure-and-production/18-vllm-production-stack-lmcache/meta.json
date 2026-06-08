@@ -1,0 +1,16 @@
+{
+  "title": "vLLM Production Stack with LMCache KV Offloading",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy KV-spill simulator)"
+  ],
+  "prerequisites": "Phase 17 · 04 (vLLM Serving Internals), Phase 17 · 06 (SGLang/RadixAttention)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Diagram the vLLM production-stack layers: router, engines, KV offload, observability.",
+    "Explain the KV Offloading Connector API (v0.9.0+) and how the 0.11.0 asynchronous path hides offload latency.",
+    "Quantify when LMCache CPU-DRAM helps (KV > HBM) vs adds overhead (KV small enough to fit HBM).",
+    "Pick between native vLLM CPU offload and LMCache connector given deployment constraints."
+  ]
+}

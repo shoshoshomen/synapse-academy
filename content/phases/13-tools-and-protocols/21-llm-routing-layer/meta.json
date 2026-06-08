@@ -1,0 +1,16 @@
+{
+  "title": "LLM Routing Layer — LiteLLM, OpenRouter, Portkey",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "routing + failover + cost tracker)"
+  ],
+  "prerequisites": "Phase 13 · 02 (function calling), Phase 13 · 17 (gateways)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Distinguish self-hosted, managed, and production-grade routing options.",
+    "Implement a fallback chain that retries on provider failures in a defined priority order.",
+    "Track per-request cost and token usage across providers.",
+    "Decide between LiteLLM, OpenRouter, and Portkey for a given production constraint."
+  ]
+}

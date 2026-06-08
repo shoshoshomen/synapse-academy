@@ -1,0 +1,15 @@
+{
+  "title": "Video Understanding — Temporal Modeling",
+  "type": "Learn + Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 03 (CNNs), Phase 4 Lesson 04 (Image Classification)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Distinguish the three main video-modelling approaches (2D+pool, 3D conv, spatio-temporal transformer) and predict their cost and accuracy trade-offs",
+    "Implement frame sampling, temporal pooling, and a 2D+pool baseline classifier in PyTorch",
+    "Explain why I3D's \"inflated\" 3D kernels transfer well from ImageNet weights and what a factorised (2+1)D conv does differently",
+    "Read the standard action-recognition datasets and metrics: Kinetics-400/600, UCF101, Something-Something V2; top-1 accuracy at the clip and video level"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Tokenized Dataset with Sliding Window",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 04 lessons, Phase 07 transformer lessons, Lesson 30 of this phase",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Convert a raw corpus into a stream of token ids by calling the tokenizer once.",
+    "Slice the id stream into fixed-length windows with a configurable overlap stride.",
+    "Build a PyTorch Dataset that returns input and target tensors for next-token prediction.",
+    "Wrap the dataset in a DataLoader with a deterministic shuffle seeded per epoch.",
+    "Reason about the trade-off between stride, redundancy, and effective dataset size."
+  ]
+}

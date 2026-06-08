@@ -1,0 +1,11 @@
+{
+  "title": "Gradient Checkpointing and Activation Recomputation",
+  "type": "Build",
+  "languages": [
+    "Python (with numpy",
+    "optional torch)"
+  ],
+  "prerequisites": "Phase 10 Lesson 04 (Pre-Training Mini-GPT), Phase 10 Lesson 05 (Scaling & Distributed)",
+  "timeEstimate": "~70 minutes",
+  "objectives": []
+}

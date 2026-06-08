@@ -1,0 +1,10 @@
+{
+  "title": "Proximal Policy Optimization (PPO)",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 9 · 06 (REINFORCE), Phase 9 · 07 (Actor-Critic)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

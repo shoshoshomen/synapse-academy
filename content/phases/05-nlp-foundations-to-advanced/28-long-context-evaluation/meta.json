@@ -1,0 +1,10 @@
+{
+  "title": "Long-Context Evaluation — NIAH, RULER, LongBench, MRCR",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 13 (Question Answering), Phase 5 · 23 (Chunking Strategies)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

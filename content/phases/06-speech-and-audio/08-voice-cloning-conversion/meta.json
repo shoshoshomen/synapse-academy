@@ -1,0 +1,10 @@
+{
+  "title": "Voice Cloning & Voice Conversion",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 06 (Speaker Recognition), Phase 6 · 07 (TTS)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

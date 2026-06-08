@@ -1,0 +1,11 @@
+{
+  "title": "STaR, V-STaR, Quiet-STaR — Self-Taught Reasoning",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "bootstrap-loop simulator)"
+  ],
+  "prerequisites": "Phase 13 · 01-03 (Reasoning and CoT), Phase 15 · 01 (long-horizon framing)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

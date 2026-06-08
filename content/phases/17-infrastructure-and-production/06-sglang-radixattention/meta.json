@@ -1,0 +1,16 @@
+{
+  "title": "SGLang and RadixAttention for Prefix-Heavy Workloads",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy radix-tree cache + cache-aware scheduler)"
+  ],
+  "prerequisites": "Phase 17 · 04 (vLLM Serving Internals), Phase 14 (Agentic RAG)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Diagram RadixAttention: how prefixes are stored in a radix tree and how KV blocks are shared across sequences rooted at the same branch.",
+    "Explain cache-aware scheduling and why FCFS is wrong for prefix-heavy traffic.",
+    "Compute expected speedup for a workload given prefix-cache hit rate and prompt length distribution.",
+    "Name the prompt-ordering discipline that makes the 6.4x number real vs a lost upside."
+  ]
+}

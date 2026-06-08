@@ -1,0 +1,10 @@
+{
+  "title": "Dynamic Programming — Policy Iteration & Value Iteration",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 9 · 01 (MDPs)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Prompt Caching and Context Caching",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 · 01 (Prompt Engineering), Phase 11 · 05 (Context Engineering), Phase 11 · 11 (Caching and Cost)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

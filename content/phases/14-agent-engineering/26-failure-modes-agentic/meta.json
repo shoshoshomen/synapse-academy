@@ -1,0 +1,15 @@
+{
+  "title": "Failure Modes: Why Agents Break",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 05 (Self-Refine and CRITIC), Phase 14 · 24 (Observability)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name MASFT's three failure categories and at least four specific modes in each.",
+    "Explain why agentic failure amplifies existing AI failure modes (bias, hallucination).",
+    "Describe the five industry-recurring modes and their mitigations.",
+    "Implement a stdlib detector that tags agent traces with failure-mode labels."
+  ]
+}

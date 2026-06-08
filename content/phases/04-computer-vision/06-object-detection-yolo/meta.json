@@ -1,0 +1,15 @@
+{
+  "title": "Object Detection — YOLO from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 03 (CNNs), Phase 4 Lesson 04 (Image Classification), Phase 4 Lesson 05 (Transfer Learning)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain the grid-and-anchor design that turns detection into a dense prediction problem and state what every number in the output tensor means",
+    "Compute Intersection-over-Union between boxes and implement non-maximum suppression from scratch",
+    "Build a minimal YOLO-style head on top of a pretrained backbone, including the classification, objectness, and box-regression losses",
+    "Read a detection metric row (precision@0.5, recall, mAP@0.5, mAP@0.5:0.95) and pick which knob to turn next"
+  ]
+}

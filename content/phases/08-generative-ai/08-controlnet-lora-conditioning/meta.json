@@ -1,0 +1,10 @@
+{
+  "title": "ControlNet, LoRA & Conditioning",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 8 · 07 (Latent Diffusion), Phase 10 (LLMs from Scratch — for LoRA foundation)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

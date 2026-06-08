@@ -1,0 +1,16 @@
+{
+  "title": "Red-Team Tooling — Garak, Llama Guard, PyRIT",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "tool-architecture simulator and Llama Guard-style classifier mock)"
+  ],
+  "prerequisites": "Phase 18 · 12-15 (jailbreaks and IPI)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Describe Llama Guard 3/4's position in the safety stack: input classifier, output classifier, or both.",
+    "Name the 14 MLCommons hazard categories and state one non-obvious one (Code Interpreter Abuse).",
+    "Describe Garak's probe architecture: probes, detectors, harnesses.",
+    "Describe PyRIT's multi-turn campaign structure and how it composes with Garak probes."
+  ]
+}

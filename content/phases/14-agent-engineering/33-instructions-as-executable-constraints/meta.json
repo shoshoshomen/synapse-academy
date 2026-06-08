@@ -1,0 +1,15 @@
+{
+  "title": "Agent Instructions as Executable Constraints",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 32 (Minimal Workbench)",
+  "timeEstimate": "~50 minutes",
+  "objectives": [
+    "Separate routing prose from operational rules.",
+    "Express startup rules, forbidden actions, definition of done, uncertainty handling, and approval boundaries as machine-checkable constraints.",
+    "Implement a rule checker that scores a run against the rule set.",
+    "Make the rule set diff-friendly so review can see what changed."
+  ]
+}

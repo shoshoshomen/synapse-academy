@@ -1,0 +1,16 @@
+{
+  "title": "MCP Gateways and Registries — Enterprise Control Planes",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "minimal gateway)"
+  ],
+  "prerequisites": "Phase 13 · 15 (tool poisoning), Phase 13 · 16 (OAuth 2.1)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Explain where an MCP gateway sits (between MCP clients and multiple backend MCP servers).",
+    "Implement the five gateway responsibilities: auth, RBAC, audit, rate limit, policy.",
+    "Enforce a pinned-tool-hash manifest at the gateway layer.",
+    "Differentiate the Official MCP Registry from metaregistries (Glama, MCPMarket, MCP.so, Smithery, LobeHub)."
+  ]
+}

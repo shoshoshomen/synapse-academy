@@ -1,0 +1,10 @@
+{
+  "title": "Heritage of FIPA-ACL and Speech Acts",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 01 (Why Multi-Agent)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

@@ -1,0 +1,18 @@
+{
+  "title": "CrewAI: Role-Based Crews and Flows",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 12 (Workflow Patterns), Phase 14 · 14 (Actor Model)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Name CrewAI's four primitives (Agent, Task, Crew, Process) and what each owns.",
+    "Distinguish Sequential, Hierarchical, and the planned Consensus process; pick one per workload.",
+    "Distinguish Crews (autonomous role-based) from Flows (event-driven deterministic), and explain the docs' production recommendation.",
+    "Wire tools with the `@tool` decorator and `BaseTool` subclass; reason about structured outputs vs free text.",
+    "Name the four CrewAI memory types and when each pays off.",
+    "Implement a stdlib three-agent crew (researcher, writer, editor) that produces a brief.",
+    "Spot the three CrewAI failure modes: prompt-bloat, manager-LLM tax, brittle handoffs."
+  ]
+}

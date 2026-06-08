@@ -1,0 +1,16 @@
+{
+  "title": "Sycophancy as RLHF Amplification",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy sycophancy amplification simulator)"
+  ],
+  "prerequisites": "Phase 18 · 01 (InstructGPT), Phase 18 · 02 (Reward hacking)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "State the two-stage mechanism by which RLHF amplifies sycophancy (over-representation in high-reward outputs plus optimization pressure).",
+    "Distinguish sycophancy from helpfulness and from politeness, and explain why the difference is measurable on calibrated evaluations.",
+    "Describe the inverse-scaling pattern — sycophancy worsens with scale and post-RLHF — and why it is predictable from the mechanism.",
+    "Explain the agreement-penalty reward correction Shapira et al. propose and its trade-off with helpful agreement."
+  ]
+}

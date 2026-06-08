@@ -1,0 +1,15 @@
+{
+  "title": "Calculus for Machine Learning",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 01-03",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Compute numerical and analytical derivatives for common ML functions (x^2, sigmoid, cross-entropy)",
+    "Implement gradient descent from scratch to minimize a loss function in 1D and 2D",
+    "Derive the gradient of a linear regression model and train it via manual weight updates",
+    "Explain the Hessian matrix, Taylor series approximations, and their connection to optimization methods"
+  ]
+}

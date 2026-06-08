@@ -1,0 +1,10 @@
+{
+  "title": "Bag of Words, TF-IDF, and Text Representation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 01 (Text Processing), Phase 2 · 02 (Linear Regression from Scratch)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

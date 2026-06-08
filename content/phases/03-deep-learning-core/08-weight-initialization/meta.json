@@ -1,0 +1,15 @@
+{
+  "title": "Weight Initialization and Training Stability",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Lesson 03.04 (Activation Functions), Lesson 03.07 (Regularization)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement zero, random, Xavier/Glorot, and Kaiming/He initialization strategies and measure their effect on activation magnitudes through 50 layers",
+    "Derive why Xavier init uses Var(w) = 2/(fan_in + fan_out) and Kaiming uses Var(w) = 2/fan_in",
+    "Demonstrate the symmetry problem with zero initialization and explain why random scale alone is insufficient",
+    "Match the correct initialization strategy to the activation function: Xavier for sigmoid/tanh, Kaiming for ReLU/GELU"
+  ]
+}

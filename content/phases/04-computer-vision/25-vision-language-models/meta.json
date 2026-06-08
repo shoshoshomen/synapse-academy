@@ -1,0 +1,15 @@
+{
+  "title": "Vision-Language Models — The ViT-MLP-LLM Pattern",
+  "type": "Learn + Use",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 14 (ViT), Phase 4 Lesson 18 (CLIP), Phase 7 Lesson 02 (Self-Attention)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "State the ViT-MLP-LLM architecture and explain what each of the three components contributes",
+    "Compare Qwen3-VL, InternVL3.5, LLaVA-Next, and GLM-4.6V on parameter count, context length, and benchmark performance",
+    "Explain DeepStack: why multi-level ViT features tighten vision-language alignment better than a single last-layer feature",
+    "Measure VLM hallucination in production with Cross-Modal Error Rate (CMER) and act on the signal"
+  ]
+}

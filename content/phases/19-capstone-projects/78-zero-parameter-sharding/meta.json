@@ -1,0 +1,15 @@
+{
+  "title": "ZeRO Optimizer State Sharding",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track C lessons 42-49",
+  "timeEstimate": "~90 min",
+  "objectives": [
+    "Shard optimiser state (first moment, second moment, fp32 master copy) across N ranks so each rank owns 1/N.",
+    "Use reduce_scatter to deliver each rank only its shard's gradient sum, then allgather to broadcast the updated parameter shards back.",
+    "Compute the memory savings table for stage 1, stage 2, stage 3 against vanilla DDP.",
+    "Defend the choice of stage 1 vs stage 2 vs stage 3 on model size and bandwidth budget."
+  ]
+}

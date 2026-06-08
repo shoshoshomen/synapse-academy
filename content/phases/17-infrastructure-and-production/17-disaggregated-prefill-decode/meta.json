@@ -1,0 +1,16 @@
+{
+  "title": "Disaggregated Prefill/Decode — NVIDIA Dynamo and llm-d",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy disaggregated-vs-colocated simulator)"
+  ],
+  "prerequisites": "Phase 17 · 04 (vLLM Serving Internals), Phase 17 · 08 (Inference Metrics)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain why prefill and decode have different optimal GPU allocations and quantify the waste under colocation.",
+    "Diagram the disaggregated architecture: prefill pool, decode pool, KV transfer via NIXL, router.",
+    "Name the condition when disaggregation does NOT pay off (short prompts, short outputs).",
+    "Distinguish NVIDIA Dynamo (stack-above) from llm-d (Kubernetes-native) and match each to an operational context."
+  ]
+}

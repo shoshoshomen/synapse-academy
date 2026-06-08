@@ -1,0 +1,15 @@
+{
+  "title": "OpenTelemetry GenAI Semantic Conventions",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 13 (LangGraph), Phase 14 · 24 (Observability Platforms)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the GenAI span categories: model/client, agent, tool.",
+    "Distinguish `invoke_agent` CLIENT vs INTERNAL spans and when each applies.",
+    "List the top-level GenAI attributes: provider name, request model, data-source ID.",
+    "Explain the content-capture contract: opt-in, `OTEL_SEMCONV_STABILITY_OPT_IN`, external-reference recommendation."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Linux for AI",
+  "type": "Learn",
+  "languages": [
+    "--"
+  ],
+  "prerequisites": "Phase 0, Lesson 01",
+  "timeEstimate": "~30 minutes",
+  "objectives": [
+    "Navigate the Linux file system and perform essential file operations from the command line",
+    "Manage file permissions with `chmod` and `chown` to resolve \"Permission denied\" errors",
+    "Install system packages with `apt` and set up a fresh GPU box for AI work",
+    "Identify macOS-to-Linux differences that commonly trip up developers working on remote machines"
+  ]
+}

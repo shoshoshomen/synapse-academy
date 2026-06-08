@@ -1,0 +1,15 @@
+{
+  "title": "Planning with HTN and Evolutionary Search",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 02 (ReWOO and Plan-and-Execute)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain Hierarchical Task Networks: tasks, methods, operators, preconditions, effects.",
+    "Describe ChatHTN's hybrid loop — symbolic search with LLM fallback decomposition.",
+    "Explain AlphaEvolve's evolutionary loop and why it only works with a programmatic evaluator.",
+    "Implement a toy HTN planner plus a toy evolutionary search in stdlib."
+  ]
+}

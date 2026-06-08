@@ -1,0 +1,15 @@
+{
+  "title": "Diffusion Transformers & Rectified Flow",
+  "type": "Learn + Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 10 (Diffusion DDPM), Phase 4 Lesson 14 (ViT), Phase 7 Lesson 02 (Self-Attention)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Trace the evolution from U-Net DDPM (Lesson 10) to Diffusion Transformer (DiT), MMDiT (SD3), and single+double-stream DiT (FLUX)",
+    "Explain rectified flow: why a straight-line trajectory between noise and data lets models sample in 20 steps instead of 1000",
+    "Implement a tiny DiT block and a rectified-flow training loop, both under 100 lines",
+    "Distinguish model variants (SD3, FLUX.1-dev, FLUX.1-schnell, Z-Image, Qwen-Image) by architecture, parameter count, and licensing"
+  ]
+}

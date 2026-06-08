@@ -1,0 +1,10 @@
+{
+  "title": "LangGraph — State Machines for Agents",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 · 09 (Function Calling), Phase 11 · 14 (Model Context Protocol)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

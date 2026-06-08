@@ -1,0 +1,16 @@
+{
+  "title": "Omni Models: Qwen2.5-Omni and the Thinker-Talker Split",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "streaming pipeline latency simulator + VAD loop)"
+  ],
+  "prerequisites": "Phase 12 · 19 (audio-LLMs), Phase 12 · 16 (any-to-any)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Split the inference pipeline into Thinker (text reasoning) and Talker (speech synthesis) and explain why parallel streaming works.",
+    "Compute the time-to-first-audio-byte (TTFAB) budget for a conversational interaction, component by component.",
+    "Describe TMRoPE's time-aligned position encoding across vision, audio, and text within the Thinker.",
+    "Name the three real-time conversational patterns: half-duplex, turn-taking, full-duplex."
+  ]
+}

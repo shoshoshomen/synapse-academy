@@ -1,0 +1,10 @@
+{
+  "title": "Natural Language Inference — Textual Entailment",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 05 (Sentiment Analysis), Phase 5 · 13 (Question Answering)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

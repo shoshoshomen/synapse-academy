@@ -1,0 +1,16 @@
+{
+  "title": "Prompt Caching and Semantic Caching Economics",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy two-layer cache simulator)"
+  ],
+  "prerequisites": "Phase 17 · 04 (vLLM Serving Internals), Phase 17 · 06 (SGLang RadixAttention)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Distinguish L2 prompt/prefix caching (KV reuse at provider) from L1 semantic caching (LLM bypass on similar prompts).",
+    "Explain Anthropic's `cache_control` explicit marking and the two TTL options (5-min vs 1-hour) with their price multipliers.",
+    "Compute expected monthly savings given hit rate, prompt/response mix, and token prices.",
+    "Name the parallelization anti-pattern that inflates bills by 5-10x and the dynamic-content anti-pattern that collapses hit rate."
+  ]
+}

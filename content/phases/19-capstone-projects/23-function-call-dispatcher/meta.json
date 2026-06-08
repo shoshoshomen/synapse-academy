@@ -1,0 +1,16 @@
+{
+  "title": "Function Call Dispatcher",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 13 lessons 01-07, Phase 14 lesson 01",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Wrap a tool handler in a per-call timeout that returns a typed error instead of hanging the loop.",
+    "Apply exponential backoff retry with jitter and a maximum attempt count.",
+    "Deduplicate retries on an idempotency key so a retry that races with a slow original does not run twice.",
+    "Map handler exceptions and transport faults onto a single error envelope the harness loop already understands.",
+    "Bound parallel dispatch with a concurrency limit so a fan-out of forty tool calls does not exhaust the event loop."
+  ]
+}

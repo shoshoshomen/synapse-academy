@@ -1,0 +1,10 @@
+{
+  "title": "Music Generation — MusicGen, Stable Audio, Suno, and the Licensing Earthquake",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 02 (Spectrograms), Phase 4 · 10 (Diffusion Models)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

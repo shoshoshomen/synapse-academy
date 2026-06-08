@@ -1,0 +1,16 @@
+{
+  "title": "Embodied VLAs: RT-2, OpenVLA, π0, GR00T",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "action tokenizer + VLA inference skeleton)"
+  ],
+  "prerequisites": "Phase 12 · 05 (LLaVA), Phase 15 (Autonomous Systems, referenced)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Describe action tokenization: discrete bin encoding (RT-2), FAST efficient action tokens, continuous flow-matching actions (π0).",
+    "Explain why co-fine-tuning on web + robot data preserves general-knowledge transfer to novel tasks.",
+    "Compare OpenVLA (open 7B Llama+VLM), π0 (flow-matching), and GR00T N1 (dual-system) on the same robot task.",
+    "Name the Open X-Embodiment dataset and its role as the RT-X training corpus."
+  ]
+}

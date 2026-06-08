@@ -1,0 +1,15 @@
+{
+  "title": "Multi-Agent Debate and Collaboration",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 12 (Workflow Patterns), Phase 14 · 05 (Self-Refine and CRITIC)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Explain the debate protocol: N proposers, R rounds, converge on a shared answer.",
+    "Describe why debate improves factuality, rule-following, and reasoning.",
+    "Explain sparse topology: not every debater needs to see every other.",
+    "Implement a stdlib debate over a scripted LLM with full-mesh and sparse variants; measure token cost vs accuracy."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "RLHF: Reward Model + PPO",
+  "type": "Build",
+  "languages": [
+    "Python (with numpy)"
+  ],
+  "prerequisites": "Phase 10, Lesson 06 (Instruction Tuning / SFT)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a reward model that scores response quality from human preference pairs (chosen vs rejected)",
+    "Implement the PPO training loop that optimizes a language model policy against the reward model with a KL penalty",
+    "Explain why RLHF requires three models (SFT, reward, policy) and how the KL constraint prevents reward hacking",
+    "Evaluate the effect of RLHF by comparing response quality before and after preference optimization"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Handoffs and Routines — Stateless Orchestration",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 04 (Primitive Model)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

@@ -1,0 +1,16 @@
+{
+  "title": "In-Context Scheming in Frontier Models",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy multi-goal agent harness)"
+  ],
+  "prerequisites": "Phase 18 · 06 (mesa-optimization), Phase 18 · 07 (sleeper agents), Phase 14 (agent engineering)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Define in-context scheming and distinguish it from implanted deception (Lesson 7).",
+    "Name the three pillars of scheming — misalignment, goal-directedness, situational awareness — and how each is evaluated.",
+    "Explain what \"oversight-disabling\" behaviour looked like across o1, Claude 3.5 Sonnet, Claude 3 Opus, Gemini 1.5 Pro, and Llama 3.1 405B.",
+    "Explain why the 2025 anti-scheming training result (13% -> 0.4% covert-action rate) is confounded by increased situational awareness."
+  ]
+}

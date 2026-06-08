@@ -1,0 +1,15 @@
+{
+  "title": "Vision-Language Pretraining",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37 (Track B foundations)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement InfoNCE contrastive loss across a batch of image-caption pairs.",
+    "Compose contrastive loss with autoregressive language modeling loss.",
+    "Synthesize a 200-pair mock image-caption corpus with no real dataset download.",
+    "Run a 50-step demo training loop and observe both losses decreasing."
+  ]
+}

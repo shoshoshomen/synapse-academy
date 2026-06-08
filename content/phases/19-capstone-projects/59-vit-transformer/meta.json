@@ -1,0 +1,15 @@
+{
+  "title": "Vision Transformer Encoder",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37 (Track B foundations)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement a pre-LN transformer block with multi-head self-attention and a feed-forward sub-layer.",
+    "Stack 12 blocks with 12 heads to form a ViT-Base encoder.",
+    "Wire the patch front end from lesson 58 into the encoder and run a forward pass.",
+    "Verify that the CLS token aggregates information from every patch."
+  ]
+}

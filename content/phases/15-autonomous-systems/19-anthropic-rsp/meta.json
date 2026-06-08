@@ -1,0 +1,11 @@
+{
+  "title": "Anthropic Responsible Scaling Policy v3.0",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "RSP threshold decision engine)"
+  ],
+  "prerequisites": "Phase 15 · 06 (AAR), Phase 15 · 07 (RSI)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

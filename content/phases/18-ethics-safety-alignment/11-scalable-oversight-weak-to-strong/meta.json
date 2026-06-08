@@ -1,0 +1,16 @@
+{
+  "title": "Scalable Oversight and Weak-to-Strong Generalization",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "W2SG gap simulator)"
+  ],
+  "prerequisites": "Phase 18 · 01 (instruction-following), Phase 18 · 10 (AI Control), Phase 09 (RL foundations)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Define scalable oversight and weak-to-strong generalization and explain how they are complementary.",
+    "Describe the Burns et al. 2023 experimental setup: fine-tune GPT-4 using labels from GPT-2.",
+    "Explain the performance gap recovered (PGR) metric and what it measures.",
+    "State the three major scalable-oversight mechanisms (debate, recursive reward modeling, task decomposition) and one strength of each."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Build a Complete Vision Pipeline — Capstone",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lessons 01-15",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Design a production vision pipeline that detects objects, classifies them, and emits structured JSON — with every failure path handled",
+    "Plug a detector (Mask R-CNN or YOLO), a classifier (ConvNeXt-Tiny), and a data contract (Pydantic) into one service",
+    "Benchmark the end-to-end pipeline and identify the first bottleneck (usually preprocessing, then the detector)",
+    "Ship a minimal FastAPI service that accepts an image upload, runs the pipeline, and returns detections with classifications"
+  ]
+}

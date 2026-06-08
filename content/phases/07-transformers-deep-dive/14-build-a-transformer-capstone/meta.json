@@ -1,0 +1,10 @@
+{
+  "title": "Build a Transformer from Scratch — The Capstone",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 01 through 13. Don't skip.",
+  "timeEstimate": "~120 minutes",
+  "objectives": []
+}

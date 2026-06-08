@@ -1,0 +1,16 @@
+{
+  "title": "Transfusion: Autoregressive Text + Diffusion Image in One Transformer",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "two-loss trainer on MNIST-scale toy)"
+  ],
+  "prerequisites": "Phase 12 · 11 (Chameleon), Phase 8 (Generative AI)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Wire a transformer that runs two losses (NTP on text tokens, diffusion MSE on image patches) on one backbone.",
+    "Explain why bidirectional attention across image patches plus causal attention over text tokens is the right mask choice.",
+    "Compare Transfusion-style (continuous images, diffusion loss) to Chameleon-style (discrete images, NTP) on compute, quality, and code complexity.",
+    "Name MMDiT's contribution: modality-specific weights at each block, joint attention at the residual stream."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Capstone 09 — Code Migration Agent (Repo-Level Language / Runtime Upgrade)",
+  "type": "Capstone",
+  "languages": [
+    "Python (agent)",
+    "Java / Python (targets)",
+    "TypeScript (dashboard)"
+  ],
+  "prerequisites": "Phase 5 (NLP), Phase 7 (transformers), Phase 11 (LLM engineering), Phase 13 (tools), Phase 14 (agents), Phase 15 (autonomous), Phase 17 (infrastructure)",
+  "timeEstimate": "30 hours",
+  "objectives": []
+}

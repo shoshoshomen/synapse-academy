@@ -1,0 +1,11 @@
+{
+  "title": "Capstone 04 — Multimodal Document QA (Vision-First PDF, Tables, Charts)",
+  "type": "Capstone",
+  "languages": [
+    "Python (pipeline)",
+    "TypeScript (viewer UI)"
+  ],
+  "prerequisites": "Phase 4 (computer vision), Phase 5 (NLP), Phase 7 (transformers), Phase 11 (LLM engineering), Phase 12 (multimodal), Phase 17 (infrastructure)",
+  "timeEstimate": "30 hours",
+  "objectives": []
+}

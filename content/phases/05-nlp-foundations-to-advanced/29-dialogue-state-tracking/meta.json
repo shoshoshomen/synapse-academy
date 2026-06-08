@@ -1,0 +1,10 @@
+{
+  "title": "Dialogue State Tracking",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 17 (Chatbots), Phase 5 · 20 (Structured Outputs)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

@@ -1,0 +1,12 @@
+{
+  "title": "A2A — The Agent-to-Agent Protocol",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib",
+    "`http.server`",
+    "`json`)"
+  ],
+  "prerequisites": "Phase 16 · 04 (Primitive Model)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

@@ -1,0 +1,15 @@
+{
+  "title": "The Fourier Transform",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 01-04, 19 (complex numbers)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement the DFT from scratch and verify it against the O(N log N) Cooley-Tukey FFT",
+    "Interpret frequency coefficients: extract amplitude, phase, and power spectrum from a signal",
+    "Apply the convolution theorem to perform convolution via FFT multiplication",
+    "Connect Fourier frequency decomposition to transformer positional encodings and CNN convolution layers"
+  ]
+}

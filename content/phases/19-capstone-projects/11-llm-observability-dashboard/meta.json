@@ -1,0 +1,12 @@
+{
+  "title": "Capstone 11 — LLM Observability & Eval Dashboard",
+  "type": "Capstone",
+  "languages": [
+    "TypeScript (UI)",
+    "Python / TypeScript (ingest + evals)",
+    "SQL (ClickHouse)"
+  ],
+  "prerequisites": "Phase 11 (LLM engineering), Phase 13 (tools), Phase 17 (infrastructure), Phase 18 (safety)",
+  "timeEstimate": "25 hours",
+  "objectives": []
+}

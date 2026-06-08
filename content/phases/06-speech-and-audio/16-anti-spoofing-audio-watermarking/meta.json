@@ -1,0 +1,10 @@
+{
+  "title": "Voice Anti-Spoofing & Audio Watermarking — ASVspoof 5, AudioSeal, WaveVerify",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 06 (Speaker Recognition), Phase 6 · 08 (Voice Cloning)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

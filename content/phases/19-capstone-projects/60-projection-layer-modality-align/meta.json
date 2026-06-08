@@ -1,0 +1,15 @@
+{
+  "title": "Projection Layer for Modality Alignment",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37 (Track B foundations)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a two-layer MLP projection that maps image features into the text embedding space.",
+    "Construct a mock text embedding table (no pretrained tokenizer, no real corpus).",
+    "Compute a cosine alignment loss between projected image tokens and a paired caption embedding.",
+    "Train the projection alone with a frozen vision encoder and a frozen text table."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Scope Contracts and Task Boundaries",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 32 (Minimal Workbench), Phase 14 · 33 (Rules as Constraints)",
+  "timeEstimate": "~50 minutes",
+  "objectives": [
+    "Write a scope contract that an agent reads at task start and a verifier reads at task end.",
+    "Specify allowed files, forbidden files, acceptance criteria, rollback plan, and approval boundaries.",
+    "Implement a scope checker that compares a diff against the contract and flags violations.",
+    "Make scope creep visible, automatic, and reviewable."
+  ]
+}

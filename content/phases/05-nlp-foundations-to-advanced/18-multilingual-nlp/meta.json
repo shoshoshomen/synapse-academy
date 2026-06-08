@@ -1,0 +1,10 @@
+{
+  "title": "Multilingual NLP",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 04 (GloVe, FastText, Subword), Phase 5 · 11 (Machine Translation)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

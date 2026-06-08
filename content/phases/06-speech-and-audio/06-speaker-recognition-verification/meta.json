@@ -1,0 +1,10 @@
+{
+  "title": "Speaker Recognition & Verification",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 02 (Spectrograms & Mel), Phase 5 · 22 (Embedding Models)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Parallel Tool Calls and Streaming with Tools",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "thread pool + streaming harness)"
+  ],
+  "prerequisites": "Phase 13 · 02 (function calling deep dive)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain why `parallel_tool_calls: true` exists and when to disable it.",
+    "Correlate streamed argument chunks to the right tool-call id during parallel fan-out.",
+    "Reassemble partial `arguments` strings into complete JSON without parsing early.",
+    "Run a three-city weather benchmark that demonstrates sequential vs parallel latency."
+  ]
+}

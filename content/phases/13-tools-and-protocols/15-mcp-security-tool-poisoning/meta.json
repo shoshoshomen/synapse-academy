@@ -1,0 +1,16 @@
+{
+  "title": "MCP Security I — Tool Poisoning, Rug Pulls, Cross-Server Shadowing",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "hash-pin + poisoning detector)"
+  ],
+  "prerequisites": "Phase 13 · 07 (MCP server), Phase 13 · 08 (MCP client)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Name the seven attack classes: tool poisoning, rug pulls, cross-server shadowing, MPMA, parasitic toolchains, sampling attacks, supply-chain masquerading.",
+    "Understand why every attack works despite the tool interface looking correct.",
+    "Run `mcp-scan` (or equivalent) with hash pinning to detect description mutations.",
+    "Write a static detector for common injection patterns inside tool descriptions."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "SRE for AI — Multi-Agent Incident Response, Runbooks, Predictive Detection",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy multi-agent incident triage simulator)"
+  ],
+  "prerequisites": "Phase 17 · 13 (Observability), Phase 17 · 24 (Chaos Engineering)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Diagram the multi-agent AI SRE architecture: supervisor + specialized agents (logs, metrics, runbooks) + human approval gate.",
+    "Explain why auto-remediation is narrow (restart pod, revert deploy) rather than broad (re-architect service).",
+    "Name the adversarial evaluation pattern (NeuBird Hawkeye): two models agree = confidence; disagree = escalate.",
+    "Cite the MIT 89% early-detection result and the operational constraint: predictions without actuation are just dashboards."
+  ]
+}

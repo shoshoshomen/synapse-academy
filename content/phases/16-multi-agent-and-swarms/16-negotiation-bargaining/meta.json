@@ -1,0 +1,10 @@
+{
+  "title": "Negotiation and Bargaining",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 16 · 02 (FIPA-ACL Heritage), Phase 16 · 09 (Parallel Swarm Networks)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Logistic Regression",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 2 Lesson 1-2 (What Is ML, Linear Regression)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement logistic regression from scratch using the sigmoid function and binary cross-entropy loss",
+    "Compute and interpret precision, recall, F1 score, and the confusion matrix for binary classification",
+    "Explain why MSE fails for classification and why binary cross-entropy produces a convex cost surface",
+    "Build a softmax regression model for multi-class classification and evaluate threshold tuning tradeoffs"
+  ]
+}

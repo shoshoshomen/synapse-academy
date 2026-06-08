@@ -1,0 +1,15 @@
+{
+  "title": "Backpropagation from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Lesson 03.02 (Multi-Layer Networks)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Implement a Value-based autograd engine that builds a computational graph and computes gradients via topological sort",
+    "Derive the backward pass for addition, multiplication, and sigmoid using the chain rule",
+    "Train a multi-layer network on XOR and circle classification using only your from-scratch backpropagation engine",
+    "Identify the vanishing gradient problem in deep sigmoid networks and explain why gradients shrink exponentially"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Learning Rate Schedules and Warmup",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Lesson 03.06 (Optimizers), Lesson 03.08 (Weight Initialization)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement constant, step decay, cosine annealing, warmup + cosine, and 1cycle learning rate schedules from scratch",
+    "Demonstrate the three failure modes of learning rate selection: divergence (too high), stalling (too low), and oscillation (no decay)",
+    "Explain why warmup is necessary for Adam-based optimizers and how it stabilizes early training",
+    "Compare convergence speed across all five schedules on the same task and select the appropriate one for a given training budget"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "GPU Setup & Cloud",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 0, Lesson 01",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Verify local GPU availability using `nvidia-smi` and PyTorch's CUDA API",
+    "Configure Google Colab with a T4 GPU for free cloud-based experiments",
+    "Benchmark matrix multiplication on CPU vs GPU and measure the speedup",
+    "Estimate the largest model that fits in your VRAM using the fp16 rule of thumb"
+  ]
+}

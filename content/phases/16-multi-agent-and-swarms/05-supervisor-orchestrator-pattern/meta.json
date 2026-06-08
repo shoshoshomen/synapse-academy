@@ -1,0 +1,11 @@
+{
+  "title": "Supervisor / Orchestrator-Worker Pattern",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib",
+    "`threading`)"
+  ],
+  "prerequisites": "Phase 16 · 04 (Primitive Model)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

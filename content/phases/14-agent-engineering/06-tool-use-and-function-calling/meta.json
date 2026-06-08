@@ -1,0 +1,15 @@
+{
+  "title": "Tool Use and Function Calling",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 13 · 01 (Function Calling Deep Dive)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Explain Toolformer's self-supervised training signal: keep tool annotations only when execution reduces next-token loss.",
+    "Name BFCL V4's five evaluation categories and what each measures.",
+    "Implement a stdlib tool registry with schema validation, argument coercion, and execution sandboxing.",
+    "Diagnose the three 2026 open problems: long-horizon tool chaining, dynamic decision-making, and memory."
+  ]
+}

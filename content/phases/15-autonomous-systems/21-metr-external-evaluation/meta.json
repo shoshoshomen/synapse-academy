@@ -1,0 +1,11 @@
+{
+  "title": "METR Time Horizons and External Capability Evaluation",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "logistic-fit horizon estimator)"
+  ],
+  "prerequisites": "Phase 15 · 01 (Long-horizon agents), Phase 15 · 19 (RSP)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

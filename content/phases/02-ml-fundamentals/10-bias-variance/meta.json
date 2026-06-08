@@ -1,0 +1,15 @@
+{
+  "title": "Bias-Variance Tradeoff",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 2, Lessons 01-09 (ML basics, regression, classification, evaluation)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Derive the bias-variance decomposition of expected prediction error and explain the role of irreducible noise",
+    "Diagnose whether a model suffers from high bias or high variance using training and test error patterns",
+    "Explain how regularization techniques (L1, L2, dropout, early stopping) trade bias for variance",
+    "Implement experiments that visualize the bias-variance tradeoff across models of increasing complexity"
+  ]
+}

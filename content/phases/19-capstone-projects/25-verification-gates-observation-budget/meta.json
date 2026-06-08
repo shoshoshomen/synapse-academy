@@ -1,0 +1,16 @@
+{
+  "title": "Capstone Lesson 25: Verification Gates and the Observation Budget",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 19 · 20-24 (Track A1: agent loop, tool registry, message store, prompt builder, model router), Phase 14 · 33 (instructions as constraints), Phase 14 · 36 (scope contracts), Phase 14 · 38 (verification gates)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a `VerificationGate` protocol with a deterministic `evaluate(call)` method.",
+    "Compose budget, recency, whitelist, and regex gates into a chain with short-circuit semantics.",
+    "Track every observation through an `ObservationLedger` keyed by tool and turn.",
+    "Refuse a tool call when the cumulative observation budget would be exceeded.",
+    "Surface a structured `GateDecision` record that downstream observability can ingest."
+  ]
+}

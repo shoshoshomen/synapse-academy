@@ -1,0 +1,17 @@
+{
+  "title": "Capstone Lesson 40: Direct Preference Optimization from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python (torch",
+    "numpy)"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37 (NLP LLM track: tokenizer, embedding table, attention block, transformer body, pre-training loop, checkpointing, generation, perplexity)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Derive the DPO loss as a sigmoid over a scaled log-ratio difference and connect it to the implicit reward.",
+    "Build a reference model + policy model pair with a frozen reference and a trainable policy.",
+    "Compute sequence-level log-probabilities under both models, masking prompt tokens.",
+    "Train the policy on `(prompt, chosen, rejected)` triples and watch the chosen log-prob rise relative to rejected.",
+    "Pin behaviour with tests on the loss math, the gradient sign, and the reference invariance."
+  ]
+}

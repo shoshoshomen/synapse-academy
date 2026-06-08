@@ -1,0 +1,16 @@
+{
+  "title": "Red-Teaming: PAIR and Automated Attacks",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "mock PAIR loop against a toy target)"
+  ],
+  "prerequisites": "Phase 18 · 01 (instruction-following), Phase 14 (agent engineering)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Describe the PAIR algorithm: attacker system prompt, iterative refinement, in-context feedback.",
+    "Explain why PAIR is strictly more efficient than GCG when the target is black-box.",
+    "Name four other automated-attack baselines (GCG, AutoDAN, TAP, PAP) and state one distinguishing feature of each.",
+    "Describe the JailbreakBench and HarmBench evaluation protocols and what \"attack success rate\" means under each."
+  ]
+}

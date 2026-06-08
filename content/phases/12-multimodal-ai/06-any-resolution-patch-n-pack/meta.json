@@ -1,0 +1,16 @@
+{
+  "title": "Any-Resolution Vision: Patch-n'-Pack and NaFlex",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "patch packer + block-diagonal mask)"
+  ],
+  "prerequisites": "Phase 12 · 01 (ViT patches), Phase 12 · 05 (LLaVA)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Pack patches from a batch of variable-resolution images into one sequence and build the block-diagonal attention mask.",
+    "Pick between AnyRes tiling (LLaVA-NeXT), NaFlex (SigLIP 2), and M-RoPE (Qwen2-VL) for a given task.",
+    "Compute token budgets for OCR, charts, and photography without resizing.",
+    "Name the three failure modes of square-resize: squished text, cropped content, wasted tokens on padding."
+  ]
+}

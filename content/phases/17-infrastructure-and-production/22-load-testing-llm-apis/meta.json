@@ -1,0 +1,16 @@
+{
+  "title": "Load Testing LLM APIs — Why k6 and Locust Lie",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "toy realistic-prompt generator + latency collector)"
+  ],
+  "prerequisites": "Phase 17 · 08 (Inference Metrics), Phase 17 · 03 (GPU Autoscaling)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain the two anti-patterns (GIL trap, prompt-uniformity trap) that make generic load testers lie for LLM APIs.",
+    "Pick a tool for a given purpose: LLMPerf (benchmark run), k6 + streaming extension (CI gate), guidellm (large-scale synthetic), GenAI-Perf (NVIDIA reference).",
+    "Design four load patterns (steady, ramp, spike, soak) and name the failure mode each catches.",
+    "Build a realistic prompt distribution using mean + stddev of input tokens rather than fixed length."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Jamba — Hybrid SSM-Transformer",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "layer-mix calculator)"
+  ],
+  "prerequisites": "Phase 10 · 14 (open-model architectures), Phase 10 · 17 (native sparse attention)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Explain the three primitives in a Jamba block — Transformer layers, Mamba layers, MoE — and the 1:7:even interleaving recipe.",
+    "State what an SSM's recurrence looks like at a high level and why it enables constant-memory inference.",
+    "Compute the KV cache footprint of a Jamba model at 256k context and compare to what a pure-Transformer model would need.",
+    "Name the three Mamba-3 innovations (exponential-trapezoidal discretization, complex-valued state update, MIMO) and the problem each one targets."
+  ]
+}

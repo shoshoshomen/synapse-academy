@@ -1,0 +1,15 @@
+{
+  "title": "Support Vector Machines",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 (Lessons 08 Optimization, 14 Norms and Distances, 18 Convex Optimization)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement a linear SVM from scratch using hinge loss and gradient descent on the primal formulation",
+    "Explain the maximum margin principle and identify support vectors from a trained model",
+    "Compare linear, polynomial, and RBF kernels and explain how the kernel trick avoids explicit high-dimensional mapping",
+    "Evaluate the tradeoff controlled by the C parameter between margin width and classification errors"
+  ]
+}

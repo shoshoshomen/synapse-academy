@@ -1,0 +1,10 @@
+{
+  "title": "Attention Variants — Sliding Window, Sparse, Differential",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 02 (Self-Attention), Phase 7 · 03 (Multi-Head), Phase 7 · 12 (KV Cache / Flash Attention)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

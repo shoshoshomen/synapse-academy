@@ -1,0 +1,15 @@
+{
+  "title": "Prompt Injection and the PVE Defense",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 06 (Tool Use), Phase 14 · 21 (Computer Use)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "State the indirect prompt injection threat model from Greshake et al.",
+    "Name the five demonstrated exploit classes (data theft, worming, persistent memory poisoning, ecosystem contamination, arbitrary tool use).",
+    "Describe the 2026 defense doctrine: untrusted content, allowlist navigation, per-step safety, guardrails, human-in-the-loop, external capture.",
+    "Implement a PVE (Prompt-Validator-Executor) pattern — cheap fast validator before the expensive main model commits to a tool call."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "JSON-RPC 2.0 Over Newline-Delimited Stdio",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 13 lessons 01-07, Phase 14 lesson 01",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Speak JSON-RPC 2.0 framed as newline-delimited JSON over stdin and stdout.",
+    "Map the five standard error codes (-32700, -32600, -32601, -32602, -32603) and surface them with the right semantics.",
+    "Distinguish requests, responses, notifications, and batches without inventing new envelope keys.",
+    "Handle one parse error per line without poisoning the rest of the stream.",
+    "Build a self-terminating demo using io.BytesIO so the lesson runs without spawning a child process."
+  ]
+}

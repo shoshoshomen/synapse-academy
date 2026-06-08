@@ -1,0 +1,15 @@
+{
+  "title": "Semantic Segmentation — U-Net",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 03 (CNNs), Phase 4 Lesson 04 (Image Classification)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Distinguish semantic, instance, and panoptic segmentation and pick the right task for a given problem",
+    "Build a U-Net from scratch in PyTorch with encoder blocks, a bottleneck, a decoder with transposed convolutions, and skip connections",
+    "Implement pixel-wise cross-entropy, Dice loss, and the combined loss that is the current default for medical and industrial segmentation",
+    "Read IoU and Dice metrics per class and diagnose whether a bad score comes from small-object recall, boundary accuracy, or class imbalance"
+  ]
+}

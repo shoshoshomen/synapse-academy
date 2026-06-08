@@ -1,0 +1,15 @@
+{
+  "title": "Data Management",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 0, Lesson 01",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Load, stream, and cache datasets using the Hugging Face `datasets` library",
+    "Convert between CSV, JSON, Parquet, and Arrow formats and explain their tradeoffs",
+    "Create reproducible train/validation/test splits with fixed random seeds",
+    "Manage large model and dataset files using `.gitignore`, Git LFS, or DVC"
+  ]
+}

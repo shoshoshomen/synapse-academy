@@ -1,0 +1,15 @@
+{
+  "title": "Git & Collaboration",
+  "type": "Learn",
+  "languages": [
+    "--"
+  ],
+  "prerequisites": "Phase 0, Lesson 01",
+  "timeEstimate": "~30 minutes",
+  "objectives": [
+    "Configure git identity and use the daily workflow of add, commit, and push",
+    "Create and merge branches for isolated experiments without breaking main",
+    "Write a `.gitignore` that excludes model checkpoints and large binary files",
+    "Navigate the commit history with `git log` to understand project evolution"
+  ]
+}

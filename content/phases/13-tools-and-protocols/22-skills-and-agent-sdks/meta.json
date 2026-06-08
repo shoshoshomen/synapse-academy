@@ -1,0 +1,16 @@
+{
+  "title": "Skills and Agent SDKs — Anthropic Skills, AGENTS.md, OpenAI Apps SDK",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "SKILL.md parser and loader)"
+  ],
+  "prerequisites": "Phase 13 · 07 (MCP server)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Distinguish the three layers: AGENTS.md (project context), SKILL.md (reusable know-how), MCP (tools).",
+    "Write a SKILL.md with YAML frontmatter and progressive disclosure.",
+    "Load skills filesystem-style into an agent runtime.",
+    "Compose a skill with an MCP server and an AGENTS.md so one package works in Claude Code, Cursor, and Codex."
+  ]
+}

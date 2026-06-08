@@ -1,0 +1,16 @@
+{
+  "title": "Roots and Elicitation — Scoping and Mid-Flight User Input",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "roots + elicitation demo)"
+  ],
+  "prerequisites": "Phase 13 · 07 (MCP server)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Declare `roots` and respond to `notifications/roots/list_changed`.",
+    "Restrict server file operations to URIs inside the declared root set.",
+    "Use `elicitation/create` to ask the user for a confirmation or structured input mid-tool-call.",
+    "Choose between form-mode and URL-mode elicitation (the latter is experimental; drift-risk noted)."
+  ]
+}

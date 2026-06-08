@@ -1,0 +1,16 @@
+{
+  "title": "Qwen-VL Family and Dynamic-FPS Video",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "M-RoPE encoder + dynamic-FPS sampler)"
+  ],
+  "prerequisites": "Phase 12 · 06 (patch-n'-pack)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Compute M-RoPE's three-axis rotations (temporal, height, width) and explain why all three are needed.",
+    "Pick a dynamic-FPS sampling strategy for a video and reason about tokens-per-second vs event-detection accuracy.",
+    "Name the four Qwen-VL generational upgrades in order and what each enabled.",
+    "Wire a Qwen2.5-VL-style JSON agent output format and parse structured tool calls from a VLM response."
+  ]
+}

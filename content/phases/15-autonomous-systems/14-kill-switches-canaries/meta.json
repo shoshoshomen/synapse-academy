@@ -1,0 +1,13 @@
+{
+  "title": "Kill Switches, Circuit Breakers, and Canary Tokens",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "three-detector simulator: kill switch",
+    "circuit breaker",
+    "canary)"
+  ],
+  "prerequisites": "Phase 15 · 13 (Cost governors), Phase 15 · 10 (Permission modes)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

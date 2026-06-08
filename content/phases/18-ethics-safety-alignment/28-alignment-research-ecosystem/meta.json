@@ -1,0 +1,15 @@
+{
+  "title": "Alignment Research Ecosystem — MATS, Redwood, Apollo, METR",
+  "type": "Learn",
+  "languages": [
+    "none"
+  ],
+  "prerequisites": "Phase 18 · 01-27 (prior Phase 18 lessons)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Identify the five organisations of the non-lab alignment research ecosystem and their core output.",
+    "Describe MATS's scale (scholars, papers, h-index) and its role as a talent pipeline.",
+    "Describe Redwood's AI Control agenda and its partnership with UK AISI.",
+    "Describe METR's task-based evaluation methodology."
+  ]
+}

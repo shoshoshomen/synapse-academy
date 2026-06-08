@@ -1,0 +1,16 @@
+{
+  "title": "Vectors, Matrices & Operations",
+  "type": "Build",
+  "languages": [
+    "Python",
+    "Julia"
+  ],
+  "prerequisites": "Phase 1, Lesson 01 (Linear Algebra Intuition)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Build a Matrix class with element-wise operations, matrix multiplication, transpose, determinant, and inverse",
+    "Distinguish element-wise multiplication from matrix multiplication and explain when each applies",
+    "Implement a single dense neural network layer (`relu(W @ x + b)`) using only the from-scratch Matrix class",
+    "Explain broadcasting rules and how bias addition works in neural network frameworks"
+  ]
+}

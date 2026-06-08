@@ -1,0 +1,15 @@
+{
+  "title": "Pre-Training a Mini GPT (124M Parameters)",
+  "type": "Build",
+  "languages": [
+    "Python (with numpy)"
+  ],
+  "prerequisites": "Phase 10, Lessons 01-03 (Tokenizers, Building a Tokenizer, Data Pipelines)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Implement the full GPT-2 architecture (124M parameters) from scratch: token embeddings, positional embeddings, transformer blocks, and the language model head",
+    "Train a GPT model on a text corpus using next-token prediction with cross-entropy loss",
+    "Implement autoregressive text generation with temperature sampling and top-k/top-p filtering",
+    "Monitor training loss curves and validate that the model learns coherent language patterns"
+  ]
+}

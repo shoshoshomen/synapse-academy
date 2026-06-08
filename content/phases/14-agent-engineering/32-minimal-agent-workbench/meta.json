@@ -1,0 +1,15 @@
+{
+  "title": "The Minimal Agent Workbench",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 31 (Why Capable Models Still Fail)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Define the three files that form the minimum viable workbench.",
+    "Explain why a short root router beats a long monolithic `AGENTS.md`.",
+    "Build a state file the agent can read at every turn and write at the end.",
+    "Build a task board that survives multi-session work without chat history."
+  ]
+}

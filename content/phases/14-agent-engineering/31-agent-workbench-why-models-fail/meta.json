@@ -1,0 +1,15 @@
+{
+  "title": "Agent Workbench Engineering: Why Capable Models Still Fail",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 26 (Failure Modes)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Separate model capability from execution reliability.",
+    "Name the seven workbench surfaces that decide whether an agent ships.",
+    "Compare a prompt-only run against a workbench-guided run on a small repo task.",
+    "Produce a failure-mode report that maps each missed surface to the symptom it caused."
+  ]
+}

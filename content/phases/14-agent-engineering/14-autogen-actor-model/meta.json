@@ -1,0 +1,15 @@
+{
+  "title": "AutoGen v0.4: Actor Model and Agent Framework",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 12 (Workflow Patterns)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Describe the actor model: agents as actors, messages as the only IPC, failure isolation per actor.",
+    "Name AutoGen v0.4's three API layers — Core, AgentChat, Extensions — and what each is for.",
+    "Explain why decoupling message delivery from handling gives fault isolation and natural concurrency.",
+    "Implement a stdlib actor runtime in Python and port a two-agent code-review flow onto it."
+  ]
+}

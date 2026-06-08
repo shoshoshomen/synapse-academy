@@ -1,0 +1,16 @@
+{
+  "title": "Fairness Criteria — Group, Individual, Counterfactual",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "three-criteria comparison)"
+  ],
+  "prerequisites": "Phase 18 · 20 (bias), Phase 02 (classical ML)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "State the three group-fairness criteria (demographic parity, equalized odds, conditional use accuracy equality) and one impossibility result.",
+    "Describe individual fairness via the Dwork et al. 2012 Lipschitz formulation.",
+    "Describe counterfactual fairness and its causal-graph dependency.",
+    "Explain backtracking counterfactuals and why they sidestep the intervention-on-protected-attribute problem."
+  ]
+}

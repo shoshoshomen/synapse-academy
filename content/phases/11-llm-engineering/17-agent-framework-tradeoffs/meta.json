@@ -1,0 +1,10 @@
+{
+  "title": "Agent Framework Tradeoffs — LangGraph vs CrewAI vs AutoGen vs Agno",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 · 09 (Function Calling), Phase 11 · 16 (LangGraph)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

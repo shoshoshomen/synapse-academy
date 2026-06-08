@@ -1,0 +1,16 @@
+{
+  "title": "Agno and Mastra: Production Runtimes",
+  "type": "Learn",
+  "languages": [
+    "Python",
+    "TypeScript"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 13 (LangGraph)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Identify Agno's performance targets and when they matter.",
+    "Name Mastra's three primitives — Agents, Tools, Workflows — and the supported server adapters.",
+    "Explain why a stateless session-scoped FastAPI backend is the recommended Agno production path.",
+    "Pick Agno vs Mastra for a given stack (Python-first vs TypeScript-first)."
+  ]
+}

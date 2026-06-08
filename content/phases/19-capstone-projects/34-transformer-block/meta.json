@@ -1,0 +1,16 @@
+{
+  "title": "Transformer Block from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30 to 33 (tokenizer, embeddings, attention math, batched data loader)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a transformer block in PyTorch from the four moving pieces: LayerNorm, multi head causal attention, residual connections, position wise MLP.",
+    "Place the LayerNorms in two configurations (pre-LN and post-LN) and explain why one trains stably without warmup.",
+    "Implement causal masking inside the multi head attention so token `i` cannot see tokens `j > i`.",
+    "Track gradient flow through both variants on a 12 layer stack and read the result without hand waving.",
+    "Reuse the block as a drop-in unit when the next lesson assembles a 124 million parameter GPT."
+  ]
+}

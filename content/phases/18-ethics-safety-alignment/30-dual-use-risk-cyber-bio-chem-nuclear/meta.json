@@ -1,0 +1,15 @@
+{
+  "title": "Dual-Use Risk — Cyber, Bio, Chem, Nuclear Uplift",
+  "type": "Learn",
+  "languages": [
+    "none"
+  ],
+  "prerequisites": "Phase 18 · 17 (WMDP), Phase 18 · 18 (safety frameworks), Phase 18 · 28 (ecosystem)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Describe the 2024-2025 bio-uplift narrative: \"mild uplift\" -> \"on the cusp\" -> \"2.53x uplift insufficient to rule out ASL-3.\"",
+    "Describe the November 2025 Anthropic cyber report: Chinese-linked automation at up to 90% of a cyberattack campaign.",
+    "Describe the chem/bio execution-gap erosion: vision-enabled real-time correction of wet-lab experiments.",
+    "State the novice-relative vs expert-absolute asymmetry and its implication for safety-case construction."
+  ]
+}

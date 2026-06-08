@@ -1,0 +1,15 @@
+{
+  "title": "OCR & Document Understanding",
+  "type": "Learn + Use",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 06 (Detection), Phase 7 Lesson 02 (Self-Attention)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Trace the classical OCR pipeline (detect -> recognise -> layout) and the modern end-to-end alternatives (Donut, Qwen-VL-OCR)",
+    "Implement CTC (Connectionist Temporal Classification) loss for sequence-to-sequence OCR training",
+    "Use PaddleOCR or EasyOCR for production document parsing without training",
+    "Distinguish OCR, layout parsing, and document understanding — and pick the right tool per task"
+  ]
+}

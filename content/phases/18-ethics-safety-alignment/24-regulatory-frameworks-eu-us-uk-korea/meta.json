@@ -1,0 +1,15 @@
+{
+  "title": "Regulatory Frameworks — EU, US, UK, Korea",
+  "type": "Learn",
+  "languages": [
+    "none"
+  ],
+  "prerequisites": "Phase 18 · 18 (frontier frameworks), Phase 18 · 27 (data governance)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Describe the EU AI Act risk tiers (prohibited, high-risk, general-purpose, limited-risk) and the August 2025 / August 2026 / August 2027 timeline.",
+    "Describe the three chapters of the GPAI Code of Practice and which providers each binds.",
+    "Describe the 2025 rebrands: UK AISI -> AI Security Institute; US AISI -> CAISI; what each rebrand implies about policy direction.",
+    "State the core provision of Korea's AI Framework Act."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Audio Transformers — Whisper Architecture",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 05 (Full Transformer), Phase 7 · 08 (Encoder-Decoder), Phase 7 · 09 (ViT)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Optimizers",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Lesson 03.05 (Loss Functions)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Implement SGD, SGD with momentum, Adam, and AdamW optimizers from scratch in Python",
+    "Explain how Adam's bias correction compensates for zero-initialized moment estimates in early training steps",
+    "Demonstrate why AdamW produces better generalization than Adam with L2 regularization on the same task",
+    "Select the appropriate optimizer and default hyperparameters for transformers, CNNs, GANs, and fine-tuning"
+  ]
+}

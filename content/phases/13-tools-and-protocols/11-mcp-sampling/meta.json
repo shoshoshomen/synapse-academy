@@ -1,0 +1,16 @@
+{
+  "title": "MCP Sampling — Server-Requested LLM Completions and Agent Loops",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "sampling harness)"
+  ],
+  "prerequisites": "Phase 13 · 07 (MCP server), Phase 13 · 10 (resources and prompts)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain what `sampling/createMessage` solves (server-hosted loops without server-side API keys).",
+    "Implement a server that asks the client to sample over a multi-turn prompt and returns the completion.",
+    "Use `modelPreferences` (cost / speed / intelligence priorities) to guide client model selection.",
+    "Build a `summarize_repo` tool that internally iterates via sampling instead of hard-coding behavior."
+  ]
+}

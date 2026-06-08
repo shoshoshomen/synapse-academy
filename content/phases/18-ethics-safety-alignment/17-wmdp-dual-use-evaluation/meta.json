@@ -1,0 +1,16 @@
+{
+  "title": "WMDP and Dual-Use Capability Evaluation",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "WMDP-shaped uplift evaluation harness)"
+  ],
+  "prerequisites": "Phase 18 · 16 (red-team tooling), Phase 14 (agent engineering)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe WMDP's three domains, question counts, and \"yellow zone\" filter criterion.",
+    "Explain RMU and why WMDP is both an evaluation and an unlearning benchmark.",
+    "Describe the 2024-2025 uplift narrative: \"mild uplift\" -> \"on the cusp\" -> \"insufficient to rule out ASL-3.\"",
+    "Distinguish novice-relative uplift from expert-absolute capability."
+  ]
+}

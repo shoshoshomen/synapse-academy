@@ -1,0 +1,15 @@
+{
+  "title": "Skill Libraries and Lifelong Learning (Voyager)",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 07 (MemGPT), Phase 14 · 08 (Letta Blocks)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Name Voyager's three components — automatic curriculum, skill library, iterative prompting — and the role of each.",
+    "Explain why Voyager makes the action space code, not primitive commands.",
+    "Implement a stdlib skill library with registration, retrieval, composition, and failure-driven refinement.",
+    "Map Voyager's pattern onto the 2026 Claude Agent SDK skills and the skillkit ecosystem."
+  ]
+}

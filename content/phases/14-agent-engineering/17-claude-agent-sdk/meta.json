@@ -1,0 +1,15 @@
+{
+  "title": "Claude Agent SDK: Subagents and Session Store",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 10 (Skill Libraries)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Explain the difference between the Anthropic Client SDK (raw API) and the Claude Agent SDK (harness shape).",
+    "Describe subagents — parallelization and context isolation — and when to reach for them.",
+    "Name the Python SDK's session store surface (`append`, `load`, `list_sessions`, `delete`, `list_subkeys`) and the role of `--session-mirror`.",
+    "Implement a stdlib harness with built-in tools, subagent spawning with isolated context, lifecycle hooks, and a session store."
+  ]
+}

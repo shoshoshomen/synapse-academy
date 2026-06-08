@@ -1,0 +1,15 @@
+{
+  "title": "Pipeline Parallel and Bubble Analysis",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track C lessons 42-49",
+  "timeEstimate": "~90 min",
+  "objectives": [
+    "Split a sequential model into N stages and simulate a forward pipeline across N ranks.",
+    "Schedule M microbatches through the pipeline using the GPipe schedule (forward-only fill, then backward) and compute the bubble fraction.",
+    "Compare bubble against the interleaved 1F1B schedule used in Megatron-LM and PipeDream.",
+    "Defend stage assignment: equal compute per stage matters more than equal parameter count per stage."
+  ]
+}

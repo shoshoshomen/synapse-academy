@@ -1,0 +1,10 @@
+{
+  "title": "Reward Modeling & RLHF",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 05 (Sentiment), Phase 9 · 08 (PPO)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

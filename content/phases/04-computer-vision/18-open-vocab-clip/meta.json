@@ -1,0 +1,15 @@
+{
+  "title": "Open-Vocabulary Vision — CLIP",
+  "type": "Build + Use",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 14 (ViT), Phase 4 Lesson 17 (Self-Supervised)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Explain CLIP's two-tower architecture and contrastive training objective",
+    "Use a pretrained CLIP (or SigLIP) for zero-shot classification without any task-specific training",
+    "Implement zero-shot classification from scratch: encode class prompts, compute cosine similarity, take argmax",
+    "Distinguish CLIP, SigLIP, OpenCLIP, and LLaVA/LLaMA-vision models — what each is for in 2026"
+  ]
+}

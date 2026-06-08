@@ -1,0 +1,10 @@
+{
+  "title": "Speech Recognition (ASR) — CTC, RNN-T, Attention",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 02 (Spectrograms & Mel), Phase 5 · 08 (CNNs & RNNs for Text), Phase 5 · 10 (Attention)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

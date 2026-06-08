@@ -1,0 +1,10 @@
+{
+  "title": "Sim-to-Real Transfer",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 9 · 08 (PPO), Phase 2 · 10 (Bias/Variance)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

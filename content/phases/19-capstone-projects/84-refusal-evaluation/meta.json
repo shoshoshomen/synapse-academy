@@ -1,0 +1,10 @@
+{
+  "title": "Capstone 84 — Refusal Evaluation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 18 safety lessons, Phase 19 Track A lessons 25-29",
+  "timeEstimate": "~90 min",
+  "objectives": []
+}

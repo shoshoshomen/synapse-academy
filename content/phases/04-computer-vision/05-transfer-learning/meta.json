@@ -1,0 +1,15 @@
+{
+  "title": "Transfer Learning & Fine-Tuning",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 03 (CNNs), Phase 4 Lesson 04 (Image Classification)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Distinguish feature extraction from fine-tuning and pick the right one based on dataset size, domain distance, and compute budget",
+    "Load a pretrained backbone, replace its classifier head, and train only the head to a working baseline in under 20 lines",
+    "Progressively unfreeze layers with discriminative learning rates so early generic features get smaller updates than late task-specific ones",
+    "Diagnose the three common failures: feature drift from too-high LR on unfrozen blocks, BN statistics collapse on tiny datasets, and catastrophic forgetting"
+  ]
+}

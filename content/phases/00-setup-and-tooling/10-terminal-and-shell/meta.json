@@ -1,0 +1,15 @@
+{
+  "title": "Terminal & Shell",
+  "type": "Learn",
+  "languages": [
+    "--"
+  ],
+  "prerequisites": "Phase 0, Lesson 01",
+  "timeEstimate": "~35 minutes",
+  "objectives": [
+    "Use piping, redirects, and `grep` to filter and process training logs from the command line",
+    "Create persistent tmux sessions with multiple panes for concurrent training and GPU monitoring",
+    "Monitor system and GPU resources with `htop`, `nvtop`, and `nvidia-smi`",
+    "Transfer files between local and remote machines using SSH, `scp`, and `rsync`"
+  ]
+}

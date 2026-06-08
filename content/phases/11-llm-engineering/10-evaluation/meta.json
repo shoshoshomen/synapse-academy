@@ -1,0 +1,15 @@
+{
+  "title": "Evaluation & Testing LLM Applications",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 Lesson 01 (Prompt Engineering), Lesson 09 (Function Calling)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Build an evaluation dataset with input-output pairs, rubrics, and edge cases specific to your LLM application",
+    "Implement automated scoring using LLM-as-judge, regex matching, and deterministic assertion checks",
+    "Set up regression testing that detects quality degradation when prompts, models, or parameters change",
+    "Design evaluation metrics that capture what matters for your use case (correctness, tone, format compliance, latency)"
+  ]
+}

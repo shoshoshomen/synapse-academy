@@ -1,0 +1,12 @@
+{
+  "title": "Production Scaling — Queues, Checkpoints, Durability",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib",
+    "`asyncio`",
+    "`sqlite3`)"
+  ],
+  "prerequisites": "Phase 16 · 09 (Parallel Swarm Networks), Phase 16 · 13 (Shared Memory)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

@@ -1,0 +1,10 @@
+{
+  "title": "The Full Transformer — Encoder + Decoder",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 02 (Self-Attention), Phase 7 · 03 (Multi-Head Attention), Phase 7 · 04 (Positional Encoding)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

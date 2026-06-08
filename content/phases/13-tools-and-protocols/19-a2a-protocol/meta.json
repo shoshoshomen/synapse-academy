@@ -1,0 +1,16 @@
+{
+  "title": "A2A — Agent-to-Agent Protocol",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "Agent Card + Task harness)"
+  ],
+  "prerequisites": "Phase 13 · 06 (MCP fundamentals), Phase 13 · 08 (MCP client)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Distinguish agent-to-tool (MCP) from agent-to-agent (A2A) use cases.",
+    "Publish an Agent Card at `/.well-known/agent.json` with skills and endpoint metadata.",
+    "Walk the Task lifecycle (submitted → working → input-required → completed / failed / canceled / rejected).",
+    "Use Messages with Parts (text, file, data) and Artifacts as outputs."
+  ]
+}

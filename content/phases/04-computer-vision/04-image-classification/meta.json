@@ -1,0 +1,15 @@
+{
+  "title": "Image Classification",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 2 Lesson 09 (Model Evaluation), Phase 3 Lesson 10 (Mini Framework), Phase 4 Lesson 03 (CNNs)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Build an end-to-end image classification pipeline on CIFAR-10: dataset, augmentation, model, training loop, evaluation",
+    "Explain the role of each component (dataloader, loss, optimizer, scheduler, augmentation) and predict how breaking any one of them manifests in the loss curve",
+    "Implement mixup, cutout, and label smoothing from scratch and justify when each is worth adding",
+    "Read a confusion matrix and a per-class precision/recall table to diagnose dataset and model failures beyond aggregate accuracy"
+  ]
+}

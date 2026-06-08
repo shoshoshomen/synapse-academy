@@ -1,0 +1,15 @@
+{
+  "title": "Multimodal Evaluation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 58-62 (Track E foundations: encoder, transformer, projection, cross-attention fusion, pretraining)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Compute Recall@K from a similarity matrix between image and caption embeddings.",
+    "Compute exact-match VQA accuracy from a model that maps (image, question) pairs to a fixed answer vocabulary.",
+    "Compute BLEU-4 from generated and reference token sequences without any external library.",
+    "Run all three evals against a synthetic suite built on top of the trained model from lesson 62."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "GPU Autoscaling on Kubernetes — Karpenter, KAI Scheduler, Gang Scheduling",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy queue-depth autoscaler simulator)"
+  ],
+  "prerequisites": "Phase 17 · 02 (Inference Platform Economics), Phase 17 · 04 (vLLM Serving Internals)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Diagram the three autoscaling layers (node provisioning, gang scheduling, application-level) and name the tool used at each layer.",
+    "Explain why `DCGM_FI_DEV_GPU_UTIL` is the wrong HPA signal for vLLM and name two replacements (queue depth, KV cache utilization).",
+    "Describe gang scheduling and the partial-allocation failure mode KAI Scheduler prevents (7 of 8 GPUs idle).",
+    "Name the Karpenter consolidation policy (`WhenEmptyOrUnderutilized`) that terminates running GPU jobs and state the 2026 safe alternative."
+  ]
+}

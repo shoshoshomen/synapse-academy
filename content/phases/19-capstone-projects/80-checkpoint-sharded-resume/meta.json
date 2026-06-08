@@ -1,0 +1,15 @@
+{
+  "title": "Sharded Checkpoint and Atomic Resume",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track C lessons 42-49",
+  "timeEstimate": "~90 min",
+  "objectives": [
+    "Save a multi-rank checkpoint as a per-rank shard file plus a manifest that records which rank owns what.",
+    "Use the atomic write pattern (write to a temp path then rename) so a crash mid-write never produces a half-finished checkpoint.",
+    "Resume from the manifest, verifying byte-equal state for both fp16 parameters and the ZeRO optimiser state on every rank.",
+    "Defend the manifest schema against the three failure modes: world-size change, shard count mismatch, and partial write."
+  ]
+}

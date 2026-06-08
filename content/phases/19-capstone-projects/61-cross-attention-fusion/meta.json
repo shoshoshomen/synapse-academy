@@ -1,0 +1,15 @@
+{
+  "title": "Cross-Attention Fusion",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37 (Track B foundations)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement multi-head cross-attention where the query stream is text and the key/value stream is vision.",
+    "Compose a decoder block: causal self-attention + cross-attention + feed-forward.",
+    "Get the mask shapes right: causal mask for self-attention, no mask for cross-attention.",
+    "Run a forward pass with batched text tokens and a fixed pool of image tokens."
+  ]
+}

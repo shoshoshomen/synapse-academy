@@ -1,0 +1,10 @@
+{
+  "title": "Speculative Decoding and EAGLE",
+  "type": "Build",
+  "languages": [
+    "Python (with numpy)"
+  ],
+  "prerequisites": "Phase 10 Lesson 12 (Inference Optimization), Phase 10 Lesson 04 (Pre-training Mini-GPT)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

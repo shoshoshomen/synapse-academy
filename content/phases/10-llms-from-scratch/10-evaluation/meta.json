@@ -1,0 +1,15 @@
+{
+  "title": "Evaluation: Benchmarks, Evals, LM Harness",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 10, Lessons 01-05 (LLMs from Scratch)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a custom evaluation harness that runs multiple-choice and open-ended benchmarks against a language model",
+    "Explain why standard benchmarks (MMLU, HumanEval) saturate and fail to differentiate frontier models",
+    "Implement task-specific evals with proper metrics: exact match, F1, BLEU, and LLM-as-judge scoring",
+    "Design a custom evaluation suite targeting your specific use case rather than relying solely on public leaderboards"
+  ]
+}

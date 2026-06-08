@@ -1,0 +1,10 @@
+{
+  "title": "Audio Evaluation — WER, MOS, UTMOS, MMAU, FAD, and the Open Leaderboards",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 04, 06, 07, 09, 10; Phase 2 · 09 (Model Evaluation)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

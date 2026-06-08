@@ -1,0 +1,15 @@
+{
+  "title": "Graph Theory for Machine Learning",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1, Lessons 01-03 (linear algebra, matrices)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a graph class with adjacency matrix/list representations and implement BFS and DFS traversals",
+    "Compute the graph Laplacian and use its eigenvalues to detect connected components and cluster nodes",
+    "Implement one round of GNN-style message passing as a normalized adjacency matrix multiplication",
+    "Apply spectral clustering to partition a graph using the Fiedler vector"
+  ]
+}

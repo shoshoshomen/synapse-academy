@@ -1,0 +1,16 @@
+{
+  "title": "Differential Privacy for LLMs",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "DP-SGD noise-injection and ε-δ accountant demonstration)"
+  ],
+  "prerequisites": "Phase 01 · 09 (information theory), Phase 10 · 01 (large-model training)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Define (epsilon, delta)-differential privacy and state the DP-SGD recipe.",
+    "Explain the 2024-2025 tension: canary MIA vs training-data extraction give different pictures.",
+    "Describe PMixED and why inference-time private prediction is an alternative to DP training.",
+    "Describe the Differential Privacy Reversal via LLM Feedback attack."
+  ]
+}

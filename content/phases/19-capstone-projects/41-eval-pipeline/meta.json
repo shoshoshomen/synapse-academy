@@ -1,0 +1,17 @@
+{
+  "title": "Capstone Lesson 41: Full Evaluation Pipeline",
+  "type": "Build",
+  "languages": [
+    "Python (torch",
+    "numpy)"
+  ],
+  "prerequisites": "Phase 19 lessons 30-37 (NLP LLM track: tokenizer, embedding table, attention block, transformer body, pre-training loop, checkpointing, generation, perplexity)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Compute held-out perplexity with masked-token accounting on a tiny transformer.",
+    "Run an exact-match eval on short-form factual prompts.",
+    "Compute token-level F1 between predicted and reference strings with normalisation.",
+    "Build a local mock LLM-as-judge that scores model outputs on a 1-5 scale.",
+    "Aggregate the four evals into a single weighted report with per-task breakdown."
+  ]
+}

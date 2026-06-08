@@ -1,0 +1,10 @@
+{
+  "title": "Voice Activity Detection & Turn-Taking — Silero, Cobra, and the Flush Trick",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 11 (Real-Time Audio), Phase 6 · 12 (Voice Assistant)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

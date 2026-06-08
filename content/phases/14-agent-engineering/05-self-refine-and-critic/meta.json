@@ -1,0 +1,15 @@
+{
+  "title": "Self-Refine and CRITIC: Iterative Output Improvement",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 03 (Reflexion)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "State Self-Refine's three prompts (generate, feedback, refine) and explain why history matters for the refine prompt.",
+    "Explain CRITIC's critical insight: LLMs are unreliable at self-verification without external grounding.",
+    "Implement a stdlib Self-Refine loop with history and an optional external verifier.",
+    "Map this pattern to Anthropic's \"evaluator-optimizer\" workflow and OpenAI Agents SDK's output guardrails."
+  ]
+}

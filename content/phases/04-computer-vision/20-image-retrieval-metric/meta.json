@@ -1,0 +1,15 @@
+{
+  "title": "Image Retrieval & Metric Learning",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 14 (ViT), Phase 4 Lesson 18 (CLIP)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Explain triplet, contrastive, and proxy-based metric learning losses and pick the right one for a given dataset",
+    "Implement L2-normalisation and cosine similarity correctly and audit the difference between \"same item\" and \"same class\" retrieval",
+    "Build a FAISS index, query it by text and by image, and report recall@K for a held-out query set",
+    "Use DINOv2, CLIP, and SigLIP as off-the-shelf embedding backbones and know when each wins"
+  ]
+}

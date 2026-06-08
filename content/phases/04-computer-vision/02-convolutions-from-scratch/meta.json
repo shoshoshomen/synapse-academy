@@ -1,0 +1,15 @@
+{
+  "title": "Convolutions from Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 3 (Deep Learning Core), Phase 4 Lesson 01 (Image Fundamentals)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Implement 2D convolution from scratch using only NumPy, including the nested-loop version and a vectorised `im2col` version",
+    "Compute output spatial size for any combination of input size, kernel size, padding, and stride, and justify the `(H - K + 2P) / S + 1` formula",
+    "Hand-design kernels (edge, blur, sharpen, Sobel) and explain why each one produces the pattern of activations it does",
+    "Stack convolutions into a feature extractor and connect the depth-of-the-stack to the size of the receptive field"
+  ]
+}

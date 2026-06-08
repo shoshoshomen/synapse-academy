@@ -1,0 +1,15 @@
+{
+  "title": "Communication Protocols",
+  "type": "Build",
+  "languages": [
+    "TypeScript"
+  ],
+  "prerequisites": "Phase 14 (Agent Engineering), Lesson 16.01 (Why Multi-Agent)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Implement MCP tool discovery and invocation so agents can use tools exposed by external servers",
+    "Build an A2A agent card and task endpoint that allows one agent to delegate work to another over HTTP",
+    "Compare MCP (tool access), A2A (agent-to-agent), ACP (enterprise audit), and ANP (decentralized trust) and explain which protocol solves which problem",
+    "Wire multiple protocols together in a single system where agents discover tools via MCP and delegate tasks via A2A"
+  ]
+}

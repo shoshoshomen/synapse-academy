@@ -1,0 +1,15 @@
+{
+  "title": "Tree of Thoughts and LATS: Deliberate Search",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 03 (Reflexion)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Frame reasoning as search: nodes are \"thoughts,\" edges are \"expansions,\" value is \"how promising.\"",
+    "Implement a stdlib ToT-style BFS tree search with self-evaluation scoring.",
+    "Extend to a toy LATS MCTS loop with select / expand / simulate / backpropagate.",
+    "Decide when search is worth the token multiplier (Game of 24, code generation) and when a single trajectory is enough (simple Q&A)."
+  ]
+}

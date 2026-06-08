@@ -1,0 +1,16 @@
+{
+  "title": "Multi-Region LLM Serving and KV Cache Locality",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy prefix-cache-aware router simulator)"
+  ],
+  "prerequisites": "Phase 17 · 04 (vLLM Serving), Phase 17 · 06 (SGLang RadixAttention)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Explain why round-robin load balancing breaks cached inference and quantify the TTFT penalty.",
+    "Diagram a cache-aware router: inputs (KV-cache events), algorithm (prefix-hash match), tie-breaker (GPU utilization).",
+    "Name the 32% DR failure driver for LLMs (missing tokenizer files / quantization configs) and state a three-file DR checklist.",
+    "Distinguish commercial cross-region offerings (Bedrock CRI, GKE Multi-Cluster Gateway) from KV-aware routing."
+  ]
+}

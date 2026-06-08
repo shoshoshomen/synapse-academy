@@ -1,0 +1,16 @@
+{
+  "title": "Building an MCP Server — Python + TypeScript SDKs",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "stdio MCP server)"
+  ],
+  "prerequisites": "Phase 13 · 06 (MCP fundamentals)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Implement `initialize`, `tools/list`, `tools/call`, `resources/list`, `resources/read`, `prompts/list`, and `prompts/get` methods.",
+    "Write a dispatch loop that reads JSON-RPC messages from stdin and writes responses to stdout.",
+    "Emit structured error responses per the JSON-RPC 2.0 spec and MCP's additional codes.",
+    "Graduate a stdlib implementation to FastMCP (Python SDK) or the TypeScript SDK without rewriting tool logic."
+  ]
+}

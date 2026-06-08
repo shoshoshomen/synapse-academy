@@ -1,0 +1,10 @@
+{
+  "title": "Relation Extraction & Knowledge Graph Construction",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 06 (NER), Phase 5 · 25 (Entity Linking)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Anthropic's Workflow Patterns: Simple Over Complex",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name Anthropic's five workflow patterns: prompt chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer.",
+    "Explain the agent-vs-workflow distinction and the engineering cost of each.",
+    "Identify when to pick a workflow over an agent (and vice versa).",
+    "Implement all five patterns in stdlib against a scripted LLM."
+  ]
+}

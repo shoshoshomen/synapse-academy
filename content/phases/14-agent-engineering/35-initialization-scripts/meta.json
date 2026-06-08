@@ -1,0 +1,15 @@
+{
+  "title": "Initialization Scripts for Agents",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 32 (Minimal Workbench), Phase 14 · 34 (Repo Memory)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Identify the work an agent should never have to redo per session.",
+    "Build a deterministic init script that probes runtime, dependencies, and repo health.",
+    "Persist the probe result so the agent reads it instead of re-running checks.",
+    "Fail loud, fast, and with one place to look when initialization fails."
+  ]
+}

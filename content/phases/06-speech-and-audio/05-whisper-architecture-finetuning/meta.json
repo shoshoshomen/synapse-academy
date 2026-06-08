@@ -1,0 +1,10 @@
+{
+  "title": "Whisper — Architecture & Fine-Tuning",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 04 (ASR), Phase 5 · 10 (Attention), Phase 7 · 05 (Full Transformer)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

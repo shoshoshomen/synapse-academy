@@ -1,0 +1,16 @@
+{
+  "title": "Benchmarks: SWE-bench, GAIA, AgentBench",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 06 (Tool Use)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name SWE-bench's test harness (FAIL_TO_PASS) and explain why it gates on unit tests.",
+    "Explain why SWE-bench Verified (OpenAI, 500 tasks) exists and what it removes.",
+    "Describe GAIA's design: simple for humans, hard for AI; three difficulty levels.",
+    "Name AgentBench's eight environments and its primary blocker for open-source LLMs.",
+    "Summarize the SWE-bench+ contamination finding and its implications."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Compliance — SOC 2, HIPAA, GDPR, PCI-DSS, EU AI Act, ISO 42001",
+  "type": "Learn",
+  "languages": [
+    "(Python optional — compliance is policy + process",
+    "not code)"
+  ],
+  "prerequisites": "Phase 17 · 25 (Security), Phase 17 · 13 (Observability)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Enumerate the seven 2026 frameworks relevant to LLM products and match each to a customer segment.",
+    "Cite the EU AI Act enforcement timeline (in force August 2024; high-risk enforcement August 2026) and the two-tier fine ceiling (€15M / 3% for high-risk obligations, €35M / 7% for prohibited practices).",
+    "Explain why post-processing PII cleanup is not enough for GDPR and name real-time inference-layer redaction as the defensible standard.",
+    "Describe cross-framework control mapping (e.g., access control maps to ISO 27001 A.5.15-5.18 + GDPR Art. 32 + HIPAA §164.312(a))."
+  ]
+}

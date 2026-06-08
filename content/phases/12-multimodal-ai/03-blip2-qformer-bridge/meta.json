@@ -1,0 +1,16 @@
+{
+  "title": "From CLIP to BLIP-2 — Q-Former as Modality Bridge",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "cross-attention + learnable-query demo)"
+  ],
+  "prerequisites": "Phase 12 · 02 (CLIP), Phase 7 (Transformers)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Explain why a trainable bottleneck between a frozen vision encoder and frozen LLM beats end-to-end finetuning in cost and stability.",
+    "Implement a cross-attention block where a fixed set of learnable queries attend to external image features.",
+    "Walk through BLIP-2's two-stage pretraining: representation (ITC + ITM + ITG) then generative (LM loss with frozen decoder).",
+    "Compare Q-Former to the simpler MLP projector used in LLaVA and argue when each choice wins."
+  ]
+}

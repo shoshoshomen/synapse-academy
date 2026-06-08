@@ -1,0 +1,16 @@
+{
+  "title": "LLaVA and Visual Instruction Tuning",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "projector + instruction-template builder)"
+  ],
+  "prerequisites": "Phase 12 · 02 (CLIP), Phase 11 (LLM Engineering — instruction tuning)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Build a 2-layer MLP projector that maps ViT patch embeddings (dim 1024) to an LLM's embedding dim (dim 4096).",
+    "Walk the LLaVA two-stage recipe: (1) projector alignment on 558k caption pairs, (2) visual instruction tuning on 158k GPT-4-generated turns.",
+    "Construct a LLaVA-format prompt with the image token placeholder, system prompt, and user/assistant turns.",
+    "Explain why the community moved from Q-Former to MLP despite Q-Former's token-budget win."
+  ]
+}

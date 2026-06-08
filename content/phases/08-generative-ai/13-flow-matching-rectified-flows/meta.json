@@ -1,0 +1,10 @@
+{
+  "title": "Flow Matching & Rectified Flows",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 8 · 06 (DDPM), Phase 1 · Calculus",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

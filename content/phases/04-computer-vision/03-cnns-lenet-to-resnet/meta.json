@@ -1,0 +1,15 @@
+{
+  "title": "CNNs — LeNet to ResNet",
+  "type": "Learn + Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 3 Lesson 11 (PyTorch), Phase 4 Lesson 01 (Image Fundamentals), Phase 4 Lesson 02 (Convolutions from Scratch)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Trace the architectural lineage LeNet-5 -> AlexNet -> VGG -> Inception -> ResNet and state the single new idea each family contributed",
+    "Implement LeNet-5, a VGG-style block, and a ResNet BasicBlock in PyTorch, each under 40 lines",
+    "Explain why residual connections turn a 1,000-layer network from untrainable into state-of-the-art",
+    "Read a modern backbone (ResNet-18, ResNet-50) and predict its output shape, receptive field, and parameter count before looking at the source"
+  ]
+}

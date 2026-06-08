@@ -28,7 +28,7 @@ const SOURCE_META = {
   repo: 'rohitg00/ai-engineering-from-scratch',
   url: 'https://github.com/rohitg00/ai-engineering-from-scratch',
   license: 'MIT',
-  author: 'Rohit Goel',
+  author: 'Rohit Ghumare',
 };
 
 // Parse CLI args
@@ -278,13 +278,10 @@ async function main() {
       .filter((d) => /^\d{2}-/.test(d) && statSync(join(fullPhaseDir, d)).isDirectory())
       .sort();
 
-    // Find first lesson (01-*)
-    const firstLessonDir = lessonDirs.find((d) => d.startsWith('01-'));
-
     const lessons = [];
     for (const lessonDir of lessonDirs) {
-      const isFirst = lessonDir === firstLessonDir;
-      const parsed = parseLesson(lessonDir, fullPhaseDir, isFirst);
+      // Pull full content for EVERY lesson that has material.
+      const parsed = parseLesson(lessonDir, fullPhaseDir, true);
       if (!parsed) continue;
 
       lessons.push({
@@ -295,8 +292,8 @@ async function main() {
         hasContent: parsed.hasContent,
       });
 
-      // Write first-lesson content files
-      if (isFirst && parsed._docsExists) {
+      // Write content files for every lesson that has a docs/en.md
+      if (parsed._docsExists) {
         const lessonOutDir = join(contentDir, 'phases', phaseId, parsed.id);
         mkdirSync(lessonOutDir, { recursive: true });
 

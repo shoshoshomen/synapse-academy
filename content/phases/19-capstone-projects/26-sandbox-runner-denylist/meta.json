@@ -1,0 +1,16 @@
+{
+  "title": "Capstone Lesson 26: Sandbox Runner with Denylist and Path Jail",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 19 · 25 (verification gates and observation budget), Phase 14 · 33 (instructions as constraints), Phase 14 · 38 (verification gates)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Build a `Sandbox` class wrapping `subprocess.run` with timeout, capture, and truncation.",
+    "Refuse a command by name against a denylist and by structure against an argv inspector.",
+    "Refuse any path argument that resolves outside a declared project root.",
+    "Refuse shell metacharacters when shell mode is off.",
+    "Return a structured `SandboxResult` that downstream observability and the eval harness can ingest."
+  ]
+}

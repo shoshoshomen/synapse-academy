@@ -1,0 +1,15 @@
+{
+  "title": "Regularization",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Lesson 03.06 (Optimizers)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Implement dropout with inverted scaling, L2 weight decay, batch normalization, layer normalization, and RMSNorm from scratch",
+    "Measure the train-test accuracy gap and diagnose overfitting using regularization experiments",
+    "Explain why transformers use LayerNorm instead of BatchNorm and why modern LLMs prefer RMSNorm",
+    "Apply the correct combination of regularization techniques based on the severity of overfitting"
+  ]
+}

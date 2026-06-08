@@ -1,0 +1,16 @@
+{
+  "title": "APIs & Keys",
+  "type": "Build",
+  "languages": [
+    "Python",
+    "TypeScript"
+  ],
+  "prerequisites": "Phase 0, Lesson 01",
+  "timeEstimate": "~30 minutes",
+  "objectives": [
+    "Store API keys securely using environment variables and `.env` files",
+    "Make an LLM API call using both the Anthropic Python SDK and raw HTTP",
+    "Compare SDK-based and raw HTTP request/response formats for debugging",
+    "Identify and handle common API errors including authentication and rate limits"
+  ]
+}

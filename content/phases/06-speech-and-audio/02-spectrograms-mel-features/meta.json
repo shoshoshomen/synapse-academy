@@ -1,0 +1,10 @@
+{
+  "title": "Spectrograms, Mel Scale & Audio Features",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 01 (Audio Fundamentals)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

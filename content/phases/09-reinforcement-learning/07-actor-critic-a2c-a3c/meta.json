@@ -1,0 +1,10 @@
+{
+  "title": "Actor-Critic — A2C and A3C",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 9 · 04 (TD Learning), Phase 9 · 06 (REINFORCE)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

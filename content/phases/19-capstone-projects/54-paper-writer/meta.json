@@ -1,0 +1,16 @@
+{
+  "title": "Paper Writer",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 50-53",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Treat a research paper as a structured artifact with a known section graph, not a freeform document.",
+    "Generate a LaTeX skeleton that declares its abstract, sections, figure slots, and bibliography keys before any prose is written.",
+    "Inject figures from experiment outputs (paths and captions) into the skeleton through a deterministic slot mechanism.",
+    "Wire a mocked prose generator that fills each section from a structured outline so the harness is testable without a model.",
+    "Emit a single `paper.tex` plus a `references.bib` plus a manifest that lists every figure referenced and every citation used."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Agent Observability: Langfuse, Phoenix, Opik",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 23 (OTel GenAI)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Name the three top open-source agent observability platforms and their licenses.",
+    "Distinguish what each one is strongest at: Langfuse (prompt mgmt + sessions), Phoenix (RAG + auto-instrumentation), Opik (optimization + guardrails).",
+    "Explain why 89% of organizations report having agent observability in place by 2026.",
+    "Implement a stdlib trace-to-dashboard pipeline with LLM-judge evaluation."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Speculative Decoding — Draft, Verify, Repeat",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 07 (GPT Causal LM), Phase 7 · 12 (KV Cache & Flash Attention)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

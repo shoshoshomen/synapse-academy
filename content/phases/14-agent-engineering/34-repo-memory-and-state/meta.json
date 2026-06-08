@@ -1,0 +1,15 @@
+{
+  "title": "Repo Memory and Durable State",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib + `jsonschema` optional)"
+  ],
+  "prerequisites": "Phase 14 · 32 (Minimal Workbench)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Define what belongs in repo memory and what belongs in chat history.",
+    "Author JSON Schemas for `agent_state.json` and `task_board.json`.",
+    "Build a state manager that loads, validates, mutates, and persists state atomically.",
+    "Use the schema to refuse bad writes before they corrupt the workbench."
+  ]
+}

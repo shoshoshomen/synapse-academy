@@ -1,0 +1,15 @@
+{
+  "title": "Debugging and Profiling",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Lesson 1 (Dev Environment), basic PyTorch familiarity",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Use conditional `breakpoint()` and `debug_print` to inspect tensor shapes, dtypes, and NaN values mid-training",
+    "Profile training loops with `cProfile`, `line_profiler`, and `tracemalloc` to find bottlenecks",
+    "Detect common AI bugs: shape mismatches, NaN loss, data leakage, and wrong-device tensors",
+    "Set up TensorBoard to visualize loss curves, weight histograms, and gradient distributions"
+  ]
+}

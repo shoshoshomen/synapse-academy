@@ -1,0 +1,16 @@
+{
+  "title": "GPT Model Assembly",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 30 to 34",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Assemble the transformer block from lesson 34 into a full GPT model: token embedding, position embedding, N blocks, final LayerNorm, language model head.",
+    "Reproduce the 124 million parameter configuration: vocab 50257, context 1024, embedding 768, twelve heads, twelve layers.",
+    "Tie the language model head weights to the token embedding and explain why that saves ~38 million parameters at this scale.",
+    "Generate text from a prompt with multinomial sampling, temperature scaling, and top-k truncation, holding context length with a sliding window.",
+    "Measure parameter count and forward pass cost against the 124M target."
+  ]
+}

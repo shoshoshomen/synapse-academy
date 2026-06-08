@@ -1,0 +1,12 @@
+{
+  "title": "Capstone 14 — Speculative-Decoding Inference Server",
+  "type": "Capstone",
+  "languages": [
+    "Python (serving)",
+    "C++ / CUDA (kernel inspection)",
+    "YAML (configs)"
+  ],
+  "prerequisites": "Phase 3 (deep learning), Phase 7 (transformers), Phase 10 (LLMs from scratch), Phase 17 (infrastructure)",
+  "timeEstimate": "30 hours",
+  "objectives": []
+}

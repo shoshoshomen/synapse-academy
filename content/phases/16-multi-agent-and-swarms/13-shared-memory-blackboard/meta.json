@@ -1,0 +1,11 @@
+{
+  "title": "Shared Memory and Blackboard Patterns",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib",
+    "`threading`)"
+  ],
+  "prerequisites": "Phase 16 · 04 (Primitive Model), Phase 16 · 09 (Parallel Swarm Networks)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

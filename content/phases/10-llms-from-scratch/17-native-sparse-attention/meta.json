@@ -1,0 +1,15 @@
+{
+  "title": "Native Sparse Attention (DeepSeek NSA)",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 7 · 12 (KV cache, flash-attention), Phase 7 · 15 (attention variants), Phase 10 · 16 (differential attention)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "State the three NSA attention branches and what each one captures.",
+    "Explain why NSA is \"natively trainable\" where prior sparse-attention methods were inference-only.",
+    "Compute the attention compute savings of NSA versus full attention at 64k context as a function of compression block size and selection top-k.",
+    "Implement the three-branch combination in stdlib Python on a short synthetic sequence and verify the gating weights behave."
+  ]
+}

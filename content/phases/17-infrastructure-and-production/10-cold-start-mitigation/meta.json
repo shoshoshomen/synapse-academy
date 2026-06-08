@@ -1,0 +1,16 @@
+{
+  "title": "Cold Start Mitigation for Serverless LLMs",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy cold-start path simulator)"
+  ],
+  "prerequisites": "Phase 17 · 02 (Inference Platform Economics), Phase 17 · 03 (GPU Autoscaling)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Enumerate the five layers of cold-start mitigation and name one tool or pattern at each layer.",
+    "Compute total cold-start time as a sum of (node provision) + (weights download) + (weights load into HBM) + (engine init) for a 70B model.",
+    "Explain why live migration transfers input tokens (KB) not KV cache (GB) and what the penalty is (recomputation).",
+    "Name the warm-pool trade-off (pay for idle GPU or accept cold-start tail) and the SLA threshold at which `min_workers > 0` becomes mandatory."
+  ]
+}

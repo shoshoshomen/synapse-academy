@@ -1,0 +1,16 @@
+{
+  "title": "Chameleon and Early-Fusion Token-Only Multimodal Models",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "VQ-VAE tokenizer + interleaved decoder)"
+  ],
+  "prerequisites": "Phase 12 · 05, Phase 8 (Generative AI)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Explain why a shared vocabulary + single loss changes what the model can do.",
+    "Describe how a VQ-VAE tokenizes an image into a discrete sequence compatible with a transformer's next-token objective.",
+    "Name Chameleon's training-stability tricks: QK-Norm, dropout placement, LayerNorm ordering.",
+    "Compare Chameleon vs BLIP-2's Q-Former approach and describe when each is the right choice."
+  ]
+}

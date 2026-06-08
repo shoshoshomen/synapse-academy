@@ -1,0 +1,16 @@
+{
+  "title": "Data Provenance and Training-Data Governance",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "12-field California AB 2013 scaffolding generator)"
+  ],
+  "prerequisites": "Phase 18 · 24 (regulatory), Phase 18 · 26 (cards)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe California AB 2013's 12 mandated fields for Generative AI training-data transparency.",
+    "State the 2025 DPA position on legitimate-interest LLM training (Irish DPC, UK ICO, Hamburg, Cologne).",
+    "Describe the irreversibility problem: why GDPR right-to-erasure has no practical equivalent for trained neural networks.",
+    "State the Data Provenance Initiative's \"Consent in Crisis\" finding."
+  ]
+}

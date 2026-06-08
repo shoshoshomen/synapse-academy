@@ -1,0 +1,16 @@
+{
+  "title": "BPE Tokenizer From Scratch",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 04 lessons, Phase 07 transformer lessons",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Train a Byte-Pair Encoding vocabulary from a raw text corpus by repeatedly merging the most frequent adjacent symbol pair.",
+    "Implement a deterministic merge table and apply it to fresh text to produce a stream of subword ids.",
+    "Round-trip arbitrary UTF-8 input to ids and back without information loss.",
+    "Reserve and protect special tokens (`<|endoftext|>`, `<|pad|>`) so they survive training and decoding.",
+    "Reason about why a byte-level alphabet is the right floor for a general-purpose tokenizer."
+  ]
+}

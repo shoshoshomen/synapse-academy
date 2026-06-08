@@ -1,0 +1,16 @@
+{
+  "title": "End-to-End Research Demo",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 lessons 50-53",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Wire the auto-research loop end to end: hypothesis seed, experiment runner, scheduler, critic loop, paper writer.",
+    "Compose the primitives from the four earlier Track D lessons through plain Python imports, not a framework.",
+    "Run the loop to a self-terminating end and emit a single demo report that lists every stage's output.",
+    "Keep the demo deterministic so the test suite can assert the final shape.",
+    "Surface a clear failure mode when any stage's contract breaks, so the next stage does not run with a broken input."
+  ]
+}

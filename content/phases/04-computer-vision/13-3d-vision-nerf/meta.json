@@ -1,0 +1,15 @@
+{
+  "title": "3D Vision — Point Clouds & NeRFs",
+  "type": "Learn + Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 4 Lesson 03 (CNNs), Phase 1 Lesson 12 (Tensor Operations)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Distinguish explicit (point cloud, mesh, voxel) and implicit (signed distance field, NeRF) 3D representations and when each is used",
+    "Understand PointNet's symmetric-function trick that makes a neural network permutation-invariant over an unordered set of points",
+    "Trace a NeRF forward pass: ray casting, volumetric rendering, positional encoding, MLP density+colour head",
+    "Use `nerfstudio` or `instant-ngp` for pretrained 3D reconstruction from a small set of posed images"
+  ]
+}

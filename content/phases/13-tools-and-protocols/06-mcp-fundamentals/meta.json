@@ -1,0 +1,16 @@
+{
+  "title": "MCP Fundamentals — Primitives, Lifecycle, JSON-RPC Base",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "JSON-RPC parser)"
+  ],
+  "prerequisites": "Phase 13 · 01 through 05 (the tool interface and function calling)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Name all six MCP primitives (tools, resources, prompts on the server; roots, sampling, elicitation on the client) and give one use case each.",
+    "Walk through the three-phase lifecycle (initialize, operation, shutdown) and state who sends which message at each phase.",
+    "Parse and emit JSON-RPC 2.0 request, response, and notification envelopes.",
+    "Explain what capability negotiation at `initialize` is and what breaks without it."
+  ]
+}

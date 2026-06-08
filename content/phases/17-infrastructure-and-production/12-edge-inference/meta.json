@@ -1,0 +1,16 @@
+{
+  "title": "Edge Inference — Apple Neural Engine, Qualcomm Hexagon, WebGPU/WebLLM, Jetson",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy bandwidth-bound decode simulator)"
+  ],
+  "prerequisites": "Phase 17 · 04 (vLLM Serving Internals), Phase 17 · 09 (Production Quantization)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Explain why mobile LLM inference is memory-bandwidth-bound and compute is secondary.",
+    "Enumerate the four edge targets (Apple ANE, Qualcomm Hexagon, WebGPU/WebLLM, NVIDIA Jetson) and match each to a use case.",
+    "Name the 2026 WebGPU coverage gap (Firefox Android catching up) and the Safari iOS 26 landing.",
+    "Pick a quantization format per target (Core ML INT4 + FP16 for ANE, QNN INT8/INT4 for Hexagon, WebGPU Q4 for browser, NVFP4 for Jetson Thor)."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "AI Scientist v2 — Workshop-Level Autonomous Research",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "research-loop state-machine toy)"
+  ],
+  "prerequisites": "Phase 15 · 03 (AlphaEvolve), Phase 15 · 04 (DGM)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

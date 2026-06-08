@@ -1,0 +1,16 @@
+{
+  "title": "Moderation Systems — OpenAI, Perspective, Llama Guard",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "three-layer moderation harness)"
+  ],
+  "prerequisites": "Phase 18 · 16 (Llama Guard / Garak / PyRIT)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe the OpenAI Moderation API's category taxonomy and how it differs from Llama Guard 3's MLCommons set.",
+    "Describe the three moderation-layer pattern (input, output, custom) and name one failure mode of each.",
+    "Describe Perspective API's position as a pre-LLM-era baseline and why it remains used in research.",
+    "State the Azure deprecation timeline."
+  ]
+}

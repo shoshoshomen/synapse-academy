@@ -1,0 +1,10 @@
+{
+  "title": "Machine Translation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 10 (Attention Mechanism), Phase 5 · 04 (GloVe, FastText, Subword)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

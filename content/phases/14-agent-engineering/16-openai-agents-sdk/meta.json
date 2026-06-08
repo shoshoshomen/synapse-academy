@@ -1,0 +1,15 @@
+{
+  "title": "OpenAI Agents SDK: Handoffs, Guardrails, Tracing",
+  "type": "Learn + Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 06 (Tool Use)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Name the five primitives of the OpenAI Agents SDK.",
+    "Explain handoffs: why they are modeled as tools, what name shape the model sees, and how context transfers.",
+    "Distinguish input guardrails, output guardrails, and tool guardrails; explain `run_in_parallel` vs blocking mode.",
+    "Implement a stdlib runtime with handoffs + guardrails + span-style tracing."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Flamingo and Gated Cross-Attention for Few-Shot VLMs",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "gated cross-attention + Perceiver resampler demo)"
+  ],
+  "prerequisites": "Phase 12 · 03 (BLIP-2 Q-Former)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Explain how gated cross-attention preserves a frozen LLM's text capability at initialization via tanh(gate) = 0.",
+    "Walk through a Perceiver resampler: N image patches → K fixed \"latent\" queries via cross-attention.",
+    "Describe how Flamingo handles interleaved image-text sequences with causal masking that respects image placement.",
+    "Reproduce a few-shot multimodal prompt structure (3 image-caption examples then a query image)."
+  ]
+}

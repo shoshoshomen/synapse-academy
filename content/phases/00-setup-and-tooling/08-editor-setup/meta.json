@@ -1,0 +1,15 @@
+{
+  "title": "Editor Setup",
+  "type": "Build",
+  "languages": [
+    "--"
+  ],
+  "prerequisites": "Phase 0, Lesson 01",
+  "timeEstimate": "~20 minutes",
+  "objectives": [
+    "Install VS Code with essential extensions for Python, Jupyter, linting, and remote SSH",
+    "Configure format-on-save, type checking, and notebook output scrolling for AI workflows",
+    "Set up Remote SSH to edit and debug code on remote GPU machines as if they were local",
+    "Evaluate editor alternatives (Cursor, Windsurf, Neovim) and their tradeoffs for AI work"
+  ]
+}

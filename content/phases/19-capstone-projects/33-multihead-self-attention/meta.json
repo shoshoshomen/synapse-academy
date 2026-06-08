@@ -1,0 +1,16 @@
+{
+  "title": "Multi-Head Self-Attention",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 04 lessons, Phase 07 transformer lessons, Lessons 30 through 32 of this phase",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement a batched Query/Key/Value projection as a single linear layer split into H heads.",
+    "Compute scaled dot-product attention with the correct normalization and dtype handling.",
+    "Apply a causal mask that prevents a position from attending to future positions.",
+    "Inspect per-head attention weights for a fixed input and reason about what each head looks at.",
+    "Train a small attention block on a toy task and watch the loss fall as the heads specialize."
+  ]
+}

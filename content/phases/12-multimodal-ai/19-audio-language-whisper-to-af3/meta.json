@@ -1,0 +1,16 @@
+{
+  "title": "Audio-Language Models: the Whisper to Audio Flamingo 3 Arc",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "log-Mel spectrogram + audio Q-former skeleton)"
+  ],
+  "prerequisites": "Phase 6 (Speech and Audio), Phase 12 · 03 (Q-Former)",
+  "timeEstimate": "~180 minutes",
+  "objectives": [
+    "Compute a log-Mel spectrogram from a waveform: windowing, FFT, filter banks, log transform.",
+    "Compare encoder options: Whisper encoder, BEATs, AF-Whisper hybrid. When each wins.",
+    "Build an audio Q-former: N learnable queries cross-attending to spectrogram patches.",
+    "Explain cascaded (Whisper-then-LLM) vs end-to-end audio-LLM training: why end-to-end scales better for reasoning."
+  ]
+}

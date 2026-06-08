@@ -1,0 +1,10 @@
+{
+  "title": "Subword Tokenization — BPE, WordPiece, Unigram, SentencePiece",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 01 (Text Processing), Phase 5 · 04 (GloVe / FastText / Subword)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

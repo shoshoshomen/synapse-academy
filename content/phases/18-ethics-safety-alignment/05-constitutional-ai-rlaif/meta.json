@@ -1,0 +1,16 @@
+{
+  "title": "Constitutional AI and RLAIF",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy self-critique-and-revise loop)"
+  ],
+  "prerequisites": "Phase 18 · 01 (InstructGPT), Phase 18 · 02 (Reward hacking)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Describe the two phases of Constitutional AI (critique-and-revise SFT, RL from AI feedback) and the role of the constitution in each.",
+    "Explain why replacing a human preference labeler with an AI labeler is not a \"cheaper\" RLHF — it changes which failure modes the pipeline has.",
+    "Summarize the four-tier priority structure of the 2026 Claude constitution and what changed from the 2023 rewrite.",
+    "Describe Constitutional Classifiers and the drop from 23.7% compute overhead (v1) to ~1% (v2 / 2026)."
+  ]
+}

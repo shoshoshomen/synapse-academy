@@ -1,0 +1,10 @@
+{
+  "title": "Evaluation — FID, CLIP Score, Human Preference",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 8 · 01 (Taxonomy), Phase 2 · 04 (Evaluation Metrics)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

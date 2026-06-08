@@ -1,0 +1,15 @@
+{
+  "title": "Hybrid Retrieval with BM25 and Dense Embeddings",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 lessons 04 (embeddings), 06 (RAG); Phase 19 Track B foundations (lessons 20-29); Phase 19 lesson 64 (chunking strategies)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement BM25 from scratch from the Robertson and Sparck Jones formulation, with field weighting, document length normalization, and tunable k1 and b.",
+    "Build a dense retriever on top of a deterministic mock embedding so the loop runs offline.",
+    "Implement reciprocal rank fusion exactly as Cormack, Clarke, and Buettcher published it in 2009, and explain why it dominates score-weighted interpolation.",
+    "Tune the RRF k constant and the per-modality weights and read the trade-offs on a small fixture corpus."
+  ]
+}

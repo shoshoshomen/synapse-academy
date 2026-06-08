@@ -1,0 +1,11 @@
+{
+  "title": "AlphaEvolve — Evolutionary Coding Agents",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "evolutionary-loop toy)"
+  ],
+  "prerequisites": "Phase 15 · 01 (long-horizon framing), Phase 15 · 02 (self-taught reasoning)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

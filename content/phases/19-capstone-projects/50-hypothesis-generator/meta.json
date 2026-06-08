@@ -1,0 +1,16 @@
+{
+  "title": "Hypothesis Generator",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 19 Track A lessons 20-29",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Drive a sampler from a seed prompt and turn its outputs into typed hypothesis records.",
+    "Ramp the sampler temperature on each pass so the next draft drifts further from the last.",
+    "Filter near duplicates with a small embedding model and a cosine distance threshold.",
+    "Rank the survivors with a scoring function that blends novelty, specificity, and testability.",
+    "Hold every step deterministic so the same seed always produces the same queue."
+  ]
+}

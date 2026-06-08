@@ -1,0 +1,15 @@
+{
+  "title": "Differential Attention (V2)",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 7 · 02 (self-attention), Phase 7 · 15 (attention variants), Phase 10 · 14 (architecture walkthrough)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "State precisely why softmax attention has a noise floor and why it grows with context length.",
+    "Derive the differential attention formula and explain why the subtraction cancels the shared noise component while preserving signal.",
+    "Walk the V1-to-V2 diff: what got faster, what got simpler, what got more stable, and why each change was necessary for production pre-training.",
+    "Implement differential attention from scratch in pure Python and empirically verify the noise-cancellation property on a synthetic signal-plus-noise query."
+  ]
+}

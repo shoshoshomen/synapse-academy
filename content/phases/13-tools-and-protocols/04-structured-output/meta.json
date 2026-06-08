@@ -1,0 +1,16 @@
+{
+  "title": "Structured Output — JSON Schema, Pydantic, Zod, Constrained Decoding",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "JSON Schema 2020-12 subset)"
+  ],
+  "prerequisites": "Phase 13 · 02 (function calling deep dive)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "Write a JSON Schema 2020-12 for an extraction target using the right constraints (enum, min/max, required, pattern).",
+    "Explain why strict mode and constrained decoding give different guarantees from \"validate after generation\".",
+    "Distinguish the three failure modes: parse error, schema violation, model refusal.",
+    "Ship an extraction pipeline with typed repair and typed refusal handling."
+  ]
+}

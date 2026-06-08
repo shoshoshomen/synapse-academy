@@ -1,0 +1,10 @@
+{
+  "title": "GANs — Generator vs Discriminator",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 3 · 02 (Backprop), Phase 3 · 08 (Optimizers), Phase 8 · 02 (VAE)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

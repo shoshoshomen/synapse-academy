@@ -1,0 +1,16 @@
+{
+  "title": "Tool Registry with Schema Validation",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 13 lessons 01-07, Phase 14 lesson 01",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Hold a typed registry of tool name → schema → handler that the dispatcher can ask once and trust afterwards.",
+    "Implement a JSON Schema 2020-12 subset that covers the keywords ninety percent of tool calls actually use.",
+    "Return precise, json-pointer-shaped error paths so the model can self-correct in one round trip.",
+    "Reject re-registration without explicit override, since silent overwrites are how production tool catalogs drift.",
+    "Keep the validator pure (no I/O, no time, no globals) so it can be re-run on a replay log."
+  ]
+}

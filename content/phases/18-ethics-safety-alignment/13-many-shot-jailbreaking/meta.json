@@ -1,0 +1,16 @@
+{
+  "title": "Many-Shot Jailbreaking",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "in-context learning vs MSJ simulator)"
+  ],
+  "prerequisites": "Phase 18 · 12 (PAIR), Phase 10 · 04 (in-context learning)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Describe the many-shot jailbreaking attack and the context-window property it exploits.",
+    "State the empirical power law: attack success rate as a function of shot count.",
+    "Explain why MSJ shares a mechanism with benign in-context learning, and what that implies for defenses.",
+    "Describe Anthropic's classifier-based prompt modification defense and its reported 61% -> 2% reduction."
+  ]
+}

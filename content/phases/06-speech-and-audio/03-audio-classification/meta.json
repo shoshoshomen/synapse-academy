@@ -1,0 +1,10 @@
+{
+  "title": "Audio Classification — From k-NN on MFCCs to AST and BEATs",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 6 · 02 (Spectrograms & Mel), Phase 3 · 06 (CNNs), Phase 5 · 08 (CNNs & RNNs for Text)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

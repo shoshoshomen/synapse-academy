@@ -1,0 +1,15 @@
+{
+  "title": "Reflexion: Verbal Reinforcement Learning",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop), Phase 14 · 02 (ReWOO)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the three components of Reflexion (Actor, Evaluator, Self-Reflector) and the role of episodic memory.",
+    "Implement a stdlib Reflexion loop with binary evaluator, reflection buffer, and fresh re-attempts.",
+    "Choose between scalar, heuristic, and self-evaluated feedback sources for a given task.",
+    "Explain why verbal reinforcement catches errors that gradient-based RL would need thousands of trials to fix."
+  ]
+}

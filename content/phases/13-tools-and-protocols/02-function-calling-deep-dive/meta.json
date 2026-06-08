@@ -1,0 +1,16 @@
+{
+  "title": "Function Calling Deep Dive — OpenAI, Anthropic, Gemini",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib",
+    "schema translators)"
+  ],
+  "prerequisites": "Phase 13 · 01 (the tool interface)",
+  "timeEstimate": "~75 minutes",
+  "objectives": [
+    "State the three shape differences between OpenAI, Anthropic, and Gemini function-calling payloads (declaration, call, result).",
+    "Translate one tool declaration across all three provider formats and predict where strict-mode constraints will differ.",
+    "Use `tool_choice` in each provider to force, forbid, or auto-pick tool calls.",
+    "Know the per-provider hard limits (tool count, schema depth, argument length) and the error signatures each one emits when limits are violated."
+  ]
+}

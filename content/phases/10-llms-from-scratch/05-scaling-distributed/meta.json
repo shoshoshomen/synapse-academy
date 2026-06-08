@@ -1,0 +1,15 @@
+{
+  "title": "Scaling: Distributed Training, FSDP, DeepSpeed",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 10, Lesson 04 (Pre-Training a Mini GPT)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Explain the three types of parallelism (data, tensor, pipeline) and when each is necessary based on model and cluster size",
+    "Implement data-parallel training using PyTorch DDP with gradient synchronization across multiple GPUs",
+    "Calculate the memory budget for a given model size (weights + optimizer states + gradients + activations) to determine the minimum hardware",
+    "Configure FSDP or DeepSpeed ZeRO stages to shard model states across GPUs and fit models that exceed single-GPU memory"
+  ]
+}

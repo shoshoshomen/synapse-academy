@@ -1,0 +1,10 @@
+{
+  "title": "StyleGAN",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 8 · 03 (GANs), Phase 4 · 08 (Normalization), Phase 3 · 07 (CNNs)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

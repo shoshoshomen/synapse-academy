@@ -1,0 +1,15 @@
+{
+  "title": "Unsupervised Learning",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 (Norms & Distances, Probability & Distributions), Phase 2 Lessons 1-6",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement K-Means, DBSCAN, and Gaussian Mixture Models from scratch and compare their clustering behavior",
+    "Evaluate cluster quality using the silhouette score and the elbow method to select the optimal K",
+    "Explain when DBSCAN outperforms K-Means and identify which algorithm handles non-spherical clusters and outliers",
+    "Build an anomaly detection pipeline using clustering methods to flag points that deviate from normal patterns"
+  ]
+}

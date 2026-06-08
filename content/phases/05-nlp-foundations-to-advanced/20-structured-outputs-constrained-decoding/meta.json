@@ -1,0 +1,10 @@
+{
+  "title": "Structured Outputs & Constrained Decoding",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 5 · 17 (Chatbots), Phase 5 · 19 (Subword Tokenization)",
+  "timeEstimate": "~60 minutes",
+  "objectives": []
+}

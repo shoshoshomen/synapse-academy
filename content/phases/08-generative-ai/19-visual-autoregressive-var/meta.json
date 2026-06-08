@@ -1,0 +1,10 @@
+{
+  "title": "Visual Autoregressive Modeling (VAR): Next-Scale Prediction",
+  "type": "Build",
+  "languages": [
+    "Python (with PyTorch)"
+  ],
+  "prerequisites": "Phase 7 Lesson 03 (Multi-Head Attention), Phase 8 Lesson 06 (DDPM)",
+  "timeEstimate": "~90 minutes",
+  "objectives": []
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Shadow Traffic, Canary Rollout, and Progressive Deployment for LLMs",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy canary-progression simulator)"
+  ],
+  "prerequisites": "Phase 17 · 13 (Observability), Phase 17 · 21 (A/B Testing)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Distinguish shadow mode (zero-impact compare), canary (live traffic progressive), and A/B (stability-confirmed comparison).",
+    "Enumerate five LLM-specific canary metrics (latency, cost/request, error/refusal, output-length distribution, user feedback).",
+    "Explain why LLM non-determinism (up to 15%) changes what \"stable\" means in a rollout.",
+    "Design a rollback path that takes seconds (policy flip) not hours (redeploy)."
+  ]
+}

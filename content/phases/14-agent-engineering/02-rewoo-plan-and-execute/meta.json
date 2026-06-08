@@ -1,0 +1,15 @@
+{
+  "title": "ReWOO and Plan-and-Execute: Decoupled Planning",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 14 · 01 (Agent Loop)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Explain why ReWOO's Planner / Worker / Solver split saves tokens and improves robustness over ReAct's interleaved loop.",
+    "Implement a plan DAG, a dependency-ordered executor, and a solver that composes worker outputs — all stdlib.",
+    "Decide when a task should run as plan-then-execute vs interleaved ReAct, using the 2026 \"five workflow patterns\" framing (Anthropic).",
+    "Recognize when Plan-and-Act's synthetic plan data is needed for long-horizon web or mobile tasks."
+  ]
+}

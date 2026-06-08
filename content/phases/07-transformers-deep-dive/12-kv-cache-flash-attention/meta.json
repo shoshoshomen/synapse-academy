@@ -1,0 +1,10 @@
+{
+  "title": "KV Cache, Flash Attention & Inference Optimization",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 7 · 02 (Self-Attention), Phase 7 · 05 (Full Transformer), Phase 7 · 07 (GPT)",
+  "timeEstimate": "~75 minutes",
+  "objectives": []
+}

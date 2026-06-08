@@ -1,0 +1,15 @@
+{
+  "title": "Introduction to JAX",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 03 Lessons 01-10, basic NumPy",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Write pure-function neural network code using JAX's functional API (jax.numpy, jax.grad, jax.jit, jax.vmap)",
+    "Explain the key design difference between PyTorch's eager mutation and JAX's functional compilation model",
+    "Apply jit compilation and vmap vectorization to accelerate training loops compared to naive Python",
+    "Train a simple network in JAX and contrast the explicit state management with PyTorch's object-oriented approach"
+  ]
+}

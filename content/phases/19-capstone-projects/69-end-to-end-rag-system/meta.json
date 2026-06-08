@@ -1,0 +1,15 @@
+{
+  "title": "End-to-End RAG System",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 11 lessons 06 (RAG), 10 (evaluation); Phase 19 Track B foundations (lessons 20-29); Phase 19 lessons 64, 65, 66, 67, 68",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Compose the chunker, hybrid retriever, query rewriter, cross-encoder reranker, and answer generator into a single end-to-end pipeline.",
+    "Implement an answer generator that cites its claims by chunk anchor, with refuse-on-low-confidence fallback.",
+    "Run the lesson 68 eval against the assembled pipeline and prove the staged build wins on every metric over the same components in isolation.",
+    "Build a self-terminating CLI demo that ingests a fixture corpus, runs a fixed query set, and exits zero with a summary report."
+  ]
+}

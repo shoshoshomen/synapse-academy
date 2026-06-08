@@ -1,0 +1,15 @@
+{
+  "title": "The Workbench on a Real Repo",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phases 14 · 32 to 14 · 40",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Bring the seven workbench surfaces together on a small application.",
+    "Run the same task twice (prompt-only and workbench-guided) and measure five outcomes.",
+    "Read the before/after report and decide which surfaces gave the most leverage.",
+    "Defend the workbench against a \"but my model is good enough\" pushback."
+  ]
+}
