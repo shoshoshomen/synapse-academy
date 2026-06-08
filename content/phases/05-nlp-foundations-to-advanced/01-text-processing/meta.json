@@ -1,0 +1,10 @@
+{
+  "title": "Text Processing — Tokenization, Stemming, Lemmatization",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 2 · 14 (Naive Bayes)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

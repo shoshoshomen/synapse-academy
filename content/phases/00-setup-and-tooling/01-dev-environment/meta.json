@@ -1,0 +1,17 @@
+{
+  "title": "Dev Environment",
+  "type": "Build",
+  "languages": [
+    "Python",
+    "Node.js",
+    "Rust"
+  ],
+  "prerequisites": "None",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Set up Python 3.11+, Node.js 20+, and Rust toolchains from scratch",
+    "Configure virtual environments and package managers for reproducible builds",
+    "Verify GPU access with CUDA/MPS and run a test tensor operation",
+    "Understand the four-layer stack: system, packages, runtimes, AI libraries"
+  ]
+}

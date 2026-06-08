@@ -1,0 +1,10 @@
+{
+  "title": "MDPs, States, Actions & Rewards",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 · 06 (Probability & Distributions), Phase 2 · 01 (ML Taxonomy)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

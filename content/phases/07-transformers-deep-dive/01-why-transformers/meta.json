@@ -1,0 +1,10 @@
+{
+  "title": "Why Transformers — The Problems with RNNs",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 3 (Deep Learning Core), Phase 5 · 09 (Sequence-to-Sequence), Phase 5 · 10 (Attention Mechanism)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

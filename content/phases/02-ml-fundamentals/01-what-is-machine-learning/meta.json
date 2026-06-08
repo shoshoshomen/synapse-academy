@@ -1,0 +1,15 @@
+{
+  "title": "What Is Machine Learning",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 (Math Foundations)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Explain the difference between supervised, unsupervised, and reinforcement learning and identify which type applies to a given problem",
+    "Implement a nearest centroid classifier from scratch and evaluate it against a random baseline",
+    "Distinguish between classification and regression tasks and select the appropriate loss function for each",
+    "Evaluate whether a given business problem is suitable for ML or better solved with deterministic rules"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Managed LLM Platforms — Bedrock, Vertex AI, Azure OpenAI",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy cost-and-latency comparator)"
+  ],
+  "prerequisites": "Phase 11 (LLM Engineering), Phase 13 (Tools & Protocols)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the three platform strategies (marketplace vs exclusive vs Gemini-first) and match each to a product use case.",
+    "Explain what Provisioned Throughput Units (PTUs) buy you in Azure OpenAI and why on-demand Bedrock typically reads ~25 ms slower at the 405B scale.",
+    "Diagram the FinOps attribution surface for each platform (Bedrock Application Inference Profiles vs Vertex project-per-team vs Azure scopes + PTU reservations).",
+    "Write down a \"two-provider minimum\" policy and explain why single-vendor lock-in is the expensive mistake in 2026."
+  ]
+}

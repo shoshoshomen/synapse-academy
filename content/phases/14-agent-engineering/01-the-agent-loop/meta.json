@@ -1,0 +1,15 @@
+{
+  "title": "The Agent Loop: Observe, Think, Act",
+  "type": "Build",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "Phase 11 (LLM Engineering), Phase 13 (Tools and Protocols)",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Name the three parts of the ReAct loop — Thought, Action, Observation — and explain why each one is load-bearing.",
+    "Implement a stdlib agent loop with a toy LLM, tool registry, and stop condition under 200 lines.",
+    "Identify the 2026 shift from prompt-based thought tokens to native model reasoning (Responses API, encrypted reasoning passthrough).",
+    "Explain why every modern harness (Claude Agent SDK, OpenAI Agents SDK, LangGraph, AutoGen v0.4) still runs this loop under the hood."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "The Tool Interface — Why Agents Need Structured I/O",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "no LLM)"
+  ],
+  "prerequisites": "Phase 11 (LLM completion APIs)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Explain why an LLM that can only generate text cannot, on its own, take actions against the real world.",
+    "Draw the four-step tool-call loop (describe → decide → execute → observe) and name who owns each step.",
+    "Write a tool description as three parts: name, JSON Schema input, and a deterministic executor function.",
+    "Distinguish pure and side-effecting tools and state why the split matters for safety."
+  ]
+}

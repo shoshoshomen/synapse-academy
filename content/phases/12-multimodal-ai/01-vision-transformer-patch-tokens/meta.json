@@ -1,0 +1,16 @@
+{
+  "title": "Vision Transformers and the Patch-Token Primitive",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "patch tokenizer + geometry calculator)"
+  ],
+  "prerequisites": "Phase 7 (Transformers), Phase 4 (Computer Vision)",
+  "timeEstimate": "~120 minutes",
+  "objectives": [
+    "Convert an HxWx3 image into a sequence of patch tokens with correct positional encoding.",
+    "Compute sequence length, parameter count, and FLOPs for a ViT of a given (patch size, resolution, hidden dim, depth).",
+    "Name the three upgrades that took ViT from 2020 research to 2026 production: self-supervised pretraining (DINO / MAE), register tokens, and native-resolution packing.",
+    "Pick between CLS pooling, mean pooling, and register tokens for a downstream task."
+  ]
+}

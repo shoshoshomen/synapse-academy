@@ -1,0 +1,16 @@
+{
+  "title": "Linear Algebra Intuition",
+  "type": "Learn",
+  "languages": [
+    "Python",
+    "Julia"
+  ],
+  "prerequisites": "Phase 0",
+  "timeEstimate": "~60 minutes",
+  "objectives": [
+    "Implement vector and matrix operations (addition, dot product, matrix multiply) from scratch in Python",
+    "Explain geometrically what the dot product, projection, and Gram-Schmidt process do",
+    "Determine linear independence, rank, and basis of a set of vectors using row reduction",
+    "Connect linear algebra concepts to their AI applications: embeddings, attention scores, and LoRA"
+  ]
+}

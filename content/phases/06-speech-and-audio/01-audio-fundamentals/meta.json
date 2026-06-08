@@ -1,0 +1,10 @@
+{
+  "title": "Audio Fundamentals — Waveforms, Sampling, Fourier Transform",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 · 06 (Vectors & Matrices), Phase 1 · 14 (Probability Distributions)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

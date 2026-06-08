@@ -1,0 +1,16 @@
+{
+  "title": "Instruction-Following as Alignment Signal",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "toy three-stage pipeline)"
+  ],
+  "prerequisites": "Phase 10 · 06 (SFT), Phase 10 · 07 (RLHF), Phase 10 · 08 (DPO)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Name the three stages of the InstructGPT pipeline and the loss used in each.",
+    "Explain why a 1.3B instruction-tuned model beat the raw 175B GPT-3 on human preference evaluation.",
+    "State what the KL penalty in stage 3 is protecting against and why removing it collapses to mode-seeking behaviour.",
+    "Describe the alignment tax and the PPO-ptx mitigation Ouyang et al. used against it."
+  ]
+}

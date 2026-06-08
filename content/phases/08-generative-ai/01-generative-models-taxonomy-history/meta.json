@@ -1,0 +1,10 @@
+{
+  "title": "Generative Models — Taxonomy & History",
+  "type": "Learn",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 2 (ML Fundamentals), Phase 3 (Deep Learning Core), Phase 7 · 14 (Transformers)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

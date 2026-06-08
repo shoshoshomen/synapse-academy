@@ -1,0 +1,15 @@
+{
+  "title": "Image Fundamentals — Pixels, Channels, Color Spaces",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 1 Lesson 12 (Tensor Operations), Phase 3 Lesson 11 (Intro to PyTorch)",
+  "timeEstimate": "~45 minutes",
+  "objectives": [
+    "Explain how a continuous scene gets discretized into pixels and why sampling/quantization decisions set the ceiling on every downstream model",
+    "Read, slice, and inspect images as NumPy arrays and switch fluently between HWC and CHW layouts",
+    "Convert between RGB, grayscale, HSV, and YCbCr and justify why each color space exists",
+    "Apply pixel-level preprocessing (normalize, standardize, resize, channel-first) exactly as torchvision expects it"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "The Shift from Chatbots to Long-Horizon Agents",
+  "type": "Learn",
+  "languages": [
+    "Python (stdlib",
+    "horizon-curve simulator)"
+  ],
+  "prerequisites": "Phase 14 · 01 (The Agent Loop)",
+  "timeEstimate": "~45 minutes",
+  "objectives": []
+}

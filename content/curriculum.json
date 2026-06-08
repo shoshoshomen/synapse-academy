@@ -1,0 +1,3731 @@
+{
+  "source": {
+    "repo": "rohitg00/ai-engineering-from-scratch",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "license": "MIT",
+    "author": "Rohit Goel"
+  },
+  "phases": [
+    {
+      "id": "00-setup-and-tooling",
+      "phaseNumber": 0,
+      "slug": "setup-and-tooling",
+      "title": "Setup And Tooling",
+      "description": "Get your environment ready for everything that follows.",
+      "lessonCount": 12,
+      "lessons": [
+        {
+          "id": "01-dev-environment",
+          "lessonNumber": 1,
+          "slug": "dev-environment",
+          "title": "Dev Environment",
+          "hasContent": true
+        },
+        {
+          "id": "02-git-and-collaboration",
+          "lessonNumber": 2,
+          "slug": "git-and-collaboration",
+          "title": "Git & Collaboration",
+          "hasContent": true
+        },
+        {
+          "id": "03-gpu-setup-and-cloud",
+          "lessonNumber": 3,
+          "slug": "gpu-setup-and-cloud",
+          "title": "GPU Setup & Cloud",
+          "hasContent": true
+        },
+        {
+          "id": "04-apis-and-keys",
+          "lessonNumber": 4,
+          "slug": "apis-and-keys",
+          "title": "APIs & Keys",
+          "hasContent": true
+        },
+        {
+          "id": "05-jupyter-notebooks",
+          "lessonNumber": 5,
+          "slug": "jupyter-notebooks",
+          "title": "Jupyter Notebooks",
+          "hasContent": true
+        },
+        {
+          "id": "06-python-environments",
+          "lessonNumber": 6,
+          "slug": "python-environments",
+          "title": "Python Environments",
+          "hasContent": true
+        },
+        {
+          "id": "07-docker-for-ai",
+          "lessonNumber": 7,
+          "slug": "docker-for-ai",
+          "title": "Docker for AI",
+          "hasContent": true
+        },
+        {
+          "id": "08-editor-setup",
+          "lessonNumber": 8,
+          "slug": "editor-setup",
+          "title": "Editor Setup",
+          "hasContent": true
+        },
+        {
+          "id": "09-data-management",
+          "lessonNumber": 9,
+          "slug": "data-management",
+          "title": "Data Management",
+          "hasContent": true
+        },
+        {
+          "id": "10-terminal-and-shell",
+          "lessonNumber": 10,
+          "slug": "terminal-and-shell",
+          "title": "Terminal & Shell",
+          "hasContent": true
+        },
+        {
+          "id": "11-linux-for-ai",
+          "lessonNumber": 11,
+          "slug": "linux-for-ai",
+          "title": "Linux for AI",
+          "hasContent": true
+        },
+        {
+          "id": "12-debugging-and-profiling",
+          "lessonNumber": 12,
+          "slug": "debugging-and-profiling",
+          "title": "Debugging and Profiling",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "01-math-foundations",
+      "phaseNumber": 1,
+      "slug": "math-foundations",
+      "title": "Math Foundations",
+      "description": "The intuition behind every AI algorithm, through code — not textbooks.",
+      "lessonCount": 22,
+      "lessons": [
+        {
+          "id": "01-linear-algebra-intuition",
+          "lessonNumber": 1,
+          "slug": "linear-algebra-intuition",
+          "title": "Linear Algebra Intuition",
+          "hasContent": true
+        },
+        {
+          "id": "02-vectors-matrices-operations",
+          "lessonNumber": 2,
+          "slug": "vectors-matrices-operations",
+          "title": "Vectors, Matrices & Operations",
+          "hasContent": true
+        },
+        {
+          "id": "03-matrix-transformations",
+          "lessonNumber": 3,
+          "slug": "matrix-transformations",
+          "title": "Matrix Transformations",
+          "hasContent": true
+        },
+        {
+          "id": "04-calculus-for-ml",
+          "lessonNumber": 4,
+          "slug": "calculus-for-ml",
+          "title": "Calculus for Machine Learning",
+          "hasContent": true
+        },
+        {
+          "id": "05-chain-rule-and-autodiff",
+          "lessonNumber": 5,
+          "slug": "chain-rule-and-autodiff",
+          "title": "Chain Rule & Automatic Differentiation",
+          "hasContent": true
+        },
+        {
+          "id": "06-probability-and-distributions",
+          "lessonNumber": 6,
+          "slug": "probability-and-distributions",
+          "title": "Probability and Distributions",
+          "hasContent": true
+        },
+        {
+          "id": "07-bayes-theorem",
+          "lessonNumber": 7,
+          "slug": "bayes-theorem",
+          "title": "Bayes' Theorem",
+          "hasContent": true
+        },
+        {
+          "id": "08-optimization",
+          "lessonNumber": 8,
+          "slug": "optimization",
+          "title": "Optimization",
+          "hasContent": true
+        },
+        {
+          "id": "09-information-theory",
+          "lessonNumber": 9,
+          "slug": "information-theory",
+          "title": "Information Theory",
+          "hasContent": true
+        },
+        {
+          "id": "10-dimensionality-reduction",
+          "lessonNumber": 10,
+          "slug": "dimensionality-reduction",
+          "title": "Dimensionality Reduction",
+          "hasContent": true
+        },
+        {
+          "id": "11-singular-value-decomposition",
+          "lessonNumber": 11,
+          "slug": "singular-value-decomposition",
+          "title": "Singular Value Decomposition",
+          "hasContent": true
+        },
+        {
+          "id": "12-tensor-operations",
+          "lessonNumber": 12,
+          "slug": "tensor-operations",
+          "title": "Tensor Operations",
+          "hasContent": true
+        },
+        {
+          "id": "13-numerical-stability",
+          "lessonNumber": 13,
+          "slug": "numerical-stability",
+          "title": "Numerical Stability",
+          "hasContent": true
+        },
+        {
+          "id": "14-norms-and-distances",
+          "lessonNumber": 14,
+          "slug": "norms-and-distances",
+          "title": "Norms and Distances",
+          "hasContent": true
+        },
+        {
+          "id": "15-statistics-for-ml",
+          "lessonNumber": 15,
+          "slug": "statistics-for-ml",
+          "title": "Statistics for Machine Learning",
+          "hasContent": true
+        },
+        {
+          "id": "16-sampling-methods",
+          "lessonNumber": 16,
+          "slug": "sampling-methods",
+          "title": "Sampling Methods",
+          "hasContent": true
+        },
+        {
+          "id": "17-linear-systems",
+          "lessonNumber": 17,
+          "slug": "linear-systems",
+          "title": "Linear Systems",
+          "hasContent": true
+        },
+        {
+          "id": "18-convex-optimization",
+          "lessonNumber": 18,
+          "slug": "convex-optimization",
+          "title": "Convex Optimization",
+          "hasContent": true
+        },
+        {
+          "id": "19-complex-numbers",
+          "lessonNumber": 19,
+          "slug": "complex-numbers",
+          "title": "Complex Numbers for AI",
+          "hasContent": true
+        },
+        {
+          "id": "20-fourier-transform",
+          "lessonNumber": 20,
+          "slug": "fourier-transform",
+          "title": "The Fourier Transform",
+          "hasContent": true
+        },
+        {
+          "id": "21-graph-theory",
+          "lessonNumber": 21,
+          "slug": "graph-theory",
+          "title": "Graph Theory for Machine Learning",
+          "hasContent": true
+        },
+        {
+          "id": "22-stochastic-processes",
+          "lessonNumber": 22,
+          "slug": "stochastic-processes",
+          "title": "Stochastic Processes",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "02-ml-fundamentals",
+      "phaseNumber": 2,
+      "slug": "ml-fundamentals",
+      "title": "ML Fundamentals",
+      "description": "Classical machine learning — still the backbone of most production AI.",
+      "lessonCount": 18,
+      "lessons": [
+        {
+          "id": "01-what-is-machine-learning",
+          "lessonNumber": 1,
+          "slug": "what-is-machine-learning",
+          "title": "What Is Machine Learning",
+          "hasContent": true
+        },
+        {
+          "id": "02-linear-regression",
+          "lessonNumber": 2,
+          "slug": "linear-regression",
+          "title": "Linear Regression",
+          "hasContent": true
+        },
+        {
+          "id": "03-logistic-regression",
+          "lessonNumber": 3,
+          "slug": "logistic-regression",
+          "title": "Logistic Regression",
+          "hasContent": true
+        },
+        {
+          "id": "04-decision-trees",
+          "lessonNumber": 4,
+          "slug": "decision-trees",
+          "title": "Decision Trees and Random Forests",
+          "hasContent": true
+        },
+        {
+          "id": "05-support-vector-machines",
+          "lessonNumber": 5,
+          "slug": "support-vector-machines",
+          "title": "Support Vector Machines",
+          "hasContent": true
+        },
+        {
+          "id": "06-knn-and-distances",
+          "lessonNumber": 6,
+          "slug": "knn-and-distances",
+          "title": "K-Nearest Neighbors and Distances",
+          "hasContent": true
+        },
+        {
+          "id": "07-unsupervised-learning",
+          "lessonNumber": 7,
+          "slug": "unsupervised-learning",
+          "title": "Unsupervised Learning",
+          "hasContent": true
+        },
+        {
+          "id": "08-feature-engineering",
+          "lessonNumber": 8,
+          "slug": "feature-engineering",
+          "title": "Feature Engineering & Selection",
+          "hasContent": true
+        },
+        {
+          "id": "09-model-evaluation",
+          "lessonNumber": 9,
+          "slug": "model-evaluation",
+          "title": "Model Evaluation",
+          "hasContent": true
+        },
+        {
+          "id": "10-bias-variance",
+          "lessonNumber": 10,
+          "slug": "bias-variance",
+          "title": "Bias-Variance Tradeoff",
+          "hasContent": true
+        },
+        {
+          "id": "11-ensemble-methods",
+          "lessonNumber": 11,
+          "slug": "ensemble-methods",
+          "title": "Ensemble Methods",
+          "hasContent": true
+        },
+        {
+          "id": "12-hyperparameter-tuning",
+          "lessonNumber": 12,
+          "slug": "hyperparameter-tuning",
+          "title": "Hyperparameter Tuning",
+          "hasContent": true
+        },
+        {
+          "id": "13-ml-pipelines",
+          "lessonNumber": 13,
+          "slug": "ml-pipelines",
+          "title": "ML Pipelines",
+          "hasContent": true
+        },
+        {
+          "id": "14-naive-bayes",
+          "lessonNumber": 14,
+          "slug": "naive-bayes",
+          "title": "Naive Bayes",
+          "hasContent": true
+        },
+        {
+          "id": "15-time-series",
+          "lessonNumber": 15,
+          "slug": "time-series",
+          "title": "Time Series Fundamentals",
+          "hasContent": true
+        },
+        {
+          "id": "16-anomaly-detection",
+          "lessonNumber": 16,
+          "slug": "anomaly-detection",
+          "title": "Anomaly Detection",
+          "hasContent": true
+        },
+        {
+          "id": "17-imbalanced-data",
+          "lessonNumber": 17,
+          "slug": "imbalanced-data",
+          "title": "Handling Imbalanced Data",
+          "hasContent": true
+        },
+        {
+          "id": "18-feature-selection",
+          "lessonNumber": 18,
+          "slug": "feature-selection",
+          "title": "Feature Selection",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "03-deep-learning-core",
+      "phaseNumber": 3,
+      "slug": "deep-learning-core",
+      "title": "Deep Learning Core",
+      "description": "Neural networks from first principles. No frameworks until you build one yourself.",
+      "lessonCount": 13,
+      "lessons": [
+        {
+          "id": "01-the-perceptron",
+          "lessonNumber": 1,
+          "slug": "the-perceptron",
+          "title": "The Perceptron",
+          "hasContent": true
+        },
+        {
+          "id": "02-multi-layer-networks",
+          "lessonNumber": 2,
+          "slug": "multi-layer-networks",
+          "title": "Multi-Layer Networks and Forward Pass",
+          "hasContent": true
+        },
+        {
+          "id": "03-backpropagation",
+          "lessonNumber": 3,
+          "slug": "backpropagation",
+          "title": "Backpropagation from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "04-activation-functions",
+          "lessonNumber": 4,
+          "slug": "activation-functions",
+          "title": "Activation Functions",
+          "hasContent": true
+        },
+        {
+          "id": "05-loss-functions",
+          "lessonNumber": 5,
+          "slug": "loss-functions",
+          "title": "Loss Functions",
+          "hasContent": true
+        },
+        {
+          "id": "06-optimizers",
+          "lessonNumber": 6,
+          "slug": "optimizers",
+          "title": "Optimizers",
+          "hasContent": true
+        },
+        {
+          "id": "07-regularization",
+          "lessonNumber": 7,
+          "slug": "regularization",
+          "title": "Regularization",
+          "hasContent": true
+        },
+        {
+          "id": "08-weight-initialization",
+          "lessonNumber": 8,
+          "slug": "weight-initialization",
+          "title": "Weight Initialization and Training Stability",
+          "hasContent": true
+        },
+        {
+          "id": "09-learning-rate-schedules",
+          "lessonNumber": 9,
+          "slug": "learning-rate-schedules",
+          "title": "Learning Rate Schedules and Warmup",
+          "hasContent": true
+        },
+        {
+          "id": "10-mini-framework",
+          "lessonNumber": 10,
+          "slug": "mini-framework",
+          "title": "Build Your Own Mini Framework",
+          "hasContent": true
+        },
+        {
+          "id": "11-intro-to-pytorch",
+          "lessonNumber": 11,
+          "slug": "intro-to-pytorch",
+          "title": "Introduction to PyTorch",
+          "hasContent": true
+        },
+        {
+          "id": "12-intro-to-jax",
+          "lessonNumber": 12,
+          "slug": "intro-to-jax",
+          "title": "Introduction to JAX",
+          "hasContent": true
+        },
+        {
+          "id": "13-debugging-neural-networks",
+          "lessonNumber": 13,
+          "slug": "debugging-neural-networks",
+          "title": "Debugging Neural Networks",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "04-computer-vision",
+      "phaseNumber": 4,
+      "slug": "computer-vision",
+      "title": "Computer Vision",
+      "description": "From pixels to understanding — image, video, and 3D.",
+      "lessonCount": 28,
+      "lessons": [
+        {
+          "id": "01-image-fundamentals",
+          "lessonNumber": 1,
+          "slug": "image-fundamentals",
+          "title": "Image Fundamentals — Pixels, Channels, Color Spaces",
+          "hasContent": true
+        },
+        {
+          "id": "02-convolutions-from-scratch",
+          "lessonNumber": 2,
+          "slug": "convolutions-from-scratch",
+          "title": "Convolutions from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "03-cnns-lenet-to-resnet",
+          "lessonNumber": 3,
+          "slug": "cnns-lenet-to-resnet",
+          "title": "CNNs — LeNet to ResNet",
+          "hasContent": true
+        },
+        {
+          "id": "04-image-classification",
+          "lessonNumber": 4,
+          "slug": "image-classification",
+          "title": "Image Classification",
+          "hasContent": true
+        },
+        {
+          "id": "05-transfer-learning",
+          "lessonNumber": 5,
+          "slug": "transfer-learning",
+          "title": "Transfer Learning & Fine-Tuning",
+          "hasContent": true
+        },
+        {
+          "id": "06-object-detection-yolo",
+          "lessonNumber": 6,
+          "slug": "object-detection-yolo",
+          "title": "Object Detection — YOLO from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "07-semantic-segmentation-unet",
+          "lessonNumber": 7,
+          "slug": "semantic-segmentation-unet",
+          "title": "Semantic Segmentation — U-Net",
+          "hasContent": true
+        },
+        {
+          "id": "08-instance-segmentation-mask-rcnn",
+          "lessonNumber": 8,
+          "slug": "instance-segmentation-mask-rcnn",
+          "title": "Instance Segmentation — Mask R-CNN",
+          "hasContent": true
+        },
+        {
+          "id": "09-image-generation-gans",
+          "lessonNumber": 9,
+          "slug": "image-generation-gans",
+          "title": "Image Generation — GANs",
+          "hasContent": true
+        },
+        {
+          "id": "10-image-generation-diffusion",
+          "lessonNumber": 10,
+          "slug": "image-generation-diffusion",
+          "title": "Image Generation — Diffusion Models",
+          "hasContent": true
+        },
+        {
+          "id": "11-stable-diffusion",
+          "lessonNumber": 11,
+          "slug": "stable-diffusion",
+          "title": "Stable Diffusion — Architecture & Fine-Tuning",
+          "hasContent": true
+        },
+        {
+          "id": "12-video-understanding",
+          "lessonNumber": 12,
+          "slug": "video-understanding",
+          "title": "Video Understanding — Temporal Modeling",
+          "hasContent": true
+        },
+        {
+          "id": "13-3d-vision-nerf",
+          "lessonNumber": 13,
+          "slug": "3d-vision-nerf",
+          "title": "3D Vision — Point Clouds & NeRFs",
+          "hasContent": true
+        },
+        {
+          "id": "14-vision-transformers",
+          "lessonNumber": 14,
+          "slug": "vision-transformers",
+          "title": "Vision Transformers (ViT)",
+          "hasContent": true
+        },
+        {
+          "id": "15-real-time-edge",
+          "lessonNumber": 15,
+          "slug": "real-time-edge",
+          "title": "Real-Time Vision — Edge Deployment",
+          "hasContent": true
+        },
+        {
+          "id": "16-vision-pipeline-capstone",
+          "lessonNumber": 16,
+          "slug": "vision-pipeline-capstone",
+          "title": "Build a Complete Vision Pipeline — Capstone",
+          "hasContent": true
+        },
+        {
+          "id": "17-self-supervised-vision",
+          "lessonNumber": 17,
+          "slug": "self-supervised-vision",
+          "title": "Self-Supervised Vision — SimCLR, DINO, MAE",
+          "hasContent": true
+        },
+        {
+          "id": "18-open-vocab-clip",
+          "lessonNumber": 18,
+          "slug": "open-vocab-clip",
+          "title": "Open-Vocabulary Vision — CLIP",
+          "hasContent": true
+        },
+        {
+          "id": "19-ocr-document-understanding",
+          "lessonNumber": 19,
+          "slug": "ocr-document-understanding",
+          "title": "OCR & Document Understanding",
+          "hasContent": true
+        },
+        {
+          "id": "20-image-retrieval-metric",
+          "lessonNumber": 20,
+          "slug": "image-retrieval-metric",
+          "title": "Image Retrieval & Metric Learning",
+          "hasContent": true
+        },
+        {
+          "id": "21-keypoint-pose",
+          "lessonNumber": 21,
+          "slug": "keypoint-pose",
+          "title": "Keypoint Detection & Pose Estimation",
+          "hasContent": true
+        },
+        {
+          "id": "22-3d-gaussian-splatting",
+          "lessonNumber": 22,
+          "slug": "3d-gaussian-splatting",
+          "title": "3D Gaussian Splatting from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "23-diffusion-transformers-rectified-flow",
+          "lessonNumber": 23,
+          "slug": "diffusion-transformers-rectified-flow",
+          "title": "Diffusion Transformers & Rectified Flow",
+          "hasContent": true
+        },
+        {
+          "id": "24-sam3-open-vocab-segmentation",
+          "lessonNumber": 24,
+          "slug": "sam3-open-vocab-segmentation",
+          "title": "SAM 3 & Open-Vocabulary Segmentation",
+          "hasContent": true
+        },
+        {
+          "id": "25-vision-language-models",
+          "lessonNumber": 25,
+          "slug": "vision-language-models",
+          "title": "Vision-Language Models — The ViT-MLP-LLM Pattern",
+          "hasContent": true
+        },
+        {
+          "id": "26-monocular-depth",
+          "lessonNumber": 26,
+          "slug": "monocular-depth",
+          "title": "Monocular Depth & Geometry Estimation",
+          "hasContent": true
+        },
+        {
+          "id": "27-multi-object-tracking",
+          "lessonNumber": 27,
+          "slug": "multi-object-tracking",
+          "title": "Multi-Object Tracking & Video Memory",
+          "hasContent": true
+        },
+        {
+          "id": "28-world-models-video-diffusion",
+          "lessonNumber": 28,
+          "slug": "world-models-video-diffusion",
+          "title": "World Models & Video Diffusion",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "05-nlp-foundations-to-advanced",
+      "phaseNumber": 5,
+      "slug": "nlp-foundations-to-advanced",
+      "title": "NLP Foundations To Advanced",
+      "description": "Language is the interface to intelligence. Master every layer.",
+      "lessonCount": 29,
+      "lessons": [
+        {
+          "id": "01-text-processing",
+          "lessonNumber": 1,
+          "slug": "text-processing",
+          "title": "Text Processing — Tokenization, Stemming, Lemmatization",
+          "hasContent": true
+        },
+        {
+          "id": "02-bag-of-words-tfidf",
+          "lessonNumber": 2,
+          "slug": "bag-of-words-tfidf",
+          "title": "Bag of Words, TF-IDF, and Text Representation",
+          "hasContent": true
+        },
+        {
+          "id": "03-word-embeddings-word2vec",
+          "lessonNumber": 3,
+          "slug": "word-embeddings-word2vec",
+          "title": "Word Embeddings — Word2Vec from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "04-glove-fasttext-subword",
+          "lessonNumber": 4,
+          "slug": "glove-fasttext-subword",
+          "title": "GloVe, FastText, and Subword Embeddings",
+          "hasContent": true
+        },
+        {
+          "id": "05-sentiment-analysis",
+          "lessonNumber": 5,
+          "slug": "sentiment-analysis",
+          "title": "Sentiment Analysis",
+          "hasContent": true
+        },
+        {
+          "id": "06-named-entity-recognition",
+          "lessonNumber": 6,
+          "slug": "named-entity-recognition",
+          "title": "Named Entity Recognition",
+          "hasContent": true
+        },
+        {
+          "id": "07-pos-tagging-parsing",
+          "lessonNumber": 7,
+          "slug": "pos-tagging-parsing",
+          "title": "POS Tagging and Syntactic Parsing",
+          "hasContent": true
+        },
+        {
+          "id": "08-cnns-rnns-for-text",
+          "lessonNumber": 8,
+          "slug": "cnns-rnns-for-text",
+          "title": "CNNs and RNNs for Text",
+          "hasContent": true
+        },
+        {
+          "id": "09-sequence-to-sequence",
+          "lessonNumber": 9,
+          "slug": "sequence-to-sequence",
+          "title": "Sequence-to-Sequence Models",
+          "hasContent": true
+        },
+        {
+          "id": "10-attention-mechanism",
+          "lessonNumber": 10,
+          "slug": "attention-mechanism",
+          "title": "Attention Mechanism — The Breakthrough",
+          "hasContent": true
+        },
+        {
+          "id": "11-machine-translation",
+          "lessonNumber": 11,
+          "slug": "machine-translation",
+          "title": "Machine Translation",
+          "hasContent": true
+        },
+        {
+          "id": "12-text-summarization",
+          "lessonNumber": 12,
+          "slug": "text-summarization",
+          "title": "Text Summarization",
+          "hasContent": true
+        },
+        {
+          "id": "13-question-answering",
+          "lessonNumber": 13,
+          "slug": "question-answering",
+          "title": "Question Answering Systems",
+          "hasContent": true
+        },
+        {
+          "id": "14-information-retrieval-search",
+          "lessonNumber": 14,
+          "slug": "information-retrieval-search",
+          "title": "Information Retrieval and Search",
+          "hasContent": true
+        },
+        {
+          "id": "15-topic-modeling",
+          "lessonNumber": 15,
+          "slug": "topic-modeling",
+          "title": "Topic Modeling — LDA and BERTopic",
+          "hasContent": true
+        },
+        {
+          "id": "16-text-generation-pre-transformer",
+          "lessonNumber": 16,
+          "slug": "text-generation-pre-transformer",
+          "title": "Text Generation Before Transformers — N-gram Language Models",
+          "hasContent": true
+        },
+        {
+          "id": "17-chatbots-rule-to-neural",
+          "lessonNumber": 17,
+          "slug": "chatbots-rule-to-neural",
+          "title": "Chatbots — Rule-Based to Neural to LLM Agents",
+          "hasContent": true
+        },
+        {
+          "id": "18-multilingual-nlp",
+          "lessonNumber": 18,
+          "slug": "multilingual-nlp",
+          "title": "Multilingual NLP",
+          "hasContent": true
+        },
+        {
+          "id": "19-subword-tokenization",
+          "lessonNumber": 19,
+          "slug": "subword-tokenization",
+          "title": "Subword Tokenization — BPE, WordPiece, Unigram, SentencePiece",
+          "hasContent": true
+        },
+        {
+          "id": "20-structured-outputs-constrained-decoding",
+          "lessonNumber": 20,
+          "slug": "structured-outputs-constrained-decoding",
+          "title": "Structured Outputs & Constrained Decoding",
+          "hasContent": true
+        },
+        {
+          "id": "21-nli-textual-entailment",
+          "lessonNumber": 21,
+          "slug": "nli-textual-entailment",
+          "title": "Natural Language Inference — Textual Entailment",
+          "hasContent": true
+        },
+        {
+          "id": "22-embedding-models-deep-dive",
+          "lessonNumber": 22,
+          "slug": "embedding-models-deep-dive",
+          "title": "Embedding Models — The 2026 Deep Dive",
+          "hasContent": true
+        },
+        {
+          "id": "23-chunking-strategies-rag",
+          "lessonNumber": 23,
+          "slug": "chunking-strategies-rag",
+          "title": "Chunking Strategies for RAG",
+          "hasContent": true
+        },
+        {
+          "id": "24-coreference-resolution",
+          "lessonNumber": 24,
+          "slug": "coreference-resolution",
+          "title": "Coreference Resolution",
+          "hasContent": true
+        },
+        {
+          "id": "25-entity-linking",
+          "lessonNumber": 25,
+          "slug": "entity-linking",
+          "title": "Entity Linking & Disambiguation",
+          "hasContent": true
+        },
+        {
+          "id": "26-relation-extraction-kg",
+          "lessonNumber": 26,
+          "slug": "relation-extraction-kg",
+          "title": "Relation Extraction & Knowledge Graph Construction",
+          "hasContent": true
+        },
+        {
+          "id": "27-llm-evaluation-frameworks",
+          "lessonNumber": 27,
+          "slug": "llm-evaluation-frameworks",
+          "title": "LLM Evaluation — RAGAS, DeepEval, G-Eval",
+          "hasContent": true
+        },
+        {
+          "id": "28-long-context-evaluation",
+          "lessonNumber": 28,
+          "slug": "long-context-evaluation",
+          "title": "Long-Context Evaluation — NIAH, RULER, LongBench, MRCR",
+          "hasContent": true
+        },
+        {
+          "id": "29-dialogue-state-tracking",
+          "lessonNumber": 29,
+          "slug": "dialogue-state-tracking",
+          "title": "Dialogue State Tracking",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "06-speech-and-audio",
+      "phaseNumber": 6,
+      "slug": "speech-and-audio",
+      "title": "Speech And Audio",
+      "description": "The other half of human communication. Hear, understand, speak.",
+      "lessonCount": 17,
+      "lessons": [
+        {
+          "id": "01-audio-fundamentals",
+          "lessonNumber": 1,
+          "slug": "audio-fundamentals",
+          "title": "Audio Fundamentals — Waveforms, Sampling, Fourier Transform",
+          "hasContent": true
+        },
+        {
+          "id": "02-spectrograms-mel-features",
+          "lessonNumber": 2,
+          "slug": "spectrograms-mel-features",
+          "title": "Spectrograms, Mel Scale & Audio Features",
+          "hasContent": true
+        },
+        {
+          "id": "03-audio-classification",
+          "lessonNumber": 3,
+          "slug": "audio-classification",
+          "title": "Audio Classification — From k-NN on MFCCs to AST and BEATs",
+          "hasContent": true
+        },
+        {
+          "id": "04-speech-recognition-asr",
+          "lessonNumber": 4,
+          "slug": "speech-recognition-asr",
+          "title": "Speech Recognition (ASR) — CTC, RNN-T, Attention",
+          "hasContent": true
+        },
+        {
+          "id": "05-whisper-architecture-finetuning",
+          "lessonNumber": 5,
+          "slug": "whisper-architecture-finetuning",
+          "title": "Whisper — Architecture & Fine-Tuning",
+          "hasContent": true
+        },
+        {
+          "id": "06-speaker-recognition-verification",
+          "lessonNumber": 6,
+          "slug": "speaker-recognition-verification",
+          "title": "Speaker Recognition & Verification",
+          "hasContent": true
+        },
+        {
+          "id": "07-text-to-speech",
+          "lessonNumber": 7,
+          "slug": "text-to-speech",
+          "title": "Text-to-Speech (TTS) — From Tacotron to F5 and Kokoro",
+          "hasContent": true
+        },
+        {
+          "id": "08-voice-cloning-conversion",
+          "lessonNumber": 8,
+          "slug": "voice-cloning-conversion",
+          "title": "Voice Cloning & Voice Conversion",
+          "hasContent": true
+        },
+        {
+          "id": "09-music-generation",
+          "lessonNumber": 9,
+          "slug": "music-generation",
+          "title": "Music Generation — MusicGen, Stable Audio, Suno, and the Licensing Earthquake",
+          "hasContent": true
+        },
+        {
+          "id": "10-audio-language-models",
+          "lessonNumber": 10,
+          "slug": "audio-language-models",
+          "title": "Audio-Language Models — Qwen2.5-Omni, Audio Flamingo, GPT-4o Audio",
+          "hasContent": true
+        },
+        {
+          "id": "11-real-time-audio-processing",
+          "lessonNumber": 11,
+          "slug": "real-time-audio-processing",
+          "title": "Real-Time Audio Processing",
+          "hasContent": true
+        },
+        {
+          "id": "12-voice-assistant-pipeline",
+          "lessonNumber": 12,
+          "slug": "voice-assistant-pipeline",
+          "title": "Build a Voice Assistant Pipeline — The Phase 6 Capstone",
+          "hasContent": true
+        },
+        {
+          "id": "13-neural-audio-codecs",
+          "lessonNumber": 13,
+          "slug": "neural-audio-codecs",
+          "title": "Neural Audio Codecs — EnCodec, SNAC, Mimi, DAC and the Semantic-Acoustic Split",
+          "hasContent": true
+        },
+        {
+          "id": "14-voice-activity-detection-turn-taking",
+          "lessonNumber": 14,
+          "slug": "voice-activity-detection-turn-taking",
+          "title": "Voice Activity Detection & Turn-Taking — Silero, Cobra, and the Flush Trick",
+          "hasContent": true
+        },
+        {
+          "id": "15-streaming-speech-to-speech-moshi-hibiki",
+          "lessonNumber": 15,
+          "slug": "streaming-speech-to-speech-moshi-hibiki",
+          "title": "Streaming Speech-to-Speech — Moshi, Hibiki, and Full-Duplex Dialogue",
+          "hasContent": true
+        },
+        {
+          "id": "16-anti-spoofing-audio-watermarking",
+          "lessonNumber": 16,
+          "slug": "anti-spoofing-audio-watermarking",
+          "title": "Voice Anti-Spoofing & Audio Watermarking — ASVspoof 5, AudioSeal, WaveVerify",
+          "hasContent": true
+        },
+        {
+          "id": "17-audio-evaluation-metrics",
+          "lessonNumber": 17,
+          "slug": "audio-evaluation-metrics",
+          "title": "Audio Evaluation — WER, MOS, UTMOS, MMAU, FAD, and the Open Leaderboards",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "07-transformers-deep-dive",
+      "phaseNumber": 7,
+      "slug": "transformers-deep-dive",
+      "title": "Transformers Deep Dive",
+      "description": "The architecture that changed everything. Understand every layer.",
+      "lessonCount": 16,
+      "lessons": [
+        {
+          "id": "01-why-transformers",
+          "lessonNumber": 1,
+          "slug": "why-transformers",
+          "title": "Why Transformers — The Problems with RNNs",
+          "hasContent": true
+        },
+        {
+          "id": "02-self-attention-from-scratch",
+          "lessonNumber": 2,
+          "slug": "self-attention-from-scratch",
+          "title": "Self-Attention from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "03-multi-head-attention",
+          "lessonNumber": 3,
+          "slug": "multi-head-attention",
+          "title": "Multi-Head Attention",
+          "hasContent": true
+        },
+        {
+          "id": "04-positional-encoding",
+          "lessonNumber": 4,
+          "slug": "positional-encoding",
+          "title": "Positional Encoding — Sinusoidal, RoPE, ALiBi",
+          "hasContent": true
+        },
+        {
+          "id": "05-full-transformer",
+          "lessonNumber": 5,
+          "slug": "full-transformer",
+          "title": "The Full Transformer — Encoder + Decoder",
+          "hasContent": true
+        },
+        {
+          "id": "06-bert-masked-language-modeling",
+          "lessonNumber": 6,
+          "slug": "bert-masked-language-modeling",
+          "title": "BERT — Masked Language Modeling",
+          "hasContent": true
+        },
+        {
+          "id": "07-gpt-causal-language-modeling",
+          "lessonNumber": 7,
+          "slug": "gpt-causal-language-modeling",
+          "title": "GPT — Causal Language Modeling",
+          "hasContent": true
+        },
+        {
+          "id": "08-t5-bart-encoder-decoder",
+          "lessonNumber": 8,
+          "slug": "t5-bart-encoder-decoder",
+          "title": "T5, BART — Encoder-Decoder Models",
+          "hasContent": true
+        },
+        {
+          "id": "09-vision-transformers",
+          "lessonNumber": 9,
+          "slug": "vision-transformers",
+          "title": "Vision Transformers (ViT)",
+          "hasContent": true
+        },
+        {
+          "id": "10-audio-transformers-whisper",
+          "lessonNumber": 10,
+          "slug": "audio-transformers-whisper",
+          "title": "Audio Transformers — Whisper Architecture",
+          "hasContent": true
+        },
+        {
+          "id": "11-mixture-of-experts",
+          "lessonNumber": 11,
+          "slug": "mixture-of-experts",
+          "title": "Mixture of Experts (MoE)",
+          "hasContent": true
+        },
+        {
+          "id": "12-kv-cache-flash-attention",
+          "lessonNumber": 12,
+          "slug": "kv-cache-flash-attention",
+          "title": "KV Cache, Flash Attention & Inference Optimization",
+          "hasContent": true
+        },
+        {
+          "id": "13-scaling-laws",
+          "lessonNumber": 13,
+          "slug": "scaling-laws",
+          "title": "Scaling Laws",
+          "hasContent": true
+        },
+        {
+          "id": "14-build-a-transformer-capstone",
+          "lessonNumber": 14,
+          "slug": "build-a-transformer-capstone",
+          "title": "Build a Transformer from Scratch — The Capstone",
+          "hasContent": true
+        },
+        {
+          "id": "15-attention-variants",
+          "lessonNumber": 15,
+          "slug": "attention-variants",
+          "title": "Attention Variants — Sliding Window, Sparse, Differential",
+          "hasContent": true
+        },
+        {
+          "id": "16-speculative-decoding",
+          "lessonNumber": 16,
+          "slug": "speculative-decoding",
+          "title": "Speculative Decoding — Draft, Verify, Repeat",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "08-generative-ai",
+      "phaseNumber": 8,
+      "slug": "generative-ai",
+      "title": "Generative AI",
+      "description": "Create images, video, audio, 3D, and more.",
+      "lessonCount": 15,
+      "lessons": [
+        {
+          "id": "01-generative-models-taxonomy-history",
+          "lessonNumber": 1,
+          "slug": "generative-models-taxonomy-history",
+          "title": "Generative Models — Taxonomy & History",
+          "hasContent": true
+        },
+        {
+          "id": "02-autoencoders-vae",
+          "lessonNumber": 2,
+          "slug": "autoencoders-vae",
+          "title": "Autoencoders & Variational Autoencoders (VAE)",
+          "hasContent": true
+        },
+        {
+          "id": "03-gans-generator-discriminator",
+          "lessonNumber": 3,
+          "slug": "gans-generator-discriminator",
+          "title": "GANs — Generator vs Discriminator",
+          "hasContent": true
+        },
+        {
+          "id": "04-conditional-gans-pix2pix",
+          "lessonNumber": 4,
+          "slug": "conditional-gans-pix2pix",
+          "title": "Conditional GANs & Pix2Pix",
+          "hasContent": true
+        },
+        {
+          "id": "05-stylegan",
+          "lessonNumber": 5,
+          "slug": "stylegan",
+          "title": "StyleGAN",
+          "hasContent": true
+        },
+        {
+          "id": "06-diffusion-ddpm-from-scratch",
+          "lessonNumber": 6,
+          "slug": "diffusion-ddpm-from-scratch",
+          "title": "Diffusion Models — DDPM from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "07-latent-diffusion-stable-diffusion",
+          "lessonNumber": 7,
+          "slug": "latent-diffusion-stable-diffusion",
+          "title": "Latent Diffusion & Stable Diffusion",
+          "hasContent": true
+        },
+        {
+          "id": "08-controlnet-lora-conditioning",
+          "lessonNumber": 8,
+          "slug": "controlnet-lora-conditioning",
+          "title": "ControlNet, LoRA & Conditioning",
+          "hasContent": true
+        },
+        {
+          "id": "09-inpainting-outpainting-editing",
+          "lessonNumber": 9,
+          "slug": "inpainting-outpainting-editing",
+          "title": "Inpainting, Outpainting & Image Editing",
+          "hasContent": true
+        },
+        {
+          "id": "10-video-generation",
+          "lessonNumber": 10,
+          "slug": "video-generation",
+          "title": "Video Generation",
+          "hasContent": true
+        },
+        {
+          "id": "11-audio-generation",
+          "lessonNumber": 11,
+          "slug": "audio-generation",
+          "title": "Audio Generation",
+          "hasContent": true
+        },
+        {
+          "id": "12-3d-generation",
+          "lessonNumber": 12,
+          "slug": "3d-generation",
+          "title": "3D Generation",
+          "hasContent": true
+        },
+        {
+          "id": "13-flow-matching-rectified-flows",
+          "lessonNumber": 13,
+          "slug": "flow-matching-rectified-flows",
+          "title": "Flow Matching & Rectified Flows",
+          "hasContent": true
+        },
+        {
+          "id": "14-evaluation-fid-clip-score",
+          "lessonNumber": 14,
+          "slug": "evaluation-fid-clip-score",
+          "title": "Evaluation — FID, CLIP Score, Human Preference",
+          "hasContent": true
+        },
+        {
+          "id": "19-visual-autoregressive-var",
+          "lessonNumber": 19,
+          "slug": "visual-autoregressive-var",
+          "title": "Visual Autoregressive Modeling (VAR): Next-Scale Prediction",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "09-reinforcement-learning",
+      "phaseNumber": 9,
+      "slug": "reinforcement-learning",
+      "title": "Reinforcement Learning",
+      "description": "Agents that learn by doing. The foundation of RLHF.",
+      "lessonCount": 12,
+      "lessons": [
+        {
+          "id": "01-mdps-states-actions-rewards",
+          "lessonNumber": 1,
+          "slug": "mdps-states-actions-rewards",
+          "title": "MDPs, States, Actions & Rewards",
+          "hasContent": true
+        },
+        {
+          "id": "02-dynamic-programming",
+          "lessonNumber": 2,
+          "slug": "dynamic-programming",
+          "title": "Dynamic Programming — Policy Iteration & Value Iteration",
+          "hasContent": true
+        },
+        {
+          "id": "03-monte-carlo-methods",
+          "lessonNumber": 3,
+          "slug": "monte-carlo-methods",
+          "title": "Monte Carlo Methods — Learning from Complete Episodes",
+          "hasContent": true
+        },
+        {
+          "id": "04-q-learning-sarsa",
+          "lessonNumber": 4,
+          "slug": "q-learning-sarsa",
+          "title": "Temporal Difference — Q-Learning & SARSA",
+          "hasContent": true
+        },
+        {
+          "id": "05-dqn",
+          "lessonNumber": 5,
+          "slug": "dqn",
+          "title": "Deep Q-Networks (DQN)",
+          "hasContent": true
+        },
+        {
+          "id": "06-policy-gradients-reinforce",
+          "lessonNumber": 6,
+          "slug": "policy-gradients-reinforce",
+          "title": "Policy Gradient — REINFORCE from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "07-actor-critic-a2c-a3c",
+          "lessonNumber": 7,
+          "slug": "actor-critic-a2c-a3c",
+          "title": "Actor-Critic — A2C and A3C",
+          "hasContent": true
+        },
+        {
+          "id": "08-ppo",
+          "lessonNumber": 8,
+          "slug": "ppo",
+          "title": "Proximal Policy Optimization (PPO)",
+          "hasContent": true
+        },
+        {
+          "id": "09-reward-modeling-rlhf",
+          "lessonNumber": 9,
+          "slug": "reward-modeling-rlhf",
+          "title": "Reward Modeling & RLHF",
+          "hasContent": true
+        },
+        {
+          "id": "10-multi-agent-rl",
+          "lessonNumber": 10,
+          "slug": "multi-agent-rl",
+          "title": "Multi-Agent RL",
+          "hasContent": true
+        },
+        {
+          "id": "11-sim-to-real-transfer",
+          "lessonNumber": 11,
+          "slug": "sim-to-real-transfer",
+          "title": "Sim-to-Real Transfer",
+          "hasContent": true
+        },
+        {
+          "id": "12-rl-for-games",
+          "lessonNumber": 12,
+          "slug": "rl-for-games",
+          "title": "RL for Games — AlphaZero, MuZero, and the LLM-Reasoning Era",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "10-llms-from-scratch",
+      "phaseNumber": 10,
+      "slug": "llms-from-scratch",
+      "title": "LLMs From Scratch",
+      "description": "Build, train, and understand large language models.",
+      "lessonCount": 24,
+      "lessons": [
+        {
+          "id": "01-tokenizers",
+          "lessonNumber": 1,
+          "slug": "tokenizers",
+          "title": "Tokenizers: BPE, WordPiece, SentencePiece",
+          "hasContent": true
+        },
+        {
+          "id": "02-building-a-tokenizer",
+          "lessonNumber": 2,
+          "slug": "building-a-tokenizer",
+          "title": "Building a Tokenizer from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "03-data-pipelines",
+          "lessonNumber": 3,
+          "slug": "data-pipelines",
+          "title": "Data Pipelines for Pre-Training",
+          "hasContent": true
+        },
+        {
+          "id": "04-pre-training-mini-gpt",
+          "lessonNumber": 4,
+          "slug": "pre-training-mini-gpt",
+          "title": "Pre-Training a Mini GPT (124M Parameters)",
+          "hasContent": true
+        },
+        {
+          "id": "05-scaling-distributed",
+          "lessonNumber": 5,
+          "slug": "scaling-distributed",
+          "title": "Scaling: Distributed Training, FSDP, DeepSpeed",
+          "hasContent": true
+        },
+        {
+          "id": "06-instruction-tuning-sft",
+          "lessonNumber": 6,
+          "slug": "instruction-tuning-sft",
+          "title": "Instruction Tuning (SFT)",
+          "hasContent": true
+        },
+        {
+          "id": "07-rlhf",
+          "lessonNumber": 7,
+          "slug": "rlhf",
+          "title": "RLHF: Reward Model + PPO",
+          "hasContent": true
+        },
+        {
+          "id": "08-dpo",
+          "lessonNumber": 8,
+          "slug": "dpo",
+          "title": "DPO: Direct Preference Optimization",
+          "hasContent": true
+        },
+        {
+          "id": "09-constitutional-ai-self-improvement",
+          "lessonNumber": 9,
+          "slug": "constitutional-ai-self-improvement",
+          "title": "Constitutional AI and Self-Improvement",
+          "hasContent": true
+        },
+        {
+          "id": "10-evaluation",
+          "lessonNumber": 10,
+          "slug": "evaluation",
+          "title": "Evaluation: Benchmarks, Evals, LM Harness",
+          "hasContent": true
+        },
+        {
+          "id": "11-quantization",
+          "lessonNumber": 11,
+          "slug": "quantization",
+          "title": "Quantization: Making Models Fit",
+          "hasContent": true
+        },
+        {
+          "id": "12-inference-optimization",
+          "lessonNumber": 12,
+          "slug": "inference-optimization",
+          "title": "Inference Optimization",
+          "hasContent": true
+        },
+        {
+          "id": "13-building-complete-llm-pipeline",
+          "lessonNumber": 13,
+          "slug": "building-complete-llm-pipeline",
+          "title": "Building a Complete LLM Pipeline",
+          "hasContent": true
+        },
+        {
+          "id": "14-open-models-architecture-walkthroughs",
+          "lessonNumber": 14,
+          "slug": "open-models-architecture-walkthroughs",
+          "title": "Open Models: Architecture Walkthroughs",
+          "hasContent": true
+        },
+        {
+          "id": "15-speculative-decoding-eagle3",
+          "lessonNumber": 15,
+          "slug": "speculative-decoding-eagle3",
+          "title": "Speculative Decoding and EAGLE-3",
+          "hasContent": true
+        },
+        {
+          "id": "16-differential-attention-v2",
+          "lessonNumber": 16,
+          "slug": "differential-attention-v2",
+          "title": "Differential Attention (V2)",
+          "hasContent": true
+        },
+        {
+          "id": "17-native-sparse-attention",
+          "lessonNumber": 17,
+          "slug": "native-sparse-attention",
+          "title": "Native Sparse Attention (DeepSeek NSA)",
+          "hasContent": true
+        },
+        {
+          "id": "18-multi-token-prediction",
+          "lessonNumber": 18,
+          "slug": "multi-token-prediction",
+          "title": "Multi-Token Prediction (MTP)",
+          "hasContent": true
+        },
+        {
+          "id": "19-dualpipe-parallelism",
+          "lessonNumber": 19,
+          "slug": "dualpipe-parallelism",
+          "title": "DualPipe Parallelism",
+          "hasContent": true
+        },
+        {
+          "id": "20-deepseek-v3-walkthrough",
+          "lessonNumber": 20,
+          "slug": "deepseek-v3-walkthrough",
+          "title": "DeepSeek-V3 Architecture Walkthrough",
+          "hasContent": true
+        },
+        {
+          "id": "21-jamba-hybrid-ssm-transformer",
+          "lessonNumber": 21,
+          "slug": "jamba-hybrid-ssm-transformer",
+          "title": "Jamba — Hybrid SSM-Transformer",
+          "hasContent": true
+        },
+        {
+          "id": "22-async-hogwild-inference",
+          "lessonNumber": 22,
+          "slug": "async-hogwild-inference",
+          "title": "Async and Hogwild! Inference",
+          "hasContent": true
+        },
+        {
+          "id": "25-speculative-decoding",
+          "lessonNumber": 25,
+          "slug": "speculative-decoding",
+          "title": "Speculative Decoding and EAGLE",
+          "hasContent": true
+        },
+        {
+          "id": "34-gradient-checkpointing",
+          "lessonNumber": 34,
+          "slug": "gradient-checkpointing",
+          "title": "Gradient Checkpointing and Activation Recomputation",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "11-llm-engineering",
+      "phaseNumber": 11,
+      "slug": "llm-engineering",
+      "title": "LLM Engineering",
+      "description": "Put LLMs to work in production applications.",
+      "lessonCount": 17,
+      "lessons": [
+        {
+          "id": "01-prompt-engineering",
+          "lessonNumber": 1,
+          "slug": "prompt-engineering",
+          "title": "Prompt Engineering: Techniques & Patterns",
+          "hasContent": true
+        },
+        {
+          "id": "02-few-shot-cot",
+          "lessonNumber": 2,
+          "slug": "few-shot-cot",
+          "title": "Few-Shot, Chain-of-Thought, Tree-of-Thought",
+          "hasContent": true
+        },
+        {
+          "id": "03-structured-outputs",
+          "lessonNumber": 3,
+          "slug": "structured-outputs",
+          "title": "Structured Outputs: JSON, Schema Validation, Constrained Decoding",
+          "hasContent": true
+        },
+        {
+          "id": "04-embeddings",
+          "lessonNumber": 4,
+          "slug": "embeddings",
+          "title": "Embeddings & Vector Representations",
+          "hasContent": true
+        },
+        {
+          "id": "05-context-engineering",
+          "lessonNumber": 5,
+          "slug": "context-engineering",
+          "title": "Context Engineering: Windows, Budgets, Memory, and Retrieval",
+          "hasContent": true
+        },
+        {
+          "id": "06-rag",
+          "lessonNumber": 6,
+          "slug": "rag",
+          "title": "RAG (Retrieval-Augmented Generation)",
+          "hasContent": true
+        },
+        {
+          "id": "07-advanced-rag",
+          "lessonNumber": 7,
+          "slug": "advanced-rag",
+          "title": "Advanced RAG (Chunking, Reranking, Hybrid Search)",
+          "hasContent": true
+        },
+        {
+          "id": "08-fine-tuning-lora",
+          "lessonNumber": 8,
+          "slug": "fine-tuning-lora",
+          "title": "Fine-Tuning with LoRA & QLoRA",
+          "hasContent": true
+        },
+        {
+          "id": "09-function-calling",
+          "lessonNumber": 9,
+          "slug": "function-calling",
+          "title": "Function Calling & Tool Use",
+          "hasContent": true
+        },
+        {
+          "id": "10-evaluation",
+          "lessonNumber": 10,
+          "slug": "evaluation",
+          "title": "Evaluation & Testing LLM Applications",
+          "hasContent": true
+        },
+        {
+          "id": "11-caching-cost",
+          "lessonNumber": 11,
+          "slug": "caching-cost",
+          "title": "Caching, Rate Limiting & Cost Optimization",
+          "hasContent": true
+        },
+        {
+          "id": "12-guardrails",
+          "lessonNumber": 12,
+          "slug": "guardrails",
+          "title": "Guardrails, Safety & Content Filtering",
+          "hasContent": true
+        },
+        {
+          "id": "13-production-app",
+          "lessonNumber": 13,
+          "slug": "production-app",
+          "title": "Building a Production LLM Application",
+          "hasContent": true
+        },
+        {
+          "id": "14-model-context-protocol",
+          "lessonNumber": 14,
+          "slug": "model-context-protocol",
+          "title": "Model Context Protocol (MCP)",
+          "hasContent": true
+        },
+        {
+          "id": "15-prompt-caching",
+          "lessonNumber": 15,
+          "slug": "prompt-caching",
+          "title": "Prompt Caching and Context Caching",
+          "hasContent": true
+        },
+        {
+          "id": "16-langgraph-state-machines",
+          "lessonNumber": 16,
+          "slug": "langgraph-state-machines",
+          "title": "LangGraph — State Machines for Agents",
+          "hasContent": true
+        },
+        {
+          "id": "17-agent-framework-tradeoffs",
+          "lessonNumber": 17,
+          "slug": "agent-framework-tradeoffs",
+          "title": "Agent Framework Tradeoffs — LangGraph vs CrewAI vs AutoGen vs Agno",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "12-multimodal-ai",
+      "phaseNumber": 12,
+      "slug": "multimodal-ai",
+      "title": "Multimodal AI",
+      "description": "Models that see, hear, read, and reason across modalities.",
+      "lessonCount": 25,
+      "lessons": [
+        {
+          "id": "01-vision-transformer-patch-tokens",
+          "lessonNumber": 1,
+          "slug": "vision-transformer-patch-tokens",
+          "title": "Vision Transformers and the Patch-Token Primitive",
+          "hasContent": true
+        },
+        {
+          "id": "02-clip-contrastive-pretraining",
+          "lessonNumber": 2,
+          "slug": "clip-contrastive-pretraining",
+          "title": "CLIP and Contrastive Vision-Language Pretraining",
+          "hasContent": true
+        },
+        {
+          "id": "03-blip2-qformer-bridge",
+          "lessonNumber": 3,
+          "slug": "blip2-qformer-bridge",
+          "title": "From CLIP to BLIP-2 — Q-Former as Modality Bridge",
+          "hasContent": true
+        },
+        {
+          "id": "04-flamingo-gated-cross-attention",
+          "lessonNumber": 4,
+          "slug": "flamingo-gated-cross-attention",
+          "title": "Flamingo and Gated Cross-Attention for Few-Shot VLMs",
+          "hasContent": true
+        },
+        {
+          "id": "05-llava-visual-instruction-tuning",
+          "lessonNumber": 5,
+          "slug": "llava-visual-instruction-tuning",
+          "title": "LLaVA and Visual Instruction Tuning",
+          "hasContent": true
+        },
+        {
+          "id": "06-any-resolution-patch-n-pack",
+          "lessonNumber": 6,
+          "slug": "any-resolution-patch-n-pack",
+          "title": "Any-Resolution Vision: Patch-n'-Pack and NaFlex",
+          "hasContent": true
+        },
+        {
+          "id": "07-open-weight-vlm-recipes",
+          "lessonNumber": 7,
+          "slug": "open-weight-vlm-recipes",
+          "title": "Open-Weight VLM Recipes: What Actually Matters",
+          "hasContent": true
+        },
+        {
+          "id": "08-llava-onevision-single-multi-video",
+          "lessonNumber": 8,
+          "slug": "llava-onevision-single-multi-video",
+          "title": "LLaVA-OneVision: Single-Image, Multi-Image, Video in One Model",
+          "hasContent": true
+        },
+        {
+          "id": "09-qwen-vl-family-dynamic-fps",
+          "lessonNumber": 9,
+          "slug": "qwen-vl-family-dynamic-fps",
+          "title": "Qwen-VL Family and Dynamic-FPS Video",
+          "hasContent": true
+        },
+        {
+          "id": "10-internvl3-native-multimodal",
+          "lessonNumber": 10,
+          "slug": "internvl3-native-multimodal",
+          "title": "InternVL3: Native Multimodal Pretraining",
+          "hasContent": true
+        },
+        {
+          "id": "11-chameleon-early-fusion-tokens",
+          "lessonNumber": 11,
+          "slug": "chameleon-early-fusion-tokens",
+          "title": "Chameleon and Early-Fusion Token-Only Multimodal Models",
+          "hasContent": true
+        },
+        {
+          "id": "12-emu3-next-token-for-generation",
+          "lessonNumber": 12,
+          "slug": "emu3-next-token-for-generation",
+          "title": "Emu3: Next-Token Prediction for Image and Video Generation",
+          "hasContent": true
+        },
+        {
+          "id": "13-transfusion-autoregressive-diffusion",
+          "lessonNumber": 13,
+          "slug": "transfusion-autoregressive-diffusion",
+          "title": "Transfusion: Autoregressive Text + Diffusion Image in One Transformer",
+          "hasContent": true
+        },
+        {
+          "id": "14-show-o-discrete-diffusion-unified",
+          "lessonNumber": 14,
+          "slug": "show-o-discrete-diffusion-unified",
+          "title": "Show-o and Discrete-Diffusion Unified Models",
+          "hasContent": true
+        },
+        {
+          "id": "15-janus-pro-decoupled-encoders",
+          "lessonNumber": 15,
+          "slug": "janus-pro-decoupled-encoders",
+          "title": "Janus-Pro: Decoupled Encoders for Unified Multimodal Models",
+          "hasContent": true
+        },
+        {
+          "id": "16-mio-any-to-any-streaming",
+          "lessonNumber": 16,
+          "slug": "mio-any-to-any-streaming",
+          "title": "MIO and Any-to-Any Streaming Multimodal Models",
+          "hasContent": true
+        },
+        {
+          "id": "17-video-language-temporal-grounding",
+          "lessonNumber": 17,
+          "slug": "video-language-temporal-grounding",
+          "title": "Video-Language Models: Temporal Tokens and Grounding",
+          "hasContent": true
+        },
+        {
+          "id": "18-long-video-million-token",
+          "lessonNumber": 18,
+          "slug": "long-video-million-token",
+          "title": "Long-Video Understanding at Million-Token Context",
+          "hasContent": true
+        },
+        {
+          "id": "19-audio-language-whisper-to-af3",
+          "lessonNumber": 19,
+          "slug": "audio-language-whisper-to-af3",
+          "title": "Audio-Language Models: the Whisper to Audio Flamingo 3 Arc",
+          "hasContent": true
+        },
+        {
+          "id": "20-omni-models-thinker-talker",
+          "lessonNumber": 20,
+          "slug": "omni-models-thinker-talker",
+          "title": "Omni Models: Qwen2.5-Omni and the Thinker-Talker Split",
+          "hasContent": true
+        },
+        {
+          "id": "21-embodied-vlas-openvla-pi0-groot",
+          "lessonNumber": 21,
+          "slug": "embodied-vlas-openvla-pi0-groot",
+          "title": "Embodied VLAs: RT-2, OpenVLA, π0, GR00T",
+          "hasContent": true
+        },
+        {
+          "id": "22-document-diagram-understanding",
+          "lessonNumber": 22,
+          "slug": "document-diagram-understanding",
+          "title": "Document and Diagram Understanding",
+          "hasContent": true
+        },
+        {
+          "id": "23-colpali-vision-native-rag",
+          "lessonNumber": 23,
+          "slug": "colpali-vision-native-rag",
+          "title": "ColPali and Vision-Native Document RAG",
+          "hasContent": true
+        },
+        {
+          "id": "24-multimodal-rag-cross-modal",
+          "lessonNumber": 24,
+          "slug": "multimodal-rag-cross-modal",
+          "title": "Multimodal RAG and Cross-Modal Retrieval",
+          "hasContent": true
+        },
+        {
+          "id": "25-multimodal-agents-computer-use",
+          "lessonNumber": 25,
+          "slug": "multimodal-agents-computer-use",
+          "title": "Multimodal Agents and Computer-Use (Capstone)",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "13-tools-and-protocols",
+      "phaseNumber": 13,
+      "slug": "tools-and-protocols",
+      "title": "Tools And Protocols",
+      "description": "The interfaces between AI and the real world.",
+      "lessonCount": 23,
+      "lessons": [
+        {
+          "id": "01-the-tool-interface",
+          "lessonNumber": 1,
+          "slug": "the-tool-interface",
+          "title": "The Tool Interface — Why Agents Need Structured I/O",
+          "hasContent": true
+        },
+        {
+          "id": "02-function-calling-deep-dive",
+          "lessonNumber": 2,
+          "slug": "function-calling-deep-dive",
+          "title": "Function Calling Deep Dive — OpenAI, Anthropic, Gemini",
+          "hasContent": true
+        },
+        {
+          "id": "03-parallel-and-streaming-tool-calls",
+          "lessonNumber": 3,
+          "slug": "parallel-and-streaming-tool-calls",
+          "title": "Parallel Tool Calls and Streaming with Tools",
+          "hasContent": true
+        },
+        {
+          "id": "04-structured-output",
+          "lessonNumber": 4,
+          "slug": "structured-output",
+          "title": "Structured Output — JSON Schema, Pydantic, Zod, Constrained Decoding",
+          "hasContent": true
+        },
+        {
+          "id": "05-tool-schema-design",
+          "lessonNumber": 5,
+          "slug": "tool-schema-design",
+          "title": "Tool Schema Design — Naming, Descriptions, Parameter Constraints",
+          "hasContent": true
+        },
+        {
+          "id": "06-mcp-fundamentals",
+          "lessonNumber": 6,
+          "slug": "mcp-fundamentals",
+          "title": "MCP Fundamentals — Primitives, Lifecycle, JSON-RPC Base",
+          "hasContent": true
+        },
+        {
+          "id": "07-building-an-mcp-server",
+          "lessonNumber": 7,
+          "slug": "building-an-mcp-server",
+          "title": "Building an MCP Server — Python + TypeScript SDKs",
+          "hasContent": true
+        },
+        {
+          "id": "08-building-an-mcp-client",
+          "lessonNumber": 8,
+          "slug": "building-an-mcp-client",
+          "title": "Building an MCP Client — Discovery, Invocation, Session Management",
+          "hasContent": true
+        },
+        {
+          "id": "09-mcp-transports",
+          "lessonNumber": 9,
+          "slug": "mcp-transports",
+          "title": "MCP Transports — stdio vs Streamable HTTP vs SSE Migration",
+          "hasContent": true
+        },
+        {
+          "id": "10-mcp-resources-and-prompts",
+          "lessonNumber": 10,
+          "slug": "mcp-resources-and-prompts",
+          "title": "MCP Resources and Prompts — Context Exposure Beyond Tools",
+          "hasContent": true
+        },
+        {
+          "id": "11-mcp-sampling",
+          "lessonNumber": 11,
+          "slug": "mcp-sampling",
+          "title": "MCP Sampling — Server-Requested LLM Completions and Agent Loops",
+          "hasContent": true
+        },
+        {
+          "id": "12-mcp-roots-and-elicitation",
+          "lessonNumber": 12,
+          "slug": "mcp-roots-and-elicitation",
+          "title": "Roots and Elicitation — Scoping and Mid-Flight User Input",
+          "hasContent": true
+        },
+        {
+          "id": "13-mcp-async-tasks",
+          "lessonNumber": 13,
+          "slug": "mcp-async-tasks",
+          "title": "Async Tasks (SEP-1686) — Call-Now, Fetch-Later for Long-Running Work",
+          "hasContent": true
+        },
+        {
+          "id": "14-mcp-apps",
+          "lessonNumber": 14,
+          "slug": "mcp-apps",
+          "title": "MCP Apps — Interactive UI Resources via `ui://`",
+          "hasContent": true
+        },
+        {
+          "id": "15-mcp-security-tool-poisoning",
+          "lessonNumber": 15,
+          "slug": "mcp-security-tool-poisoning",
+          "title": "MCP Security I — Tool Poisoning, Rug Pulls, Cross-Server Shadowing",
+          "hasContent": true
+        },
+        {
+          "id": "16-mcp-security-oauth-2-1",
+          "lessonNumber": 16,
+          "slug": "mcp-security-oauth-2-1",
+          "title": "MCP Security II — OAuth 2.1, Resource Indicators, Incremental Scopes",
+          "hasContent": true
+        },
+        {
+          "id": "17-mcp-gateways-and-registries",
+          "lessonNumber": 17,
+          "slug": "mcp-gateways-and-registries",
+          "title": "MCP Gateways and Registries — Enterprise Control Planes",
+          "hasContent": true
+        },
+        {
+          "id": "18-mcp-auth-production",
+          "lessonNumber": 18,
+          "slug": "mcp-auth-production",
+          "title": "MCP Auth in Production — Enrollment, JWKS Refresh, Audience-Pinned Tokens",
+          "hasContent": true
+        },
+        {
+          "id": "19-a2a-protocol",
+          "lessonNumber": 19,
+          "slug": "a2a-protocol",
+          "title": "A2A — Agent-to-Agent Protocol",
+          "hasContent": true
+        },
+        {
+          "id": "20-opentelemetry-genai",
+          "lessonNumber": 20,
+          "slug": "opentelemetry-genai",
+          "title": "OpenTelemetry GenAI — Tracing Tool Calls End-to-End",
+          "hasContent": true
+        },
+        {
+          "id": "21-llm-routing-layer",
+          "lessonNumber": 21,
+          "slug": "llm-routing-layer",
+          "title": "LLM Routing Layer — LiteLLM, OpenRouter, Portkey",
+          "hasContent": true
+        },
+        {
+          "id": "22-skills-and-agent-sdks",
+          "lessonNumber": 22,
+          "slug": "skills-and-agent-sdks",
+          "title": "Skills and Agent SDKs — Anthropic Skills, AGENTS.md, OpenAI Apps SDK",
+          "hasContent": true
+        },
+        {
+          "id": "23-capstone-tool-ecosystem",
+          "lessonNumber": 23,
+          "slug": "capstone-tool-ecosystem",
+          "title": "Capstone — Build a Complete Tool Ecosystem",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "14-agent-engineering",
+      "phaseNumber": 14,
+      "slug": "agent-engineering",
+      "title": "Agent Engineering",
+      "description": "The core of modern AI engineering. Build agents from first principles.",
+      "lessonCount": 42,
+      "lessons": [
+        {
+          "id": "01-the-agent-loop",
+          "lessonNumber": 1,
+          "slug": "the-agent-loop",
+          "title": "The Agent Loop: Observe, Think, Act",
+          "hasContent": true
+        },
+        {
+          "id": "02-rewoo-plan-and-execute",
+          "lessonNumber": 2,
+          "slug": "rewoo-plan-and-execute",
+          "title": "ReWOO and Plan-and-Execute: Decoupled Planning",
+          "hasContent": true
+        },
+        {
+          "id": "03-reflexion-verbal-rl",
+          "lessonNumber": 3,
+          "slug": "reflexion-verbal-rl",
+          "title": "Reflexion: Verbal Reinforcement Learning",
+          "hasContent": true
+        },
+        {
+          "id": "04-tree-of-thoughts-lats",
+          "lessonNumber": 4,
+          "slug": "tree-of-thoughts-lats",
+          "title": "Tree of Thoughts and LATS: Deliberate Search",
+          "hasContent": true
+        },
+        {
+          "id": "05-self-refine-and-critic",
+          "lessonNumber": 5,
+          "slug": "self-refine-and-critic",
+          "title": "Self-Refine and CRITIC: Iterative Output Improvement",
+          "hasContent": true
+        },
+        {
+          "id": "06-tool-use-and-function-calling",
+          "lessonNumber": 6,
+          "slug": "tool-use-and-function-calling",
+          "title": "Tool Use and Function Calling",
+          "hasContent": true
+        },
+        {
+          "id": "07-memory-virtual-context-memgpt",
+          "lessonNumber": 7,
+          "slug": "memory-virtual-context-memgpt",
+          "title": "Memory: Virtual Context and MemGPT",
+          "hasContent": true
+        },
+        {
+          "id": "08-memory-blocks-sleep-time-compute",
+          "lessonNumber": 8,
+          "slug": "memory-blocks-sleep-time-compute",
+          "title": "Memory Blocks and Sleep-Time Compute (Letta)",
+          "hasContent": true
+        },
+        {
+          "id": "09-hybrid-memory-mem0",
+          "lessonNumber": 9,
+          "slug": "hybrid-memory-mem0",
+          "title": "Hybrid Memory: Vector + Graph + KV (Mem0)",
+          "hasContent": true
+        },
+        {
+          "id": "10-skill-libraries-voyager",
+          "lessonNumber": 10,
+          "slug": "skill-libraries-voyager",
+          "title": "Skill Libraries and Lifelong Learning (Voyager)",
+          "hasContent": true
+        },
+        {
+          "id": "11-planning-htn-and-evolutionary",
+          "lessonNumber": 11,
+          "slug": "planning-htn-and-evolutionary",
+          "title": "Planning with HTN and Evolutionary Search",
+          "hasContent": true
+        },
+        {
+          "id": "12-anthropic-workflow-patterns",
+          "lessonNumber": 12,
+          "slug": "anthropic-workflow-patterns",
+          "title": "Anthropic's Workflow Patterns: Simple Over Complex",
+          "hasContent": true
+        },
+        {
+          "id": "13-langgraph-stateful-graphs",
+          "lessonNumber": 13,
+          "slug": "langgraph-stateful-graphs",
+          "title": "LangGraph: Stateful Graphs and Durable Execution",
+          "hasContent": true
+        },
+        {
+          "id": "14-autogen-actor-model",
+          "lessonNumber": 14,
+          "slug": "autogen-actor-model",
+          "title": "AutoGen v0.4: Actor Model and Agent Framework",
+          "hasContent": true
+        },
+        {
+          "id": "15-crewai-role-based-crews",
+          "lessonNumber": 15,
+          "slug": "crewai-role-based-crews",
+          "title": "CrewAI: Role-Based Crews and Flows",
+          "hasContent": true
+        },
+        {
+          "id": "16-openai-agents-sdk",
+          "lessonNumber": 16,
+          "slug": "openai-agents-sdk",
+          "title": "OpenAI Agents SDK: Handoffs, Guardrails, Tracing",
+          "hasContent": true
+        },
+        {
+          "id": "17-claude-agent-sdk",
+          "lessonNumber": 17,
+          "slug": "claude-agent-sdk",
+          "title": "Claude Agent SDK: Subagents and Session Store",
+          "hasContent": true
+        },
+        {
+          "id": "18-agno-and-mastra-runtimes",
+          "lessonNumber": 18,
+          "slug": "agno-and-mastra-runtimes",
+          "title": "Agno and Mastra: Production Runtimes",
+          "hasContent": true
+        },
+        {
+          "id": "19-benchmarks-swebench-gaia",
+          "lessonNumber": 19,
+          "slug": "benchmarks-swebench-gaia",
+          "title": "Benchmarks: SWE-bench, GAIA, AgentBench",
+          "hasContent": true
+        },
+        {
+          "id": "20-benchmarks-webarena-osworld",
+          "lessonNumber": 20,
+          "slug": "benchmarks-webarena-osworld",
+          "title": "Benchmarks: WebArena and OSWorld",
+          "hasContent": true
+        },
+        {
+          "id": "21-computer-use-agents",
+          "lessonNumber": 21,
+          "slug": "computer-use-agents",
+          "title": "Computer Use: Claude, OpenAI CUA, Gemini",
+          "hasContent": true
+        },
+        {
+          "id": "22-voice-agents-pipecat-livekit",
+          "lessonNumber": 22,
+          "slug": "voice-agents-pipecat-livekit",
+          "title": "Voice Agents: Pipecat and LiveKit",
+          "hasContent": true
+        },
+        {
+          "id": "23-otel-genai-conventions",
+          "lessonNumber": 23,
+          "slug": "otel-genai-conventions",
+          "title": "OpenTelemetry GenAI Semantic Conventions",
+          "hasContent": true
+        },
+        {
+          "id": "24-agent-observability-platforms",
+          "lessonNumber": 24,
+          "slug": "agent-observability-platforms",
+          "title": "Agent Observability: Langfuse, Phoenix, Opik",
+          "hasContent": true
+        },
+        {
+          "id": "25-multi-agent-debate",
+          "lessonNumber": 25,
+          "slug": "multi-agent-debate",
+          "title": "Multi-Agent Debate and Collaboration",
+          "hasContent": true
+        },
+        {
+          "id": "26-failure-modes-agentic",
+          "lessonNumber": 26,
+          "slug": "failure-modes-agentic",
+          "title": "Failure Modes: Why Agents Break",
+          "hasContent": true
+        },
+        {
+          "id": "27-prompt-injection-defense",
+          "lessonNumber": 27,
+          "slug": "prompt-injection-defense",
+          "title": "Prompt Injection and the PVE Defense",
+          "hasContent": true
+        },
+        {
+          "id": "28-orchestration-patterns",
+          "lessonNumber": 28,
+          "slug": "orchestration-patterns",
+          "title": "Orchestration Patterns: Supervisor, Swarm, Hierarchical",
+          "hasContent": true
+        },
+        {
+          "id": "29-production-runtimes",
+          "lessonNumber": 29,
+          "slug": "production-runtimes",
+          "title": "Production Runtimes: Queue, Event, Cron",
+          "hasContent": true
+        },
+        {
+          "id": "30-eval-driven-agent-development",
+          "lessonNumber": 30,
+          "slug": "eval-driven-agent-development",
+          "title": "Eval-Driven Agent Development",
+          "hasContent": true
+        },
+        {
+          "id": "31-agent-workbench-why-models-fail",
+          "lessonNumber": 31,
+          "slug": "agent-workbench-why-models-fail",
+          "title": "Agent Workbench Engineering: Why Capable Models Still Fail",
+          "hasContent": true
+        },
+        {
+          "id": "32-minimal-agent-workbench",
+          "lessonNumber": 32,
+          "slug": "minimal-agent-workbench",
+          "title": "The Minimal Agent Workbench",
+          "hasContent": true
+        },
+        {
+          "id": "33-instructions-as-executable-constraints",
+          "lessonNumber": 33,
+          "slug": "instructions-as-executable-constraints",
+          "title": "Agent Instructions as Executable Constraints",
+          "hasContent": true
+        },
+        {
+          "id": "34-repo-memory-and-state",
+          "lessonNumber": 34,
+          "slug": "repo-memory-and-state",
+          "title": "Repo Memory and Durable State",
+          "hasContent": true
+        },
+        {
+          "id": "35-initialization-scripts",
+          "lessonNumber": 35,
+          "slug": "initialization-scripts",
+          "title": "Initialization Scripts for Agents",
+          "hasContent": true
+        },
+        {
+          "id": "36-scope-contracts",
+          "lessonNumber": 36,
+          "slug": "scope-contracts",
+          "title": "Scope Contracts and Task Boundaries",
+          "hasContent": true
+        },
+        {
+          "id": "37-runtime-feedback-loops",
+          "lessonNumber": 37,
+          "slug": "runtime-feedback-loops",
+          "title": "Runtime Feedback Loops",
+          "hasContent": true
+        },
+        {
+          "id": "38-verification-gates",
+          "lessonNumber": 38,
+          "slug": "verification-gates",
+          "title": "Verification Gates",
+          "hasContent": true
+        },
+        {
+          "id": "39-reviewer-agent",
+          "lessonNumber": 39,
+          "slug": "reviewer-agent",
+          "title": "Reviewer Agent: Separate Builder from Marker",
+          "hasContent": true
+        },
+        {
+          "id": "40-multi-session-handoff",
+          "lessonNumber": 40,
+          "slug": "multi-session-handoff",
+          "title": "Multi-Session Handoff",
+          "hasContent": true
+        },
+        {
+          "id": "41-workbench-for-real-repos",
+          "lessonNumber": 41,
+          "slug": "workbench-for-real-repos",
+          "title": "The Workbench on a Real Repo",
+          "hasContent": true
+        },
+        {
+          "id": "42-agent-workbench-capstone",
+          "lessonNumber": 42,
+          "slug": "agent-workbench-capstone",
+          "title": "Capstone: Ship a Reusable Agent Workbench Pack",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "15-autonomous-systems",
+      "phaseNumber": 15,
+      "slug": "autonomous-systems",
+      "title": "Autonomous Systems",
+      "description": "Agents that run without human intervention — safely.",
+      "lessonCount": 22,
+      "lessons": [
+        {
+          "id": "01-long-horizon-agents",
+          "lessonNumber": 1,
+          "slug": "long-horizon-agents",
+          "title": "The Shift from Chatbots to Long-Horizon Agents",
+          "hasContent": true
+        },
+        {
+          "id": "02-star-family-reasoning",
+          "lessonNumber": 2,
+          "slug": "star-family-reasoning",
+          "title": "STaR, V-STaR, Quiet-STaR — Self-Taught Reasoning",
+          "hasContent": true
+        },
+        {
+          "id": "03-alphaevolve-evolutionary-coding",
+          "lessonNumber": 3,
+          "slug": "alphaevolve-evolutionary-coding",
+          "title": "AlphaEvolve — Evolutionary Coding Agents",
+          "hasContent": true
+        },
+        {
+          "id": "04-darwin-godel-machine",
+          "lessonNumber": 4,
+          "slug": "darwin-godel-machine",
+          "title": "Darwin Godel Machine — Open-Ended Self-Modifying Agents",
+          "hasContent": true
+        },
+        {
+          "id": "05-ai-scientist-v2",
+          "lessonNumber": 5,
+          "slug": "ai-scientist-v2",
+          "title": "AI Scientist v2 — Workshop-Level Autonomous Research",
+          "hasContent": true
+        },
+        {
+          "id": "06-automated-alignment-research",
+          "lessonNumber": 6,
+          "slug": "automated-alignment-research",
+          "title": "Automated Alignment Research (Anthropic AAR)",
+          "hasContent": true
+        },
+        {
+          "id": "07-recursive-self-improvement",
+          "lessonNumber": 7,
+          "slug": "recursive-self-improvement",
+          "title": "Recursive Self-Improvement — Capability vs Alignment",
+          "hasContent": true
+        },
+        {
+          "id": "08-bounded-self-improvement",
+          "lessonNumber": 8,
+          "slug": "bounded-self-improvement",
+          "title": "Bounded Self-Improvement Designs",
+          "hasContent": true
+        },
+        {
+          "id": "09-coding-agent-landscape",
+          "lessonNumber": 9,
+          "slug": "coding-agent-landscape",
+          "title": "The Autonomous Coding Agent Landscape (2026)",
+          "hasContent": true
+        },
+        {
+          "id": "10-claude-code-permission-modes",
+          "lessonNumber": 10,
+          "slug": "claude-code-permission-modes",
+          "title": "Claude Code as an Autonomous Agent: Permission Modes and Auto Mode",
+          "hasContent": true
+        },
+        {
+          "id": "11-browser-agents",
+          "lessonNumber": 11,
+          "slug": "browser-agents",
+          "title": "Browser Agents and Long-Horizon Web Tasks",
+          "hasContent": true
+        },
+        {
+          "id": "12-durable-execution",
+          "lessonNumber": 12,
+          "slug": "durable-execution",
+          "title": "Long-Running Background Agents: Durable Execution",
+          "hasContent": true
+        },
+        {
+          "id": "13-cost-governors",
+          "lessonNumber": 13,
+          "slug": "cost-governors",
+          "title": "Action Budgets, Iteration Caps, and Cost Governors",
+          "hasContent": true
+        },
+        {
+          "id": "14-kill-switches-canaries",
+          "lessonNumber": 14,
+          "slug": "kill-switches-canaries",
+          "title": "Kill Switches, Circuit Breakers, and Canary Tokens",
+          "hasContent": true
+        },
+        {
+          "id": "15-propose-then-commit",
+          "lessonNumber": 15,
+          "slug": "propose-then-commit",
+          "title": "Human-in-the-Loop: Propose-Then-Commit",
+          "hasContent": true
+        },
+        {
+          "id": "16-checkpoints-rollback",
+          "lessonNumber": 16,
+          "slug": "checkpoints-rollback",
+          "title": "Checkpoints and Rollback",
+          "hasContent": true
+        },
+        {
+          "id": "17-constitutional-ai",
+          "lessonNumber": 17,
+          "slug": "constitutional-ai",
+          "title": "Constitutional AI and Rule Overrides",
+          "hasContent": true
+        },
+        {
+          "id": "18-llama-guard",
+          "lessonNumber": 18,
+          "slug": "llama-guard",
+          "title": "Llama Guard and Input/Output Classification",
+          "hasContent": true
+        },
+        {
+          "id": "19-anthropic-rsp",
+          "lessonNumber": 19,
+          "slug": "anthropic-rsp",
+          "title": "Anthropic Responsible Scaling Policy v3.0",
+          "hasContent": true
+        },
+        {
+          "id": "20-openai-preparedness-deepmind-fsf",
+          "lessonNumber": 20,
+          "slug": "openai-preparedness-deepmind-fsf",
+          "title": "OpenAI Preparedness Framework and DeepMind Frontier Safety Framework",
+          "hasContent": true
+        },
+        {
+          "id": "21-metr-external-evaluation",
+          "lessonNumber": 21,
+          "slug": "metr-external-evaluation",
+          "title": "METR Time Horizons and External Capability Evaluation",
+          "hasContent": true
+        },
+        {
+          "id": "22-cais-caisi-societal-risk",
+          "lessonNumber": 22,
+          "slug": "cais-caisi-societal-risk",
+          "title": "CAIS, CAISI, and Societal-Scale Risk",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "16-multi-agent-and-swarms",
+      "phaseNumber": 16,
+      "slug": "multi-agent-and-swarms",
+      "title": "Multi Agent And Swarms",
+      "description": "Coordination, emergence, and collective intelligence.",
+      "lessonCount": 25,
+      "lessons": [
+        {
+          "id": "01-why-multi-agent",
+          "lessonNumber": 1,
+          "slug": "why-multi-agent",
+          "title": "Why Multi-Agent?",
+          "hasContent": true
+        },
+        {
+          "id": "02-fipa-acl-heritage",
+          "lessonNumber": 2,
+          "slug": "fipa-acl-heritage",
+          "title": "Heritage of FIPA-ACL and Speech Acts",
+          "hasContent": true
+        },
+        {
+          "id": "03-communication-protocols",
+          "lessonNumber": 3,
+          "slug": "communication-protocols",
+          "title": "Communication Protocols",
+          "hasContent": true
+        },
+        {
+          "id": "04-primitive-model",
+          "lessonNumber": 4,
+          "slug": "primitive-model",
+          "title": "The Multi-Agent Primitive Model",
+          "hasContent": true
+        },
+        {
+          "id": "05-supervisor-orchestrator-pattern",
+          "lessonNumber": 5,
+          "slug": "supervisor-orchestrator-pattern",
+          "title": "Supervisor / Orchestrator-Worker Pattern",
+          "hasContent": true
+        },
+        {
+          "id": "06-hierarchical-architecture",
+          "lessonNumber": 6,
+          "slug": "hierarchical-architecture",
+          "title": "Hierarchical Architecture and Its Failure Mode",
+          "hasContent": true
+        },
+        {
+          "id": "07-society-of-mind-debate",
+          "lessonNumber": 7,
+          "slug": "society-of-mind-debate",
+          "title": "Society of Mind and Multi-Agent Debate",
+          "hasContent": true
+        },
+        {
+          "id": "08-role-specialization",
+          "lessonNumber": 8,
+          "slug": "role-specialization",
+          "title": "Role Specialization — Planner, Critic, Executor, Verifier",
+          "hasContent": true
+        },
+        {
+          "id": "09-parallel-swarm-networks",
+          "lessonNumber": 9,
+          "slug": "parallel-swarm-networks",
+          "title": "Parallel / Swarm / Networked Architectures",
+          "hasContent": true
+        },
+        {
+          "id": "10-group-chat-speaker-selection",
+          "lessonNumber": 10,
+          "slug": "group-chat-speaker-selection",
+          "title": "Group Chat and Speaker Selection",
+          "hasContent": true
+        },
+        {
+          "id": "11-handoffs-and-routines",
+          "lessonNumber": 11,
+          "slug": "handoffs-and-routines",
+          "title": "Handoffs and Routines — Stateless Orchestration",
+          "hasContent": true
+        },
+        {
+          "id": "12-a2a-protocol",
+          "lessonNumber": 12,
+          "slug": "a2a-protocol",
+          "title": "A2A — The Agent-to-Agent Protocol",
+          "hasContent": true
+        },
+        {
+          "id": "13-shared-memory-blackboard",
+          "lessonNumber": 13,
+          "slug": "shared-memory-blackboard",
+          "title": "Shared Memory and Blackboard Patterns",
+          "hasContent": true
+        },
+        {
+          "id": "14-consensus-and-bft",
+          "lessonNumber": 14,
+          "slug": "consensus-and-bft",
+          "title": "Consensus and Byzantine Fault Tolerance for Agents",
+          "hasContent": true
+        },
+        {
+          "id": "15-voting-debate-topology",
+          "lessonNumber": 15,
+          "slug": "voting-debate-topology",
+          "title": "Voting, Self-Consistency, and Debate Topology",
+          "hasContent": true
+        },
+        {
+          "id": "16-negotiation-bargaining",
+          "lessonNumber": 16,
+          "slug": "negotiation-bargaining",
+          "title": "Negotiation and Bargaining",
+          "hasContent": true
+        },
+        {
+          "id": "17-generative-agents-simulation",
+          "lessonNumber": 17,
+          "slug": "generative-agents-simulation",
+          "title": "Generative Agents and Emergent Simulation",
+          "hasContent": true
+        },
+        {
+          "id": "18-theory-of-mind-coordination",
+          "lessonNumber": 18,
+          "slug": "theory-of-mind-coordination",
+          "title": "Theory of Mind and Emergent Coordination",
+          "hasContent": true
+        },
+        {
+          "id": "19-swarm-optimization-pso-aco",
+          "lessonNumber": 19,
+          "slug": "swarm-optimization-pso-aco",
+          "title": "Swarm Optimization for LLMs (PSO, ACO)",
+          "hasContent": true
+        },
+        {
+          "id": "20-marl-maddpg-qmix-mappo",
+          "lessonNumber": 20,
+          "slug": "marl-maddpg-qmix-mappo",
+          "title": "MARL — MADDPG, QMIX, MAPPO",
+          "hasContent": true
+        },
+        {
+          "id": "21-agent-economies",
+          "lessonNumber": 21,
+          "slug": "agent-economies",
+          "title": "Agent Economies, Token Incentives, Reputation",
+          "hasContent": true
+        },
+        {
+          "id": "22-production-scaling-queues-checkpoints",
+          "lessonNumber": 22,
+          "slug": "production-scaling-queues-checkpoints",
+          "title": "Production Scaling — Queues, Checkpoints, Durability",
+          "hasContent": true
+        },
+        {
+          "id": "23-failure-modes-mast-groupthink",
+          "lessonNumber": 23,
+          "slug": "failure-modes-mast-groupthink",
+          "title": "Failure Modes — MAST, Groupthink, Monoculture, Cascading Errors",
+          "hasContent": true
+        },
+        {
+          "id": "24-evaluation-coordination-benchmarks",
+          "lessonNumber": 24,
+          "slug": "evaluation-coordination-benchmarks",
+          "title": "Evaluation and Coordination Benchmarks",
+          "hasContent": true
+        },
+        {
+          "id": "25-case-studies-2026-sota",
+          "lessonNumber": 25,
+          "slug": "case-studies-2026-sota",
+          "title": "Case Studies and the 2026 State of the Art",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "17-infrastructure-and-production",
+      "phaseNumber": 17,
+      "slug": "infrastructure-and-production",
+      "title": "Infrastructure And Production",
+      "description": "Ship AI to the real world. Scale, monitor, optimize.",
+      "lessonCount": 28,
+      "lessons": [
+        {
+          "id": "01-managed-llm-platforms",
+          "lessonNumber": 1,
+          "slug": "managed-llm-platforms",
+          "title": "Managed LLM Platforms — Bedrock, Vertex AI, Azure OpenAI",
+          "hasContent": true
+        },
+        {
+          "id": "02-inference-platform-economics",
+          "lessonNumber": 2,
+          "slug": "inference-platform-economics",
+          "title": "Inference Platform Economics — Fireworks, Together, Baseten, Modal, Replicate, Anyscale",
+          "hasContent": true
+        },
+        {
+          "id": "03-gpu-autoscaling-kubernetes",
+          "lessonNumber": 3,
+          "slug": "gpu-autoscaling-kubernetes",
+          "title": "GPU Autoscaling on Kubernetes — Karpenter, KAI Scheduler, Gang Scheduling",
+          "hasContent": true
+        },
+        {
+          "id": "04-vllm-serving-internals",
+          "lessonNumber": 4,
+          "slug": "vllm-serving-internals",
+          "title": "vLLM Serving Internals: PagedAttention, Continuous Batching, Chunked Prefill",
+          "hasContent": true
+        },
+        {
+          "id": "05-eagle3-speculative-decoding",
+          "lessonNumber": 5,
+          "slug": "eagle3-speculative-decoding",
+          "title": "EAGLE-3 Speculative Decoding in Production",
+          "hasContent": true
+        },
+        {
+          "id": "06-sglang-radixattention",
+          "lessonNumber": 6,
+          "slug": "sglang-radixattention",
+          "title": "SGLang and RadixAttention for Prefix-Heavy Workloads",
+          "hasContent": true
+        },
+        {
+          "id": "07-tensorrt-llm-blackwell",
+          "lessonNumber": 7,
+          "slug": "tensorrt-llm-blackwell",
+          "title": "TensorRT-LLM on Blackwell with FP8 and NVFP4",
+          "hasContent": true
+        },
+        {
+          "id": "08-inference-metrics-goodput",
+          "lessonNumber": 8,
+          "slug": "inference-metrics-goodput",
+          "title": "Inference Metrics — TTFT, TPOT, ITL, Goodput, P99",
+          "hasContent": true
+        },
+        {
+          "id": "09-production-quantization",
+          "lessonNumber": 9,
+          "slug": "production-quantization",
+          "title": "Production Quantization — AWQ, GPTQ, GGUF K-quants, FP8, MXFP4/NVFP4",
+          "hasContent": true
+        },
+        {
+          "id": "10-cold-start-mitigation",
+          "lessonNumber": 10,
+          "slug": "cold-start-mitigation",
+          "title": "Cold Start Mitigation for Serverless LLMs",
+          "hasContent": true
+        },
+        {
+          "id": "11-multi-region-kv-locality",
+          "lessonNumber": 11,
+          "slug": "multi-region-kv-locality",
+          "title": "Multi-Region LLM Serving and KV Cache Locality",
+          "hasContent": true
+        },
+        {
+          "id": "12-edge-inference",
+          "lessonNumber": 12,
+          "slug": "edge-inference",
+          "title": "Edge Inference — Apple Neural Engine, Qualcomm Hexagon, WebGPU/WebLLM, Jetson",
+          "hasContent": true
+        },
+        {
+          "id": "13-llm-observability",
+          "lessonNumber": 13,
+          "slug": "llm-observability",
+          "title": "LLM Observability Stack Selection",
+          "hasContent": true
+        },
+        {
+          "id": "14-prompt-semantic-caching",
+          "lessonNumber": 14,
+          "slug": "prompt-semantic-caching",
+          "title": "Prompt Caching and Semantic Caching Economics",
+          "hasContent": true
+        },
+        {
+          "id": "15-batch-apis",
+          "lessonNumber": 15,
+          "slug": "batch-apis",
+          "title": "Batch APIs — the 50% Discount as Industry Standard",
+          "hasContent": true
+        },
+        {
+          "id": "16-model-routing",
+          "lessonNumber": 16,
+          "slug": "model-routing",
+          "title": "Model Routing as a Cost-Reduction Primitive",
+          "hasContent": true
+        },
+        {
+          "id": "17-disaggregated-prefill-decode",
+          "lessonNumber": 17,
+          "slug": "disaggregated-prefill-decode",
+          "title": "Disaggregated Prefill/Decode — NVIDIA Dynamo and llm-d",
+          "hasContent": true
+        },
+        {
+          "id": "18-vllm-production-stack-lmcache",
+          "lessonNumber": 18,
+          "slug": "vllm-production-stack-lmcache",
+          "title": "vLLM Production Stack with LMCache KV Offloading",
+          "hasContent": true
+        },
+        {
+          "id": "19-ai-gateways",
+          "lessonNumber": 19,
+          "slug": "ai-gateways",
+          "title": "AI Gateways — LiteLLM, Portkey, Kong AI Gateway, Bifrost",
+          "hasContent": true
+        },
+        {
+          "id": "20-shadow-canary-progressive",
+          "lessonNumber": 20,
+          "slug": "shadow-canary-progressive",
+          "title": "Shadow Traffic, Canary Rollout, and Progressive Deployment for LLMs",
+          "hasContent": true
+        },
+        {
+          "id": "21-ab-testing-llm-features",
+          "lessonNumber": 21,
+          "slug": "ab-testing-llm-features",
+          "title": "A/B Testing LLM Features — GrowthBook, Statsig, and the Vibes Problem",
+          "hasContent": true
+        },
+        {
+          "id": "22-load-testing-llm-apis",
+          "lessonNumber": 22,
+          "slug": "load-testing-llm-apis",
+          "title": "Load Testing LLM APIs — Why k6 and Locust Lie",
+          "hasContent": true
+        },
+        {
+          "id": "23-sre-for-ai",
+          "lessonNumber": 23,
+          "slug": "sre-for-ai",
+          "title": "SRE for AI — Multi-Agent Incident Response, Runbooks, Predictive Detection",
+          "hasContent": true
+        },
+        {
+          "id": "24-chaos-engineering-llm",
+          "lessonNumber": 24,
+          "slug": "chaos-engineering-llm",
+          "title": "Chaos Engineering for LLM Production",
+          "hasContent": true
+        },
+        {
+          "id": "25-security-secrets-audit",
+          "lessonNumber": 25,
+          "slug": "security-secrets-audit",
+          "title": "Security — Secrets, API Key Rotation, Audit Logs, Guardrails",
+          "hasContent": true
+        },
+        {
+          "id": "26-compliance-frameworks",
+          "lessonNumber": 26,
+          "slug": "compliance-frameworks",
+          "title": "Compliance — SOC 2, HIPAA, GDPR, PCI-DSS, EU AI Act, ISO 42001",
+          "hasContent": true
+        },
+        {
+          "id": "27-finops-llms",
+          "lessonNumber": 27,
+          "slug": "finops-llms",
+          "title": "FinOps for LLMs — Unit Economics and Multi-Tenant Attribution",
+          "hasContent": true
+        },
+        {
+          "id": "28-self-hosted-serving-selection",
+          "lessonNumber": 28,
+          "slug": "self-hosted-serving-selection",
+          "title": "Self-Hosted Serving Selection — llama.cpp, Ollama, TGI, vLLM, SGLang",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "18-ethics-safety-alignment",
+      "phaseNumber": 18,
+      "slug": "ethics-safety-alignment",
+      "title": "Ethics Safety Alignment",
+      "description": "Build AI that helps humanity. Not optional.",
+      "lessonCount": 30,
+      "lessons": [
+        {
+          "id": "01-instruction-following-alignment-signal",
+          "lessonNumber": 1,
+          "slug": "instruction-following-alignment-signal",
+          "title": "Instruction-Following as Alignment Signal",
+          "hasContent": true
+        },
+        {
+          "id": "02-reward-hacking-goodhart",
+          "lessonNumber": 2,
+          "slug": "reward-hacking-goodhart",
+          "title": "Reward Hacking and Goodhart's Law",
+          "hasContent": true
+        },
+        {
+          "id": "03-direct-preference-optimization-family",
+          "lessonNumber": 3,
+          "slug": "direct-preference-optimization-family",
+          "title": "The Direct Preference Optimization Family",
+          "hasContent": true
+        },
+        {
+          "id": "04-sycophancy-rlhf-amplification",
+          "lessonNumber": 4,
+          "slug": "sycophancy-rlhf-amplification",
+          "title": "Sycophancy as RLHF Amplification",
+          "hasContent": true
+        },
+        {
+          "id": "05-constitutional-ai-rlaif",
+          "lessonNumber": 5,
+          "slug": "constitutional-ai-rlaif",
+          "title": "Constitutional AI and RLAIF",
+          "hasContent": true
+        },
+        {
+          "id": "06-mesa-optimization-deceptive-alignment",
+          "lessonNumber": 6,
+          "slug": "mesa-optimization-deceptive-alignment",
+          "title": "Mesa-Optimization and Deceptive Alignment",
+          "hasContent": true
+        },
+        {
+          "id": "07-sleeper-agents-persistent-deception",
+          "lessonNumber": 7,
+          "slug": "sleeper-agents-persistent-deception",
+          "title": "Sleeper Agents — Persistent Deception",
+          "hasContent": true
+        },
+        {
+          "id": "08-in-context-scheming-frontier-models",
+          "lessonNumber": 8,
+          "slug": "in-context-scheming-frontier-models",
+          "title": "In-Context Scheming in Frontier Models",
+          "hasContent": true
+        },
+        {
+          "id": "09-alignment-faking",
+          "lessonNumber": 9,
+          "slug": "alignment-faking",
+          "title": "Alignment Faking",
+          "hasContent": true
+        },
+        {
+          "id": "10-ai-control-subversion",
+          "lessonNumber": 10,
+          "slug": "ai-control-subversion",
+          "title": "AI Control — Safety Despite Subversion",
+          "hasContent": true
+        },
+        {
+          "id": "11-scalable-oversight-weak-to-strong",
+          "lessonNumber": 11,
+          "slug": "scalable-oversight-weak-to-strong",
+          "title": "Scalable Oversight and Weak-to-Strong Generalization",
+          "hasContent": true
+        },
+        {
+          "id": "12-red-teaming-pair-automated-attacks",
+          "lessonNumber": 12,
+          "slug": "red-teaming-pair-automated-attacks",
+          "title": "Red-Teaming: PAIR and Automated Attacks",
+          "hasContent": true
+        },
+        {
+          "id": "13-many-shot-jailbreaking",
+          "lessonNumber": 13,
+          "slug": "many-shot-jailbreaking",
+          "title": "Many-Shot Jailbreaking",
+          "hasContent": true
+        },
+        {
+          "id": "14-ascii-art-visual-jailbreaks",
+          "lessonNumber": 14,
+          "slug": "ascii-art-visual-jailbreaks",
+          "title": "ASCII Art and Visual Jailbreaks",
+          "hasContent": true
+        },
+        {
+          "id": "15-indirect-prompt-injection",
+          "lessonNumber": 15,
+          "slug": "indirect-prompt-injection",
+          "title": "Indirect Prompt Injection — Production Attack Surface",
+          "hasContent": true
+        },
+        {
+          "id": "16-red-team-tooling-garak-llamaguard-pyrit",
+          "lessonNumber": 16,
+          "slug": "red-team-tooling-garak-llamaguard-pyrit",
+          "title": "Red-Team Tooling — Garak, Llama Guard, PyRIT",
+          "hasContent": true
+        },
+        {
+          "id": "17-wmdp-dual-use-evaluation",
+          "lessonNumber": 17,
+          "slug": "wmdp-dual-use-evaluation",
+          "title": "WMDP and Dual-Use Capability Evaluation",
+          "hasContent": true
+        },
+        {
+          "id": "18-frontier-safety-frameworks-rsp-pf-fsf",
+          "lessonNumber": 18,
+          "slug": "frontier-safety-frameworks-rsp-pf-fsf",
+          "title": "Frontier Safety Frameworks — RSP, PF, FSF",
+          "hasContent": true
+        },
+        {
+          "id": "19-model-welfare-research",
+          "lessonNumber": 19,
+          "slug": "model-welfare-research",
+          "title": "Anthropic's Model Welfare Program",
+          "hasContent": true
+        },
+        {
+          "id": "20-bias-representational-harm",
+          "lessonNumber": 20,
+          "slug": "bias-representational-harm",
+          "title": "Bias and Representational Harm in LLMs",
+          "hasContent": true
+        },
+        {
+          "id": "21-fairness-criteria-group-individual-counterfactual",
+          "lessonNumber": 21,
+          "slug": "fairness-criteria-group-individual-counterfactual",
+          "title": "Fairness Criteria — Group, Individual, Counterfactual",
+          "hasContent": true
+        },
+        {
+          "id": "22-differential-privacy-for-llms",
+          "lessonNumber": 22,
+          "slug": "differential-privacy-for-llms",
+          "title": "Differential Privacy for LLMs",
+          "hasContent": true
+        },
+        {
+          "id": "23-watermarking-synthid-stable-signature-c2pa",
+          "lessonNumber": 23,
+          "slug": "watermarking-synthid-stable-signature-c2pa",
+          "title": "Watermarking — SynthID, Stable Signature, C2PA",
+          "hasContent": true
+        },
+        {
+          "id": "24-regulatory-frameworks-eu-us-uk-korea",
+          "lessonNumber": 24,
+          "slug": "regulatory-frameworks-eu-us-uk-korea",
+          "title": "Regulatory Frameworks — EU, US, UK, Korea",
+          "hasContent": true
+        },
+        {
+          "id": "25-echoleak-cves-for-ai",
+          "lessonNumber": 25,
+          "slug": "echoleak-cves-for-ai",
+          "title": "EchoLeak and the Emergence of CVEs for AI",
+          "hasContent": true
+        },
+        {
+          "id": "26-model-system-dataset-cards",
+          "lessonNumber": 26,
+          "slug": "model-system-dataset-cards",
+          "title": "Model, System, and Dataset Cards",
+          "hasContent": true
+        },
+        {
+          "id": "27-data-provenance-training-governance",
+          "lessonNumber": 27,
+          "slug": "data-provenance-training-governance",
+          "title": "Data Provenance and Training-Data Governance",
+          "hasContent": true
+        },
+        {
+          "id": "28-alignment-research-ecosystem",
+          "lessonNumber": 28,
+          "slug": "alignment-research-ecosystem",
+          "title": "Alignment Research Ecosystem — MATS, Redwood, Apollo, METR",
+          "hasContent": true
+        },
+        {
+          "id": "29-moderation-systems-openai-perspective-llamaguard",
+          "lessonNumber": 29,
+          "slug": "moderation-systems-openai-perspective-llamaguard",
+          "title": "Moderation Systems — OpenAI, Perspective, Llama Guard",
+          "hasContent": true
+        },
+        {
+          "id": "30-dual-use-risk-cyber-bio-chem-nuclear",
+          "lessonNumber": 30,
+          "slug": "dual-use-risk-cyber-bio-chem-nuclear",
+          "title": "Dual-Use Risk — Cyber, Bio, Chem, Nuclear Uplift",
+          "hasContent": true
+        }
+      ]
+    },
+    {
+      "id": "19-capstone-projects",
+      "phaseNumber": 19,
+      "slug": "capstone-projects",
+      "title": "Capstone Projects",
+      "description": "Prove everything you learned. Build portfolio-grade systems.",
+      "lessonCount": 85,
+      "lessons": [
+        {
+          "id": "01-terminal-native-coding-agent",
+          "lessonNumber": 1,
+          "slug": "terminal-native-coding-agent",
+          "title": "Capstone 01 — Terminal-Native Coding Agent",
+          "hasContent": true
+        },
+        {
+          "id": "02-rag-over-codebase",
+          "lessonNumber": 2,
+          "slug": "rag-over-codebase",
+          "title": "Capstone 02 — RAG over Codebase (Cross-Repo Semantic Search)",
+          "hasContent": true
+        },
+        {
+          "id": "03-realtime-voice-assistant",
+          "lessonNumber": 3,
+          "slug": "realtime-voice-assistant",
+          "title": "Capstone 03 — Real-Time Voice Assistant (ASR to LLM to TTS)",
+          "hasContent": true
+        },
+        {
+          "id": "04-multimodal-document-qa",
+          "lessonNumber": 4,
+          "slug": "multimodal-document-qa",
+          "title": "Capstone 04 — Multimodal Document QA (Vision-First PDF, Tables, Charts)",
+          "hasContent": true
+        },
+        {
+          "id": "05-autonomous-research-agent",
+          "lessonNumber": 5,
+          "slug": "autonomous-research-agent",
+          "title": "Capstone 05 — Autonomous Research Agent (AI-Scientist Class)",
+          "hasContent": true
+        },
+        {
+          "id": "06-devops-troubleshooting-agent",
+          "lessonNumber": 6,
+          "slug": "devops-troubleshooting-agent",
+          "title": "Capstone 06 — DevOps Troubleshooting Agent for Kubernetes",
+          "hasContent": true
+        },
+        {
+          "id": "07-end-to-end-fine-tuning-pipeline",
+          "lessonNumber": 7,
+          "slug": "end-to-end-fine-tuning-pipeline",
+          "title": "Capstone 07 — End-to-End Fine-Tuning Pipeline (Data to SFT to DPO to Serve)",
+          "hasContent": true
+        },
+        {
+          "id": "08-production-rag-chatbot",
+          "lessonNumber": 8,
+          "slug": "production-rag-chatbot",
+          "title": "Capstone 08 — Production RAG Chatbot for a Regulated Vertical",
+          "hasContent": true
+        },
+        {
+          "id": "09-code-migration-agent",
+          "lessonNumber": 9,
+          "slug": "code-migration-agent",
+          "title": "Capstone 09 — Code Migration Agent (Repo-Level Language / Runtime Upgrade)",
+          "hasContent": true
+        },
+        {
+          "id": "10-multi-agent-software-team",
+          "lessonNumber": 10,
+          "slug": "multi-agent-software-team",
+          "title": "Capstone 10 — Multi-Agent Software Engineering Team",
+          "hasContent": true
+        },
+        {
+          "id": "11-llm-observability-dashboard",
+          "lessonNumber": 11,
+          "slug": "llm-observability-dashboard",
+          "title": "Capstone 11 — LLM Observability & Eval Dashboard",
+          "hasContent": true
+        },
+        {
+          "id": "12-video-understanding-pipeline",
+          "lessonNumber": 12,
+          "slug": "video-understanding-pipeline",
+          "title": "Capstone 12 — Video Understanding Pipeline (Scene, QA, Search)",
+          "hasContent": true
+        },
+        {
+          "id": "13-mcp-server-with-registry",
+          "lessonNumber": 13,
+          "slug": "mcp-server-with-registry",
+          "title": "Capstone 13 — MCP Server with Registry and Governance",
+          "hasContent": true
+        },
+        {
+          "id": "14-speculative-decoding-server",
+          "lessonNumber": 14,
+          "slug": "speculative-decoding-server",
+          "title": "Capstone 14 — Speculative-Decoding Inference Server",
+          "hasContent": true
+        },
+        {
+          "id": "15-constitutional-safety-harness",
+          "lessonNumber": 15,
+          "slug": "constitutional-safety-harness",
+          "title": "Capstone 15 — Constitutional Safety Harness + Red-Team Range",
+          "hasContent": true
+        },
+        {
+          "id": "16-github-issue-to-pr-agent",
+          "lessonNumber": 16,
+          "slug": "github-issue-to-pr-agent",
+          "title": "Capstone 16 — GitHub Issue-to-PR Autonomous Agent",
+          "hasContent": true
+        },
+        {
+          "id": "17-personal-ai-tutor",
+          "lessonNumber": 17,
+          "slug": "personal-ai-tutor",
+          "title": "Capstone 17 — Personal AI Tutor (Adaptive, Multimodal, with Memory)",
+          "hasContent": true
+        },
+        {
+          "id": "20-agent-harness-loop-contract",
+          "lessonNumber": 20,
+          "slug": "agent-harness-loop-contract",
+          "title": "Agent Harness Loop Contract",
+          "hasContent": true
+        },
+        {
+          "id": "21-tool-registry-schema-validation",
+          "lessonNumber": 21,
+          "slug": "tool-registry-schema-validation",
+          "title": "Tool Registry with Schema Validation",
+          "hasContent": true
+        },
+        {
+          "id": "22-jsonrpc-stdio-transport",
+          "lessonNumber": 22,
+          "slug": "jsonrpc-stdio-transport",
+          "title": "JSON-RPC 2.0 Over Newline-Delimited Stdio",
+          "hasContent": true
+        },
+        {
+          "id": "23-function-call-dispatcher",
+          "lessonNumber": 23,
+          "slug": "function-call-dispatcher",
+          "title": "Function Call Dispatcher",
+          "hasContent": true
+        },
+        {
+          "id": "24-plan-execute-control-flow",
+          "lessonNumber": 24,
+          "slug": "plan-execute-control-flow",
+          "title": "Plan-Execute Control Flow",
+          "hasContent": true
+        },
+        {
+          "id": "25-verification-gates-observation-budget",
+          "lessonNumber": 25,
+          "slug": "verification-gates-observation-budget",
+          "title": "Capstone Lesson 25: Verification Gates and the Observation Budget",
+          "hasContent": true
+        },
+        {
+          "id": "26-sandbox-runner-denylist",
+          "lessonNumber": 26,
+          "slug": "sandbox-runner-denylist",
+          "title": "Capstone Lesson 26: Sandbox Runner with Denylist and Path Jail",
+          "hasContent": true
+        },
+        {
+          "id": "27-eval-harness-fixture-tasks",
+          "lessonNumber": 27,
+          "slug": "eval-harness-fixture-tasks",
+          "title": "Capstone Lesson 27: Eval Harness with Fixture Tasks",
+          "hasContent": true
+        },
+        {
+          "id": "28-observability-otel-traces",
+          "lessonNumber": 28,
+          "slug": "observability-otel-traces",
+          "title": "Capstone Lesson 28: Observability with OTel GenAI Spans and Prometheus Metrics",
+          "hasContent": true
+        },
+        {
+          "id": "29-end-to-end-coding-task-demo",
+          "lessonNumber": 29,
+          "slug": "end-to-end-coding-task-demo",
+          "title": "Capstone Lesson 29: End-to-End Coding Agent on the Harness",
+          "hasContent": true
+        },
+        {
+          "id": "30-bpe-tokenizer-from-scratch",
+          "lessonNumber": 30,
+          "slug": "bpe-tokenizer-from-scratch",
+          "title": "BPE Tokenizer From Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "31-tokenized-dataset-sliding-window",
+          "lessonNumber": 31,
+          "slug": "tokenized-dataset-sliding-window",
+          "title": "Tokenized Dataset with Sliding Window",
+          "hasContent": true
+        },
+        {
+          "id": "32-token-positional-embeddings",
+          "lessonNumber": 32,
+          "slug": "token-positional-embeddings",
+          "title": "Token and Positional Embeddings",
+          "hasContent": true
+        },
+        {
+          "id": "33-multihead-self-attention",
+          "lessonNumber": 33,
+          "slug": "multihead-self-attention",
+          "title": "Multi-Head Self-Attention",
+          "hasContent": true
+        },
+        {
+          "id": "34-transformer-block",
+          "lessonNumber": 34,
+          "slug": "transformer-block",
+          "title": "Transformer Block from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "35-gpt-model-assembly",
+          "lessonNumber": 35,
+          "slug": "gpt-model-assembly",
+          "title": "GPT Model Assembly",
+          "hasContent": true
+        },
+        {
+          "id": "36-training-loop-eval",
+          "lessonNumber": 36,
+          "slug": "training-loop-eval",
+          "title": "Training Loop and Evaluation",
+          "hasContent": true
+        },
+        {
+          "id": "37-loading-pretrained-weights",
+          "lessonNumber": 37,
+          "slug": "loading-pretrained-weights",
+          "title": "Loading Pretrained Weights",
+          "hasContent": true
+        },
+        {
+          "id": "38-classifier-finetuning",
+          "lessonNumber": 38,
+          "slug": "classifier-finetuning",
+          "title": "Capstone Lesson 38: Classifier Fine-Tuning by Head Swap",
+          "hasContent": true
+        },
+        {
+          "id": "39-instruction-tuning-sft",
+          "lessonNumber": 39,
+          "slug": "instruction-tuning-sft",
+          "title": "Capstone Lesson 39: Instruction Tuning by Supervised Fine-Tuning",
+          "hasContent": true
+        },
+        {
+          "id": "40-dpo-from-scratch",
+          "lessonNumber": 40,
+          "slug": "dpo-from-scratch",
+          "title": "Capstone Lesson 40: Direct Preference Optimization from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "41-eval-pipeline",
+          "lessonNumber": 41,
+          "slug": "eval-pipeline",
+          "title": "Capstone Lesson 41: Full Evaluation Pipeline",
+          "hasContent": true
+        },
+        {
+          "id": "42-large-corpus-downloader",
+          "lessonNumber": 42,
+          "slug": "large-corpus-downloader",
+          "title": "Large Corpus Downloader",
+          "hasContent": true
+        },
+        {
+          "id": "43-hdf5-tokenized-corpus",
+          "lessonNumber": 43,
+          "slug": "hdf5-tokenized-corpus",
+          "title": "HDF5 Tokenized Corpus",
+          "hasContent": true
+        },
+        {
+          "id": "44-cosine-lr-warmup",
+          "lessonNumber": 44,
+          "slug": "cosine-lr-warmup",
+          "title": "Cosine LR with Linear Warmup",
+          "hasContent": true
+        },
+        {
+          "id": "45-gradient-clipping-amp",
+          "lessonNumber": 45,
+          "slug": "gradient-clipping-amp",
+          "title": "Gradient Clipping and Mixed Precision",
+          "hasContent": true
+        },
+        {
+          "id": "46-gradient-accumulation",
+          "lessonNumber": 46,
+          "slug": "gradient-accumulation",
+          "title": "Gradient Accumulation",
+          "hasContent": true
+        },
+        {
+          "id": "47-checkpoint-save-resume",
+          "lessonNumber": 47,
+          "slug": "checkpoint-save-resume",
+          "title": "Checkpoint Save and Resume",
+          "hasContent": true
+        },
+        {
+          "id": "48-distributed-fsdp-ddp",
+          "lessonNumber": 48,
+          "slug": "distributed-fsdp-ddp",
+          "title": "Distributed Data Parallel and FSDP from Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "49-lm-eval-harness",
+          "lessonNumber": 49,
+          "slug": "lm-eval-harness",
+          "title": "Language Model Evaluation Harness",
+          "hasContent": true
+        },
+        {
+          "id": "50-hypothesis-generator",
+          "lessonNumber": 50,
+          "slug": "hypothesis-generator",
+          "title": "Hypothesis Generator",
+          "hasContent": true
+        },
+        {
+          "id": "51-literature-retrieval",
+          "lessonNumber": 51,
+          "slug": "literature-retrieval",
+          "title": "Literature Retrieval",
+          "hasContent": true
+        },
+        {
+          "id": "52-experiment-runner",
+          "lessonNumber": 52,
+          "slug": "experiment-runner",
+          "title": "Experiment Runner",
+          "hasContent": true
+        },
+        {
+          "id": "53-result-evaluator",
+          "lessonNumber": 53,
+          "slug": "result-evaluator",
+          "title": "Result Evaluator",
+          "hasContent": true
+        },
+        {
+          "id": "54-paper-writer",
+          "lessonNumber": 54,
+          "slug": "paper-writer",
+          "title": "Paper Writer",
+          "hasContent": true
+        },
+        {
+          "id": "55-critic-loop",
+          "lessonNumber": 55,
+          "slug": "critic-loop",
+          "title": "Critic Loop",
+          "hasContent": true
+        },
+        {
+          "id": "56-iteration-scheduler",
+          "lessonNumber": 56,
+          "slug": "iteration-scheduler",
+          "title": "Iteration Scheduler",
+          "hasContent": true
+        },
+        {
+          "id": "57-end-to-end-research-demo",
+          "lessonNumber": 57,
+          "slug": "end-to-end-research-demo",
+          "title": "End-to-End Research Demo",
+          "hasContent": true
+        },
+        {
+          "id": "58-vision-encoder-patches",
+          "lessonNumber": 58,
+          "slug": "vision-encoder-patches",
+          "title": "Vision Encoder Patches",
+          "hasContent": true
+        },
+        {
+          "id": "59-vit-transformer",
+          "lessonNumber": 59,
+          "slug": "vit-transformer",
+          "title": "Vision Transformer Encoder",
+          "hasContent": true
+        },
+        {
+          "id": "60-projection-layer-modality-align",
+          "lessonNumber": 60,
+          "slug": "projection-layer-modality-align",
+          "title": "Projection Layer for Modality Alignment",
+          "hasContent": true
+        },
+        {
+          "id": "61-cross-attention-fusion",
+          "lessonNumber": 61,
+          "slug": "cross-attention-fusion",
+          "title": "Cross-Attention Fusion",
+          "hasContent": true
+        },
+        {
+          "id": "62-vision-language-pretraining",
+          "lessonNumber": 62,
+          "slug": "vision-language-pretraining",
+          "title": "Vision-Language Pretraining",
+          "hasContent": true
+        },
+        {
+          "id": "63-multimodal-eval",
+          "lessonNumber": 63,
+          "slug": "multimodal-eval",
+          "title": "Multimodal Evaluation",
+          "hasContent": true
+        },
+        {
+          "id": "64-chunking-strategies-advanced",
+          "lessonNumber": 64,
+          "slug": "chunking-strategies-advanced",
+          "title": "Chunking Strategies, Compared",
+          "hasContent": true
+        },
+        {
+          "id": "65-hybrid-retrieval-bm25-dense",
+          "lessonNumber": 65,
+          "slug": "hybrid-retrieval-bm25-dense",
+          "title": "Hybrid Retrieval with BM25 and Dense Embeddings",
+          "hasContent": true
+        },
+        {
+          "id": "66-reranker-cross-encoder",
+          "lessonNumber": 66,
+          "slug": "reranker-cross-encoder",
+          "title": "Cross-Encoder Reranker",
+          "hasContent": true
+        },
+        {
+          "id": "67-query-rewriting-hyde",
+          "lessonNumber": 67,
+          "slug": "query-rewriting-hyde",
+          "title": "Query Rewriting: HyDE, Multi-Query, and Decomposition",
+          "hasContent": true
+        },
+        {
+          "id": "68-rag-eval-precision-recall",
+          "lessonNumber": 68,
+          "slug": "rag-eval-precision-recall",
+          "title": "RAG Evaluation: Precision, Recall, MRR, nDCG, Faithfulness, Answer Relevance",
+          "hasContent": true
+        },
+        {
+          "id": "69-end-to-end-rag-system",
+          "lessonNumber": 69,
+          "slug": "end-to-end-rag-system",
+          "title": "End-to-End RAG System",
+          "hasContent": true
+        },
+        {
+          "id": "70-task-spec-format",
+          "lessonNumber": 70,
+          "slug": "task-spec-format",
+          "title": "Task Spec Format",
+          "hasContent": true
+        },
+        {
+          "id": "71-classical-metrics",
+          "lessonNumber": 71,
+          "slug": "classical-metrics",
+          "title": "Classical Metrics",
+          "hasContent": true
+        },
+        {
+          "id": "72-code-exec-metric",
+          "lessonNumber": 72,
+          "slug": "code-exec-metric",
+          "title": "Code Exec Metric",
+          "hasContent": true
+        },
+        {
+          "id": "73-perplexity-calibration",
+          "lessonNumber": 73,
+          "slug": "perplexity-calibration",
+          "title": "Perplexity and Calibration",
+          "hasContent": true
+        },
+        {
+          "id": "74-leaderboard-aggregation",
+          "lessonNumber": 74,
+          "slug": "leaderboard-aggregation",
+          "title": "Leaderboard Aggregation",
+          "hasContent": true
+        },
+        {
+          "id": "75-end-to-end-eval-runner",
+          "lessonNumber": 75,
+          "slug": "end-to-end-eval-runner",
+          "title": "End-to-End Eval Runner",
+          "hasContent": true
+        },
+        {
+          "id": "76-collective-ops-from-scratch",
+          "lessonNumber": 76,
+          "slug": "collective-ops-from-scratch",
+          "title": "Collective Ops From Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "77-data-parallel-ddp",
+          "lessonNumber": 77,
+          "slug": "data-parallel-ddp",
+          "title": "Data Parallel DDP From Scratch",
+          "hasContent": true
+        },
+        {
+          "id": "78-zero-parameter-sharding",
+          "lessonNumber": 78,
+          "slug": "zero-parameter-sharding",
+          "title": "ZeRO Optimizer State Sharding",
+          "hasContent": true
+        },
+        {
+          "id": "79-pipeline-parallel",
+          "lessonNumber": 79,
+          "slug": "pipeline-parallel",
+          "title": "Pipeline Parallel and Bubble Analysis",
+          "hasContent": true
+        },
+        {
+          "id": "80-checkpoint-sharded-resume",
+          "lessonNumber": 80,
+          "slug": "checkpoint-sharded-resume",
+          "title": "Sharded Checkpoint and Atomic Resume",
+          "hasContent": true
+        },
+        {
+          "id": "81-end-to-end-distributed-train",
+          "lessonNumber": 81,
+          "slug": "end-to-end-distributed-train",
+          "title": "End-to-End Distributed Training",
+          "hasContent": true
+        },
+        {
+          "id": "82-jailbreak-taxonomy",
+          "lessonNumber": 82,
+          "slug": "jailbreak-taxonomy",
+          "title": "Capstone 82 — Jailbreak Taxonomy",
+          "hasContent": true
+        },
+        {
+          "id": "83-prompt-injection-detector",
+          "lessonNumber": 83,
+          "slug": "prompt-injection-detector",
+          "title": "Capstone 83 — Prompt Injection Detector",
+          "hasContent": true
+        },
+        {
+          "id": "84-refusal-evaluation",
+          "lessonNumber": 84,
+          "slug": "refusal-evaluation",
+          "title": "Capstone 84 — Refusal Evaluation",
+          "hasContent": true
+        },
+        {
+          "id": "85-content-classifier-integration",
+          "lessonNumber": 85,
+          "slug": "content-classifier-integration",
+          "title": "Capstone 85 — Content Classifier Integration",
+          "hasContent": true
+        },
+        {
+          "id": "86-constitutional-rules-engine",
+          "lessonNumber": 86,
+          "slug": "constitutional-rules-engine",
+          "title": "Capstone 86 — Constitutional Rules Engine",
+          "hasContent": true
+        },
+        {
+          "id": "87-end-to-end-safety-gate",
+          "lessonNumber": 87,
+          "slug": "end-to-end-safety-gate",
+          "title": "Capstone 87 — End-to-End Safety Gate",
+          "hasContent": true
+        }
+      ]
+    }
+  ]
+}

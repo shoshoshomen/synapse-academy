@@ -1,0 +1,15 @@
+{
+  "title": "Tokenizers: BPE, WordPiece, SentencePiece",
+  "type": "Build",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "Phase 05 (NLP Foundations)",
+  "timeEstimate": "~90 minutes",
+  "objectives": [
+    "Implement BPE, WordPiece, and Unigram tokenization algorithms from scratch and compare their merge strategies",
+    "Explain how vocabulary size affects model efficiency: too small creates long sequences, too large wastes embedding parameters",
+    "Analyze tokenization artifacts across languages and code, identifying where specific tokenizers break down",
+    "Use the tiktoken and sentencepiece libraries to tokenize text and inspect the resulting token IDs"
+  ]
+}
