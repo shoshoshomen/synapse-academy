@@ -11,7 +11,7 @@ export const siteConfig = {
   source: {
     repo: "rohitg00/ai-engineering-from-scratch",
     url: "https://github.com/rohitg00/ai-engineering-from-scratch",
-    author: "Rohit Goel",
+    author: "Rohit Ghumare",
     license: "MIT",
   },
   stats: {

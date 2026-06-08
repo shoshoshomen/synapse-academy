@@ -102,5 +102,5 @@ defined in [`app/globals.css`](./app/globals.css).
 
 The curriculum content is adapted from
 [**AI Engineering from Scratch**](https://github.com/rohitg00/ai-engineering-from-scratch)
-by **Rohit Goel**, used under the **MIT License**. Attribution is shown on every
+by **Rohit Ghumare**, used under the **MIT License**. Attribution is shown on every
 lesson and in the footer. This platform's own application code is likewise MIT.
