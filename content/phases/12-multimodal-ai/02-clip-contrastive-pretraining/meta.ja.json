@@ -1,0 +1,16 @@
+{
+  "title": "CLIPとコントラスティブ視覚言語事前学習",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "InfoNCE + シグモイド損失実装)"
+  ],
+  "prerequisites": "フェーズ12・01（ViTパッチ）、フェーズ7（Transformer）",
+  "timeEstimate": "約180分",
+  "objectives": [
+    "相互情報量からInfoNCE損失を導出し、数値的に安定したベクトル化バージョンを実装する。",
+    "シグモイドペアワイズ損失（SigLIP）がsoftmaxが要求するall-gatherオーバーヘッドなしでバッチ32768+にスケールする理由を説明する。",
+    "テキストテンプレート（`a photo of a {class}`）を構築してコサイン類似度のargmaxを取ることでゼロショットImageNet分類を実行する。",
+    "CLIP / SigLIP事前学習が提供する4つのレバーを挙げる：バッチサイズ、温度、プロンプトテンプレート、データ品質。"
+  ]
+}

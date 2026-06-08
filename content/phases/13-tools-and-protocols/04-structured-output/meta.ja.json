@@ -1,0 +1,16 @@
+{
+  "title": "構造化出力 — JSON Schema、Pydantic、Zod、制約付きデコーディング",
+  "type": "実装",
+  "languages": [
+    "Python (標準ライブラリ",
+    "JSON Schema 2020-12サブセット)"
+  ],
+  "prerequisites": "Phase 13 · 02（Function calling詳解）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "適切な制約（enum、min/max、required、pattern）を使って抽出ターゲットのJSON Schema 2020-12を記述できる。",
+    "ストリクトモードと制約付きデコーディングが「生成後に検証する」とは異なる保証を与える理由を説明できる。",
+    "3つの失敗モード（パースエラー、スキーマ違反、モデルの拒否）を区別できる。",
+    "型付き修復と型付き拒否処理を持つ抽出パイプラインを出荷できる。"
+  ]
+}

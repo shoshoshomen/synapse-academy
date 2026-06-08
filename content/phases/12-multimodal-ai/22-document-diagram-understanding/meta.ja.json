@@ -1,0 +1,16 @@
+{
+  "title": "ドキュメントと図表の理解",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "layout-aware document parser skeleton)"
+  ],
+  "prerequisites": "フェーズ12・05（LLaVA）、フェーズ5（NLP）",
+  "timeEstimate": "約180分",
+  "objectives": [
+    "文書AIの3つの時代を説明する：OCRパイプライン、OCRフリー、VLMネイティブ。",
+    "LayoutLMv3の3つの入力ストリームを説明する：テキスト、レイアウト（bbox）、画像パッチ、統一マスキングを含む。",
+    "Donut（OCRフリー、画像→マークアップ）、Nougat（科学論文→LaTeX）、DocLLM（レイアウト対応生成）、PaliGemma 2（VLMネイティブ）を比較する。",
+    "新しいタスク（請求書、科学論文、手書きフォーム、中国語レシート）に文書モデルを選択する。"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "MCPセキュリティ II — OAuth 2.1、リソースインジケーター、インクリメンタルスコープ",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "OAuth state machine simulator)"
+  ],
+  "prerequisites": "フェーズ13・09（トランスポート）、フェーズ13・15（セキュリティI）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "リソースサーバーと認可サーバーの責任を区別できる。",
+    "PKCEで保護されたOAuth 2.1認可コードフローを把握できる。",
+    "Confused-deputy攻撃を防ぐために `resource`（RFC 8707）と保護リソースメタデータ（RFC 9728）を使用できる。",
+    "ステップアップ認可を実装できる：サーバーが403とWWW-Authenticateで上位スコープを要求し、クライアントがユーザーの同意を再度求めてリトライする。"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "トークナイザー: BPE、WordPiece、SentencePiece",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ05（NLP基礎）",
+  "timeEstimate": "約90分",
+  "objectives": [
+    "BPE、WordPiece、Unigramトークナイゼーションアルゴリズムをゼロから実装し、マージ戦略を比較する",
+    "語彙サイズがモデルの効率に与える影響を説明する：小さすぎると長いシーケンスが生まれ、大きすぎると埋め込みパラメータを無駄にする",
+    "言語やコードをまたいだトークナイゼーションの問題点を分析し、特定のトークナイザーがどこで崩れるかを特定する",
+    "tiktokenとsentencepieceライブラリを使ってテキストをトークナイズし、生成されたトークンIDを調べる"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "スキルとエージェントSDK — Anthropicスキル、AGENTS.md、OpenAI Apps SDK",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "SKILL.md parser and loader)"
+  ],
+  "prerequisites": "フェーズ13・07（MCPサーバー）",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "3つの層を区別できる：AGENTS.md（プロジェクトコンテキスト）、SKILL.md（再利用可能なノウハウ）、MCP（ツール）。",
+    "YAMLフロントマターとプログレッシブディスクロージャー付きのSKILL.mdを書ける。",
+    "スキルをエージェントランタイムにファイルシステム形式でロードできる。",
+    "スキルをMCPサーバーとAGENTS.mdと組み合わせて1つのパッケージがClaude Code、Cursor、Codexで動作するようにできる。"
+  ]
+}

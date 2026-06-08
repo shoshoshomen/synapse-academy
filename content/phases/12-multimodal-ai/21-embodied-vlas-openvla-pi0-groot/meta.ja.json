@@ -1,0 +1,16 @@
+{
+  "title": "身体化VLA：RT-2、OpenVLA、π0、GR00T",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "action tokenizer + VLA inference skeleton)"
+  ],
+  "prerequisites": "フェーズ12・05（LLaVA）、フェーズ15（自律システム、参照）",
+  "timeEstimate": "約180分",
+  "objectives": [
+    "アクションのトークン化を説明する：離散ビンエンコーディング（RT-2）、FAST効率的アクショントークン、連続フローマッチングアクション（π0）。",
+    "ウェブ + ロボットデータでの共同ファインチューニングが、新しいタスクへの汎用知識転移を維持する理由を説明する。",
+    "OpenVLA（オープン7B Llama+VLM）、π0（フローマッチング）、GR00T N1（デュアルシステム）を同じロボットタスクで比較する。",
+    "Open X-Embodimentデータセットとそれ上でのRT-Xトレーニングコーパスとしての役割を挙げる。"
+  ]
+}

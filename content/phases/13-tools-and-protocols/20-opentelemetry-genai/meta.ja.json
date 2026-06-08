@@ -1,0 +1,16 @@
+{
+  "title": "OpenTelemetry GenAI — ツール呼び出しのエンドツーエンドトレーシング",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "OTel span emitter)"
+  ],
+  "prerequisites": "フェーズ13・07（MCPサーバー）、フェーズ13・08（MCPクライアント）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "LLMスパンとツール実行スパンの必須OTel GenAI属性を名前で説明できる。",
+    "エージェントループ、LLM呼び出し、ツール呼び出し、MCPクライアントディスパッチをカバーするトレース階層を構築できる。",
+    "デフォルトで編集すべき内容と、オプトインでキャプチャすべき内容を決定できる。",
+    "ツールコードを書き直すことなくスパンをローカルコレクター（Jaeger、Langfuse）に出力できる。"
+  ]
+}

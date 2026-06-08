@@ -1,0 +1,16 @@
+{
+  "title": "MCPトランスポート — stdio対Streamable HTTP対SSE移行",
+  "type": "学習",
+  "languages": [
+    "Python (標準ライブラリ",
+    "Streamable HTTPエンドポイントの骨格)"
+  ],
+  "prerequisites": "Phase 13 · 07、08（MCPサーバーとクライアント）",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "デプロイメント形状（ローカル対リモート、シングルプロセス対フリート）に基づいてstdioとStreamable HTTPを選べる。",
+    "Streamable HTTPシングルエンドポイントパターンを実装できる：リクエストはPOST、セッションストリームはGET。",
+    "`Origin`検証とセッションIDセマンティクスを強制してDNSリバインディングを防御できる。",
+    "廃止期限（2026年半ば）までにレガシーHTTP+SSEサーバーをStreamable HTTPに移行できる。"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Flamingoとゲートクロスアテンションによるfew-shot VLM",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "ゲートクロスアテンション + Perceiver resamplerデモ)"
+  ],
+  "prerequisites": "フェーズ12・03（BLIP-2 Q-Former）",
+  "timeEstimate": "約120分",
+  "objectives": [
+    "ゲートクロスアテンションがtanh(gate) = 0によって初期化時にフリーズLLMのテキスト能力を維持する方法を説明する。",
+    "Perceiver resamplerを追う：N個の画像パッチ → クロスアテンションによるK個の固定「潜在」クエリ。",
+    "Flamingoが画像の配置を尊重する因果マスキングでインターリーブ画像テキスト列を処理する方法を説明する。",
+    "few-shotマルチモーダルプロンプト構造を再現する（3つの画像キャプション例、その後にクエリ画像）。"
+  ]
+}

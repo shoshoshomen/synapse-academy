@@ -1,0 +1,15 @@
+{
+  "title": "Stable Diffusion — アーキテクチャとファインチューニング",
+  "type": "学習 + 使用",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ4 レッスン10（拡散モデル）、フェーズ7 レッスン02（自己アテンション）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "Stable Diffusionパイプラインの5つの構成要素（VAE、テキストエンコーダ、U-Net、スケジューラ、安全チェッカー）とそれぞれが実際に行うことを追う",
+    "潜在拡散と、4x64x64の潜在空間での訓練（3x512x512の画像空間ではなく）が品質を損なわずに計算量を48分の1に削減する理由を説明する",
+    "`diffusers` を使って画像生成、image-to-image、インペインティング、ControlNet誘導生成を実行する",
+    "小さなカスタムデータセットでLoRAを使ってStable Diffusionをファインチューニングし、推論時にLoRAアダプタを読み込む"
+  ]
+}

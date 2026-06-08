@@ -1,0 +1,15 @@
+{
+  "title": "RAG（Retrieval-Augmented Generation）",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ10（ゼロから学ぶLLM）、フェーズ11 レッスン01〜05",
+  "timeEstimate": "約90分",
+  "objectives": [
+    "完全なRAGパイプラインを構築する：ドキュメントの読み込み・チャンキング・埋め込み・ベクターストレージ・取得・生成",
+    "ベクターデータベース（ChromaDB・FAISS・Pinecone）を使って適切なインデックスでセマンティック検索を実装する",
+    "知識グラウンデッドなアプリケーションにfine-tuningではなくRAGが好まれる理由（コスト・鮮度・帰属）を説明する",
+    "取得指標（precision・recall）と生成指標（faithfulness・relevance）を使ってRAGの品質を評価する"
+  ]
+}

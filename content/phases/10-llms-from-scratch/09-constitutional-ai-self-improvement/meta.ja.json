@@ -1,0 +1,15 @@
+{
+  "title": "Constitutional AIと自己改善",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib + numpy)"
+  ],
+  "prerequisites": "フェーズ10、レッスン06〜08（SFT・RLHF・DPO）",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "Constitutional AIの2ステージループ（自己批評＋自己改訂、次に改訂ペアを使った選好訓練）を実装する",
+    "GRPO目標（DeepSeek-R1のグループ相対的ポリシー最適化）を導出し、PPOの価値関数ベースラインと対比させる",
+    "別個の報酬モデルなしにルールベースの結果報酬で検証可能な推論トレースを生成して採点する",
+    "自己改善が人間の選好データを上回る場合と、モード崩壊に陥る場合を判断する"
+  ]
+}

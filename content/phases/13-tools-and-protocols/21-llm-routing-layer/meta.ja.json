@@ -1,0 +1,16 @@
+{
+  "title": "LLMルーティング層 — LiteLLM、OpenRouter、Portkey",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "routing + failover + cost tracker)"
+  ],
+  "prerequisites": "フェーズ13・02（関数呼び出し）、フェーズ13・17（ゲートウェイ）",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "セルフホスト、マネージド、本番グレードのルーティングオプションを区別できる。",
+    "定義された優先順序でプロバイダー障害時にリトライするフォールバックチェーンを実装できる。",
+    "プロバイダーをまたいでリクエストごとのコストとトークン使用量を追跡できる。",
+    "与えられた本番の制約に対してLiteLLM、OpenRouter、Portkeyの間で決定できる。"
+  ]
+}

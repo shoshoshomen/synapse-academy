@@ -1,0 +1,10 @@
+{
+  "title": "Model Context Protocol（MCP）",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ11・09（Function Calling）、フェーズ11・03（構造化出力）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

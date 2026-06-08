@@ -1,0 +1,16 @@
+{
+  "title": "MCPサーバーの構築 — Python + TypeScript SDK",
+  "type": "実装",
+  "languages": [
+    "Python (標準ライブラリ",
+    "stdioのMCPサーバー)"
+  ],
+  "prerequisites": "Phase 13 · 06（MCP基礎）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "`initialize`、`tools/list`、`tools/call`、`resources/list`、`resources/read`、`prompts/list`、`prompts/get`メソッドを実装できる。",
+    "stdinからJSON-RPCメッセージを読み取り、stdoutにレスポンスを書き込むディスパッチループを作成できる。",
+    "JSON-RPC 2.0仕様とMCPの追加コードに従って構造化されたエラーレスポンスを出力できる。",
+    "ツールロジックを書き直さずに標準ライブラリ実装をFastMCP（Python SDK）またはTypeScript SDKに移行できる。"
+  ]
+}

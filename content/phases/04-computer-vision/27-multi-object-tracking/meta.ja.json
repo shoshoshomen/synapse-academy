@@ -1,0 +1,15 @@
+{
+  "title": "多物体追跡とビデオメモリ",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ4 レッスン06（YOLO検出）、フェーズ4 レッスン08（Mask R-CNN）、フェーズ4 レッスン24（SAM 3）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "検出追跡と問合せベースの追跡を区別し、アルゴリズムファミリーを挙げる（SORT、DeepSORT、ByteTrack、BoT-SORT、SAM 2メモリトラッカー、SAM 3.1 Object Multiplex）",
+    "クラシックな検出追跡のためにIoU + ハンガリアン割り当てをゼロから実装する",
+    "SAM 2のメモリバンクとそれがIoUベースの関連付けより遮蔽をうまく処理できる理由を説明する",
+    "3つの追跡メトリクス（MOTA、IDF1、HOTA）を読み取り、特定のユースケースに対してどれが重要かを選ぶ"
+  ]
+}

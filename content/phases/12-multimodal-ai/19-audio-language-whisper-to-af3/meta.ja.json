@@ -1,0 +1,16 @@
+{
+  "title": "音声言語モデル：WhisperからAudio Flamingo 3へのアーク",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "log-Mel spectrogram + audio Q-former skeleton)"
+  ],
+  "prerequisites": "フェーズ6（音声とオーディオ）、フェーズ12・03（Qフォーマー）",
+  "timeEstimate": "約180分",
+  "objectives": [
+    "波形からログメルスペクトログラムを計算する：ウィンドウ処理、FFT、フィルターバンク、対数変換。",
+    "エンコーダーの選択肢を比較する：Whisperエンコーダー、BEATs、AF-Whisperハイブリッド。各々がどこで優れているか。",
+    "音声Qフォーマーを構築する：スペクトログラムパッチにクロスアテンションするN個の学習クエリ。",
+    "カスケード（Whisperの後にLLM）対エンドツーエンドの音声LLM学習を説明する：なぜエンドツーエンドが推論においてよりよくスケールするか。"
+  ]
+}

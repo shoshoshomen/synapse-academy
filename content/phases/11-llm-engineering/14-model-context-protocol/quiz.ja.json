@@ -1,0 +1,62 @@
+[
+  {
+    "question": "MCPサーバーが公開する3つのプリミティブは何ですか？",
+    "options": [
+      "関数・型・クラス",
+      "ツール・リソース・プロンプト",
+      "エンドポイント・Webhook・キュー",
+      "エージェント・スキル・ワークフロー"
+    ],
+    "correct": 1,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "MCPが使うワイヤーフォーマットは何ですか？",
+    "options": [
+      "HTTP上のGraphQL",
+      "protobuf付きgRPC",
+      "JSON-RPC 2.0",
+      "OpenAPI付きREST"
+    ],
+    "correct": 2,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "ツールが状態を変更し人間の承認が必要であることを示すメタデータフィールドはどれですか？",
+    "options": [
+      "readonly: false",
+      "mutating: true",
+      "destructiveHint: true",
+      "requiresAuth: true"
+    ],
+    "correct": 2,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "以前のSSEのみのリモートトランスポートを置き換えた2025-06-18のトランスポートは何ですか？",
+    "options": [
+      "WebTransport",
+      "Streamable HTTP",
+      "WebSocketのみ",
+      "gRPC双方向"
+    ],
+    "correct": 1,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "ツールをインラインに置くのではなく独自のMCPサーバーに分割すべき場合はいつですか？",
+    "options": [
+      "1日10回未満呼び出される場合",
+      "2つ以上のホストから呼び出され読み取り専用/キャッシュ可能な場合",
+      "1KBを超えるデータを返す場合",
+      "決してない。MCPはローカル開発のみ"
+    ],
+    "correct": 1,
+    "explanation": "",
+    "stage": "post"
+  }
+]

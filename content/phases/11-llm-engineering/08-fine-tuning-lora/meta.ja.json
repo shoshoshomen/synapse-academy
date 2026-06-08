@@ -1,0 +1,15 @@
+{
+  "title": "LoRA & QLoRAによるfine-tuning",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ10、レッスン06（インストラクションチューニング / SFT）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "事前訓練モデルのアテンション層に低ランクアダプター行列（AとB）を注入することでLoRAを実装する",
+    "LoRAとfull fine-tuningのパラメーター節約を計算する：d_model次元のランクrはd^2ではなく2*r*dのパラメーターを訓練する",
+    "コンシューマーGPUのメモリに収めるためにQLoRA（4ビット量子化ベース＋LoRAアダプター）を使ってモデルをfine-tuningする",
+    "デプロイのためにLoRAウェイトをベースモデルにマージし、アダプターあり・なしの推論速度を比較する"
+  ]
+}

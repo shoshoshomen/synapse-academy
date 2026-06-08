@@ -1,0 +1,16 @@
+{
+  "title": "非同期タスク（SEP-1686）— 即時呼び出し・後取得による長時間処理",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "async task state machine)"
+  ],
+  "prerequisites": "フェーズ13・07（MCPサーバー）、フェーズ13・09（トランスポート）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "ツールを同期からタスク拡張へ格上げすべきタイミングを判断できる（サーバー側で30秒以上かかる処理）。",
+    "タスクのライフサイクルを把握する：`working` → `input_required` → `completed` / `failed` / `cancelled`。",
+    "クラッシュしても進行中の処理が失われないよう、タスク状態を永続化できる。",
+    "`tasks/status` のポーリングと `tasks/result` の取得を正しく実装できる。"
+  ]
+}

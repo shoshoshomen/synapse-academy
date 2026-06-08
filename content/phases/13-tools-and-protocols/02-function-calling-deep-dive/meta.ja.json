@@ -1,0 +1,16 @@
+{
+  "title": "Function Calling 詳解 — OpenAI、Anthropic、Gemini",
+  "type": "実装",
+  "languages": [
+    "Python (標準ライブラリ",
+    "スキーマトランスレータ)"
+  ],
+  "prerequisites": "Phase 13 · 01（ツールインターフェース）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "OpenAI、Anthropic、GeminiのFunction callingペイロードの3つの形式上の違い（宣言、呼び出し、結果）を述べられる。",
+    "1つのツール宣言を3つのプロバイダ形式すべてに変換し、ストリクトモードの制約がどこで異なるかを予測できる。",
+    "各プロバイダで`tool_choice`を使ってツール呼び出しを強制、禁止、または自動選択できる。",
+    "プロバイダごとのハード制限（ツール数、スキーマ深さ、引数長）と、制限違反時のエラー特徴を把握している。"
+  ]
+}

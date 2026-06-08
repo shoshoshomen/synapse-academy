@@ -1,0 +1,10 @@
+{
+  "title": "LangGraph — エージェントのステートマシン",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ11・09（Function Calling）、フェーズ11・14（Model Context Protocol）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

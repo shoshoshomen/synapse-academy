@@ -1,0 +1,16 @@
+{
+  "title": "オムニモデル：Qwen2.5-OmniとThinker-Talker分離",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "streaming pipeline latency simulator + VAD loop)"
+  ],
+  "prerequisites": "フェーズ12・19（音声LLM）、フェーズ12・16（任意対任意）",
+  "timeEstimate": "約180分",
+  "objectives": [
+    "推論パイプラインをThinker（テキスト推論）とTalker（音声合成）に分離し、なぜ並列ストリーミングが機能するかを説明する。",
+    "会話インタラクションの最初の音声バイトまでの時間（TTFAB）バジェットをコンポーネントごとに計算する。",
+    "Thinker内での視覚、音声、テキストにまたがるTMRoPEの時間整合位置エンコーディングを説明する。",
+    "3つのリアルタイム会話パターンを挙げる：半二重、ターンテイキング、全二重。"
+  ]
+}

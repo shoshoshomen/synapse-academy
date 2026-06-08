@@ -1,0 +1,17 @@
+{
+  "title": "MCPアプリ — `ui://` 経由のインタラクティブUIリソース",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "UI resource emitter)",
+    "HTML (sample app)"
+  ],
+  "prerequisites": "フェーズ13・07（MCPサーバー）、フェーズ13・10（リソース）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "ツール呼び出しから `ui://` リソースを返し、正しいMIMEタイプとメタデータを設定できる。",
+    "`_meta.ui.resourceUri`、`_meta.ui.csp`、`_meta.ui.permissions` でツールに関連するUIを宣言できる。",
+    "UI対ホスト通信のためのiframeサンドボックスのpostMessage JSON-RPCを実装できる。",
+    "UIから発生する攻撃に対して防御するCSPとpermissions-policyのデフォルトを適用できる。"
+  ]
+}

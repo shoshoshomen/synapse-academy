@@ -1,0 +1,15 @@
+{
+  "title": "few-shot・Chain-of-Thought・Tree-of-Thought",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン11.01（プロンプトエンジニアリング）",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "タスクの精度を最大化する例示のデモンストレーションを選択・フォーマットして、few-shot promptingを実装する",
+    "Chain-of-Thought（CoT）推論を適用し、数学の文章題のような多段階問題の精度を向上させる",
+    "複数の推論パスを探索して最良のものを選ぶTree-of-Thoughtプロンプトを構築する",
+    "ゼロショット vs few-shot vs CoTの精度向上を標準ベンチマークで計測する"
+  ]
+}

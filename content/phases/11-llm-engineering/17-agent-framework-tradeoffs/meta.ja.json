@@ -1,0 +1,10 @@
+{
+  "title": "エージェントフレームワークのトレードオフ — LangGraph vs CrewAI vs AutoGen vs Agno",
+  "type": "学習",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ11・09（Function Calling）、フェーズ11・16（LangGraph）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

@@ -1,0 +1,16 @@
+{
+  "title": "MCP基礎 — プリミティブ、ライフサイクル、JSON-RPCベース",
+  "type": "学習",
+  "languages": [
+    "Python (標準ライブラリ",
+    "JSON-RPCパーサ)"
+  ],
+  "prerequisites": "Phase 13 · 01〜05（ツールインターフェースとFunction calling）",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "MCPの6つすべてのプリミティブ（サーバー側：tools、resources、prompts；クライアント側：roots、sampling、elicitation）を挙げ、それぞれのユースケースを述べられる。",
+    "3フェーズのライフサイクル（initialize、operation、shutdown）を説明し、各フェーズでどちらがどのメッセージを送るかを述べられる。",
+    "JSON-RPC 2.0のリクエスト、レスポンス、通知エンベロープをパースして出力できる。",
+    "`initialize`でのケイパビリティネゴシエーションとは何か、それなしに何が壊れるかを説明できる。"
+  ]
+}

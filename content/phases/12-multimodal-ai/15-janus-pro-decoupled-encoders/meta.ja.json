@@ -1,0 +1,16 @@
+{
+  "title": "Janus-Pro：統合マルチモーダルモデルのための分離エンコーダー",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "dual-encoder routing + shared-body signal)"
+  ],
+  "prerequisites": "フェーズ12・13（Transfusion）、フェーズ12・14（Show-o）",
+  "timeEstimate": "約120分",
+  "objectives": [
+    "単一の共有エンコーダーが理解または生成品質のいずれかを損なう理由を説明する。",
+    "Janus-Proのルーティングを説明する：理解のための入力側ではSigLIP特徴、生成のための入力と出力の両方ではVQトークン。",
+    "Janus-ProがJanusが成功しなかった場所で成功するデータミックスのスケーリングを追跡する。",
+    "分離型（Janus-Pro）、結合連続型（Transfusion）、結合離散型（Show-o）のアーキテクチャを比較する。"
+  ]
+}

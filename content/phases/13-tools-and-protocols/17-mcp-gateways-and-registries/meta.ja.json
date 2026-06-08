@@ -1,0 +1,16 @@
+{
+  "title": "MCPゲートウェイとレジストリ — エンタープライズコントロールプレーン",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "minimal gateway)"
+  ],
+  "prerequisites": "フェーズ13・15（ツールポイズニング）、フェーズ13・16（OAuth 2.1）",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "MCPゲートウェイの位置を説明できる（MCPクライアントと複数のバックエンドMCPサーバーの間）。",
+    "5つのゲートウェイの責務を実装できる：認証、RBAC、監査、レート制限、ポリシー。",
+    "ゲートウェイ層でピン留めされたツールハッシュマニフェストを強制できる。",
+    "公式MCPレジストリとメタレジストリ（Glama、MCPMarket、MCP.so、Smithery、LobeHub）を区別できる。"
+  ]
+}

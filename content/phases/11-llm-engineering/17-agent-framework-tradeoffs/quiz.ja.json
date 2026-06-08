@@ -1,0 +1,62 @@
+[
+  {
+    "question": "クラッシュ後に再開し・実行の途中で人間の承認を受け入れ・3つのレトリーバーに並列でファンアウトしなければならないワークフローに最初に選ぶフレームワークはどれですか？",
+    "options": [
+      "CrewAI",
+      "AutoGen",
+      "LangGraph",
+      "Agno"
+    ],
+    "correct": 2,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "LLMによるルーティングが明示的なルーティングよりターンごとに多くのトークンを消費する理由は何ですか？",
+    "options": [
+      "レイテンシをヘッジするために次のノードを並列で事前取得する",
+      "プランナーLLMの呼び出しが毎ターン次のステップを選択し、すべての決定にプロンプトと補完トークンを追加する",
+      "クルー内のすべてのエージェントにツールリストを複製する",
+      "会話履歴全体を検証モデルに送る"
+    ],
+    "correct": 1,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "コードレビューでのプロポーザー・クリティックのダイアログは、どのフレームワークのコア抽象に自然にマッピングされますか？",
+    "options": [
+      "CrewAIのsequential Crew",
+      "LangGraphのStateGraph",
+      "AutoGenのGroupChat / ConversableAgentペア",
+      "AgnoのツールつきシングルAgent"
+    ],
+    "correct": 2,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "セッションとメモリの永続化のために直接Agentクラスに付属した組み込みストレージドライバー（SQLite・Postgres・Redis・Mongo・DynamoDB）を持つフレームワークはどれですか？",
+    "options": [
+      "LangGraph",
+      "CrewAI",
+      "AutoGen",
+      "Agno"
+    ],
+    "correct": 3,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "2つの呼び出しのサマライザー（テキストの取得・要約）がある。正しいフレームワークの選択はどれですか？",
+    "options": [
+      "LangGraph StateGraph——信頼性のために常にフレームワークを使う",
+      "researcherとsummarizerのロールを持つCrewAI——ロールがより明確にする",
+      "プロバイダーSDKを使ったプレーンなPython——小さなパイプラインには何もフレームワークを使わないのが最速",
+      "AutoGen GroupChat——2つのエージェントが最良の要約について議論できる"
+    ],
+    "correct": 2,
+    "explanation": "",
+    "stage": "post"
+  }
+]

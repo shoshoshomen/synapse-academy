@@ -1,0 +1,16 @@
+{
+  "title": "動画言語モデル：時間トークンとグラウンディング",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "frame sampler + temporal-grounding evaluator)"
+  ],
+  "prerequisites": "フェーズ12・08（LLaVA-OneVision）",
+  "timeEstimate": "約180分",
+  "objectives": [
+    "時間位置エンコーディングが視覚エンコーダーとは独立して動画VLMの性能を変える理由を説明する。",
+    "均一、動的FPS、イベント駆動のフレームサンプリングを、1秒あたりのトークン数対グラウンディング精度で比較する。",
+    "クリップごとのQフォーマー（Video-LLaMA）対フレームごとのプーリング（Video-LLaVA）対トークンごとのMRoPE（Qwen2.5-VL）の設計を説明する。",
+    "4つの動画ベンチマークを挙げる：VideoMME、TempCompass、EgoSchema、Video-MMMU。"
+  ]
+}

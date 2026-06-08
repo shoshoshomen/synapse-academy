@@ -1,0 +1,16 @@
+{
+  "title": "Chameleonとearly-fusionトークンのみマルチモーダルモデル",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "VQ-VAEトークナイザー + インターリーブデコーダー)"
+  ],
+  "prerequisites": "フェーズ12・05、フェーズ8（生成AI）",
+  "timeEstimate": "約180分",
+  "objectives": [
+    "共有語彙 + 単一損失がモデルにできることを何を変えるかを説明する。",
+    "VQ-VAEが画像をTransformerの次トークン目標と互換性のある離散列にトークン化する方法を説明する。",
+    "Chameleonの学習安定性のトリックを挙げる：QK-Norm、ドロップアウト配置、LayerNorm順序。",
+    "ChameleonをBLIP-2のQ-Formerアプローチと比較し、それぞれが適切な選択である場合を説明する。"
+  ]
+}

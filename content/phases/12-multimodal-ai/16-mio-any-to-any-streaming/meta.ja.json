@@ -1,0 +1,16 @@
+{
+  "title": "MIOと任意対任意ストリーミングマルチモーダルモデル",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "four-modality token allocator + streaming decode loop)"
+  ],
+  "prerequisites": "フェーズ12・11（Chameleon）、フェーズ6（音声とオーディオ）",
+  "timeEstimate": "約120分",
+  "objectives": [
+    "テキスト、画像、音声、音楽のトークンを衝突なく収容する共有語彙を設計する。",
+    "SEED-Tokenizer（画像）とSpeechTokenizer残差VQ（音声）を圧縮率と再構成のトレードオフで比較する。",
+    "任意対任意の生成を構築する4段階カリキュラムを説明する。",
+    "3つのオープンな任意対任意のレシピとその主なトレードオフを挙げる：MIO、AnyGPT、Unified-IO 2。"
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "question": "LangGraphのStateのTypedDictの`messages`フィールドが`Annotated[list, add_messages]`を必要とする理由は何ですか？",
+    "options": [
+      "モデルからのトークンデルタのストリーミングを可能にする",
+      "リデューサーがないと、ノードの更新がリストを追加するのではなく上書きするため、毎ターン以前の履歴が失われる",
+      "チェックポイントがディスクに書き込まれるときにメッセージリストを圧縮する",
+      "実行時にプレーンな辞書をLangChainのメッセージオブジェクトに変換する"
+    ],
+    "correct": 1,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "`interrupt_before=['tools']`と`interrupt_after=['tools']`の違いは何ですか？",
+    "options": [
+      "違いはない。エイリアスだ",
+      "`interrupt_before`はモデルがtool_callsを発行した後・ツールが実行される前に一時停止する。`interrupt_after`はツールが実行された後に一時停止する",
+      "`interrupt_before`は最初にサンドボックスでツールを実行する。`interrupt_after`は本番で実行する",
+      "`interrupt_before`はユニットテスト用。`interrupt_after`は本番用"
+    ],
+    "correct": 1,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "スレッドのチェックポイント履歴が与えられた場合、以前の状態にタイムトラベルして別のブランチを探索するにはどうすればいいですか？",
+    "options": [
+      "`graph.reset(thread_id)`を呼び出してから`graph.invoke(new_input, config)`を呼び出す",
+      "チェックポイントディレクトリを削除して同じthread_idで再起動する",
+      "configに希望する以前の`checkpoint_id`を入れてグラフを呼び出す。入力として`None`を渡すとそのチェックポイントから再生し、新しい値を渡すと再開前に追加される",
+      "`graph.rewind = True`を設定して再起動する"
+    ],
+    "correct": 2,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "4ノードのReActグラフ（agent・tools・条件付きエッジ・静的エッジでagentに戻る）で、条件付きエッジはどこにありますか？",
+    "options": [
+      "`tools`から`agent`に戻り、ツールの出力が空かどうかでルーティングする",
+      "`agent`から、最後のメッセージにtool_callsがあれば`tools`に、なければ`END`にルーティングする",
+      "`START`から、入力の長さに基づいて`agent`か`END`にルーティングする",
+      "条件付きエッジはない。両方とも静的"
+    ],
+    "correct": 1,
+    "explanation": "",
+    "stage": "post"
+  },
+  {
+    "question": "プレーンなエッジの代わりに`Send(node_name, state)`を使うべき場合はいつですか？",
+    "options": [
+      "失敗後にノードをリトライするため",
+      "タイマーが切れるまでノードを遅延させるため",
+      "ターゲットノードのN個の並列実行をディスパッチし、その出力がステートリデューサーを通じてマージされる場合",
+      "分離のために別のプロセスでノードを呼び出すため"
+    ],
+    "correct": 2,
+    "explanation": "",
+    "stage": "post"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "title": "百万トークンコンテキストでの長時間動画理解",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "needle-in-haystack simulator + agentic-retrieval router)"
+  ],
+  "prerequisites": "フェーズ12・17（動画時間トークン）",
+  "timeEstimate": "約180分",
+  "objectives": [
+    "FPSとプーリングを変えながら長時間動画の総ビジュアルトークン数を計算する。",
+    "3つのスケーリングパスを説明する：総当たりコンテキスト（Gemini 1.5）、リングアテンション（LWM）、トークン圧縮（LongVILA / Video-XL）。",
+    "生コンテキスト動画VLM対エージェント検索動画VLM（VideoAgent）を精度とレイテンシで比較する。",
+    "30分間の動画の針探しテストを設計し、特定の分数でのリコールを測定する。"
+  ]
+}

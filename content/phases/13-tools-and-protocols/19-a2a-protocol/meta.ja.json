@@ -1,0 +1,16 @@
+{
+  "title": "A2A — エージェント間プロトコル",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "Agent Card + Task harness)"
+  ],
+  "prerequisites": "フェーズ13・06（MCPの基礎）、フェーズ13・08（MCPクライアント）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "エージェント対ツール（MCP）とエージェント対エージェント（A2A）のユースケースを区別できる。",
+    "スキルとエンドポイントメタデータを含むエージェントカードを `/.well-known/agent.json` に公開できる。",
+    "タスクライフサイクルを把握できる（submitted → working → input-required → completed / failed / canceled / rejected）。",
+    "テキスト、ファイル、データのPartsを含むメッセージとアーティファクトを出力として使用できる。"
+  ]
+}

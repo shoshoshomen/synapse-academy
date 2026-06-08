@@ -1,0 +1,16 @@
+{
+  "title": "ColPaliとビジョンネイティブ文書RAG",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "multi-vector indexer + MaxSim scorer)"
+  ],
+  "prerequisites": "フェーズ11（LLMエンジニアリング — RAG基礎）、フェーズ12・05（LLaVA）",
+  "timeEstimate": "約180分",
+  "objectives": [
+    "バイエンコーダー検索（文書あたり1ベクトル）と遅延インタラクション検索（文書あたり多数のベクトル）の違いを説明する。",
+    "ColBERTのMaxSim操作と、ColPaliがそれをテキストトークンから画像パッチに一般化する方法を説明する。",
+    "小さなColPali風インデクサーを構築する：ページ → パッチ埋め込み → クエリ用語埋め込みに対するMaxSim → トップkページ。",
+    "ColPali + Qwen2.5-VLジェネレーター対テキストRAG + GPT-4を請求書 / 財務レポートのユースケースで比較する。"
+  ]
+}

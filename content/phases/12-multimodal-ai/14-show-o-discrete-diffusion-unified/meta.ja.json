@@ -1,0 +1,16 @@
+{
+  "title": "Show-oと離散拡散統合モデル",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "masked-discrete-diffusion sampler)"
+  ],
+  "prerequisites": "フェーズ12・13（Transfusion）",
+  "timeEstimate": "約120分",
+  "objectives": [
+    "マスク付き離散拡散を説明する：トークンを一様にマスクし、トランスフォーマーにその復元を求めるスケジュール。",
+    "並列画像デコード（Show-o、MaskGIT）と自己回帰的画像デコード（Chameleon、Emu3）を速度と品質の観点で比較する。",
+    "Show-oが一つのチェックポイントで処理する3つのタスクを挙げる：T2I、VQA、画像インペインティング。",
+    "マスキングスケジュール（コサイン、線形、打ち切り）を選び、サンプル品質への影響を論じる。"
+  ]
+}
