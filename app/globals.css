@@ -7,10 +7,12 @@
    serif display headings, restrained brass accent.
    ============================================================ */
 @theme {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
-    "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
-  --font-serif: var(--font-fraunces), ui-serif, Georgia, "Times New Roman",
-    serif;
+  --font-sans: var(--font-inter), var(--font-jp), ui-sans-serif, system-ui,
+    -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  /* Latin headings use Fraunces (serif); Japanese falls back to Noto Sans JP
+     for a clean look instead of a system mincho. */
+  --font-serif: var(--font-fraunces), var(--font-jp), ui-serif, Georgia,
+    "Times New Roman", serif;
   --font-mono: var(--font-mono-code), ui-monospace, "SF Mono", Menlo, monospace;
 
   /* Core surfaces */

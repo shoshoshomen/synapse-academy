@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Synapse Academy — Master AI Engineering by Building It",
-    "description": "A rigorous, hands-on AI engineering curriculum: from the mathematics of neural networks to autonomous agents in production."
+    "title": "Synapse Academy — Don't just use AI. Build it.",
+    "description": "A rigorous, build-first AI engineering school: from the mathematics of neural networks to autonomous agents in production. Become the engineer who builds AI, not just the one who uses it."
   },
   "nav": {
     "curriculum": "Curriculum",
@@ -28,31 +28,34 @@
     "of": "of"
   },
   "home": {
-    "badge": "Open curriculum · 503 lessons · MIT licensed",
-    "title": "Master AI Engineering by Building It",
-    "titleAccent": "Building It",
-    "subtitle": "From the mathematics of neural networks to autonomous agents in production. Read the problem, derive the math, write the code, ship the artifact — end to end, by hand.",
-    "ctaStart": "Start learning",
-    "ctaCurriculum": "Explore the curriculum",
+    "badge": "503 lessons · 20 phases · Build-first",
+    "title": "Don't just use AI. Build it.",
+    "titleAccent": "Build it.",
+    "subtitle": "The people who shape AI don't stop at prompts — they understand it down to the mathematics and build it with their own hands. This is the path from first principles to production systems: the deep, durable skill that makes an engineer impossible to replace.",
+    "ctaStart": "Start building",
+    "ctaCurriculum": "See the 20-phase path",
     "statLessons": "Lessons",
     "statPhases": "Phases",
     "statHours": "Hours of material",
     "statLanguages": "Languages of code",
-    "featuresTitle": "An education that respects your intelligence",
-    "featuresSubtitle": "Not another video course. A build-first path from first principles to production systems.",
-    "feature1Title": "Build from first principles",
-    "feature1Body": "Derive the mathematics, then implement it by hand in Python, TypeScript, Rust and Julia — before reaching for a framework.",
-    "feature2Title": "Every lesson ships an artifact",
-    "feature2Body": "You don't just read. Each lesson produces a reusable prompt, skill, agent or MCP server you keep forever.",
-    "feature3Title": "Assessed at every step",
-    "feature3Body": "Built-in quizzes check real understanding per lesson and per phase — not passive completion.",
-    "feature4Title": "Bilingual interface",
-    "feature4Body": "Study in an English-first curriculum with a fully Japanese interface. Switch languages anytime.",
+    "whyTitle": "Why this makes you formidable",
+    "whySubtitle": "Not another video course you forget in a week — a build-first path that turns you into an engineer who can make AI from nothing.",
+    "why1Title": "Build it, don't just use it",
+    "why1Body": "Anyone can call an API. Here you derive the math and implement it by hand — so you become the person who builds AI, not just the one who uses it.",
+    "why2Title": "First principles never expire",
+    "why2Body": "Models and tools change every month. The understanding you build from the ground up does not — it is the skill that stays valuable for your whole career.",
+    "why3Title": "All the way to the frontier",
+    "why3Body": "Train an LLM from scratch, then build agents, tools and MCP servers — the exact skills the industry is desperate for right now.",
+    "why4Title": "Proof, not just a certificate",
+    "why4Body": "Every lesson ships a real artifact — a prompt, skill, agent or MCP server. You finish with a portfolio that proves you can build, not a piece of paper.",
+    "philosophyEyebrow": "Our philosophy",
+    "philosophyTitle": "A map is not the journey",
+    "philosophyBody": "No course makes you formidable on its own — only building does. So we don't hand you videos to watch. We make you build, lesson after lesson, until creating AI systems is second nature. Walk the full path, and you don't just learn AI — you become the engineer the world is short of.",
     "pathTitle": "A linear path, twenty phases deep",
     "pathSubtitle": "Start where you are. Every phase builds on the last.",
-    "ctaSectionTitle": "Ready to build AI from scratch?",
-    "ctaSectionBody": "Begin with the foundations, or jump to the phase that fits your level.",
-    "ctaSectionButton": "Begin Phase 0"
+    "ctaSectionTitle": "Become the engineer who builds AI",
+    "ctaSectionBody": "Begin with the foundations, or jump straight to the phase that fits your level.",
+    "ctaSectionButton": "Start with Phase 0"
   },
   "curriculum": {
     "title": "Curriculum",
@@ -90,10 +93,7 @@
     "takeQuiz": "Take the quiz",
     "nextLesson": "Next lesson",
     "prevLesson": "Previous lesson",
-    "backToPhase": "Back to phase",
-    "sourceTitle": "About this material",
-    "sourceBody": "Adapted from the open-source “AI Engineering from Scratch” curriculum by Rohit Goel, used under the MIT license.",
-    "sourceLink": "View original source"
+    "backToPhase": "Back to phase"
   },
   "quiz": {
     "title": "Knowledge check",
@@ -153,12 +153,10 @@
     "errorGeneric": "Could not complete the request. Please try again."
   },
   "footer": {
-    "tagline": "Build AI from scratch.",
+    "tagline": "Don't just use AI. Build it.",
     "builtWith": "Built with Next.js on Vercel.",
-    "sourceCredit": "Curriculum adapted from “AI Engineering from Scratch” by Rohit Goel (MIT).",
     "curriculum": "Curriculum",
     "progress": "My Progress",
-    "source": "Source material",
     "rights": "An independent AI engineering school."
   }
 }

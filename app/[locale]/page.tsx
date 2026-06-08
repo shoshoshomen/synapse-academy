@@ -2,9 +2,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
   ArrowRight,
   Hammer,
-  Package,
-  GraduationCap,
-  Languages,
+  Infinity as InfinityIcon,
+  Bot,
+  BadgeCheck,
   Sparkles,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -40,15 +40,11 @@ export default async function HomePage({
     { value: String(siteConfig.stats.languages), label: t("statLanguages") },
   ];
 
-  const features = [
-    { icon: Hammer, title: t("feature1Title"), body: t("feature1Body") },
-    { icon: Package, title: t("feature2Title"), body: t("feature2Body") },
-    {
-      icon: GraduationCap,
-      title: t("feature3Title"),
-      body: t("feature3Body"),
-    },
-    { icon: Languages, title: t("feature4Title"), body: t("feature4Body") },
+  const pillars = [
+    { icon: Hammer, title: t("why1Title"), body: t("why1Body") },
+    { icon: InfinityIcon, title: t("why2Title"), body: t("why2Body") },
+    { icon: Bot, title: t("why3Title"), body: t("why3Body") },
+    { icon: BadgeCheck, title: t("why4Title"), body: t("why4Body") },
   ];
 
   return (
@@ -103,36 +99,51 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Features */}
+      {/* Why you become formidable */}
       <section className="mx-auto max-w-5xl px-4 py-20 sm:px-6 sm:py-24">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-3xl font-semibold text-primary sm:text-4xl">
-            {t("featuresTitle")}
+            {t("whyTitle")}
           </h2>
-          <p className="mt-4 text-muted-foreground">{t("featuresSubtitle")}</p>
+          <p className="mt-4 text-muted-foreground">{t("whySubtitle")}</p>
         </div>
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
-          {features.map((f) => (
+          {pillars.map((p) => (
             <div
-              key={f.title}
+              key={p.title}
               className="rounded-xl border border-border bg-card p-7 shadow-[var(--shadow-card)]"
             >
               <div className="flex size-11 items-center justify-center rounded-lg bg-accent-soft text-accent">
-                <f.icon className="size-5" />
+                <p.icon className="size-5" />
               </div>
               <h3 className="mt-5 text-lg font-semibold text-primary">
-                {f.title}
+                {p.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {f.body}
+                {p.body}
               </p>
             </div>
           ))}
         </div>
       </section>
 
+      {/* Philosophy band */}
+      <section className="border-y border-border bg-primary">
+        <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 sm:py-24">
+          <div className="text-sm font-medium uppercase tracking-[0.18em] text-accent">
+            {t("philosophyEyebrow")}
+          </div>
+          <h2 className="mt-3 font-serif text-3xl font-semibold !text-primary-foreground sm:text-4xl">
+            {t("philosophyTitle")}
+          </h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-primary-foreground/80">
+            {t("philosophyBody")}
+          </p>
+        </div>
+      </section>
+
       {/* Path / phases */}
-      <section className="border-t border-border bg-subtle/50">
+      <section className="bg-subtle/50">
         <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6 sm:py-24">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-serif text-3xl font-semibold text-primary sm:text-4xl">
@@ -177,7 +188,10 @@ export default async function HomePage({
           </p>
           <Link
             href={START_HREF}
-            className={cn(buttonVariants({ variant: "accent", size: "lg" }), "mt-8 group")}
+            className={cn(
+              buttonVariants({ variant: "accent", size: "lg" }),
+              "mt-8 group",
+            )}
           >
             {t("ctaSectionButton")}
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
