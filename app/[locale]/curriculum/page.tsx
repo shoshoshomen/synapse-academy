@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, BookOpen, Compass } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { getCurriculum, getTotalLessons } from "@/lib/content";
+import { getPhases, getTotalLessons } from "@/lib/content";
 import { Badge } from "@/components/ui/badge";
 
 export default async function CurriculumPage({
@@ -14,7 +14,7 @@ export default async function CurriculumPage({
 
   const t = await getTranslations("curriculum");
   const tc = await getTranslations("common");
-  const curriculum = await getCurriculum();
+  const phases = await getPhases(locale);
   const total = await getTotalLessons();
 
   return (
@@ -41,7 +41,7 @@ export default async function CurriculumPage({
 
       {/* Phases */}
       <div className="mt-10 space-y-4">
-        {curriculum.phases.map((p) => (
+        {phases.map((p) => (
           <Link
             key={p.id}
             href={`/phases/${p.slug}`}

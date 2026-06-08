@@ -1,0 +1,23 @@
+{
+  "title": "音声・オーディオ処理",
+  "description": "人間コミュニケーションのもう一つの柱。聞き取り、理解し、話す。",
+  "lessons": {
+    "audio-fundamentals": "オーディオ基礎 — 波形・サンプリング・フーリエ変換",
+    "spectrograms-mel-features": "スペクトログラム、メルスケール、オーディオ特徴量",
+    "audio-classification": "音声分類 — MFCC を使った k-NN から AST・BEATs まで",
+    "speech-recognition-asr": "音声認識（ASR）— CTC・RNN-T・Attention",
+    "whisper-architecture-finetuning": "Whisper — アーキテクチャとファインチューニング",
+    "speaker-recognition-verification": "話者認識と話者照合",
+    "text-to-speech": "テキスト音声合成（TTS）— Tacotron から F5・Kokoro まで",
+    "voice-cloning-conversion": "ボイスクローニングとボイスコンバージョン",
+    "music-generation": "音楽生成 — MusicGen・Stable Audio・Suno とライセンス問題",
+    "audio-language-models": "オーディオ言語モデル — Qwen2.5-Omni・Audio Flamingo・GPT-4o Audio",
+    "real-time-audio-processing": "リアルタイム音声処理",
+    "voice-assistant-pipeline": "音声アシスタントパイプラインの構築 — フェーズ 6 総合課題",
+    "neural-audio-codecs": "ニューラル音声コーデック — EnCodec・SNAC・Mimi・DAC とセマンティック/アコースティック分離",
+    "voice-activity-detection-turn-taking": "音声活動検出とターンテイキング — Silero・Cobra とフラッシュトリック",
+    "streaming-speech-to-speech-moshi-hibiki": "ストリーミング音声間変換 — Moshi・Hibiki と全二重対話",
+    "anti-spoofing-audio-watermarking": "音声なりすまし対策と電子透かし — ASVspoof 5・AudioSeal・WaveVerify",
+    "audio-evaluation-metrics": "音声評価指標 — WER・MOS・UTMOS・MMAU・FAD とオープンリーダーボード"
+  }
+}

@@ -8,7 +8,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { getCurriculum, getTotalLessons } from "@/lib/content";
+import { getPhases, getTotalLessons } from "@/lib/content";
 import { siteConfig } from "@/config/site";
 import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -26,7 +26,7 @@ export default async function HomePage({
 
   const t = await getTranslations("home");
   const tc = await getTranslations("common");
-  const curriculum = await getCurriculum();
+  const phases = await getPhases(locale);
   const total = await getTotalLessons();
 
   const title = t("title");
@@ -35,7 +35,7 @@ export default async function HomePage({
 
   const stats = [
     { value: total.toLocaleString(), label: t("statLessons") },
-    { value: String(curriculum.phases.length), label: t("statPhases") },
+    { value: String(phases.length), label: t("statPhases") },
     { value: `${siteConfig.stats.hours}+`, label: t("statHours") },
     { value: String(siteConfig.stats.languages), label: t("statLanguages") },
   ];
@@ -152,7 +152,7 @@ export default async function HomePage({
             <p className="mt-4 text-muted-foreground">{t("pathSubtitle")}</p>
           </div>
           <ol className="mt-12 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2">
-            {curriculum.phases.map((p) => (
+            {phases.map((p) => (
               <li key={p.id}>
                 <Link
                   href={`/phases/${p.slug}`}

@@ -1,0 +1,29 @@
+{
+  "title": "ツールとプロトコル",
+  "description": "AIと現実世界をつなぐインターフェース。",
+  "lessons": {
+    "the-tool-interface": "ツールインターフェースの本質 — エージェントに構造化I/Oが必要な理由",
+    "function-calling-deep-dive": "ファンクションコーリング詳解 — OpenAI・Anthropic・Gemini",
+    "parallel-and-streaming-tool-calls": "並列ツール呼び出しとストリーミング",
+    "structured-output": "構造化出力 — JSON Schema・Pydantic・Zod・制約付きデコーディング",
+    "tool-schema-design": "ツールスキーマ設計 — 命名・説明・パラメータ制約",
+    "mcp-fundamentals": "MCPの基礎 — プリミティブ・ライフサイクル・JSON-RPC",
+    "building-an-mcp-server": "MCPサーバーの構築 — Python・TypeScript SDK",
+    "building-an-mcp-client": "MCPクライアントの構築 — 探索・呼び出し・セッション管理",
+    "mcp-transports": "MCPトランスポート — stdio vs Streamable HTTP vs SSE移行",
+    "mcp-resources-and-prompts": "MCPリソースとプロンプト — ツールを超えたコンテキスト公開",
+    "mcp-sampling": "MCPサンプリング — サーバーからのLLM補完要求とエージェントループ",
+    "mcp-roots-and-elicitation": "ルートとエリシテーション — スコープ設定とユーザー入力の途中取得",
+    "mcp-async-tasks": "非同期タスク（SEP-1686）— 長時間処理のCall-Now/Fetch-Later",
+    "mcp-apps": "MCPアプリ — `ui://`経由のインタラクティブUIリソース",
+    "mcp-security-tool-poisoning": "MCPセキュリティ I — ツールポイズニング・ラグプル・クロスサーバシャドウイング",
+    "mcp-security-oauth-2-1": "MCPセキュリティ II — OAuth 2.1・リソースインジケータ・インクリメンタルスコープ",
+    "mcp-gateways-and-registries": "MCPゲートウェイとレジストリ — エンタープライズコントロールプレーン",
+    "mcp-auth-production": "プロダクションMCP認証 — エンロールメント・JWKSリフレッシュ・Audience固定トークン",
+    "a2a-protocol": "A2A — エージェント間プロトコル",
+    "opentelemetry-genai": "OpenTelemetry GenAI — ツール呼び出しのエンドツーエンドトレーシング",
+    "llm-routing-layer": "LLMルーティングレイヤー — LiteLLM・OpenRouter・Portkey",
+    "skills-and-agent-sdks": "スキルとエージェントSDK — Anthropic Skills・AGENTS.md・OpenAI Apps SDK",
+    "capstone-tool-ecosystem": "カプストーン — 完全なツールエコシステムを構築する"
+  }
+}

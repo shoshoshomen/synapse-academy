@@ -1,0 +1,19 @@
+{
+  "title": "ディープラーニングの核心",
+  "description": "第一原理からニューラルネットワークを理解します。自分で実装するまでフレームワークは使いません。",
+  "lessons": {
+    "the-perceptron": "パーセプトロン",
+    "multi-layer-networks": "多層ネットワークと順伝播",
+    "backpropagation": "誤差逆伝播法をゼロから実装",
+    "activation-functions": "活性化関数",
+    "loss-functions": "損失関数",
+    "optimizers": "最適化アルゴリズム",
+    "regularization": "正則化",
+    "weight-initialization": "重みの初期化と訓練の安定性",
+    "learning-rate-schedules": "学習率スケジュールとウォームアップ",
+    "mini-framework": "ミニフレームワークを自作する",
+    "intro-to-pytorch": "PyTorch入門",
+    "intro-to-jax": "JAX入門",
+    "debugging-neural-networks": "ニューラルネットワークのデバッグ"
+  }
+}

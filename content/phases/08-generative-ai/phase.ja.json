@@ -1,0 +1,21 @@
+{
+  "title": "生成 AI",
+  "description": "画像・動画・音声・3D などを生成する技術を習得する。",
+  "lessons": {
+    "generative-models-taxonomy-history": "生成モデル — 分類体系と歴史",
+    "autoencoders-vae": "オートエンコーダと変分オートエンコーダ（VAE）",
+    "gans-generator-discriminator": "GAN — ジェネレータとディスクリミネータ",
+    "conditional-gans-pix2pix": "条件付き GAN と Pix2Pix",
+    "stylegan": "StyleGAN",
+    "diffusion-ddpm-from-scratch": "拡散モデル — DDPM をスクラッチから実装",
+    "latent-diffusion-stable-diffusion": "潜在拡散モデルと Stable Diffusion",
+    "controlnet-lora-conditioning": "ControlNet・LoRA とコンディショニング",
+    "inpainting-outpainting-editing": "インペインティング・アウトペインティングと画像編集",
+    "video-generation": "動画生成",
+    "audio-generation": "音声・音楽生成",
+    "3d-generation": "3D コンテンツ生成",
+    "flow-matching-rectified-flows": "フローマッチングと整流フロー",
+    "evaluation-fid-clip-score": "評価指標 — FID・CLIP スコア・人間の嗜好",
+    "visual-autoregressive-var": "視覚的自己回帰モデリング（VAR）— 次スケール予測"
+  }
+}

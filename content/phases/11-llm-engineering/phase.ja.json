@@ -1,0 +1,23 @@
+{
+  "title": "LLMエンジニアリング",
+  "description": "LLMをプロダクション環境のアプリケーションで実際に動かす。",
+  "lessons": {
+    "prompt-engineering": "プロンプトエンジニアリング：テクニックとパターン",
+    "few-shot-cot": "Few-Shot・Chain-of-Thought・Tree-of-Thought",
+    "structured-outputs": "構造化出力：JSON・スキーマ検証・制約付きデコーディング",
+    "embeddings": "埋め込みとベクトル表現",
+    "context-engineering": "コンテキストエンジニアリング：ウィンドウ・バジェット・メモリ・検索",
+    "rag": "RAG（検索拡張生成）",
+    "advanced-rag": "高度なRAG（チャンキング・リランキング・ハイブリッド検索）",
+    "fine-tuning-lora": "LoRA・QLoRAによるファインチューニング",
+    "function-calling": "ファンクションコーリングとツール利用",
+    "evaluation": "LLMアプリケーションの評価とテスト",
+    "caching-cost": "キャッシング・レート制限・コスト最適化",
+    "guardrails": "ガードレール・安全性・コンテンツフィルタリング",
+    "production-app": "プロダクションLLMアプリケーションの構築",
+    "model-context-protocol": "Model Context Protocol（MCP）",
+    "prompt-caching": "プロンプトキャッシングとコンテキストキャッシング",
+    "langgraph-state-machines": "LangGraph — エージェントのためのステートマシン",
+    "agent-framework-tradeoffs": "エージェントフレームワークの比較：LangGraph vs CrewAI vs AutoGen vs Agno"
+  }
+}

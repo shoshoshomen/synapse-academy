@@ -1,0 +1,24 @@
+{
+  "title": "機械学習の基礎",
+  "description": "古典的な機械学習 — 現在の本番AIシステムの大部分を支える基盤です。",
+  "lessons": {
+    "what-is-machine-learning": "機械学習とは何か",
+    "linear-regression": "線形回帰",
+    "logistic-regression": "ロジスティック回帰",
+    "decision-trees": "決定木とランダムフォレスト",
+    "support-vector-machines": "サポートベクターマシン（SVM）",
+    "knn-and-distances": "K近傍法と距離",
+    "unsupervised-learning": "教師なし学習",
+    "feature-engineering": "特徴量エンジニアリングと特徴量選択",
+    "model-evaluation": "モデル評価",
+    "bias-variance": "バイアス・バリアンストレードオフ",
+    "ensemble-methods": "アンサンブル学習",
+    "hyperparameter-tuning": "ハイパーパラメータチューニング",
+    "ml-pipelines": "MLパイプライン",
+    "naive-bayes": "ナイーブベイズ",
+    "time-series": "時系列分析の基礎",
+    "anomaly-detection": "異常検知",
+    "imbalanced-data": "クラス不均衡データの対処法",
+    "feature-selection": "特徴量選択"
+  }
+}

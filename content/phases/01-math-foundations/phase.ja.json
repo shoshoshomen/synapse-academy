@@ -1,0 +1,28 @@
+{
+  "title": "数学の基礎",
+  "description": "教科書ではなくコードを通じて、あらゆるAIアルゴリズムの直感的理解を深めます。",
+  "lessons": {
+    "linear-algebra-intuition": "線形代数の直感的理解",
+    "vectors-matrices-operations": "ベクトル・行列と演算",
+    "matrix-transformations": "行列変換",
+    "calculus-for-ml": "機械学習のための微積分",
+    "chain-rule-and-autodiff": "連鎖律と自動微分",
+    "probability-and-distributions": "確率と確率分布",
+    "bayes-theorem": "ベイズの定理",
+    "optimization": "最適化",
+    "information-theory": "情報理論",
+    "dimensionality-reduction": "次元削減",
+    "singular-value-decomposition": "特異値分解（SVD）",
+    "tensor-operations": "テンソル演算",
+    "numerical-stability": "数値安定性",
+    "norms-and-distances": "ノルムと距離",
+    "statistics-for-ml": "機械学習のための統計",
+    "sampling-methods": "サンプリング手法",
+    "linear-systems": "線形方程式系",
+    "convex-optimization": "凸最適化",
+    "complex-numbers": "AIのための複素数",
+    "fourier-transform": "フーリエ変換",
+    "graph-theory": "機械学習のためのグラフ理論",
+    "stochastic-processes": "確率過程"
+  }
+}

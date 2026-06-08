@@ -1,0 +1,31 @@
+{
+  "title": "マルチエージェントとスウォーム",
+  "description": "協調・創発・集合知性の設計と実装。",
+  "lessons": {
+    "why-multi-agent": "なぜマルチエージェントなのか",
+    "fipa-acl-heritage": "FIPA-ACL と Speech Act の系譜",
+    "communication-protocols": "通信プロトコル",
+    "primitive-model": "マルチエージェントの基本モデル",
+    "supervisor-orchestrator-pattern": "スーパーバイザー／オーケストレーター・ワーカーパターン",
+    "hierarchical-architecture": "階層型アーキテクチャとその障害モード",
+    "society-of-mind-debate": "Society of Mind とマルチエージェントディベート",
+    "role-specialization": "役割分担 — プランナー・批評家・実行者・検証者",
+    "parallel-swarm-networks": "並列／スウォーム／ネットワーク型アーキテクチャ",
+    "group-chat-speaker-selection": "グループチャットと発言者選択",
+    "handoffs-and-routines": "ハンドオフとルーティン — ステートレスなオーケストレーション",
+    "a2a-protocol": "A2A — エージェント間プロトコル",
+    "shared-memory-blackboard": "共有メモリとブラックボードパターン",
+    "consensus-and-bft": "エージェントのためのコンセンサスとビザンチン耐障害性",
+    "voting-debate-topology": "投票・自己一貫性・ディベートトポロジー",
+    "negotiation-bargaining": "交渉とバーゲニング",
+    "generative-agents-simulation": "生成エージェントと創発的シミュレーション",
+    "theory-of-mind-coordination": "心の理論と創発的協調",
+    "swarm-optimization-pso-aco": "LLMのためのスウォーム最適化（PSO・ACO）",
+    "marl-maddpg-qmix-mappo": "MARL — MADDPG・QMIX・MAPPO",
+    "agent-economies": "エージェント経済・トークンインセンティブ・評判",
+    "production-scaling-queues-checkpoints": "本番スケーリング — キュー・チェックポイント・耐久性",
+    "failure-modes-mast-groupthink": "障害モード — MAST・集団思考・モノカルチャー・連鎖エラー",
+    "evaluation-coordination-benchmarks": "評価と協調ベンチマーク",
+    "case-studies-2026-sota": "ケーススタディと2026年最先端"
+  }
+}

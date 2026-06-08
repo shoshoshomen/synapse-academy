@@ -1,0 +1,31 @@
+{
+  "title": "マルチモーダルAI",
+  "description": "画像・音声・テキストを横断して見て・聞いて・読んで・推論するモデル。",
+  "lessons": {
+    "vision-transformer-patch-tokens": "Vision Transformerとパッチトークンの基本",
+    "clip-contrastive-pretraining": "CLIPと対照的なビジョン言語事前学習",
+    "blip2-qformer-bridge": "CLIPからBLIP-2へ — Q-Formerによるモダリティブリッジ",
+    "flamingo-gated-cross-attention": "Flamingoとゲート付きクロスアテンションによるFew-Shot VLM",
+    "llava-visual-instruction-tuning": "LLaVAとビジュアルインストラクションチューニング",
+    "any-resolution-patch-n-pack": "任意解像度ビジョン：Patch-n'-PackとNaFlex",
+    "open-weight-vlm-recipes": "オープンウェイトVLMの実践：本当に重要なもの",
+    "llava-onevision-single-multi-video": "LLaVA-OneVision：単一画像・複数画像・動画を一モデルで",
+    "qwen-vl-family-dynamic-fps": "Qwen-VLファミリーと動的FPS動画処理",
+    "internvl3-native-multimodal": "InternVL3：ネイティブマルチモーダル事前学習",
+    "chameleon-early-fusion-tokens": "Chameleonとアーリーフュージョントークン専用マルチモーダルモデル",
+    "emu3-next-token-for-generation": "Emu3：画像・動画生成のための次トークン予測",
+    "transfusion-autoregressive-diffusion": "Transfusion：1つのTransformerで自己回帰テキストと拡散画像を統合",
+    "show-o-discrete-diffusion-unified": "Show-oと離散拡散による統合モデル",
+    "janus-pro-decoupled-encoders": "Janus-Pro：統合マルチモーダルモデルのための分離エンコーダ",
+    "mio-any-to-any-streaming": "MIOとAny-to-Anyストリーミングマルチモーダルモデル",
+    "video-language-temporal-grounding": "ビデオ言語モデル：テンポラルトークンとグラウンディング",
+    "long-video-million-token": "百万トークンコンテキストでの長尺動画理解",
+    "audio-language-whisper-to-af3": "音声言語モデル：WhisperからAudio Flamingo 3への変遷",
+    "omni-models-thinker-talker": "オムニモデル：Qwen2.5-OmniとThinker-Talker分割",
+    "embodied-vlas-openvla-pi0-groot": "具身化VLA：RT-2・OpenVLA・π0・GR00T",
+    "document-diagram-understanding": "文書と図表の理解",
+    "colpali-vision-native-rag": "ColPaliとビジョンネイティブ文書RAG",
+    "multimodal-rag-cross-modal": "マルチモーダルRAGとクロスモーダル検索",
+    "multimodal-agents-computer-use": "マルチモーダルエージェントとコンピューター操作（カプストーン）"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "ゼロから作るLLM",
+  "description": "大規模言語モデルを構築・訓練し、その仕組みを深く理解する。",
+  "lessons": {
+    "tokenizers": "トークナイザー：BPE・WordPiece・SentencePiece",
+    "building-a-tokenizer": "トークナイザーをゼロから実装する",
+    "data-pipelines": "事前学習用データパイプライン",
+    "pre-training-mini-gpt": "ミニGPT（1億2400万パラメータ）の事前学習",
+    "scaling-distributed": "スケーリング：分散学習・FSDP・DeepSpeed",
+    "instruction-tuning-sft": "インストラクションチューニング（SFT）",
+    "rlhf": "RLHF：報酬モデルとPPO",
+    "dpo": "DPO：直接選好最適化",
+    "constitutional-ai-self-improvement": "Constitutional AIと自己改善",
+    "evaluation": "評価：ベンチマーク・Evals・LM Harness",
+    "quantization": "量子化：モデルをコンパクトに収める",
+    "inference-optimization": "推論の最適化",
+    "building-complete-llm-pipeline": "LLMパイプラインを一から構築する",
+    "open-models-architecture-walkthroughs": "オープンモデルのアーキテクチャ詳解",
+    "speculative-decoding-eagle3": "スペキュラティブデコーディングとEAGLE-3",
+    "differential-attention-v2": "差分アテンション（V2）",
+    "native-sparse-attention": "ネイティブスパースアテンション（DeepSeek NSA）",
+    "multi-token-prediction": "マルチトークン予測（MTP）",
+    "dualpipe-parallelism": "DualPipe並列処理",
+    "deepseek-v3-walkthrough": "DeepSeek-V3アーキテクチャ詳解",
+    "jamba-hybrid-ssm-transformer": "Jamba — ハイブリッドSSM-Transformer",
+    "async-hogwild-inference": "非同期・Hogwild!推論",
+    "speculative-decoding": "スペキュラティブデコーディングとEAGLE",
+    "gradient-checkpointing": "勾配チェックポインティングとアクティベーション再計算"
+  }
+}

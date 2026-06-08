@@ -1,0 +1,22 @@
+{
+  "title": "Transformer 徹底解説",
+  "description": "すべてを変えたアーキテクチャ。すべての層を理解する。",
+  "lessons": {
+    "why-transformers": "なぜ Transformer か — RNN の課題",
+    "self-attention-from-scratch": "Self-Attention をスクラッチから実装",
+    "multi-head-attention": "Multi-Head Attention",
+    "positional-encoding": "位置エンコーディング — Sinusoidal・RoPE・ALiBi",
+    "full-transformer": "完全な Transformer — エンコーダとデコーダ",
+    "bert-masked-language-modeling": "BERT — マスク言語モデリング",
+    "gpt-causal-language-modeling": "GPT — 因果言語モデリング",
+    "t5-bart-encoder-decoder": "T5・BART — エンコーダ・デコーダモデル",
+    "vision-transformers": "Vision Transformer（ViT）",
+    "audio-transformers-whisper": "オーディオ Transformer — Whisper アーキテクチャ",
+    "mixture-of-experts": "Mixture of Experts（MoE）",
+    "kv-cache-flash-attention": "KV キャッシュ・Flash Attention と推論最適化",
+    "scaling-laws": "スケーリング則",
+    "build-a-transformer-capstone": "Transformer をスクラッチで構築 — 総合課題",
+    "attention-variants": "Attention バリアント — スライディングウィンドウ・スパース・差分",
+    "speculative-decoding": "投機的デコーディング — 下書き・検証・繰り返し"
+  }
+}

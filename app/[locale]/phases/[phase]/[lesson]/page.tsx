@@ -33,14 +33,14 @@ export default async function LessonPage({
   const { locale, phase: phaseSlug, lesson: lessonSlug } = await params;
   setRequestLocale(locale);
 
-  const content = await getLessonContent(phaseSlug, lessonSlug);
+  const content = await getLessonContent(phaseSlug, lessonSlug, locale);
   const t = await getTranslations("lesson");
   const tc = await getTranslations("common");
   const tq = await getTranslations("quiz");
 
   // Lesson has no written content yet → "coming soon" screen.
   if (!content) {
-    const phase = await getPhase(phaseSlug);
+    const phase = await getPhase(phaseSlug, locale);
     if (!phase) notFound();
     const tp = await getTranslations("phase");
     return (

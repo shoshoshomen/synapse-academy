@@ -1,0 +1,28 @@
+{
+  "title": "自律システム",
+  "description": "人間の介入なしで動作するエージェントを安全に構築する。",
+  "lessons": {
+    "long-horizon-agents": "チャットボットから長期ホライゾンエージェントへの移行",
+    "star-family-reasoning": "STaR・V-STaR・Quiet-STaR — 自己学習型推論",
+    "alphaevolve-evolutionary-coding": "AlphaEvolve — 進化的コーディングエージェント",
+    "darwin-godel-machine": "Darwin Godel Machine — オープンエンドな自己改変エージェント",
+    "ai-scientist-v2": "AI Scientist v2 — ワークショップレベルの自律研究",
+    "automated-alignment-research": "自動アライメント研究（Anthropic AAR）",
+    "recursive-self-improvement": "再帰的自己改善 — 能力とアライメントのトレードオフ",
+    "bounded-self-improvement": "制約付き自己改善の設計",
+    "coding-agent-landscape": "自律コーディングエージェントの全体像（2026年版）",
+    "claude-code-permission-modes": "Claude Code の自律エージェントとしての活用：パーミッションモードと自動モード",
+    "browser-agents": "ブラウザエージェントと長期Webタスク",
+    "durable-execution": "長時間稼働バックグラウンドエージェント：持続的実行",
+    "cost-governors": "アクション予算・反復上限・コストガバナー",
+    "kill-switches-canaries": "キルスイッチ・サーキットブレーカー・カナリートークン",
+    "propose-then-commit": "Human-in-the-Loop：提案・承認フロー",
+    "checkpoints-rollback": "チェックポイントとロールバック",
+    "constitutional-ai": "Constitutional AI とルールオーバーライド",
+    "llama-guard": "Llama Guard による入出力の分類",
+    "anthropic-rsp": "Anthropic 責任ある拡張ポリシー v3.0",
+    "openai-preparedness-deepmind-fsf": "OpenAI Preparedness Framework と DeepMind Frontier Safety Framework",
+    "metr-external-evaluation": "METR タイムホライゾンと外部能力評価",
+    "cais-caisi-societal-risk": "CAIS・CAISI と社会規模リスク"
+  }
+}

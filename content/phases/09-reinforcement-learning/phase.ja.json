@@ -1,0 +1,18 @@
+{
+  "title": "強化学習",
+  "description": "実践から学ぶエージェント。RLHF の基盤技術。",
+  "lessons": {
+    "mdps-states-actions-rewards": "MDP — 状態・行動・報酬",
+    "dynamic-programming": "動的計画法 — 方策反復と価値反復",
+    "monte-carlo-methods": "モンテカルロ法 — 完全エピソードからの学習",
+    "q-learning-sarsa": "時間差分学習 — Q 学習と SARSA",
+    "dqn": "深層 Q ネットワーク（DQN）",
+    "policy-gradients-reinforce": "方策勾配法 — REINFORCE をスクラッチから実装",
+    "actor-critic-a2c-a3c": "Actor-Critic — A2C と A3C",
+    "ppo": "近接方策最適化（PPO）",
+    "reward-modeling-rlhf": "報酬モデリングと RLHF",
+    "multi-agent-rl": "マルチエージェント強化学習",
+    "sim-to-real-transfer": "シミュレーションから実世界への転移（Sim-to-Real）",
+    "rl-for-games": "ゲームへの強化学習適用 — AlphaZero・MuZero と LLM 推論時代"
+  }
+}

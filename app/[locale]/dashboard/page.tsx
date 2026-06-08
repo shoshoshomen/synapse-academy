@@ -13,7 +13,7 @@ export default async function DashboardPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const previews = await getPreviewLessons();
+  const previews = await getPreviewLessons(locale);
   const lessons: DashboardLesson[] = previews.map(({ phase, lesson }) => ({
     key: lessonKey(phase.slug, lesson.slug),
     href: `/phases/${phase.slug}/${lesson.slug}`,

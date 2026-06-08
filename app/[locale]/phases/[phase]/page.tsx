@@ -19,7 +19,7 @@ export default async function PhasePage({
   const { locale, phase: phaseSlug } = await params;
   setRequestLocale(locale);
 
-  const phase = await getPhase(phaseSlug);
+  const phase = await getPhase(phaseSlug, locale);
   if (!phase) notFound();
 
   const t = await getTranslations("phase");
