@@ -1,0 +1,15 @@
+{
+  "title": "Jupyter Notebooks",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ0、レッスン01",
+  "timeEstimate": "約30分",
+  "objectives": [
+    "JupyterLab、Jupyter Notebook、またはJupyter拡張機能付きのVS Codeをインストールして起動する",
+    "マジックコマンド（`%timeit`、`%%time`、`%matplotlib inline`）を使ってベンチマークとインライン可視化を行う",
+    "ノートブックとスクリプトの使い分けを理解し、「ノートブックで探索、スクリプトで出荷」のワークフローを実践する",
+    "よくあるノートブックの落とし穴（順序外の実行、隠れた状態、メモリリーク）を特定して回避する"
+  ]
+}

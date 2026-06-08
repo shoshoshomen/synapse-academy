@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "シェルコマンドでのパイプ演算子「|」は何をしますか？",
+      "options": [
+        "2つのコマンドを並列に実行する",
+        "あるコマンドの標準出力を次のコマンドの標準入力として送る",
+        "コマンドの出力をファイルに保存する",
+        "2つのファイルを1つに結合する"
+      ],
+      "correct": 1,
+      "explanation": "パイプ演算子はコマンドをパイプラインで繋ぎます。例えば「cat log.txt | grep error」はlog.txtの内容をgrepの入力として送り、「error」を含む行をフィルタリングします。"
+    },
+    {
+      "stage": "pre",
+      "question": "実行中のプロセスを起動したターミナルを閉じると何が起きますか？",
+      "options": [
+        "プロセスはバックグラウンドで実行し続ける",
+        "プロセスはハングアップシグナル（SIGHUP）を受け取り、通常は終了する",
+        "プロセスは新しいターミナルを開くまで一時停止する",
+        "プロセスは自動的にシステムサービスに移行する"
+      ],
+      "correct": 1,
+      "explanation": "ターミナルを閉じると子プロセスにSIGHUPが送られ、デフォルトでは終了します。tmux、nohup、screenなどのツールでこれを防ぎます。"
+    },
+    {
+      "stage": "post",
+      "question": "長時間のトレーニングジョブに「nohup command &」より tmux が優れている主な点は何ですか？",
+      "options": [
+        "tmuxはnohupよりCPUを少なく使う",
+        "tmuxはデタッチ・リアタッチが可能で、複数のペインでライブ出力を見られる",
+        "tmuxは失敗したプロセスを自動再起動する",
+        "tmuxはディスクスペースを節約するためにプロセス出力を圧縮する"
+      ],
+      "correct": 1,
+      "explanation": "tmuxはデタッチ・リアタッチ可能な永続セッションを作成し、複数のペインでライブ出力が見えます。nohupはファイルにログするだけで操作やリアタッチができません。"
+    },
+    {
+      "stage": "post",
+      "question": "「python train.py > output.log 2>&1」は何をしますか？",
+      "options": [
+        "train.pyを実行してエラーのみをoutput.logに保存する",
+        "train.pyを実行して標準出力と標準エラーの両方をoutput.logにリダイレクトする",
+        "train.pyを2回実行して2回目の実行をログに記録する",
+        "メモリ割り当てを2倍にしてtrain.pyを実行する"
+      ],
+      "correct": 1,
+      "explanation": "「> output.log」はstdoutをファイルにリダイレクトします。「2>&1」はstderrをstdoutと同じ場所に送ります。結果として、通常の出力とエラーが両方1つのファイルにキャプチャされます。"
+    },
+    {
+      "stage": "post",
+      "question": "GPUボックスのポート8888で実行しているリモートJupyterノートブックにローカルブラウザでアクセスするコマンドはどれですか？",
+      "options": [
+        "scp -P 8888 user@gpu-box:~/notebook.ipynb",
+        "ssh -L 8888:localhost:8888 user@gpu-box",
+        "rsync -avz user@gpu-box:8888 localhost:8888",
+        "ssh user@gpu-box --forward-port 8888"
+      ],
+      "correct": 1,
+      "explanation": "SSHのローカルポートフォワーディング（-L）はリモートポートをローカルマシンにマッピングします。このコマンドの後、ブラウザでlocalhost:8888を開くとリモートのJupyterサーバーにアクセスできます。"
+    }
+  ]
+}

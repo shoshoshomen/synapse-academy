@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "ニューラルネットワークのトレーニングにおいてGPUがCPUより速い理由は何ですか？",
+      "options": [
+        "GPUはCPUよりクロック速度が高い",
+        "GPUは何千もの並列行列演算を同時に実行できる",
+        "GPUはCPUよりRAMが多い",
+        "GPUはより効率的なプログラミング言語を使用している"
+      ],
+      "correct": 1,
+      "explanation": "GPUは並列計算に最適化された何千ものコアを持ち、ニューラルネットワークのトレーニングで支配的な行列積に理想的です。"
+    },
+    {
+      "stage": "pre",
+      "question": "VRAMとは何を指しますか？",
+      "options": [
+        "OSがスワップ空間として使用する仮想RAM",
+        "GPUに搭載されたビデオRAM（システムRAMとは別）",
+        "すべてのデバイスにわたる合計RAM",
+        "CPUキャッシュメモリの一種"
+      ],
+      "correct": 1,
+      "explanation": "VRAM（ビデオRAM）はGPU専用のメモリです。トレーニング中に使用できるモデルのサイズとバッチサイズを制限し、システムのメインRAMとは別物です。"
+    },
+    {
+      "stage": "post",
+      "question": "NVIDIA GPUが検出されて現在のステータスを表示するコマンドは何ですか？",
+      "options": [
+        "gpu --status",
+        "nvidia-smi",
+        "torch.cuda.list_devices()",
+        "lspci | grep gpu"
+      ],
+      "correct": 1,
+      "explanation": "nvidia-smi（NVIDIA System Management Interface）はGPU使用率、メモリ使用量、温度、実行中のプロセスを表示します。GPUの可用性を確認するための標準ツールです。"
+    },
+    {
+      "stage": "post",
+      "question": "GPU対CPUの行列積をベンチマークするとき、GPU時間の測定前にtorch.cuda.synchronize()を呼び出す必要があるのはなぜですか？",
+      "options": [
+        "CPUからGPUメモリにデータを転送するため",
+        "タイマーを止める前にすべてのGPU演算が完了したことを確認するため",
+        "GPUのクロック速度を基本周波数にリセットするため",
+        "未使用のGPUメモリを解放するため"
+      ],
+      "correct": 1,
+      "explanation": "GPU演算は非同期です。Pythonは、GPUがまだ計算中でもすぐに戻ります。synchronize()はすべてのGPU演算が完了するまでブロックするため、正確なタイミング計測が可能になります。"
+    },
+    {
+      "stage": "post",
+      "question": "fp16の目安ルールを使うと、24 GBのVRAMにはおよそ何パラメーターが収まりますか？",
+      "options": [
+        "240億パラメーター",
+        "120億パラメーター",
+        "60億パラメーター",
+        "480億パラメーター"
+      ],
+      "correct": 1,
+      "explanation": "fp16では各パラメーターに2バイト使用します。24 GB ÷ 2バイト = 120億パラメーター。これは概算で、実際の使用量にはアクティベーション、勾配、オプティマイザーの状態も含まれます。"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "Linuxのファイルパスにおけるチルダ「~」の記号は何を表しますか？",
+      "options": [
+        "ファイルシステムのルートディレクトリ",
+        "現在のユーザーのホームディレクトリ",
+        "一時ファイルのディレクトリ",
+        "システムプログラムがインストールされているディレクトリ"
+      ],
+      "correct": 1,
+      "explanation": "チルダ（~）は現在のユーザーのホームディレクトリ（Linuxでは通常/home/username）へのショートカットです。「cd ~」でどこからでもホームに戻れます。"
+    },
+    {
+      "stage": "pre",
+      "question": "コマンドの前に「sudo」を付ける目的は何ですか？",
+      "options": [
+        "コマンドの実行を高速化する",
+        "root（管理者）権限でコマンドを実行する",
+        "サンドボックス環境でコマンドを実行する",
+        "コマンドの出力をシステムファイルにログする"
+      ],
+      "correct": 1,
+      "explanation": "sudo（superuser do）は単一コマンドのために一時的に権限をrootレベルに昇格します。aptでパッケージをインストールするなど、システムレベルの操作に必要です。"
+    },
+    {
+      "stage": "post",
+      "question": "シェルスクリプトを実行しようとすると「Permission denied」が表示されます。これを修正するコマンドは何ですか？",
+      "options": [
+        "sudo rm script.sh",
+        "chmod +x script.sh",
+        "chown root script.sh",
+        "mv script.sh /usr/bin/"
+      ],
+      "correct": 1,
+      "explanation": "chmod +xはファイルに実行パーミッションを追加します。実行ビットが設定されていないと、所有者であってもシェルはスクリプトの実行を拒否します。"
+    },
+    {
+      "stage": "post",
+      "question": "リモートGPUボックスでトレーニングデータがディスクを埋めています。最も多くスペースを消費しているディレクトリを表示するコマンドはどれですか？",
+      "options": [
+        "ls -la /",
+        "du -h --max-depth=1 / | sort -hr | head -20",
+        "cat /proc/meminfo",
+        "free -h"
+      ],
+      "correct": 1,
+      "explanation": "du -hはディレクトリごとのディスク使用量を表示し、--max-depth=1は最上位ディレクトリに制限し、sort -hrはサイズの降順でソートします。これにより最もスペースを消費しているディレクトリが分かります。"
+    },
+    {
+      "stage": "post",
+      "question": "macOSとLinuxバージョンの「sed -i」の主な違いは何ですか？",
+      "options": [
+        "LinuxのsedはmacOSのsedより速い",
+        "macOSのsedは-iの後に空文字列の引数が必要（'sed -i \"\"'）だが、Linuxは不要",
+        "Linuxのsedは正規表現をサポートしていない",
+        "macOSのsedはファイルをインプレース修正できない"
+      ],
+      "correct": 1,
+      "explanation": "macOSはBSD sedを使用し「sed -i \"\" pattern file」が必要ですが、LinuxはGNU sedを使用し「sed -i pattern file」で動作します。これはシステム間でスクリプトを移行する際によくあるつまずきのポイントです。"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "JAX入門",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ03のレッスン01〜10、基本的なNumPy",
+  "timeEstimate": "約90分",
+  "objectives": [
+    "JAXの関数型API（jax.numpy、jax.grad、jax.jit、jax.vmap）を使って純粋関数のニューラルネットワークコードを書く",
+    "PyTorchのイーガー変更とJAXの関数型コンパイルモデルの主要な設計の違いを説明する",
+    "jitコンパイルとvmapベクトル化を適用して素直なPythonと比較して訓練ループを加速する",
+    "JAXでシンプルなネットワークを訓練し、明示的な状態管理とPyTorchのオブジェクト指向アプローチを対比する"
+  ]
+}

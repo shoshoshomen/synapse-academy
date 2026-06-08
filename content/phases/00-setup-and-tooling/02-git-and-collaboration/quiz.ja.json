@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "「バージョン管理」が主に役立つのはどのような場面ですか？",
+      "options": [
+        "コードの実行を高速化する",
+        "ファイルへの変更を時系列で追跡し、他者と協力できるようにする",
+        "ファイルを圧縮してディスクスペースを節約する",
+        "コードのバグを自動修正する"
+      ],
+      "correct": 1,
+      "explanation": "gitのようなバージョン管理システムはファイルへのすべての変更を追跡し、過去の状態に戻したり、同じコードベースで他者と協力したりすることができます。"
+    },
+    {
+      "stage": "pre",
+      "question": "ソフトウェア開発における「リポジトリ」とは何ですか？",
+      "options": [
+        "Google Driveのようなクラウドストレージサービス",
+        "バージョン管理によって管理されたファイルとその完全な変更履歴のコレクション",
+        "ユーザーデータを格納するデータベース",
+        "ライブラリをインストールするパッケージマネージャー"
+      ],
+      "correct": 1,
+      "explanation": "リポジトリ（リポ）はgitで管理されるディレクトリで、プロジェクトのすべてのファイルと、それらのファイルに加えられた変更の完全な履歴を含みます。"
+    },
+    {
+      "stage": "post",
+      "question": "gitで作業を保存・バックアップするための正しい手順は何ですか？",
+      "options": [
+        "git push, git add, git commit",
+        "git commit, git add, git push",
+        "git add, git commit, git push",
+        "git clone, git add, git push"
+      ],
+      "correct": 2,
+      "explanation": "まず「git add」で変更をステージングし、次に「git commit」でスナップショットを保存し、最後に「git push」でリモートにアップロードします。これが日常のワークフローです。"
+    },
+    {
+      "stage": "post",
+      "question": "「git checkout -b experiment/new-optimizer」は何をしますか？",
+      "options": [
+        "GitHubからexperiment/new-optimizerというブランチをダウンロードする",
+        "experiment/new-optimizerという名前の新しいブランチを作成してそこに切り替える",
+        "experiment/new-optimizerブランチを削除する",
+        "すべてのファイルをexperiment/new-optimizerブランチに一致するように戻す"
+      ],
+      "correct": 1,
+      "explanation": "「-b」フラグは指定した名前の新しいブランチを作成し、直ちにそこに切り替えます。これにより、mainブランチに影響を与えずに実験できます。"
+    },
+    {
+      "stage": "post",
+      "question": "なぜ「.pt」「.pth」「.safetensors」を.gitignoreに追加すべきなのですか？",
+      "options": [
+        "コミットすべきでないPythonテストファイルだから",
+        "gitには大きすぎるモデルチェックポイントファイルで、再生成可能だから",
+        "センシティブなAPIキーが含まれているから",
+        "gitはいかなるバイナリファイルも追跡できないから"
+      ],
+      "correct": 1,
+      "explanation": "モデルチェックポイントファイル（.pt、.pth、.safetensors）は多くの場合ギガバイト単位のサイズです。gitは大きなバイナリファイルには適していないため、除外して別途保存または再生成すべきです。"
+    }
+  ]
+}

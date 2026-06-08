@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "AIプロジェクトに別の仮想環境が必要な理由は何ですか？",
+      "options": [
+        "仮想環境はコードの実行速度を上げる",
+        "依存関係を分離することで、異なるプロジェクト同士が競合しないようにする",
+        "Pythonはパッケージをインポートするために仮想環境が必要",
+        "仮想環境はGPUへのアクセスを提供する"
+      ],
+      "correct": 1,
+      "explanation": "仮想環境はプロジェクトごとにパッケージのバージョンを分離します。仮想環境がないと、あるプロジェクトのためにPyTorchをアップグレードすると、古いバージョンに依存する別のプロジェクトが壊れてしまいます。"
+    },
+    {
+      "stage": "pre",
+      "question": "CUDAはAIワークロードに対して何を提供しますか？",
+      "options": [
+        "MLライブラリ用のPythonパッケージマネージャー",
+        "モデルのデプロイ用Webフレームワーク",
+        "行列演算のためのNVIDIA GPU上での並列計算",
+        "モデルサービング用コンテナランタイム"
+      ],
+      "correct": 2,
+      "explanation": "CUDAはNVIDIAの並列コンピューティングプラットフォームで、何千ものGPUコアで同時に行列演算を実行できます。PyTorchやTensorFlowはこれを内部で使用しています。"
+    },
+    {
+      "stage": "post",
+      "question": "4層の環境スタックにおいて、最初にインストールする必要があるのはどの層ですか？",
+      "options": [
+        "AI/MLライブラリ（PyTorch、JAX）",
+        "パッケージマネージャー（pip、npm、cargo）",
+        "言語ランタイム（Python、Node.js）",
+        "システム基盤（OS、シェル、GPUドライバー）"
+      ],
+      "correct": 3,
+      "explanation": "インストールはボトムアップで行います。まずシステム基盤（OS、ドライバー）、次にパッケージマネージャー、その次に言語ランタイム、最後にAIライブラリの順です。各層は下の層に依存しています。"
+    },
+    {
+      "stage": "post",
+      "question": "PythonのAIプロジェクトにおけるuvの役割は何ですか？",
+      "options": [
+        "GPUモニタリングツール",
+        "超高速のPythonパッケージインストーラー兼リゾルバー",
+        "ニューラルネットワーク可視化ライブラリ",
+        "カスタムカーネル用CUDAコンパイラー"
+      ],
+      "correct": 1,
+      "explanation": "uvはRustで書かれた高速なPythonパッケージインストーラーです。pipをはるかに高速な依存関係の解決とインストールで置き換え、多くの場合10〜100倍高速です。"
+    },
+    {
+      "stage": "post",
+      "question": "PyTorchがGPUにアクセスできるかどうかを確認するにはどうすればよいですか？",
+      "options": [
+        "import torch; print(torch.__version__)",
+        "nvidia-smi --query",
+        "import torch; print(torch.cuda.is_available())",
+        "python -c 'import gpu'"
+      ],
+      "correct": 2,
+      "explanation": "torch.cuda.is_available()はPyTorchがCUDA GPUにアクセスできる場合にTrueを返します。Apple Siliconの場合はMetal Performance Shadersにtorch.backends.mps.is_available()を使用します。"
+    }
+  ]
+}

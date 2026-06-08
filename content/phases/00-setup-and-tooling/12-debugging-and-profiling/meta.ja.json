@@ -1,0 +1,15 @@
+{
+  "title": "デバッグとプロファイリング",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン1（開発環境）、PyTorchの基礎的な知識",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "条件付き `breakpoint()` と `debug_print` を使ってトレーニング中間にテンソルの形状、dtype、NaN値を検査する",
+    "`cProfile`、`line_profiler`、`tracemalloc` でトレーニングループをプロファイリングしてボトルネックを見つける",
+    "よくあるAIのバグを検出する: 形状の不一致、NaNロス、データリーケージ、デバイスが間違ったテンソル",
+    "TensorBoardをセットアップしてロス曲線、重みのヒストグラム、勾配分布を可視化する"
+  ]
+}

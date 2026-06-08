@@ -1,0 +1,15 @@
+{
+  "title": "ミニフレームワークを自分で作る",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ03の全レッスン（レッスン01〜09）",
+  "timeEstimate": "約120分",
+  "objectives": [
+    "Module、Linear、ReLU、Sigmoid、Dropout、BatchNorm、Sequential、損失関数、オプティマイザ、DataLoaderを持つ完全な深層学習フレームワーク（約500行）を構築する",
+    "Moduleの抽象化（forward、backward、parameters）とtrain/evalモードの切り替えが必要な理由を説明する",
+    "すべてのコンポーネントを結線して円分類で4層ネットワークを訓練する動作する訓練ループを作る",
+    "フレームワークの各コンポーネントをPyTorchの対応物（nn.Module、nn.Sequential、optim.Adam、DataLoader）にマッピングする"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "正則化",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン03.06（オプティマイザ）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "逆スケーリング付きドロップアウト、L2ウェイト減衰、バッチ正規化、レイヤー正規化、RMSNormをゼロから実装する",
+    "訓練-テスト精度ギャップを測定し、正則化実験を使って過学習を診断する",
+    "TransformerがBatchNormではなくLayerNormを使う理由と、現代のLLMがRMSNormを好む理由を説明する",
+    "過学習の深刻さに基づいて正しい正則化技法の組み合わせを適用する"
+  ]
+}

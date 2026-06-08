@@ -1,0 +1,16 @@
+{
+  "title": "APIとキー",
+  "type": "実装",
+  "languages": [
+    "Python",
+    "TypeScript"
+  ],
+  "prerequisites": "フェーズ0、レッスン01",
+  "timeEstimate": "約30分",
+  "objectives": [
+    "環境変数と `.env` ファイルを使ってAPIキーを安全に保管する",
+    "Anthropic Python SDKと生のHTTPの両方でLLM APIを呼び出す",
+    "デバッグのためにSDKベースと生のHTTPリクエスト・レスポンス形式を比較する",
+    "認証やレート制限を含む一般的なAPIエラーを特定して処理する"
+  ]
+}

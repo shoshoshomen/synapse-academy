@@ -1,0 +1,15 @@
+{
+  "title": "AIのためのLinux",
+  "type": "学習",
+  "languages": [
+    "--"
+  ],
+  "prerequisites": "フェーズ0、レッスン01",
+  "timeEstimate": "約30分",
+  "objectives": [
+    "Linuxのファイルシステムをナビゲートし、コマンドラインから基本的なファイル操作を行う",
+    "`chmod` と `chown` でファイルパーミッションを管理して「Permission denied」エラーを解決する",
+    "`apt` でシステムパッケージをインストールし、AI作業のための新しいGPUボックスをセットアップする",
+    "リモートマシンで作業する開発者がよくつまずくmacOSとLinuxの違いを特定する"
+  ]
+}

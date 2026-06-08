@@ -1,0 +1,15 @@
+{
+  "title": "AIのためのDocker",
+  "type": "実装",
+  "languages": [
+    "Docker"
+  ],
+  "prerequisites": "フェーズ0、レッスン01と03",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "DockerfileからCUDA、PyTorch、AIライブラリを含むGPU対応のDockerイメージをビルドする",
+    "ホストディレクトリをボリュームとしてマウントし、コンテナーの再ビルドをまたいでモデル、データセット、コードを永続化する",
+    "コンテナー内でGPUを公開するためのNVIDIA Container Toolkitを設定する",
+    "Docker Composeを使用してマルチサービスのAIアプリケーション（推論サーバー + ベクターデータベース）を調整する"
+  ]
+}

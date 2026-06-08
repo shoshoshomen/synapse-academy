@@ -1,0 +1,62 @@
+[
+  {
+    "question": "PyTorchのautogradとは何か？",
+    "options": [
+      "データロードライブラリ",
+      "操作を記録して手動のbackward実装なしに勾配を計算する自動微分エンジン",
+      "モデル圧縮ツール",
+      "ハイパーパラメータチューニングフレームワーク"
+    ],
+    "correct": 1,
+    "explanation": "PyTorchのautogradは順伝播計算中に計算グラフを構築し、.backward()を呼んだときに自動的に勾配を計算する。これにより各モジュールにbackward()を手動で実装する必要がなくなる。",
+    "stage": "pre"
+  },
+  {
+    "question": "torch.no_grad()は何をするか、いつ使うべきか？",
+    "options": [
+      "過学習を防ぐ",
+      "訓練が不要な推論時にメモリと計算を節約するために勾配追跡を無効にする",
+      "すべてのモデルの重みを凍結する",
+      "GPUアクセラレーションを有効にする"
+    ],
+    "correct": 1,
+    "explanation": "推論中は勾配が不要だ。torch.no_grad()は勾配追跡を無効にし、計算グラフを保存するために使われるメモリを節約して計算を高速化する。",
+    "stage": "pre"
+  },
+  {
+    "question": "PyTorchでnn.Linear(784, 256)は何を作るか？",
+    "options": [
+      "ReLU活性化層",
+      "(256, 784)の重み行列と(256,)のバイアスベクトルを持つ全結合層",
+      "p=784/256のドロップアウト層",
+      "バッチ正規化層"
+    ],
+    "correct": 1,
+    "explanation": "nn.Linear(in_features, out_features)はy = x @ W^T + bを計算する層を作る。Wはshape (256, 784)でbはshape (256,)。これはゼロから構築したLayer classのPyTorch版だ。",
+    "stage": "post"
+  },
+  {
+    "question": "計算グラフ内のすべてのパラメータの勾配を計算するPyTorchのメソッドはどれか？",
+    "options": [
+      "optimizer.step()",
+      "model.forward()",
+      "loss.backward()",
+      "optimizer.zero_grad()"
+    ],
+    "correct": 2,
+    "explanation": "loss.backward()は計算グラフを逆方向にたどり、勾配を必要とするすべてのパラメータpに対してdL/dpを計算する。optimizer.step()はその後これらの勾配を使ってパラメータを更新する。",
+    "stage": "post"
+  },
+  {
+    "question": "PyTorchの訓練ループが純粋Pythonのミニフレームワークよりも大幅に速い理由は何か？",
+    "options": [
+      "PyTorchは異なるアルゴリズムを使う",
+      "PyTorchはGPU上で最適化されたC++/CUDAカーネルとして操作を実行するが、純粋Pythonは各操作をインタープリタで1つずつ実行する",
+      "PyTorchは小さなデータ型を使う",
+      "PyTorchは逆伝播をスキップする"
+    ],
+    "correct": 1,
+    "explanation": "PyTorchは行列操作を大規模な並列処理でGPU上で動く高度に最適化されたC++とCUDAカーネルに委譲する。純粋Pythonは各操作でインタープリタオーバーヘッドを伴ってループを順次実行する。",
+    "stage": "post"
+  }
+]

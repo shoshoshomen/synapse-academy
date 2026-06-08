@@ -1,0 +1,15 @@
+{
+  "title": "重み初期化と訓練安定性",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン03.04（活性化関数）、レッスン03.07（正則化）",
+  "timeEstimate": "約90分",
+  "objectives": [
+    "ゼロ、ランダム、Xavier/Glorot、Kaiming/He初期化戦略を実装し、50層を通じたアクティベーション大きさへの効果を測定する",
+    "XavierがVar(w) = 2/(fan_in + fan_out)を使い、KaimingがVar(w) = 2/fan_inを使う理由を導出する",
+    "ゼロ初期化の対称性問題を示し、ランダムスケール単独では不十分な理由を説明する",
+    "正しい初期化戦略を活性化関数に対応付ける: sigmoid/tanhにはXavier、ReLU/GELUにはKaiming"
+  ]
+}

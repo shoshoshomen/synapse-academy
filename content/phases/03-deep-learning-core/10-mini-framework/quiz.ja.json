@@ -1,0 +1,62 @@
+[
+  {
+    "question": "深層学習フレームワークでModuleの抽象化が持つ3つの責務は何か？",
+    "options": [
+      "データをロードする、前処理する、拡張する",
+      "計算のためのforward()、勾配のためのbackward()、訓練可能な重みのためのparameters()",
+      "コンパイル、最適化、デプロイ",
+      "トークン化、埋め込み、デコード"
+    ],
+    "correct": 1,
+    "explanation": "すべてのModuleは出力を計算するforward()、勾配を伝播するbackward()、訓練可能な重みを公開するparameters()を実装する。この統一インターフェースにより任意のモジュールを他のモジュールと組み合わせられる。",
+    "stage": "pre"
+  },
+  {
+    "question": "Sequentialが逆伝播中にモジュールを逆順で処理する理由は何か？",
+    "options": [
+      "任意だ。どちらの方向でも機能する",
+      "勾配は損失からネットワークを通じて逆向きに流れるため、最後の層が最初に勾配を計算する",
+      "逆順はメモリを少なく使う",
+      "勾配爆発を防ぐ"
+    ],
+    "correct": 1,
+    "explanation": "逆伝播は損失から始まり入力に向かって勾配を伝播する。最後の層が最初に損失勾配を受け取り、ローカル勾配を計算して前の層に渡す。",
+    "stage": "pre"
+  },
+  {
+    "question": "optimizer.zero_grad()が自動的に行われる代わりに独立した呼び出しである理由は何か？",
+    "options": [
+      "PyTorchの設計ミスだ",
+      "1回のオプティマイザステップを取る前に複数のバッチで勾配蓄積ができるようにする",
+      "メモリを節約する",
+      "デバッグを容易にする"
+    ],
+    "correct": 1,
+    "explanation": "zero_gradをstepから分離することで勾配蓄積が可能になる: stepを呼ぶ前に複数回backward()を実行し（ミニバッチを越えて）勾配を合算できる。これはより大きなバッチサイズをシミュレートする。",
+    "stage": "post"
+  },
+  {
+    "question": "訓練ループの正しい操作順序はどれか？",
+    "options": [
+      "backward, forward, zero_grad, step",
+      "forward, loss, zero_grad, backward, step",
+      "zero_grad, forward, loss, backward, step",
+      "forward, zero_grad, backward, loss, step"
+    ],
+    "correct": 2,
+    "explanation": "標準パターン: zero_grad（古い勾配をクリア）、forward（予測を計算）、loss（スカラー損失を計算）、backward（勾配を計算）、step（パラメータを更新）。この順序を間違えると微妙なバグが生じる。",
+    "stage": "post"
+  },
+  {
+    "question": "フレームワークにおけるDataLoaderの役割は何か？",
+    "options": [
+      "モデルを訓練する",
+      "ミニバッチ勾配降下法のためにデータをバッチに分割し、エポック間でオプションでシャッフルする",
+      "損失関数を計算する",
+      "重みを初期化する"
+    ],
+    "correct": 1,
+    "explanation": "DataLoaderは2つの実際的な問題を処理する: バッチ化（全データをメモリに収められない）とシャッフル（ランダム順序によりモデルがデータ順序を記憶するのを防ぐ）。",
+    "stage": "post"
+  }
+]

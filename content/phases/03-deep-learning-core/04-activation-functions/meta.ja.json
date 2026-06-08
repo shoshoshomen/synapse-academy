@@ -1,0 +1,15 @@
+{
+  "title": "活性化関数",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン03.03（誤差逆伝播）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "シグモイド、tanh、ReLU、Leaky ReLU、GELU、Swish、softmaxをその導関数とともにゼロから実装する",
+    "異なる活性化関数を使って10層以上で活性化の大きさを測定し、勾配消失問題を診断する",
+    "ReLUネットワークの死んだニューロンを検出し、GELUがこの失敗モードを回避する理由を説明する",
+    "特定のアーキテクチャ（Transformer、CNN、RNN、出力層）に対して正しい活性化関数を選択する"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "GPUセットアップとクラウド",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ0、レッスン01",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "`nvidia-smi` とPyTorchのCUDA APIを使ってローカルGPUの可用性を確認する",
+    "無料のクラウド実験のためにGoogle ColabをT4 GPUで設定する",
+    "CPU対GPUの行列積をベンチマークし、速度向上を測定する",
+    "fp16の目安ルールを使ってVRAMに収まる最大モデルサイズを見積もる"
+  ]
+}

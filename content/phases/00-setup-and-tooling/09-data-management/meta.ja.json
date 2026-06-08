@@ -1,0 +1,15 @@
+{
+  "title": "データ管理",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ0、レッスン01",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "Hugging Face `datasets` ライブラリを使ってデータセットをロード、ストリーミング、キャッシュする",
+    "CSV、JSON、Parquet、Arrowフォーマット間で変換し、それぞれのトレードオフを説明する",
+    "固定乱数シードで再現可能なトレーニング/バリデーション/テスト分割を作成する",
+    "`.gitignore`、Git LFS、DVCを使って大きなモデルとデータセットファイルを管理する"
+  ]
+}

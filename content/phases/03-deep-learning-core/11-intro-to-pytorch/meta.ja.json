@@ -1,0 +1,15 @@
+{
+  "title": "PyTorch入門",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "レッスン03.10（ミニフレームワークを自分で作る）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "PyTorchのnn.Module、nn.Sequential、autogradを使ってニューラルネットワークを構築・訓練する",
+    "PyTorchテンソル、GPUアクセラレーション、標準訓練ループ（zero_grad、forward、loss、backward、step）を使う",
+    "ゼロから作ったミニフレームワークのコンポーネントをPyTorchの対応物に変換する",
+    "同じタスクで純粋PythonフレームワークとPyTorchの訓練速度をプロファイルして比較する"
+  ]
+}

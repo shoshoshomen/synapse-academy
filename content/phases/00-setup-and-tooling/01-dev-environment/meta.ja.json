@@ -1,0 +1,17 @@
+{
+  "title": "開発環境",
+  "type": "実装",
+  "languages": [
+    "Python",
+    "Node.js",
+    "Rust"
+  ],
+  "prerequisites": "なし",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "Python 3.11+、Node.js 20+、Rustのツールチェーンをゼロから構築する",
+    "再現性のあるビルドのための仮想環境とパッケージマネージャーを設定する",
+    "CUDA/MPSでGPUアクセスを確認し、テスト用テンソル演算を実行する",
+    "4層スタック（システム、パッケージ、ランタイム、AIライブラリ）を理解する"
+  ]
+}
