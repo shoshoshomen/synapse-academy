@@ -1,13 +1,6 @@
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import {
-  ChevronLeft,
-  Clock,
-  Code2,
-  Target,
-  ExternalLink,
-  Construction,
-} from "lucide-react";
+import { ChevronLeft, Clock, Code2, Target, Construction } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import {
   getLessonContent,
@@ -15,7 +8,6 @@ import {
   getPhases,
   lessonKey,
 } from "@/lib/content";
-import { siteConfig } from "@/config/site";
 import { Badge } from "@/components/ui/badge";
 import { LessonMarkdown } from "@/components/lesson/markdown";
 import { Toc } from "@/components/lesson/toc";
@@ -165,23 +157,6 @@ export default async function LessonPage({
               <Quiz questions={quiz.questions} lessonKey={key} />
             </section>
           )}
-
-          {/* Source attribution (MIT) */}
-          <aside className="mt-12 rounded-lg border border-border bg-subtle/50 p-4 text-sm">
-            <div className="font-medium text-primary">{t("sourceTitle")}</div>
-            <p className="mt-1 leading-relaxed text-muted-foreground">
-              {t("sourceBody")}
-            </p>
-            <a
-              href={siteConfig.source.url}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-2 inline-flex items-center gap-1 font-medium text-accent hover:underline"
-            >
-              {t("sourceLink")}
-              <ExternalLink className="size-3.5" />
-            </a>
-          </aside>
 
           <LessonActions lessonKey={key} prev={prev} next={next} />
         </article>
