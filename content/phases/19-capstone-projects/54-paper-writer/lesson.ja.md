@@ -23,16 +23,16 @@
 
 ```mermaid
 flowchart TB
-    Paper[Paper] --> Meta[メタデータ]
-    Paper --> Sections[セクションリスト]
-    Paper --> Figures[フィギュアリスト]
-    Paper --> Bib[書誌リスト]
-    Meta --> Title[タイトル]
-    Meta --> Authors[著者]
-    Meta --> Abstract[アブストラクト]
-    Sections --> Sec1[Section: id, title, body, cites]
-    Figures --> Fig1[Figure: id, path, caption, label]
-    Bib --> Entry1[BibEntry: key, fields]
+    Paper["論文"] --> Meta["メタデータ"]
+    Paper --> Sections["セクションリスト"]
+    Paper --> Figures["フィギュアリスト"]
+    Paper --> Bib["書誌リスト"]
+    Meta --> Title["タイトル"]
+    Meta --> Authors["著者"]
+    Meta --> Abstract["アブストラクト"]
+    Sections --> Sec1["セクション: id, タイトル, 本文, 引用"]
+    Figures --> Fig1["フィギュア: id, パス, キャプション, ラベル"]
+    Bib --> Entry1["書誌エントリ: キー, フィールド"]
 ```
 
 すべてのフィールドはプレーンなPythonデータです。レンダラーは`Paper`からLaTeX文字列への純粋な関数です。ハーネスはレンダリング前に論文を内省できます：セクション数、欠けているフィギュアファイルのリスト、すべての`\cite{key}`に一致する`BibEntry`があるかチェック。
@@ -49,11 +49,11 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    Exp[experiment.json] --> Reader[read_experiment_manifest]
-    Reader --> Figs[Figureリスト]
-    Figs --> Paper[Paper.figures]
-    Paper --> Render[render_latex]
-    Render --> Out[paper.tex]
+    Exp["experiment.json"] --> Reader["実験マニフェスト読み込み"]
+    Reader --> Figs["フィギュアリスト"]
+    Figs --> Paper["論文フィギュア"]
+    Paper --> Render["LaTeXレンダリング"]
+    Render --> Out["paper.tex"]
 ```
 
 注入は確定的です。フィギュアIDは実験名と単調カウンターから導出されます。キャプションはマニフェストから来ます。パスは論文の出力ディレクトリに対して正規化され、実験出力がディスク上の別の場所にあってもLaTeXがコンパイルされます。
@@ -70,12 +70,12 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    Writer[PaperWriter.write] --> Tex[paper.tex]
-    Writer --> Bib[references.bib]
-    Writer --> Man[manifest.json]
-    Man --> F[参照されるフィギュア]
-    Man --> C[使用される引用]
-    Man --> S[レンダリングされたセクション]
+    Writer["論文ライター書き込み"] --> Tex["paper.tex"]
+    Writer --> Bib["references.bib"]
+    Writer --> Man["manifest.json"]
+    Man --> F["参照されるフィギュア"]
+    Man --> C["使用される引用"]
+    Man --> S["レンダリングされたセクション"]
 ```
 
 マニフェストはダウンストリームの評価者や批評ループが読むものです。LaTeXをパースしません。マニフェストを読みます。次のレッスンの批評ループはこのマニフェストを入力として取り、フィードバックリストを生成します。だからマニフェストが契約の一部でLaTeXが違う理由です。

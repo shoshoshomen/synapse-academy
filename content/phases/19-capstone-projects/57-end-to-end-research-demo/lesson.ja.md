@@ -15,15 +15,15 @@
 
 ```mermaid
 flowchart LR
-    Seed[仮説のシード] --> Sched[反復スケジューラ]
-    Sched --> Exp[実験ランナー]
-    Exp --> Bus[結果バス]
+    Seed["仮説のシード"] --> Sched["反復スケジューラ"]
+    Sched --> Exp["実験ランナー"]
+    Exp --> Bus["結果バス"]
     Bus --> Sched
-    Bus --> Trig[論文トリガー]
-    Trig --> Pick[最良結果ピッカー]
-    Pick --> Critic[批評ループ]
-    Critic --> Writer[論文ライター]
-    Writer --> Report[デモレポート]
+    Bus --> Trig["論文トリガー"]
+    Trig --> Pick["最良結果ピッカー"]
+    Pick --> Critic["批評ループ"]
+    Critic --> Writer["論文ライター"]
+    Writer --> Report["デモレポート"]
 ```
 
 5つのステージがある。シードは3つの仮説のリストだ。スケジューラは3つの並列スロットで6つの実験を実行する。バスは1つ以上の論文トリガーを報告する。ピッカーは最良の単一結果を選択する。批評ループは、その結果から構築されたドラフトを反復する。論文ライターは最終的な LaTeX、BibTeX、マニフェストを出力する。
@@ -34,10 +34,10 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    Demo[57: エンドツーエンドデモ] --> A[54: PaperWriter]
-    Demo --> B[55: CriticLoop]
-    Demo --> C[56: IterationScheduler]
-    Demo --> Inline[インラインスタブ: シードとランナー]
+    Demo["57: エンドツーエンドデモ"] --> A["54: 論文ライター"]
+    Demo --> B["55: 批評ループ"]
+    Demo --> C["56: イテレーションスケジューラー"]
+    Demo --> Inline["インラインスタブ: シードとランナー"]
 ```
 
 インラインスタブはレッスン50〜53の代わりを務める：仮説シードの小さなジェネレーターと同期報酬関数だ。2つのインポートを調整することで、ユーザーはインラインスタブを各レッスンの本物のプリミティブと入れ替えられる。
@@ -52,11 +52,11 @@ flowchart TB
 
 ```mermaid
 flowchart TB
-    Rep[DemoReport] --> Sch[scheduler_report]
-    Rep --> Pick[best_branch と best_reward]
-    Rep --> Cri[critic_result]
-    Rep --> Pap[paper_manifest]
-    Rep --> Term[stop_reason]
+    Rep["デモレポート"] --> Sch["スケジューラーレポート"]
+    Rep --> Pick["最良ブランチと最良報酬"]
+    Rep --> Cri["批評結果"]
+    Rep --> Pap["論文マニフェスト"]
+    Rep --> Term["停止理由"]
 ```
 
 各フィールドは上流ステージからそのまま来る。デモはどの出力も変換しない。組み合わせるだけだ。それがデモの果たすテストだ。

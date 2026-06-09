@@ -174,7 +174,7 @@ graph LR
         D3["KV-cacheに追記"]
         D4["トークンN+1を生成"]
         D1 --> D2 --> D3 --> D4
-        D4 -.->|繰り返す| D1
+        D4 -.->|"繰り返す"| D1
     end
 
     Prefill --> Decode

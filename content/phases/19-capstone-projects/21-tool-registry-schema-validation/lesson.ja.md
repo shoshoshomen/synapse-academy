@@ -75,11 +75,11 @@ items          すべての配列要素に適用されるスキーマ
 
 ```mermaid
 flowchart TD
-    code[your code]
-    reg[ToolRegistry<br/>name<br/>schema<br/>handler<br/>timeout]
-    out[Ok or list of errors]
-    code -->|register name, schema, handler| reg
-    reg -->|validate args| out
+    code["あなたのコード"]
+    reg["ToolRegistry\nname\nschema\nhandler\ntimeout"]
+    out["Ok またはエラーのリスト"]
+    code -->|"name / schema / handler を登録"| reg
+    reg -->|"args を検証"| out
 ```
 
 ## コードの読み方

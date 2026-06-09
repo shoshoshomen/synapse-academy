@@ -24,16 +24,16 @@
 
 ```mermaid
 flowchart TB
-  M[model output] --> T[toxicity]
-  M --> P[pii]
-  M --> I[instruction-leakage]
-  T --> R{router}
+  M["モデル出力"] --> T["毒性"]
+  M --> P["PII"]
+  M --> I["指示漏洩"]
+  T --> R{"ルーター"}
   P --> R
   I --> R
-  R -->|max severity = high| BL[block]
-  R -->|max severity = medium| RD[redact]
-  R -->|max severity = low| WN[warn]
-  R -->|max severity = none| LG[log]
+  R -->|"最大重大度 = high"| BL["ブロック"]
+  R -->|"最大重大度 = medium"| RD["リダクト"]
+  R -->|"最大重大度 = low"| WN["警告"]
+  R -->|"最大重大度 = none"| LG["ログ"]
 ```
 
 ルーターは分類器全体での最大severityを取り対応するアクションを適用する。blockが勝つ。redact + warnはredactになる。log + warnはwarnになる。ルーターは`verb`、`output`、`severity`、`verdicts`、`metadata`を持つ`Action`オブジェクトを発行する。ダウンストリームでは、レッスン87のセーフティゲートがmetadataをトレースに記録し、redactされた出力を送信するか、警告付きで元の出力を送信するか、出力をポリシー拒否に置き換える。

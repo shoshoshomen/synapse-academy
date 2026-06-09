@@ -20,12 +20,12 @@
 
 ```mermaid
 flowchart LR
-  Agent[エージェントループ] --> Runner[run_with_feedback.py]
-  Runner --> Shell[subprocess]
-  Shell --> Capture[stdout / stderr / exit / duration]
-  Capture --> Record[feedback_record.jsonl]
+  Agent["エージェントループ"] --> Runner["run_with_feedback.py"]
+  Runner --> Shell["subprocess"]
+  Shell --> Capture["stdout / stderr / exit / duration"]
+  Capture --> Record["feedback_record.jsonl"]
   Record --> Agent
-  Record --> Gate[検証ゲート]
+  Record --> Gate["検証ゲート"]
 ```
 
 ### フィードバックレコードに入るもの

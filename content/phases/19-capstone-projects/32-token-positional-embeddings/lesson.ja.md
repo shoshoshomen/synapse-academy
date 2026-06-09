@@ -24,12 +24,12 @@
 
 ```mermaid
 flowchart LR
-    A["(B, T) トークンID"] --> B[トークンエンベディングルックアップ]
+    A["(B, T) トークンID"] --> B["トークンエンベディングルックアップ"]
     B --> C["(B, T, D) トークンベクトル"]
-    A --> D[位置ブロードキャスト 0..T-1]
-    D --> E[位置エンベディングルックアップ]
+    A --> D["位置ブロードキャスト 0..T-1"]
+    D --> E["位置エンベディングルックアップ"]
     E --> F["(B, T, D) 位置ベクトル"]
-    C --> G[要素ごとの和]
+    C --> G["要素ごとの和"]
     F --> G
     G --> H["(B, T, D) アテンションへの入力"]
 ```
@@ -72,15 +72,15 @@ emb[p, 2k + 1] = cos(angle)
 
 ```mermaid
 sequenceDiagram
-    participant Caller
-    participant Layer
-    participant TokEmb
-    participant PosEmb
-    Caller->>Layer: forward(形状(B, T)のids)
-    Layer->>TokEmb: ids -> (B, T, D)
-    Layer->>PosEmb: 0..T-1 -> (T, D)
-    Layer->>Layer: tok + pos (Bにわたってブロードキャスト)
-    Layer->>Caller: (B, T, D)
+    participant Caller as "呼び出し元"
+    participant Layer as "レイヤー"
+    participant TokEmb as "トークンエンベディング"
+    participant PosEmb as "位置エンベディング"
+    Caller->>Layer: "フォワード(形状(B, T)のids)"
+    Layer->>TokEmb: "ids -> (B, T, D)"
+    Layer->>PosEmb: "0..T-1 -> (T, D)"
+    Layer->>Layer: "トークン + 位置 (Bにわたってブロードキャスト)"
+    Layer->>Caller: "(B, T, D)"
 ```
 
 和ステップのブロードキャストは `(T, D)` 位置テンソルをバッチ次元に沿って複製します。PyTorchはunsqueezeの後に位置テンソルが形状 `(1, T, D)` を持つため自動的にそれを処理します。

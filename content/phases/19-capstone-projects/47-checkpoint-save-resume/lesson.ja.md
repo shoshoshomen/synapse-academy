@@ -22,13 +22,13 @@
 
 ```mermaid
 flowchart TD
-  ckpt[チェックポイントペイロード] --> m[モデル state_dict]
-  ckpt --> o[オプティマイザー state_dict]
-  ckpt --> s[スケジューラー state_dict]
-  ckpt --> tr[トレーニング状態: step, epoch, batch_in_epoch, losses]
-  ckpt --> rng[rng状態: python, numpy, torch_cpu, torch_cuda]
-  ckpt --> meta[wall_saved_at, schema]
-  ckpt --> write[アトミック書き込み: tmpファイルからos.replace]
+  ckpt["チェックポイントペイロード"] --> m["モデル 状態辞書"]
+  ckpt --> o["オプティマイザー 状態辞書"]
+  ckpt --> s["スケジューラー 状態辞書"]
+  ckpt --> tr["トレーニング状態: ステップ, エポック, エポック内バッチ, 損失"]
+  ckpt --> rng["乱数状態: Python, NumPy, PyTorch CPU, PyTorch CUDA"]
+  ckpt --> meta["保存時刻, スキーマ"]
+  ckpt --> write["アトミック書き込み: 一時ファイルからos.replace"]
 ```
 
 ### 5つの状態バケット
@@ -45,11 +45,11 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  payload[ペイロード] --> tmpf[.ckpt.pt.XXXX.tmpに書き込む]
-  tmpf --> rename[os.replaceでckpt.ptへ]
-  rename --> done[ckpt.ptが有効]
-  crash1[リネーム前のクラッシュ] --> orig[ckpt.ptは変更なし]
-  crash2[リネーム後のクラッシュ] --> done
+  payload["ペイロード"] --> tmpf["一時ファイルに書き込む"]
+  tmpf --> rename["os.replaceで本体ファイルへ"]
+  rename --> done["チェックポイントが有効"]
+  crash1["リネーム前のクラッシュ"] --> orig["以前のファイルは変更なし"]
+  crash2["リネーム後のクラッシュ"] --> done
 ```
 
 2つのルール。まず、一時ファイルはターゲットと同じディレクトリに置かれ、リネームが同じファイルシステム内に収まるようにします。クロスデバイスリネームはアトミックではありません。次に、一時名は試みごとにユニークで、2つのライターが踏み込まないようにします。
@@ -60,14 +60,14 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  state[state_dict] --> split[キーをN個のシャードにラウンドロビン分割]
-  split --> s0[model.shard-000.pt]
-  split --> s1[model.shard-001.pt]
-  split --> sN[model.shard-NNN.pt]
-  s0 --> idx[index.json]
+  state["状態辞書"] --> split["キーをN個のシャードにラウンドロビン分割"]
+  split --> s0["model.shard-000.pt"]
+  split --> s1["model.shard-001.pt"]
+  split --> sN["model.shard-NNN.pt"]
+  s0 --> idx["index.json"]
   s1 --> idx
   sN --> idx
-  meta[meta.pt: optimizer + scheduler + train_state + rng] --> idx
+  meta["meta.pt: オプティマイザー + スケジューラー + トレーニング状態 + 乱数状態"] --> idx
 ```
 
 インデックスはシャード数、各シャードのsha256、メタファイルのsha256を記録します。ローダーはハッシュが一致しない場合に大きな声で失敗します。シャードは異なる物理ディスクに置けます。メタは小さく最初に読まれます。

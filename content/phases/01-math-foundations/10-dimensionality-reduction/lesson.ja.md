@@ -56,7 +56,7 @@
 
 ```mermaid
 graph LR
-    A["Original data (2D)\nData spread in both\nx and y directions"] -->|"PCA rotation"| B["After PCA\nPC1 captures the elongated spread\nPC2 captures the narrow spread\nDrop PC2 and you lose little info"]
+    A["元のデータ (2D)\nx・y方向両方に\n広がったデータ"] -->|"PCA回転"| B["PCA後\nPC1: 細長い広がりを捉える\nPC2: 狭い広がりを捉える\nPC2を落としても情報はほぼ失われない"]
 ```
 
 - **PCA前:** データの雲はxとy軸の両方に斜めに広がっている

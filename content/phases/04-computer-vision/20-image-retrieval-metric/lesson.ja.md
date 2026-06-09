@@ -24,13 +24,13 @@
 
 ```mermaid
 flowchart LR
-    Q["Query image<br/>or text"] --> ENC["Encoder"]
-    ENC --> EMB["Query embedding"]
-    EMB --> IDX["FAISS index"]
-    CAT["Catalogue images"] --> ENC2["Encoder (same)"] --> IDX_BUILD["Build index"]
+    Q["クエリ画像\nまたはテキスト"] --> ENC["エンコーダー"]
+    ENC --> EMB["クエリ埋め込み"]
+    EMB --> IDX["FAISSインデックス"]
+    CAT["カタログ画像"] --> ENC2["エンコーダー (同一)"] --> IDX_BUILD["インデックス構築"]
     IDX_BUILD --> IDX
-    IDX --> RANK["Top-k nearest<br/>by cosine / L2"]
-    RANK --> OUT["Ranked results"]
+    IDX --> RANK["コサイン / L2による\n上位k最近傍"]
+    RANK --> OUT["ランク付き結果"]
 
     style ENC fill:#dbeafe,stroke:#2563eb
     style IDX fill:#fef3c7,stroke:#d97706

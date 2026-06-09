@@ -20,13 +20,13 @@ ZeROステージ1はオプティマイザー状態をシャーディングする
 
 ```mermaid
 flowchart TD
-  A[forward + backward on full model] --> B[grads complete on every rank]
-  B --> C[reduce_scatter grads]
-  C --> D[rank r holds summed grad shard r]
-  D --> E[Adam step on shard r using local optimiser state]
-  E --> F[updated param shard r]
-  F --> G[allgather param shards]
-  G --> H[next forward sees full model again]
+  A["フルモデルでフォワード＋バックワード"] --> B["全ランクで勾配が完成"]
+  B --> C["勾配をreduce_scatter"]
+  C --> D["ランクrがシャードrの合計勾配を保持"]
+  D --> E["ローカルオプティマイザー状態でシャードrにAdamステップ"]
+  E --> F["更新済みパラメータシャードr"]
+  F --> G["パラメータシャードをallgather"]
+  G --> H["次のフォワードでフルモデルを再確認"]
 ```
 
 ### ZeROのステージ

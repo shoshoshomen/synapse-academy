@@ -23,14 +23,14 @@ HumanEval、MBPP、BigCodeBench、LiveCodeBenchなどの実際の評価はすべ
 
 ```mermaid
 flowchart TD
-    A[generation text] -->|extract_code_block| B[code string]
-    C[task.targets list of assertions] --> D[build runner script]
+    A["生成テキスト"] -->|"コードブロック抽出"| B["コード文字列"]
+    C["task.targets アサーションリスト"] --> D["ランナースクリプト構築"]
     B --> D
-    D --> E[spawn python subprocess<br/>timeout, denylist, output cap]
-    E -->|stdout JSON| F[per-assertion results]
-    E -->|timeout| G[result: timeout]
-    E -->|nonzero exit| H[result: error]
-    F --> I[score = passed / total]
+    D --> E["Pythonサブプロセス起動\nタイムアウト・拒否リスト・出力上限"]
+    E -->|"標準出力JSON"| F["アサーションごとの結果"]
+    E -->|"タイムアウト"| G["結果: タイムアウト"]
+    E -->|"非ゼロ終了"| H["結果: エラー"]
+    F --> I["スコア = 合格数 / 合計数"]
     G --> I
     H --> I
 ```
@@ -79,11 +79,11 @@ pass_at_k(n, c, k) = 1 - C(n - c, k) / C(n, k)
 
 ```mermaid
 flowchart LR
-    A[task with n=10 samples] --> B[run each sample]
-    B --> C[c samples passed]
-    C --> D[pass_at_1 = c/n]
-    C --> E[pass_at_5 = 1 - C n-c, 5 / C n, 5]
-    C --> F[pass_at_10 = 1 if c>0 else 0]
+    A["n=10サンプルのタスク"] --> B["各サンプルを実行"]
+    B --> C["c個のサンプルが合格"]
+    C --> D["pass_at_1 = c/n"]
+    C --> E["pass_at_5 = 1 - C n-c, 5 / C n, 5"]
+    C --> F["pass_at_10 = 1 if c>0 else 0"]
 ```
 
 ## 終了コード

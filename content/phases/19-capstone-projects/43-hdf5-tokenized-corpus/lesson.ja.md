@@ -22,18 +22,18 @@ HDF5が適している理由は、チャンク化されたリサイズ可能な�
 
 ```mermaid
 flowchart TD
-  JSONL[JSONL ドキュメント] --> Tokenize[インクリメンタルにトークン化]
-  Tokenize --> Buffer[インメモリバッファに追加]
-  Buffer --> Flush{buffer >= chunk?}
-  Flush -- いいえ --> Tokenize
-  Flush -- はい --> Resize[HDF5データセットをリサイズ]
-  Resize --> Write[バッファを新しい範囲に書き込む]
+  JSONL["JSONLドキュメント"] --> Tokenize["インクリメンタルにトークン化"]
+  Tokenize --> Buffer["インメモリバッファに追加"]
+  Buffer --> Flush{"バッファ >= チャンク?"}
+  Flush -- "いいえ" --> Tokenize
+  Flush -- "はい" --> Resize["HDF5データセットをリサイズ"]
+  Resize --> Write["バッファを新しい範囲に書き込む"]
   Write --> Buffer
-  Buffer --> Close[最終フラッシュ + クローズ]
-  Close --> ShardDone[シャードファイル確定]
-  ShardDone --> MMapRead[メモリマップ読み取り]
-  MMapRead --> Window[スライディングウィンドウデータローダー]
-  Window --> Train[トレーニングバッチ]
+  Buffer --> Close["最終フラッシュ + クローズ"]
+  Close --> ShardDone["シャードファイル確定"]
+  ShardDone --> MMapRead["メモリマップ読み取り"]
+  MMapRead --> Window["スライディングウィンドウデータローダー"]
+  Window --> Train["トレーニングバッチ"]
 ```
 
 ### 正しいリサイズ可能HDF5

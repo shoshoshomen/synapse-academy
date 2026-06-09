@@ -22,16 +22,16 @@ Dockerはコード、ランタイム、ライブラリ、システムツール�
 
 ```mermaid
 graph TD
-    subgraph without["Without Docker"]
-        A1["Your machine<br/>Python 3.12<br/>CUDA 12.4<br/>PyTorch 2.3"] -->|crashes| X1["???"]
-        A2["Their machine<br/>Python 3.10<br/>CUDA 11.8<br/>PyTorch 2.1"] -->|crashes| X2["???"]
-        A3["Server<br/>Python 3.11<br/>CUDA 12.1<br/>PyTorch 2.2"] -->|crashes| X3["???"]
+    subgraph without["Dockerなし"]
+        A1["あなたのマシン<br/>Python 3.12<br/>CUDA 12.4<br/>PyTorch 2.3"] -->|"クラッシュ"| X1["???"]
+        A2["相手のマシン<br/>Python 3.10<br/>CUDA 11.8<br/>PyTorch 2.1"] -->|"クラッシュ"| X2["???"]
+        A3["サーバー<br/>Python 3.11<br/>CUDA 12.1<br/>PyTorch 2.2"] -->|"クラッシュ"| X3["???"]
     end
 
-    subgraph with_docker["With Docker — Same image everywhere"]
-        B1["Your machine<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | Your code"]
-        B2["Their machine<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | Your code"]
-        B3["Server<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | Your code"]
+    subgraph with_docker["Dockerあり — どこでも同じイメージ"]
+        B1["あなたのマシン<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | あなたのコード"]
+        B2["相手のマシン<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | あなたのコード"]
+        B3["サーバー<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | あなたのコード"]
     end
 ```
 

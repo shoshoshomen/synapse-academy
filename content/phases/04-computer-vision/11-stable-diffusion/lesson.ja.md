@@ -24,16 +24,16 @@
 
 ```mermaid
 flowchart LR
-    TXT["Text prompt"] --> TE["Text encoder<br/>(CLIP-L or T5)"]
-    TE --> CT["Text<br/>embedding"]
+    TXT["テキストプロンプト"] --> TE["テキストエンコーダー\n(CLIP-L または T5)"]
+    TE --> CT["テキスト\n埋め込み"]
 
-    NOISE["Noise<br/>4x64x64"] --> UNET["UNet<br/>(denoiser with<br/>cross-attention<br/>to text)"]
+    NOISE["ノイズ\n4x64x64"] --> UNET["UNet\n(テキストへのクロスアテンション付き\nデノイザー)"]
     CT --> UNET
 
-    UNET --> SCHED["Scheduler<br/>(DPM-Solver++,<br/>Euler)"]
-    SCHED --> LATENT["Clean latent<br/>4x64x64"]
-    LATENT --> VAE["VAE decoder"]
-    VAE --> IMG["512x512<br/>RGB image"]
+    UNET --> SCHED["スケジューラー\n(DPM-Solver++,\nEuler)"]
+    SCHED --> LATENT["クリーンな潜在変数\n4x64x64"]
+    LATENT --> VAE["VAEデコーダー"]
+    VAE --> IMG["512x512\nRGB画像"]
 
     style TE fill:#dbeafe,stroke:#2563eb
     style UNET fill:#fef3c7,stroke:#d97706

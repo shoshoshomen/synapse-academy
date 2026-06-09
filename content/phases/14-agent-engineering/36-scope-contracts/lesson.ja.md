@@ -20,14 +20,14 @@
 
 ```mermaid
 flowchart LR
-  Task[タスク] --> Contract[scope_contract.json]
-  Contract --> Agent[エージェントループ]
-  Agent --> Diff[最終diff]
-  Diff --> Checker[scope_checker.py]
+  Task["タスク"] --> Contract["scope_contract.json"]
+  Contract --> Agent["エージェントループ"]
+  Agent --> Diff["最終diff"]
+  Diff --> Checker["scope_checker.py"]
   Contract --> Checker
-  Checker --> Verdict{スコープ内？}
-  Verdict -- yes --> Verify[検証ゲート]
-  Verdict -- no --> Block[ブロック + 質問を開く]
+  Checker --> Verdict{"スコープ内？"}
+  Verdict -- "はい" --> Verify["検証ゲート"]
+  Verdict -- "いいえ" --> Block["ブロック + 質問を開く"]
 ```
 
 ### スコープコントラクトに入るもの

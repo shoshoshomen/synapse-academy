@@ -20,12 +20,12 @@
 
 ```mermaid
 flowchart TD
-  Start[セッション開始] --> Init[init_agent.py]
-  Init --> Probes[ランタイム / 依存関係 / パス / 環境変数 / テストをプローブ]
-  Probes --> Report[init_report.json]
-  Report --> Decision{健全？}
-  Decision -- yes --> Agent[エージェントループ]
-  Decision -- no --> Halt[大きく失敗、停止、人間に表面化]
+  Start["セッション開始"] --> Init["init_agent.py"]
+  Init --> Probes["ランタイム / 依存関係 / パス / 環境変数 / テストをプローブ"]
+  Probes --> Report["init_report.json"]
+  Report --> Decision{"健全？"}
+  Decision -- "はい" --> Agent["エージェントループ"]
+  Decision -- "いいえ" --> Halt["大きく失敗、停止、人間に表面化"]
 ```
 
 ### 初期化スクリプトがプローブするもの

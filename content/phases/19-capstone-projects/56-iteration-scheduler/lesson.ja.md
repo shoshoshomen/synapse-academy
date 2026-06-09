@@ -21,16 +21,16 @@
 
 ```mermaid
 flowchart LR
-    Queue[仮説キュー] --> Sched[スケジューラー]
-    Sched --> Slot1[スロット1]
-    Sched --> Slot2[スロット2]
-    Sched --> Slot3[スロット3]
-    Slot1 --> Bus[結果バス]
+    Queue["仮説キュー"] --> Sched["スケジューラー"]
+    Sched --> Slot1["スロット1"]
+    Sched --> Slot2["スロット2"]
+    Sched --> Slot3["スロット3"]
+    Slot1 --> Bus["結果バス"]
     Slot2 --> Bus
     Slot3 --> Bus
-    Bus --> Score[UCBスコアラー]
+    Bus --> Score["UCBスコアラー"]
     Score --> Queue
-    Bus --> Paper[論文ライトファンアウト]
+    Bus --> Paper["論文ライトファンアウト"]
 ```
 
 キューは仮説を保持します。スケジューラーはスロットが空いたとき最高UCBの仮説を選びます。各スロットは非同期に実験を実行します。完了した実験はその結果をバスにファンします。バスは起源のブランチのUCB統計を更新し、ブランチの収益が閾値を超えると論文ライトステージにファンアウトします。
@@ -39,12 +39,12 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    Hyp[Hypothesis] --> Id[id]
-    Hyp --> Branch[branch id]
-    Hyp --> Payload[payloaddict]
-    Hyp --> Stats[実行数と報酬合計]
-    Stats --> Runs[runs int]
-    Stats --> Sum[reward sum float]
+    Hyp["仮説"] --> Id["id"]
+    Hyp --> Branch["ブランチID"]
+    Hyp --> Payload["ペイロード辞書"]
+    Hyp --> Stats["実行数と報酬合計"]
+    Stats --> Runs["実行数"]
+    Stats --> Sum["報酬合計"]
 ```
 
 `branch`はUCB統計のキーです。複数の仮説がブランチを共有できます（ブランチはリサーチの方向、仮説はその中の1つの試行）。`runs`はそのブランチの完了実験数、`reward_sum`は累積報酬です。UCBは両方を読みます。
@@ -68,16 +68,16 @@ ucb(branch) = mean_reward(branch) + c * sqrt( ln(total_runs) / runs(branch) )
 ```mermaid
 sequenceDiagram
     autonumber
-    participant S as スケジューラー
-    participant Q as 仮説キュー
-    participant R as 実験ランナー
-    participant T as 進行中タスク
-    S->>Q: 最高UCBをポップ
-    S->>R: create_task(run(hypothesis))
-    R-->>T: Result（タスク完了）
-    S->>T: await wait(FIRST_COMPLETED)
-    S->>S: UCB統計を更新
-    S->>Q: フォローアップを再キュー
+    participant S as "スケジューラー"
+    participant Q as "仮説キュー"
+    participant R as "実験ランナー"
+    participant T as "進行中タスク"
+    S->>Q: "最高UCBをポップ"
+    S->>R: "タスク作成(仮説を実行)"
+    R-->>T: "結果（タスク完了）"
+    S->>T: "最初の完了を待機"
+    S->>S: "UCB統計を更新"
+    S->>Q: "フォローアップを再キュー"
 ```
 
 3つのスロットが並行実行します。メインループは単一の実験でブロックしません。スケジューラーはキューが空になりかつタスクが進行中でなくなるまで、スロットが空くとすぐに新しいタスクを開始し続けます。

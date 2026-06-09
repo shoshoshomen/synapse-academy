@@ -20,13 +20,13 @@
 
 ```mermaid
 flowchart TD
-  S0[rank 0 state] --> W0[write rank0.bin.tmp]
-  S1[rank 1 state] --> W1[write rank1.bin.tmp]
-  S2[rank 2 state] --> W2[write rank2.bin.tmp]
-  S3[rank 3 state] --> W3[write rank3.bin.tmp]
-  W0 & W1 & W2 & W3 --> M[write manifest.json.tmp]
-  M --> R[rename all .tmp to final names]
-  R --> Done[checkpoint complete]
+  S0["ランク0の状態"] --> W0["rank0.bin.tmpに書き込み"]
+  S1["ランク1の状態"] --> W1["rank1.bin.tmpに書き込み"]
+  S2["ランク2の状態"] --> W2["rank2.bin.tmpに書き込み"]
+  S3["ランク3の状態"] --> W3["rank3.bin.tmpに書き込み"]
+  W0 & W1 & W2 & W3 --> M["manifest.json.tmpに書き込み"]
+  M --> R["全.tmpを最終名にリネーム"]
+  R --> Done["チェックポイント完了"]
 ```
 
 ### マニフェストスキーマ

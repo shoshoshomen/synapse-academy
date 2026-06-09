@@ -32,18 +32,18 @@ print-and-prayデバッグを忘れろ。ニューラルネットワークのデ
 
 ```mermaid
 flowchart TD
-    A["Loss not decreasing"] --> B{"Check learning rate"}
-    B -->|"Too high"| C["Loss oscillates or explodes"]
-    B -->|"Too low"| D["Loss barely moves"]
-    B -->|"Reasonable"| E{"Check gradients"}
-    E -->|"All zeros"| F["Dead ReLUs or vanishing gradients"]
-    E -->|"NaN/Inf"| G["Exploding gradients"]
-    E -->|"Normal"| H{"Check data pipeline"}
-    H -->|"Labels shuffled"| I["Random-chance accuracy"]
-    H -->|"Preprocessing bug"| J["Model learns noise"]
-    H -->|"Data is fine"| K{"Check architecture"}
-    K -->|"Too small"| L["Underfitting"]
-    K -->|"Too deep"| M["Optimization difficulty"]
+    A["損失が減少しない"] --> B{"学習率を確認"}
+    B -->|"高すぎる"| C["損失が振動または爆発"]
+    B -->|"低すぎる"| D["損失がほぼ動かない"]
+    B -->|"適切"| E{"勾配を確認"}
+    E -->|"全てゼロ"| F["Dead ReLUまたは勾配消失"]
+    E -->|"NaN/Inf"| G["勾配爆発"]
+    E -->|"正常"| H{"データパイプラインを確認"}
+    H -->|"ラベルがシャッフルされている"| I["ランダム精度"]
+    H -->|"前処理バグ"| J["ノイズを学習"]
+    H -->|"データは正常"| K{"アーキテクチャを確認"}
+    K -->|"小さすぎる"| L["アンダーフィッティング"]
+    K -->|"深すぎる"| M["最適化困難"]
 ```
 
 ### 症状1：損失が減少しない

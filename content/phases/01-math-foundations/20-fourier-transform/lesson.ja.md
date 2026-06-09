@@ -88,17 +88,17 @@ X[k + N/2] = E[k] - e^(-2*pi*i*k/N) * O[k]    k = 0, ..., N/2 - 1について
 
 ```mermaid
 graph TD
-    subgraph "8-point FFT (Cooley-Tukey)"
-        X["x[0..7]<br/>8 samples"] -->|"split even/odd"| E["Even: x[0,2,4,6]"]
-        X -->|"split even/odd"| O["Odd: x[1,3,5,7]"]
-        E -->|"4-pt FFT"| EK["E[0..3]"]
-        O -->|"4-pt FFT"| OK["O[0..3]"]
-        EK -->|"combine with twiddle factors"| XK["X[0..7]"]
-        OK -->|"combine with twiddle factors"| XK
+    subgraph "8点FFT (Cooley-Tukey)"
+        X["x[0..7]<br/>8サンプル"] -->|"偶数/奇数に分割"| E["偶数: x[0,2,4,6]"]
+        X -->|"偶数/奇数に分割"| O["奇数: x[1,3,5,7]"]
+        E -->|"4点FFT"| EK["E[0..3]"]
+        O -->|"4点FFT"| OK["O[0..3]"]
+        EK -->|"回転因子で結合"| XK["X[0..7]"]
+        OK -->|"回転因子で結合"| XK
     end
-    subgraph "Complexity"
-        C1["DFT: O(N^2) = 64 multiplications"]
-        C2["FFT: O(N log N) = 24 multiplications"]
+    subgraph "計算量"
+        C1["DFT: O(N^2) = 64回の乗算"]
+        C2["FFT: O(N log N) = 24回の乗算"]
     end
 ```
 
@@ -150,18 +150,18 @@ x * h = IFFT(FFT(x) . FFT(h))
 
 ```mermaid
 graph LR
-    subgraph "Time Domain"
-        TA["Signal x[n]"] -->|"convolve (slow: O(NM))"| TC["Output y[n]"]
-        TB["Filter h[n]"] -->|"convolve"| TC
+    subgraph "時間領域"
+        TA["信号 x[n]"] -->|"畳み込み（低速: O(NM)）"| TC["出力 y[n]"]
+        TB["フィルタ h[n]"] -->|"畳み込み"| TC
     end
-    subgraph "Frequency Domain"
-        FA["FFT(x)"] -->|"multiply (fast: O(N))"| FC["FFT(x) * FFT(h)"]
-        FB["FFT(h)"] -->|"multiply"| FC
+    subgraph "周波数領域"
+        FA["FFT(x)"] -->|"乗算（高速: O(N)）"| FC["FFT(x) * FFT(h)"]
+        FB["FFT(h)"] -->|"乗算"| FC
         FC -->|"IFFT"| FD["y[n]"]
     end
     TA -.->|"FFT"| FA
     TB -.->|"FFT"| FB
-    FD -.->|"same result"| TC
+    FD -.->|"同じ結果"| TC
 ```
 
 ### ウィンドウ処理

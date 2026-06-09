@@ -22,9 +22,9 @@
 
 ```mermaid
 flowchart LR
-  Agent[エージェントループ] --> Router[AGENTS.md]
-  Router --> State[agent_state.json]
-  Router --> Board[task_board.json]
+  Agent["エージェントループ"] --> Router["AGENTS.md"]
+  Router --> State["agent_state.json"]
+  Router --> Board["task_board.json"]
   State --> Agent
   Board --> Agent
 ```

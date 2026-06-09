@@ -24,15 +24,15 @@
 
 ```mermaid
 flowchart LR
-    F1["Frame t"] --> DET["Detector"] --> D1["Detections at t"]
-    PREV["Tracks up to t-1"] --> PREDICT["Motion predict<br/>(Kalman)"]
-    PREDICT --> PRED["Predicted tracks at t"]
-    D1 --> ASSOC["Hungarian assignment<br/>(IoU / cosine / motion)"]
+    F1["フレーム t"] --> DET["検出器"] --> D1["t での検出結果"]
+    PREV["t-1 までのトラック"] --> PREDICT["動き予測\n(カルマン)"]
+    PREDICT --> PRED["t での予測トラック"]
+    D1 --> ASSOC["ハンガリアン割り当て\n(IoU / コサイン / 動き)"]
     PRED --> ASSOC
-    ASSOC --> UPDATE["Update matched tracks"]
-    ASSOC --> NEW["Birth new tracks"]
-    ASSOC --> DEAD["Age unmatched tracks; delete after N"]
-    UPDATE --> NEXT["Tracks at t"]
+    ASSOC --> UPDATE["マッチしたトラックを更新"]
+    ASSOC --> NEW["新しいトラックを生成"]
+    ASSOC --> DEAD["未マッチトラックをエージング; N後に削除"]
+    UPDATE --> NEXT["t でのトラック"]
     NEW --> NEXT
     DEAD --> NEXT
 

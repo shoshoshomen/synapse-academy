@@ -91,9 +91,9 @@ P = [[0.7, 0.1, 0.2],    （晴れなら：70%晴れ、10%雨、20%曇り）
 
 ```mermaid
 graph LR
-    S["Sunny"] -->|0.7| S
-    S -->|0.1| R["Rainy"]
-    S -->|0.2| C["Cloudy"]
+    S["晴れ"] -->|0.7| S
+    S -->|0.1| R["雨"]
+    S -->|0.2| C["曇り"]
     R -->|0.3| S
     R -->|0.4| R
     R -->|0.3| C
@@ -177,15 +177,15 @@ x_t = sqrt(alpha_t) * x_{t-1} + sqrt(1 - alpha_t) * noise
 
 ```mermaid
 graph LR
-    subgraph "Forward Process (add noise)"
-        X0["x_0 (data)"] -->|"+ noise"| X1["x_1"]
-        X1 -->|"+ noise"| X2["x_2"]
-        X2 -->|"..."| XT["x_T (pure noise)"]
+    subgraph "順方向プロセス（ノイズを加える）"
+        X0["x_0 (データ)"] -->|"+ ノイズ"| X1["x_1"]
+        X1 -->|"+ ノイズ"| X2["x_2"]
+        X2 -->|"..."| XT["x_T (純粋なノイズ)"]
     end
-    subgraph "Reverse Process (denoise)"
-        XT2["x_T (noise)"] -->|"neural net"| XR2["x_{T-1}"]
-        XR2 -->|"neural net"| XR1["x_{T-2}"]
-        XR1 -->|"..."| XR0["x_0 (generated data)"]
+    subgraph "逆方向プロセス（ノイズ除去）"
+        XT2["x_T (ノイズ)"] -->|"ニューラルネット"| XR2["x_{T-1}"]
+        XR2 -->|"ニューラルネット"| XR1["x_{T-2}"]
+        XR1 -->|"..."| XR0["x_0 (生成データ)"]
     end
 ```
 

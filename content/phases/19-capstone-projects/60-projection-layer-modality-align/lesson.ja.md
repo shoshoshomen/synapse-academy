@@ -20,14 +20,14 @@
 
 ```mermaid
 flowchart LR
-  Image[画像フィクスチャ] --> Enc[フリーズ済み ViT エンコーダー]
-  Enc --> Tok[画像トークン B x N x 768]
-  Tok --> Pool[CLSプール]
-  Pool --> Proj[2層 MLP 射影]
-  Proj --> Img[画像埋め込み B x 512]
-  Caption[ペアキャプション ID] --> Tab[フリーズ済みテキストテーブル]
-  Tab --> Txt[テキスト埋め込み B x 512]
-  Img --> Loss[コサインアライメント損失]
+  Image["画像フィクスチャ"] --> Enc["フリーズ済み ViT エンコーダー"]
+  Enc --> Tok["画像トークン B x N x 768"]
+  Tok --> Pool["CLSプール"]
+  Pool --> Proj["2層 MLP 射影"]
+  Proj --> Img["画像埋め込み B x 512"]
+  Caption["ペアキャプション ID"] --> Tab["フリーズ済みテキストテーブル"]
+  Tab --> Txt["テキスト埋め込み B x 512"]
+  Img --> Loss["コサインアライメント損失"]
   Txt --> Loss
 ```
 

@@ -24,15 +24,15 @@
 
 ```mermaid
 flowchart LR
-    A["(B, T, D) 入力"] --> B[Linear D -> 3D]
+    A["(B, T, D) 入力"] --> B["線形 D -> 3D"]
     B --> C["Q, K, Vに分割"]
     C --> D["(B, H, T, d_head)に再形成"]
     D --> E["スコア = Q @ K.T / sqrt(d_head)"]
-    E --> F[因果マスクを適用]
-    F --> G[キーに対してsoftmax]
+    E --> F["因果マスクを適用"]
+    F --> G["キーに対してソフトマックス"]
     G --> H["コンテキスト = 重み @ V"]
     H --> I["(B, T, D)に再形成"]
-    I --> J[出力 Linear D -> D]
+    I --> J["出力 線形 D -> D"]
     J --> K["(B, T, D) 出力"]
 ```
 
@@ -60,17 +60,17 @@ d_head次元が最後に残るため、スコアmatmul `Q @ K.transpose(-2, -1)`
 
 ```mermaid
 sequenceDiagram
-    participant Q
-    participant K
-    participant Scores
-    participant Mask
-    participant Softmax
-    participant V
-    Q->>Scores: Q @ K.T (B, H, T, T)
-    Scores->>Scores: sqrt(d_head)で除算
-    Mask->>Scores: 上三角を-infに設定
-    Scores->>Softmax: キーに対して行ごとのsoftmax
-    Softmax->>V: 重み @ V -> (B, H, T, d_head)
+    participant Q as "クエリ"
+    participant K as "キー"
+    participant Scores as "スコア"
+    participant Mask as "マスク"
+    participant Softmax as "ソフトマックス"
+    participant V as "バリュー"
+    Q->>Scores: "Q @ K.T (B, H, T, T)"
+    Scores->>Scores: "sqrt(d_head)で除算"
+    Mask->>Scores: "上三角を-infに設定"
+    Scores->>Softmax: "キーに対して行ごとのソフトマックス"
+    Softmax->>V: "重み @ V -> (B, H, T, d_head)"
 ```
 
 マスクをバッファとして構築時に登録することで、モデルと同じデバイスに存在し、勾配グラフの一部でなくなります。マスクはブロックが見る最大コンテキスト長をカバーします。フォワード時に左上 `(T, T)` コーナーをスライスします。

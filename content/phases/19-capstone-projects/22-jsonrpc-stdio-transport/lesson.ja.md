@@ -22,14 +22,14 @@
 
 ```mermaid
 sequenceDiagram
-    participant Client
-    participant Server
-    Client->>Server: request {jsonrpc:"2.0", id:7, method:"foo", params:{...}}
-    Server-->>Client: success {jsonrpc:"2.0", id:7, result:{...}}
-    Client->>Server: notification {jsonrpc:"2.0", method:"bar", params:{...}} (no id)
-    Note over Server: no response for notifications
-    Client->>Server: request that fails
-    Server-->>Client: error {jsonrpc:"2.0", id:7 or null, error:{code, message, data?}}
+    participant Client as "クライアント"
+    participant Server as "サーバー"
+    Client->>Server: "リクエスト {jsonrpc:\"2.0\", id:7, method:\"foo\", params:{...}}"
+    Server-->>Client: "成功 {jsonrpc:\"2.0\", id:7, result:{...}}"
+    Client->>Server: "通知 {jsonrpc:\"2.0\", method:\"bar\", params:{...}} (id なし)"
+    Note over Server: "通知にはレスポンスなし"
+    Client->>Server: "失敗するリクエスト"
+    Server-->>Client: "エラー {jsonrpc:\"2.0\", id:7 or null, error:{code, message, data?}}"
 ```
 
 通知には`id`がない。サーバーはそれに応答してはならない。サーバーが通知にレスポンスを返すと、クライアントはそれをコールサイトに関連付ける方法がない。この1つのルールがフレーミングの数学をシンプルに保つ。

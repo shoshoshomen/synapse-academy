@@ -24,9 +24,9 @@
 
 ```mermaid
 flowchart LR
-    A["Contrastive<br/>SimCLR, MoCo, CLIP"] --> AT["positive pairs<br/>(same image, 2 augs)<br/>pulled together,<br/>negatives pushed apart"]
-    B["Teacher-student<br/>DINO, BYOL, iBOT"] --> BT["student predicts<br/>teacher's output;<br/>teacher is EMA of student"]
-    C["Masked reconstruction<br/>MAE, BEiT, SimMIM"] --> CT["mask 75% of patches;<br/>reconstruct pixel or<br/>token targets"]
+    A["対照学習\nSimCLR, MoCo, CLIP"] --> AT["正のペア\n(同じ画像、2つの拡張)\n引き寄せられ、\n負例は押し離される"]
+    B["教師-生徒学習\nDINO, BYOL, iBOT"] --> BT["生徒が教師の出力を予測;\n教師は生徒のEMA"]
+    C["マスク再構成\nMAE, BEiT, SimMIM"] --> CT["パッチの75%をマスク;\nピクセルまたはトークン\nターゲットを再構成"]
 
     style A fill:#dbeafe,stroke:#2563eb
     style B fill:#fef3c7,stroke:#d97706

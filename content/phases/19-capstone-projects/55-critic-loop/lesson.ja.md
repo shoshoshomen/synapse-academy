@@ -19,14 +19,14 @@
 
 ```mermaid
 flowchart LR
-    Draft[論文ドラフト] --> Critic[批評者]
+    Draft["論文ドラフト"] --> Critic["批評者"]
     Critic --> Scores
-    Scores --> Clar[明確さ 0-10]
-    Scores --> Nov[新規性 0-10]
-    Scores --> Ev[証拠 0-10]
-    Scores --> Meth[方法論 0-10]
-    Scores --> Rel[関連研究 0-10]
-    Scores --> Revs[修正提案]
+    Scores --> Clar["明確さ 0-10"]
+    Scores --> Nov["新規性 0-10"]
+    Scores --> Ev["証拠 0-10"]
+    Scores --> Meth["方法論 0-10"]
+    Scores --> Rel["関連研究 0-10"]
+    Scores --> Revs["修正提案"]
 ```
 
 スコアはベクトルです。ハーネスはラウンド間で各次元を監視します。明確さを上げるが証拠を下げる修正は証拠のリグレッションであり、収束チェックはそれを見ます。モデルのみの批評者はその保証を提供できません。
@@ -35,11 +35,11 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    Critique[Critique] --> Scores[スコアdict]
-    Critique --> Sugg[提案リスト]
-    Sugg --> S1[Suggestion: dimension, target, edit]
-    Critique --> Round[round int]
-    Critique --> Reason[overall reason str]
+    Critique["批評"] --> Scores["スコア辞書"]
+    Critique --> Sugg["提案リスト"]
+    Sugg --> S1["提案: 次元, ターゲット, 編集"]
+    Critique --> Round["ラウンド番号"]
+    Critique --> Reason["全体的な理由"]
 ```
 
 すべての提案は改善する次元、ターゲットとするセクション、修正者が適用できる`edit`指示を持ちます。修正者も呼び出し可能です。レッスンはedit指示をセクションへの追記操作として解釈する確定的な修正者を搭載しています。モデル駆動の修正者は同じフィールドをプロンプトとして解釈します。契約は変わりません。
@@ -50,13 +50,13 @@ flowchart TB
 
 ```mermaid
 flowchart TB
-    Start[ラウンドn完了] --> A{5次元すべてが目標以上?}
-    A -- はい --> Stop1[収束：目標]
-    A -- いいえ --> B{プラトー検出?}
-    B -- はい --> Stop2[収束：プラトー]
-    B -- いいえ --> C{ラウンドが最大以上?}
-    C -- はい --> Stop3[停止：予算]
-    C -- いいえ --> Next[ラウンドn+1実行]
+    Start["ラウンドn完了"] --> A{"5次元すべてが目標以上?"}
+    A -- "はい" --> Stop1["収束：目標"]
+    A -- "いいえ" --> B{"プラトー検出?"}
+    B -- "はい" --> Stop2["収束：プラトー"]
+    B -- "いいえ" --> C{"ラウンドが最大以上?"}
+    C -- "はい" --> Stop3["停止：予算"]
+    C -- "いいえ" --> Next["ラウンドn+1実行"]
 ```
 
 目標は最も厳しいケースです。5次元すべて（明確さ、新規性、証拠、方法論、関連研究）が`>= target_score`（デフォルト`8.0`）に達するまで、ループは成功を返しません。高い平均で1つの弱い次元があっても不十分です。プラトー検出は現在のラウンドの平均を前のラウンドの平均と比較します。改善が`plateau_epsilon`（デフォルト`0.1`）を下回ることが2連続ラウンドで続くと、ループは`plateau`で終了します。予算はラウンドのハードキャップ（デフォルト`5`）で`budget`で終了します。
@@ -86,18 +86,18 @@ flowchart TB
 ```mermaid
 sequenceDiagram
     autonumber
-    participant H as ハーネス
-    participant C as 批評者
-    participant R as 修正者
-    H->>C: critique(draft, round=1)
-    C-->>H: Critique{scores, suggestions}
-    H->>R: revise(draft, suggestions)
-    R-->>H: 修正されたドラフト
-    H->>H: 収束チェック
-    alt 収束
-        H-->>H: 理由で停止
-    else 継続
-        H->>C: critique(draft, round=2)
+    participant H as "ハーネス"
+    participant C as "批評者"
+    participant R as "修正者"
+    H->>C: "批評(ドラフト, ラウンド=1)"
+    C-->>H: "批評{スコア, 提案}"
+    H->>R: "修正(ドラフト, 提案)"
+    R-->>H: "修正されたドラフト"
+    H->>H: "収束チェック"
+    alt "収束"
+        H-->>H: "理由で停止"
+    else "継続"
+        H->>C: "批評(ドラフト, ラウンド=2)"
     end
 ```
 

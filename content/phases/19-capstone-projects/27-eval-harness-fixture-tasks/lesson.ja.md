@@ -27,10 +27,10 @@
 
 ```mermaid
 flowchart LR
-  F1[fixtures/task_001/<br/>task.json + expected/] --> Harness
-  F2[fixtures/task_002/<br/>...] --> Harness
-  Harness[Harness<br/>for each task:<br/>setup / run agent k samples /<br/>verify each sample /<br/>record latency, cost]
-  Harness --> Report[EvalReport<br/>pass@1 / pass@k<br/>mean ms / p95 ms<br/>mean cost]
+  F1["fixtures/task_001/\ntask.json + expected/"] --> Harness
+  F2["fixtures/task_002/\n..."] --> Harness
+  Harness["ハーネス\nタスクごとに:\nセットアップ / エージェントを k サンプル実行 /\n各サンプルを検証 /\nレイテンシー、コストを記録"]
+  Harness --> Report["EvalReport\npass@1 / pass@k\n平均 ms / p95 ms\n平均コスト"]
 ```
 
 `FixtureTask`は小さなJSONファイルとオプションの`expected/`ディレクトリだ。JSONは`id`、`goal`（エージェントに供給されるプロンプト）、`setup`ブロック（スクラッチディレクトリにドロップするファイル）、`verifier`ブロックを宣言する。ベリファイアーブロックはハーネスのベリファイアーレジストリ内の関数を名前で指定し、その引数を提供する。
@@ -49,10 +49,10 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  Harness[EvalHarness] -->|load| Task[FixtureTask<br/>goal / setup / verifier]
-  Harness --> Loop[for each task:<br/>prepare scratch dir from setup<br/>for sample in range k:<br/>run candidate task, scratch_dir -> SampleResult<br/>verify sample, task -> bool<br/>record per-task aggregate]
-  Loop --> TaskReport[TaskReport<br/>task_id / k / passes / pass_rate<br/>mean_latency / mean_cost]
-  TaskReport -->|aggregate| EvalReport[EvalReport<br/>total tasks / pass@1 / pass@k / p95 latency]
+  Harness["EvalHarness"] -->|"ロード"| Task["FixtureTask\ngoal / setup / verifier"]
+  Harness --> Loop["タスクごとに:\nsetup からスクラッチディレクトリを準備\nfor sample in range k:\n候補 task, scratch_dir を実行 → SampleResult\nサンプル, task を検証 → bool\nタスクごとの集計を記録"]
+  Loop --> TaskReport["TaskReport\ntask_id / k / passes / pass_rate\nmean_latency / mean_cost"]
+  TaskReport -->|"集計"| EvalReport["EvalReport\n総タスク数 / pass@1 / pass@k / p95 レイテンシー"]
 ```
 
 候補はcallable: `Callable[[FixtureTask, str], SampleResult]`だ。ハーネスは`tempfile.mkdtemp()`を通じてスクラッチディレクトリを作成し、そのパスをプレーン文字列として渡す。ハーネスは候補がどのように動作するかを気にしない。候補は決定論的なパッチアプライアー（ハーネスのセルフテストに便利）、本物のLLMエージェント、ファザーになれる。コントラクトはSampleResultだ。

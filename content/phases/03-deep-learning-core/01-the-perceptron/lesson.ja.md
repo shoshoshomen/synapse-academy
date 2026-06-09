@@ -29,9 +29,9 @@ graph LR
     x1["x1"] -- "w1" --> sum["Σ(wi*xi) + b"]
     x2["x2"] -- "w2" --> sum
     x3["x3"] -- "w3" --> sum
-    bias["bias"] --> sum
+    bias["バイアス"] --> sum
     sum --> step["step(z)"]
-    step --> out["output (0 or 1)"]
+    step --> out["出力 (0 or 1)"]
 ```
 
 ステップ関数は容赦ない。重み付き和にバイアスを加えた値が0以上なら1を出力し、0未満なら0を出力する。
@@ -209,13 +209,13 @@ for inputs, expected in xor_data:
 
 ```mermaid
 graph LR
-    x1["x1"] --> OR["OR neuron"]
-    x1 --> NAND["NAND neuron"]
+    x1["x1"] --> OR["ORニューロン"]
+    x1 --> NAND["NANDニューロン"]
     x2["x2"] --> OR
     x2 --> NAND
-    OR --> AND["AND neuron"]
+    OR --> AND["ANDニューロン"]
     NAND --> AND
-    AND --> out["output"]
+    AND --> out["出力"]
 ```
 
 ```python

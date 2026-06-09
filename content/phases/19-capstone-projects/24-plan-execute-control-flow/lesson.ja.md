@@ -56,12 +56,12 @@ def planner(goal: str, history: list[Step], last_error: str | None) -> list[Step
 ```mermaid
 stateDiagram-v2
     [*] --> EXEC
-    EXEC --> NEXT: success
-    NEXT --> EXEC: n+1 < len(plan)
-    NEXT --> DONE: n+1 == len(plan)
-    EXEC --> REPLAN: failure
-    REPLAN --> EXEC: new plan, replans_used < max_replans
-    REPLAN --> FAILED: replans_used >= max_replans
+    EXEC --> NEXT: "成功"
+    NEXT --> EXEC: "n+1 < len(plan)"
+    NEXT --> DONE: "n+1 == len(plan)"
+    EXEC --> REPLAN: "失敗"
+    REPLAN --> EXEC: "新しいプラン、replans_used < max_replans"
+    REPLAN --> FAILED: "replans_used >= max_replans"
     FAILED --> [*]
     DONE --> [*]
 ```

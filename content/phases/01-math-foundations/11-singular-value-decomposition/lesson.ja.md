@@ -36,8 +36,8 @@ A = U * Sigma * V^T
 
 ```mermaid
 graph LR
-    A["Input space (n-dim)\nData cloud\n(arbitrary orientation)"] -->|"V^T\n(rotate)"| B["Scaled space\nAligned with axes\nthen scaled by Sigma"]
-    B -->|"U\n(rotate)"| C["Output space (m-dim)\nRotated to output\norientation"]
+    A["入力空間 (n次元)\nデータの塊\n(任意の向き)"] -->|"V^T\n(回転)"| B["スケール済み空間\n軸に沿って整列し\nSigmaでスケール"]
+    B -->|"U\n(回転)"| C["出力空間 (m次元)\n出力の向きに\n回転済み"]
 ```
 
 こう考えてみよう。SVD に行列を渡す。すると SVD は言う: 「この行列は球形の入力を取り、まず V^T で回転させ、次に Sigma で楕円体に引き伸ばし、最後に U で楕円体を回転させる」と。特異値は楕円体の各軸の長さだ。
@@ -268,10 +268,10 @@ LSA は生テキストから意味的類似性を捉える最初の成功した�
 
 ```mermaid
 graph TD
-    A["All singular values"] --> B{"Clear gap?"}
-    B -->|"Above gap"| C["Signal: keep these (top k)"]
-    B -->|"Below gap"| D["Noise: discard these"]
-    C --> E["Reconstruct with A_k to get denoised version"]
+    A["全特異値"] --> B{"明確なギャップ？"}
+    B -->|"ギャップより上"| C["信号：これらを保持 (上位k個)"]
+    B -->|"ギャップより下"| D["ノイズ：これらを破棄"]
+    C --> E["A_kで再構成してノイズ除去版を得る"]
 ```
 
 これは信号処理、科学的計測、データクリーニングに使われる。加法性ノイズで汚染された行列があれば、打ち切り SVD は信号とノイズを分離する原理的な方法だ。

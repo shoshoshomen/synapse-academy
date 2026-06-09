@@ -44,13 +44,13 @@ def exact_match(pred, targets):
 
 ```mermaid
 flowchart LR
-    A[pred text] -->|tokenize| P[pred tokens]
-    B[target text] -->|tokenize| T[target tokens]
-    P --> X[multiset intersection]
+    A["予測テキスト"] -->|"トークン化"| P["予測トークン"]
+    B["ターゲットテキスト"] -->|"トークン化"| T["ターゲットトークン"]
+    P --> X["マルチセット積"]
     T --> X
-    X --> PR[precision = inter / pred]
-    X --> RE[recall = inter / target]
-    PR --> F[F1 = 2 P R / P + R]
+    X --> PR["精度 = 積 / 予測"]
+    X --> RE["再現率 = 積 / ターゲット"]
+    PR --> F["F1 = 2 P R / P + R"]
     RE --> F
 ```
 
@@ -64,17 +64,17 @@ BLEUは機械翻訳の標準指標であり、要約の研究にも依然とし�
 
 ```mermaid
 flowchart TD
-    A[candidate tokens] --> B[count n-grams n=1..4]
-    R[reference tokens] --> C[max count per n-gram]
-    B --> D[clipped n-gram count]
+    A["候補トークン"] --> B["n-gramカウント n=1..4"]
+    R["参照トークン"] --> C["n-gramごとの最大カウント"]
+    B --> D["クリップ済みn-gramカウント"]
     C --> D
-    D --> E[modified precision p_n]
-    A --> F[candidate length c]
-    R --> G[reference length r]
-    F --> BP[BP = 1 if c>=r else exp 1 - r/c]
+    D --> E["修正精度 p_n"]
+    A --> F["候補長 c"]
+    R --> G["参照長 r"]
+    F --> BP["BP = 1 if c>=r else exp 1 - r/c"]
     G --> BP
-    E --> M[geometric mean of p_n]
-    M --> S[BLEU = BP * geo mean]
+    E --> M["p_nの幾何平均"]
+    M --> S["BLEU = BP * 幾何平均"]
     BP --> S
 ```
 

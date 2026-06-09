@@ -23,15 +23,15 @@
 
 ```mermaid
 flowchart LR
-  Model[訓練済みモデル] --> PPL[パープレキシティeval<br/>保留LM]
-  Model --> EM[exact-match eval<br/>事実的短形式]
-  Model --> F1[トークンF1 eval<br/>オープンエンド]
-  Model --> J[モックジャッジ<br/>1-5スコアリング]
-  PPL --> R[レポート]
+  Model["訓練済みモデル"] --> PPL["パープレキシティ評価\n保留LM"]
+  Model --> EM["完全一致評価\n事実的短形式"]
+  Model --> F1["トークンF1評価\nオープンエンド"]
+  Model --> J["モックジャッジ\n1-5スコアリング"]
+  PPL --> R["レポート"]
   EM --> R
   F1 --> R
   J --> R
-  R --> A[(集計スコア)]
+  R --> A[("集計スコア")]
 ```
 
 各evalは `(モデル, データセット) -> EvalResult` からの関数です。結果はメトリクス値、検査用のサンプルごとの詳細、集計のための名前を運びます。パイプラインはどのevalを実行するかとその重み付けを示すコンフィグでそれらを組み合わせます。
@@ -81,11 +81,11 @@ evalはバッチごとに非パッド位置にわたる `-log p(トークン)` �
 
 ```mermaid
 flowchart LR
-  Inst[指示] --> Judge[モックジャッジ]
-  Pred[予測] --> Judge
-  Ref[参照] --> Judge
-  Judge --> Score[1-5スコア]
-  Judge --> Why[根拠]
+  Inst["指示"] --> Judge["モックジャッジ"]
+  Pred["予測"] --> Judge
+  Ref["参照"] --> Judge
+  Judge --> Score["1-5スコア"]
+  Judge --> Why["根拠"]
 ```
 
 ## 集計
@@ -103,19 +103,19 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  Data[(保留フィクスチャ<br/>LM / EM / F1 / ジャッジ)] --> Suite[EvalSuite]
-  Model[訓練済みモデル] --> Suite
-  Suite --> PE[perplexity_eval]
-  Suite --> EE[exact_match_eval]
-  Suite --> FE[token_f1_eval]
-  Suite --> JE[judge_eval]
-  PE --> Agg[Aggregator]
+  Data[("保留フィクスチャ\nLM / EM / F1 / ジャッジ")] --> Suite["評価スイート"]
+  Model["訓練済みモデル"] --> Suite
+  Suite --> PE["パープレキシティ評価"]
+  Suite --> EE["完全一致評価"]
+  Suite --> FE["トークンF1評価"]
+  Suite --> JE["ジャッジ評価"]
+  PE --> Agg["集計器"]
   EE --> Agg
   FE --> Agg
   JE --> Agg
-  Agg --> R[FinalReport<br/>タスクごと + 集計]
-  R --> JSON[(report.json)]
-  R --> Pretty[stdoutテーブル]
+  Agg --> R["最終レポート\nタスクごと + 集計"]
+  R --> JSON[("report.json")]
+  R --> Pretty["標準出力テーブル"]
 ```
 
 `EvalSuite` は薄いオーケストレーターです。各個別evalは `(モデル, トークナイザー, データセット, コンフィグ)` を取り `EvalResult` を返す自由関数です。`Aggregator` は結果を収集して最終レポートを生成します。デモはテーブルを出力し、下流のCIが取り込めるJSONコピーを書きます。

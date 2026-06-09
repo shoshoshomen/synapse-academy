@@ -27,12 +27,12 @@ OpenTelemetry GenAIセマンティック規約はまさにこのために存在�
 
 ```mermaid
 flowchart TD
-  Call[tool call / model call / gate decision] --> Span["SpanBuilder.span()<br/>context manager"]
-  Span --> GenAI[GenAISpan<br/>trace_id / span_id / name<br/>attributes:<br/>gen_ai.system<br/>gen_ai.request.*<br/>gen_ai.usage.*<br/>start, end, status]
-  GenAI --> Writer[JSONLWriter]
-  GenAI --> Metrics[MetricsRegistry]
-  Writer --> Traces[traces.jsonl]
-  Metrics --> Prom[/metrics text/]
+  Call["ツール呼び出し / モデル呼び出し / ゲート判断"] --> Span["SpanBuilder.span()\nコンテキストマネージャー"]
+  Span --> GenAI["GenAISpan\ntrace_id / span_id / name\n属性:\ngen_ai.system\ngen_ai.request.*\ngen_ai.usage.*\nstart, end, status"]
+  GenAI --> Writer["JSONLWriter"]
+  GenAI --> Metrics["MetricsRegistry"]
+  Writer --> Traces["traces.jsonl"]
+  Metrics --> Prom["/metrics テキスト"]
 ```
 
 ハーネスのすべての操作がスパンを生成する。スパンはトレースID（エージェント呼び出し全体）、スパンID（この1つの操作）、名前（例: `gen_ai.chat`、`gen_ai.tool.execution`）、GenAI規約に従う属性、開始と終了時刻、ステータスを持つ。
@@ -47,10 +47,10 @@ GenAI規約はこれらの属性キーを標準化する: `gen_ai.system`（ど�
 
 ```mermaid
 flowchart LR
-  Harness[AgentHarness<br/>lessons 25-27] --> Span[SpanBuilder<br/>context mgr / attrs / status]
-  Span --> Exporter[JSONLExporter<br/>traces.jsonl]
-  Span --> Metrics[MetricsRegistry<br/>counters / histograms]
-  Metrics --> Prom[Prometheus text<br/>exposition]
+  Harness["AgentHarness\nレッスン 25-27"] --> Span["SpanBuilder\nコンテキストマネージャー / 属性 / ステータス"]
+  Span --> Exporter["JSONLExporter\ntraces.jsonl"]
+  Span --> Metrics["MetricsRegistry\nカウンター / ヒストグラム"]
+  Metrics --> Prom["Prometheus テキスト\nエクスポジション"]
 ```
 
 スパンビルダーは`span(name, attrs)`メソッドを持つ小さなクラスで、コンテキストマネージャーを返す。コンテキストマネージャーはエンター時に開始時刻を記録し、エグジット時に終了時刻を記録し、例外が発生した場合に添付し、完成したスパンをエクスポーターにプッシュする。

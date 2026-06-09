@@ -36,23 +36,23 @@ LLM機能の構築には一日かかる。LLM製品の出荷には数ヶ月か�
 
 ```mermaid
 graph LR
-    Client["Client<br/>(Web, Mobile, API)"]
-    GW["API Gateway<br/>Auth + Rate Limit"]
-    PR["Prompt Router<br/>Template Selection"]
-    Cache["Semantic Cache<br/>Embedding Lookup"]
-    LLM["LLM Call<br/>Streaming"]
-    Guard["Guardrails<br/>Input + Output"]
-    Eval["Eval Logger<br/>Quality Tracking"]
-    Cost["Cost Tracker<br/>Token Accounting"]
-    Resp["Response<br/>SSE Stream"]
+    Client["クライアント<br/>（Web・モバイル・API）"]
+    GW["APIゲートウェイ<br/>認証 + レート制限"]
+    PR["プロンプトルーター<br/>テンプレート選択"]
+    Cache["セマンティックキャッシュ<br/>埋め込みルックアップ"]
+    LLM["LLMコール<br/>ストリーミング"]
+    Guard["ガードレール<br/>入力 + 出力"]
+    Eval["評価ロガー<br/>品質追跡"]
+    Cost["コストトラッカー<br/>トークン計算"]
+    Resp["レスポンス<br/>SSEストリーム"]
 
     Client --> GW --> Guard
-    Guard -->|Input Check| PR
+    Guard -->|"入力チェック"| PR
     PR --> Cache
-    Cache -->|Hit| Resp
-    Cache -->|Miss| LLM
+    Cache -->|"ヒット"| Resp
+    Cache -->|"ミス"| LLM
     LLM --> Guard
-    Guard -->|Output Check| Eval
+    Guard -->|"出力チェック"| Eval
     Eval --> Cost --> Resp
 ```
 
@@ -172,15 +172,15 @@ claude-sonnet-4-20250514 -> gpt-4o -> gpt-4o-mini -> cached response -> "Service
 
 ```mermaid
 graph TD
-    R["Incoming Request"]
+    R["受信リクエスト"]
     H["Hash(user_id) mod 100"]
-    A["Prompt v1 (90%)"]
-    B["Prompt v2 (10%)"]
-    L["Log Both Results"]
+    A["プロンプト v1 (90%)"]
+    B["プロンプト v2 (10%)"]
+    L["両結果をログ"]
     
     R --> H
-    H -->|0-89| A
-    H -->|90-99| B
+    H -->|"0-89"| A
+    H -->|"90-99"| B
     A --> L
     B --> L
 ```

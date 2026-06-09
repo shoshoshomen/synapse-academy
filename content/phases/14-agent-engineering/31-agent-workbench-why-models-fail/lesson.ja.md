@@ -36,13 +36,13 @@
 
 ```mermaid
 flowchart LR
-  Task[タスク] --> Scope[スコープコントラクト]
-  Scope --> State[リポジトリメモリ]
-  State --> Agent[エージェントループ]
-  Agent --> Feedback[ランタイムフィードバック]
-  Feedback --> Verify[検証ゲート]
-  Verify --> Review[レビュアー]
-  Review --> Handoff[ハンドオフ]
+  Task["タスク"] --> Scope["スコープコントラクト"]
+  Scope --> State["リポジトリメモリ"]
+  State --> Agent["エージェントループ"]
+  Agent --> Feedback["ランタイムフィードバック"]
+  Feedback --> Verify["検証ゲート"]
+  Verify --> Review["レビュアー"]
+  Review --> Handoff["ハンドオフ"]
   Handoff --> State
 ```
 

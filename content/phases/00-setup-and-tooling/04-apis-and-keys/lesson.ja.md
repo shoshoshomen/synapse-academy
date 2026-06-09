@@ -18,10 +18,10 @@
 
 ```mermaid
 sequenceDiagram
-    participant C as Your Code
-    participant S as API Server
-    C->>S: HTTP Request (with API key)
-    S->>C: HTTP Response (JSON)
+    participant C as "あなたのコード"
+    participant S as "APIサーバー"
+    C->>S: "HTTPリクエスト (APIキー付き)"
+    S->>C: "HTTPレスポンス (JSON)"
 ```
 
 すべてのAPI呼び出しには以下が含まれる:

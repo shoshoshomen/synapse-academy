@@ -22,19 +22,19 @@
 
 ```mermaid
 flowchart TD
-  Source[リモートシャードURL] --> Plan[マニフェストエントリを計画]
-  Plan --> Download[Rangeを持つストリーミングGET]
-  Download --> Verify[部分バイトをハッシュ]
-  Verify -->|不一致| Resume[Rangeリクエストを発行]
-  Verify -->|一致| Decompress[zstdを通してストリーミング]
-  Decompress --> Iterate[JSONLドキュメントを反復]
-  Iterate --> Sig[MinHashシグネチャ]
-  Sig --> Bucket[LSHバケットルックアップ]
-  Bucket -->|新規| Keep[シャードに追記]
-  Bucket -->|近似重複| Drop[評決で削除]
-  Keep --> Manifest[マニフェストエントリを更新]
+  Source["リモートシャードURL"] --> Plan["マニフェストエントリを計画"]
+  Plan --> Download["Rangeを持つストリーミングGET"]
+  Download --> Verify["部分バイトをハッシュ"]
+  Verify -->|"不一致"| Resume["Rangeリクエストを発行"]
+  Verify -->|"一致"| Decompress["zstdを通してストリーミング"]
+  Decompress --> Iterate["JSONLドキュメントを反復"]
+  Iterate --> Sig["MinHashシグネチャ"]
+  Sig --> Bucket["LSHバケットルックアップ"]
+  Bucket -->|"新規"| Keep["シャードに追記"]
+  Bucket -->|"近似重複"| Drop["評決で削除"]
+  Keep --> Manifest["マニフェストエントリを更新"]
   Drop --> Manifest
-  Manifest --> Done[シャードマニフェスト出力]
+  Manifest --> Done["シャードマニフェスト出力"]
 ```
 
 ### `urllib` でのストリーミング

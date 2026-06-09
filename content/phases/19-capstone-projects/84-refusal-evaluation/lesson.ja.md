@@ -17,13 +17,13 @@
 
 ```mermaid
 flowchart LR
-  P[labeled prompt set] --> M[mock LLM]
-  M --> R[refusal classifier]
-  R --> A[aggregator]
-  A --> UR[under-refusal rate]
-  A --> OR[over-refusal rate]
-  A --> CAL[calibration ECE]
-  A --> CAT[per-category breakdown]
+  P["ラベル付きプロンプトセット"] --> M["モックLLM"]
+  M --> R["拒否分類器"]
+  R --> A["アグリゲーター"]
+  A --> UR["拒否不足率"]
+  A --> OR["過剰拒否率"]
+  A --> CAL["キャリブレーションECE"]
+  A --> CAT["カテゴリごとの内訳"]
 ```
 
 モックLLMポリシーはテストが監査可能なように意図的にシンプルだ。デフォルトの`MockPolicyStrict`は禁止正規表現パターンのリストのいずれかに一致するプロンプトを拒否し、それ以外は答える。`MockPolicyOverCautious`は意図的に過剰拒否するようにずっと広いパターンセットで拒否する。`MockPolicyLeaky`は最も明白なケースのみ拒否するので意図的に拒否不足になる。3つのポリシーはフレームワークが検出すべきスクリプト化されたバグだ。

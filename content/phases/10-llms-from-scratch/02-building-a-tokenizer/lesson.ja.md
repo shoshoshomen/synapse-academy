@@ -30,11 +30,11 @@ GPT-2のトークナイザーは50,257トークンを持つ。Llama 3は128,256�
 
 ```mermaid
 graph LR
-    A[生テキスト] --> B[正規化]
-    B --> C[前処理]
-    C --> D[BPEマージ]
-    D --> E[特殊トークン]
-    E --> F[トークンID]
+    A["生テキスト"] --> B["正規化"]
+    B --> C["前処理"]
+    C --> D["BPEマージ"]
+    D --> E["特殊トークン"]
+    E --> F["トークンID"]
 
     style A fill:#1a1a2e,stroke:#e94560,color:#fff
     style B fill:#1a1a2e,stroke:#e94560,color:#fff

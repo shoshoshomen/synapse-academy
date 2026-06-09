@@ -22,10 +22,10 @@
 
 ```mermaid
 flowchart LR
-  Router[AGENTS.md] --> Rules[docs/agent-rules.md]
-  Rules --> Checker[rule_checker.py]
-  Checker --> Report[rule_report.json]
-  Report --> Reviewer[レビュアー]
+  Router["AGENTS.md"] --> Rules["docs/agent-rules.md"]
+  Rules --> Checker["rule_checker.py"]
+  Checker --> Report["rule_report.json"]
+  Report --> Reviewer["レビュアー"]
 ```
 
 ### ほとんどのルールをカバーする5つのカテゴリー

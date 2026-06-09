@@ -22,17 +22,17 @@
 
 ```mermaid
 flowchart TD
-  Forward[autocaster内のフォワード] --> Loss[FP32での損失]
-  Loss --> Scale[scaler.scale loss]
-  Scale --> Backward[バックワードパス FP16勾配]
-  Backward --> Unscale[scaler.unscale optimizer]
-  Unscale --> NormCheck[グローバルL2ノルムを計算]
-  NormCheck --> Detect{NaNまたはInf?}
-  Detect -- はい --> Skip[ステップスキップ + ログ + scaler.update半減]
-  Detect -- いいえ --> Clip[max_normに勾配をクリップ]
-  Clip --> StepOpt[scaler.step optimizer]
-  StepOpt --> Update[scaler.update倍増または半減]
-  Update --> NextStep[次のステップ]
+  Forward["自動キャスト内のフォワード"] --> Loss["FP32での損失"]
+  Loss --> Scale["スケーラーで損失をスケール"]
+  Scale --> Backward["バックワードパス FP16勾配"]
+  Backward --> Unscale["スケーラーでオプティマイザーをアンスケール"]
+  Unscale --> NormCheck["グローバルL2ノルムを計算"]
+  NormCheck --> Detect{"NaNまたはInf?"}
+  Detect -- "はい" --> Skip["ステップスキップ + ログ + スケーラー半減更新"]
+  Detect -- "いいえ" --> Clip["max_normに勾配をクリップ"]
+  Clip --> StepOpt["スケーラーでオプティマイザーをステップ"]
+  StepOpt --> Update["スケーラー倍増または半減更新"]
+  Update --> NextStep["次のステップ"]
   Skip --> NextStep
 ```
 

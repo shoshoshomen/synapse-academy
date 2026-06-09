@@ -24,11 +24,11 @@
 
 ```mermaid
 flowchart LR
-    V["Video clip<br/>(T frames)"] --> A1["2D + pool<br/>run 2D CNN per frame,<br/>average over time"]
-    V --> A2["3D conv<br/>convolve over<br/>T x H x W"]
-    V --> A3["Spatio-temporal<br/>transformer<br/>attention over<br/>(t, h, w) tokens"]
+    V["動画クリップ\n(T フレーム)"] --> A1["2D + プール\nフレームごとに2D CNNを実行,\n時間方向に平均"]
+    V --> A2["3D畳み込み\nT x H x W で畳み込む"]
+    V --> A3["時空間\nトランスフォーマー\n(t, h, w)トークンへのアテンション"]
 
-    A1 --> C["Logits"]
+    A1 --> C["ロジット"]
     A2 --> C
     A3 --> C
 

@@ -54,15 +54,15 @@ Equivalently:
 
 ```mermaid
 flowchart LR
-    X0["x_0<br/>(clean image)"] --> Q1["q(x_t|x_0)<br/>add noise"]
-    Q1 --> XT["x_t<br/>(noisy)"]
+    X0["x_0\n(クリーンな画像)"] --> Q1["q(x_t|x_0)\nノイズを追加"]
+    Q1 --> XT["x_t\n(ノイズあり)"]
     XT --> MODEL["model(x_t, t)"]
-    MODEL --> EPS["predicted epsilon"]
-    EPS --> LOSS["MSE against<br/>true epsilon"]
+    MODEL --> EPS["予測されたイプシロン"]
+    EPS --> LOSS["真のイプシロンに対する\nMSE"]
 
-    XT -.->|sampling| STEP["p(x_{t-1}|x_t)"]
+    XT -.->|"サンプリング"| STEP["p(x_{t-1}|x_t)"]
     STEP -.-> XT1["x_{t-1}"]
-    XT1 -.->|repeat 1000x| X0S["x_0 (sampled)"]
+    XT1 -.->|"1000回繰り返す"| X0S["x_0\n(サンプリング済み)"]
 
     style X0 fill:#dcfce7,stroke:#16a34a
     style MODEL fill:#fef3c7,stroke:#d97706

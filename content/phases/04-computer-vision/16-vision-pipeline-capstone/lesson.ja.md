@@ -24,15 +24,15 @@
 
 ```mermaid
 flowchart LR
-    REQ["HTTP request<br/>+ image bytes"] --> LOAD["Decode<br/>+ preprocess"]
-    LOAD --> DET["Detector<br/>(YOLO / Mask R-CNN)"]
-    DET --> CROP["Crop + resize<br/>each detection"]
-    CROP --> CLS["Classifier<br/>(ConvNeXt-Tiny)"]
-    CLS --> AGG["Aggregate<br/>detections + classes"]
-    AGG --> SCHEMA["Pydantic<br/>validation"]
-    SCHEMA --> RESP["JSON response"]
+    REQ["HTTPリクエスト\n+ 画像バイト"] --> LOAD["デコード\n+ 前処理"]
+    LOAD --> DET["検出器\n(YOLO / Mask R-CNN)"]
+    DET --> CROP["各検出結果を\nクロップ + リサイズ"]
+    CROP --> CLS["分類器\n(ConvNeXt-Tiny)"]
+    CLS --> AGG["検出 + クラスを\n集約"]
+    AGG --> SCHEMA["Pydantic\nバリデーション"]
+    SCHEMA --> RESP["JSONレスポンス"]
 
-    REQ -.->|error| RESP
+    REQ -.->|"エラー"| RESP
 
     style DET fill:#fef3c7,stroke:#d97706
     style CLS fill:#dbeafe,stroke:#2563eb

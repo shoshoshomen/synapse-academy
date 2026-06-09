@@ -22,11 +22,11 @@ AIエンジニアリングのエディターセットアップには5つのこ�
 
 ```mermaid
 graph TD
-    L5["5. Remote Development<br/>SSH into GPU boxes, cloud VMs"] --> L4
-    L4["4. Terminal Integration<br/>Run scripts, debug, monitor GPU"] --> L3
-    L3["3. AI-Specific Settings<br/>Auto-format, type checking, rulers"] --> L2
-    L2["2. Extensions<br/>Python, Jupyter, Pylance, GitLens"] --> L1
-    L1["1. Base Editor<br/>VS Code — free, extensible, universal"]
+    L5["5. リモート開発<br/>GPUボックス、クラウドVMへのSSH接続"] --> L4
+    L4["4. ターミナル統合<br/>スクリプト実行、デバッグ、GPU監視"] --> L3
+    L3["3. AI固有の設定<br/>自動フォーマット、型チェック、ルーラー"] --> L2
+    L2["2. 拡張機能<br/>Python, Jupyter, Pylance, GitLens"] --> L1
+    L1["1. ベースエディター<br/>VS Code — 無料、拡張可能、汎用"]
 ```
 
 ## 構築

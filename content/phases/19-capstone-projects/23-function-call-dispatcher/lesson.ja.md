@@ -16,18 +16,18 @@
 
 ```mermaid
 flowchart TD
-    loop[harness loop]
-    disp[dispatcher]
-    reg[tool registry]
-    handler[handler]
+    loop["ハーネスループ"]
+    disp["ディスパッチャー"]
+    reg["ツールレジストリ"]
+    handler["ハンドラー"]
     loop --> disp
-    disp -->|get name| reg
-    disp -->|validate args| reg
-    disp -->|asyncio.wait_for handler args timeout| handler
-    handler -->|success| disp
-    handler -->|TimeoutError -> retry or fail| disp
-    handler -->|Exception -> map to error code| disp
-    disp -->|Ok result or DispatchError| loop
+    disp -->|"名前を取得"| reg
+    disp -->|"args を検証"| reg
+    disp -->|"asyncio.wait_for handler args timeout"| handler
+    handler -->|"成功"| disp
+    handler -->|"TimeoutError → リトライまたは失敗"| disp
+    handler -->|"Exception → エラーコードにマップ"| disp
+    disp -->|"Ok結果 または DispatchError"| loop
 ```
 
 ディスパッチャーがタイマー、リトライ、冪等性について知る唯一の層だ。ループは知らない。レジストリは知らない。ハンドラーは知らない。その分離が要点だ。
@@ -84,34 +84,34 @@ DispatchError
 
 ```mermaid
 flowchart TD
-    start([caller: dispatch name, args, opts])
-    validate[registry.validate name, args]
-    schema_err[DispatchError kind=schema]
-    idem_check{idempotency cache?}
-    in_flight[await existing future]
-    cached[return cached result]
-    attempt[asyncio.wait_for handler args, timeout]
-    success[cache + return result]
-    timeout_branch{TimeoutError + idempotent?}
-    retry[retry with backoff]
-    fail[DispatchError]
-    transient_branch{TransientError?}
-    other[map Exception to kind, no retry]
-    exhausted[DispatchError]
+    start(["呼び出し元: dispatch name, args, opts"])
+    validate["registry.validate name, args"]
+    schema_err["DispatchError kind=schema"]
+    idem_check{"冪等性キャッシュ?"}
+    in_flight["既存 future を待機"]
+    cached["キャッシュ結果を返す"]
+    attempt["asyncio.wait_for handler args, timeout"]
+    success["キャッシュ + 結果を返す"]
+    timeout_branch{"TimeoutError + 冪等?"}
+    retry["バックオフでリトライ"]
+    fail["DispatchError"]
+    transient_branch{"TransientError?"}
+    other["Exception を kind にマップ、リトライなし"]
+    exhausted["DispatchError"]
 
     start --> validate
-    validate -->|errors| schema_err
-    validate -->|ok| idem_check
-    idem_check -->|hit in flight| in_flight
-    idem_check -->|hit recent| cached
-    idem_check -->|miss| attempt
+    validate -->|"エラー"| schema_err
+    validate -->|"ok"| idem_check
+    idem_check -->|"処理中にヒット"| in_flight
+    idem_check -->|"直近にヒット"| cached
+    idem_check -->|"ミス"| attempt
     attempt --> success
     attempt --> timeout_branch
-    timeout_branch -->|yes| retry
-    timeout_branch -->|no| fail
+    timeout_branch -->|"yes"| retry
+    timeout_branch -->|"no"| fail
     attempt --> transient_branch
-    transient_branch -->|yes, attempts left| retry
-    transient_branch -->|exhausted| exhausted
+    transient_branch -->|"yes、試行回数残あり"| retry
+    transient_branch -->|"枯渇"| exhausted
     attempt --> other
     retry --> attempt
 ```

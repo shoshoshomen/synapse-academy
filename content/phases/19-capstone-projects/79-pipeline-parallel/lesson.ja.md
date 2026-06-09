@@ -20,12 +20,12 @@ fp16の700億パラメータモデルはパラメータだけで140GBが必要�
 
 ```mermaid
 flowchart LR
-  R0[rank 0: stage 0 / layer 0] --> R1[rank 1: stage 1 / layer 1]
-  R1 --> R2[rank 2: stage 2 / layer 2]
-  R2 --> R3[rank 3: stage 3 / loss]
-  R3 -.backward.-> R2
-  R2 -.backward.-> R1
-  R1 -.backward.-> R0
+  R0["ランク0: ステージ0 / レイヤー0"] --> R1["ランク1: ステージ1 / レイヤー1"]
+  R1 --> R2["ランク2: ステージ2 / レイヤー2"]
+  R2 --> R3["ランク3: ステージ3 / 損失"]
+  R3 -."バックワード".-> R2
+  R2 -."バックワード".-> R1
+  R1 -."バックワード".-> R0
 ```
 
 ### GPipeスケジュール

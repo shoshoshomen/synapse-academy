@@ -22,18 +22,18 @@
 
 ```mermaid
 flowchart LR
-    A[生コーパステキスト] --> B[tokenizer.encode]
-    B --> C[IDの平坦なリスト]
-    C --> D[スライディングウィンドウスライサー]
-    D --> E[(id_window_0)]
-    D --> F[(id_window_1)]
-    D --> G[(id_window_n)]
-    E --> H[PyTorch Dataset]
+    A["生コーパステキスト"] --> B["トークナイザーエンコード"]
+    B --> C["IDの平坦なリスト"]
+    C --> D["スライディングウィンドウスライサー"]
+    D --> E[("IDウィンドウ 0")]
+    D --> F[("IDウィンドウ 1")]
+    D --> G[("IDウィンドウ n")]
+    E --> H["PyTorchデータセット"]
     F --> H
     G --> H
-    H --> I[シードされたシャッフルを持つDataLoader]
-    I --> J[B x T+1 IDのバッチ]
-    J --> K[入力とターゲットに分割]
+    H --> I["シードされたシャッフルを持つデータローダー"]
+    I --> J["B x T+1 IDのバッチ"]
+    J --> K["入力とターゲットに分割"]
 ```
 
 スライサーはコーパスの境界をまたがることはありません。最後のウィンドウが `T+1` 位置を埋めるのに十分なIDがない場合、スライサーはそれを削除します。テールを `<|pad|>` でパディングすることも有効な選択肢ですが、損失マスクが複雑になります。このレッスンでは削除します。
@@ -50,17 +50,17 @@ PyTorch Datasetには2つの必須メソッドがあります。`__len__` はサ
 
 ```mermaid
 sequenceDiagram
-    participant Trainer
-    participant DataLoader
-    participant Dataset
-    participant Tokenizer
-    Trainer->>DataLoader: iter(dataloader)
-    DataLoader->>Dataset: __len__
-    DataLoader->>Dataset: __getitem__(i)
-    Dataset->>Dataset: window = ids[start:start+T+1]
-    Dataset->>DataLoader: (input_ids, target_ids)
-    DataLoader->>Trainer: バッチ (B,T) 入力, (B,T) ターゲット
-    Note over Tokenizer,Dataset: tokenizer.encodeはビルド時に1回実行
+    participant Trainer as "トレーナー"
+    participant DataLoader as "データローダー"
+    participant Dataset as "データセット"
+    participant Tokenizer as "トークナイザー"
+    Trainer->>DataLoader: "イテレータ取得"
+    DataLoader->>Dataset: "長さを取得"
+    DataLoader->>Dataset: "アイテム取得(i)"
+    Dataset->>Dataset: "ウィンドウ = ids[start:start+T+1]"
+    Dataset->>DataLoader: "入力IDとターゲットID"
+    DataLoader->>Trainer: "バッチ (B,T) 入力, (B,T) ターゲット"
+    Note over Tokenizer,Dataset: "トークナイザーエンコードはビルド時に1回実行"
 ```
 
 1シフトは `__getitem__` 内で行われます。Datasetは `(input, target)` を返し、`input = window[:-1]`、`target = window[1:]` です。両方ともPyTorchのlongテンソルです。訓練ループはそれらをグラウンドトゥルースとして扱います。

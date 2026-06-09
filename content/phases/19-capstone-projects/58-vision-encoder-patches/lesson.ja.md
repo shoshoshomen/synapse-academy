@@ -20,13 +20,13 @@
 
 ```mermaid
 flowchart LR
-  Image[224x224x3 画像] --> Cut[16x16パッチに切る]
-  Cut --> Grid[14x14 パッチグリッド]
-  Grid --> Flatten[各パッチを平坦化]
-  Flatten --> Proj[線形射影]
-  Proj --> Tokens[hidden次元の196トークン]
-  Tokens --> Pos[2次元サイン波位置を加算]
-  Pos --> Out[最終トークンシーケンス]
+  Image["224x224x3 画像"] --> Cut["16x16パッチに切る"]
+  Cut --> Grid["14x14 パッチグリッド"]
+  Grid --> Flatten["各パッチを平坦化"]
+  Flatten --> Proj["線形射影"]
+  Proj --> Tokens["hidden次元の196トークン"]
+  Tokens --> Pos["2次元サイン波位置を加算"]
+  Pos --> Out["最終トークンシーケンス"]
 ```
 
 ### ピクセルではなくパッチを使う理由

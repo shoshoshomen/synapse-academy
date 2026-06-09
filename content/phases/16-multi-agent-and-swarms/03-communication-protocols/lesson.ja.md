@@ -35,10 +35,10 @@ AIエコシステムは4つのプロトコルで応答した。それぞれが�
 
 ```mermaid
 flowchart TD
-  ANP["ANP — エージェントはどうやって見知らぬ相手を信頼するか？<br/>分散アイデンティティ（DID）、E2EE、メタプロトコル"]
-  A2A["A2A — エージェントはどうやって目標について協力するか？<br/>エージェントカード、タスクライフサイクル、ストリーミング、交渉"]
-  ACP["ACP — エージェントはどうやって監査可能なシステムで通信するか？<br/>実行、軌跡メタデータ、セッション継続性"]
-  MCP["MCP — エージェントはどうやってツールを使うか？<br/>ツール発見、実行、コンテキスト共有"]
+  ANP["ANP — エージェントはどうやって見知らぬ相手を信頼するか？\n分散アイデンティティ（DID）、E2EE、メタプロトコル"]
+  A2A["A2A — エージェントはどうやって目標について協力するか？\nエージェントカード、タスクライフサイクル、ストリーミング、交渉"]
+  ACP["ACP — エージェントはどうやって監査可能なシステムで通信するか？\n実行、軌跡メタデータ、セッション継続性"]
+  MCP["MCP — エージェントはどうやってツールを使うか？\nツール発見、実行、コンテキスト共有"]
 
   style ANP fill:#f3e8ff,stroke:#7c3aed
   style A2A fill:#dbeafe,stroke:#2563eb
@@ -54,8 +54,8 @@ MCPはフェーズ13で詳しくカバーしている。簡単な概要：MCPは
 
 ```mermaid
 sequenceDiagram
-    participant Agent as エージェント（クライアント）
-    participant MCP1 as MCPサーバー<br/>（データベース、API、ファイル）
+    participant Agent as "エージェント（クライアント）"
+    participant MCP1 as "MCPサーバー\n（データベース、API、ファイル）"
 
     Agent->>MCP1: ツール一覧
     MCP1-->>Agent: ツール定義
@@ -77,23 +77,23 @@ A2Aは**ピアツーピアエージェントコラボレーション**のため�
 
 ```mermaid
 sequenceDiagram
-    participant Client as クライアントエージェント
-    participant Remote as リモートエージェント
+    participant Client as "クライアントエージェント"
+    participant Remote as "リモートエージェント"
 
     Client->>Remote: GET /.well-known/agent-card.json
-    Remote-->>Client: エージェントカード（スキル、モード、セキュリティ）
+    Remote-->>Client: "エージェントカード（スキル、モード、セキュリティ）"
 
     Client->>Remote: POST /message:send
-    Remote-->>Client: タスク（submitted/working）
+    Remote-->>Client: "タスク（submitted/working）"
 
     alt ポーリング
         Client->>Remote: GET /tasks/{id}
-        Remote-->>Client: タスクステータス + アーティファクト
+        Remote-->>Client: "タスクステータス + アーティファクト"
     else ストリーミング
         Client->>Remote: POST /message:stream
-        Remote-->>Client: SSE: statusUpdate
-        Remote-->>Client: SSE: artifactUpdate
-        Remote-->>Client: SSE: completed
+        Remote-->>Client: "SSE: statusUpdate"
+        Remote-->>Client: "SSE: artifactUpdate"
+        Remote-->>Client: "SSE: completed"
     end
 ```
 
@@ -289,14 +289,14 @@ ACPは**エンタープライズプロトコル**だ。多くのサマリーが�
 ```mermaid
 sequenceDiagram
     participant Client
-    participant ACP as ACPエージェント
-    participant Audit as 監査ログ
+    participant ACP as "ACPエージェント"
+    participant Audit as "監査ログ"
 
     Client->>ACP: POST /runs (mode: sync)
     ACP->>ACP: リクエストを処理...
-    ACP->>Audit: 軌跡を記録：<br/>推論 + ツール呼び出し
-    ACP-->>Client: レスポンス + TrajectoryMetadata
-    Note over Audit: すべてのステップが記録される：<br/>tool_name, tool_input,<br/>tool_output, reasoning
+    ACP->>Audit: "軌跡を記録：推論 + ツール呼び出し"
+    ACP-->>Client: "レスポンス + TrajectoryMetadata"
+    Note over Audit: "すべてのステップが記録される：tool_name, tool_input, tool_output, reasoning"
 ```
 
 #### ACPにおけるエージェント発見
@@ -305,10 +305,10 @@ ACPは4つの発見方法を定義している：
 
 ```mermaid
 graph LR
-    A[エージェント発見] --> B["ランタイム<br/>GET /agents"]
-    A --> C["オープン<br/>.well-known/agent.yml"]
-    A --> D["レジストリ<br/>集中型カタログ"]
-    A --> E["埋め込み<br/>コンテナラベル"]
+    A["エージェント発見"] --> B["ランタイム\nGET /agents"]
+    A --> C["オープン\n.well-known/agent.yml"]
+    A --> D["レジストリ\n集中型カタログ"]
+    A --> E["埋め込み\nコンテナラベル"]
 
     style B fill:#dbeafe,stroke:#2563eb
     style C fill:#d1fae5,stroke:#059669
@@ -416,17 +416,17 @@ ANPには3つのレイヤーがある：
 ```mermaid
 graph TB
     subgraph Layer3["レイヤー3：アプリケーションプロトコル"]
-        AD[エージェント記述文書]
-        DISC[発見エンドポイント]
+        AD["エージェント記述文書"]
+        DISC["発見エンドポイント"]
     end
     subgraph Layer2["レイヤー2：メタプロトコル"]
-        NEG[AIによるプロトコル交渉]
-        CODE[動的コード生成]
+        NEG["AIによるプロトコル交渉"]
+        CODE["動的コード生成"]
     end
     subgraph Layer1["レイヤー1：アイデンティティとセキュア通信"]
         DID["did:wba (W3C DID)"]
-        HPKE[HPKE E2EE - RFC 9180]
-        SIG[署名検証]
+        HPKE["HPKE E2EE - RFC 9180"]
+        SIG["署名検証"]
     end
 
     Layer3 --> Layer2
@@ -499,17 +499,17 @@ ANPはウェブオブトラストや承認グラフを使用しない。信頼�
 
 ```mermaid
 sequenceDiagram
-    participant A as エージェントA
-    participant Domain as エージェントAのドメイン
-    participant B as エージェントB
+    participant A as "エージェントA"
+    participant Domain as "エージェントAのドメイン"
+    participant B as "エージェントB"
 
-    A->>B: HTTPリクエスト + DID + 署名
-    B->>Domain: DIDドキュメントを取得（HTTPS）
-    Domain-->>B: DIDドキュメント + 公開鍵
-    B->>B: 公開鍵で署名を検証
-    B-->>A: アクセストークンを発行
-    A->>B: 後続リクエストはトークンを使用
-    Note over A,B: 信頼 = TLSドメイン検証<br/>+ DID署名検証<br/>+ 最小限信頼の原則
+    A->>B: "HTTPリクエスト + DID + 署名"
+    B->>Domain: "DIDドキュメントを取得（HTTPS）"
+    Domain-->>B: "DIDドキュメント + 公開鍵"
+    B->>B: "公開鍵で署名を検証"
+    B-->>A: "アクセストークンを発行"
+    A->>B: "後続リクエストはトークンを使用"
+    Note over A,B: "信頼 = TLSドメイン検証 + DID署名検証 + 最小限信頼の原則"
 ```
 
 信頼は3つのソースから来る：
@@ -535,13 +535,13 @@ sequenceDiagram
 
 ```mermaid
 sequenceDiagram
-    participant A as エージェントA
-    participant B as エージェントB
+    participant A as "エージェントA"
+    participant B as "エージェントB"
 
-    A->>B: protocolNegotiation (candidateProtocols)
-    B->>A: protocolNegotiation (対案)
-    A->>B: protocolNegotiation (accepted)
-    Note over A,B: エージェントが合意したフォーマットを<br/>処理するコードを動的に生成する。<br/>最大10ラウンド、その後タイムアウト。
+    A->>B: "protocolNegotiation (candidateProtocols)"
+    B->>A: "protocolNegotiation (対案)"
+    A->>B: "protocolNegotiation (accepted)"
+    Note over A,B: "エージェントが合意したフォーマットを処理するコードを動的に生成する。最大10ラウンド、その後タイムアウト。"
 ```
 
 エージェントは（最大10ラウンド）フォーマットに合意するまでやり取りし、それを処理するコードを動的に生成する。ステータス値：`negotiating`、`rejected`、`accepted`、`timeout`。
@@ -571,19 +571,19 @@ sequenceDiagram
 ```mermaid
 graph TB
     subgraph org["自社組織"]
-        RA[リサーチエージェント] <-->|A2A| CA[コーディングエージェント]
-        RA -->|MCP| SS[検索サーバー]
-        CA -->|MCP| GS[GitHubサーバー]
-        AUDIT["すべてのエージェントレスポンスに<br/>ACP TrajectoryMetadataが付く"]
+        RA["リサーチエージェント"] <-->|"A2A"| CA["コーディングエージェント"]
+        RA -->|"MCP"| SS["検索サーバー"]
+        CA -->|"MCP"| GS["GitHubサーバー"]
+        AUDIT["すべてのエージェントレスポンスに\nACP TrajectoryMetadataが付く"]
     end
 
     subgraph ext["外部（ANPでDID検証済み）"]
-        EA[外部エージェント]
-        PA[パートナーエージェント]
+        EA["外部エージェント"]
+        PA["パートナーエージェント"]
     end
 
-    RA <-->|ANP + A2A| EA
-    CA <-->|ANP + A2A| PA
+    RA <-->|"ANP + A2A"| EA
+    CA <-->|"ANP + A2A"| PA
 
     style org fill:#f8fafc,stroke:#334155
     style ext fill:#fef2f2,stroke:#991b1b
@@ -1127,13 +1127,13 @@ function signPayload(identity: AgentIdentity, payload: string): string {
 
 ```mermaid
 graph LR
-    REQ[受信リクエスト] --> ANP_V{ANP: DIDを検証}
-    ANP_V -->|有効| A2A_D{A2A: エージェントを発見}
-    ANP_V -->|無効| REJECT[拒否]
-    A2A_D -->|発見| ACP_A[ACP: 実行を監査]
-    A2A_D -->|未発見| REJECT
-    ACP_A --> A2A_T[A2A: タスクを作成]
-    A2A_T --> RESULT[タスク + 監査エントリ]
+    REQ["受信リクエスト"] --> ANP_V{"ANP: DIDを検証"}
+    ANP_V -->|"有効"| A2A_D{"A2A: エージェントを発見"}
+    ANP_V -->|"無効"| REJECT["拒否"]
+    A2A_D -->|"発見"| ACP_A["ACP: 実行を監査"]
+    A2A_D -->|"未発見"| REJECT
+    ACP_A --> A2A_T["A2A: タスクを作成"]
+    A2A_T --> RESULT["タスク + 監査エントリ"]
 
     style ANP_V fill:#d1fae5,stroke:#059669
     style A2A_D fill:#dbeafe,stroke:#2563eb
@@ -1444,17 +1444,17 @@ protocolDemo().catch((err) => {
 
 ```mermaid
 graph TD
-    START{エージェントは<br/>ツールを使う必要があるか？}
-    START -->|Yes| MCP_R[MCPを使う]
-    START -->|No| TALK{エージェント同士が<br/>通信する必要があるか？}
-    TALK -->|No| NONE[プロトコルは<br/>不要]
-    TALK -->|Yes| AUDIT{コンプライアンスのための<br/>監査証跡が必要か？}
-    AUDIT -->|Yes| ACP_R[A2A + ACP<br/>軌跡パターン]
-    AUDIT -->|No| ORG{すべてのエージェントが<br/>自社内にあるか？}
-    ORG -->|Yes| A2A_R[A2A<br/>エージェントカード + タスク]
-    ORG -->|No| INFRA{共有<br/>インフラがあるか？}
-    INFRA -->|Yes| BROKER[A2A + メッセージブローカー]
-    INFRA -->|No| ANP_R[ANP + A2A<br/>DID検証]
+    START{"エージェントはツールを使う必要があるか？"}
+    START -->|"はい"| MCP_R["MCPを使う"]
+    START -->|"いいえ"| TALK{"エージェント同士が通信する必要があるか？"}
+    TALK -->|"いいえ"| NONE["プロトコルは不要"]
+    TALK -->|"はい"| AUDIT{"コンプライアンスのための監査証跡が必要か？"}
+    AUDIT -->|"はい"| ACP_R["A2A + ACP\n軌跡パターン"]
+    AUDIT -->|"いいえ"| ORG{"すべてのエージェントが自社内にあるか？"}
+    ORG -->|"はい"| A2A_R["A2A\nエージェントカード + タスク"]
+    ORG -->|"いいえ"| INFRA{"共有インフラがあるか？"}
+    INFRA -->|"はい"| BROKER["A2A + メッセージブローカー"]
+    INFRA -->|"いいえ"| ANP_R["ANP + A2A\nDID検証"]
 
     style MCP_R fill:#d1fae5,stroke:#059669
     style A2A_R fill:#dbeafe,stroke:#2563eb

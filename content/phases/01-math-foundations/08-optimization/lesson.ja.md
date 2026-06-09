@@ -42,9 +42,9 @@ w = w - lr * gradient
 
 ```mermaid
 graph TD
-    A["* Starting point (high loss)"] --> B["Moving downhill along gradient"]
-    B --> C["Approaching minimum"]
-    C --> D["o Minimum (low loss)"]
+    A["* 出発点（損失大）"] --> B["勾配に沿って下降"]
+    B --> C["最小値に近づく"]
+    C --> D["o 最小値（損失小）"]
 ```
 
 ### 学習率: 最も重要なハイパーパラメータ
@@ -53,18 +53,18 @@ graph TD
 
 ```mermaid
 graph LR
-    subgraph TooLarge["Too Large (lr = 1.0)"]
-        A1["Step 1"] -->|overshoot| A2["Step 2"]
-        A2 -->|overshoot| A3["Step 3"]
-        A3 -->|diverging| A4["..."]
+    subgraph TooLarge["大きすぎる (lr = 1.0)"]
+        A1["ステップ1"] -->|"行き過ぎ"| A2["ステップ2"]
+        A2 -->|"行き過ぎ"| A3["ステップ3"]
+        A3 -->|"発散"| A4["..."]
     end
-    subgraph TooSmall["Too Small (lr = 0.0001)"]
-        B1["Step 1"] -->|tiny step| B2["Step 2"]
-        B2 -->|tiny step| B3["Step 3"]
-        B3 -->|10,000 steps later| B4["Minimum"]
+    subgraph TooSmall["小さすぎる (lr = 0.0001)"]
+        B1["ステップ1"] -->|"微小ステップ"| B2["ステップ2"]
+        B2 -->|"微小ステップ"| B3["ステップ3"]
+        B3 -->|"10,000ステップ後"| B4["最小値"]
     end
-    subgraph JustRight["Just Right (lr = 0.01)"]
-        C1["Start"] --> C2["..."] --> C3["Converged in ~100 steps"]
+    subgraph JustRight["ちょうど良い (lr = 0.01)"]
+        C1["開始"] --> C2["..."] --> C3["~100ステップで収束"]
     end
 ```
 
@@ -99,16 +99,16 @@ w = w - lr * v
 
 ```mermaid
 graph TD
-    subgraph Without["Without Momentum (zigzag, slow)"]
-        W1["Start"] -->|left| W2[" "]
-        W2 -->|right| W3[" "]
-        W3 -->|left| W4[" "]
-        W4 -->|right| W5[" "]
-        W5 -->|left| W6[" "]
-        W6 --> W7["Minimum"]
+    subgraph Without["モーメンタムなし（ジグザグ・遅い）"]
+        W1["開始"] -->|"左"| W2[" "]
+        W2 -->|"右"| W3[" "]
+        W3 -->|"左"| W4[" "]
+        W4 -->|"右"| W5[" "]
+        W5 -->|"左"| W6[" "]
+        W6 --> W7["最小値"]
     end
-    subgraph With["With Momentum (smooth, fast)"]
-        M1["Start"] --> M2[" "] --> M3[" "] --> M4["Minimum"]
+    subgraph With["モーメンタムあり（滑らか・速い）"]
+        M1["開始"] --> M2[" "] --> M3[" "] --> M4["最小値"]
     end
 ```
 
@@ -158,15 +158,15 @@ w = w - lr * m_hat / (sqrt(v_hat) + epsilon)
 
 ```mermaid
 graph LR
-    subgraph Convex["Convex: One valley, one answer"]
+    subgraph Convex["凸関数：谷が1つ、答えも1つ"]
         direction TB
-        CV1["High loss"] --> CV2["Global minimum"]
+        CV1["損失大"] --> CV2["大域的最小値"]
     end
-    subgraph NonConvex["Non-convex: Multiple valleys, saddle points"]
+    subgraph NonConvex["非凸関数：複数の谷・鞍点あり"]
         direction TB
-        NC1["Start"] --> NC2["Local minimum"]
-        NC1 --> NC3["Saddle point"]
-        NC1 --> NC4["Global minimum"]
+        NC1["開始"] --> NC2["局所的最小値"]
+        NC1 --> NC3["鞍点"]
+        NC1 --> NC4["大域的最小値"]
     end
 ```
 
@@ -178,11 +178,11 @@ graph LR
 
 ```mermaid
 graph TD
-    HL["High loss region"] --> SP["Saddle point"]
-    HL --> LM["Local minimum"]
+    HL["損失大の領域"] --> SP["鞍点"]
+    HL --> LM["局所的最小値"]
     SP --> LM
-    SP --> GM["Global minimum"]
-    LM -.->|"shallow barrier"| GM
+    SP --> GM["大域的最小値"]
+    LM -.->|"浅いバリア"| GM
     style HL fill:#ff6666,color:#000
     style SP fill:#ffcc66,color:#000
     style LM fill:#66ccff,color:#000

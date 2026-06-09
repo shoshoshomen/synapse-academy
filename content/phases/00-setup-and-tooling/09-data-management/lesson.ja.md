@@ -18,12 +18,12 @@
 
 ```mermaid
 graph TD
-    A["Hugging Face Hub"] --> B["datasets library"]
-    B --> C["Load / Stream"]
-    C --> D["Local Cache<br/>~/.cache/huggingface/"]
-    B --> E["Format Conversion<br/>CSV, JSON, Parquet, Arrow"]
-    E --> F["Data Splits<br/>train / val / test"]
-    F --> G["Your Training Pipeline"]
+    A["Hugging Face Hub"] --> B["datasetsライブラリ"]
+    B --> C["ロード / ストリーミング"]
+    C --> D["ローカルキャッシュ<br/>~/.cache/huggingface/"]
+    B --> E["フォーマット変換<br/>CSV, JSON, Parquet, Arrow"]
+    E --> F["データ分割<br/>train / val / test"]
+    F --> G["あなたのトレーニングパイプライン"]
 ```
 
 Hugging Face `datasets` ライブラリはAI作業でデータをロードする標準的な方法だ。ダウンロード、キャッシュ、フォーマット変換、ストリーミングをすぐに処理できる。

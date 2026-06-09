@@ -141,11 +141,11 @@ XとYが独立なとき等号が成り立つ。共有する情報があれば、
 
 ```mermaid
 graph TD
-    subgraph "Information Venn Diagram"
+    subgraph "情報量のベン図"
         direction LR
         HX["H(X)"]
         HY["H(Y)"]
-        MI["I(X;Y)<br/>Mutual<br/>Information"]
+        MI["I(X;Y)<br/>相互情報量"]
         HXgY["H(X|Y)<br/>= H(X) - I(X;Y)"]
         HYgX["H(Y|X)<br/>= H(Y) - I(X;Y)"]
         HXY["H(X,Y) = H(X) + H(Y) - I(X;Y)"]

@@ -24,16 +24,16 @@ CLIP（フェーズ4 レッスン18）は画像とテキストの共有埋め込
 
 ```mermaid
 flowchart LR
-    IMG["Image<br/>(H x W x 3)"] --> ViT["Vision encoder<br/>(ViT, CLIP-L,<br/>SigLIP, DINOv3)"]
-    ViT --> FEATS["Image tokens<br/>(N, d_vit)"]
-    FEATS --> PROJ["Projector<br/>(2-4 layer MLP<br/>or Q-former)"]
-    PROJ --> VTOK["Image tokens<br/>in LLM space<br/>(N, d_llm)"]
-    TXT["Text prompt"] --> TOK["LLM tokenizer"]
-    TOK --> TTOK["Text tokens<br/>(M, d_llm)"]
-    VTOK --> CONCAT["Interleave<br/>or concat"]
+    IMG["画像\n(H x W x 3)"] --> ViT["ビジョンエンコーダー\n(ViT, CLIP-L,\nSigLIP, DINOv3)"]
+    ViT --> FEATS["画像トークン\n(N, d_vit)"]
+    FEATS --> PROJ["プロジェクター\n(2-4層MLP\nまたはQ-former)"]
+    PROJ --> VTOK["LLM空間の\n画像トークン\n(N, d_llm)"]
+    TXT["テキストプロンプト"] --> TOK["LLMトークナイザー"]
+    TOK --> TTOK["テキストトークン\n(M, d_llm)"]
+    VTOK --> CONCAT["インターリーブ\nまたはconcat"]
     TTOK --> CONCAT
-    CONCAT --> LLM["Decoder LLM<br/>(Qwen3, LLaMA, etc.)"]
-    LLM --> Out["Text answer"]
+    CONCAT --> LLM["デコーダーLLM\n(Qwen3, LLaMA, etc.)"]
+    LLM --> Out["テキスト回答"]
 
     style ViT fill:#dbeafe,stroke:#2563eb
     style PROJ fill:#fef3c7,stroke:#d97706

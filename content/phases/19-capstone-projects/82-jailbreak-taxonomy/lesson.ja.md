@@ -28,20 +28,20 @@
 
 ```mermaid
 flowchart TB
-  P[prompt] --> C{which boundary}
-  C -->|persona| RP[role-play]
-  C -->|system prompt| IO[instruction-override]
-  C -->|data vs instruction| CS[context-smuggling]
-  C -->|history| MT[multi-turn-ramp]
-  C -->|surface form| ET[encoding-trick]
-  C -->|continuation| PI[prefix-injection]
-  RP --> H[(histogram)]
+  P["プロンプト"] --> C{"どの境界か"}
+  C -->|"ペルソナ"| RP["role-play"]
+  C -->|"システムプロンプト"| IO["instruction-override"]
+  C -->|"データ対指示"| CS["context-smuggling"]
+  C -->|"履歴"| MT["multi-turn-ramp"]
+  C -->|"表面形式"| ET["encoding-trick"]
+  C -->|"継続"| PI["prefix-injection"]
+  RP --> H[("ヒストグラム")]
   IO --> H
   CS --> H
   MT --> H
   ET --> H
   PI --> H
-  H --> D[coverage chart]
+  H --> D["カバレッジチャート"]
 ```
 
 各フィクスチャは`id`、`category`、`subtype`、`prompt`、`target_behavior`、`severity`を持つレコードだ。分類体系オブジェクトはフィクスチャをロードし、カテゴリでグループ化し、`match` APIを公開する：候補プロンプトが与えられると、最も近いフィクスチャとそのカテゴリを返す。Matchはキャラクター3グラムコサイン：粗く、速く、依存関係なし。検出器ではない。検出器はレッスン83に住む。これはラベルプロデューサーだ。

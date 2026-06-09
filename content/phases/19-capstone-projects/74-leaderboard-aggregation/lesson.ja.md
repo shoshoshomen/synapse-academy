@@ -33,14 +33,14 @@ class EvalRun:
 
 ```mermaid
 flowchart LR
-    A[list of EvalRun] --> B[per-task pivot model x task]
-    B --> C[per-model mean]
-    B --> D[per-model win rate]
-    C --> E[bootstrap CI on mean]
-    D --> F[pairwise CI on diff]
-    E --> G[leaderboard rows]
+    A["EvalRunのリスト"] --> B["タスクごとのピボット モデル×タスク"]
+    B --> C["モデルごとの平均"]
+    B --> D["モデルごとの勝率"]
+    C --> E["平均のブートストラップ信頼区間"]
+    D --> F["差異のペアワイズ信頼区間"]
+    E --> G["リーダーボード行"]
     F --> G
-    G --> H[JSON + markdown table]
+    G --> H["JSON + Markdownテーブル"]
 ```
 
 リーダーボード行には`model_id`、`mean_score`、`mean_ci_lo`、`mean_ci_hi`、`win_rate`、`tasks_completed`、オプションのカテゴリごとの平均の`categories`マップが含まれる。
@@ -79,14 +79,14 @@ def win_rate(model_id, runs_by_task, all_models):
 
 ```mermaid
 flowchart TD
-    A[per-task scores for model M] --> B[loop B times]
-    B --> C[sample N tasks with replacement]
-    C --> D[mean of sampled scores]
-    D --> E[record bootstrap mean]
+    A["モデルMのタスクごとスコア"] --> B["B回ループ"]
+    B --> C["復元抽出でNタスクをサンプリング"]
+    C --> D["サンプルスコアの平均"]
+    D --> E["ブートストラップ平均を記録"]
     E --> B
-    E --> F[sort B means]
-    F --> G[take alpha/2 and 1 - alpha/2 percentiles]
-    G --> H[CI lo, CI hi]
+    E --> F["B個の平均をソート"]
+    F --> G["alpha/2 と 1-alpha/2 パーセンタイルを取得"]
+    G --> H["信頼区間の下限・上限"]
 ```
 
 ペアワイズ比較では、タスクごとの差`score_A - score_B`をブートストラップし、パーセンタイル区間を取り、それを報告する。ユーザーは区間がゼロを除外しているかを読み取る。除外している場合、差はレベルalphaで有意だ。除外していない場合、リーダーボードはモデルを同点として扱う。

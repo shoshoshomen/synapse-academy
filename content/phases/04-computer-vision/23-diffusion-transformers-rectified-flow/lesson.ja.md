@@ -25,17 +25,17 @@
 ```mermaid
 flowchart LR
     subgraph UNET["DDPM U-Net (2020)"]
-        U1["Conv encoder"] --> U2["Conv bottleneck"] --> U3["Conv decoder"]
+        U1["Convエンコーダー"] --> U2["Convボトルネック"] --> U3["Convデコーダー"]
     end
     subgraph DIT["DiT (2023)"]
-        D1["Patch embed"] --> D2["Transformer blocks"] --> D3["Unpatchify"]
+        D1["パッチ埋め込み"] --> D2["トランスフォーマーブロック"] --> D3["アンパッチ化"]
     end
     subgraph MMDIT["MMDiT (SD3, 2024)"]
-        M1["Text stream"] --> M3["Joint attention<br/>(separate weights per modality)"]
-        M2["Image stream"] --> M3
+        M1["テキストストリーム"] --> M3["ジョイントアテンション\n(モダリティごとに別重み)"]
+        M2["画像ストリーム"] --> M3
     end
     subgraph FLUX["FLUX (2024)"]
-        F1["Double-stream blocks<br/>(text + image separate)"] --> F2["Single-stream blocks<br/>(concat + shared weights)"]
+        F1["ダブルストリームブロック\n(テキスト + 画像 別々)"] --> F2["シングルストリームブロック\n(concat + 共有重み)"]
     end
 
     style UNET fill:#e5e7eb,stroke:#6b7280

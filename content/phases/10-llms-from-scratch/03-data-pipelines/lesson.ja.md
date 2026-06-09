@@ -58,12 +58,12 @@ Llama 3はデータの混合比率を開示した：約50%がウェブデータ�
 
 ```mermaid
 graph TD
-    A[生テキスト] --> B[HTMLストリップ]
-    B --> C[言語検出]
-    C --> D[品質フィルター]
-    D --> E[重複排除]
-    E --> F[PII除去]
-    F --> G[クリーンテキスト]
+    A["生テキスト"] --> B["HTMLストリップ"]
+    B --> C["言語検出"]
+    C --> D["品質フィルター"]
+    D --> E["重複排除"]
+    E --> F["PII除去"]
+    F --> G["クリーンテキスト"]
 
     style A fill:#1a1a2e,stroke:#e94560,color:#fff
     style B fill:#1a1a2e,stroke:#e94560,color:#fff
@@ -94,12 +94,12 @@ MinHash + Locality-Sensitive Hashing（LSH）がこれを効率的に解決す�
 
 ```mermaid
 graph LR
-    A[ドキュメント] --> B[シングリング]
-    B --> C[MinHashシグネチャ]
-    C --> D[LSHバケット]
-    D --> E[候補ペア]
-    E --> F[Jaccard類似度]
-    F --> G[重複排除済みセット]
+    A["ドキュメント"] --> B["シングリング"]
+    B --> C["MinHashシグネチャ"]
+    C --> D["LSHバケット"]
+    D --> E["候補ペア"]
+    E --> F["Jaccard類似度"]
+    F --> G["重複排除済みセット"]
 
     style A fill:#1a1a2e,stroke:#e94560,color:#fff
     style B fill:#1a1a2e,stroke:#e94560,color:#fff
@@ -132,13 +132,13 @@ Llamaチームは重複排除によってウェブデータの約38%を削除し
 
 ```mermaid
 graph TD
-    subgraph Naive Packing
+    subgraph "単純なパッキング"
         A1["文書A（200トークン）"] --> P1["[PAD] x 1848"]
         A2["文書B（500トークン）"] --> P2["[PAD] x 1548"]
         A3["文書C（100トークン）"] --> P3["[PAD] x 1948"]
     end
 
-    subgraph Efficient Packing
+    subgraph "効率的なパッキング"
         B1["文書A（200） | 文書B（500） | 文書C（100） | 文書D（400） | 文書E（848）"]
     end
 

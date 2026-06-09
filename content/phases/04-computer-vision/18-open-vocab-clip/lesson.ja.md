@@ -24,9 +24,9 @@ CLIP（Radford et al.、OpenAI 2021年）は、ウェブからスクレイピン
 
 ```mermaid
 flowchart LR
-    IMG["Image"] --> IENC["Image encoder<br/>(ViT-L/14)"] --> IEMB["Image embedding<br/>(1024,)"]
-    TXT["Caption"] --> TENC["Text encoder<br/>(transformer)"] --> TEMB["Text embedding<br/>(1024,)"]
-    IEMB --> SIM["Cosine similarity"]
+    IMG["画像"] --> IENC["画像エンコーダー\n(ViT-L/14)"] --> IEMB["画像埋め込み\n(1024,)"]
+    TXT["キャプション"] --> TENC["テキストエンコーダー\n(transformer)"] --> TEMB["テキスト埋め込み\n(1024,)"]
+    IEMB --> SIM["コサイン類似度"]
     TEMB --> SIM
 
     style IENC fill:#dbeafe,stroke:#2563eb

@@ -158,13 +158,13 @@ e^(i*pi) = cos(pi) + i*sin(pi) = -1 + 0i = -1
 
 ```mermaid
 graph TD
-    subgraph "Complex Multiplication = 2D Rotation"
-        A["z = x + yi<br/>Point (x, y)"] -->|"multiply by e^(i*theta)"| B["z' = z * e^(i*theta)<br/>Point rotated by theta"]
+    subgraph "複素乗算 = 2D回転"
+        A["z = x + yi<br/>点 (x, y)"] -->|"e^(i*theta)を掛ける"| B["z' = z * e^(i*theta)<br/>thetaだけ回転した点"]
     end
-    subgraph "Equivalent Matrix Form"
-        C["vector [x, y]"] -->|"multiply by rotation matrix"| D["[x cos theta - y sin theta,<br/> x sin theta + y cos theta]"]
+    subgraph "等価な行列形式"
+        C["ベクトル [x, y]"] -->|"回転行列を掛ける"| D["[x cos theta - y sin theta,<br/> x sin theta + y cos theta]"]
     end
-    B -.->|"same result"| D
+    B -.->|"同じ結果"| D
 ```
 
 ### フェーザーと回転信号
@@ -246,17 +246,17 @@ sinとcosのペアは、異なる周波数での複素指数関数の実部と�
 
 ```mermaid
 graph LR
-    subgraph "Unit Circle"
+    subgraph "単位円"
         direction TB
         U1["e^(i*0) = 1"] -.-> U2["e^(i*pi/2) = i"]
         U2 -.-> U3["e^(i*pi) = -1"]
         U3 -.-> U4["e^(i*3pi/2) = -i"]
         U4 -.-> U1
     end
-    subgraph "Applications"
-        A1["Euler's formula:<br/>e^(i*theta) = cos + i*sin"]
-        A2["DFT uses roots of unity:<br/>e^(2*pi*i*k/N)"]
-        A3["RoPE uses rotation:<br/>q * e^(i*m*theta)"]
+    subgraph "応用"
+        A1["オイラーの公式:<br/>e^(i*theta) = cos + i*sin"]
+        A2["DFTは単位根を使用:<br/>e^(2*pi*i*k/N)"]
+        A3["RoPEは回転を使用:<br/>q * e^(i*m*theta)"]
     end
     U1 --> A1
     U1 --> A2

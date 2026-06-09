@@ -22,16 +22,16 @@
 
 ```mermaid
 flowchart TD
-  Step[トレーニングステップ] --> Branch{ステップ状態}
-  Branch -- step <= warmup --> Linear[0からlr_maxへの線形ランプ]
-  Branch -- warmup < step <= total --> Cosine[lr_maxからlr_minへのコサイン減衰]
-  Branch -- step > total --> Floor[lr_minに固定]
-  Linear --> Apply[AdamW.step]
+  Step["トレーニングステップ"] --> Branch{"ステップ状態"}
+  Branch -- "ステップ <= ウォームアップ" --> Linear["0からlr_maxへの線形ランプ"]
+  Branch -- "ウォームアップ < ステップ <= 合計" --> Cosine["lr_maxからlr_minへのコサイン減衰"]
+  Branch -- "ステップ > 合計" --> Floor["lr_minに固定"]
+  Linear --> Apply["AdamWステップ"]
   Cosine --> Apply
   Floor --> Apply
-  Apply --> GradNorm[勾配L2ノルムを計算]
-  GradNorm --> Log[ステップログ行]
-  Log --> Plot[テキストプロット + CSV]
+  Apply --> GradNorm["勾配L2ノルムを計算"]
+  GradNorm --> Log["ステップログ行"]
+  Log --> Plot["テキストプロット + CSV"]
 ```
 
 ### ウォームアップ式

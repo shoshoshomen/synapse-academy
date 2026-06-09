@@ -25,19 +25,19 @@ SAM 3（Meta、2025年11月、ICLR 2026）はカスケードを折りたたん�
 ```mermaid
 flowchart LR
     subgraph SAM1["SAM (2023)"]
-        A1["Image + point/box prompt"] --> A2["ViT encoder"] --> A3["Mask decoder"]
-        A3 --> A4["Mask for that prompt"]
+        A1["画像 + ポイント/ボックスプロンプト"] --> A2["ViTエンコーダー"] --> A3["マスクデコーダー"]
+        A3 --> A4["そのプロンプトのマスク"]
     end
     subgraph GSAM2["Grounded SAM 2 (2024)"]
-        B1["Text"] --> B2["Grounding DINO"] --> B3["Boxes"] --> B4["SAM 2"] --> B5["Masks + tracking"]
-        B6["Image"] --> B2
+        B1["テキスト"] --> B2["Grounding DINO"] --> B3["ボックス"] --> B4["SAM 2"] --> B5["マスク + トラッキング"]
+        B6["画像"] --> B2
         B6 --> B4
     end
     subgraph SAM3["SAM 3 (2025)"]
-        C1["Text OR image exemplar"] --> C2["Shared backbone"]
-        C3["Image"] --> C2
-        C2 --> C4["Image detector + memory tracker<br/>+ presence head"]
-        C4 --> C5["All matching masks<br/>+ instance IDs"]
+        C1["テキスト または 画像サンプル"] --> C2["共有バックボーン"]
+        C3["画像"] --> C2
+        C2 --> C4["画像検出器 + メモリトラッカー\n+ プレゼンスヘッド"]
+        C4 --> C5["全マッチングマスク\n+ インスタンスID"]
     end
 
     style SAM1 fill:#e5e7eb,stroke:#6b7280

@@ -22,18 +22,18 @@ AIの論文、チュートリアル、Kaggle競技のすべてでJupyterノー�
 
 ```mermaid
 graph TD
-    A["**Markdown Cell**\n# My Experiment\nTesting learning rate 0.01"] --> B["**Code Cell** ► Run\nmodel.fit(X, y, lr=0.01)\n---\nOutput: loss = 0.342"]
-    B --> C["**Code Cell** ► Run\nplt.plot(losses)\n---\nOutput: inline plot"]
+    A["**マークダウンセル**\n# 実験\n学習率 0.01 をテスト中"] --> B["**コードセル** ► 実行\nmodel.fit(X, y, lr=0.01)\n---\n出力: loss = 0.342"]
+    B --> C["**コードセル** ► 実行\nplt.plot(losses)\n---\n出力: インラインプロット"]
 ```
 
 カーネルはバックグラウンドで実行されるPythonプロセスだ。セルを実行すると、コードがカーネルに送られ、カーネルがそれを実行して結果を返す。すべてのセルは同じカーネルを共有するため、変数はセル間で保持される。
 
 ```mermaid
 graph LR
-    A[Notebook UI] <--> B[Kernel\nPython process]
-    B --> C[Keeps variables in memory]
-    B --> D[Runs cells in whatever order you click]
-    B --> E[Dies when you restart it]
+    A["Notebook UI"] <--> B["カーネル\nPythonプロセス"]
+    B --> C["変数をメモリに保持"]
+    B --> D["クリックした順序でセルを実行"]
+    B --> E["再起動すると消滅"]
 ```
 
 「クリックした順序で実行される」部分は、強力な機能であり、同時に危険な落とし穴でもある。

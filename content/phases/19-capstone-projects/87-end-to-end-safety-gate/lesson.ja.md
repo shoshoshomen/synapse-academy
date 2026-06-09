@@ -17,14 +17,14 @@
 
 ```mermaid
 flowchart TB
-  IN[user prompt] --> PG[pre-gen: detector]
-  PG -->|block on high| OUT1[refusal + trace]
-  PG --> M[mock LLM]
-  M -->|stream| DG[during-gen: token filter]
-  DG -->|terminate early| OUT2[partial + trace]
-  DG -->|complete| POST[post-gen: classifier + rules]
-  POST --> AGG[aggregate]
-  AGG --> OUT3[final action + trace]
+  IN["ユーザープロンプト"] --> PG["生成前: 検出器"]
+  PG -->|"highでブロック"| OUT1["拒否 + トレース"]
+  PG --> M["モックLLM"]
+  M -->|"ストリーム"| DG["生成中: トークンフィルター"]
+  DG -->|"早期終了"| OUT2["部分出力 + トレース"]
+  DG -->|"完了"| POST["生成後: 分類器 + ルール"]
+  POST --> AGG["集約"]
+  AGG --> OUT3["最終アクション + トレース"]
 ```
 
 アグリゲーターは4つの重大度シグナルを統合する: 検出器の信頼度（レッスン83）、トークンフィルタートリガー（boolean）、分類器の最大重大度（レッスン85）、ルールエンジンの最大重大度（レッスン86）。集約関数は決定論的なテーブルだ。

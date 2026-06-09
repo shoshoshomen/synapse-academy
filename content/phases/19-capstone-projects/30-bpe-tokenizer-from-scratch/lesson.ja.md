@@ -22,16 +22,16 @@
 
 ```mermaid
 flowchart LR
-    A[生コーパステキスト] --> B[単語ごとにバイト分割]
-    B --> C[隣接ペア頻度をカウント]
-    C --> D{ペアテーブルが空?}
-    D -- no --> E[最頻ペアをマージ]
-    E --> F[マージをマージテーブルに追加]
-    F --> G[語彙を1つのIDで拡大]
+    A["生コーパステキスト"] --> B["単語ごとにバイト分割"]
+    B --> C["隣接ペア頻度をカウント"]
+    C --> D{"ペアテーブルが空?"}
+    D -- "no" --> E["最頻ペアをマージ"]
+    E --> F["マージをマージテーブルに追加"]
+    F --> G["語彙を1つのIDで拡大"]
     G --> C
-    D -- yes --> H[最終語彙 + マージ]
-    H --> I[新しいテキストをエンコード]
-    H --> J[IDをバイトに戻してデコード]
+    D -- "yes" --> H["最終語彙 + マージ"]
+    H --> I["新しいテキストをエンコード"]
+    H --> J["IDをバイトに戻してデコード"]
 ```
 
 訓練側と推論側はマージテーブルを共有します。その共有がコントラクトです。推論時にマージ順序を変えると、異なるIDのストリームをデコードすることになります。
@@ -48,15 +48,15 @@ flowchart LR
 
 ```mermaid
 sequenceDiagram
-    participant Corpus
-    participant PairCount
-    participant MergeTable
-    participant Vocab
-    Corpus->>PairCount: 隣接ペアをカウント
-    PairCount->>MergeTable: トップペア (a,b) を選択
-    MergeTable->>Vocab: 新しいID = a+b を割り当て
-    MergeTable->>Corpus: 全ての (a,b) を新しいIDに書き直し
-    Corpus->>PairCount: 次のステップのために再カウント
+    participant Corpus as "コーパス"
+    participant PairCount as "ペアカウント"
+    participant MergeTable as "マージテーブル"
+    participant Vocab as "語彙"
+    Corpus->>PairCount: "隣接ペアをカウント"
+    PairCount->>MergeTable: "トップペア (a,b) を選択"
+    MergeTable->>Vocab: "新しいID = a+b を割り当て"
+    MergeTable->>Corpus: "全ての (a,b) を新しいIDに書き直し"
+    Corpus->>PairCount: "次のステップのために再カウント"
 ```
 
 各ステップのコストは、シンボルシーケンスのリストとして表現されたコーパスのサイズに線形です。100万単語で目標語彙10000IDの場合、マージが適用されるにつれてシンボルシーケンスが縮小するため、ループは数秒で完了します。

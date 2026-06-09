@@ -142,15 +142,15 @@ output_i = sum( attention_weight[i][j] * v_j  for all j )
 
 ```mermaid
 flowchart LR
-  X["X (input)"] --> Q["Q = X · Wq"]
+  X["X（入力）"] --> Q["Q = X · Wq"]
   X --> K["K = X · Wk"]
   X --> V["V = X · Wv"]
   Q --> S["Q · Kᵀ / √dk"]
   K --> S
   S --> SM["softmax"]
-  SM --> WS["weighted sum"]
+  SM --> WS["加重和"]
   V --> WS
-  WS --> O["output"]
+  WS --> O["出力"]
 ```
 
 1行の数式：

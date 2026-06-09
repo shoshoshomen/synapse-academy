@@ -20,10 +20,10 @@
 
 ```mermaid
 sequenceDiagram
-    participant WD as Working Directory
-    participant SA as Staging Area
-    participant LR as Local Repo
-    participant R as Remote (GitHub)
+    participant WD as "ワーキングディレクトリ"
+    participant SA as "ステージングエリア"
+    participant LR as "ローカルリポジトリ"
+    participant R as "リモート (GitHub)"
     WD->>SA: git add
     SA->>LR: git commit
     LR->>R: git push

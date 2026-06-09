@@ -24,14 +24,14 @@
 
 ```mermaid
 flowchart TD
-  Diff[Diff] --> Gate[verify_agent.py]
-  Scope[scope_report.json] --> Gate
-  Rules[rule_report.json] --> Gate
-  Feedback[feedback_record.jsonl] --> Gate
-  Gate --> Verdict[verification_report.json]
-  Verdict --> Pass{合格？}
-  Pass -- yes --> Review[レビュアーエージェント]
-  Pass -- no --> Refuse[完了拒否 + 人間に表面化]
+  Diff["Diff"] --> Gate["verify_agent.py"]
+  Scope["scope_report.json"] --> Gate
+  Rules["rule_report.json"] --> Gate
+  Feedback["feedback_record.jsonl"] --> Gate
+  Gate --> Verdict["verification_report.json"]
+  Verdict --> Pass{"合格？"}
+  Pass -- "はい" --> Review["レビュアーエージェント"]
+  Pass -- "いいえ" --> Refuse["完了拒否 + 人間に表面化"]
 ```
 
 ### ゲートがチェックするもの

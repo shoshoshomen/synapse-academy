@@ -25,14 +25,14 @@
 
 ```mermaid
 flowchart LR
-  P[prompt] --> N[normalize]
-  N --> S[substring rules]
-  N --> R[regex rules]
-  S --> A[aggregate]
+  P["プロンプト"] --> N["正規化"]
+  N --> S["部分文字列ルール"]
+  N --> R["正規表現ルール"]
+  S --> A["集約"]
   R --> A
-  A --> V[verdict: category + confidence]
-  V --> M[metrics runner]
-  M --> CM[confusion matrix per category]
+  A --> V["判定: カテゴリ＋信頼度"]
+  V --> M["メトリクスランナー"]
+  M --> CM["カテゴリごとの混同行列"]
 ```
 
 メトリクスランナーはレッスン82の分類体系アーティファクトを受け取り、すべてのフィクスチャに対して検出器を実行し、カテゴリごとにprecisionとrecallを計算する。プロンプトのカテゴリラベルはフィクスチャのカテゴリだ。検出器の予測カテゴリはverdictのカテゴリだ。カテゴリCの真陽性はfixture-category=CかつVerdict-category=Cだ。偽陽性はfixture-category!=CかつVerdict-category=Cだ。偽陰性はfixture-category=CかつVerdict-category!=C（または`benign`）だ。ランナーは安全なプロンプトリストも受け入れるので、安全なテキストの偽陽性が測定される。

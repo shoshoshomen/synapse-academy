@@ -20,11 +20,11 @@
 
 ```mermaid
 flowchart LR
-  Builder[ビルダーエージェント] --> Artifacts[diff + state + feedback + verdict]
-  Artifacts --> Reviewer[レビュアーエージェント]
-  Reviewer --> Rubric[reviewer_checklist.md]
-  Reviewer --> Report[review_report.json]
-  Report --> Human[人間の承認]
+  Builder["ビルダーエージェント"] --> Artifacts["diff + state + feedback + verdict"]
+  Artifacts --> Reviewer["レビュアーエージェント"]
+  Reviewer --> Rubric["reviewer_checklist.md"]
+  Reviewer --> Report["review_report.json"]
+  Report --> Human["人間の承認"]
 ```
 
 ### レビュアールーブリック

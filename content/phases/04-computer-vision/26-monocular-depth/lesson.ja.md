@@ -31,10 +31,10 @@ MiDaSとDepth Anything V3は相対深度を生成する。Marigoldは相対深�
 
 ```mermaid
 flowchart LR
-    IMG["Image (H x W x 3)"] --> ENC["Frozen ViT encoder<br/>(DINOv2 / DINOv3)"]
-    ENC --> FEATS["Dense features<br/>(H/14, W/14, d)"]
-    FEATS --> DEC["Depth decoder<br/>(conv upsampler,<br/>DPT-style)"]
-    DEC --> DEPTH["Depth map<br/>(H, W, 1)"]
+    IMG["画像 (H x W x 3)"] --> ENC["凍結ViTエンコーダー\n(DINOv2 / DINOv3)"]
+    ENC --> FEATS["密な特徴量\n(H/14, W/14, d)"]
+    FEATS --> DEC["深度デコーダー\n(convアップサンプラー,\nDPTスタイル)"]
+    DEC --> DEPTH["深度マップ\n(H, W, 1)"]
 
     style ENC fill:#dbeafe,stroke:#2563eb
     style DEC fill:#fef3c7,stroke:#d97706

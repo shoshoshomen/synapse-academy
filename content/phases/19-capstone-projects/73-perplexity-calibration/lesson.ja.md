@@ -32,11 +32,11 @@ def perplexity(neg_log_probs, token_counts):
 
 ```mermaid
 flowchart TD
-    A[N predictions with confidence p and correctness y] --> B[bin by p into M bins]
-    B --> C[for each bin compute avg confidence and avg accuracy]
-    C --> D[gap = abs avg conf - avg acc]
-    D --> E[weighted by bin size / N]
-    E --> F[ECE = sum of weighted gaps]
+    A["信頼度pと正否yを持つN個の予測"] --> B["pによりMビンに分割"]
+    B --> C["各ビンの平均信頼度と平均精度を計算"]
+    C --> D["ギャップ = |平均信頼度 - 平均精度|"]
+    D --> E["ビンサイズ / N で重み付け"]
+    E --> F["ECE = 重み付きギャップの合計"]
 ```
 
 標準的な定式化では`[0, 1]`で10等幅ビンを使用する。実装は任意の正の整数カウントをサポートする。ランナーが出版慣例（10）と比較慣例（15）を選べるよう`bins`パラメータを公開している。
@@ -60,11 +60,11 @@ def brier(p, y):
 
 ```mermaid
 flowchart LR
-    A[predictions, confidences] --> B[bin edges 0 to 1]
-    B --> C[per-bin mean confidence]
-    B --> D[per-bin mean accuracy]
-    B --> E[per-bin count]
-    C --> R[reliability data triple]
+    A["予測値・信頼度"] --> B["ビン境界 0〜1"]
+    B --> C["ビンごとの平均信頼度"]
+    B --> D["ビンごとの平均精度"]
+    B --> E["ビンごとのカウント"]
+    C --> R["信頼性データのトリプル"]
     D --> R
     E --> R
 ```

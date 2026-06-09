@@ -20,12 +20,12 @@
 
 ```mermaid
 flowchart LR
-  State[agent_state.json] --> Generator[generate_handoff.py]
-  Verdict[verification_report.json] --> Generator
-  Review[review_report.json] --> Generator
-  Feedback[feedback_record.jsonl] --> Generator
-  Generator --> Handoff[handoff.md + handoff.json]
-  Handoff --> Next[次のセッション]
+  State["agent_state.json"] --> Generator["generate_handoff.py"]
+  Verdict["verification_report.json"] --> Generator
+  Review["review_report.json"] --> Generator
+  Feedback["feedback_record.jsonl"] --> Generator
+  Generator --> Handoff["handoff.md + handoff.json"]
+  Handoff --> Next["次のセッション"]
 ```
 
 ### すべてのハンドオフが持つ7つのフィールド

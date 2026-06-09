@@ -15,20 +15,20 @@
 
 ```mermaid
 flowchart TD
-    A[tasks.jsonl from lesson 70] --> B[validate]
-    B --> C[render prompts]
-    C --> D[model adapter generate]
-    D --> E[post_process]
-    E --> F{metric_name}
-    F -->|exact_match/f1/bleu_4/rouge_l/accuracy| G[score from lesson 71]
-    F -->|code_exec| H[run_candidate from lesson 72]
-    G --> R[EvalRun record]
+    A["レッスン70のtasks.jsonl"] --> B["バリデーション"]
+    B --> C["プロンプトのレンダリング"]
+    C --> D["モデルアダプタで生成"]
+    D --> E["後処理"]
+    E --> F{"metric_name"}
+    F -->|"exact_match/f1/bleu_4/rouge_l/accuracy"| G["レッスン71のスコア"]
+    F -->|"code_exec"| H["レッスン72のrun_candidate"]
+    G --> R["EvalRunレコード"]
     H --> R
-    D --> S[confidence and per-token nll]
-    S --> T[CalibrationReport from lesson 73]
-    R --> U[aggregate from lesson 74]
-    T --> V[per-model calibration block]
-    U --> W[leaderboard JSON + markdown]
+    D --> S["信頼度とトークンごとのnll"]
+    S --> T["レッスン73のCalibrationReport"]
+    R --> U["レッスン74のaggregate"]
+    T --> V["モデルごとのキャリブレーションブロック"]
+    U --> W["リーダーボード JSON + Markdown"]
     V --> W
 ```
 

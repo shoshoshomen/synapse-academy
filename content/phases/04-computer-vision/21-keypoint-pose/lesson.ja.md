@@ -24,13 +24,13 @@
 
 ```mermaid
 flowchart LR
-    subgraph TD["Top-down pipeline"]
-        A1["Detect person boxes"] --> A2["Crop each box"]
-        A2 --> A3["Per-box keypoint model<br/>(HRNet, ViTPose)"]
+    subgraph TD["トップダウンパイプライン"]
+        A1["人物ボックスを検出"] --> A2["各ボックスをクロップ"]
+        A2 --> A3["ボックスごとのキーポイントモデル\n(HRNet, ViTPose)"]
     end
-    subgraph BU["Bottom-up pipeline"]
-        B1["One pass over image"] --> B2["All keypoint heatmaps<br/>+ association field"]
-        B2 --> B3["Group keypoints into<br/>instances (greedy matching)"]
+    subgraph BU["ボトムアップパイプライン"]
+        B1["画像を1回通過"] --> B2["全キーポイントヒートマップ\n+ 関連付けフィールド"]
+        B2 --> B3["キーポイントを\nインスタンスにグループ化 (貪欲マッチング)"]
     end
 
     style TD fill:#dbeafe,stroke:#2563eb

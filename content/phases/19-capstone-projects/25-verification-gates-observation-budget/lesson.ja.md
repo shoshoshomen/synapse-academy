@@ -27,12 +27,12 @@
 
 ```mermaid
 flowchart LR
-  Call[tool_call] --> Chain[Gate chain]
-  Chain -->|ALLOW| Dispatch[dispatch tool]
-  Chain -->|DENY| Reason[reason]
-  Reason --> Store[append to message store]
-  Reason --> Refusal[increment refusal_count]
-  Reason --> Loop[loop continues<br/>or aborts at threshold]
+  Call["ツール呼び出し"] --> Chain["ゲートチェーン"]
+  Chain -->|"ALLOW"| Dispatch["ツールをディスパッチ"]
+  Chain -->|"DENY"| Reason["拒否理由"]
+  Reason --> Store["メッセージストアに追加"]
+  Reason --> Refusal["refusal_count をインクリメント"]
+  Reason --> Loop["ループ継続\nまたは閾値で中断"]
 ```
 
 ゲートは`evaluate(call, ctx) -> GateDecision`メソッドを持つ何でもだ。チェーンは順序リストだ。評価は最初のDENYでショートサーキットする。順序が重要: 安価な構造的ゲートが高価なトークンカウントゲートより先に実行される。
@@ -50,11 +50,11 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  Harness[AgentHarness<br/>lessons 20-24] --> Chain[GateChain<br/>WhitelistGate / RegexGate<br/>RecencyGate / BudgetGate]
-  Chain -->|ALLOW| Dispatch[tool_dispatch]
-  Dispatch --> Result[Tool result]
-  Result -->|write| Ledger[ObservationLedger<br/>per-tool count<br/>cumulative]
-  Ledger -->|record| Store[MessageStore]
+  Harness["AgentHarness\nレッスン 20-24"] --> Chain["GateChain\nWhitelistGate / RegexGate\nRecencyGate / BudgetGate"]
+  Chain -->|"ALLOW"| Dispatch["ツールディスパッチ"]
+  Dispatch --> Result["ツール結果"]
+  Result -->|"書き込み"| Ledger["ObservationLedger\nツールごとのカウント\n累積"]
+  Ledger -->|"記録"| Store["MessageStore"]
 ```
 
 ハーネスはチェーンに聞く。チェーンは頷くか拒否する。頷くと、ツールが実行され、台帳が刻み、結果がメッセージストアに追加される。拒否すると、モデルにシステムメッセージとして拒否が渡され、ループはリトライするか中断するかを決定する。

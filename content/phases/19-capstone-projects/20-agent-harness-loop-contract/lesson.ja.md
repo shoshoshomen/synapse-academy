@@ -23,15 +23,15 @@
 ```mermaid
 stateDiagram-v2
     [*] --> IDLE
-    IDLE --> PLANNING: run(goal)
-    PLANNING --> EXECUTING: plan committed
-    EXECUTING --> AWAITING_TOOL: tool_call needed
-    AWAITING_TOOL --> REFLECTING: result
-    EXECUTING --> REFLECTING: no_tool step done
-    REFLECTING --> EXECUTING: next step
-    REFLECTING --> PLANNING: replan
-    REFLECTING --> DONE: goal_met
-    PLANNING --> DONE: no_plan
+    IDLE --> PLANNING: "run(goal)"
+    PLANNING --> EXECUTING: "プランが確定"
+    EXECUTING --> AWAITING_TOOL: "ツール呼び出しが必要"
+    AWAITING_TOOL --> REFLECTING: "結果"
+    EXECUTING --> REFLECTING: "ツールなしステップ完了"
+    REFLECTING --> EXECUTING: "次のステップ"
+    REFLECTING --> PLANNING: "再プラン"
+    REFLECTING --> DONE: "目標達成"
+    PLANNING --> DONE: "プランなし"
     DONE --> [*]
 ```
 

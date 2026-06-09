@@ -20,19 +20,19 @@
 
 ```mermaid
 sequenceDiagram
-  participant R0 as rank 0
-  participant R1 as rank 1
-  participant R2 as rank 2
-  participant R3 as rank 3
-  R0->>R1: broadcast params
-  R0->>R2: broadcast params
-  R0->>R3: broadcast params
-  Note over R0,R3: forward + backward on own shard
-  R0->>R1: allreduce grad bucket
-  R1->>R2: allreduce grad bucket
-  R2->>R3: allreduce grad bucket
-  R3->>R0: allreduce grad bucket
-  Note over R0,R3: optimizer.step on identical grads
+  participant R0 as ランク 0
+  participant R1 as ランク 1
+  participant R2 as ランク 2
+  participant R3 as ランク 3
+  R0->>R1: パラメータをブロードキャスト
+  R0->>R2: パラメータをブロードキャスト
+  R0->>R3: パラメータをブロードキャスト
+  Note over R0,R3: 各シャードでフォワード＋バックワード
+  R0->>R1: 勾配バケットをallreduce
+  R1->>R2: 勾配バケットをallreduce
+  R2->>R3: 勾配バケットをallreduce
+  R3->>R0: 勾配バケットをallreduce
+  Note over R0,R3: 同一勾配でoptimizer.step
 ```
 
 ### DDPが必要とする3つの演算

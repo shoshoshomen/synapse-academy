@@ -37,12 +37,12 @@
 
 ```mermaid
 flowchart LR
-    U[User Input] --> IV[Input\nValidation]
-    IV -->|Pass| LLM[LLM\nProcessing]
-    IV -->|Block| R1[Rejection\nResponse]
-    LLM --> OV[Output\nValidation]
-    OV -->|Pass| R2[Safe\nResponse]
-    OV -->|Block| R3[Filtered\nResponse]
+    U["ユーザー入力"] --> IV["入力\n検証"]
+    IV -->|"通過"| LLM["LLM\n処理"]
+    IV -->|"ブロック"| R1["拒否\n応答"]
+    LLM --> OV["出力\n検証"]
+    OV -->|"通過"| R2["安全な\n応答"]
+    OV -->|"ブロック"| R3["フィルタ済み\n応答"]
 ```
 
 入力検証はモデルに届く前に攻撃をキャッチする。出力検証はモデルが有害なコンテンツを生成するのをキャッチする。攻撃者は各層を個別に回避する方法を見つけるため、両方が必要だ。
@@ -97,16 +97,16 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    I[Input] --> L[Length Check\n< 5000 chars]
-    L --> R[Rate Limit\n10 req/min]
-    R --> T[Topic Classifier\nOn-topic?]
-    T --> P[PII Detector\nRedact sensitive data]
-    P --> J[Injection Detector\nPrompt injection?]
-    J --> M[LLM Processing]
-    M --> TF[Toxicity Filter\n11 categories]
-    TF --> PS[PII Scrubber\nRedact from output]
-    PS --> RV[Relevance Check\nDoes it answer the question?]
-    RV --> O[Output]
+    I["入力"] --> L["長さチェック\n5000文字未満"]
+    L --> R["レート制限\n10リクエスト/分"]
+    R --> T["トピック分類器\nオントピック？"]
+    T --> P["PII検出器\n機密データを編集"]
+    P --> J["インジェクション検出器\nプロンプトインジェクション？"]
+    J --> M["LLM処理"]
+    M --> TF["毒性フィルター\n11カテゴリ"]
+    TF --> PS["PIIスクラバー\n出力から編集"]
+    PS --> RV["関連性チェック\n質問に答えているか？"]
+    RV --> O["出力"]
 ```
 
 各レイヤーは他がミスしたものをキャッチする。長さチェックは無料。レート制限は安価。分類器は5〜20msかかる。LLM呼び出しは200〜2000msかかる。安価なチェックを先にスタックする。

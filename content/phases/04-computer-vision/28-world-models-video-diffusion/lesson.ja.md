@@ -24,15 +24,15 @@
 
 ```mermaid
 flowchart LR
-    subgraph GEN["Pure video generation"]
-        G1["Text / image prompt"] --> G2["Video DiT"] --> G3["Video frames"]
+    subgraph GEN["純粋な動画生成"]
+        G1["テキスト / 画像プロンプト"] --> G2["Video DiT"] --> G3["動画フレーム"]
     end
-    subgraph ACTION["Action-conditioned world model"]
-        A1["Past frames + action"] --> A2["Latent-action video DiT"] --> A3["Next frames"]
+    subgraph ACTION["アクション条件付きワールドモデル"]
+        A1["過去フレーム + アクション"] --> A2["潜在アクション Video DiT"] --> A3["次のフレーム"]
         A3 --> A1
     end
-    subgraph RL["World models for RL (DreamerV3)"]
-        R1["State + action"] --> R2["Latent transition model"] --> R3["Next latent + reward"]
+    subgraph RL["RLのためのワールドモデル (DreamerV3)"]
+        R1["状態 + アクション"] --> R2["潜在遷移モデル"] --> R3["次の潜在変数 + 報酬"]
         R3 --> R1
     end
 

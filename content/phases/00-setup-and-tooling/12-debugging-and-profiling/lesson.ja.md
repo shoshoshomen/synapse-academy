@@ -22,9 +22,9 @@ AIデバッグは3つのレベルで行われる:
 
 ```mermaid
 graph TD
-    L3["3. Training Dynamics<br/>Loss curves, gradient norms, activations"] --> L2
-    L2["2. Tensor Operations<br/>Shapes, dtypes, devices, NaN/Inf values"] --> L1
-    L1["1. Standard Python<br/>Breakpoints, logging, profiling, memory"]
+    L3["3. 訓練ダイナミクス<br/>損失曲線、勾配ノルム、活性化"] --> L2
+    L2["2. テンソル演算<br/>形状、dtype、デバイス、NaN/Inf値"] --> L1
+    L1["1. 標準Python<br/>ブレークポイント、ロギング、プロファイリング、メモリ"]
 ```
 
 ほとんどの人はいきなりレベル3（TensorBoardを眺める）に飛びつく。しかしAIバグの80%はレベル1と2にある。

@@ -22,9 +22,9 @@ AIエンジニアリング環境には4つの層がある。
 
 ```mermaid
 graph TD
-    A["4. AI/ML Libraries\nPyTorch, JAX, transformers, etc."] --> B["3. Language Runtimes\nPython 3.11+, Node 20+, Rust, Julia"]
-    B --> C["2. Package Managers\nuv, pnpm, cargo, juliaup"]
-    C --> D["1. System Foundation\nOS, shell, git, editor, GPU drivers"]
+    A["4. AI/MLライブラリ\nPyTorch, JAX, transformers, など"] --> B["3. 言語ランタイム\nPython 3.11+, Node 20+, Rust, Julia"]
+    B --> C["2. パッケージマネージャー\nuv, pnpm, cargo, juliaup"]
+    C --> D["1. システム基盤\nOS, shell, git, エディター, GPU ドライバー"]
 ```
 
 インストールはボトムアップで行う。各層は下の層に依存している。

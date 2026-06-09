@@ -20,12 +20,12 @@
 
 ```mermaid
 flowchart TB
-  A[spawn 4 ranks] --> B[broadcast initial GPT params]
-  B --> C[for step in 20: forward + backward on rank-local batch]
-  C --> D[ZeRO-1 step: reduce_scatter grads + Adam on shard + allgather params]
-  D --> E[at step 10: save sharded checkpoint]
-  E --> F[continue to step 20]
-  F --> G[memory profile + resume verify + exit 0]
+  A["4ランクをスポーン"] --> B["初期GPTパラメータをブロードキャスト"]
+  B --> C["20ステップ: ランクローカルバッチでフォワード＋バックワード"]
+  C --> D["ZeRO-1ステップ: 勾配をreduce_scatter + シャードにAdam + パラメータをallgather"]
+  D --> E["ステップ10: シャーディングされたチェックポイントを保存"]
+  E --> F["ステップ20まで継続"]
+  F --> G["メモリプロファイル + 再開検証 + 終了コード0"]
 ```
 
 ### ミニGPT

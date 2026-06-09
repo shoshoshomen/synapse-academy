@@ -29,12 +29,12 @@ SFTコントラクトは文字列テンプレートです。全ての訓練サ�
 
 ```mermaid
 flowchart LR
-  Pair[指示 + 応答] --> Tmpl[テンプレート適用<br/>INST + RESPトークン]
-  Tmpl --> Tokens[トークンID]
-  Tokens --> Mask[損失マスク<br/>指示に-100]
-  Mask --> Model[トランスフォーマーボディ + LMヘッド]
-  Model --> CE[クロスエントロピー<br/>ignore_index=-100]
-  CE --> Step[バックワード + オプティマイザーステップ]
+  Pair["指示 + 応答"] --> Tmpl["テンプレート適用\n指示+応答トークン"]
+  Tmpl --> Tokens["トークンID"]
+  Tokens --> Mask["損失マスク\n指示に-100"]
+  Mask --> Model["トランスフォーマーボディ + 言語モデルヘッド"]
+  Model --> CE["クロスエントロピー\n無視インデックス=-100"]
+  CE --> Step["バックワード + オプティマイザーステップ"]
 ```
 
 `ignore_index` は `torch.nn.functional.cross_entropy` の機能です。`ignore_index` と等しいターゲット位置はゼロ損失とゼロ勾配を寄与します。PyTorchの慣例は `-100` です。コレート関数はサンプルごとに2つのテンソルを構築します：`input_ids`（完全なシーケンス）と `labels`（`input_ids` のコピーで指示位置が `-100` で上書き済み）。
@@ -75,11 +75,11 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  Batch[(サンプル)] --> Tok[エンコード + 特殊挿入]
-  Tok --> Pad[最長にパディング]
-  Pad --> Shift[ラベルを1シフト]
-  Shift --> Mask[-100を<br/>指示/パッド/境界に設定]
-  Mask --> Out[(input_ids, labels)]
+  Batch[("サンプル")] --> Tok["エンコード + 特殊挿入"]
+  Tok --> Pad["最長にパディング"]
+  Pad --> Shift["ラベルを1シフト"]
+  Shift --> Mask["-100を\n指示/パッド/境界に設定"]
+  Mask --> Out[("入力IDとラベル")]
 ```
 
 シフトは標準的な因果トリック：`input_ids` の位置 `i` は位置 `i+1` を予測するため、`labels[i] = input_ids[i+1]` です（最終位置は入力から削除、最初は targets から削除）。マスクはシフトの後に適用して正しい位置に着地させます。
@@ -88,12 +88,12 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  DL[訓練ローダー<br/>200ペア] --> Fwd[フォワード]
-  Fwd --> Logits[B x T x V]
-  Logits --> Loss[CE with -100マスク]
-  Loss --> Bwd[バックワード]
-  Bwd --> Opt[Adamオプティマイザー]
-  Opt --> Body[(更新されたボディ)]
+  DL["訓練ローダー\n200ペア"] --> Fwd["フォワード"]
+  Fwd --> Logits["B x T x V"]
+  Logits --> Loss["クロスエントロピー with -100マスク"]
+  Loss --> Bwd["バックワード"]
+  Bwd --> Opt["Adamオプティマイザー"]
+  Opt --> Body[("更新されたボディ")]
 ```
 
 ループは標準的なPyTorch SFTループです。Adam、学習率約3e-4から1e-3、このフィクスチャで10から20エポック、スケジューラーなし。モデルは十分小さい（隠れ96、2ブロック、最大長64）ためCPU上で2分以内に収束します。

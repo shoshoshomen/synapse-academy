@@ -20,12 +20,12 @@ Googleドキュメント、チャット履歴、3つの半記憶のスクリプ�
 
 ```mermaid
 flowchart TD
-  Pack[agent-workbench-pack/] --> Docs[AGENTS.md + docs/]
-  Pack --> Schemas[schemas/]
-  Pack --> Scripts[scripts/]
-  Pack --> Bin[bin/install.sh]
-  Bin --> Repo[ターゲットリポジトリ]
-  Repo --> Surfaces[7つのワークベンチサーフェスをすべてワイヤード]
+  Pack["agent-workbench-pack/"] --> Docs["AGENTS.md + docs/"]
+  Pack --> Schemas["schemas/"]
+  Pack --> Scripts["scripts/"]
+  Pack --> Bin["bin/install.sh"]
+  Bin --> Repo["ターゲットリポジトリ"]
+  Repo --> Surfaces["7つのワークベンチサーフェスをすべてワイヤード"]
 ```
 
 ### パックレイアウト

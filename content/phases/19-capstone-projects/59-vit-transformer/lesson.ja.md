@@ -20,23 +20,23 @@
 
 ```mermaid
 flowchart TB
-  Input[トークンシーケンス B x 197 x 768] --> B1[ブロック 1]
-  B1 --> B2[ブロック 2]
-  B2 --> Dots[...]
-  Dots --> B12[ブロック 12]
-  B12 --> LN[最終 LayerNorm]
-  LN --> Out[文脈的トークン B x 197 x 768]
+  Input["トークンシーケンス B x 197 x 768"] --> B1["ブロック 1"]
+  B1 --> B2["ブロック 2"]
+  B2 --> Dots["..."]
+  Dots --> B12["ブロック 12"]
+  B12 --> LN["最終レイヤー正規化"]
+  LN --> Out["文脈的トークン B x 197 x 768"]
 ```
 
 ```mermaid
 flowchart LR
-  Token[トークン x] --> N1[LayerNorm]
-  N1 --> Attn[マルチヘッド自己アテンション]
-  Attn --> R1[+ 残差]
-  R1 --> N2[LayerNorm]
-  N2 --> MLP[FFN: 線形 -> GELU -> 線形]
-  MLP --> R2[+ 残差]
-  R2 --> Out[トークン x']
+  Token["トークン x"] --> N1["レイヤー正規化"]
+  N1 --> Attn["マルチヘッド自己アテンション"]
+  Attn --> R1["+ 残差"]
+  R1 --> N2["レイヤー正規化"]
+  N2 --> MLP["FFN: 線形 -> GELU -> 線形"]
+  MLP --> R2["+ 残差"]
+  R2 --> Out["トークン x'"]
 ```
 
 ### Pre-LN 対 Post-LN

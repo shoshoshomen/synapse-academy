@@ -20,11 +20,11 @@
 
 ```mermaid
 flowchart TD
-  Task[タスク：/signupを検証してテストを追加] --> A[プロンプトのみの実行]
-  Task --> B[ワークベンチガイド付きの実行]
-  A --> M[測定：5つの結果]
+  Task["タスク：/signupを検証してテストを追加"] --> A["プロンプトのみの実行"]
+  Task --> B["ワークベンチガイド付きの実行"]
+  A --> M["測定：5つの結果"]
   B --> M
-  M --> Report[before-after-report.md]
+  M --> Report["before-after-report.md"]
 ```
 
 ### サンプルアプリ

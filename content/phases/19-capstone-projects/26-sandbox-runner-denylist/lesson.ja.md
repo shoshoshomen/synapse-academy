@@ -29,13 +29,13 @@
 
 ```mermaid
 flowchart TD
-  Call[ToolCall<br/>already passed gate chain] --> Run["Sandbox.run()"]
-  Run --> S1[1. resolve executable against denylist<br/>rm, sudo, mkfs, ...]
-  S1 --> S2[2. inspect argv<br/>interpreter -c, shell metachars when shell=False]
-  S2 --> S3[3. resolve path-like arguments<br/>against project_root via realpath]
-  S3 --> S4[4. spawn subprocess<br/>capture, wall-clock timeout, env scrub]
-  S4 --> S5[5. truncate stdout/stderr to max_output_bytes]
-  S5 --> Result[SandboxResult<br/>exit_code, stdout, stderr,<br/>truncated, timed_out, denied, reason]
+  Call["ToolCall\nゲートチェーン通過済み"] --> Run["Sandbox.run()"]
+  Run --> S1["1. 実行ファイルをデナイリストに照合\nrm, sudo, mkfs, ..."]
+  S1 --> S2["2. argv を検査\nインタープリター -c、shell=False 時のシェルメタ文字"]
+  S2 --> S3["3. パスのような引数を解決\nrealpath 経由で project_root に照合"]
+  S3 --> S4["4. サブプロセスを生成\nキャプチャ、ウォールクロックタイムアウト、env スクラブ"]
+  S4 --> S5["5. stdout/stderr を max_output_bytes に切り詰め"]
+  S5 --> Result["SandboxResult\nexit_code, stdout, stderr,\ntruncated, timed_out, denied, reason"]
 ```
 
 サンドボックスには4つの拒否軸がある: 名前、argv、パス、構造。各軸は呼び出しのピュア関数で、まだサブプロセスはない。サブプロセスはすべての軸がパスした後にのみ生成される。
@@ -46,9 +46,9 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  Harness[AgentHarness<br/>lesson 20-25] -->|call| Sandbox[Sandbox<br/>denylist<br/>path jail<br/>argv inspect<br/>timeout<br/>truncation]
-  Sandbox -->|exec| Popen[subprocess.Popen]
-  Sandbox --> Result[SandboxResult]
+  Harness["AgentHarness\nレッスン 20-25"] -->|"呼び出し"| Sandbox["Sandbox\nデナイリスト\nパスジェイル\nargv 検査\nタイムアウト\n切り詰め"]
+  Sandbox -->|"exec"| Popen["subprocess.Popen"]
+  Sandbox --> Result["SandboxResult"]
 ```
 
 デナイリストは実行ファイルのベース名のfrozensetだ。エイリアス（`/bin/rm`、`/usr/bin/rm`）はすべて同じベース名に解決される。argvインスペクターはインタープリターの形を知っている: argv[0]がインタープリターで後の引数のいずれかが`-c`や`-e`で始まるargvはすべて拒否される。シェルメタキャラクター（`;`、`|`、`&`、`>`、`<`、バックティック、`$()`）は呼び出しが明示的にシェルを要求しないとき拒否を引き起こす。

@@ -22,13 +22,13 @@
 
 ```mermaid
 flowchart TD
-  tasks[タスクJSONL: prompt, targets, metric, extras] --> loader[load_all_tasks]
-  loader --> runner[run_leaderboard]
-  runner --> adapter[ModelAdapter.generate バッチ]
-  adapter --> metrics[METRIC_FNS 名前でディスパッチ]
-  metrics --> scores[サンプルごとのスコア]
-  scores --> board[リーダーボード: タスクごと + 全体]
-  board --> out[leaderboard.json]
+  tasks["タスクJSONL: プロンプト, ターゲット, メトリクス, 付加情報"] --> loader["全タスク読み込み"]
+  loader --> runner["リーダーボード実行"]
+  runner --> adapter["モデルアダプター生成バッチ"]
+  adapter --> metrics["メトリクス関数 名前でディスパッチ"]
+  metrics --> scores["サンプルごとのスコア"]
+  scores --> board["リーダーボード: タスクごと + 全体"]
+  board --> out["leaderboard.json"]
 ```
 
 ### タスクスペック
@@ -92,11 +92,11 @@ class ModelAdapter(Protocol):
 
 ```mermaid
 flowchart LR
-  examples[Nサンプル] --> batches[Bサイズのバッチ]
-  batches --> adapter[adapter.generate]
-  adapter --> per[サンプルごとのスコア 0..1]
-  per --> avg[タスクスコア]
-  avg --> over[全体 = タスクスコアの平均]
+  examples["Nサンプル"] --> batches["Bサイズのバッチ"]
+  batches --> adapter["アダプター生成"]
+  adapter --> per["サンプルごとのスコア 0..1"]
+  per --> avg["タスクスコア"]
+  avg --> over["全体 = タスクスコアの平均"]
 ```
 
 ## 実装する

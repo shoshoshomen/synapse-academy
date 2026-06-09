@@ -23,10 +23,10 @@
 
 ```mermaid
 flowchart TD
-  Repo[Repoフィクスチャ<br/>src/fizz.py バグあり<br/>tests/test_fizz.py] --> Harness
-  Policy[ポリシー<br/>モデルの確定的代替] -->|ツール呼び出し| Harness
-  Harness[ハーネス<br/>ゲートチェーン / サンドボックス<br/>スパンビルダー / 観測台帳] -->|観測| Policy
-  Harness --> Out[EvalReport + JSONL<br/>+ Prometheusエクスポジション]
+  Repo["Repo フィクスチャ\nsrc/fizz.py バグあり\ntests/test_fizz.py"] --> Harness
+  Policy["ポリシー\nモデルの確定的代替"] -->|"ツール呼び出し"| Harness
+  Harness["ハーネス\nゲートチェーン / サンドボックス\nスパンビルダー / 観測台帳"] -->|"観測"| Policy
+  Harness --> Out["EvalReport + JSONL\n+ Prometheus エクスポジション"]
 ```
 
 エージェントのポリシーはステートマシンです。5つの状態があります。
@@ -49,14 +49,14 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  Policy -->|step| Dispatcher[StepDispatcher]
-  Dispatcher --> Gate[GateChain.evaluate]
-  Gate -->|ALLOW| Sandbox
-  Gate -->|DENY| Refuse[拒否ノート]
-  Sandbox --> Obs[観測<br/>台帳に追加]
+  Policy -->|"ステップ"| Dispatcher["StepDispatcher"]
+  Dispatcher --> Gate["GateChain.evaluate"]
+  Gate -->|"ALLOW"| Sandbox
+  Gate -->|"DENY"| Refuse["拒否ノート"]
+  Sandbox --> Obs["観測\n台帳に追加"]
   Obs --> Span
-  Refuse --> SpanErr[Span ERROR]
-  Span --> Back[ポリシーに戻る]
+  Refuse --> SpanErr["Span ERROR"]
+  Span --> Back["ポリシーに戻る"]
   SpanErr --> Back
   Back --> Policy
 ```

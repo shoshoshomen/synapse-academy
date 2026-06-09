@@ -65,18 +65,18 @@ L_DPO(theta) = - E_{(x, y_w, y_l)} [
 
 ```mermaid
 flowchart LR
-  Triple[(x, y_w, y_l)] --> Pol[ポリシー<br/>pi_theta]
-  Triple --> Ref[参照<br/>pi_ref, 凍結]
-  Pol --> LWP[log pi_theta y_w]
-  Pol --> LLP[log pi_theta y_l]
-  Ref --> LWR[log pi_ref y_w]
-  Ref --> LLR[log pi_ref y_l]
-  LWP --> Diff[beta * log比率差]
+  Triple[("x, y_w, y_l")] --> Pol["ポリシー\npi_theta"]
+  Triple --> Ref["参照\npi_ref, 凍結"]
+  Pol --> LWP["log pi_theta y_w"]
+  Pol --> LLP["log pi_theta y_l"]
+  Ref --> LWR["log pi_ref y_w"]
+  Ref --> LLR["log pi_ref y_l"]
+  LWP --> Diff["beta * log比率差"]
   LLP --> Diff
   LWR --> Diff
   LLR --> Diff
-  Diff --> Sig[シグモイド]
-  Sig --> NLL[- log sigmoid]
+  Diff --> Sig["シグモイド"]
+  Sig --> NLL["- log シグモイド"]
 ```
 
 ## 勾配の符号
@@ -113,17 +113,17 @@ DPO実装は参照モデルを慎重に扱わなければなりません。参�
 
 ```mermaid
 flowchart TD
-  P[(選好トリプル)] --> Tok[InstructionTokenizer]
-  Tok --> DS[PreferenceDataset]
-  DS --> DL[DataLoader<br/>行ごとデコード]
-  DL --> Pol[ポリシー TinyGPT]
-  DL --> Ref[参照 TinyGPT<br/>凍結]
-  Pol --> LP[選択と拒否のlog pi]
-  Ref --> LR[選択と拒否のlog pi_ref]
-  LP --> Loss[DPO損失<br/>シグモイド * log比率差]
+  P[("選好トリプル")] --> Tok["指示トークナイザー"]
+  Tok --> DS["選好データセット"]
+  DS --> DL["データローダー\n行ごとデコード"]
+  DL --> Pol["ポリシー TinyGPT"]
+  DL --> Ref["参照 TinyGPT\n凍結"]
+  Pol --> LP["選択と拒否の log pi"]
+  Ref --> LR["選択と拒否の log pi_ref"]
+  LP --> Loss["DPO損失\nシグモイド * log比率差"]
   LR --> Loss
-  Loss --> Bwd[バックワード]
-  Bwd --> Opt[Adamオプティマイザー]
+  Loss --> Bwd["バックワード"]
+  Bwd --> Opt["Adamオプティマイザー"]
 ```
 
 モデルはレッスン39で使用した同じTinyGPTです（デコーダーオンリー、因果、バイトトークナイザー）。参照とポリシーはアーキテクチャを共有します；訓練中にポリシーの重みは参照からドリフトし、参照は固定されたままです。

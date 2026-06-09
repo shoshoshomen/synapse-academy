@@ -28,13 +28,13 @@
 
 ```mermaid
 flowchart LR
-    IMG["Image"] --> DET["Text detection<br/>(DB, EAST, CRAFT)"]
-    DET --> BOX["Word/line<br/>bounding boxes"]
-    BOX --> CROP["Crop each region"]
-    CROP --> REC["Recognition<br/>(CRNN + CTC)"]
-    REC --> TXT["Text strings"]
-    TXT --> LAY["Layout<br/>ordering"]
-    LAY --> OUT["Reading-order text"]
+    IMG["画像"] --> DET["テキスト検出\n(DB, EAST, CRAFT)"]
+    DET --> BOX["単語/行の\nバウンディングボックス"]
+    BOX --> CROP["各領域をクロップ"]
+    CROP --> REC["認識\n(CRNN + CTC)"]
+    REC --> TXT["テキスト文字列"]
+    TXT --> LAY["レイアウト\n並べ替え"]
+    LAY --> OUT["読み取り順テキスト"]
 
     style DET fill:#dbeafe,stroke:#2563eb
     style REC fill:#fef3c7,stroke:#d97706

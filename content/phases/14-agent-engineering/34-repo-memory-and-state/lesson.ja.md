@@ -20,11 +20,11 @@
 
 ```mermaid
 flowchart LR
-  Agent[エージェントループ] --> Manager[StateManager]
-  Manager --> Schema[agent_state.schema.json]
-  Schema --> Validate{有効？}
-  Validate -- yes --> Write[agent_state.json]
-  Validate -- no --> Reject[拒否 + raise]
+  Agent["エージェントループ"] --> Manager["StateManager"]
+  Manager --> Schema["agent_state.schema.json"]
+  Schema --> Validate{"有効？"}
+  Validate -- "はい" --> Write["agent_state.json"]
+  Validate -- "いいえ" --> Reject["拒否 + raise"]
   Write --> Manager
 ```
 

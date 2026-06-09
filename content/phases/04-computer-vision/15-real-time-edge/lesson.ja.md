@@ -24,11 +24,11 @@
 
 ```mermaid
 flowchart LR
-    M["Model"] --> LAT["Latency<br/>ms per image"]
-    M --> MEM["Memory<br/>peak MB"]
-    M --> PWR["Power<br/>mJ per inference"]
+    M["モデル"] --> LAT["レイテンシ\n画像あたりms"]
+    M --> MEM["メモリ\nピーク MB"]
+    M --> PWR["電力\n推論あたり mJ"]
 
-    LAT --> SHIP["Ship / no-ship<br/>decision"]
+    LAT --> SHIP["出荷 / 非出荷\n判断"]
     MEM --> SHIP
     PWR --> SHIP
 

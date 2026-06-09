@@ -59,19 +59,19 @@ dy/dx = f'(g(h(x))) * g'(h(x)) * h'(x)
 
 ```mermaid
 graph TD
-    x1["x1 = 2"] --> mul["* (multiply)"]
+    x1["x1 = 2"] --> mul["* (乗算)"]
     x2["x2 = 3"] --> mul
-    mul -->|"a = 6"| add["+ (add)"]
+    mul -->|"a = 6"| add["+ (加算)"]
     b["b = 1"] --> add
     add -->|"c = 7"| relu["relu"]
-    relu -->|"y = 7"| y["output y"]
+    relu -->|"y = 7"| y["出力 y"]
 ```
 
 **逆伝播（勾配を計算する）:**
 
 ```mermaid
 graph TD
-    dy["dy/dy = 1"] -->|"relu'(c)=1 since c>0"| dc["dy/dc = 1"]
+    dy["dy/dy = 1"] -->|"relu'(c)=1 (c>0のため)"| dc["dy/dc = 1"]
     dc -->|"dc/da = 1"| da["dy/da = 1"]
     dc -->|"dc/db = 1"| db["dy/db = 1"]
     da -->|"da/dx1 = x2 = 3"| dx1["dy/dx1 = 3"]

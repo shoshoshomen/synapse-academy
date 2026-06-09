@@ -22,18 +22,18 @@
 
 ```mermaid
 flowchart TB
-  D[(トークンテンソル<br/>train + val)] --> B[バッチ作成<br/>入力+ターゲット1シフト]
-  B --> F[フォワード<br/>ロジット]
-  F --> L[クロスエントロピー<br/>バッチと時間でフラット化]
-  L --> Bw[バックワード]
-  Bw --> Cg[勾配ノルムをクリップ]
-  Cg --> Step[AdamWステップ]
-  Step --> Sched[コサインLRスケジュール]
-  Sched --> JL[ステップレコードを<br/>losses.jsonlに追加]
-  JL --> Probe{ステップはプローブステップ?}
-  Probe -- yes --> Eval[evalモデルをvalで]
-  Probe -- yes --> Sample[generate_and_print_sample]
-  Probe -- no --> Next[次のステップ]
+  D[("トークンテンソル\n訓練 + 検証")] --> B["バッチ作成\n入力+ターゲット1シフト"]
+  B --> F["フォワード\nロジット"]
+  F --> L["クロスエントロピー\nバッチと時間でフラット化"]
+  L --> Bw["バックワード"]
+  Bw --> Cg["勾配ノルムをクリップ"]
+  Cg --> Step["AdamWステップ"]
+  Step --> Sched["コサインLRスケジュール"]
+  Sched --> JL["ステップレコードを\n損失ログに追加"]
+  JL --> Probe{"ステップはプローブステップ?"}
+  Probe -- "はい" --> Eval["検証データでモデル評価"]
+  Probe -- "はい" --> Sample["サンプル生成と表示"]
+  Probe -- "いいえ" --> Next["次のステップ"]
   Eval --> Next
   Sample --> Next
 ```
