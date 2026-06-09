@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
+import Google from "next-auth/providers/google";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 import { getDb, hasDatabase } from "@/lib/db";
@@ -10,6 +11,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   pages: { signIn: "/sign-in" },
   trustHost: true,
   providers: [
+    ...(process.env.AUTH_GOOGLE_ID ? [Google] : []),
     Credentials({
       credentials: {
         email: { label: "Email", type: "email" },

@@ -16,30 +16,28 @@ export const users = pgTable("users", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+// Progress is keyed by email so it works for both credential and Google
+// (OAuth, JWT-only) users without requiring a persisted users row.
 export const lessonProgress = pgTable(
   "lesson_progress",
   {
-    userId: uuid("user_id")
-      .notNull()
-      .references(() => users.id, { onDelete: "cascade" }),
+    userEmail: text("user_email").notNull(),
     lessonKey: text("lesson_key").notNull(),
     completed: boolean("completed").default(false).notNull(),
     updatedAt: timestamp("updated_at").defaultNow().notNull(),
   },
-  (t) => [primaryKey({ columns: [t.userId, t.lessonKey] })],
+  (t) => [primaryKey({ columns: [t.userEmail, t.lessonKey] })],
 );
 
 export const quizResults = pgTable(
   "quiz_results",
   {
-    userId: uuid("user_id")
-      .notNull()
-      .references(() => users.id, { onDelete: "cascade" }),
+    userEmail: text("user_email").notNull(),
     lessonKey: text("lesson_key").notNull(),
     correct: integer("correct").notNull(),
     total: integer("total").notNull(),
     passed: boolean("passed").notNull(),
     at: timestamp("at").defaultNow().notNull(),
   },
-  (t) => [primaryKey({ columns: [t.userId, t.lessonKey] })],
+  (t) => [primaryKey({ columns: [t.userEmail, t.lessonKey] })],
 );
