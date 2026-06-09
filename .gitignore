@@ -40,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 講師用テスト答え集（ローカル専用・リポジトリに公開しない）
+answers/
