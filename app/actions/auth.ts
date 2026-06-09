@@ -9,6 +9,11 @@ import { users } from "@/lib/db/schema";
 
 export type AuthState = { error?: string } | null;
 
+/** Kicks off the Google OAuth flow. No-op label form action. */
+export async function googleSignInAction() {
+  await signIn("google", { redirectTo: "/dashboard" });
+}
+
 export async function authAction(
   _prev: AuthState,
   formData: FormData,

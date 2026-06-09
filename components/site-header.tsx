@@ -2,8 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { siteConfig } from "@/config/site";
 import { LanguageSwitcher } from "./language-switcher";
-import { buttonVariants } from "./ui/button";
-import { cn } from "@/lib/utils";
+import { HeaderAuth } from "./auth/header-auth";
 
 function Logo() {
   return (
@@ -57,15 +56,7 @@ export async function SiteHeader() {
 
         <div className="ml-auto flex items-center gap-3">
           <LanguageSwitcher />
-          <Link
-            href="/sign-in"
-            className={cn(
-              buttonVariants({ variant: "outline", size: "sm" }),
-              "hidden sm:inline-flex",
-            )}
-          >
-            {t("signIn")}
-          </Link>
+          <HeaderAuth />
         </div>
       </div>
     </header>

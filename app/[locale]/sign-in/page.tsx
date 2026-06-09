@@ -26,7 +26,7 @@ export default async function SignInPage({
         </p>
 
         {hasDatabase ? (
-          <SignInForm />
+          <SignInForm googleEnabled={Boolean(process.env.AUTH_GOOGLE_ID)} />
         ) : (
           <>
             <div className="mt-6 flex items-start gap-3 rounded-lg bg-subtle p-4 text-sm">

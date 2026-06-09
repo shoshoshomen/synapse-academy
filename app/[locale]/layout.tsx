@@ -6,6 +6,7 @@ import { Fraunces, Inter, JetBrains_Mono, Noto_Sans_JP } from "next/font/google"
 import { routing } from "@/i18n/routing";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { AuthSessionProvider } from "@/components/session-provider";
 import "../globals.css";
 
 const fraunces = Fraunces({
@@ -68,9 +69,11 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <NextIntlClientProvider>
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
+          <AuthSessionProvider>
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </AuthSessionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

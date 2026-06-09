@@ -158,7 +158,9 @@
     "dbDisabledNotice": "このデプロイではまだアカウント機能が設定されていません。アカウントなしで学習でき、進捗はこの端末に保存されます。",
     "errorInvalid": "メールアドレスまたはパスワードが正しくありません。",
     "errorExists": "このメールアドレスのアカウントは既に存在します。",
-    "errorGeneric": "処理を完了できませんでした。もう一度お試しください。"
+    "errorGeneric": "処理を完了できませんでした。もう一度お試しください。",
+    "continueWithGoogle": "Googleでログイン",
+    "orDivider": "または"
   },
   "footer": {
     "tagline": "AIは、使うより作れ。",

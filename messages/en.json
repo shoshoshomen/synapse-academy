@@ -158,7 +158,9 @@
     "dbDisabledNotice": "Accounts are not configured on this deployment yet. You can still study and your progress is saved on this device.",
     "errorInvalid": "Invalid email or password.",
     "errorExists": "An account with this email already exists.",
-    "errorGeneric": "Could not complete the request. Please try again."
+    "errorGeneric": "Could not complete the request. Please try again.",
+    "continueWithGoogle": "Continue with Google",
+    "orDivider": "or"
   },
   "footer": {
     "tagline": "Don't just use AI. Build it.",
