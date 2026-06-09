@@ -1,0 +1,10 @@
+{
+  "title": "キャップストーン87 — エンドツーエンド セーフティゲート",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ18のセーフティレッスン、フェーズ19トラックAのレッスン25〜29",
+  "timeEstimate": "約90分",
+  "objectives": []
+}

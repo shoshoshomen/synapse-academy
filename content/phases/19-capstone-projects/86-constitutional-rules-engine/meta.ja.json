@@ -1,0 +1,11 @@
+{
+  "title": "キャップストーン86 — 憲法的ルールエンジン",
+  "type": "実装",
+  "languages": [
+    "Python",
+    "YAML"
+  ],
+  "prerequisites": "フェーズ18のセーフティレッスン、フェーズ19トラックAのレッスン25〜29",
+  "timeEstimate": "約90分",
+  "objectives": []
+}

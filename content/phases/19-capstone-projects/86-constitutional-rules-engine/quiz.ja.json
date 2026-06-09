@@ -1,0 +1,78 @@
+{
+  "lesson": "86-constitutional-rules-engine",
+  "title": "キャップストーン86 — 憲法的ルールエンジン",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "アドホックなコードチェックではなく、宣言的なYAML憲法を使う理由は何か？",
+      "options": [
+        "YAMLはPythonよりも解析が速いから",
+        "YAMLのルールはエンジニア以外でもレビュー可能で、バージョン管理に置かれ、コード変更なしに差し替えられるから",
+        "標準ライブラリがYAMLを推奨しているから",
+        "YAMLはアンカーをサポートしているから"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "pre",
+      "question": "各ルールが最低限持たなければならないフィールドは何か？",
+      "options": [
+        "name、regex、fix",
+        "id、owner、timestamp",
+        "name、severity、must、explanation",
+        "predicate、severity、owner"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "エンジンはどのように述語を合成するか？",
+      "options": [
+        "ルールごとに単一のcontains_regexのみ使用する",
+        "アトミックな述語を再帰的にラップするall_of、any_of、not_を使用する",
+        "信頼スコアを乗算する",
+        "ニューラル分類器を使用する"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "applies_whenの役割は何か？",
+      "options": [
+        "常にtrueに評価される",
+        "must述語をゲート制御し、適用されないルールをviolationではなくnot_applicableとして記録する",
+        "severityを上書きする",
+        "フィクサーの操作を選択する"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Fixerは何をするか？",
+      "options": [
+        "ルールファイルを書き換える",
+        "ルールごとの宣言的な修正（append、prepend、replace_regex）を適用して修正テキストを生成する",
+        "修正からseverityを計算する",
+        "リモートモデルを呼び出してテキストを修復する"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "デモがフィクサーの後でエンジンを2回目に実行するのはなぜか？",
+      "options": [
+        "レポートサイズを増やすため",
+        "修正後のテキストがルールを満たしているかを確認し、フィクサーがローカルで修復できないルールを浮かび上がらせるため",
+        "憲法を再ロードするため",
+        "1回目のパスがドライランだから"
+      ],
+      "correct": 1,
+      "explanation": ""
+    }
+  ]
+}
