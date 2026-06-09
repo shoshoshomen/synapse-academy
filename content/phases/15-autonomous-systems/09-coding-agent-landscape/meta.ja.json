@@ -1,0 +1,11 @@
+{
+  "title": "自律的コーディングエージェントの全体像（2026年）",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "CodeAct vs JSON tool-call comparison)"
+  ],
+  "prerequisites": "Phase 14・07（ツール使用）、Phase 15・01（ロングホライズンエージェント）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

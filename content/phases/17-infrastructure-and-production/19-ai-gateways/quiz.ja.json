@@ -1,0 +1,78 @@
+{
+  "lesson": "19-ai-gateways",
+  "title": "AIゲートウェイ — LiteLLM、Portkey、Kong AI Gateway、Bifrost",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "このレッスンにおけるAIゲートウェイのコアな役割は何か？",
+      "options": [
+        "モデルファインチューニングサービス",
+        "検索用ベクトルデータベース",
+        "ロギングのみのサイドカー",
+        "アプリとモデルプロバイダーの間に位置し、ルーティング、フォールバック、リトライ、レート制限、シークレット参照、オブザーバビリティ、ガードレールを1つのAPIの背後に集約するプロセス"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "KongのベンチマークがLiteLLMについて報告するスケール上限は何か？",
+      "options": [
+        "50 RPSで頭打ちになる",
+        "持続負荷下で約2,000 RPSで崩壊し、8 GBメモリとカスケード障害",
+        "10,000 RPSを超えてリニアにスケール",
+        "LiteLLMはベンチマークできない"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "同等のCPUでのKongのベンチマークによると、Kong AI GatewayはPortkeyとLiteLLMよりどれだけ速いか？",
+      "options": [
+        "Portkeyより228%速く、LiteLLMより859%速い",
+        "約10%と20%速い",
+        "同一",
+        "両方より遅い"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンがレイテンシオーバーヘッド20〜40 msとガードレール/PII除去/ジェイルブレーク検出フォーカスで位置付けているゲートウェイはどれか？",
+      "options": [
+        "Kong AI Gateway",
+        "LiteLLM",
+        "Cloudflare AI Gateway",
+        "Portkey"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このレッスンがセルフホスト対マネージドゲートウェイ決定の強制要因として述べているのは何か？",
+      "options": [
+        "ゲートウェイがオープンソースかどうか",
+        "サポートされるプロバイダー数",
+        "リクエストあたりのコスト",
+        "データレジデンシー要件"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "SLAがTTFT P99 < 100 msのとき、バジェット内に収まるゲートウェイはどれか？",
+      "options": [
+        "どのゲートウェイでも",
+        "Portkeyのみ",
+        "LiteLLMのみ",
+        "Kong（約3〜8 ms）またはCloudflare/Vercelエッジゲートウェイ（約1〜3 ms）；Portkeyは20〜40 msで重すぎる"
+      ],
+      "correct": 3,
+      "explanation": ""
+    }
+  ]
+}

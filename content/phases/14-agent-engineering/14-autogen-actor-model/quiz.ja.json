@@ -1,0 +1,90 @@
+{
+  "lesson": "14-autogen-actor-model",
+  "title": "AutoGen v0.4: アクターモデルとエージェントフレームワーク",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "AutoGen v0.4でアクターが互いに関わる唯一の合法的な方法は何か？",
+      "options": [
+        "共有dictへの直接アクセス",
+        "インボックス経由で交換される非同期メッセージ; 共有メモリなし",
+        "共有SQLトランザクション",
+        "互いのプロンプトのミューテーション"
+      ],
+      "correct": 1,
+      "explanation": "アクターはプライベートな状態とインボックスを持つ; メッセージが唯一のインタラクションだ。"
+    },
+    {
+      "stage": "pre",
+      "question": "AutoGen v0.4の3つのAPIレイヤーは何か？",
+      "options": [
+        "Core、AgentChat、Extensions",
+        "Frontend、Backend、Database",
+        "Tools、Models、Memory",
+        "Plan、Act、Reflect"
+      ],
+      "correct": 0,
+      "explanation": "Coreは低レベルアクターフレームワーク、AgentChatはタスク駆動の高レベルAPI、Extensionsはインテグレーションだ。"
+    },
+    {
+      "stage": "check",
+      "question": "配信とハンドリングのデカップリングが障害分離をもたらす理由は何か？",
+      "options": [
+        "ランタイムはAをクラッシュさせずにBのハンドラー障害をキャッチする; Aのsend()はすぐに返り、ブロックされなかった",
+        "各アクターが別々のマシンで実行される",
+        "ランタイムは障害時にOSを再起動する",
+        "ハンドラーが純粋関数だ"
+      ],
+      "correct": 0,
+      "explanation": "send()はメッセージを受信者のインボックスに入れて返す; ハンドラークラッシュはそのアクターにローカルだ。"
+    },
+    {
+      "stage": "check",
+      "question": "固定の順番でエージェントをローテートするAgentChatトポロジはどれか？",
+      "options": [
+        "SelectorGroupChat",
+        "RoundRobinGroupChat",
+        "Magentic-One",
+        "Supervisor"
+      ],
+      "correct": 1,
+      "explanation": "RoundRobinGroupChatは固定ローテーション; SelectorGroupChatはセレクターを使って次を選ぶ。"
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンでMagentic-Oneとは何か？",
+      "options": [
+        "新しいLLMモデル",
+        "AgentChatの上に構築されたWebブラウジング、コード実行、ファイル処理のためのリファレンスマルチエージェントチーム",
+        "シリアライゼーションフォーマット",
+        "OTelエクスポーター"
+      ],
+      "correct": 1,
+      "explanation": "Magentic-OneはAgentChat APIをデモするMicrosoftのリファレンスチームだ。"
+    },
+    {
+      "stage": "post",
+      "question": "レッスンが述べる2026年初頭のAutoGen v0.4のステータスは何か？",
+      "options": [
+        "非推奨で削除済み",
+        "安定しているがメンテナンスモード; Microsoft Agent Frameworkがフォワードパス",
+        "発表されたばかり",
+        "LangGraphに置き換えられた"
+      ],
+      "correct": 1,
+      "explanation": "AutoGen v0.7.xはリサーチに安定している; アクティブな開発はMicrosoft Agent Frameworkにシフトした。"
+    },
+    {
+      "stage": "post",
+      "question": "AutoGen v0.4がデフォルトで発行するオブザーバビリティ標準はどれか？",
+      "options": [
+        "Prometheusメトリクスのみ",
+        "OTel GenAIセマンティックコンベンションに従ったgen_ai.*属性を持つOpenTelemetryスパン",
+        "StatsD",
+        "Datadog APM"
+      ],
+      "correct": 1,
+      "explanation": "すべてのメッセージがスパンを発行する; ツール呼び出しはOTel GenAIコンベンションに従ったgen_ai.*属性を持つ。"
+    }
+  ]
+}

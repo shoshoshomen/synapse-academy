@@ -1,0 +1,78 @@
+{
+  "lesson": "08-inference-metrics-goodput",
+  "title": "推論メトリクス — TTFT、TPOT、ITL、グッドプット、P99",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "TTFT（ファーストトークン時間）を支配するコンポーネントはどれか？",
+      "options": [
+        "デコード専用のフォワード時間",
+        "ウェイトのディスクI/O",
+        "トークナイザーのGILオーバーヘッド",
+        "キュー時間、ネットワークリクエスト時間、プリフィル時間"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンがプロダクトで実際に重要なメトリクスと呼ぶのはどれか？",
+      "options": [
+        "GPUデューティサイクル",
+        "トークン/秒の集計スループット",
+        "グッドプット — すべてのSLO制約を同時に満たすリクエストの割合",
+        "平均ITL"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "LLMレイテンシに対して平均を報告することが誤っている理由は？",
+      "options": [
+        "ストリーミングレスポンスでは平均を計算できないから",
+        "平均はプリフィルにしか機能せずデコードには機能しないから",
+        "LLMレイテンシの分布は右に歪んでいて、ユーザーは平均が隠すP99の外れ値に定期的にぶつかるから",
+        "GenAI-Perfは平均をサポートしていないから"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "GenAI-PerfとLLMPerfが同じ実行でTPOTについて意見が異なる理由は？",
+      "options": [
+        "GenAI-PerfはBlackwellでしか動作しないから",
+        "GenAI-PerfはITL計算からTTFTを除外し、LLMPerfは含む。ツールの選択で数値が変わる",
+        "LLMPerfはマイクロ秒を使い、GenAI-Perfはミリ秒を使うから",
+        "異なるリクエストをサンプリングするから"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "長い出力リクエスト（>500トークン）ではどのメトリクスがエンドツーエンドレイテンシを支配するか？",
+      "options": [
+        "TPOT × 出力長",
+        "コールドスタート時間",
+        "TTFT",
+        "ネットワークレスポンス時間"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このレッスンの2026年の70Bチャットモデルに対する合理的な消費者向けSLOを最もよく捉えているセットはどれか？",
+      "options": [
+        "P50のみ、それ以上のパーセンタイルなし",
+        "TTFT P99 800ms、TPOT P99 25ms、<300トークン出力のE2E P99 3s、グッドプット >= 99%",
+        "TTFT P99 8s、TPOT P99 200ms、グッドプット 50%",
+        "平均TTFT 10ms、平均TPOT 1ms"
+      ],
+      "correct": 1,
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "AlphaEvolve — 進化的コーディングエージェント",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "evolutionary-loop toy)"
+  ],
+  "prerequisites": "Phase 15・01（ロングホライズンのフレーミング）、Phase 15・02（自己教示型推論）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

@@ -1,0 +1,15 @@
+{
+  "title": "コンピューター使用: Claude、OpenAI CUA、Gemini",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・20（WebArena、OSWorld）、フェーズ14・27（プロンプトインジェクション）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "Claude のコンピューター使用を説明できる: スクリーンショット入力、キーボード/マウスコマンド出力、アクセシビリティ API なし。",
+    "3つのモデルの OSWorld / WebArena / Online-Mind2Web のベンチマーク数字を説明できる。",
+    "Gemini 2.5 Computer Use がドキュメントに記載するステップごとの安全パターンを説明できる。",
+    "3つのモデルが強制する信頼できない入力コントラクトを要約できる。"
+  ]
+}

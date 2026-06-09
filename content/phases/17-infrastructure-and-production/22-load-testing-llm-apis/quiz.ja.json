@@ -1,0 +1,78 @@
+{
+  "lesson": "22-load-testing-llm-apis",
+  "title": "LLM APIの負荷テスト — k6とLocustが嘘をつく理由",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "LLMベースの負荷テストにおけるLocustのGILの落とし穴とは何か？",
+      "options": [
+        "LocustはWindowsでしか動かない",
+        "LocustはHTTPをサポートしない",
+        "クライアント側のトークン化がPython GILの下で実行され、リクエスト生成の後ろに並んでインタートークンレイテンシを膨らませる",
+        "LocustはCUDAが必要"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "プロンプト一様性の落とし穴とは何か？",
+      "options": [
+        "一様なプロンプトは常にサーバーを遅くする",
+        "実際の分布からサンプリングすると長いプロンプトが過小表現される",
+        "一様なプロンプトはストリーミングが必要",
+        "同じプロンプトのループがプレフィックスキャッシュにヒットして、完全な同時デコードのように見せてスループットを膨らませる"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンが推奨する4つの負荷パターンはどれか？",
+      "options": [
+        "10日間一定1 RPS",
+        "手動クリックテスト",
+        "定常状態、ランプ、スパイク、ソーク",
+        "バーストのみ"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンがリアルなプロンプト分布を構築するために推奨する方法は何か？",
+      "options": [
+        "平均と標準偏差を使って実際の分布からサンプリングする（例：LLMPerfの--mean-input-tokens / --stddev-input-tokens）、または実際のトラフィックをリプレイする",
+        "リクエストごとのランダムな文字",
+        "5つのプロンプトを手書きしてシャッフル",
+        "キャッシュヒットを最大化するために常に同じプロンプトを使う"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "CI/CDのSLAゲートとKubernetesネイティブの分散実行に最適として2026年に位置付けられているツールの組み合わせはどれか？",
+      "options": [
+        "k6 v2026.1.0とk6 Operator 1.0 GA（TestRun / PrivateLoadZone CRD）",
+        "guidellmのみ",
+        "Vegetaのみ",
+        "Locust 2.43.3ストック"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "ソーク負荷パターンが検出する障害モードはどれか？",
+      "options": [
+        "数時間にわたるメモリリーク、コネクションプールドリフト、オブザーバビリティのオーバーフロー",
+        "コールドスタートのテール",
+        "トークナイザーのGIL競合",
+        "キャッシュエビクションストーム"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}

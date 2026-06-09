@@ -1,0 +1,90 @@
+{
+  "lesson": "42-agent-workbench-capstone",
+  "title": "カプストーン：再利用可能なエージェントワークベンチパックを出荷する",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "カプストーンは何を生成するか？",
+      "options": [
+        "研究論文",
+        "7つのサーフェスとbin/install.shを持つバージョン管理されたドロップインディレクトリ（agent-workbench-pack/）、冪等的に展開する",
+        "新しいLLM",
+        "監視ダッシュボード"
+      ],
+      "correct": 1,
+      "explanation": "パックがレシピだ；各インストールが1人前だ。"
+    },
+    {
+      "stage": "pre",
+      "question": "パックレイアウトに含まれないのはどれか？",
+      "options": [
+        "AGENTS.md + docs/",
+        "schemas/",
+        "scripts/",
+        "vendor_proprietary_weights/"
+      ],
+      "correct": 3,
+      "explanation": "パックレイアウトはAGENTS.md、docs/、schemas/、scripts/、bin/、README.mdだ。パックはフレームワークおよびベンダー非依存だ。"
+    },
+    {
+      "stage": "check",
+      "question": "パックがVERSIONファイルを持つ理由は？",
+      "options": [
+        "SEOのため",
+        "マイグレーションを必要とするスキーマ/スクリプト変更にはメジャーバンプ；追加にはマイナー；ドキュメントのみにはパッチ；ターゲットリポジトリがインストールされたバージョンを記録する",
+        "エージェントのIQを追跡するため",
+        "Hacker Newsで宣伝するため"
+      ],
+      "correct": 1,
+      "explanation": "npm、Cargo、pyproject.tomlと同じ形状；VERSIONはコントラクトであり、マーケティングではない。"
+    },
+    {
+      "stage": "check",
+      "question": "このパックでのクロスツール配布はどのようなものか？",
+      "options": [
+        "各ツールのパスをハードコードする",
+        "シンボリックリンク（ln -s AGENTS.md CLAUDE.md、.cursor/rules/、.github/copilot-instructions.md）を持つ1つのソースファイルで同じソースがすべてのコーディングエージェントにファンアウトする",
+        "ツールごとに手動コピー",
+        "ツールごとにベンダーロック"
+      ],
+      "correct": 1,
+      "explanation": "NxのnxAIセットアップがリファレンス；パックのインストーラーはシンボリックリンクで同じことをする。"
+    },
+    {
+      "stage": "check",
+      "question": "アンインストーラーはどのように動作することをレッスンが推奨するか？",
+      "options": [
+        "ステートを含むすべてを削除する",
+        "非trivialなステートで拒否する；ユーザーのagent_state.json、task_board.json、outputs/を決して削除しない；スキーマ、スクリプト、ドキュメント、AGENTS.mdのみを削除する（オプトアウト付き）",
+        "ドキュメントのみを削除する",
+        "gitを無効にする"
+      ],
+      "correct": 1,
+      "explanation": "ステートはユーザーのものだ；パックはそれを所有しない。"
+    },
+    {
+      "stage": "post",
+      "question": "パックに残らないのは何か？",
+      "options": [
+        "スキーマ",
+        "プロジェクト固有のタスク、ベンダーSDK呼び出し、チームオンボーディングの散文——パックはフレームワーク非依存でオンボーディングの隣に住み、中ではない",
+        "スクリプト",
+        "インストーラー"
+      ],
+      "correct": 1,
+      "explanation": "タスクはターゲットリポジトリのボードに属し、パックではない；ベンダーSDK呼び出しはパックを1つのフレームワークにロックする。"
+    },
+    {
+      "stage": "post",
+      "question": "パックはどのチャンネルを通じて一度に多くのコーディングエージェントに出荷されるか？",
+      "options": [
+        "手動コピー",
+        "SkillKitスタイルの配布（skillkit install agent-workbench-pack）が単一のソースから32のAIエージェントにわたって展開する",
+        "メール添付",
+        "GitHubリリースノートのみ"
+      ],
+      "correct": 1,
+      "explanation": "パックリポジトリが真実のソース；SkillKitが配布チャンネル；ベンダーロックインが崩壊する。"
+    }
+  ]
+}

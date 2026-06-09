@@ -1,0 +1,13 @@
+{
+  "title": "キルスイッチ、サーキットブレーカー、カナリアトークン",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "three-detector simulator: kill switch",
+    "circuit breaker",
+    "canary)"
+  ],
+  "prerequisites": "Phase 15・13（コストガバナー）、Phase 15・10（権限モード）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

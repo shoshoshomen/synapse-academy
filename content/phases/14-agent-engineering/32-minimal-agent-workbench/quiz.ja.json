@@ -1,0 +1,90 @@
+{
+  "lesson": "32-minimal-agent-workbench",
+  "title": "最小エージェントワークベンチ",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "最小限の有用なワークベンチを形成する3つのファイルは何か？",
+      "options": [
+        "AGENTS.md（ルーター）、agent_state.json（ステート）、task_board.json（キュー）",
+        "README.md、CHANGELOG.md、LICENSE",
+        "model.py、prompts.py、tools.py",
+        "Dockerfile、Makefile、.gitignore"
+      ],
+      "correct": 0,
+      "explanation": "短いルーター、デュラブルなステート、タスクキューが最小限だ。"
+    },
+    {
+      "stage": "pre",
+      "question": "AGENTS.mdについてレッスンはどのようにフレームしているか？",
+      "options": [
+        "3000行のオンボーディングマニュアル",
+        "より深いドキュメントとステートとボードを指す短いルーター",
+        "ピュアなプロンプトキャッシュキー",
+        "リポジトリから秘密にするもの"
+      ],
+      "correct": 1,
+      "explanation": "AGENTS.mdはルーターであり、マニュアルではない；長いマニュアルは無視される。"
+    },
+    {
+      "stage": "check",
+      "question": "良いAGENTS.mdについてAugment Codeのデータは何を言っているか？",
+      "options": [
+        "測定可能な効果がない",
+        "良いAGENTS.mdがHaikuからOpusへのアップグレードに相当する品質ジャンプを与える；悪いものはファイルなしより悪い",
+        "長さは常に助けになる",
+        "Claude だけが読む"
+      ],
+      "correct": 1,
+      "explanation": "Augment Codeの測定：最良のファイルはモデルアップグレード形状、最悪はファイルなしより悪い。"
+    },
+    {
+      "stage": "check",
+      "question": "チャット履歴ステートよりファイルバックのステートを推奨する理由は？",
+      "options": [
+        "ディスクが安い",
+        "チャット履歴は揮発性；ファイルはセッション死、会話トリミング、ツールリセットを生き残る",
+        "ファイルが小さい",
+        "SOC 2で要求されている"
+      ],
+      "correct": 1,
+      "explanation": "セッションが死にチャットがトリミングされる；ファイルがデュラブルな記録のシステムだ。"
+    },
+    {
+      "stage": "check",
+      "question": "AGENTS.mdに矛盾した指示がある時何が起こるか？",
+      "options": [
+        "レイテンシが下がる",
+        "矛盾した指示がエージェントをインタラクティブモードから貪欲モードにサイレントにドロップする（AMBIG-SWE：48.8%から28%の解決率）",
+        "コストが少し上がる",
+        "何も起こらない"
+      ],
+      "correct": 1,
+      "explanation": "AMBIG-SWEが矛盾が現れた時の大きな解決率ドロップを測定した；代わりに優先度を番号付けする。"
+    },
+    {
+      "stage": "post",
+      "question": "CLAUDE.md -> AGENTS.mdのようなクロスツールシンリンクを推奨する理由は？",
+      "options": [
+        "バイトを節約するため",
+        "単一の真実のソースがフォークなしですべてのコーディングエージェントに展開されるように",
+        "監査に合格するため",
+        "MITを満足させるため"
+      ],
+      "correct": 1,
+      "explanation": "シンリンク（またはNxスタイルのジェネレーター）がClaude Code、Codex、Cursor、Copilotなど全体に1つの権威ある真実のソースを保つ。"
+    },
+    {
+      "stage": "post",
+      "question": "ネストされたAGENTS.mdファイルはどのパターンに従うか？",
+      "options": [
+        "ルートファイルのみが読まれる",
+        "作業ファイルからリポジトリルートに向かって歩き、途中で見つけたすべてのAGENTS.mdを連結する（最近勝ち；サブディレクトリがルートを拡張）",
+        "ランダム選択",
+        "アルファベット順マージ"
+      ],
+      "correct": 1,
+      "explanation": "OpenAIは主要リポジトリ全体に88のAGENTS.mdファイルを出荷；ツールが最近優先で上に向かって連結する。"
+    }
+  ]
+}

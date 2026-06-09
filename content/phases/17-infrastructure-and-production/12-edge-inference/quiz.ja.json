@@ -1,0 +1,78 @@
+{
+  "lesson": "12-edge-inference",
+  "title": "エッジ推論 — Apple Neural Engine、Qualcomm Hexagon、WebGPU/WebLLM、Jetson",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "このレッスンによると、モバイルLLM推論がデータセンターより遅い根本的な制約は何か？",
+      "options": [
+        "Wi-Fiレイテンシ",
+        "コンピュートスループット",
+        "メモリ帯域幅（モバイルDRAMが50〜90 GB/s対HBM3の2〜3 TB/s）",
+        "ストレージ容量"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "AppleのNeural EngineがCPU↔NPUコピーオーバーヘッドを回避できる理由は？",
+      "options": [
+        "PCIe 5.0を使用するから",
+        "Core MLがKVキャッシュを無効化するから",
+        "コピー前にウェイトをFP4にトランスコードするから",
+        "Apple Siliconは統合メモリを搭載 — CPUとANEが同じプールを共有するから"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンがブラウザのWebGPU + WebLLMに推奨する量子化フォーマットはどれか？",
+      "options": [
+        "NVFP4",
+        "FP8",
+        "mlc_llm convert_weightでコンパイルされたQ4 MLC (q4f16_1)",
+        "GGUF Q4_K_M"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンが2026年に報告するWebGPUのモバイルカバレッジは大まかにどのくらいか？",
+      "options": [
+        "全ブラウザで100%",
+        "iOS Safariのみ",
+        "10%未満",
+        "約70〜75%、Firefox Androidはまだ追いつき中"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "一般的なスマートフォンで128Kコンテキストが非現実的な理由は？",
+      "options": [
+        "トークナイザーが8K以上で失敗するから",
+        "モデルウェイト加えて32Kトークン用KVキャッシュ加えてOSオーバーヘッドで8GB RAMバジェットを簡単に超えるから",
+        "WebGPUがコンテキストを4Kに制限するから",
+        "iOSが長いコンテキストを禁止しているから"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "エッジ推論のキラーアプリとして音声が強調される理由は？",
+      "options": [
+        "音声エージェントはレイテンシに敏感（最初のトークン < 500ms）でローカル推論がネットワークレイテンシを完全に排除するから",
+        "音声モデルはKVキャッシュを必要としないから",
+        "音声モデルは常に50MB以内に収まるから",
+        "音声はWebAssemblyでのみ動作するから"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Tree of ThoughtsとLATS: 意図的な探索",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・01（エージェントループ）、フェーズ14・03（Reflexion）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "推論を探索としてフレーミングする: ノードは「思考」、エッジは「展開」、値は「どれだけ有望か」。",
+    "自己評価スコアリングを持つstdlib ToTスタイルのBFS木探索を実装できる。",
+    "select / expand / simulate / backpropagateを持つトイLATS MCTSループに拡張できる。",
+    "探索がトークン倍率に見合う場合（Game of 24、コード生成）と、単一トラジェクトリで十分な場合（シンプルなQ&A）を決定できる。"
+  ]
+}

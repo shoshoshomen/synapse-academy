@@ -1,0 +1,78 @@
+{
+  "lesson": "17-disaggregated-prefill-decode",
+  "title": "分離型プリフィル／デコード — NVIDIA DynamoとLLm-d",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "プリフィルとデコードが異なる最適なGPU構成を必要とするのはなぜか？",
+      "options": [
+        "プリフィルはAMD、デコードはNVIDIAで実行しなければならない",
+        "プリフィルは行列積スループットでコンピュート律速；デコードはHBM帯域幅でメモリ律速のため、コロケーションするとどちらかのリソースが無駄になる",
+        "異なるモデルの重みを使用する",
+        "デコードにはより多くのネットワーク帯域幅が必要"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "NVIDIA Dynamoがプリフィルプールとデコードプール間でKVキャッシュを移動するために使用するトランスポートは何か？",
+      "options": [
+        "プレーンHTTP",
+        "gRPC双方向のみ",
+        "NFS上の共有ファイルシステム",
+        "NIXL（利用可能な場合はRDMA/InfiniBand、それ以外はTCPフォールバック）"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンによれば、分離化が割に合わないのはいつか？",
+      "options": [
+        "BlackwellのMoEワークロード",
+        "共有システムプロンプトを持つマルチテナントサービング",
+        "8K+プレフィックスのRAG",
+        "512トークン未満のプロンプトと200トークン未満の出力——KV転送コストが利益を上回る"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "DynamoとLLm-dの核心的なアーキテクチャの違いは何か？",
+      "options": [
+        "Dynamoはオープンソース；llm-dはクローズド",
+        "DynamoはCPUで実行；llm-dはGPU",
+        "DynamoはvLLM/SGLang/TRT-LLMのスタックアバブオーケストレーター；llm-dはプリフィル/デコード/ルーターを独立したServicesとして持つKubernetesネイティブ",
+        "DynamoはAMDが必要；llm-dはNVIDIAが必要"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "SLOのためにプリフィル:デコード比を自動調整するDynamoのコンポーネントはどれか？",
+      "options": [
+        "サイドカープロキシとEnvoyフィルター",
+        "Planner ProfilerとSLA Planner",
+        "クラスターオートスケーラー",
+        "Marlinカーネル"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "分離化はフェーズ17・11のキャッシュ認識ルーティングとどのように相互作用するか？",
+      "options": [
+        "分離化はKVキャッシュの再利用を完全に無効にする",
+        "キャッシュ認識ルーターがリクエストをそのプレフィックスを保持するデコードプールにランドさせ、ミスした場合はプリフィル→デコードに流れるため、両方が複合する",
+        "互いに排他的",
+        "キャッシュ認識ルーティングはコロケーションサービングにのみ適用"
+      ],
+      "correct": 1,
+      "explanation": ""
+    }
+  ]
+}

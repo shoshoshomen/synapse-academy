@@ -1,0 +1,11 @@
+{
+  "title": "人間参加型：提案-コミット",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "propose-then-commit state machine with idempotency)"
+  ],
+  "prerequisites": "Phase 15・12（永続的実行）、Phase 15・14（トリップワイヤー）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

@@ -1,0 +1,11 @@
+{
+  "title": "AI Scientist v2 — ワークショップレベルの自律的研究",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "research-loop state-machine toy)"
+  ],
+  "prerequisites": "Phase 15・03（AlphaEvolve）、Phase 15・04（DGM）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

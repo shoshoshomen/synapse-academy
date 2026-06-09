@@ -1,0 +1,10 @@
+{
+  "title": "勾配チェックポインティングと活性化再計算",
+  "type": "実装",
+  "languages": [
+    "Python (numpy使用、PyTorch任意)"
+  ],
+  "prerequisites": "フェーズ10 レッスン04（ミニGPT事前学習）、フェーズ10 レッスン05（スケーリングと分散学習）",
+  "timeEstimate": "約70分",
+  "objectives": []
+}

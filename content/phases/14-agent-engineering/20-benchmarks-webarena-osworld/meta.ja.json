@@ -1,0 +1,15 @@
+{
+  "title": "ベンチマーク: WebArena と OSWorld",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・19（SWE-bench、GAIA）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "WebArena の4つのセルフホストアプリと、実行ベースの評価が重要な理由を説明できる。",
+    "OSWorld がアクセシビリティ API ではなく実際の OS スクリーンショットを使用する理由を説明できる。",
+    "OSWorld の2つの主要な失敗モード（GUI グラウンディングと操作知識）を説明できる。",
+    "OSWorld-G と OSWorld-Human がベースベンチマークに何を追加するかを要約できる。"
+  ]
+}

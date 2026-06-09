@@ -1,0 +1,11 @@
+{
+  "title": "チェックポイントとロールバック",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "チェックポイントとロールバックのステートマシン)"
+  ],
+  "prerequisites": "Phase 15・12（永続的実行）、Phase 15・15（提案-コミット）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

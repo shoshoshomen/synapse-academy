@@ -1,0 +1,78 @@
+{
+  "lesson": "09-production-quantization",
+  "title": "本番量子化 — AWQ、GPTQ、GGUF Kクォント、FP8、MXFP4/NVFP4",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "このレッスンがCPUとエッジ配信の本番デフォルトと呼ぶ量子化フォーマットはどれか？",
+      "options": [
+        "FP8",
+        "GGUF Q4_K_M / Q5_K_M",
+        "AWQ INT4",
+        "NVFP4"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "vLLMでマルチLoRAが必要な場合のデータセンターGPU配信にこのレッスンが選ぶフォーマットはどれか？",
+      "options": [
+        "GGUF Q4_K_M",
+        "AWQ",
+        "Marlinカーネル付きGPTQ",
+        "NVFP4"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "AWQの「私のモデルは今4GBだ」という罠は何か？",
+      "options": [
+        "AWQはvLLMと互換性がない",
+        "AWQはINT8 KVキャッシュが必要",
+        "AWQは実際にウェイトを縮小しない",
+        "AWQはウェイトのみを縮小し、KVキャッシュとアクティベーションは別で本番バッチサイズで30〜50GBになる可能性がある"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "一般的なウェブテキストでAWQをキャリブレーションするとドメインモデルが傷つく理由は？",
+      "options": [
+        "Marlinカーネルを無効にするから",
+        "アルゴリズムがどのウェイトを保護するかについて誤った判断をし、ドメイン精度が低下する（例えばHumanEvalのPass@1が数ポイント下がる）",
+        "AMD GPUでしか動作しないから",
+        "モデルサイズが増えるから"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "品質が交渉できない推論重いワークロードに対して、このレッスンがデフォルトで推奨する精度はどれか？",
+      "options": [
+        "GPTQ INT4",
+        "INT2 GGUF",
+        "NVFP4ウェイト",
+        "FP8ウェイト"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このレッスンが2026年初頭時点でのNVFP4の制限として挙げるのは何か？",
+      "options": [
+        "LoRAサポートなし",
+        "H100ではサポートされない",
+        "CPUでしか動作しない",
+        "FP8 KVキャッシュと組み合わせられない"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}

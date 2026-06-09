@@ -1,0 +1,90 @@
+{
+  "lesson": "01-managed-llm-platforms",
+  "title": "マネージドLLMプラットフォーム — Bedrock、Vertex AI、Azure OpenAI",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "このレッスンを受ける前、Claude、Llama、Cohereを1つのAPIで使いたい顧客がいたらどのプラットフォームを最初に選ぶか？",
+      "options": [
+        "Vertex AI",
+        "AWS Bedrock",
+        "Azure OpenAI Service",
+        "Anthropic API直接"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "pre",
+      "question": "マーケットプレイスではなく独占パートナーシップと説明されているハイパースケーラーはどれか？",
+      "options": [
+        "Azure OpenAI",
+        "Vertex AI",
+        "AWS Bedrock",
+        "OCI Generative AI"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Llama 3.1 405B相当で、PTUありのAzure OpenAIとオンデマンドBedrockの中央値TTFTの差はおよそどれくらいか？",
+      "options": [
+        "約100ms",
+        "約5ms",
+        "約250ms",
+        "約25ms"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "2025年にBedrockに追加された、CloudWatchでプロダクト別コストアトリビューションを最もクリーンに実現する機能はどれか？",
+      "options": [
+        "Bedrock Knowledge Bases",
+        "Application Inference Profiles",
+        "Bedrock Guardrails",
+        "Bedrock Agents"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Azure PTUがオンデマンドと比較して一般的に損益分岐点を超える持続的利用率はどのバンドか？",
+      "options": [
+        "5〜10%",
+        "80〜95%",
+        "20〜30%",
+        "40〜60%"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このレッスンが2026年のポリシーとしてプロダクトクリティカルなLLM呼び出しに最低2プロバイダーを推奨する理由は？",
+      "options": [
+        "SOC 2 Type IIで要求されているため",
+        "フロンティアモデルのリーダーシップは月次で交代するため、単一ベンダーのロックインでフロンティアの3分の2を失う",
+        "競合他社も使わないかぎりハイパースケーラーはBAAに署名しないため",
+        "単一ベンダーの価格は常に高いため"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "3つのプラットフォームのFinOps体制を最もよく説明しているのはどれか？",
+      "options": [
+        "Azureが最もネイティブでクリーン、Bedrockは不透明",
+        "Vertexにはアトリビューション手段がまったくない",
+        "3つすべてが同一のリクエスト単位アトリビューションを提供する",
+        "Bedrockが最もネイティブでクリーン、VertexはBigQuery経由で最も柔軟、Azureはインストゥルメントなしで最も不透明"
+      ],
+      "correct": 3,
+      "explanation": ""
+    }
+  ]
+}

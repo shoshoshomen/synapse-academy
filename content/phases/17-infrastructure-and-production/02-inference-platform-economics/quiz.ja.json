@@ -1,0 +1,78 @@
+{
+  "lesson": "02-inference-platform-economics",
+  "title": "推論プラットフォームの経済学 — Fireworks、Together、Baseten、Modal、Replicate、Anyscale",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "このレッスンが2026年の推論ベンダーを整理するために使う3つの市場セグメントはどれか？",
+      "options": [
+        "無料、有料、エンタープライズ",
+        "シングルテナント、マルチテナント、オンプレ",
+        "カスタムシリコン、GPUプラットフォーム、APIファーストマーケットプレイス",
+        "オープンソース、商用、ハイブリッド"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "持続GPU利用率がおよそどの程度になると、分単価課金（Baseten、Modal）がトークン単価課金（Fireworks、Together）に勝ち始めるか？",
+      "options": [
+        "60%",
+        "90%",
+        "30%",
+        "5%"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "秒単価課金と事前ウォームアップで2〜4sのコールドスタートを持つPythonネイティブサーバーレスとして説明されているプラットフォームはどれか？",
+      "options": [
+        "Baseten",
+        "Modal",
+        "Fireworks",
+        "Anyscale"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "FireworksのLoRA価格の差別化要因は何か？",
+      "options": [
+        "LoRA配信リクエストはベースモデルより高い",
+        "LoRAは全くサポートされていない",
+        "LoRAリクエストには専用GPU契約が別途必要",
+        "LoRA配信リクエストはベースモデルのトークン単価で課金される"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "SOC 2 Type II、HIPAA対応、専用GPUを必要とする規制されたヘルスケア顧客に適したプラットフォームはどれか？",
+      "options": [
+        "Baseten",
+        "Together",
+        "Anyscale",
+        "Replicate"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このレッスンがプラットフォーム層においてカスタムエンジンの主張をほとんどマーケティングの影と論じる理由は？",
+      "options": [
+        "トークン単価だけが真の差別化要因だから",
+        "vLLMとSGLangが本番オープンソース推論の約80%を占めているため、プラットフォームの差別化はエンジンよりDX、アトリビューション、SLAから生まれる",
+        "すべてのカスタムエンジンはTensorRT-LLMのフォークだから",
+        "カスタムエンジンはvLLMに勝てないから"
+      ],
+      "correct": 1,
+      "explanation": ""
+    }
+  ]
+}

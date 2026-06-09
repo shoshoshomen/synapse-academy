@@ -1,0 +1,15 @@
+{
+  "title": "ReWOOとPlan-and-Execute: 分離されたプランニング",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・01（エージェントループ）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "ReWOOのPlanner / Worker / Solver分割が、ReActのインターリーブループよりもトークンを節約しロバスト性を向上させる理由を説明できる。",
+    "プランDAG、依存順エグゼキューター、ワーカー出力を合成するソルバーをすべてstdlibで実装できる。",
+    "Anthropicの2026年「5つのワークフローパターン」のフレーミングを使って、タスクをplan-then-executeとインターリーブReActのどちらで実行すべきかを決定できる。",
+    "長期的なウェブまたはモバイルタスクにPlan-and-Actの合成プランデータが必要な場合を認識できる。"
+  ]
+}

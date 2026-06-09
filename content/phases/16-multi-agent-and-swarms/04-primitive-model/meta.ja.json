@@ -1,0 +1,10 @@
+{
+  "title": "マルチエージェントのプリミティブモデル",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14（エージェントエンジニアリング）、フェーズ16・01（なぜマルチエージェントなのか）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

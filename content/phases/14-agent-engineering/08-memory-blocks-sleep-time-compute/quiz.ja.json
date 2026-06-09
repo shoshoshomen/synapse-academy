@@ -1,0 +1,90 @@
+{
+  "lesson": "08-memory-blocks-sleep-time-compute",
+  "title": "メモリブロックとSleep-Time Compute（Letta）",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "Lettaの3つのメモリ層は何か？",
+      "options": [
+        "キャッシュ、KV、アーカイブ",
+        "コア、リコール、アーカイブ",
+        "RAM、スワップ、ディスク",
+        "ワーキング、エピソード、セマンティック"
+      ],
+      "correct": 1,
+      "explanation": "Lettaはコア（常に見える）、リコール（会話履歴）、アーカイブ（外部）層を使用する。"
+    },
+    {
+      "stage": "pre",
+      "question": "sleep-time computeが対象とする本番問題はどれか？",
+      "options": [
+        "クリティカルパスでメモリ統合を行うことによるテールレイテンシ",
+        "数学問題での精度向上",
+        "低い埋め込みコスト",
+        "高速なJSONパース"
+      ],
+      "correct": 0,
+      "explanation": "sleep-timeはプルーン/サマライズ/調整をユーザー向けパスから外し、プライマリレスポンスを高速に保つ。"
+    },
+    {
+      "stage": "check",
+      "question": "Lettaのメモリブロックフィールドではないものはどれかどれか？",
+      "options": [
+        "label",
+        "value",
+        "limit",
+        "embedding_model_version"
+      ],
+      "correct": 3,
+      "explanation": "ブロックはid、label、value、limit、descriptionを持つ; 埋め込みモデルバージョンはブロックスキーマの一部ではない。"
+    },
+    {
+      "stage": "check",
+      "question": "sleep-timeエージェントがプライマリよりも強いモデルを実行できる理由は何か？",
+      "options": [
+        "プライベートAPIキーを受け取る",
+        "クリティカルパスから外れているため、レイテンシ制約がない",
+        "レートリミットが免除される",
+        "メモリ操作はトークンが半額"
+      ],
+      "correct": 1,
+      "explanation": "ユーザーレスポンスをブロックしないため、sleep-timeエージェントは遅くて高価にできる。"
+    },
+    {
+      "stage": "check",
+      "question": "ヒューマンブロックとペルソナブロックはどのパターンに一般化されるか？",
+      "options": [
+        "ベクター埋め込み",
+        "任意のユーザー定義の型付き編集可能ブロック（タスク、プロジェクト、安全性、...）",
+        "JSON-RPCチャンネル",
+        "OSプロセス"
+      ],
+      "correct": 1,
+      "explanation": "Lettaは2つのMemGPTブロックをid、label、value、limit、descriptionを持つ任意のユーザー定義ブロックに一般化する。"
+    },
+    {
+      "stage": "post",
+      "question": "このパターンにおけるサイレントドリフトとは何か？",
+      "options": [
+        "sleep-timeエージェントがその下のブロックを書き直したことをプライマリエージェントが決して見ない; バージョン管理と可視diffで修正",
+        "遅いディスク書き込み",
+        "埋め込みモデルのアップグレード",
+        "レートリミットのジッター"
+      ],
+      "correct": 0,
+      "explanation": "ブロックをバージョン管理し、トレースにdiffを表示することで、sleep-timeリライトをプライマリループに見えるようにする。"
+    },
+    {
+      "stage": "post",
+      "question": "Letta V1でインラインの `Thought:` トークンと send_message/heartbeat パターンを置き換えたものは何か？",
+      "options": [
+        "別のチャンネルで出力され、ターン間で渡されるネイティブ推論",
+        "思考専用の第2LLM",
+        "より大きいシステムプロンプト",
+        "手動でユーザーが入力した思考"
+      ],
+      "correct": 0,
+      "explanation": "Letta V1（letta_v1_agent）はプロンプト形状の思考ではなく、プロバイダーレベルのネイティブ推論を使用する。"
+    }
+  ]
+}

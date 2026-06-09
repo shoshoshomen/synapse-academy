@@ -1,0 +1,78 @@
+{
+  "lesson": "21-ab-testing-llm-features",
+  "title": "LLM機能のA/Bテスト — GrowthBook、Statsig、感覚的判断問題",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "このレッスンにおけるevalとA/Bテストの正確な区別は何か？",
+      "options": [
+        "evalはラベル付きセット上で「モデルは仕事ができるか？」に答え；A/Bテストはライブランダム化トラフィックで「ユーザーは気にするか？」に答える",
+        "A/Bテストのみが必要",
+        "evalはユーザー向け；A/Bテストはオフライン",
+        "それらは互換性がある"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "CUPEDが実験に対して行うことは何か？",
+      "options": [
+        "多重比較補正を無効にする",
+        "逐次テストを完全に置き換える",
+        "事後期間を比較する前に事前期間の分散を回帰して除き、通常分散を30〜70%削減して有効サンプルサイズを向上させる",
+        "より多くのユーザーを採用してサンプルサイズを増やす"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "多くのA/BテストでBonferroniまたはBenjamini-Hochberg補正が必要な理由は何か？",
+      "options": [
+        "GDPRで必須",
+        "逐次テストにのみ必要",
+        "95%信頼度で20件のテストを実行すると偶然に1件の偽陽性が生まれ；補正はファミリー単位のエラーまたは偽発見率をコントロールする",
+        "実験を速める"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "SRM（サンプル比率ミスマッチ）が検出するのは何か？",
+      "options": [
+        "トークナイザーのパフォーマンスの低下",
+        "意図した分割から乖離した配信分割を生む割り当てハッシュバグ（例：50/50を目標に47/53）",
+        "実験プラットフォームのメモリリーク",
+        "PIIの漏洩"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "LLMの非決定性がサンプルサイズのバッファを必要とする理由は何か？",
+      "options": [
+        "IID仮定に違反し；有効サンプルサイズが下がるため、必要サイズに安全マージンとして約1.3〜1.5倍を掛ける",
+        "パワー計算に無関係",
+        "非決定性は必要サンプルを減らす",
+        "オフラインにのみ関係する"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このレッスンがStatsigとGrowthBookをどのように対比させているか？",
+      "options": [
+        "同一の機能セット",
+        "Statsigはウェアハウスネイティブのみ",
+        "GrowthBookはクローズドソース",
+        "Statsigはオールインワン SaaS（OpenAIが2025年9月に11億ドルで買収）；GrowthBookはオープンソースMIT、ウェアハウスネイティブ、Bayesian/Frequentist/逐次エンジンとCUPED/SRM/BHを持つ"
+      ],
+      "correct": 3,
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "HTNと進化的探索によるプランニング",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・02（ReWOOとPlan-and-Execute）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "階層的タスクネットワークを説明できる: タスク、メソッド、オペレーター、前提条件、効果。",
+    "ChatHTNのハイブリッドループを説明できる—LLMフォールバック分解を持つシンボリック探索。",
+    "AlphaEvolveの進化的ループとなぜプログラム的評価器でのみ機能するかを説明できる。",
+    "stdlibでトイHTNプランナーとトイ進化的探索を実装できる。"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "lesson": "04-tree-of-thoughts-lats",
+  "title": "Tree of ThoughtsとLATS: 意図的な探索",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "chain-of-thoughtがGame of 24に苦労する理由は何か？",
+      "options": [
+        "モデルが整数を掛け算できない",
+        "線形歩行は早い段階のステップが間違っているとバックトラックできず、後のステップはエラーを積み重ねる",
+        "プロンプトが短すぎる",
+        "CoTはGPT-4が持っていない電卓ツールを必要とする"
+      ],
+      "correct": 1,
+      "explanation": "分岐がなければ、間違った早い部分式はチェーンの残りを汚染する; 論文はCoTで4%しか計測していない。"
+    },
+    {
+      "stage": "pre",
+      "question": "Tree of Thoughts探索におけるノードとは何か？",
+      "options": [
+        "モデルが生成したトークン",
+        "K個の可能な子展開を持つ一貫した中間ステップまたは思考",
+        "ファインチューニング中の重みの更新",
+        "ランタイムに登録されたツール"
+      ],
+      "correct": 1,
+      "explanation": "ToTは推論を、各ノードがK個の子に展開できる中間思考の木として扱う。"
+    },
+    {
+      "stage": "check",
+      "question": "LATSのLLMの3つの役割のうち、含まれないものはどれか？",
+      "options": [
+        "次のアクションを提案するポリシー",
+        "部分トラジェクトリをスコアリングする価値関数",
+        "失敗に関するリフレクションを書くSelf-reflector",
+        "ロールアウト間にモデルの重みを更新するオプティマイザー"
+      ],
+      "correct": 3,
+      "explanation": "LATSは勾配フリーだ; LLMの3つの役割はポリシー、価値、self-reflectorだ。重みの更新はない。"
+    },
+    {
+      "stage": "check",
+      "question": "レッスンが列挙する4つのMCTSフェーズを挙げよ。",
+      "options": [
+        "Sample、Score、Sort、Submit",
+        "Select、Expand、Simulate、Backpropagate",
+        "Plan、Execute、Reflect、Stop",
+        "Search、Synthesize、Synthesize-Again、Stop"
+      ],
+      "correct": 1,
+      "explanation": "MCTSはイテレーションごとにselect、expand、simulate、backpropagateで進む。"
+    },
+    {
+      "stage": "check",
+      "question": "UCTにおける探索定数cの役割は何か？",
+      "options": [
+        "価値推定Qをスケールする",
+        "活用項Qに対して探索項sqrt(ln N / n)を重み付けする",
+        "最大木深度を設定する",
+        "ロールアウトの数を制御する"
+      ],
+      "correct": 1,
+      "explanation": "cは活用（Q）と探索項をバランスする; タスクごとに調整する。"
+    },
+    {
+      "stage": "post",
+      "question": "探索が単一トラジェクトリと比べて積極的に有害な場合はいつか？",
+      "options": [
+        "評価器がノイジーで単一の正解がある場合、探索は高スコアの誤答に収束する",
+        "タスクが複数の正解を含む場合",
+        "トークンが安い場合はいつでも",
+        "タスクがコード生成の場合"
+      ],
+      "correct": 0,
+      "explanation": "ノイジーな価値関数と単一の正解の組み合わせは、探索がノイズに過剰適合する正確なケースだ。"
+    },
+    {
+      "stage": "post",
+      "question": "CoTと比べてGame of 24でのToTに対して大まかにどれだけ多くのトークン使用を予算化すべきか？",
+      "options": [
+        "約2倍",
+        "約10倍",
+        "100倍から1000倍",
+        "プルーニングのためCoTより少ない"
+      ],
+      "correct": 2,
+      "explanation": "レッスンはGame of 24でToTのCoTに対するトークンコストを100〜1000倍と引用している。"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "OpenTelemetry GenAI セマンティック規約",
+  "type": "学習 + 実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・13（LangGraph）、フェーズ14・24（オブザーバビリティプラットフォーム）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "GenAI スパンカテゴリを説明できる: モデル/クライアント、エージェント、ツール。",
+    "`invoke_agent` の CLIENT スパンと INTERNAL スパンの違いと、それぞれが適用される場面を説明できる。",
+    "トップレベルの GenAI 属性を一覧できる: プロバイダー名、リクエストモデル、データソース ID。",
+    "コンテンツキャプチャコントラクトを説明できる: オプトイン、`OTEL_SEMCONV_STABILITY_OPT_IN`、外部参照の推奨。"
+  ]
+}

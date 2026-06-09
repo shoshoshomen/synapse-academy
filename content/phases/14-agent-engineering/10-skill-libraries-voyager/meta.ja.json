@@ -1,0 +1,15 @@
+{
+  "title": "スキルライブラリと生涯学習（Voyager）",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・07（MemGPT）、フェーズ14・08（Lettaブロック）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "Voyagerの3つのコンポーネント—自動カリキュラム、スキルライブラリ、反復プロンプト—とそれぞれの役割に名前を付けられる。",
+    "Voyagerがアクションスペースをプリミティブコマンドではなくコードにする理由を説明できる。",
+    "登録、取得、合成、失敗駆動の精製を持つstdlibスキルライブラリを実装できる。",
+    "VoyagerのパターンをClaude Agent SDKの2026年スキルとskillkitエコシステムにマッピングできる。"
+  ]
+}

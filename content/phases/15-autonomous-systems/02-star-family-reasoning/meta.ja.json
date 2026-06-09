@@ -1,0 +1,11 @@
+{
+  "title": "STaR、V-STaR、Quiet-STaR — 自己教示型推論",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "bootstrap-loop simulator)"
+  ],
+  "prerequisites": "Phase 13・01-03（推論とCoT）、Phase 15・01（ロングホライズンのフレーミング）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

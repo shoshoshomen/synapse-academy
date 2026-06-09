@@ -1,0 +1,10 @@
+{
+  "title": "投機的デコーディングとEAGLE",
+  "type": "実装",
+  "languages": [
+    "Python (with numpy)"
+  ],
+  "prerequisites": "フェーズ10 レッスン12（推論最適化）、フェーズ10 レッスン04（ミニGPT事前学習）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

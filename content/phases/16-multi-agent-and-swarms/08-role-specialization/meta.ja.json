@@ -1,0 +1,10 @@
+{
+  "title": "役割特化——プランナー、クリティック、エグゼキューター、ベリファイアー",
+  "type": "学習＋実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・04（プリミティブモデル）、フェーズ16・05（スーパーバイザー）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

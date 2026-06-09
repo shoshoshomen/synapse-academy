@@ -1,0 +1,10 @@
+{
+  "title": "FIPA-ACLとスピーチアクトの遺産",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・01（なぜマルチエージェントなのか）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

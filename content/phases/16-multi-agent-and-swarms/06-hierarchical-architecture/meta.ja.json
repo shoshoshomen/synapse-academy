@@ -1,0 +1,10 @@
+{
+  "title": "階層型アーキテクチャとその失敗モード",
+  "type": "学習＋実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・05（スーパーバイザーパターン）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

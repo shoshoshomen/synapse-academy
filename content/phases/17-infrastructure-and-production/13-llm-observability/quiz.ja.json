@@ -1,0 +1,78 @@
+{
+  "lesson": "13-llm-observability",
+  "title": "LLMオブザーバビリティスタック選定",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "このレッスンが2026年のLLMオブザーバビリティ市場をどのように分類するか？",
+      "options": [
+        "開発プラットフォーム（evals/プロンプト/セッションとバンドル）対ゲートウェイ/テレメトリーツール",
+        "オンプレミス対クラウド",
+        "ベンダー対オープンソース",
+        "Python対TypeScript"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンがMITライセンスコアで強力なセルフホストストーリーと月50Kイベント無料クラウドティアを持つと位置づけるツールはどれか？",
+      "options": [
+        "LangSmith",
+        "Phoenix",
+        "Arize AX",
+        "Langfuse"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Arize AXがDatadogのようなモノリシックオブザーバビリティスタックに対して主張するスケールのメリットは何か？",
+      "options": [
+        "常に高コスト",
+        "ゼロコピーIceberg/Parquet統合によりスケール時に約100倍安価",
+        "日間100万イベント未満は無料",
+        "10%安価"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンがポータビリティのために間違ったインストゥルメンテーション層と呼ぶのはどれか？",
+      "options": [
+        "エージェントフレームワーク内でインストゥルメントすること — そのフレームワークに結合されるから",
+        "成功を5%でサンプリングすること",
+        "OpenTelemetry GenAIセマンティック規約を使用すること",
+        "HTTP/OpenAI-SDKレイヤーでインストゥルメントすること"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このレッスンがオブザーバビリティツール間の2026年相互運用層として特定するOpenTelemetry規約はどれか？",
+      "options": [
+        "OTelメッセージングセマンティック規約",
+        "OTelデータベースセマンティック規約",
+        "GenAIセマンティック規約（gen_ai.system、gen_ai.request.model、gen_ai.usage.input_tokens）",
+        "OTel HTTPセマンティック規約"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このレッスンが日間100万リクエストを超えるとフルトレース保持がスケールしないと論じる理由は？",
+      "options": [
+        "保持ストレージコストがLLM呼び出し自体より高くなる；チームはサンプリングが必要（例：エラー100%、高コスト100%、成功5%）",
+        "OpenTelemetryがトレース量を制限するから",
+        "ベンダーがブロックするから",
+        "Phoenixが100万トレースのみをサポートするから"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}

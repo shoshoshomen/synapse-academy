@@ -1,0 +1,15 @@
+{
+  "title": "音声エージェント: Pipecat と LiveKit",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・01（エージェントループ）、フェーズ14・12（ワークフローパターン）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "Pipecat のフレームベースパイプラインを説明できる: DOWNSTREAM（ソース→シンク）と UPSTREAM（コントロール）。",
+    "標準的な音声パイプラインのステージと Pipecat がサポートするトランスポートを説明できる。",
+    "LiveKit Agents の2つの音声エージェントクラス（MultimodalAgent、VoicePipelineAgent）とそれぞれの適した場面を説明できる。",
+    "2026 年の本番レイテンシ要件とそれがアーキテクチャの選択にどう影響するかを要約できる。"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Darwin Godel Machine — オープンエンドな自己修正エージェント",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "archive-based self-modification toy)"
+  ],
+  "prerequisites": "Phase 15・03（進化的コーディング）、Phase 14・01（エージェントループ）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

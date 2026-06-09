@@ -1,0 +1,15 @@
+{
+  "title": "Self-RefineとCRITIC: 反復的な出力改善",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・01（エージェントループ）、フェーズ14・03（Reflexion）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "Self-Refineの3つのプロンプト（生成、フィードバック、精製）を説明し、精製プロンプトに履歴が重要な理由を説明できる。",
+    "CRITICの重要な洞察を説明できる: LLMは外部の根拠なしでは自己検証が信頼できない。",
+    "履歴とオプションの外部検証器を持つstdlib Self-Refineループを実装できる。",
+    "このパターンをAnthropicの「評価器-オプティマイザー」ワークフローとOpenAI Agents SDKの出力ガードレールにマッピングできる。"
+  ]
+}

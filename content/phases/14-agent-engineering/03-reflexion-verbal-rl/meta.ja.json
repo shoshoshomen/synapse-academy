@@ -1,0 +1,15 @@
+{
+  "title": "Reflexion: 言語的強化学習",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・01（エージェントループ）、フェーズ14・02（ReWOO）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "Reflexionの3つのコンポーネント（Actor、Evaluator、Self-Reflector）とエピソードメモリの役割に名前を付けられる。",
+    "二値評価器、リフレクションバッファ、新鮮な再試行を持つstdlib Reflexionループを実装できる。",
+    "特定のタスクに対してスカラー、ヒューリスティック、自己評価のフィードバックソースの中から選択できる。",
+    "言語的強化がなぜ勾配ベースのRLが修正するのに数千回の試行が必要なエラーを捕捉できるかを説明できる。"
+  ]
+}

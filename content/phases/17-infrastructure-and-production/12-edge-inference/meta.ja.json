@@ -1,0 +1,16 @@
+{
+  "title": "エッジ推論 — Apple Neural Engine、Qualcomm Hexagon、WebGPU/WebLLM、Jetson",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "簡易帯域幅バウンドデコードシミュレーター)"
+  ],
+  "prerequisites": "フェーズ17·04（vLLM配信内部）、フェーズ17·09（本番量子化）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "モバイルLLM推論がメモリ帯域幅バウンドでコンピュートが二次的な理由を説明する。",
+    "4つのエッジターゲット（Apple ANE、Qualcomm Hexagon、WebGPU/WebLLM、NVIDIA Jetson）を列挙し各々をユースケースとマッチングする。",
+    "2026年のWebGPUカバレッジギャップ（Firefox Androidが追いつき中）とSafari iOS 26のリリースを挙げる。",
+    "ターゲットごとに量子化フォーマットを選ぶ（ANEはCore ML INT4+FP16、HexagonはQNN INT8/INT4、ブラウザはWebGPU Q4、Jetson ThorはNVFP4）。"
+  ]
+}

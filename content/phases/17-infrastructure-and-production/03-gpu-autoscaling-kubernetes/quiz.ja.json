@@ -1,0 +1,78 @@
+{
+  "lesson": "03-gpu-autoscaling-kubernetes",
+  "title": "Kubernetes上のGPUオートスケーリング — Karpenter、KAI Scheduler、ギャングスケジューリング",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "HPAがvLLM配信に対して壊れていると呼ぶデフォルトのスケーリングシグナルはどれか？",
+      "options": [
+        "キュー深さ",
+        "P99 TTFT",
+        "KVキャッシュ利用率",
+        "DCGM_FI_DEV_GPU_UTILデューティサイクル"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "KAI Schedulerのギャングスケジューリングが主に防ぐ問題はどれか？",
+      "options": [
+        "GPUメモリの断片化",
+        "トークナイザーのGIL競合",
+        "8枚中7枚のGPUが8枚目を待ちながらアイドルになる部分割り当てトラップ",
+        "コールドスタートレイテンシ"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "KarpenterのデフォルトコンソリデーションポリシーWhenEmptyOrUnderutilizedが推論GPUプールに危険な理由は？",
+      "options": [
+        "バーストへのスケールアップを拒否するから",
+        "スポットインスタンスのみをコンソリデートするから",
+        "実行中のGPUノードを終了させてポッドを移行し、実行中のリクエストを退去させてウェイトをリロードするから",
+        "Karpenterが新しいノードをプロビジョニングするのを妨げるから"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "KarpenterがCluster AutoscalerよりGPUノードをプロビジョニングするのがおよそどのくらい速いか？",
+      "options": [
+        "約40%速い（約45〜60s vs 約90〜120s）",
+        "約10倍遅い",
+        "同じ",
+        "約5%速い"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "分散プリフィル/デコードポッド（フェーズ17·17）に対して、このレッスンが推奨するスケーリングシグナルはどれか？",
+      "options": [
+        "手動スケーリングのみ",
+        "両方のポッドクラスをカバーするデューティサイクル上の単一HPA",
+        "プリフィルポッドにはキュー深さ、デコードポッドにはKVキャッシュ圧力を、独立したロールごとのHPAとして",
+        "両方にCluster Autoscaler"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "実行中のジョブを退去させないために推論GPUプールに対してこのレッスンが推奨するKarpenterの中断設定はどれか？",
+      "options": [
+        "consolidationPolicy: WhenEmptyOrUnderutilized with consolidateAfter: 0s",
+        "consolidationPolicy: WhenEmpty with consolidateAfter: 1h",
+        "常にスポットインスタンスでコンソリデーションなし",
+        "Karpenterを完全に無効化する"
+      ],
+      "correct": 1,
+      "explanation": ""
+    }
+  ]
+}

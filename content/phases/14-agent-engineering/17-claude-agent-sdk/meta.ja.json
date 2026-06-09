@@ -1,0 +1,15 @@
+{
+  "title": "Claude Agent SDK: サブエージェントとセッションストア",
+  "type": "学習 + 実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・01（エージェントループ）、フェーズ14・10（スキルライブラリ）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "Anthropic Client SDK（生の API）と Claude Agent SDK（ハーネス形状）の違いを説明できる。",
+    "サブエージェントの2つの目的（並列化とコンテキスト分離）と、いつ使うべきかを説明できる。",
+    "Python SDK のセッションストアインターフェース（`append`、`load`、`list_sessions`、`delete`、`list_subkeys`）と `--session-mirror` の役割を説明できる。",
+    "組み込みツール、分離されたコンテキストを持つサブエージェント生成、ライフサイクルフック、セッションストアを持つ標準ライブラリハーネスを実装できる。"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Society of Mindとマルチエージェントディベート",
+  "type": "学習＋実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ16・04（プリミティブモデル）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

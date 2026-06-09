@@ -1,0 +1,90 @@
+{
+  "lesson": "22-voice-agents-pipecat-livekit",
+  "title": "音声エージェント: Pipecat と LiveKit",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "Pipecat パイプラインが使用する2つのフロー方向はどれですか？",
+      "options": [
+        "読み取りと書き込み",
+        "DOWNSTREAM（ソースからシンクへ）と UPSTREAM（フィードバック、キャンセル、バージイン）",
+        "インバウンドとアウトバウンド",
+        "ホットとコールド"
+      ],
+      "correct": 1,
+      "explanation": "フレームはソースからシンクへの downstream と、コントロールとキャンセルの upstream を流れます。"
+    },
+    {
+      "stage": "pre",
+      "question": "標準的な Pipecat 音声パイプラインはどれですか？",
+      "options": [
+        "VAD -> STT -> LLM -> TTS -> トランスポート",
+        "TTS -> STT -> LLM -> VAD",
+        "LLM -> embed -> retrieve -> answer",
+        "Audio -> JSON -> SQL -> response"
+      ],
+      "correct": 0,
+      "explanation": "VAD が音声活動を検出し、STT が文字起こしをし、LLM が応答し、TTS が発話し、トランスポートが届けます。"
+    },
+    {
+      "stage": "check",
+      "question": "LiveKit Agents が搭載する2つの音声エージェントクラスはどれですか？",
+      "options": [
+        "MultimodalAgent（直接音声）と VoicePipelineAgent（STT/LLM/TTS カスケード）",
+        "BatchAgent と StreamAgent",
+        "TextAgent と SpeechAgent",
+        "LocalAgent と CloudAgent"
+      ],
+      "correct": 0,
+      "explanation": "MultimodalAgent は直接音声（Realtime スタイル）を使用します。VoicePipelineAgent はテキストレベルのコントロールのために STT->LLM->TTS を使用します。"
+    },
+    {
+      "stage": "check",
+      "question": "バージインターラプトとは何か、またどう処理されますか？",
+      "options": [
+        "LLM のコストスパイク。トークンを削減する",
+        "エージェントが話している間にユーザーが割り込む。UPSTREAM キャンセルフレームが TTS を発話中に停止させる",
+        "プロバイダー障害。リージョンを切り替える",
+        "CAPTCHA 失敗。リトライ"
+      ],
+      "correct": 1,
+      "explanation": "バージインターラプトはユーザーの割り込みです。UPSTREAM キャンセルが Pipecat でそれをきれいに処理する方法です。"
+    },
+    {
+      "stage": "check",
+      "question": "レッスンがプレミアムと説明するエンドツーエンドのレイテンシはどれですか？",
+      "options": [
+        "約 50 ms",
+        "約 450〜600 ms",
+        "約 1500 ms",
+        "約 5000 ms"
+      ],
+      "correct": 1,
+      "explanation": "プレミアムスタックは約 450〜600 ms に収まります。800〜1200 ms は一般的。1500 ms 超えると壊れているように感じます。"
+    },
+    {
+      "stage": "post",
+      "question": "STT の信頼度を無視すると何が起こりますか？",
+      "options": [
+        "レイテンシが改善される",
+        "信頼度の低いトランスクリプトが正典として LLM に渡され、誤った回答が生成される。信頼度でゲートするか確認を求めてください",
+        "TTS が速くなる",
+        "通話が安くなる"
+      ],
+      "correct": 1,
+      "explanation": "信頼度の低い STT を正確として扱うことは、音声エージェントのトップの失敗モードです。"
+    },
+    {
+      "stage": "post",
+      "question": "なぜレッスンは出荷前にコンポーネントのレイテンシを合計することを推奨していますか？",
+      "options": [
+        "プロバイダーがレイテンシで課金するから",
+        "すべてのコンポーネントが 50〜200 ms を追加します。合計がエクスペリエンスが壊れているように感じるかどうかを決めます",
+        "コンプライアンス要件を満たすため",
+        "WebRTC がレイテンシを必要とするから"
+      ],
+      "correct": 1,
+      "explanation": "チェーン（VAD + STT + LLM + TTS + トランスポート）を出荷前に合計してください。ターゲットは厳しいです。"
+    }
+  ]
+}

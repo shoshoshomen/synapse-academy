@@ -1,0 +1,90 @@
+{
+  "lesson": "17-claude-agent-sdk",
+  "title": "Claude Agent SDK: サブエージェントとセッションストア",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "Anthropic Client SDK と Claude Agent SDK の違いは何ですか？",
+      "options": [
+        "Client SDK は生の Messages API。Agent SDK は組み込みツール、MCP、フック、サブエージェント、セッションストアを持つ Claude Code ハーネス形状",
+        "Client SDK は有料。Agent SDK は無料",
+        "Client SDK は Python 専用",
+        "違いはない"
+      ],
+      "correct": 0,
+      "explanation": "Client SDK はループを提供します。Agent SDK はループがプリビルトされています。"
+    },
+    {
+      "stage": "pre",
+      "question": "サブエージェントの2つの文書化された目的は何ですか？",
+      "options": [
+        "並列化とコンテキスト分離",
+        "キャッシングとレートリミット",
+        "ロギングとメトリクス",
+        "認証と認可"
+      ],
+      "correct": 0,
+      "explanation": "サブエージェントは独立した作業を並行して実行し、コンテキストを分離することでオーケストレーターのコンテキスト予算を保持します。"
+    },
+    {
+      "stage": "check",
+      "question": "セッションストアインターフェースに含まれないメソッドはどれですか？",
+      "options": [
+        "append",
+        "load",
+        "list_subkeys",
+        "compile_prompt"
+      ],
+      "correct": 3,
+      "explanation": "セッションストアは append、load、list_sessions、delete、list_subkeys を提供します。compile_prompt はセッション API ではありません。"
+    },
+    {
+      "stage": "check",
+      "question": "Claude Agent SDK のライフサイクルフックに含まれないのはどれですか？",
+      "options": [
+        "PreToolUse",
+        "PostToolUse",
+        "PreCompact",
+        "PreEmbedding"
+      ],
+      "correct": 3,
+      "explanation": "フックには PreToolUse、PostToolUse、SessionStart/End、UserPromptSubmit、PreCompact、Stop、Notification が含まれます。PreEmbedding はフックではありません。"
+    },
+    {
+      "stage": "check",
+      "question": "トレースコンテキストはエージェントと CLI サブプロセス間でどのように伝播しますか？",
+      "options": [
+        "ファイルシステムを通じて",
+        "CLI サブプロセスに渡される W3C トレースコンテキストヘッダー経由",
+        "プロバイダーのダッシュボード経由のみ",
+        "環境変数のみ経由"
+      ],
+      "correct": 1,
+      "explanation": "呼び出し元の OTel スパンは W3C トレースコンテキスト経由で CLI サブプロセスに伝播されるため、マルチプロセスの実行全体が1つのトレースになります。"
+    },
+    {
+      "stage": "post",
+      "question": "サブエージェントの過剰生成とはいつ発生しますか？",
+      "options": [
+        "100 個の小さなタスクに 100 個のサブエージェントを生成し、オーバーヘッドが支配的になる場合。代わりにバッチ処理する",
+        "サブエージェントを閉じ忘れる",
+        "SessionStart の前に生成する",
+        "CPU コア数を超えるサブエージェントを生成する"
+      ],
+      "correct": 0,
+      "explanation": "サブエージェントにはオーバーヘッドがあります。小さなタスクはそれぞれ1つ生成するのではなくバッチ処理してください。"
+    },
+    {
+      "stage": "post",
+      "question": "Claude Managed Agents はセルフホスト SDK と何をトレードオフしていますか？",
+      "options": [
+        "管理されたインフラストラクチャのためのコントロール（長時間実行非同期、組み込みプロンプトキャッシング、組み込みコンパクション）",
+        "レイテンシのためのコスト",
+        "ツールのためのメモリ",
+        "トレーシングのためのストリーミング"
+      ],
+      "correct": 0,
+      "explanation": "Managed Agents は長時間実行非同期作業のためのホスト型代替手段です。コントロールは減りますが、運用面の負担も減ります。"
+    }
+  ]
+}

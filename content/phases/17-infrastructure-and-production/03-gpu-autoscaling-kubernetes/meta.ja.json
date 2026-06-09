@@ -1,0 +1,16 @@
+{
+  "title": "Kubernetes上のGPUオートスケーリング — Karpenter、KAI Scheduler、ギャングスケジューリング",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "簡易キュー深さオートスケーラーシミュレーター)"
+  ],
+  "prerequisites": "フェーズ17·02（推論プラットフォームの経済学）、フェーズ17·04（vLLM配信内部）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "3つのオートスケーリング層（ノードプロビジョニング、ギャングスケジューリング、アプリケーションレベル）を図示し、各層で使用するツールを挙げる。",
+    "vLLMに対して`DCGM_FI_DEV_GPU_UTIL`が誤ったHPAシグナルである理由を説明し、2つの代替（キュー深さ、KVキャッシュ利用率）を挙げる。",
+    "ギャングスケジューリングとKAI Schedulerが防ぐ部分割り当て障害モード（8枚中7枚のGPUがアイドル）を説明する。",
+    "実行中のGPUジョブを終了させるKarpenterのコンソリデーションポリシー（`WhenEmptyOrUnderutilized`）を挙げ、2026年の安全な代替を述べる。"
+  ]
+}

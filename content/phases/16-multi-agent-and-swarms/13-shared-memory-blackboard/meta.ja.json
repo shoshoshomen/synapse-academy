@@ -1,0 +1,11 @@
+{
+  "title": "共有メモリとブラックボードパターン",
+  "type": "学習＋実装",
+  "languages": [
+    "Python (stdlib",
+    "`threading`)"
+  ],
+  "prerequisites": "フェーズ16・04（プリミティブモデル）、フェーズ16・09（並列スワームネットワーク）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Anthropic責任あるスケーリングポリシー v3.0",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "RSP閾値決定エンジン)"
+  ],
+  "prerequisites": "Phase 15・06（AAR）、Phase 15・07（RSI）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

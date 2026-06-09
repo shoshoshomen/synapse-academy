@@ -1,0 +1,90 @@
+{
+  "lesson": "24-agent-observability-platforms",
+  "title": "エージェントオブザーバビリティ: Langfuse、Phoenix、Opik",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "2025年6月の以前は商用だったモジュールのオープンソース化後、Langfuse はどのライセンスで提供されますか？",
+      "options": [
+        "GPLv3",
+        "MIT",
+        "Elastic License 2.0",
+        "Apache 2.0"
+      ],
+      "correct": 1,
+      "explanation": "Langfuse は MIT です。LLM-as-a-judge、アノテーションキュー、プロンプト実験、プレイグラウンドも含めて 2025年6月以降。"
+    },
+    {
+      "stage": "pre",
+      "question": "レッスンによると、Arize Phoenix が最も得意とすることは何ですか？",
+      "options": [
+        "プロンプトバージョン管理",
+        "深いエージェント固有の評価: トレースクラスタリング、異常検出、RAG 検索関連性、OpenInference 自動インストルメンテーション",
+        "自動化された最適化ループ",
+        "コードの静的解析"
+      ],
+      "correct": 1,
+      "explanation": "Phoenix は動作ドリフトと RAG 評価に焦点を当てており、OpenInference 自動インストルメンテーションを持っています。"
+    },
+    {
+      "stage": "check",
+      "question": "自動化されたプロンプト最適化とガードレール（PII 編集、トピカルな制約）、LLM ジャッジによる幻覚検出をペアリングしているのはどのプラットフォームですか？",
+      "options": [
+        "Langfuse",
+        "Phoenix",
+        "Opik",
+        "Jaeger"
+      ],
+      "correct": 2,
+      "explanation": "Opik は最適化 + ガードレールループを中心に据えています。"
+    },
+    {
+      "stage": "check",
+      "question": "プロンプト管理付きのオールインワンとして、レッスンが推奨するプラットフォームはどれですか？",
+      "options": [
+        "Langfuse",
+        "Phoenix",
+        "Opik",
+        "Datadog APM"
+      ],
+      "correct": 0,
+      "explanation": "Langfuse はトレーシング + プロンプト管理 + エバル + セッションリプレイをエンドツーエンドでカバーしています。"
+    },
+    {
+      "stage": "check",
+      "question": "レッスンはベンダーが公開しているプラットフォームベンチマークについて何を述べていますか？",
+      "options": [
+        "確定的",
+                "方向性として扱う。自分のコーパスで計測する",
+        "OpenTelemetry によって禁止されている",
+        "Opik のものだけが信頼できる"
+      ],
+      "correct": 1,
+      "explanation": "引用された Opik と Langfuse の 14 倍のギャップも、決定する前に自分のデータで計測すべきです。"
+    },
+    {
+      "stage": "post",
+      "question": "エバルなしのトレーシングが高価なロギングと見なされるのはなぜですか？",
+      "options": [
+        "ディスクが CPU より高価",
+        "実行は見えるがスコアリングされていないため、リグレッションは不可視で特定が不可能",
+        "プロバイダーはスパンで課金する",
+        "スパンは再生できない"
+      ],
+      "correct": 1,
+      "explanation": "エバルはトレースを実行可能な品質シグナルに変えるものです。"
+    },
+    {
+      "stage": "post",
+      "question": "セルフロールド LLM ジャッジについてレッスンが警告していることは何ですか？",
+      "options": [
+        "Apache 2.0 によって禁止されている",
+        "CRITIC が適用される: ジャッジは事実確認のための外部グラウンディングがないと、ゴムスタンプ的になる",
+        "TypeScript でのみ機能する",
+        "GPU で実行しなければならない"
+      ],
+      "correct": 1,
+      "explanation": "外部ツールによるグラウンド検証がなければ、LLM ジャッジはゴムスタンプに向かってドリフトします（CRITIC、レッスン5）。"
+    }
+  ]
+}

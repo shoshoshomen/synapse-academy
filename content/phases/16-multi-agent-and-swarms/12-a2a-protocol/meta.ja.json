@@ -1,0 +1,12 @@
+{
+  "title": "A2A——エージェント間プロトコル",
+  "type": "学習＋実装",
+  "languages": [
+    "Python (stdlib",
+    "`http.server`",
+    "`json`)"
+  ],
+  "prerequisites": "フェーズ16・04（プリミティブモデル）",
+  "timeEstimate": "約75分",
+  "objectives": []
+}

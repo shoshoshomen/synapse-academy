@@ -1,0 +1,11 @@
+{
+  "title": "Llama Guardと入力/出力分類",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "カテゴリタグ付き分類器シミュレーター)"
+  ],
+  "prerequisites": "Phase 15・10（権限モード）、Phase 15・17（憲法）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

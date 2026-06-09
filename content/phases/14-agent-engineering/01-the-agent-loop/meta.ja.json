@@ -1,0 +1,15 @@
+{
+  "title": "エージェントループ: 観察、思考、行動",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ11（LLMエンジニアリング）、フェーズ13（ツールとプロトコル）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "ReActループの3つの要素—Thought（思考）、Action（行動）、Observation（観察）—に名前を付け、それぞれが不可欠な理由を説明できる。",
+    "stdlibのみで、トイLLM・ツールレジストリ・停止条件を組み込んだエージェントループを200行以内で実装できる。",
+    "プロンプトベースの思考トークンからネイティブモデル推論（Responses API、暗号化推論パススルー）への2026年のシフトを特定できる。",
+    "最新のすべてのハーネス（Claude Agent SDK、OpenAI Agents SDK、LangGraph、AutoGen v0.4）が内部でこのループで動いている理由を説明できる。"
+  ]
+}

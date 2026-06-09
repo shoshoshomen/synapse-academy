@@ -1,0 +1,16 @@
+{
+  "title": "LMCacheのKVオフロードを使ったvLLMプロダクションスタック",
+  "type": "学習",
+  "languages": [
+    "Python (標準ライブラリ",
+    "KVスピルシミュレーター)"
+  ],
+  "prerequisites": "フェーズ17・04（vLLMサービング内部）、フェーズ17・06（SGLang/RadixAttention）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "vLLMプロダクションスタックの層を図示する：ルーター、エンジン、KVオフロード、オブザーバビリティ。",
+    "KVオフロードコネクターAPI（v0.9.0+）と0.11.0の非同期パスがオフロードレイテンシを隠す方法を説明する。",
+    "LMCacheのCPU-DRAMが役立つ場合（KV > HBM）と追加オーバーヘッドになる場合（KVがHBMに収まるほど小さい場合）を定量化する。",
+    "デプロイメント制約を考慮してvLLMネイティブCPUオフロードとLMCacheコネクターを選択する。"
+  ]
+}

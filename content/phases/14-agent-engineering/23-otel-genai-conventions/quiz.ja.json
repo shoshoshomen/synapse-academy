@@ -1,0 +1,90 @@
+{
+  "lesson": "23-otel-genai-conventions",
+  "title": "OpenTelemetry GenAI セマンティック規約",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "GenAI 規約でエージェント実行を表すスパン名はどれですか？",
+      "options": [
+        "agent.start",
+        "invoke_agent（オプションで gen_ai.agent.name を追加）",
+        "run_chain",
+        "agent_loop"
+      ],
+      "correct": 1,
+      "explanation": "invoke_agent が標準的な名前です。エージェントの名前属性が設定されている場合はスパン名に表示されます。"
+    },
+    {
+      "stage": "pre",
+      "question": "GenAI SIG が定義する3つのスパンカテゴリはどれですか？",
+      "options": [
+        "モデル/クライアント、エージェント、ツール",
+        "フロントエンド、バックエンド、DB",
+        "読み取り、書き込み、実行",
+        "レイテンシ、エラー、スループット"
+      ],
+      "correct": 0,
+      "explanation": "モデル/クライアント（LLM 呼び出し）、エージェント（作成/呼び出し）、ツール（呼び出しごと）がカテゴリです。"
+    },
+    {
+      "stage": "check",
+      "question": "invoke_agent スパンが CLIENT と INTERNAL のどちらを使うかはいつ決まりますか？",
+      "options": [
+        "常に INTERNAL",
+        "リモートエージェントサービス（OpenAI Assistants、Bedrock Agents）には CLIENT。インプロセスのフレームワーク（LangChain、CrewAI、ローカル ReAct）には INTERNAL",
+        "HTTPS のみ CLIENT",
+        "常に CLIENT"
+      ],
+      "correct": 1,
+      "explanation": "リモートエージェント呼び出しは CLIENT。インプロセスのエージェント実行は INTERNAL。"
+    },
+    {
+      "stage": "check",
+      "question": "コンテンツキャプチャ（入力と出力）のデフォルトルールはどれですか？",
+      "options": [
+        "デフォルトですべてをキャプチャ",
+        "インストルメンテーションはデフォルトでキャプチャしてはいけない（SHOULD NOT）。キャプチャは gen_ai.* 属性を介してオプトイン",
+        "出力のみキャプチャ、入力はしない",
+        "エラー時のみキャプチャ"
+      ],
+      "correct": 1,
+      "explanation": "デフォルトオフのコンテンツキャプチャは PII とシークレットを保護します。オプトインは明示的です。"
+    },
+    {
+      "stage": "check",
+      "question": "検索に参照されたコーパスまたはストアを識別する属性はどれですか？",
+      "options": [
+        "gen_ai.provider.name",
+        "gen_ai.request.model",
+        "gen_ai.data_source.id",
+        "gen_ai.agent.name"
+      ],
+      "correct": 2,
+      "explanation": "gen_ai.data_source.id は検索がヒットした RAG コーパスまたはストアをラベル付けします。"
+    },
+    {
+      "stage": "post",
+      "question": "本番でのプロンプトコンテンツの保存についてレッスンが推奨していることは何ですか？",
+      "options": [
+        "すべてのスパンで完全なプロンプトをプレーンテキストでキャプチャ",
+        "コンテンツを外部（S3、ログストア）に保存し、代わりにスパンに参照 ID を記録",
+        "コンテンツは決して保存しない",
+        "スパン属性でプロンプトを暗号化"
+      ],
+      "correct": 1,
+      "explanation": "ポインター ID を持つ外部ストレージにより、運用チームが読めるトレースに PII が漏洩することを防ぎます。"
+    },
+    {
+      "stage": "post",
+      "question": "GenAI 規約の実験的な安定プレビューにオプトインする方法はどれですか？",
+      "options": [
+        "OTel コレクターの設定を編集する",
+        "OTEL_SEMCONV_STABILITY_OPT_IN=gen_ai_latest_experimental を設定する",
+        "SDK をソースからリビルドする",
+        "ライセンスを購入する"
+      ],
+      "correct": 1,
+      "explanation": "環境変数は実験的な規約を固定して、属性がサイレントにリネームされないようにします。"
+    }
+  ]
+}

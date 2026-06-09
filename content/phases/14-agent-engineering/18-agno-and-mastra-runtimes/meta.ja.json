@@ -1,0 +1,16 @@
+{
+  "title": "Agno と Mastra: 本番ランタイム",
+  "type": "学習",
+  "languages": [
+    "Python",
+    "TypeScript"
+  ],
+  "prerequisites": "フェーズ14・01（エージェントループ）、フェーズ14・13（LangGraph）",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "Agno のパフォーマンスターゲットと、それが重要になる場面を特定できる。",
+    "Mastra の3つのプリミティブ（Agents、Tools、Workflows）とサポートされているサーバーアダプターを説明できる。",
+    "なぜステートレスなセッションスコープの FastAPI バックエンドが Agno の推奨本番パスなのかを説明できる。",
+    "指定されたスタック（Python ファーストか TypeScript ファーストか）に対して Agno か Mastra かを選択できる。"
+  ]
+}

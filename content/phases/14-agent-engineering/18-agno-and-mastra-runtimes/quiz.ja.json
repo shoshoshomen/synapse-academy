@@ -1,0 +1,90 @@
+{
+  "lesson": "18-agno-and-mastra-runtimes",
+  "title": "Agno と Mastra: 本番ランタイム",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "レッスンが各ランタイムに推奨する言語ペアリングはどれですか？",
+      "options": [
+        "Agno は TypeScript、Mastra は Python",
+        "Agno は Python、Mastra は TypeScript",
+        "どちらも Rust ファースト",
+        "どちらも Go ファースト"
+      ],
+      "correct": 1,
+      "explanation": "Agno は Python（FastAPI 形状）。Mastra は TypeScript（Vercel AI SDK 形状）。"
+    },
+    {
+      "stage": "pre",
+      "question": "Agno の推奨本番デプロイ形状はどれですか？",
+      "options": [
+        "長時間実行のステートフルなデーモン",
+        "ステートレスなセッションスコープの FastAPI バックエンド。各リクエストで新鮮なエージェントを開始し、セッション状態は DB に保存",
+        "サーバーレスクロンワーカーのみ",
+        "WebSocket 専用サーバー"
+      ],
+      "correct": 1,
+      "explanation": "リクエストごとにステートレスな FastAPI。セッション状態は DB に外部化。"
+    },
+    {
+      "stage": "check",
+      "question": "Mastra の3つのプリミティブはどれですか？",
+      "options": [
+        "Agents、Tools、Workflows",
+        "Actor、Message、Inbox",
+        "Plan、Worker、Solver",
+        "Node、Edge、State"
+      ],
+      "correct": 0,
+      "explanation": "Agents（LLM + ロール）、Tools（Zod 型付き）、Workflows が Mastra の3つのプリミティブです。"
+    },
+    {
+      "stage": "check",
+      "question": "Agno がドキュメントで示す目標エージェントインスタンス化コストはどれですか？",
+      "options": [
+        "約 2 マイクロ秒でエージェントあたり約 3.75 KiB",
+        "約 200 ミリ秒でエージェントあたり 100 MiB",
+        "約 1 秒でエージェントあたり 1 GiB",
+        "約 10 分でエージェントあたり 4 GiB"
+      ],
+      "correct": 0,
+      "explanation": "Agno のドキュメントには約 2 マイクロ秒とエージェントあたり約 3.75 KiB と記載されています。"
+    },
+    {
+      "stage": "check",
+      "question": "Mastra の統合モデルルーターは何を提供しますか？",
+      "options": [
+        "多数のプロバイダー全体で何千ものモデルへの単一クライアントインターフェース",
+        "ツール呼び出し用のキュー",
+        "ベクター DB レイヤー",
+        "グラフチェックポインター"
+      ],
+      "correct": 0,
+      "explanation": "Mastra の統合モデルルーターは 94 のプロバイダー全体で 3,300 以上のモデルを扱います。"
+    },
+    {
+      "stage": "post",
+      "question": "パフォーマンスのためのパフォーマンスが Agno を選ぶ間違った理由になるのはいつですか？",
+      "options": [
+        "ワークロードがリクエストあたり1つの遅いエージェント呼び出しで、オーバーヘッドがボトルネックでない場合",
+        "Python 3.13 を使用する場合",
+        "AWS にデプロイする場合",
+        "Langfuse を使用する場合"
+      ],
+      "correct": 0,
+      "explanation": "2 マイクロ秒はチャットファンインスケールで重要になります。リクエストあたり1つの遅い呼び出しには関係ありません。"
+    },
+    {
+      "stage": "post",
+      "question": "Mastra をフォークする前に注意深く読むべきライセンス面はどれですか？",
+      "options": [
+        "ライセンスファイルがない",
+        "ee/ ディレクトリは Apache 2.0 ではなくソース利用可能であり、商用利用を制限する",
+        "Mastra 全体が GPL",
+        "Mastra は CLA が必要だがライセンスレビューは不要"
+      ],
+      "correct": 1,
+      "explanation": "Mastra は ee/ を除いて Apache 2.0。ee/ はソース利用可能です。フォーク前に制限を確認してください。"
+    }
+  ]
+}

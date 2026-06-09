@@ -1,0 +1,90 @@
+{
+  "lesson": "03-reflexion-verbal-rl",
+  "title": "Reflexion: 言語的強化学習",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "Reflexionは標準的な強化学習の何を置き換えるか？",
+      "options": [
+        "報酬形成を定数報酬に置き換える",
+        "勾配更新を試行間に保存される自然言語のリフレクションに置き換える",
+        "ポリシーネットワークをランダム探索に置き換える",
+        "エピソードメモリをパラメトリックメモリに置き換える"
+      ],
+      "correct": 1,
+      "explanation": "Reflexionは重みの更新の代わりにエピソードメモリの自然言語リフレクションを使用する。"
+    },
+    {
+      "stage": "pre",
+      "question": "Reflexionシステムを定義する3つのコンポーネントは何か？",
+      "options": [
+        "Planner、Worker、Solver",
+        "Actor、Evaluator、Self-Reflector",
+        "Generator、Critic、Optimizer",
+        "Selector、Expander、Backpropagator"
+      ],
+      "correct": 1,
+      "explanation": "Reflexionはエージェントを、トラジェクトリを実行するActor、それをスコアリングするEvaluator、教訓を書くSelf-Reflectorに分解する。"
+    },
+    {
+      "stage": "check",
+      "question": "ユニットテストや既知の正解のような外部の二値シグナルを使う評価器タイプはどれか？",
+      "options": [
+        "ヒューリスティック",
+        "スカラー",
+        "自己評価",
+        "投票ベース"
+      ],
+      "correct": 1,
+      "explanation": "スカラー評価器はグラウンドトゥルース（ALFWorldの成功、HumanEvalのテスト）からパス/フェイルシグナルを読む。"
+    },
+    {
+      "stage": "check",
+      "question": "自己評価がスカラーフィードバックよりも弱いシグナルな理由は何か？",
+      "options": [
+        "計算が遅い",
+        "自分自身を評価するモデルには外部の根拠がないため、自分の答えを承認することがある",
+        "常により大きいモデルが必要",
+        "ツールで実行できない"
+      ],
+      "correct": 1,
+      "explanation": "自己評価は外部チェックがなく、自信のある幻覚は高スコアになる; ツール根拠の検証と組み合わせること。"
+    },
+    {
+      "stage": "check",
+      "question": "レッスンがReflexionが役に立たない場所として挙げているのはどれか？",
+      "options": [
+        "テストでスコアリングできるコード生成",
+        "ネットワークダウンのような外部の一時的な障害",
+        "ALFWorldナビゲーションタスク",
+        "HotpotQAマルチホップ質問"
+      ],
+      "correct": 1,
+      "explanation": "一時的な外部障害についてのリフレクションは、将来の実行に役立つリフレクションを生成しない。"
+    },
+    {
+      "stage": "post",
+      "question": "Reflexionパターンにおけるメモリ腐敗とは何か？",
+      "options": [
+        "プロセス再起動時にリフレクションが失われる",
+        "エピソードバッファが古くなったり間違ったリフレクションで埋まり、将来の試行を遅くしたりバイアスをかけたりする",
+        "リフレクションがプロバイダーによって暗号化される",
+        "リフレクションプロンプトがコンテキストウィンドウを超える"
+      ],
+      "correct": 1,
+      "explanation": "蓄積した古くなったり間違ったリフレクションは振る舞いを劣化させる; 圧縮またはTTLで軽減する。"
+    },
+    {
+      "stage": "post",
+      "question": "レッスンのReflexionに最も明確に一致する本番パターンはどれか？",
+      "options": [
+        "Cursorのapply-editsフロー",
+        "Claude CodeのCLAUDE.mdの学習が将来のセッションに先付けされる",
+        "OpenAIのバッチAPI",
+        "Anthropicのプロンプトキャッシング"
+      ],
+      "correct": 1,
+      "explanation": "CLAUDE.mdの学習、pro-workflowのlearn-rule、LettaのSleep-time computeはすべてエピソードリフレクションバッファを外部化する。"
+    }
+  ]
+}

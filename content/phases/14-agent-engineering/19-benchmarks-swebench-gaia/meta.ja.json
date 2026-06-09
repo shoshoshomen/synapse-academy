@@ -1,0 +1,16 @@
+{
+  "title": "ベンチマーク: SWE-bench、GAIA、AgentBench",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib)"
+  ],
+  "prerequisites": "フェーズ14・06（ツール利用）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "SWE-bench のテストハーネス（FAIL_TO_PASS）と、なぜユニットテストをゲートにするのかを説明できる。",
+    "SWE-bench Verified（OpenAI、500 タスク）が存在する理由と除外内容を説明できる。",
+    "GAIA の設計を説明できる: 人間には簡単、AI には難しい。3つの難易度レベル。",
+    "AgentBench の8つの環境とオープンソース LLM の主要なブロッカーを説明できる。",
+    "SWE-bench+ の汚染発見とその意味を要約できる。"
+  ]
+}

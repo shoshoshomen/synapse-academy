@@ -1,0 +1,78 @@
+{
+  "lesson": "07-tensorrt-llm-blackwell",
+  "title": "FP8とNVFP4を使ったBlackwellでのTensorRT-LLM",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "このレッスンが報告する、Blackwell + TRT-LLM + DynamoとH100 + vLLMの120Bクラスワークロードでのトークン百万あたりコスト差はおよそどれくらいか？",
+      "options": [
+        "約100倍",
+        "約7倍",
+        "約2倍",
+        "約1.1倍"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "BlackwellでKVキャッシュをNVFP4ではなくFP8に保つことをこのレッスンが推奨する理由は？",
+      "options": [
+        "NVFP4 KVキャッシュはまだどのエンジンもサポートしていないから",
+        "FP8はNVLink 5がサポートする唯一の精度だから",
+        "KVキャッシュはワイドなダイナミックレンジにまたがり、FP4量子化はアテンションスコアで壊滅的な精度損失を引き起こすから",
+        "FP8はFP4よりメモリが少ないから"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "TRT-LLMがポストトレーニング変換なしにモデルをロードできるBlackwell機能はどれか？",
+      "options": [
+        "モデルプロバイダーが出荷するデイ0 FP4ウェイト",
+        "bitsandbytesによるINT2ウェイト",
+        "FP64アテンション",
+        "BF16 KVキャッシュ"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンによると、TRT-LLMスタックを選ぶ主なトレードオフは何か？",
+      "options": [
+        "MoEモデルを配信できない",
+        "完全自律的な修正が必要",
+        "NVIDIAハードウェアにロックされる — AMD、Intel、ARMはなし",
+        "小規模でしか動作しない"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このレッスンが典型的なBlackwell設定として説明している精度の組み合わせはどれか？",
+      "options": [
+        "ウェイトFP4、KVキャッシュFP4、アテンションINT8",
+        "すべてBF16",
+        "ウェイトNVFP4、アクティベーションNVFP4、KVキャッシュFP8、アテンションアキュムレーターFP32",
+        "ウェイトINT8、アクティベーションFP32、KVキャッシュINT4"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "NVFP4ウェイト変換後にMATH精度が数ポイント下がる推論重いワークロードについて、このレッスンが推奨することは何か？",
+      "options": [
+        "AMD MI300Xに切り替える",
+        "投機的デコードを無効にする",
+        "モデルごとに評価セットでタスク品質を検証する。チームはFP8ウェイト + FP4アクティベーションを使うか、FP8全体でH200に留まることが多い",
+        "コスト勝利が支配するのでとにかくNVFP4を出荷する"
+      ],
+      "correct": 2,
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Constitutional AIとルールオーバーライド",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "4段階優先順位リゾルバー)"
+  ],
+  "prerequisites": "Phase 15・06（自動化整合研究）、Phase 15・10（権限モード）",
+  "timeEstimate": "約60分",
+  "objectives": []
+}

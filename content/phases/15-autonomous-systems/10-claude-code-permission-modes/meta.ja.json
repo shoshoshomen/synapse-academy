@@ -1,0 +1,11 @@
+{
+  "title": "自律エージェントとしてのClaude Code：権限モードとオートモード",
+  "type": "学習",
+  "languages": [
+    "Python (stdlib",
+    "two-stage classifier simulator)"
+  ],
+  "prerequisites": "Phase 15・01（ロングホライズンエージェント）、Phase 15・09（コーディングエージェントの全体像）",
+  "timeEstimate": "約45分",
+  "objectives": []
+}

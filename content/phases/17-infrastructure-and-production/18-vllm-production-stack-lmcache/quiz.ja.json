@@ -1,0 +1,78 @@
+{
+  "lesson": "18-vllm-production-stack-lmcache",
+  "title": "LMCacheのKVオフロードを使ったvLLMプロダクションスタック",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "LMCacheがvLLMデプロイメントで主に解決する問題は何か？",
+      "options": [
+        "HBMでのKVキャッシュプレッシャーによるプリエンプションと同じプレフィックスの再プリフィル",
+        "トークナイザーのGIL競合",
+        "ネットワークエグレスフィルタリング",
+        "コールドスタートのイメージプル"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "プラガブルなKVキャッシュバックエンドを導入したvLLM APIは何か？",
+      "options": [
+        "プレフィックスキャッシングフラグ",
+        "PagedAttention v2",
+        "vLLM v0.9.0のコネクターAPI",
+        "ChunkedPrefill API"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "vLLM 0.11.0（2026年1月）はKVオフロードパスに何を追加したか？",
+      "options": [
+        "一般的なケースでエンジンがオフロードをブロックしないようにする非同期オフロードパス",
+        "同期のみのオフロード",
+        "強制的なFP8 KVキャッシュ",
+        "LMCacheサポートの削除"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "ネイティブCPUオフロードよりLMCacheを選ぶべきはいつか？",
+      "options": [
+        "複数のエンジンがテナント、LoRAバリアント、または繰り返されるRAGコンテキストにわたってプレフィックスを共有するとき——クロスエンジン再利用が効果的",
+        "KVキャッシュを完全に無効にしたいとき",
+        "単一エンジンにHBMプレッシャーがあり、プレフィックス共有がない場合",
+        "CPUのみで実行しているとき"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "KVフットプリントがHBMをはるかに下回る場合、LMCacheの利益はどうなるか？",
+      "options": [
+        "LMCacheが自動的に無効になる",
+        "スループットが2倍になる",
+        "設定がベースラインと一致し、利益なしに約3〜5%のオーバーヘッド",
+        "エンジンがクラッシュする"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "LMCacheが分離型サービング（フェーズ17・17）と組み合わさる理由は何か？",
+      "options": [
+        "LMCacheがNIXLを置き換えるから",
+        "プリフィルからデコードへ転送されたKVがLMCacheにランドし、後続のクエリがLMCacheからプリフィルをスキップして取得できるため、キャッシュ認識ルーターがローカルまたはLMCache共有キャッシュが一致するエンジンを選べる",
+        "LMCacheがエンジンと同じGPUで実行されるから",
+        "それらは互いに排他的"
+      ],
+      "correct": 1,
+      "explanation": ""
+    }
+  ]
+}

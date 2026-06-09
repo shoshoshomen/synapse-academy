@@ -1,0 +1,90 @@
+{
+  "lesson": "15-crewai-role-based-crews",
+  "title": "CrewAI: ロールベースのクルーとフロー",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "CrewAI の4つのプリミティブは何ですか？",
+      "options": [
+        "Agent, Task, Crew, Process",
+        "Node, Edge, Reducer, Checkpointer",
+        "Actor, Message, Inbox, Runtime",
+        "Tool, Prompt, Model, Memory"
+      ],
+      "correct": 0,
+      "explanation": "Agent、Task、Crew、Process が4つのプリミティブです。"
+    },
+    {
+      "stage": "pre",
+      "question": "CrewAI ドキュメントが推奨する本番環境の出発点は何ですか？",
+      "options": [
+        "Crew",
+        "Flow",
+        "Sequential プロセス",
+        "Hierarchical プロセス"
+      ],
+      "correct": 1,
+      "explanation": "ドキュメントでは本番アプリには Flow から始め、自律性がコストに見合う場合にのみサブステップとして Crews を組み込むと説明されています。"
+    },
+    {
+      "stage": "check",
+      "question": "Crew と Flow の違いは何ですか？",
+      "options": [
+        "Crew は有料、Flow は無料",
+        "Crew は自律的で LLM 駆動。Flow はイベント駆動、コード所有、決定論的でテスト可能",
+        "Crew は GPU でのみ動作する",
+        "Flow にはエージェントがない"
+      ],
+      "correct": 1,
+      "explanation": "Crew は自律性優先。Flow は決定論優先です。"
+    },
+    {
+      "stage": "check",
+      "question": "CrewAI が搭載する4種類のメモリタイプに含まれないのはどれですか？",
+      "options": [
+        "短期記憶",
+        "長期記憶",
+        "エンティティ記憶",
+        "量子化記憶"
+      ],
+      "correct": 3,
+      "explanation": "短期、長期、エンティティ、コンテキストの4種類です。量子化記憶は CrewAI のコンセプトではありません。"
+    },
+    {
+      "stage": "check",
+      "question": "バックストーリー肥大化とは何か、またレッスンはどう対処を推奨していますか？",
+      "options": [
+        "クルーが多すぎる場合は古いものをアーカイブする",
+        "エージェントあたり 2000 ワードのバックストーリーがコンテキスト予算を押しのける。コンパクトに保つべき",
+        "ツールが多すぎる場合は削除する",
+        "Bedrock の呼び出しが遅い場合はリージョンを切り替える"
+      ],
+      "correct": 1,
+      "explanation": "バックストーリーはトーンと判断を形成しますが、過大だとコンテキストを消費します。"
+    },
+    {
+      "stage": "post",
+      "question": "Sequential より Hierarchical プロセスを選ぶべきなのはいつですか？",
+      "options": [
+        "常に",
+        "4人以上のスペシャリストがいて、マネージャーエージェントによる動的ルーティングが必要な場合",
+        "タスクが1つしかない場合",
+        "ツールが全くない場合"
+      ],
+      "correct": 1,
+      "explanation": "Hierarchical はマネージャーエージェントを追加します。複数のスペシャリストが動的ルーティングを必要とする場合にのみ価値があります。"
+    },
+    {
+      "stage": "post",
+      "question": "レッスンが自由形式のクルーを本番環境で使用することを警告しているのはなぜですか？",
+      "options": [
+        "クルーはサポートされていない",
+        "出力の変動が高く、Flow ラッパーなしではデバッグが困難",
+        "クルーは Flow よりコストがかかる",
+        "クルーにはメモリがない"
+      ],
+      "correct": 1,
+      "explanation": "クルーの自律性により、本番での再現と監査が困難になります。出荷時は Flow でラップしてください。"
+    }
+  ]
+}
