@@ -47,6 +47,12 @@ export default async function HomePage({
     { icon: BadgeCheck, title: t("why4Title"), body: t("why4Body") },
   ];
 
+  const steps = [
+    { n: "01", title: t("how1Title"), body: t("how1Body") },
+    { n: "02", title: t("how2Title"), body: t("how2Body") },
+    { n: "03", title: t("how3Title"), body: t("how3Body") },
+  ];
+
   return (
     <>
       {/* Hero */}
@@ -124,6 +130,39 @@ export default async function HomePage({
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* How it works — learn → test → live web meeting */}
+      <section className="border-t border-border bg-card">
+        <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6 sm:py-24">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="font-serif text-3xl font-semibold text-primary sm:text-4xl">
+              {t("howTitle")}
+            </h2>
+            <p className="mt-4 text-muted-foreground">{t("howSubtitle")}</p>
+          </div>
+          <ol className="mt-14 grid gap-8 sm:grid-cols-3">
+            {steps.map((s, i) => (
+              <li key={s.n} className="relative">
+                {i < steps.length - 1 && (
+                  <span
+                    className="absolute left-7 top-5 hidden h-px w-full bg-border sm:block"
+                    aria-hidden
+                  />
+                )}
+                <div className="relative flex size-12 items-center justify-center rounded-full border border-border bg-accent-soft font-serif text-lg font-semibold text-accent tabular">
+                  {s.n}
+                </div>
+                <h3 className="mt-5 text-lg font-semibold text-primary">
+                  {s.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {s.body}
+                </p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
