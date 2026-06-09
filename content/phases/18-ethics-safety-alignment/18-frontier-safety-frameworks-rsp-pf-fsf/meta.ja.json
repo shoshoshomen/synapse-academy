@@ -1,0 +1,16 @@
+{
+  "title": "最前線セーフティフレームワーク — RSP、PF、FSF",
+  "type": "学習",
+  "languages": [
+    "none"
+  ],
+  "prerequisites": "フェーズ18 · 17（WMDP）、フェーズ18 · 07〜09（欺瞞の失敗）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "AnthropicのASLティア構造とASL-3を有効化したものを説明できる。",
+    "OpenAI Preparedness Framework v2の追跡対象能力の5つの基準を挙げられる。",
+    "DeepMindの重要能力レベル構造とHarmful Manipulation CCLを説明できる。",
+    "競合調整条項とそれがレースダイナミクスにおいて重要な理由を説明できる。",
+    "セーフティケースを定義し、3本柱の構造（監視、判読不能性、能力欠如）を説明できる。"
+  ]
+}

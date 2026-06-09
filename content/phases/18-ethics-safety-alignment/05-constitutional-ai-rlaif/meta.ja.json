@@ -1,0 +1,16 @@
+{
+  "title": "Constitutional AI と RLAIF",
+  "type": "学習",
+  "languages": [
+    "Python (標準ライブラリ",
+    "おもちゃの自己批判と改訂ループ)"
+  ],
+  "prerequisites": "フェーズ 18 · 01 (InstructGPT)、フェーズ 18 · 02 (報酬ハッキング)",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "Constitutional AI の二つのフェーズ（批判と改訂による SFT、AI フィードバックからの RL）と、それぞれにおける憲法の役割を説明できる。",
+    "人間の選好ラベラーを AI ラベラーに置き換えることが「より安価な」RLHF ではない理由——それはパイプラインの持つ失敗モードを変える——を説明できる。",
+    "2026 年の Claude 憲法の四層優先度構造と、2023 年の書き直しからの変更点を要約できる。",
+    "Constitutional Classifiers と、計算オーバーヘッドが v1 の 23.7% から v2/2026 の約 1% に低下したことを説明できる。"
+  ]
+}

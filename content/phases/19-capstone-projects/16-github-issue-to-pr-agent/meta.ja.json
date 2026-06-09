@@ -1,0 +1,12 @@
+{
+  "title": "キャップストーン 16 — GitHub Issue-to-PR 自律エージェント",
+  "type": "実装",
+  "languages": [
+    "Python (agent)",
+    "TypeScript (GitHub App)",
+    "YAML (Actions)"
+  ],
+  "prerequisites": "フェーズ11（LLMエンジニアリング）、フェーズ13（ツール）、フェーズ14（エージェント）、フェーズ15（自律）、フェーズ17（インフラ）",
+  "timeEstimate": "約30時間",
+  "objectives": []
+}

@@ -1,0 +1,16 @@
+{
+  "title": "事前訓練済み重みのロード",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ19 レッスン30から36",
+  "timeEstimate": "約90分",
+  "objectives": [
+    "`safetensors` PythonライブラリでsafetensorsファイルをR読み取り、テンソル名と形状を検査する。",
+    "各事前訓練済みパラメータ名をレッスン35 GPTモデル内のパラメータにマップする。",
+    "公開されたGPT-2重みとこのトラックのモデルで異なる2つの名前規約を処理する：`wte/wpe/h.N.attn.c_attn/c_proj`と`mlp.c_fc/c_proj`対ローカル名`tok_embed/pos_embed/blocks.N.attn.qkv/out_proj`と`mlp.fc1/fc2`。",
+    "形状の不一致を明確なエラーで検出して重みの割り当てが行われる前に拒否する。",
+    "ロードされた重みで短い継続を生成し、トークンがランダム初期化のものではなくロードされた分布から来ることを確認する。"
+  ]
+}

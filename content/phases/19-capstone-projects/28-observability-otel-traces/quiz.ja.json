@@ -1,0 +1,78 @@
+{
+  "lesson": "phase-19/28-observability-otel-traces",
+  "title": "可観測性: OTel GenAIスパンとPrometheusメトリクス",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "レッスンを読む前に: ハーネスのスパンをOTel GenAI属性形状で書く実際的な利点は何か？",
+      "options": [
+        "OTelスパンはディスクでより良く圧縮される。",
+        "すべてのOTel互換バックエンドがカスタムパーサーなしに読める。",
+        "OTelはPython専用の標準なので、ハーネスは型ヒントを得る。",
+        "HIPAAで要求されている。"
+      ],
+      "correct": 1,
+      "explanation": "規約は広いエコシステムとのコントラクトだ。Honeycomb、Grafana Tempo、Jaeger、Datadog はすべてgen_ai.*属性をそのままパースする。"
+    },
+    {
+      "stage": "check",
+      "question": "SpanBuilder.span()コンテキスト内で例外が発生する。レッスンのビルダーは何を記録するか？",
+      "options": [
+        "トレースを汚染しないよう、スパンが削除される。",
+        "status=ERROR、status_messageが例外タイプとメッセージを含み、'exception'イベントが追加される。",
+        "statusはUNSETのままで例外は黙って飲み込まれる。",
+        "スパンの名前が'error'に変更される。"
+      ],
+      "correct": 1,
+      "explanation": "STATUS ERRORとexceptionイベントはOTelスペックと一致する。呼び出し元コードが反応できるよう例外は再発生される。"
+    },
+    {
+      "stage": "check",
+      "question": "ヒストグラムのPrometheus公開には_bucket、_sum、_countの行が含まれる。バケットカウントが累積的な理由（各leバケットはすべての小さなバケットを含む）は何か？",
+      "options": [
+        "累積カウントにより、スクレイパーはすべての観察を保存せずに引き算でバケットごとのカウントを計算できる。",
+        "累積カウントはGrafanaがサポートする唯一の形式だ。",
+        "それらは累積的ではない；レッスンの公開は非標準だ。",
+        "累積カウントは浮動小数点誤差を減らす。"
+      ],
+      "correct": 0,
+      "explanation": "Prometheusの設計上の選択: バックエンドは累積カウントを読んでバケットごとの差分を計算する。これにより時系列をバケットごとの単純な単調カウンターにできる。"
+    },
+    {
+      "stage": "check",
+      "question": "ハーネスはスパンにツール実行をラップする。GenAI規約の下でそれをツール呼び出しとして識別する属性キーはどれか？",
+      "options": [
+        "gen_ai.system + gen_ai.request.model。",
+        "gen_ai.tool.name + gen_ai.tool.call.id。",
+        "agent.harness.tool + agent.harness.call。",
+        "operation + tool.name。"
+      ],
+      "correct": 1,
+      "explanation": "gen_ai.tool.nameとgen_ai.tool.call.idはGenAI規約でのツール実行の標準キーだ。"
+    },
+    {
+      "stage": "post",
+      "question": "'read_file呼び出しのp95レイテンシーは何か'をクエリしたい。どのアーティファクトをクエリするか？",
+      "options": [
+        "スクリプトでパースされた、traces.jsonl内の各スパンのduration_ms。",
+        "ウィンドウにわたってスクレイプされたPrometheusヒストグラムtool_latency_ms{tool=\"read_file\"}。",
+        "時間ウィンドウで割ったカウンターtools_called_total。",
+        "スパンのstatus_messageフィールド。"
+      ],
+      "correct": 1,
+      "explanation": "ヒストグラムがパーセンタイルに適したツールだ。カウンターは数えるだけ；トレースは生スパンを含むが事前集約されていない。"
+    },
+    {
+      "stage": "post",
+      "question": "レビュアーがレッスンがopentelemetry-sdkをインポートする代わりに手動実装する理由を尋ねる。どの答えが正しいか？",
+      "options": [
+        "SDKはGenAI規約をサポートしない。",
+        "手動実装はワイヤフォーマットを教える；SDKは同じ属性キーで後で差し込める。",
+        "手動実装は実行時に高速だ。",
+        "SDKはインポート時にネットワーク接続を必要とする。"
+      ],
+      "correct": 1,
+      "explanation": "規約は実装間で安定している。手動実装バージョンは明確さのために存在する；プロダクションはSDKを差し込んで同じgen_ai.*キーを再利用する。"
+    }
+  ]
+}

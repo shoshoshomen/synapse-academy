@@ -1,0 +1,12 @@
+{
+  "title": "キャップストーン 14 — 投機的デコーディング推論サーバー",
+  "type": "実装",
+  "languages": [
+    "Python (serving)",
+    "C++ / CUDA (kernel inspection)",
+    "YAML (configs)"
+  ],
+  "prerequisites": "フェーズ3（ディープラーニング）、フェーズ7（トランスフォーマー）、フェーズ10（ゼロからのLLM）、フェーズ17（インフラ）",
+  "timeEstimate": "約30時間",
+  "objectives": []
+}

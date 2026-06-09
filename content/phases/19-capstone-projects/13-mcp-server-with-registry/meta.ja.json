@@ -1,0 +1,12 @@
+{
+  "title": "キャップストーン 13 — レジストリとガバナンスを持つMCPサーバー",
+  "type": "実装",
+  "languages": [
+    "Python (server",
+    "via FastMCP) or TypeScript (@modelcontextprotocol/sdk)",
+    "Go (registry service)"
+  ],
+  "prerequisites": "フェーズ11（LLMエンジニアリング）、フェーズ13（ツールとMCP）、フェーズ14（エージェント）、フェーズ17（インフラ）、フェーズ18（安全性）",
+  "timeEstimate": "約25時間",
+  "objectives": []
+}

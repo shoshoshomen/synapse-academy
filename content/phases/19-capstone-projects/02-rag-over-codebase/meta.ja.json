@@ -1,0 +1,11 @@
+{
+  "title": "キャップストーン 02 — コードベースへのRAG（クロスリポジトリセマンティック検索）",
+  "type": "実装",
+  "languages": [
+    "Python (ingestion)",
+    "TypeScript (API + UI)"
+  ],
+  "prerequisites": "フェーズ5（NLPの基礎）、フェーズ7（トランスフォーマー）、フェーズ11（LLMエンジニアリング）、フェーズ13（ツール）、フェーズ17（インフラ）",
+  "timeEstimate": "約30時間",
+  "objectives": []
+}

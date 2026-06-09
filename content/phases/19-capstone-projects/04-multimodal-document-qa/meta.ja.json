@@ -1,0 +1,11 @@
+{
+  "title": "キャップストーン 04 — マルチモーダル文書QA（ビジョンファースト：PDF、表、グラフ）",
+  "type": "実装",
+  "languages": [
+    "Python (pipeline)",
+    "TypeScript (viewer UI)"
+  ],
+  "prerequisites": "フェーズ4（コンピュータビジョン）、フェーズ5（NLP）、フェーズ7（トランスフォーマー）、フェーズ11（LLMエンジニアリング）、フェーズ12（マルチモーダル）、フェーズ17（インフラ）",
+  "timeEstimate": "約30時間",
+  "objectives": []
+}

@@ -1,0 +1,78 @@
+{
+  "lesson": "29-moderation-systems-openai-perspective-llamaguard",
+  "title": "モデレーションシステム — OpenAI、Perspective、Llama Guard",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "OpenAIのomni-moderation-latest（2024）とは何ですか？",
+      "options": [
+        "RLHFの報酬モデル",
+        "推論に特化したフロンティアモデル",
+        "C2PAウォーターマークエンドポイント",
+        "GPT-4oベースのモデレーションクラシファイア。テキストと画像を1回の呼び出しで処理し、13カテゴリのレスポンススキーマ（harassment、hate、self-harm、sexual、violence、illicitおよびサブカテゴリ）を返す。ほとんどの開発者は無料"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "OpenAI Moderationのプライマリ最上位カテゴリに含まれないものはどれですか？",
+      "options": [
+        "violence（暴力）",
+        "election-interference（選挙干渉）",
+        "self-harm（自傷）",
+        "harassment（ハラスメント）"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "2026年の標準モデレーションパターンの3層とは何ですか？",
+      "options": [
+        "プローブ / ディテクター / ハーネス",
+        "トークナイザー / モデル / デトークナイザー",
+        "望遠鏡 / 潜望鏡 / 顕微鏡",
+        "入力モデレーション（生成前）、出力モデレーション（生成後）、カスタムモデレーション（ドメインルール）"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Perspective API（Google Jigsaw）が主にスコアリングするように設計されているものは何ですか？",
+      "options": [
+        "ウォーターマークの強度",
+        "トキシシティ（severe-toxicity、insult、profanity、threat、identity-attackのサブ次元付き）。LLM以前のコンテンツモデレーションベースライン",
+        "推論の質",
+        "ユーザー満足度に対する報酬"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "入力のみのモデレーションの失敗モードは何ですか？",
+      "options": [
+        "GPUで実行できない",
+        "モデルの出力の失敗やハルシネーションをキャッチしない。エンコーディング攻撃（レッスン12〜14）が入力クラシファイアを完全にバイパスできる",
+        "常に正当なコンテンツをブロックする",
+        "出力クラシファイアが不要になる"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "Azure Content Moderatorの廃止とマイグレーション先は何ですか？",
+      "options": [
+        "2024年2月に廃止予定、2027年2月（厳密には2027年3月15日）にリタイア。マイグレーション先はAzure AI Content Safety（LLMベース、Azure OpenAIと統合）",
+        "Perspective APIに置き換え",
+        "Llama Guard 4に統合",
+        "即時廃止で代替なし"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}

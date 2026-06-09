@@ -1,0 +1,78 @@
+{
+  "lesson": "05-constitutional-ai-rlaif",
+  "title": "Constitutional AI と RLAIF",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "Constitutional AI と標準的な RLHF における主要な代替は何か？",
+      "options": [
+        "人間の選好ラベラーを、原則リストを読む AI ラベラーに置き換える",
+        "PPO を DPO に置き換える",
+        "実際のプロンプトの代わりに合成プロンプトを使用する",
+        "報酬モデルを完全に除去する"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Constitutional AI の第一（SFT）フェーズは何をするか？",
+      "options": [
+        "AI 生成の選好のみで報酬モデルを訓練する",
+        "初期応答を生成し、サンプリングされた憲法の原則に基づいて批判し、改訂して SFT ターゲットとして使う",
+        "ラベラーコメントをクラスタリングすることで合成原則を生成する",
+        "憲法から導出された報酬で PPO を実行する"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "第二（RLAIF）フェーズは何をするか？",
+      "options": [
+        "PPO を省略して単一の教師あり損失を適用する",
+        "人間が SFT 出力を再ラベリングする",
+        "憲法をトークナイザに蒸留する",
+        "フィードバックモデルからの AI 生成の選好で報酬モデルを訓練し、それに対して PPO を実行する"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Anthropic の 2026 年 1 月の四層 Claude 憲法の層の順序はどれか？",
+      "options": [
+        "プラットフォームルール > 壊滅的回避 > 役立つ > 広く倫理的",
+        "広く倫理的 > 役立つ > プラットフォームルール > 壊滅的回避",
+        "壊滅的な結果を避ける > Anthropic のガイドラインに従う > 広く倫理的 > 役立つかつ率直",
+        "役立つ > 広く倫理的 > プラットフォームルール > 壊滅的回避"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "RLHF から RLAIF に切り替えることで必ずしも修正されない失敗モードはどれか？",
+      "options": [
+        "ラベラーの心理的一貫性のなさ",
+        "報酬ハッキング / グッドハートの法則",
+        "ラベラーのコスト",
+        "ラベラーの不足"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "Constitutional Classifiers v1 と v2（2026）の見出しとなる変化は何か？",
+      "options": [
+        "v2 は計算オーバーヘッドを 1% から 23.7% に増加させた",
+        "v2 は分類器を除去して憲法のみに依存した",
+        "v2 は出力ではなく入力のみで実行される",
+        "v2 は計算オーバーヘッドを 23.7% から約 1% に低下させ、低い成功攻撃率を達成した"
+      ],
+      "correct": 3,
+      "explanation": ""
+    }
+  ]
+}

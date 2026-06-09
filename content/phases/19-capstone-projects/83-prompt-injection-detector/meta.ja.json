@@ -1,0 +1,10 @@
+{
+  "title": "キャップストーン83 — プロンプトインジェクション検出器",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ18 セーフティレッスン、フェーズ19 トラックA レッスン25〜29",
+  "timeEstimate": "約90分",
+  "objectives": []
+}

@@ -1,0 +1,12 @@
+{
+  "title": "キャップストーン 15 — 憲法的安全ハーネス + レッドチームレンジ",
+  "type": "実装",
+  "languages": [
+    "Python (safety pipeline",
+    "red team)",
+    "YAML (policy configs)"
+  ],
+  "prerequisites": "フェーズ10（基礎からのLLM）、フェーズ11（LLMエンジニアリング）、フェーズ13（ツール）、フェーズ14（エージェント）、フェーズ18（倫理・安全・アライメント）",
+  "timeEstimate": "約25時間",
+  "objectives": []
+}

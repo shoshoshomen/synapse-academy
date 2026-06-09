@@ -1,0 +1,78 @@
+{
+  "lesson": "78-zero-parameter-sharding",
+  "title": "ZeROオプティマイザー状態シャーディング",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "ZeROがパラメータではなくオプティマイザー状態を最初にシャーディングする理由は何か？",
+      "options": [
+        "オプティマイザーの方が重要だから",
+        "オプティマイザー状態は最大のメモリ項であり、フォワードやバックワード中ではなくステップ中のみ触れられる",
+        "パラメータの方が簡単だから",
+        "DeepSpeedがそれを義務付けているから"
+      ],
+      "correct": 1,
+      "explanation": "混合精度でのAdamではfp32マスター + 2つのモーメントはランクあたり12Pバイト。fp16 params + gradsの4Pバイトと比べて。最大の項を最初にシャーディングすると複雑さの単位あたりで最もメモリが節約できる。"
+    },
+    {
+      "stage": "pre",
+      "question": "ZeROステージ1のステップごとのワイヤパターンは何か？",
+      "options": [
+        "1xallreduce",
+        "勾配に対する1xreduce_scatterと更新されたパラメータに対する1xallgather",
+        "1xbroadcast",
+        "なし"
+      ],
+      "correct": 1,
+      "explanation": "reduce_scatterは各ランクにそのシャードの勾配のみを届ける。allgatherは更新されたパラメータシャードを配布して戻す。総バイトはallreduceと等しく、メモリはNで割れる。"
+    },
+    {
+      "stage": "check",
+      "question": "ステップごとの帯域幅がDDPと同じである理由は何か？",
+      "options": [
+        "マジック",
+        "allreduceは帯域幅でreduce_scatter + allgatherに等しい。ZeROは異なるデータで同じ2つの演算に分割する",
+        "ZeROは圧縮を使うから",
+        "同じではないから"
+      ],
+      "correct": 1,
+      "explanation": "リングallreduceはreduce_scatterとしてその後allgatherとして実装されている。ZeROは同じ2つの演算を行うが、allgatherは合計勾配ではなく更新されたパラメータを回転させる。"
+    },
+    {
+      "stage": "check",
+      "question": "8ランクの70Bモデルを混合精度でAdamを使って学習する場合、バニラDDPに対するメモリの削減はいくらか？",
+      "options": [
+        "10%",
+        "約65%（バニラ16P対ZeRO-1 4P + 12P/N = 5.5P）",
+        "99%",
+        "0%"
+      ],
+      "correct": 1,
+      "explanation": "バニラ：2P + 2P + 4P + 4P + 4P = 16P。ZeRO-1：2P + 2P + (4P+4P+4P)/8 = 5.5P。削減は(16-5.5)/16 = 65.6%。"
+    },
+    {
+      "stage": "check",
+      "question": "ZeRO-2がZeRO-1に追加することは何か？",
+      "options": [
+        "なし",
+        "reduce_scatter後に非シャード勾配も破棄し、ランクごとの勾配メモリを解放する。帯域幅は同じ",
+        "バックエンドをNCCLに切り替える",
+        "オプティマイザーを削除する"
+      ],
+      "correct": 1,
+      "explanation": "ZeRO-2はreduce_scatter後に非シャード勾配部分をゼロにする。ZeRO-1と同じ帯域幅だが、より低い勾配メモリ。"
+    },
+    {
+      "stage": "post",
+      "question": "ZeROがオプティマイザー状態チェックポイントにどのランクがどのシャードを所有するかを記録することを要求する理由は何か？",
+      "options": [
+        "見た目のため",
+        "ランクごとの所有権がなければ、保存された状態は再起動時に読めない。同じワールドサイズで再開するには正しいシャードを正しいランクに戻す必要がある",
+        "不要だから",
+        "圧縮のため"
+      ],
+      "correct": 1,
+      "explanation": "レッスン80はまさにこの理由でシャーディングされたチェックポイントマニフェストを構築する。ZeROの実行が同じトポロジーで再開できるように。"
+    }
+  ]
+}

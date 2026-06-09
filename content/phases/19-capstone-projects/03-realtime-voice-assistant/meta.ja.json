@@ -1,0 +1,11 @@
+{
+  "title": "キャップストーン 03 — リアルタイム音声アシスタント（ASRからLLMへ、そしてTTSへ）",
+  "type": "実装",
+  "languages": [
+    "Python (agent + pipeline)",
+    "TypeScript (web client)"
+  ],
+  "prerequisites": "フェーズ6（音声とオーディオ）、フェーズ7（トランスフォーマー）、フェーズ11（LLMエンジニアリング）、フェーズ13（ツール）、フェーズ14（エージェント）、フェーズ17（インフラ）",
+  "timeEstimate": "約30時間",
+  "objectives": []
+}

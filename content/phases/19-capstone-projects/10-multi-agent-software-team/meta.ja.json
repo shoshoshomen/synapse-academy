@@ -1,0 +1,11 @@
+{
+  "title": "キャップストーン 10 — マルチエージェントソフトウェアエンジニアリングチーム",
+  "type": "実装",
+  "languages": [
+    "Python / TypeScript (agents)",
+    "Shell (worktree scripts)"
+  ],
+  "prerequisites": "フェーズ11（LLMエンジニアリング）、フェーズ13（ツール）、フェーズ14（エージェント）、フェーズ15（自律システム）、フェーズ16（マルチエージェント）、フェーズ17（インフラ）",
+  "timeEstimate": "約40時間",
+  "objectives": []
+}

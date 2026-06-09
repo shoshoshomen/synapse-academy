@@ -1,0 +1,90 @@
+{
+  "lesson": "15-constitutional-safety-harness",
+  "title": "キャップストーン 15 — 憲法的安全ハーネス + レッドチームレンジ",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "このキャップストーンにおける多層安全とは何を意味するか？",
+      "options": [
+        "すべての応答の手動レビュー",
+        "入力に対してのみ強力な分類器を1つ実行すること",
+        "出力に対する単一のルールベース正規表現",
+        "入力サニタイズ、ポリシーレール、分類器ゲート、モデル、出力フィルター、HITLティアにわたる多層防御"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "pre",
+      "question": "約132言語の多言語カバレッジを処理する分類器はどれか？",
+      "options": [
+        "Nemotron 3 Content Safety",
+        "ShieldGemma-2",
+        "X-Guard",
+        "Llama Guard 4"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "XSTestのような良性スイートで過剰拒否を測定するのはなぜか？",
+      "options": [
+        "レッドチームスコアリングを置き換えるため",
+        "トークンスループットをベンチマークするため",
+        "ガードレールフレームワークを認証するため",
+        "偽陽性ブロックを追跡することで、無害性を改善しながらモデルが役立つ状態を維持するため"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "このキャップストーンにおける憲法的自己批評ループとは何か？",
+      "options": [
+        "候補ジェイルブレイクプロンプトのリランカー",
+        "ゼロから学習するRLHF報酬モデル",
+        "Llama Guard 4の単一フォワードパス",
+        "批評LLMが成文化された憲法に対して草稿をスコアリングし、モデルが異議のある出力を書き直し、改善されたペアでSFTが実行される"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "調査結果において成功したジェイルブレイクはどのように深刻度をスコアリングするか？",
+      "options": [
+        "応答を生成したモデルによって",
+        "攻撃ベクター、複雑さ、影響を含むCVSS 4.0と開示タイムラインを使用して",
+        "プロンプトの生トークン数によって",
+        "オペレーターが選んだ手調整の1-10スケールで"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "レッドチームレンジが実行する6種類の攻撃ファミリーはどれか？",
+      "options": [
+        "BLEU、ROUGE、METEOR、BERTScore、CometKiwi、chrF",
+        "PAIR、TAP、GCG、エンコーディング（ASCII/base64/rot13）、マルチターンペルソナ、多言語コードスイッチ",
+        "ブルートフォース、辞書、リプレイ、MITM、フィッシング、CSRF",
+        "PSI、KL、MMD、KS、JS、Wasserstein"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "レンジ自動化（cron + アラート）が評価基準に含まれるのはなぜか？",
+      "options": [
+        "cronがOPAを呼び出す唯一の方法だから",
+        "継続的なスケジュールプローブが時間をかけて攻撃成功率と過剰拒否リグレッションのドリフトを検出するから",
+        "手動実行が明示的に要求されているから",
+        "Llama Guard 4を無効にするために自動化が必要だから"
+      ],
+      "correct": 1,
+      "explanation": ""
+    }
+  ]
+}

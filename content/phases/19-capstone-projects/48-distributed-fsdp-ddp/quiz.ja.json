@@ -1,0 +1,78 @@
+{
+  "lesson": "48-distributed-fsdp-ddp",
+  "title": "スクラッチからの分散データ並列とFSDP",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "スクラッチから書かれたDDPラッパーの中核となる2つの集合演算はどれですか？",
+      "options": [
+        "sendとrecv",
+        "すべてのランクが同じパラメーターから始まるよう構築時にbroadcast、すべてのランクが平均勾配で終わるようバックワード後にall_reduce",
+        "reduce_scatterのみ",
+        "barrierとbarrier"
+      ],
+      "correct": 1,
+      "explanation": "初期化時のbroadcastはステップゼロでランクを同期させます。バックワード後のall-reduceはその後のすべてのステップで同期を保ちます。"
+    },
+    {
+      "stage": "pre",
+      "question": "このレッスンがCUDAなしでCPUで動作する理由は何ですか？",
+      "options": [
+        "スタブだから",
+        "torch.distributedはソケット上で集合演算を実行するglooバックエンドを含むため、CPU上のtorch.multiprocessingワーカーが本物のプロセスグループを形成できます。GPUボックスではデバイスタグだけが変わります",
+        "シミュレートされたテンソルを使うから",
+        "torch.distributedをまったく使わないから"
+      ],
+      "correct": 1,
+      "explanation": "GlooはCPU集合バックエンドです。同じ呼び出しサイトがGPU上のncclで動作します。APIサーフェスは同一です。"
+    },
+    {
+      "stage": "check",
+      "question": "manual_all_reduce_matches_single_processテストは何を証明しますか？",
+      "options": [
+        "何もない",
+        "ランクごとの勾配を合算してworld_sizeで割ると、単一プロセスが連結入力で計算する勾配が浮動小数点ノイズ以内で回復されること",
+        "オプティマイザーが収束すること",
+        "CUDAが不要であること"
+      ],
+      "correct": 1,
+      "explanation": "フルバッチでの平均削減によるクロスエントロピーは、ランクごとの平均の平均と等しくなります。合算して割るのが正しい演算です。テストはそれを見えるようにします。"
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンのFSPPスケッチはすべてのフォワードパスでパラメーターごとに何をしますか？",
+      "options": [
+        "何もしない",
+        "フラットパラメーターをworld_sizeの倍数にパディングし、スライスし、すべてのランクでall_gatherし、パッドを削除し、再構築がオリジナルと一致することを検証する",
+        "パラメーターを再初期化する",
+        "ハッシュを計算する"
+      ],
+      "correct": 1,
+      "explanation": "各ランクはすべてのパラメーターの1/world_sizeを所有します。ギャザーは計算のために完全なテンソルを再構築します。本番FSPPは前のレイヤーの作業とギャザーをオーバーラップします。"
+    },
+    {
+      "stage": "check",
+      "question": "パラメーター長がworld_sizeで割り切れない場合でも、glooのall_gatherがworld_size等サイズのシャードにサイズ設定される理由は何ですか？",
+      "options": [
+        "Glooのall_gatherはランクごとに等サイズの出力テンソルを要求するため、フラットパラメーターはスライス前にworld_sizeの倍数にright-paddingされ、パディングはギャザー後に削除される",
+        "バグだから",
+        "ネットワークを高速化するから",
+        "ランダムな選択"
+      ],
+      "correct": 0,
+      "explanation": "Gloo（とnccl）のall_gatherは同サイズの出力を期待します。パディングが最も安い解決策です。スケッチは結果をオリジナルの長さに切り詰めます。"
+    },
+    {
+      "stage": "post",
+      "question": "デモ出力を読んで、ランク間でparam_sum_spreadがゼロに近いことは何を示しますか？",
+      "options": [
+        "損失が低いこと",
+        "すべてのランクが実行の終わりに同じパラメーター値になったこと。つまり構築時のbroadcastとすべてのバックワード後のall-reduceが両方とも機能したということ。どちらかが壊れていればスプレッドはステップとともに成長します",
+        "ネットワークが速いこと",
+        "意味のある何もない"
+      ],
+      "correct": 1,
+      "explanation": "DDPの不変条件はランク間のパラメーターの一致です。スプレッドが監査です。デモは1e-3未満に保たれることをアサートします。"
+    }
+  ]
+}

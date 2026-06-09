@@ -1,0 +1,13 @@
+{
+  "title": "キャップストーン 17 — パーソナルAIチューター（適応型、マルチモーダル、メモリ付き）",
+  "type": "実装",
+  "languages": [
+    "Python (backend",
+    "learner model)",
+    "TypeScript (web app)",
+    "SQL (curriculum graph via Postgres + Neo4j)"
+  ],
+  "prerequisites": "フェーズ5（NLP）、フェーズ6（スピーチ）、フェーズ11（LLMエンジニアリング）、フェーズ12（マルチモーダル）、フェーズ14（エージェント）、フェーズ17（インフラ）、フェーズ18（安全）",
+  "timeEstimate": "約30時間",
+  "objectives": []
+}

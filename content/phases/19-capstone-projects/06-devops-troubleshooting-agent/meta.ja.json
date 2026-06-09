@@ -1,0 +1,11 @@
+{
+  "title": "キャップストーン 06 — Kubernetes向けDevOpsトラブルシューティングエージェント",
+  "type": "実装",
+  "languages": [
+    "Python (agent)",
+    "TypeScript (Slack integration)"
+  ],
+  "prerequisites": "フェーズ11（LLMエンジニアリング）、フェーズ13（ツールとMCP）、フェーズ14（エージェント）、フェーズ15（自律システム）、フェーズ17（インフラ）、フェーズ18（安全性）",
+  "timeEstimate": "約30時間",
+  "objectives": []
+}

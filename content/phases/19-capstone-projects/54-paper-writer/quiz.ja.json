@@ -1,0 +1,78 @@
+{
+  "lesson": "54-paper-writer",
+  "title": "論文ライター",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "ライターが散文を書く前にセクション、フィギュア、引用をデータとして宣言する理由は何ですか？",
+      "options": [
+        "LaTeXが前方宣言を要求するから",
+        "構造が契約だから：ハーネスは散文生成前に完全性を検証できます",
+        "モデルにシステムプロンプトが必要だから",
+        "BibTeXが前方参照を解決できないから"
+      ],
+      "correct": 1,
+      "explanation": "構造ファーストにより、ハーネスは散文生成器を起動する前に一意性、引用カバレッジ、フィギュアカバレッジを検証できます。スケルトンが契約です。"
+    },
+    {
+      "stage": "pre",
+      "question": "フィギュア注入ステップは実験マニフェストから何を生成しますか？",
+      "options": [
+        "アーティファクトからコンパイルされたPDF",
+        "安定したIDと論文ディレクトリに正規化されたパスを持つFigureレコードのリスト",
+        "フィギュアの説明を持つモデルプロンプト",
+        "書誌スタブ"
+      ],
+      "correct": 1,
+      "explanation": "read_experiment_manifestはFigureレコードを返します。IDは確定的で、パスは正規化され、キャプションはマニフェストから来ます。"
+    },
+    {
+      "stage": "check",
+      "question": "どの検証失敗がファイルを書く前にPaperValidationErrorを発生させますか？",
+      "options": [
+        "奇数の著者数",
+        "書誌で宣言されていないキーを引用するセクション",
+        "200語を超えるアブストラクト",
+        "ディスク上に存在しないフィギュアパス"
+      ],
+      "correct": 1,
+      "explanation": "書誌キーの欠如、重複フィギュアID、空のタイトル、空のアブストラクト、未知のフィギュア参照はすべてPaperValidationErrorを発生させます。ディスク上の存在はLaTeXコンパイラーが後で強制するため強制されません。"
+    },
+    {
+      "stage": "check",
+      "question": "散文生成器がPaperWriterのメソッドではなくPaperWriterに注入される呼び出し可能な理由は何ですか？",
+      "options": [
+        "PythonがPaperを引数として取るメソッドを許可しないから",
+        "テストがライターに触れずに確定的なMockProseGeneratorをモデル呼び出しに交換できるから",
+        "LaTeXがコールバックを要求するから",
+        "データクラスが状態を保持できないから"
+      ],
+      "correct": 1,
+      "explanation": "ライターは散文生成器を依存関係として取ります。テストはMockProseGeneratorを代替します。本番はモデル呼び出しを代替します。ライターは変わりません。"
+    },
+    {
+      "stage": "post",
+      "question": "成功時にPaperWriter.writeが出力する3つのファイルは何ですか？",
+      "options": [
+        "paper.tex, paper.pdf, references.bib",
+        "paper.tex, references.bib, manifest.json",
+        "outline.json, paper.tex, figures.tar",
+        "manifest.json, prose.txt, paper.pdf"
+      ],
+      "correct": 1,
+      "explanation": "paper.texはLaTeXソースです。references.bibは書誌です。manifest.jsonは批評ループが次に読む構造化されたアーティファクトです。"
+    },
+    {
+      "stage": "post",
+      "question": "マニフェストがLaTeXファイルではなくライターの契約の一部である理由は何ですか？",
+      "options": [
+        "LaTeXが大きすぎてパースできないから",
+        "ダウンストリームのツール（批評者、ダッシュボード）が構造化されたマニフェストを読み、LaTeXは読まないから",
+        "manifest.jsonがBibTeXが受け入れる唯一のファイルだから",
+        "LaTeXコンパイラーが型付きのないセクションを拒否するから"
+      ],
+      "correct": 1,
+      "explanation": "マニフェストはダウンストリームのステージの安定したインターフェースです。批評者とダッシュボードはmanifest.jsonを検査します。LaTeXは人間が読むアーティファクトで機械インターフェースではありません。"
+    }
+  ]
+}

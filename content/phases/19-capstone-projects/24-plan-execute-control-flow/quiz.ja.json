@@ -1,0 +1,90 @@
+{
+  "lesson": "24-plan-execute-control-flow",
+  "title": "プランアンドエグゼキュートの制御フロー",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "プランアンドエグゼキュートエージェントにおけるプランナーの責任は何か？",
+      "options": [
+        "各ステップでディスパッチャーを呼び出す",
+        "エグゼキューターが実行する型付きステップの順序リストを生成する",
+        "タイムアウトを適用する",
+        "JSON-RPCトランスポートを処理する"
+      ],
+      "correct": 1,
+      "explanation": "プランナーは構造化されたプランを発行する。エグゼキューターがそれを実行する。それらを混在させることがこのレッスンが離れようとしている思考の連鎖の罠だ。"
+    },
+    {
+      "stage": "pre",
+      "question": "エグゼキューターがチェックしないにもかかわらず、expected_outcomeがステップの形の一部である理由は何か？",
+      "options": [
+        "ディスパッチャーがキャッシュキーとして使用するから",
+        "リプランナーとトレーサーが読む述べられた成功条件をそれが提供するから",
+        "レジストリがそれを必要とするから",
+        "モデルがそれで学習するから"
+      ],
+      "correct": 1,
+      "explanation": "リプランナーは改訂するときにそれを読む。トレーサーはタイムラインにそれをレンダリングする。それはステップの人間が読めるコントラクトだ。"
+    },
+    {
+      "stage": "check",
+      "question": "ステップが失敗してリプランナーが新しいプランを返すとき、エグゼキューターはイベントストリームに何を発行するか？",
+      "options": [
+        "何も発行しない — リプランはサイレントだ",
+        "status=failedのsession.complete",
+        "removed/added/revisedのステップIDを持つplan.diff",
+        "tool.errorの後にsession.start"
+      ],
+      "correct": 2,
+      "explanation": "plan.diffが改訂を目に見えるものにする。サイレントな書き直しが避けようとしているバグだ。"
+    },
+    {
+      "stage": "check",
+      "question": "max_stepsとmax_replansの両方を別々の予算として持つのはなぜか？",
+      "options": [
+        "それらは異なる単位を測定するから。ステップは実行の合計をキャップし、リプランはプランナーが呼び出される回数をキャップする。",
+        "asyncioが両方を必要とするから",
+        "ディスパッチャーが制限のないプランを拒否するから",
+        "レジストリがリプランを数えるから"
+      ],
+      "correct": 0,
+      "explanation": "max_replansは同じ壊れたプランを返し続けるプランナーをキャッチする。max_stepsは成長し続けるランアウェイプランをキャッチする。"
+    },
+    {
+      "stage": "check",
+      "question": "プランナーが最初の呼び出しで空のリストを返すとき、どの理由が返されるか？",
+      "options": [
+        "step_budget",
+        "replan_budget",
+        "goal_met",
+        "no_plan"
+      ],
+      "correct": 3,
+      "explanation": "プランなし、実行なし。セッションはreason=no_planとstatus=failedで終了する。"
+    },
+    {
+      "stage": "post",
+      "question": "PlanDiff.revisedには何があるか？",
+      "options": [
+        "古いプランにあって新しいプランにないステップID",
+        "古いプランにない新しいプランのステップID",
+        "改訂間でtool_nameまたはargsが変わったステップID",
+        "プランナーがスキップを要求したステップID"
+      ],
+      "correct": 2,
+      "explanation": "revisedは改訂間で(tool_name, args)シグネチャが変わったIDのセットだ。"
+    },
+    {
+      "stage": "post",
+      "question": "エグゼキューターがmax_replansを使い果たしたとき、結果のSessionResult.reasonは何か？",
+      "options": [
+        "goal_met",
+        "step_budget",
+        "replan_budget",
+        "no_plan"
+      ],
+      "correct": 2,
+      "explanation": "replan_budget。statusはfailed。historyはリプランをトリガーした失敗を含む実行されたすべてのステップを持つ。"
+    }
+  ]
+}

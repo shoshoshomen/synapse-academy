@@ -1,0 +1,78 @@
+{
+  "lesson": "12-red-teaming-pair-automated-attacks",
+  "title": "レッドチーミング：PAIR と自動化攻撃",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "なぜ手動レッドチーミングはフロンティアモデルの評価に不十分か？",
+      "options": [
+        "スケールしない；攻撃成功率には、モデルリリースごとに変わる移動する対象に対する統計的サンプルが必要",
+        "手動プロンプトは常にフィルタでブロックされる",
+        "手動テストは偽陽性が多すぎる",
+        "手動テスターはモデルの出力を読めない"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "PAIR とは何の略で、何をするか？",
+      "options": [
+        "Prompt Automatic Iterative Refinement；攻撃者 LLM が対象に対してジェイルブレイクを反復的に提案し、過去の試みをインコンテキストフィードバックとして使う",
+        "Pairwise Adversarial Inference Routing；モデル間で攻撃をルーティングする",
+        "Pre-Action Inspection Reasoning；防御的スキャフォールド",
+        "Persuasive Adversarial Iterative Reward；RM を説得者に置き換える"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "なぜ PAIR はブラックボックス対象に対して GCG より効率的か？",
+      "options": [
+        "PAIR は GCG より大きな攻撃者モデルを使う",
+        "GCG はオープンソースモデルにしか攻撃できない",
+        "GCG はホワイトボックスの勾配アクセスが必要で、インコンテキストフィードバックを使えない読めないサフィックスを生成する；PAIR はブラックボックスでインコンテキスト学習を伴う自然言語を使う",
+        "PAIR は対象の応答を無視する"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "なぜ攻撃成功率（ASR）はクエリバジェットと判定の識別情報の両方を伴って報告しなければならないか？",
+      "options": [
+        "判定は常に一致するから",
+        "バジェットは JailbreakBench だけが設定するから",
+        "ASR は攻撃者に許可されるクエリ数と、応答をジェイルブレイクと判定する LLM によって変わるから",
+        "ASR は輸出規制の規制によって要求されるから"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "これらの自動化攻撃のうち、「枝刈りを伴う木形式攻撃」と最もよく説明できるのはどれか？",
+      "options": [
+        "TAP",
+        "GCG",
+        "PAP",
+        "AutoDAN"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "意味論的・機能的有害テストを伴う 7 カテゴリにわたる 510 の行動を使う標準化ベンチマークはどれか？",
+      "options": [
+        "JailbreakBench",
+        "HarmBench",
+        "WMDP",
+        "TruthfulQA"
+      ],
+      "correct": 1,
+      "explanation": ""
+    }
+  ]
+}

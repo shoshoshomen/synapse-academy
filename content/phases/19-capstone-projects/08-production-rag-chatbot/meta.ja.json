@@ -1,0 +1,11 @@
+{
+  "title": "キャップストーン 08 — 規制されたバーティカル向けの本番RAGチャットボット",
+  "type": "実装",
+  "languages": [
+    "Python (pipeline + API)",
+    "TypeScript (chat UI)"
+  ],
+  "prerequisites": "フェーズ5（NLP）、フェーズ7（トランスフォーマー）、フェーズ11（LLMエンジニアリング）、フェーズ12（マルチモーダル）、フェーズ17（インフラ）、フェーズ18（安全性）",
+  "timeEstimate": "約30時間",
+  "objectives": []
+}

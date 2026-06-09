@@ -1,0 +1,90 @@
+{
+  "lesson": "11-llm-observability-dashboard",
+  "title": "キャップストーン 11 — LLM可観測性・評価ダッシュボード",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "Langfuse・Phoenix・OpenLLMetryが収束したインジェストスキーマはどれか？",
+      "options": [
+        "ベンダーごとの独自JSON",
+        "Prometheus展示フォーマット",
+        "OTLP HTTP上のOpenTelemetry GenAIセマンティック規約",
+        "プレーンなCSVログファイル"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "pre",
+      "question": "ストレージ層でClickHouseとPostgresを分ける理由は何か？",
+      "options": [
+        "互換性があり、どちらかがランダムに選ばれる",
+        "Postgresの方がスパンインジェストが高速",
+        "ClickHouseは文字列を保存できない",
+        "ClickHouseはスパンのカラム指向分析を処理し、Postgresはユーザー・セッション・アプリのメタデータを保持する"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "OpenTelemetry CollectorのテールサンプリングプロセッサはM何をするか？",
+      "options": [
+        "トレース完了後に保持するかどうかを決定し、エラーを保持して成功をサンプリングするなどのルールを使用する",
+        "古いトレースをPostgresにリプレイする",
+        "すべてのバイトを無条件にストリームする",
+        "100ms未満のスパンを切り捨てる"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "ダッシュボードはどのように週をまたいでドリフトを検出するか？",
+      "options": [
+        "プールされたプロンプト埋め込みのPSIまたはKL発散を計算し、評価スコアのトレンドを監視する",
+        "ダッシュボードの手動目視確認",
+        "最新のデプロイタイムスタンプを読み取る",
+        "ユニークなトレースIDをカウントする"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "注入されたPIIリークリグレッションに対する成果物のMTTR目標は何か？",
+      "options": [
+        "1時間未満",
+        "24時間以内",
+        "次のオンコールシフト以内",
+        "バグのデプロイからSlackアラートまで5分未満"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "トレースカバレッジルーブリックを満たすためにはどのSDKファミリーが正規のGenAIスパンを生成しなければならないか？",
+      "options": [
+        "vLLMのみ",
+        "少なくとも6つ：OpenAI・Anthropic・Google GenAI・LangChain・LlamaIndex・vLLM",
+        "どれか1つのSDKで十分",
+        "OpenAIとAnthropicのみ"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "評価結果はどのように元のLLMコールにリンクバックされるか？",
+      "options": [
+        "夜間にメールされるCSVとして",
+        "Slackメッセージのみとして",
+        "トレースIDを持たない別のPostgresテーブルとして",
+        "ClickHouse内の親トレースの子として書き込まれた評価スパンとして"
+      ],
+      "correct": 3,
+      "explanation": ""
+    }
+  ]
+}

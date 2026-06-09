@@ -1,0 +1,16 @@
+{
+  "title": "透かし — SynthID、Stable Signature、C2PA",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "トークン透かし埋め込み＋検出)"
+  ],
+  "prerequisites": "フェーズ10 · 04（サンプリング）、フェーズ01 · 09（情報理論）",
+  "timeEstimate": "約75分",
+  "objectives": [
+    "トークンレベルの透かし（SynthIDテキスト形式）とその検出可能なメカニズムを説明できる。",
+    "Stable Signatureと2024年の除去攻撃を説明できる。",
+    "C2PAの役割と透かしとの補完性を述べられる。",
+    "主要な限界を説明できる：モデル固有のシグナル、言い換えに対するロバスト性、意味保存攻撃（arXiv:2508.20228）。"
+  ]
+}

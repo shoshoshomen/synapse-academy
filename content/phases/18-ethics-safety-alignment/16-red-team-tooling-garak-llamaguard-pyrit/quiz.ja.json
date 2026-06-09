@@ -1,0 +1,78 @@
+{
+  "lesson": "16-red-team-tooling-garak-llamaguard-pyrit",
+  "title": "レッドチームツール - Garak、Llama Guard、PyRIT",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "2026年の典型的なデプロイにおいて、Llama Guardはどのような役割を果たしますか？",
+      "options": [
+        "思考の連鎖のための推論スキャフォルダー",
+        "RLHFのための報酬モデル",
+        "トークナイザーの代替",
+        "MLCommonsハザードカテゴリにわたる入力および/または出力セーフティ分類器。LLMの前後に配置される"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Llama Guard 3がカバーするMLCommonsハザードカテゴリはおよそいくつですか？",
+      "options": [
+        "7",
+        "3",
+        "40",
+        "14"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Garakのアーキテクチャはどのように構成されていますか？",
+      "options": [
+        "ツール、リソース、プロンプト",
+        "エンベディング、リトリーバー、リランカー",
+        "ルーター、エージェント、キュー",
+        "プローブ（攻撃生成器）、ディテクター（出力スコアラー）、ハーネス（キャンペーンマネージャー）"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "PyRITの主な設計目的は何ですか？また、Garakとどのように異なりますか？",
+      "options": [
+        "スコープとオーディエンスが同一",
+        "PyRITは報酬モデルトレーナー。GarakはトークナイザーかPyRITの代替",
+        "PyRITはマルチターンの深いキャンペーン（コンバーターチェーン、CrescendoやTAPなどのオーケストレーター、スコアリング）を実行し、Garakは何千もの単一ターンプローブを実行する",
+        "PyRITはLlama Guardのバリアント。GarakはPrompt-Guardのバリアント"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "2026年に推奨されるデフォルトのレッドチームスタック構成は何ですか？",
+      "options": [
+        "LLM評価を手動レビューのみに置き換える",
+        "ツールの代わりにPAIRを使用する",
+        "モデルの両サイドにLlama Guardを配置し、リグレッション用にGarakを夜間実行し、リリース前キャンペーン用にPyRITを実行する",
+        "Garakをローンチ時に1度だけ実行する"
+      ],
+      "correct": 2,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "Llama Guard、Garak、PyRITに共通する評価の落とし穴は何ですか？",
+      "options": [
+        "報告される攻撃・防御率はジャッジのアイデンティティとプローブの陳腐化に依存する。ジャッジを明記し、モデルにパッチが当てられるにつれてプローブを更新する必要がある",
+        "英語でしか動作しない",
+        "ホワイトボックスアクセスが必要",
+        "GPUで実行できない"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}

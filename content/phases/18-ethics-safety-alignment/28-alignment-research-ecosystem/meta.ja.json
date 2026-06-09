@@ -1,0 +1,13 @@
+{
+  "title": "アライメント研究エコシステム",
+  "type": "学習",
+  "languages": [],
+  "prerequisites": "フェーズ18 · レッスン7〜11（Sleeper Agents、Alignment Faking、In-Context Scheming、AI Control）、フェーズ18 · レッスン18（フロンティアセーフティフレームワーク）、フェーズ18 · レッスン19（モデル福祉）",
+  "timeEstimate": "約45分",
+  "objectives": [
+    "非ラボアライメント研究エコシステムの5つの組織（MATS、Redwood、Apollo、METR、Eleos）とその中心的な成果を特定できる。",
+    "MATSの規模（527人以上の研究者、h指数47）と才能パイプラインとしての役割を説明できる。",
+    "RedwoodのAI Control議題と英国AISIとのパートナーシップを説明できる。",
+    "METRのタスクベースの評価方法論とフレームワーク合成の役割を説明できる。"
+  ]
+}

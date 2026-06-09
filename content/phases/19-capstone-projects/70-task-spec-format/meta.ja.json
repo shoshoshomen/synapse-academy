@@ -1,0 +1,10 @@
+{
+  "title": "タスクスペック形式",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ19 Track B 基礎",
+  "timeEstimate": "約90分",
+  "objectives": []
+}

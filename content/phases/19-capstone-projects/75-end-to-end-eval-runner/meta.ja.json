@@ -1,0 +1,10 @@
+{
+  "title": "エンドツーエンド評価ランナー",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ19 トラックB基礎、レッスン70〜74",
+  "timeEstimate": "約90分",
+  "objectives": []
+}

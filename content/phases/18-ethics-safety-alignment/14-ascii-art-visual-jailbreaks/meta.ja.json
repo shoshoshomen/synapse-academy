@@ -1,0 +1,16 @@
+{
+  "title": "ASCII アートとビジュアルジェイルブレイク",
+  "type": "実装",
+  "languages": [
+    "Python (標準ライブラリ",
+    "ArtPrompt トークンマスキングハーネス)"
+  ],
+  "prerequisites": "フェーズ 18 · 12 (PAIR)、フェーズ 18 · 13 (MSJ)",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "ArtPrompt 攻撃を説明できる：単語識別ステップ、ASCII アート置換、最終的な偽装プロンプト。",
+    "標準防御（PPL、パラフレーズ、リトークン化）が ArtPrompt で失敗する理由を説明できる。",
+    "ViTC を定義し、それが何を測定するかを説明できる。",
+    "StructuralSleight を任意の非一般的テキストエンコードされた構造への一般化として説明できる。"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "lesson": "23-function-call-dispatcher",
+  "title": "関数呼び出しディスパッチャー",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "非冪等ツールのタイムアウトがデフォルトでリトライなしになるのはなぜか？",
+      "options": [
+        "ディスパッチャーが非冪等呼び出しを測定できないから",
+        "ツールが部分的にコミットしている可能性があり、リトライが効果を重複させる可能性があるから",
+        "非冪等ハンドラーはより速く実行されるから",
+        "冪等性キーが遅いから"
+      ],
+      "correct": 1,
+      "explanation": "4.9秒でタイムアウトしたdb.writeを再試行すると2回目の書き込みが発生する可能性がある。ハンドラーが呼び出しを繰り返しても安全だと伝えない限り、ディスパッチャーは拒否する。"
+    },
+    {
+      "stage": "pre",
+      "question": "冪等性キーの重複排除が守るのは何か？",
+      "options": [
+        "遅いネットワーク",
+        "元の呼び出しがまだ処理中のときに発火するリトライ",
+        "スキーマ検証エラー",
+        "プロセスの再起動"
+      ],
+      "correct": 1,
+      "explanation": "重複排除なしでは、5秒のリトライがまだ保留中の遅い元のリクエストと競合する。キャッシュが両方を1つのハンドラー呼び出しに集約する。"
+    },
+    {
+      "stage": "check",
+      "question": "このディスパッチャーでリトライが可能なエラーの種類はどれか？",
+      "options": [
+        "schemaとnot_found",
+        "internalとbudget_exceeded",
+        "timeout（冪等の場合）とtransient",
+        "すべて"
+      ],
+      "correct": 2,
+      "explanation": "schemaとnot_foundは決定論的だ。internalは不明なハンドラーバグをマスクする。budget_exceededは返却だ。冪等タイムアウトと明示的なTransientErrorのみがリトライする。"
+    },
+    {
+      "stage": "check",
+      "question": "_run_with_retriesのセマフォが守るのは何か？",
+      "options": [
+        "ハンドラー自身から",
+        "gather()によってファンアウトされた同時呼び出しが多すぎることからバックエンドを守る",
+        "バリデーター",
+        "リトライカウンター"
+      ],
+      "correct": 1,
+      "explanation": "制限なしで40呼び出しをgatherすると40の並列ディスパッチが開く。セマフォがその波をキャップする。"
+    },
+    {
+      "stage": "check",
+      "question": "冪等性キーが呼び出し元によって導出され、ディスパッチャーによって導出されないのはなぜか？",
+      "options": [
+        "PythonのハッシュはI安定していないから",
+        "引数だけから導出すると、たまたま同じ引数を共有する意味的に異なる2つの呼び出しが衝突するから",
+        "レジストリがキーを持たないから",
+        "キャッシュが文字列を保存できないから"
+      ],
+      "correct": 1,
+      "explanation": "呼び出し元はステップid、プランナーの意図、ユーザーを知っている。引数だけでは安全に重複排除するのに十分なコンテキストではない。"
+    },
+    {
+      "stage": "post",
+      "question": "ディスパッチ時のスキーマ失敗にマップされるJSON-RPCエラーコードはどれか？",
+      "options": [
+        "-32601",
+        "-32602",
+        "-32603",
+        "-32700"
+      ],
+      "correct": 1,
+      "explanation": "-32602 Invalid params。ディスパッチャーはハンドラーが実行される前にそれを返す。"
+    },
+    {
+      "stage": "post",
+      "question": "冪等ツールでタイムアウトによりmax_attemptsに達した後、何が返されるか？",
+      "options": [
+        "例外が発生する",
+        "DispatchOkに結果なし",
+        "kind=timeoutとattempts==max_attemptsのDispatchError",
+        "kind=internalのDispatchError"
+      ],
+      "correct": 2,
+      "explanation": "ディスパッチャーは型付きエラーエンベロープを返す。kindは最後の失敗モードを反映し、attemptsは試行回数を反映する。"
+    }
+  ]
+}

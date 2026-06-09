@@ -1,0 +1,10 @@
+{
+  "title": "コード実行指標",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ19 トラックB基礎、レッスン70・71",
+  "timeEstimate": "約90分",
+  "objectives": []
+}

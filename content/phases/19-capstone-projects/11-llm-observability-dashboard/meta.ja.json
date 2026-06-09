@@ -1,0 +1,12 @@
+{
+  "title": "キャップストーン 11 — LLM可観測性・評価ダッシュボード",
+  "type": "実装",
+  "languages": [
+    "TypeScript (UI)",
+    "Python / TypeScript (ingest + evals)",
+    "SQL (ClickHouse)"
+  ],
+  "prerequisites": "フェーズ11（LLMエンジニアリング）、フェーズ13（ツール）、フェーズ17（インフラ）、フェーズ18（安全性）",
+  "timeEstimate": "約25時間",
+  "objectives": []
+}

@@ -1,0 +1,16 @@
+{
+  "title": "モデレーションシステム — OpenAI、Perspective、Llama Guard",
+  "type": "実装",
+  "languages": [
+    "Python (stdlib",
+    "3層モデレーションハーネス)"
+  ],
+  "prerequisites": "フェーズ18 · 16（Llama Guard / Garak / PyRIT）",
+  "timeEstimate": "約60分",
+  "objectives": [
+    "OpenAI Moderation APIのカテゴリ分類体系と、Llama Guard 3のMLCommonsセットとの違いを説明できる。",
+    "3層モデレーションパターン（入力、出力、カスタム）を説明し、各層の1つの失敗モードを挙げられる。",
+    "Perspective APIのLLM以前の時代のベースラインとしての位置づけと、研究で引き続き使われる理由を説明できる。",
+    "AzureのContent Moderator廃止タイムラインを述べられる。"
+  ]
+}

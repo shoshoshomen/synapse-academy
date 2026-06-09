@@ -1,0 +1,90 @@
+{
+  "lesson": "07-end-to-end-fine-tuning-pipeline",
+  "title": "キャップストーン 07 — エンドツーエンドファインチューニングパイプライン（データからSFT、DPOを経てサービングまで）",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "データ準備中に汚染チェックは何を防ぐか？",
+      "options": [
+        "SFTとDPOステージ間のトークナイザードリフト",
+        "トレーニングとサービング間のGPUドライバの不一致",
+        "llama.cppビルド間でのGGUFバージョンのずれ",
+        "MMLU-ProやMT-Bench-v2などの公開ベンチマークからトレーニングデータへのテストセット漏洩"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "pre",
+      "question": "パイプラインがDPO単独ではなくSFT→DPO（またはGRPO）を構成する理由は何か？",
+      "options": [
+        "AxolotlはDPOを実装していない",
+        "SFTはラベル付き補完でドメイン動作を確立し、DPOまたはGRPOは好みのペアまたは検証可能な報酬に対してモデルをアラインする",
+        "DPOは別のベースモデルアーキテクチャが必要",
+        "DPOは量子化された重みでは実行できない"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "EAGLE-3はvLLMのサービングステージに何をもたらすか？",
+      "options": [
+        "新しいプロンプトキャッシュレイヤー",
+        "ツール呼び出し用のOPAポリシー",
+        "自動データ重複排除ステップ",
+        "Nトークン先を予測するドラフトヘッド；ターゲットが1パスで検証して2-3倍のスループット"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "投機的デコードのドラフトがターゲットモデルとどれだけ整合しているかを報告するのはどの指標か？",
+      "options": [
+        "受理率",
+        "カバレッジデルタ",
+        "PSI",
+        "パープレキシティ"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "パイプラインがデプロイの柔軟性のために出荷する3つのクォントの組み合わせはどれか？",
+      "options": [
+        "ONNX、CoreML、TFLite",
+        "GPTQ-INT4-Marlin、AWQ-INT4、GGUF-Q4_K_M",
+        "3つのランタイムにわたるINT8のみ",
+        "FP32、FP16、BF16"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "このキャップストーンの2026年のモデルカードはどのフレームワーク規約に従うか？",
+      "options": [
+        "データセットのためのデータシート",
+        "データ・トレーニング・評価・安全性・ライセンス・再現可能性をカバーするモデル開放性フレームワーク（MOF）2026テンプレート",
+        "HuggingFaceのYAMLフロントマターのみ",
+        "OpenAIのモデルカードフォーマット"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "サービングレプリカをオートスケールするために使われるHPAメトリクスはどれか？",
+      "options": [
+        "キュー待ち時間",
+        "CPU利用率",
+        "GPU温度",
+        "ネットワーク送信バイト数"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}

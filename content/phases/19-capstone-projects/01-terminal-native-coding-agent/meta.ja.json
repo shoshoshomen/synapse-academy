@@ -1,0 +1,11 @@
+{
+  "title": "キャップストーン 01 — ターミナルネイティブコーディングエージェント",
+  "type": "実装",
+  "languages": [
+    "TypeScript / Bun (harness)",
+    "Python (eval scripts)"
+  ],
+  "prerequisites": "フェーズ11（LLMエンジニアリング）、フェーズ13（ツールとプロトコル）、フェーズ14（エージェント）、フェーズ15（自律システム）、フェーズ17（インフラ）",
+  "timeEstimate": "約35時間",
+  "objectives": []
+}

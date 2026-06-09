@@ -1,0 +1,12 @@
+{
+  "title": "キャップストーン 07 — エンドツーエンドファインチューニングパイプライン（データからSFT、DPOを経てサービングまで）",
+  "type": "実装",
+  "languages": [
+    "Python (pipeline)",
+    "YAML (configs)",
+    "Bash (scripts)"
+  ],
+  "prerequisites": "フェーズ2（ML）、フェーズ3（DL）、フェーズ7（トランスフォーマー）、フェーズ10（ゼロからLLM）、フェーズ11（LLMエンジニアリング）、フェーズ17（インフラ）、フェーズ18（安全性）",
+  "timeEstimate": "約35時間",
+  "objectives": []
+}

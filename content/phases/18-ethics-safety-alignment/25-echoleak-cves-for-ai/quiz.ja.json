@@ -1,0 +1,78 @@
+{
+  "lesson": "25-echoleak-cves-for-ai",
+  "title": "EchoLeakとAIに対するCVEの出現",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "EchoLeak（CVE-2025-32711）を最もよく説明するものはどれですか？",
+      "options": [
+        "長いコンテキストショットの詰め込みによる脱獄",
+        "PyPIへのサプライチェーン攻撃",
+        "NPUにおけるハードウェア脆弱性",
+        "Microsoft 365 CopilotにおけるゼロクリックのAIコマンドインジェクション欠陥（CVE-2025-32711、CVSS 9.3）。CSP許可リスト/信頼済みのMicrosoftドメインを経由した漏洩による不正なネットワーク情報開示"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "EchoLeakが「ゼロクリック」である理由は何ですか？",
+      "options": [
+        "被害者はメールを開く必要がない。Copilotは通常のクエリ中にRAGコンテキストとしてメールを取得し、注入された命令が実行される",
+        "ユーザーはTeamsのチャットでリンクをクリックする必要がある",
+        "オペレーティングシステムのカーネルで実行される",
+        "3回のクリックが必要だが入力は不要"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Aim LabsはEchoLeakを「LLMスコープ違反」と表現する。独立して管理される必要がある3つの境界は何ですか？",
+      "options": [
+        "取得、スコープ、出力",
+        "ネットワーク、ディスク、メモリ",
+        "入力、モデル、GPU",
+        "プロンプト、レスポンス、ログ"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "Microsoft/GitHubはCamoLeak（CVSS 9.6、GitHub Copilot Chat）をどのように修正しましたか？",
+      "options": [
+        "XPIAプロンプトインジェクションフィルターを追加した",
+        "代替の攻撃面を制限できなかったため、Copilot Chatでの画像レンダリングを完全に無効化した（コスト：使いやすさ）",
+        "モデルをLlama Guardに切り替えた",
+        "コンテキストサイズを増加させた"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "EchoLeakの開示で明らかになった重大度キャリブレーションのパターンは何ですか？",
+      "options": [
+        "ベンダーは初期のCVSSスコアを過大評価した",
+        "ベンダーは最初にEchoLeakを低く評価した（情報開示）。Aim LabsのMFAコード漏洩の概念実証が評価を9.3にエスカレートさせた — 防御側はAI固有の脆弱性に対して包括的な概念実証を押す必要がある",
+        "すべてのAI CVEは自動的に10.0にレーティングされる",
+        "重大度評価はOWASPのみが決定する"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "2024/2025年時点でNISTとOWASPはプロンプトインジェクションをどこにランク付けしていますか？",
+      "options": [
+        "NIST AI SPD 2024は生成AIの主要な情報セキュリティリスクとしてプロンプトインジェクションを位置づけ、OWASP 2025はLLM01（最大のアプリケーション層の脅威）にランク付けしている",
+        "NIST：スコープ外。OWASP：リストなし",
+        "NIST：軽微。OWASP：リストの最下位",
+        "両方ともティア2リスクのみと呼ぶ"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}

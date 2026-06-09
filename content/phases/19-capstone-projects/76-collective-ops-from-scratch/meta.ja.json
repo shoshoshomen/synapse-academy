@@ -1,0 +1,15 @@
+{
+  "title": "集合演算のゼロからの実装",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ19 トラックC レッスン42〜49",
+  "timeEstimate": "約90分",
+  "objectives": [
+    "リングallreduceを2パス（reduce-scatterとallgather）で実装し、ランクごとの通信量が要素あたり2(N-1)/Nバイトであることを証明する。",
+    "`multiprocessing.Queue`上のポイントツーポイント送信を基にbroadcast、allgather、reduce_scatterを構築する。",
+    "すべてのプリミティブを同じ入力の`torch.distributed` glooリファレンスに対して検証する。",
+    "クラスタ形状、レイテンシの下限、帯域幅の上限を基に、リングとツリーの選択を擁護する。"
+  ]
+}

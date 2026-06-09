@@ -1,0 +1,78 @@
+{
+  "lesson": "phase-19/29-end-to-end-coding-task-demo",
+  "title": "ハーネス上のエンドツーエンドコーディングエージェント",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "レッスンを読む前に：エンドツーエンドデモがLLMを確定的ポリシーに置き換えているのはなぜですか？",
+      "options": [
+        "LLMはテストで実行するには遅すぎるから。",
+        "ハーネスこそがレッスンでテストするものであり、ポリシーは置き換え可能なシームだから。",
+        "確定的ポリシーはコーディングタスクで常にLLMを上回るから。",
+        "レッスンは推論コストを払えないから。"
+      ],
+      "correct": 1,
+      "explanation": "ハーネスのコントラクトは、ポリシーがLLMかステートマシンかを気にしません。LLMを除くことでネットワークと分散性を除去し、レッスンを再現可能な統合テストにします。"
+    },
+    {
+      "stage": "check",
+      "question": "エージェントのステートマシンは5つの状態を持っています。通常のパスではどの順番で実行されますか？",
+      "options": [
+        "SURVEY -> FIX -> VERIFY -> RUN_TESTS -> INSPECT。",
+        "SURVEY -> RUN_TESTS -> INSPECT -> FIX -> VERIFY。",
+        "RUN_TESTS -> SURVEY -> INSPECT -> FIX -> VERIFY。",
+        "SURVEY -> INSPECT -> FIX -> RUN_TESTS -> VERIFY。"
+      ],
+      "correct": 1,
+      "explanation": "エージェントはプロジェクトを調査し、テストを実行し、失敗したテストを検査し、バグを修正し、確認します。RUN_TESTSがINSPECTの前に来るのは、テスト失敗がポリシーの読み取るシグナルだからです。"
+    },
+    {
+      "stage": "check",
+      "question": "バンドルされたフィクスチャのバグはsrc/fizz.pyのオフバイワン：range(1, n)ではなくrange(1, n + 1)です。ポリシーはどこで修正を適用することを決定しますか？",
+      "options": [
+        "SURVEYステートで、ファイルヘッダを読むことで。",
+        "INSPECTステートで、テスト失敗が期待される出力を示した後で。",
+        "VERIFYステートで、再実行の後で。",
+        "ステートマシンの外、ゲートチェーンで。"
+      ],
+      "correct": 1,
+      "explanation": "INSPECTはポリシーが失敗したテストを読んで期待される形を学ぶ場所です。修正はそこで特定され、次のFIXステートで書かれます。"
+    },
+    {
+      "stage": "check",
+      "question": "全てのツール呼び出しはどの順番でどのコンポーネントチェーンを通過しますか？",
+      "options": [
+        "Sandbox -> GateChain -> SpanBuilder -> ObservationLedger。",
+        "GateChain -> SpanBuilder -> Sandbox -> ObservationLedger。",
+        "SpanBuilder -> GateChain -> Sandbox -> ObservationLedger。",
+        "ObservationLedger -> GateChain -> Sandbox -> SpanBuilder。"
+      ],
+      "correct": 1,
+      "explanation": "まずゲート（許可/拒否）、次にスパン（拒否もキャプチャされるように）、その次にサンドボックス（許可された場合のみ）、最後に台帳（成功時のみ）。レッスンコードはそのように配線されています。"
+    },
+    {
+      "stage": "post",
+      "question": "確定的ポリシーを実際のLLMに置き換えました。どのハーネスコンポーネントが変わりますか？",
+      "options": [
+        "ゲートチェーンはLLMの確率的性質を処理するために書き直す必要がある。",
+        "サンドボックスをseccompで強化する必要がある。",
+        "ハーネスには何も変わらない。ポリシーだけが交換される部分だ。",
+        "Prometheusエクスポジション形式が互換性を失う。"
+      ],
+      "correct": 2,
+      "explanation": "このレッスンのポイント：ハーネスはポリシーに依存しません。シームはnext_action / observeインターフェースです。LLMはゲート、サンドボックス、台帳、スパンに触れることなくそこに差し込めます。"
+    },
+    {
+      "stage": "post",
+      "question": "デモはエージェントが12ステップ以内にフィクスチャを解決することをアサートします。確定的ポリシーは5ステップを使います。実際のLLMエージェントはどうなる可能性があり、ハーネスはどのように処理しますか？",
+      "options": [
+        "LLMも5ステップを使う。ハーネスは変わらない。",
+        "LLMはより多くのステップを使う可能性がある。step_budgetがループを制限し、未解決の実行はhalted_reasonとともに失敗として報告される。",
+        "LLMはこのハーネス内で実行できない。",
+        "ハーネスはサイレントにバジェットを延長する。"
+      ],
+      "correct": 1,
+      "explanation": "ステップバジェットは大きくて確定的な停止基準です。さまよったLLMはキャップされ、レポートは正確に理由を教えてくれます。"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "lesson": "18-frontier-safety-frameworks-rsp-pf-fsf",
+  "title": "最前線セーフティフレームワーク - RSP、PF、FSF",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "AnthropicのASL構造は何をモデルにしていますか？",
+      "options": [
+        "ITILのインシデント重大度",
+        "EU AI Actのカテゴリ",
+        "インターネットRFCティア",
+        "生物安全レベル（BSL）"
+      ],
+      "correct": 3,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "OpenAI Preparedness Framework v2のどの基準が「害が速く発生するか取り消せない」を捉えていますか？",
+      "options": [
+        "新規（Net-new）",
+        "即時または取り返しのつかない（Instantaneous-or-irremediable）",
+        "もっともらしい（Plausible）",
+        "測定可能（Measurable）"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "DeepMindのFSF v3.0（2025年9月）に追加された重要能力レベルはどれですか？",
+      "options": [
+        "Harmful Manipulation",
+        "サイバーアップリフト",
+        "生物兵器アップリフト",
+        "ML R&D加速"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "check",
+      "question": "2025年以降の最前線セーフティフレームワークにおける「競合調整条項」とは何ですか？",
+      "options": [
+        "競合研究所が同等の安全対策なしに出荷する場合に安全要件を緩和することを研究所に認める条項",
+        "輸出管理免除",
+        "APIアクセスの価格設定ルール",
+        "モデルカード開示要件"
+      ],
+      "correct": 0,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "本レッスンで説明されるセーフティケースの3本柱はどれですか？",
+      "options": [
+        "速度、精度、コスト",
+        "監視、判読不能性、能力欠如",
+        "役立つ、正直、無害",
+        "内部、外部、メサ"
+      ],
+      "correct": 1,
+      "explanation": ""
+    },
+    {
+      "stage": "post",
+      "question": "Anthropicの「能力閾値」、OpenAIの「高能力閾値」、DeepMindの「重要能力レベル」の間にある構造的整合性とは何ですか？",
+      "options": [
+        "構造的整合性：公開された評価基準を持つ段階的な最前線能力閾値。用語が異なっていても",
+        "どれも公式に文書化されていない",
+        "同一の用語と数値カットオフ",
+        "3つすべてがまったく同じ評価を使用する"
+      ],
+      "correct": 0,
+      "explanation": ""
+    }
+  ]
+}

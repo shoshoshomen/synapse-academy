@@ -1,0 +1,12 @@
+{
+  "title": "キャップストーン 09 — コード移行エージェント（リポジトリレベルの言語/ランタイムアップグレード）",
+  "type": "実装",
+  "languages": [
+    "Python (agent)",
+    "Java / Python (targets)",
+    "TypeScript (dashboard)"
+  ],
+  "prerequisites": "フェーズ5（NLP）、フェーズ7（トランスフォーマー）、フェーズ11（LLMエンジニアリング）、フェーズ13（ツール）、フェーズ14（エージェント）、フェーズ15（自律システム）、フェーズ17（インフラ）",
+  "timeEstimate": "約30時間",
+  "objectives": []
+}

@@ -1,0 +1,10 @@
+{
+  "title": "キャップストーン82 — ジェイルブレイク分類体系",
+  "type": "実装",
+  "languages": [
+    "Python"
+  ],
+  "prerequisites": "フェーズ18 セーフティレッスン、フェーズ19 トラックA レッスン25〜29",
+  "timeEstimate": "約90分",
+  "objectives": []
+}

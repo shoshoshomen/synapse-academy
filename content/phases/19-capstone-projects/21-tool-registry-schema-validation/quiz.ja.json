@@ -1,0 +1,78 @@
+{
+  "lesson": "21-tool-registry-schema-validation",
+  "title": "スキーマ検証付きツールレジストリ",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "ツールのスキーマをハンドラーとは別に登録するのはなぜか？",
+      "options": [
+        "スキーマはYAMLに存在しなければならないから",
+        "バリデーターをピュアなデータとして保ち、ハンドラーを不透明なコードとして保つため",
+        "ハンドラーはJSONを返せないから",
+        "スキーマはコンパイルしなければならないから"
+      ],
+      "correct": 1,
+      "explanation": "スキーマをデータとしてハンドラーをコードとして保つことで、バリデーターをスキーマツリー上のピュア関数にできる。"
+    },
+    {
+      "stage": "check",
+      "question": "このレッスンが実装するサブセットから意図的に除外されているキーワードはどれか？",
+      "options": [
+        "type、properties、required",
+        "minLength、maxLength、pattern",
+        "oneOf、anyOf、$ref、allOf",
+        "items、enum"
+      ],
+      "correct": 2,
+      "explanation": "省略されたキーワードはサイクルと参照解決を追加する。バリデーターを単一の再帰ウォークとして保つためにサブセットを線形に保つ。"
+    },
+    {
+      "stage": "check",
+      "question": "register()がデフォルトで重複を拒否するのはなぜか？",
+      "options": [
+        "レジストリが名前ごとに1つのレコードしか保存できないから",
+        "サイレントな上書きがプロダクションツールカタログのドリフトの原因だから",
+        "スキーマが再検証できないから",
+        "ハンドラーが置き換えられないから"
+      ],
+      "correct": 1,
+      "explanation": "override=Trueを強制することで、コードの2つの部分が同じツール名を所有しようとしているケースが表面化する。"
+    },
+    {
+      "stage": "check",
+      "question": "スキーマがtype integerを指定しているが値Trueを受け取った場合、バリデーターは何をするか？",
+      "options": [
+        "1として扱ってパスする",
+        "このバリデーターではboolはintegerではないため型エラーを返す",
+        "未処理の例外を発生させる",
+        "黙ってintegerに強制する"
+      ],
+      "correct": 1,
+      "explanation": "Pythonのboolはintのサブクラスだが、バリデーターは整数チェックからboolを除外する。JSONのbooleanとintegerは異なる。"
+    },
+    {
+      "stage": "post",
+      "question": "入力オブジェクトが{'user': {'email': 0}}でスキーマがuser.emailを文字列として要求する場合、エラーパスは何か？",
+      "options": [
+        "/",
+        "/user",
+        "/user/email",
+        "user.email"
+      ],
+      "correct": 2,
+      "explanation": "JSONポインターはuserを経由してemailへの降下を/user/emailとしてエンコードする。"
+    },
+    {
+      "stage": "post",
+      "question": "レジストリがセキュリティ境界ではないのはなぜか？",
+      "options": [
+        "ハンドラーは検証がパスした後でも誤動作できるから",
+        "ハンドラーはasyncだから",
+        "スキーマはJSONだから",
+        "レジストリはインプロセスだから"
+      ],
+      "correct": 0,
+      "explanation": "レジストリは形状をチェックする。動作、タイムアウト、分離はディスパッチャーとサンドボックスに属する。"
+    }
+  ]
+}
