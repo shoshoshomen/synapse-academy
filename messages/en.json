@@ -168,5 +168,12 @@
     "curriculum": "Curriculum",
     "progress": "My Progress",
     "rights": "An independent AI engineering school."
+  },
+  "unlock": {
+    "title": "These lessons are password-protected",
+    "subtitle": "Enter the access code shared with enrolled learners to read the lesson content.",
+    "label": "Access code",
+    "cta": "Unlock & continue",
+    "error": "That access code isn't right."
   }
 }
