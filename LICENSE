@@ -1,13 +1,8 @@
 MIT License
 
-Copyright (c) 2026 Shohei Inoue — Synapse Academy platform (application code)
-Copyright (c) Rohit Ghumare — "AI Engineering from Scratch" curriculum content
-
-The curriculum content under `content/` is adapted from "AI Engineering from
-Scratch" by Rohit Ghumare (https://github.com/rohitg00/ai-engineering-from-scratch),
-used and redistributed under the MIT License. All other application code in this
-repository is authored for Synapse Academy and likewise released under the MIT
-License below.
+Copyright (c) 2026 Shohei Inoue
+Copyright (c) Rohit Ghumare (curriculum content under content/, adapted from
+"AI Engineering from Scratch", https://github.com/rohitg00/ai-engineering-from-scratch)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
