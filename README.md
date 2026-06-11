@@ -184,5 +184,6 @@ This project is released under the [**MIT License**](./LICENSE).
 
 The curriculum content under `content/` is adapted from
 [**AI Engineering from Scratch**](https://github.com/rohitg00/ai-engineering-from-scratch)
-by **Rohit Ghumare**, used under the MIT License. Attribution is shown on every
-lesson and in the footer. The platform's own application code is likewise MIT.
+by **Rohit Ghumare**, used under the MIT License — its copyright notice is
+preserved in [`NOTICE`](./NOTICE), and attribution is shown on every lesson and
+in the footer. The platform's own application code is likewise MIT.
